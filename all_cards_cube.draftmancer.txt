@@ -181,7 +181,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Ursulas Shell Necklace",
+        "name": "Ursula's Shell Necklace",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -631,7 +631,7 @@
         "rarity": "common"
     },
     {
-        "name": "White Rabbits Pocket Watch",
+        "name": "White Rabbit's Pocket Watch",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -641,7 +641,7 @@
         "rarity": "rare"
     },
     {
-        "name": "Ursulas Cauldron",
+        "name": "Ursula's Cauldron",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -801,7 +801,7 @@
         "rarity": "rare"
     },
     {
-        "name": "Flotsam - Ursulas Spy",
+        "name": "Flotsam - Ursula's Spy",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
@@ -851,7 +851,7 @@
         "rarity": "common"
     },
     {
-        "name": "Jetsam - Ursulas Spy",
+        "name": "Jetsam - Ursula's Spy",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
@@ -901,7 +901,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Pascal - Rapunzels Companion",
+        "name": "Pascal - Rapunzel's Companion",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
@@ -931,7 +931,7 @@
         "rarity": "mythic"
     },
     {
-        "name": "Tinker Bell - Peter Pans Ally",
+        "name": "Tinker Bell - Peter Pan's Ally",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
@@ -941,7 +941,7 @@
         "rarity": "common"
     },
     {
-        "name": "The Wardrobe - Belles Confidant",
+        "name": "The Wardrobe - Belle's Confidant",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -1041,7 +1041,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Merlins Carpetbag",
+        "name": "Merlin's Carpetbag",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
@@ -1051,7 +1051,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Basils Magnifying Glass",
+        "name": "Basil's Magnifying Glass",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -1091,7 +1091,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Merlins Cottage - The Wizards Home",
+        "name": "Merlin's Cottage - The Wizard's Home",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
@@ -1481,7 +1481,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Donald Duck - Daisys Date",
+        "name": "Donald Duck - Daisy's Date",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -1611,7 +1611,7 @@
         "rarity": "common"
     },
     {
-        "name": "Prince Johns Mirror",
+        "name": "Prince John's Mirror",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -1621,7 +1621,7 @@
         "rarity": "rare"
     },
     {
-        "name": "Whos With Me?",
+        "name": "Who's With Me?",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -1651,7 +1651,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Youre Welcome",
+        "name": "You're Welcome",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
@@ -1751,7 +1751,7 @@
         "rarity": "common"
     },
     {
-        "name": "Ratigans Party - Seedy Back Room",
+        "name": "Ratigan's Party - Seedy Back Room",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -1761,7 +1761,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Dont Let The Frostbite Bite",
+        "name": "Don't Let The Frostbite Bite",
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
@@ -1841,7 +1841,7 @@
         "rarity": "mythic"
     },
     {
-        "name": "Pacha - Emperors Guide",
+        "name": "Pacha - Emperor's Guide",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -2111,7 +2111,7 @@
         "rarity": "rare"
     },
     {
-        "name": "Seven Dwarfs Mine - Secure Fortress",
+        "name": "Seven Dwarfs' Mine - Secure Fortress",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -2541,7 +2541,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Pongo - Ol Rascal",
+        "name": "Pongo - Ol' Rascal",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
@@ -2691,7 +2691,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Hes Got a Sword!",
+        "name": "He's Got a Sword!",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
@@ -2701,7 +2701,7 @@
         "rarity": "common"
     },
     {
-        "name": "Captain - Colonels Lieutenant",
+        "name": "Captain - Colonel's Lieutenant",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
@@ -2821,7 +2821,7 @@
         "rarity": "common"
     },
     {
-        "name": "Dr. Faciliers Cards",
+        "name": "Dr. Facilier's Cards",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -3071,7 +3071,7 @@
         "rarity": "mythic"
     },
     {
-        "name": "Starkey - Hooks Henchman",
+        "name": "Starkey - Hook's Henchman",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
@@ -3121,7 +3121,7 @@
         "rarity": "rare"
     },
     {
-        "name": "If its Not Baroque",
+        "name": "If it's Not Baroque",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -3231,7 +3231,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Goons - Maleficents Underlings",
+        "name": "Goons - Maleficent's Underlings",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
@@ -3441,7 +3441,7 @@
         "rarity": "common"
     },
     {
-        "name": "Im Stuck!",
+        "name": "I'm Stuck!",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
@@ -3471,7 +3471,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "The Sorcerers Spellbook",
+        "name": "The Sorcerer's Spellbook",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -3551,7 +3551,7 @@
         "rarity": "rare"
     },
     {
-        "name": "Peter Pans Shadow - Not Sewn On",
+        "name": "Peter Pan's Shadow - Not Sewn On",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
@@ -3651,7 +3651,7 @@
         "rarity": "mythic"
     },
     {
-        "name": "Jiminy Cricket - Pinocchios Conscience",
+        "name": "Jiminy Cricket - Pinocchio's Conscience",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -3731,7 +3731,7 @@
         "rarity": "common"
     },
     {
-        "name": "Worlds Greatest Criminal Mind",
+        "name": "World's Greatest Criminal Mind",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -3771,7 +3771,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Arthur - Wizards Apprentice",
+        "name": "Arthur - Wizard's Apprentice",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -3781,7 +3781,7 @@
         "rarity": "mythic"
     },
     {
-        "name": "Sleepys Flute",
+        "name": "Sleepy's Flute",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -3971,7 +3971,7 @@
         "rarity": "common"
     },
     {
-        "name": "Beasts Mirror",
+        "name": "Beast's Mirror",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -4471,7 +4471,7 @@
         "rarity": "common"
     },
     {
-        "name": "Ratigans Marvelous Trap",
+        "name": "Ratigan's Marvelous Trap",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -4531,7 +4531,7 @@
         "rarity": "rare"
     },
     {
-        "name": "Fidget - Ratigans Henchman",
+        "name": "Fidget - Ratigan's Henchman",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -4751,7 +4751,7 @@
         "rarity": "common"
     },
     {
-        "name": "Maurices Workshop",
+        "name": "Maurice's Workshop",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -5051,7 +5051,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Peter Pans Dagger",
+        "name": "Peter Pan's Dagger",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -5291,7 +5291,7 @@
         "rarity": "common"
     },
     {
-        "name": "Tianas Palace - Jazz Restaurant",
+        "name": "Tiana's Palace - Jazz Restaurant",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -5351,7 +5351,7 @@
         "rarity": "common"
     },
     {
-        "name": "Wildcats Wrench",
+        "name": "Wildcat's Wrench",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -5451,7 +5451,7 @@
         "rarity": "common"
     },
     {
-        "name": "Chernabogs Followers - Creatures of Evil",
+        "name": "Chernabog's Followers - Creatures of Evil",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
@@ -5481,7 +5481,7 @@
         "rarity": "common"
     },
     {
-        "name": "Cursed Merfolk - Ursulas Handiwork",
+        "name": "Cursed Merfolk - Ursula's Handiwork",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
@@ -5551,7 +5551,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "The Queens Castle - Mirror Chamber",
+        "name": "The Queen's Castle - Mirror Chamber",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
@@ -5571,7 +5571,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Forbidden Mountain - Maleficents Castle",
+        "name": "Forbidden Mountain - Maleficent's Castle",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -5591,7 +5591,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "The Sorcerers Hat",
+        "name": "The Sorcerer's Hat",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -5701,7 +5701,7 @@
         "rarity": "common"
     },
     {
-        "name": "Bosss Orders",
+        "name": "Boss's Orders",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
@@ -5731,7 +5731,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "The Sorcerers Tower - Wondrous Workspace",
+        "name": "The Sorcerer's Tower - Wondrous Workspace",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -6281,7 +6281,7 @@
         "rarity": "common"
     },
     {
-        "name": "Pluto - Mickeys Clever Friend",
+        "name": "Pluto - Mickey's Clever Friend",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -6471,7 +6471,7 @@
         "rarity": "rare"
     },
     {
-        "name": "Mauis Fish Hook",
+        "name": "Maui's Fish Hook",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -6481,7 +6481,7 @@
         "rarity": "rare"
     },
     {
-        "name": "Robins Bow",
+        "name": "Robin's Bow",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -6601,7 +6601,7 @@
         "rarity": "rare"
     },
     {
-        "name": "Jolly Roger - Hooks Ship",
+        "name": "Jolly Roger - Hook's Ship",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
@@ -6701,7 +6701,7 @@
         "rarity": "common"
     },
     {
-        "name": "Peter Pan - Pirates Bane",
+        "name": "Peter Pan - Pirate's Bane",
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
@@ -6711,7 +6711,7 @@
         "rarity": "rare"
     },
     {
-        "name": "Ive Got a Dream",
+        "name": "I've Got a Dream",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -6891,7 +6891,7 @@
         "rarity": "mythic"
     },
     {
-        "name": "De Vil Manor - Cruellas Estate",
+        "name": "De Vil Manor - Cruella's Estate",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
@@ -7021,7 +7021,7 @@
         "rarity": "mythic"
     },
     {
-        "name": "Kuzcos Palace - Home of the Emperor",
+        "name": "Kuzco's Palace - Home of the Emperor",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -7131,7 +7131,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Little John - Robins Pal",
+        "name": "Little John - Robin's Pal",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -7151,7 +7151,7 @@
         "rarity": "mythic"
     },
     {
-        "name": "Scrooges Top Hat",
+        "name": "Scrooge's Top Hat",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -7201,7 +7201,7 @@
         "rarity": "common"
     },
     {
-        "name": "How Far Ill Go",
+        "name": "How Far I'll Go",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
@@ -7221,7 +7221,7 @@
         "rarity": "rare"
     },
     {
-        "name": "McDuck Manor - Scrooges Mansion",
+        "name": "McDuck Manor - Scrooge's Mansion",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
@@ -7231,7 +7231,7 @@
         "rarity": "common"
     },
     {
-        "name": "Belles House - Maurices Workshop",
+        "name": "Belle's House - Maurice's Workshop",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
@@ -7471,7 +7471,7 @@
         "rarity": "common"
     },
     {
-        "name": "Prince Eric - Ursulas Groom",
+        "name": "Prince Eric - Ursula's Groom",
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
@@ -7521,7 +7521,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Ursula - Erics Bride",
+        "name": "Ursula - Eric's Bride",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
@@ -7541,7 +7541,7 @@
         "rarity": "common"
     },
     {
-        "name": "Brunos Return",
+        "name": "Bruno's Return",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -7661,7 +7661,7 @@
         "rarity": "mythic"
     },
     {
-        "name": "Captain Hooks Rapier",
+        "name": "Captain Hook's Rapier",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -7771,7 +7771,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Flotsam - Ursulas \"Baby\"",
+        "name": "Flotsam - Ursula's \"Baby\"",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -7821,7 +7821,7 @@
         "rarity": "common"
     },
     {
-        "name": "Jetsam - Ursulas \"Baby\"",
+        "name": "Jetsam - Ursula's \"Baby\"",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -8001,7 +8001,7 @@
         "rarity": "rare"
     },
     {
-        "name": "Ursulas Plan",
+        "name": "Ursula's Plan",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -8011,7 +8011,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Tritons Trident",
+        "name": "Triton's Trident",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -8061,7 +8061,7 @@
         "rarity": "rare"
     },
     {
-        "name": "Ursulas Lair - Eye of the Storm",
+        "name": "Ursula's Lair - Eye of the Storm",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -8101,7 +8101,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Nottingham - Prince Johns Castle",
+        "name": "Nottingham - Prince John's Castle",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -8111,7 +8111,7 @@
         "rarity": "common"
     },
     {
-        "name": "Mauis Place of Exile - Hidden Island",
+        "name": "Maui's Place of Exile - Hidden Island",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -8181,7 +8181,7 @@
         "rarity": "rare"
     },
     {
-        "name": "Diablo - Maleficents Spy",
+        "name": "Diablo - Maleficent's Spy",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
@@ -8371,7 +8371,7 @@
         "rarity": "rare"
     },
     {
-        "name": "A Pirates Life",
+        "name": "A Pirate's Life",
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
@@ -8451,7 +8451,7 @@
         "rarity": "rare"
     },
     {
-        "name": "We Dont Talk About Bruno",
+        "name": "We Don't Talk About Bruno",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
@@ -8471,7 +8471,7 @@
         "rarity": "common"
     },
     {
-        "name": "Ursulas Trickery",
+        "name": "Ursula's Trickery",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
@@ -8651,7 +8651,7 @@
         "rarity": "mythic"
     },
     {
-        "name": "Fa Li - Mulans Mother",
+        "name": "Fa Li - Mulan's Mother",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
@@ -8701,7 +8701,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Flounder - Collectors Companion",
+        "name": "Flounder - Collector's Companion",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -8911,7 +8911,7 @@
         "rarity": "rare"
     },
     {
-        "name": "Ariels Grotto - A Secret Place",
+        "name": "Ariel's Grotto - A Secret Place",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -9051,7 +9051,7 @@
         "rarity": "rare"
     },
     {
-        "name": "Fa Zhou - Mulans Father",
+        "name": "Fa Zhou - Mulan's Father",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -9121,7 +9121,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Ursulas Garden - Full of the Unfortunate",
+        "name": "Ursula's Garden - Full of the Unfortunate",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
@@ -9211,7 +9211,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Li Shang - Generals Son",
+        "name": "Li Shang - General's Son",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
@@ -9511,7 +9511,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Elsas Ice Palace - Place of Solitude",
+        "name": "Elsa's Ice Palace - Place of Solitude",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -9551,7 +9551,7 @@
         "rarity": "uncommon"
     },
     {
-        "name": "Shenzi - Scars Accomplice",
+        "name": "Shenzi - Scar's Accomplice",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -9681,7 +9681,7 @@
         "rarity": "common"
     },
     {
-        "name": "RLS Legacys Cannon",
+        "name": "RLS Legacy's Cannon",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -9771,7 +9771,7 @@
         "rarity": "common"
     },
     {
-        "name": "Daisy Duck - Donalds Date",
+        "name": "Daisy Duck - Donald's Date",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
@@ -9821,7 +9821,7 @@
         "rarity": "common"
     },
     {
-        "name": "Alan-a-Dale - Rockin Rooster",
+        "name": "Alan-a-Dale - Rockin' Rooster",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
@@ -10011,7 +10011,7 @@
         "rarity": "common"
     },
     {
-        "name": "Queens Sensor Core",
+        "name": "Queen's Sensor Core",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -10071,7 +10071,7 @@
         "rarity": "rare"
     },
     {
-        "name": "Rapunzels Tower - Secluded Prison",
+        "name": "Rapunzel's Tower - Secluded Prison",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -10111,7 +10111,7 @@
         "rarity": "common"
     },
     {
-        "name": "I Find Em, I Flatten Em",
+        "name": "I Find 'Em, I Flatten 'Em",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
@@ -10191,7 +10191,7 @@
         "rarity": "mythic"
     },
     {
-        "name": "Tritons Decree",
+        "name": "Triton's Decree",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
@@ -10199,6 +10199,446 @@
         },
         "rating": 0,
         "rarity": "common"
+    },
+{
+        "name": "Oswald - The Lucky Rabbit",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://wiki.mushureport.com/images/a/a6/Oswald-TheLuckyRabbit-D23-6.png"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Triton's Daughters - Discordant Chorus",
+        "mana_cost": "{0}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/TritonsDaughters-DiscordantChorus-Q1-16-1103x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Prince Eric - Grim Groom",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/PrinceEric-GrimGroom-Q1-13-1130x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Bruno Madrigal - Unspeakable Seer",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/BrunoMadrigal-UnspeakableSeer-Q1-2-1096x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Gaston - Egotistical Bully",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/Gaston-EgotisticalBully-Q1-5-1110x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Mad Hatter - Sinister Host",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/MadHatter-SinisterHost-Q1-10-1120x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Jetsam - Wicked Whisperer",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/Jetsam-WickedWhisperer-Q1-9-1117x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Magica De Spell - Shadowy Sorceress",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/MagicaDeSpell-ShadowySorceress-Q1-11-1114x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Flotsam - Wicked Defender",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/Flotsam-WickedDefender-Q1-4-1124x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Tamatoa - Grabby Crab",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/Tamatoa-GrabbyCrab-Q1-15-1110x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Shark - Toothy Terror",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/Shark-ToothyTerror-Q1-14-1115x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Anna - Ensnared Sister",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/Anna-EnsnaredSister-Q1-1-1149x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Minnie Mouse - Wild-Eyed Diver",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/MinnieMouse-Wild-EyedDiver-Q1-12-1127x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Lash Out",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/LashOut-Q1-22-1107x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Entangling Magic",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/EntanglingMagic-4-20-1112x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Tentacle Swipe",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/TentacleSwipe-Q1-25-1152x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Capsize",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/Capsize-Q1-17-1109x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Whirlpool",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/Whirlpool-Q1-28-1098x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Crushing Wave",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/CrushingWave-4-19-1098x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Typhoon",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/Typhoon-Q1-27-1109x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Riptide",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/Riptide-Q1-24-1102x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Ursula's Stolen Trident",
+        "mana_cost": "{0}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/UrsulasStolenTrident-Q1-31-1115x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Ursula's Contract",
+        "mana_cost": "{0}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/UrsulasContract-Q1-30-1136x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "The Hexwell Crown",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://wiki.mushureport.com/images/thumb/c/c6/TheHexwellCrown-Q1-29.png/450px-TheHexwellCrown-Q1-29.png"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Tsunami",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/Tsunami-Q1-26-1123x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Chip - Friend Indeed",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/09/Chip-FriendIndeed-6-6.png"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Dale - Friend In Need",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/09/Dale-FriendinNeed-6-7.png"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Dale - Mischievous Ranger",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/09/Dale-MischievousRanger-6-18.png"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Jim Hawkins - Honorable Pirate",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/09/JimHawkins-HonorablePirate-6-25.png"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Chip 'N' Dale - Recovery Rangers",
+        "mana_cost": "{8}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/09/ChipNDale-RecoveryRangers-6-14.png"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Baymax - Personal Healthcare Companion",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/09/Baymax-PersonalHealthcareCompanion-6-156.png"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Hiro Hamada - Robotics Prodigy",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/09/HiroHamada-RoboticsProdigy-6-145.png"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Wasabi - Methodical Engineer",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/09/Wasabi-MethodicalEngineer-6-149.png"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Hiro Hamada - Team Leader",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/09/HiroHamada-TeamLeader-6-154.png"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Baymax - Armored Companion",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/09/Baymax-ArmoredCompanion-6-157.png"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Yzma - Conniving Chemist",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/09/Yzma-ConnivingChemist-6-56.png"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Sisu - In Her Element",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/09/Sisu-InHerElement-6-39.png"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Tigger - In The Crow's Nest",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/09/Tigger-IntheCrowsNest-6-126.png"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Kakamora - Boarding Party",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/09/Kakamora-BoardingParty-6-104.png"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Fred - Mascot By Day",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/09/Fred-MascotbyDay-6-75.png"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Honey Lemon - Chemical Genius",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/09/HoneyLemon-ChemicalGenius-6-74.png"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Go Go Tomago - Darting Dynamo",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/09/GoGoTomago-DartingDynamo-6-73.png"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Hot Potato",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/09/HotPotato-6-195.png"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Yokai - Enigmatic Inventor",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/09/Yokai-EnigmaticInventor-6-143.png"
+        },
+        "rating": 5,
+        "rarity": "mythic"
     }
 ]
 [Settings]

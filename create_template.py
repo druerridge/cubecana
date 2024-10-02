@@ -32,6 +32,8 @@ parser.add_argument('--cards_per_booster', default=12)
 parser.add_argument('--name', default="custom_card_list", help="Sets name of both the output file and the set/cube list as it appears in draftmancer")
 parser.add_argument('--set_card_colors', default=False, help="WARNING** This sets card colors, allowing draftmancer to do color-balancing for you, but it will also encourage bots to draft 1-2 color decks")
 parser.add_argument('--color_balance_packs', default=False, help="WARNING** this color-balances ONLY your largest slot, IF it contains enough cards, AND steel may be wonky (treated as colorless). This will ONLY work if card_colors is true, which will encourage bots to draft 1-2 color decks")
+# parser.add_argument('--draftmancer_card_list', default=False, help="card list to use for deck conversion to tts")
+parser.add_argument('--draftmancer_deck_export', default=False, help="deck export to convert to tts")
 
 def fetch_api_data():
     name_to_card = {}
@@ -206,6 +208,7 @@ def write_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_nam
         }
         if color_balance_packs == True:
             settings['colorBalance'] = True
+            
         lines = [
             '[CustomCards]',
             json.dumps(custom_card_list, indent=4),
@@ -223,6 +226,117 @@ def write_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_nam
         for line in lines:
             f.write(line + '\n')
 
+def read_draftmancer_custom_cardlist():
+    with open('all_cards_cube.draftmancer.txt', encoding='utf8') as f:
+        # custom_card_string = "{\"CustomCards\":"
+        custom_card_string = ""
+        read_custom_cards = False
+        for line in f:
+            if "[Settings]" in line:
+                # custom_card_string += "}"
+                read_custom_cards = False
+                break
+
+            if read_custom_cards:
+                custom_card_string += line.strip()
+
+            if "[CustomCards]" in line:
+                read_custom_cards = True
+        custom_cards_json = json.loads(custom_card_string)
+        
+        name_to_custom_card = {}
+        for custom_card in custom_cards_json:
+            name_to_custom_card[to_id(custom_card['name'])] = custom_card
+        return name_to_custom_card
+    return None
+
+def read_draftmancer_export(draftmancer_deck_export_file):
+    with open(draftmancer_deck_export_file, encoding='utf8') as file:
+        lines = file.readlines()
+    return count_by_name_from(lines)
+
+def count_by_name_from(lines):
+    count_by_name = defaultdict(int)
+    for line in lines:
+        count, name = line.rstrip().split(' ', 1)
+        count_by_name[to_id(name)] += int(count)
+    return count_by_name
+
+TTS_SCALE_X = 1.2
+TTS_SCALE_Y = 1
+TTS_SCALE_Z = 1.2
+TTS_OUTPUT_PATH = "tts_deck.json"
+
+def write_tts_deck_file(tts_deck):
+    with open(TTS_OUTPUT_PATH, "w") as file:
+        json.dump(tts_deck, file)
+
+def generate_contained_obj(card_name, current_card_index, previous_card_index):
+    card_id = '{cur}{prev:02d}'.format(cur=current_card_index, prev=previous_card_index)
+    return {
+        'CardID': card_id,
+        'Name': "Card",
+        'Nickname': card_name,
+        'Transform': {
+            'posX': 0,
+            'posY': 0,
+            'posZ': 0,
+            'rotX': 0,
+            'rotY': 180,
+            'rotZ': 180,
+            'scaleX': TTS_SCALE_X,
+            'scaleY': TTS_SCALE_Y,
+            'scaleZ': TTS_SCALE_Z
+        }
+    }
+
+def generate_custom_deck_obj(card_image_url):
+    return {
+        'FaceURL': card_image_url,
+        'BackURL': "https://steamusercontent-a.akamaihd.net/ugc/2073388328677586509/478B51BE25275FD0AC2CFC48828F9FD7B9864526/",
+        'NumHeight': 1,
+        'NumWidth': 1,
+        'BackIsHidden': True
+    }
+
+def generate_tts_deck(count_by_name, id_to_custom_card):
+    previous_card_index = 0
+    current_card_index = 1
+    contained_obj_list = []
+    deck_ids = []
+    custom_deck = {}
+    for id, count in count_by_name.items():
+        for i in range(0, count):
+            contained_obj = generate_contained_obj(id_to_custom_card[id]['name'], current_card_index, previous_card_index)
+            card_image_url = id_to_custom_card[id]['image_uris']['en']
+            custom_deck_obj = generate_custom_deck_obj(card_image_url)
+            contained_obj_list.append(contained_obj)
+            deck_ids.append(contained_obj['CardID'])
+            custom_deck[str(current_card_index)] = custom_deck_obj
+            previous_card_index = current_card_index
+            current_card_index += 1
+    return {
+        'ObjectStates': [
+            {
+                'Name': "DeckCustom",
+                'ContainedObjects': contained_obj_list,
+                'DeckIDs': deck_ids,
+                'CustomDeck': custom_deck,
+                'Transform': {
+                    'posX': 0,
+                    'posY': 1,
+                    'posZ': 0,
+                    'rotX': 0,
+                    'rotY': 180,
+                    'rotZ': 180,
+                    'scaleX': TTS_SCALE_X,
+                    'scaleY': TTS_SCALE_Y,
+                    'scaleZ': TTS_SCALE_Z
+                }
+            }
+        ]
+    }
+
 card_evaluations_file = None
 boosters_per_player = None
 cards_per_booster = None
@@ -239,10 +353,18 @@ if __name__ == '__main__':
     cards_per_booster = int(args.cards_per_booster)
     set_card_colors = bool(args.set_card_colors)
     color_balance_packs = bool(args.color_balance_packs)
-    # process
-    id_to_dreamborn_name = read_id_to_dreamborn_name()
-    id_to_tts_card = read_id_to_tts_card(args.dreamborn_export_for_tabletop_sim)
-    id_to_api_card = read_or_fetch_id_to_api_card()
-    id_to_rating = read_id_to_rating()
-    custom_card_list = generate_custom_card_list(id_to_api_card, id_to_rating, id_to_tts_card, id_to_dreamborn_name)
-    write_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_name)
+
+    if args.draftmancer_deck_export:
+        id_to_custom_card = read_draftmancer_custom_cardlist()
+        count_by_name = read_draftmancer_export(args.draftmancer_deck_export)
+        tts_deck = generate_tts_deck(count_by_name, id_to_custom_card)
+        write_tts_deck_file(tts_deck)
+        print("wrote tts deck to: " + TTS_OUTPUT_PATH)
+    else:
+        # process
+        id_to_dreamborn_name = read_id_to_dreamborn_name()
+        id_to_tts_card = read_id_to_tts_card(args.dreamborn_export_for_tabletop_sim)
+        id_to_api_card = read_or_fetch_id_to_api_card()
+        id_to_rating = read_id_to_rating()
+        custom_card_list = generate_custom_card_list(id_to_api_card, id_to_rating, id_to_tts_card, id_to_dreamborn_name)
+        write_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_name)

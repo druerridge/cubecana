@@ -21,12 +21,3 @@ def process_json():
     tts_deck = create_template.generate_tts_deck(count_by_name, id_to_custom_card)
 
     return json.dumps(tts_deck)
-
-# @app.route('/draftmancer-to-tts/')
-# def draftmancer_to_tts():
-  
-#   print('I got clicked!')
-#   return 'Click.'
-
-if __name__ == '__main__':
-  app.run(debug=True)

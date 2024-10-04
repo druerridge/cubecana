@@ -1,109 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 <head>
-    <meta charset="utf-8">
-    <title>
-        Lorcana Cube Toolkit
-    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
     <style>
-        .column {
-  float: left;
-  width: 50%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.button:download-btn {
-    align-self: center;
-}
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .discord-link {
+            display: block;
+            margin-top: 50px;
+            font-size: 14px;
+            color: #7289da;
+            text-decoration: none;
+        }
+        .discord-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
-
 <body>
-    <div class="row">
-        <div class="column">
-            <h2>Your Draftmancer deck export</h2>
-            <textarea id="draftmancer-input-area" rows="45" cols="100">1 Alice - Growing Girl
-1 Rapunzel - Gifted Artist
-1 LeFou - Opportunistic Flunky</textarea>
-            <button id="post-btn">Convert</button>
-        </div>
-        <div class="column">
-            <h2>Your Tabletop Simulator deck</h2>
-            <p>Instructions:</p>
-            <ol>
-                <li>Press Download</li>
-                <li>Copy file to C:\Users\USERNAME\Documents\My Games\Tabletop Simulator\Saves\Saved Objects</li>
-                <li>In a Tabletop Simulator room:
-                    <ol>
-                        <li>Press "Objects" in the top left</li>
-                        <li>Click "Saved"</li>
-                        <li>Drag + drop the file onto the table!</li>
-                    </ol>
-            </ol>
-        <!-- <textarea id="tts-output-area" rows="45" cols="100">
-            json data will show up here
-        </textarea> -->
-    <button id="download-btn" disabled="true">Download</button>
-        </div>
-      </div> 
-    
+    <h1>Welcome to Our Home Page</h1>
+    <div>
+        <a href="to-draftmancer.html" class="button">Dreamborn -> Draftmancer</a>
+        <a href="to-tabletop-sim.html" class="button">Draftmancer -> Tabletop Simulator</a>
+        <a href="https://www.dropbox.com/scl/fo/qjgp4iv5c2kaxetpvft9f/ADd721en5FnrK4nlLgba-LM?rlkey=twujmqnrqkmwjvd2yk5x47hxr&e=3&dl=0" class="button">Lorcana Cube files</a>
+    </div>
+    <a href="https://discord.com/invite/your-discord-link" class="discord-link">Join our Discord</a>
 </body>
-<script type="text/javascript">
-    const convertButton = document.getElementById('post-btn');
-    // const ttsOutputArea = document.getElementById('tts-output-area');
-    const downloadButton = document.getElementById('download-btn');
-
-    // https://stackoverflow.com/questions/13405129/create-and-save-a-file-with-javascript
-    // Function to download data to a file
-    function download(data, filename, type) {
-        var file = new Blob([data], {type: type});
-        if (window.navigator.msSaveOrOpenBlob) // IE10+
-            window.navigator.msSaveOrOpenBlob(file, filename);
-        else { // Others
-            var a = document.createElement("a"),
-                    url = URL.createObjectURL(file);
-            a.href = url;
-            a.download = filename;
-            document.body.appendChild(a);
-            a.click();
-            setTimeout(function() {
-                document.body.removeChild(a);
-                window.URL.revokeObjectURL(url);  
-            }, 0); 
-        }
-    }
-
-    convertButton.addEventListener('click', async _ => {
-        const draftmancerInputArea = document.getElementById('draftmancer-input-area').value.trim();
-        var xhr = new XMLHttpRequest();
-        var url = "/draftmancer-to-tts/";
-        xhr.open("POST", url, true);
-        xhr.setRequestHeader("Content-Type", "application/json");
-        xhr.onreadystatechange = function () {
-            console.log("status: " + xhr.status);
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                console.log("responseText: " + xhr.responseText);
-                // ttsOutputArea.value = xhr.responseText;
-                // var json = JSON.parse(xhr.responseText);
-                // druDownload(xhr.responseText, "tts-cube-deck", "json");
-                downloadButton.addEventListener('click', async _ => {
-                    download(xhr.responseText, "tts-cube-deck.json", "json");
-                })
-                downloadButton.disabled = false;
-            } else {
-                console.log("status: " + xhr.status);
-            }
-        };
-        var data = JSON.stringify({ "draftmancer_export": draftmancerInputArea });
-        xhr.send(data);
-    }
-    );
-</script>
-
 </html>

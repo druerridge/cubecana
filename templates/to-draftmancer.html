@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card List Converter</title>
+    <title>LCC - Dreamborn to Draftmancer Converter</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,88 +16,131 @@
         button {
             margin-top: 10px;
         }
+        #errorText {
+            color: red;
+            font-weight: bold;
+            display: none;
+        }
     </style>
 </head>
 <body>
-    <h1>Dreamborn Cube Converter</h1>
-    <textarea id="cardList" placeholder="dreamborn.ink > your cube > export to TTS > open json file > paste contents here > press convert"></textarea>
-    <br>
-    <button id="convertButton">Convert</button>
-    <button id="downloadButton" disabled>Download</button>
+    <div id="errorText" style="color: red; display: none;" disabled>An error occurred. Please try again.</div>
+    <div style="display: flex; justify-content: space-between;">
+        <div style="width: 48%;">
+            <h1>TTS Export Converter</h1>
+            <p>Retains card versions (e.g. enchanteds)</p>
+            <textarea id="ttsInput" placeholder="dreamborn.ink > your cube > menu > export Copy to Clipboard > paste here"></textarea>
+            <br>
+            <button id="ttsConvertButton">Convert</button>
+            <button id="ttsDownloadButton" disabled>Download</button>
+        </div>
+        <div style="width: 48%;">
+            <h1>Card List Converter</h1>
+            <p>Suppports Ursula's Return Illumineer's Quest Cards</p>
+            <textarea id="cardListInput" placeholder="dreamborn.ink > your cube > menu > export to TTS > open json file > paste contents here > press convert
+
+1 Alice - Growing Girl
+1 Rapunzel - Gifted Artist
+1 LeFou - Opportunistic Flunky
+..."></textarea>
+            <br>
+            <button id="cardListConvertButton">Convert</button>
+            <button id="cardListDownloadButton" disabled>Download</button>
+        </div>
+    </div>
 
     <script>
-        // function convertCardList() {
-        //     const cardList = document.getElementById('cardList').value;
-        //     fetch('/convert-endpoint', {
-        //         method: 'POST',
-        //         headers: {
-        //             'Content-Type': 'application/json'
-        //         },
-        //         body: JSON.stringify({ cardList: cardList })
-        //     })
-        //     .then(response => response.text())
-        //     .then(data => {
-        //         const blob = new Blob([data], { type: 'text/plain' });
-        //         const url = URL.createObjectURL(blob);
-        //         const downloadButton = document.getElementById('downloadButton');
-        //         downloadButton.href = url;
-        //         downloadButton.download = 'custom-cube.draftmancer.txt';
-        //         downloadButton.disabled = false;
-        //     })
-        //     .catch(error => console.error('Error:', error));
-        // }
+        const ttsConvertButton = document.getElementById('ttsConvertButton');
+        const ttsDownloadButton = document.getElementById('ttsDownloadButton');
+        let cardListConvertButton = document.getElementById('cardListConvertButton');
+        const cardListDownloadButton = document.getElementById('cardListDownloadButton');
 
-        // function downloadFile() {
-        //     // This function is intentionally left blank as the download is handled by the browser
-        // }
-
-    const cardList = document.getElementById('cardList').value;
-    const convertButton = document.getElementById('convertButton');
-    const downloadButton = document.getElementById('downloadButton');
-
-    function download(data, filename, type) {
-        var file = new Blob([data], {type: type});
-        if (window.navigator.msSaveOrOpenBlob) // IE10+
-            window.navigator.msSaveOrOpenBlob(file, filename);
-        else { // Others
-            var a = document.createElement("a"),
-                    url = URL.createObjectURL(file);
-            a.href = url;
-            a.download = filename;
-            document.body.appendChild(a);
-            a.click();
-            setTimeout(function() {
-                document.body.removeChild(a);
-                window.URL.revokeObjectURL(url);  
-            }, 0); 
-        }
-    }
-
-    convertButton.addEventListener('click', async _ => {
-        const cardList = document.getElementById('cardList').value.trim();
-        var xhr = new XMLHttpRequest();
-        var url = "/dreamborn-to-draftmancer/";
-        xhr.open("POST", url, true);
-        xhr.setRequestHeader("Content-Type", "application/json");
-        xhr.onreadystatechange = function () {
-            console.log("status: " + xhr.status);
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                console.log("responseText: " + xhr.responseText);
-                // ttsOutputArea.value = xhr.responseText;
-                // var json = JSON.parse(xhr.responseText);
-                // druDownload(xhr.responseText, "tts-cube-deck", "json");
-                downloadButton.addEventListener('click', async _ => {
-                    download(xhr.responseText, "custom-cube.draftmancer.txt", "txt");
-                })
-                downloadButton.disabled = false;
-            } else {
-                console.log("status: " + xhr.status);
+        function download(data, filename, type) {
+            var file = new Blob([data], {type: type});
+            if (window.navigator.msSaveOrOpenBlob) // IE10+
+                window.navigator.msSaveOrOpenBlob(file, filename);
+            else { // Others
+                var a = document.createElement("a"),
+                        url = URL.createObjectURL(file);
+                a.href = url;
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+                setTimeout(function() {
+                    document.body.removeChild(a);
+                    window.URL.revokeObjectURL(url);  
+                }, 0); 
             }
-        };
-        var data = JSON.stringify({ "dreamborn_export": cardList });
-        xhr.send(data);
-    }
-    );
+        }
+
+        function showError(errorText) {
+            const errorTextElement = document.getElementById('errorText');
+            errorTextElement.innerText = errorText;
+            errorTextElement.style.display = 'block';
+            errorTextElement.style.disabled = false;
+        }
+
+        ttsConvertButton.addEventListener('click', async _ => {
+            const ttsInput = document.getElementById('ttsInput').value.trim();
+            var xhr = new XMLHttpRequest();
+            var url = "/dreamborn-to-draftmancer/";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.onreadystatechange = function () {
+                console.log("status: " + xhr.status);
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log("responseText: " + xhr.responseText);
+                    // ttsOutputArea.value = xhr.responseText;
+                    // var json = JSON.parse(xhr.responseText);
+                    // druDownload(xhr.responseText, "tts-cube-deck", "json");
+                    ttsDownloadButton.addEventListener('click', async _ => {
+                        download(xhr.responseText, "custom-cube.draftmancer.txt", "txt");
+                    })
+                    ttsDownloadButton.disabled = false;
+                }  else if (xhr.status === 404) {
+                    // console.log("status: " + xhr.status);
+                    showError("Error: " + xhr.responseText);
+                    console.log("Error: " + xhr.status);
+                } else {
+                    showError("status: " + xhr.status);
+                    console.log("status: " + xhr.status);
+                }
+            };
+            var data = JSON.stringify({ "dreamborn_export": ttsInput });
+            xhr.send(data);
+        }
+        );
+
+
+        cardListConvertButton.addEventListener('click', async _ => {
+            const ttsInput = document.getElementById('cardListInput').value.trim();
+            var xhr = new XMLHttpRequest();
+            var url = "/card-list-to-draftmancer/";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.onreadystatechange = function () {
+                console.log("status: " + xhr.status);
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log("responseText: " + xhr.responseText);
+                    // ttsOutputArea.value = xhr.responseText;
+                    // var json = JSON.parse(xhr.responseText);
+                    // druDownload(xhr.responseText, "tts-cube-deck", "json");
+                    cardListDownloadButton.addEventListener('click', async _ => {
+                        download(xhr.responseText, "custom-cube.draftmancer.txt", "txt");
+                    })
+                    cardListDownloadButton.disabled = false;
+                } else if (xhr.status === 404) {
+                    showError("Error: " + xhr.responseText);
+                    console.log("Error: " + xhr.responseText);
+                } else {
+                    showError("status: " + xhr.status);
+                    console.log("status: " + xhr.status);
+                }
+            };
+            var data = JSON.stringify({ "card_list": ttsInput });
+            xhr.send(data);
+        }
+        );
     </script>
 </body>
 </html>

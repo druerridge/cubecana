@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, Response
 import json
 import create_template
 app = Flask(__name__)
@@ -15,20 +15,33 @@ def to_tabletop_sim():
 def to_draftmancer():
   return render_template('to-draftmancer.html')
 
-@app.route('/draftmancer-to-tts/', methods=['POST'])
-def process_json():
-  print("request")
+
+@app.route('/card-list-to-draftmancer/', methods=['POST'])
+def card_list_to_draftmancer():
   data = request.get_data()
   json_data = json.loads(request.data)
   print(data)
   print(json_data)
+  card_list = json_data['card_list']
+  print("cardList")
+  print(card_list)
+  settings = {
+    'boosters_per_player': 4,
+    'card_list_name': "custom_cube",
+    'cards_per_booster': 12,
+    'set_card_colors': False,
+    'color_balance_packs': False,
+  }
 
-  lines = json_data['draftmancer_export'].split('\n')
-  count_by_name = create_template.count_by_name_from(lines)
-  id_to_custom_card = create_template.read_draftmancer_custom_cardlist()
-  tts_deck = create_template.generate_tts_deck(count_by_name, id_to_custom_card)
-
-  return json.dumps(tts_deck)
+  settings = create_template.Settings(
+        boosters_per_player=4,
+        card_list_name="custom_cube",
+        cards_per_booster=12,
+        set_card_colors=False,
+        color_balance_packs=False
+    )
+  draftmancer_file = create_template.dreamborn_card_list_to_draftmancer(card_list, create_template.DEFAULT_CARD_EVALUATIONS_FILE, settings)
+  return draftmancer_file
 
 @app.route('/dreamborn-to-draftmancer/', methods=['POST'])
 def handle_dreamborn_to_draftmancer():
@@ -55,5 +68,25 @@ def handle_dreamborn_to_draftmancer():
         set_card_colors=False,
         color_balance_packs=False
     )
-  draftmancer_file = create_template.dreamborn_tts_to_draftmancer(id_to_tts_card, "DraftBots\\FrankKarstenEvaluations-HighPower.csv", settings)
+  draftmancer_file = create_template.dreamborn_tts_to_draftmancer(id_to_tts_card, create_template.DEFAULT_CARD_EVALUATIONS_FILE, settings)
   return draftmancer_file
+
+@app.route('/draftmancer-to-tts/', methods=['POST'])
+def process_json():
+  print("request")
+  data = request.get_data()
+  json_data = json.loads(request.data)
+  print(data)
+  print(json_data)
+
+  lines = json_data['draftmancer_export'].split('\n')
+  count_by_name = create_template.id_to_count_from(lines)
+  id_to_custom_card = create_template.read_draftmancer_custom_cardlist()
+  tts_deck = create_template.generate_tts_deck(count_by_name, id_to_custom_card)
+
+  return json.dumps(tts_deck)
+
+@app.errorhandler(create_template.UnidentifiedCardError)
+def handle_foo_exception(error):
+    response = Response(error.message, 404)
+    return response

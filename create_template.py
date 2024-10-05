@@ -19,6 +19,7 @@ import re
 import csv
 
 CACHED_API_DATA_FILEPATH = 'api_data_cache.json'
+DEFAULT_CARD_EVALUATIONS_FILE = "DraftBots\\FrankKarstenEvaluations-HighPower.csv"
 
 parser = argparse.ArgumentParser(
                     prog='ProgramName',
@@ -26,7 +27,7 @@ parser = argparse.ArgumentParser(
                     epilog='Text at the bottom of help')
 
 parser.add_argument('dreamborn_export_for_tabletop_sim', help="file path to a .deck export in Tabletop Sim format from dreamborn.ink deck of the cube e.g. example-cube.json or C:\\Users\\dru\\Desktop\\deck.json")
-parser.add_argument('--card_evaluations_file', default="DraftBots\\FrankKarstenEvaluations-HighPower.csv", help="relative path to a .csv file containing card name -> 0-5 card rating (power in a vacuum). default: \"DraftBots\\\\FrankKarstenEvaluations-HighPower.csv\"")
+parser.add_argument('--card_evaluations_file', default=DEFAULT_CARD_EVALUATIONS_FILE, help="relative path to a .csv file containing card name -> 0-5 card rating (power in a vacuum). default: \"DraftBots\\\\FrankKarstenEvaluations-HighPower.csv\"")
 parser.add_argument('--boosters_per_player', default=4)
 parser.add_argument('--cards_per_booster', default=12)
 parser.add_argument('--name', default="custom_card_list", help="Sets name of both the output file and the set/cube list as it appears in draftmancer")
@@ -169,6 +170,27 @@ lorcana_rarity_to_draftmancer_rarity =  {
 def to_draftmancer_rarity(lorcana_rarity):
     return lorcana_rarity_to_draftmancer_rarity[lorcana_rarity]
 
+def generate_custom_card_list_non_tts(id_to_api_card, id_to_rating, id_to_count, id_to_dreamborn_name):
+    custom_card_list = []
+    for id in id_to_count:
+        card = id_to_card[id]
+        ink_cost = card['Cost']
+        cannonical_name = canonical_name_from_id(id, id_to_dreamborn_name, None) # only accept cannonical names
+        custom_card = {
+            'name': cannonical_name, 
+            'mana_cost': f'{{{ink_cost}}}',
+            'type': 'Instant',
+            'image_uris': {
+                'en': id_to_tts_card[id]['image_uri']
+            },
+            'rating': name_to_rating[id],
+            'rarity': to_draftmancer_rarity(card['Rarity']),
+        }
+        if (set_card_colors):
+            custom_card['colors'] = [to_draftmancer_color(card['Color'])]
+        custom_card_list.append(custom_card)
+    return custom_card_list
+
 def generate_custom_card_list(id_to_card, name_to_rating, id_to_tts_card, id_to_dreamborn_name):
     custom_card_list = []
     for id in id_to_tts_card:
@@ -233,8 +255,8 @@ def generate_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_
         lines.append(line_str)
     return '\n'.join(lines)
 
-def read_draftmancer_custom_cardlist():
-    with open('all_cards_cube.draftmancer.txt', encoding='utf8') as f:
+def read_draftmancer_custom_cardlist(file_path='all_cards_cube.draftmancer.txt'):
+    with open(file_path, encoding='utf8') as f:
         # custom_card_string = "{\"CustomCards\":"
         custom_card_string = ""
         read_custom_cards = False
@@ -251,23 +273,23 @@ def read_draftmancer_custom_cardlist():
                 read_custom_cards = True
         custom_cards_json = json.loads(custom_card_string)
         
-        name_to_custom_card = {}
+        id_to_custom_card = {}
         for custom_card in custom_cards_json:
-            name_to_custom_card[to_id(custom_card['name'])] = custom_card
-        return name_to_custom_card
+            id_to_custom_card[to_id(custom_card['name'])] = custom_card
+        return id_to_custom_card
     return None
 
 def read_draftmancer_export(draftmancer_deck_export_file):
     with open(draftmancer_deck_export_file, encoding='utf8') as file:
         lines = file.readlines()
-    return count_by_name_from(lines)
+    return id_to_count_from(lines)
 
-def count_by_name_from(lines):
-    count_by_name = defaultdict(int)
+def id_to_count_from(lines):
+    id_to_count = defaultdict(int)
     for line in lines:
         count, name = line.rstrip().split(' ', 1)
-        count_by_name[to_id(name)] += int(count)
-    return count_by_name
+        id_to_count[to_id(name)] += int(count)
+    return id_to_count
 
 TTS_SCALE_X = 1.2
 TTS_SCALE_Y = 1
@@ -306,13 +328,13 @@ def generate_custom_deck_obj(card_image_url):
         'BackIsHidden': True
     }
 
-def generate_tts_deck(count_by_name, id_to_custom_card):
+def generate_tts_deck(id_to_count, id_to_custom_card):
     previous_card_index = 0
     current_card_index = 1
     contained_obj_list = []
     deck_ids = []
     custom_deck = {}
-    for id, count in count_by_name.items():
+    for id, count in id_to_count.items():
         for i in range(0, count):
             contained_obj = generate_contained_obj(id_to_custom_card[id]['name'], current_card_index, previous_card_index)
             card_image_url = id_to_custom_card[id]['image_uris']['en']
@@ -355,6 +377,29 @@ def dreamborn_tts_to_draftmancer_from_file(dreamborn_export_for_tabletop_sim, ca
     id_to_tts_card = read_id_to_tts_card_from_filesystem(dreamborn_export_for_tabletop_sim)
     return dreamborn_tts_to_draftmancer(id_to_tts_card, card_evaluations_file, settings)
 
+def dreamborn_card_list_to_draftmancer(card_list_input, card_evaluations_file, settings):
+    card_list_lines = card_list_input.split('\n')
+    id_to_count_input = id_to_count_from(card_list_lines)
+    return add_card_list_to_draftmancer_custom_cards(id_to_count_input, "simple_template.draftmancer.txt")
+
+class UnidentifiedCardError(Exception):
+    def __init__(self, message):
+        self.message = message
+        super().__init__(self.message)
+
+def add_card_list_to_draftmancer_custom_cards(id_to_count_input, draftmancer_custom_card_file):
+    file_contents = ""
+    with open(draftmancer_custom_card_file, encoding='utf8') as file:
+        file_contents = '\n'.join(file.readlines())
+    id_to_custom_card = read_draftmancer_custom_cardlist(draftmancer_custom_card_file)
+    for id in id_to_count_input:
+        try:
+            canonical_name = id_to_custom_card[id]['name']
+            file_contents += f"\n{id_to_count_input[id]} {canonical_name}"
+        except KeyError:
+            raise UnidentifiedCardError(f"Unable to identify card with id {id} ")
+    return file_contents
+
 def dreamborn_tts_to_draftmancer(id_to_tts_card, card_evaluations_file, settings):
     id_to_dreamborn_name = read_id_to_dreamborn_name()
     id_to_api_card = read_or_fetch_id_to_api_card()
@@ -385,10 +430,10 @@ if __name__ == '__main__':
 
     if args.draftmancer_deck_export:
         id_to_custom_card = read_draftmancer_custom_cardlist()
-        count_by_name = read_draftmancer_export(args.draftmancer_deck_export)
-        tts_deck = generate_tts_deck(count_by_name, id_to_custom_card)
+        id_to_count = read_draftmancer_export(args.draftmancer_deck_export)
+        tts_deck = generate_tts_deck(id_to_count, id_to_custom_card)
         write_tts_deck_file(tts_deck)
         print("wrote tts deck to: " + TTS_OUTPUT_PATH)
     else:
         draftmancer_file_string = dreamborn_tts_to_draftmancer_from_file(args.dreamborn_export_for_tabletop_sim, card_evaluations_file, settings)
-        write_draftmancer_file(draftmancer_file_string)
+        write_draftmancer_file(draftmancer_file_string, args.name)

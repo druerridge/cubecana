@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Lorcana Cube Club - Home</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 50px;
+            background-image: url('static/lorcana-cube-club-bg2.jpeg');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            color: white; /* White text for better readability */
         }
         .button {
             display: inline-block;
@@ -27,22 +31,60 @@
         .discord-link {
             display: block;
             margin-top: 50px;
-            font-size: 14px;
-            color: #7289da;
+            font-size: 16px;
+            color: #ffffff;
             text-decoration: none;
+            background-color: #7289da;
+            padding: 10px 20px;
+            border-radius: 5px;
         }
         .discord-link:hover {
             text-decoration: underline;
+            background-color: #5b6eae;
+            justify-content: center;
+            display: flex;
+            width: 100%;
+            bottom: 20px;
+            position: fixed;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .column {
+            flex: 1;
+            padding: 10px;
+        }
+        .column h2 {
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <h1>Welcome to Our Home Page</h1>
-    <div>
-        <a href="to-draftmancer.html" class="button">Dreamborn -> Draftmancer</a>
-        <a href="to-tabletop-sim.html" class="button">Draftmancer -> Tabletop Simulator</a>
-        <a href="https://www.dropbox.com/scl/fo/qjgp4iv5c2kaxetpvft9f/ADd721en5FnrK4nlLgba-LM?rlkey=twujmqnrqkmwjvd2yk5x47hxr&e=3&dl=0" class="button">Lorcana Cube files</a>
+    <div class="container">
+        <div class="column">
+            <h2>Design</h2>
+            
+            <h4>Resources</h4>
+            <a href="http://dreamborn.ink/">Dreamborn.ink</a><br />
+            <a href="https://docs.google.com/spreadsheets/d/1IYJiFGUvJLXCichwQfXh1j8RV6RR5YYq9kMHAY56t_g/edit?gid=0#gid=0">Archetype Support Matrix</a><br />
+            <a href="https://lorcast.com/">Lorecast</a> - Excellent card search tool<br />
+            <h4>Articles</h4>
+            <a href="https://www.reddit.com/r/Lorcana/comments/1egsno5/making_the_antimeta_cube/">Making The Anti-Meta Cube</a> <br />
+            <a href="https://riptidelab.com/forum/threads/archetype-shapes.2022/">Archetype Shapes (MTG)</a><br />
+        </div>
+        <div class="column">
+            <h2>Draft</h2>
+            <a href="to-draftmancer.html" class="button">Dreamborn -> Draftmancer</a>
+        </div>
+        <div class="column">
+            <h2>Play</h2>
+            <a href="to-tabletop-sim.html" class="button">Draftmancer -> Tabletop Simulator</a><br />
+            <a href="https://www.dropbox.com/scl/fo/qjgp4iv5c2kaxetpvft9f/ADd721en5FnrK4nlLgba-LM?rlkey=twujmqnrqkmwjvd2yk5x47hxr&e=3&dl=0" class="button">Lorcana Cube files</a>
+        </div>
     </div>
-    <a href="https://discord.com/invite/your-discord-link" class="discord-link">Join our Discord</a>
+    <a href="https://discord.gg/Y4WyY6rMBk" class="discord-link">Join #cube-chat on the Fortyborn Discord</a>
 </body>
 </html>

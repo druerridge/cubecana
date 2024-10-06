@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LCC - Dreamborn to Draftmancer Converter</title>
     <style>
+        header {
+            text-align: left;
+        }
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            text-align: center;
+            margin-top: 50px;
+            background-image: url('static/lorcana-cube-club-bg2.jpeg');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            color: white; /* White text for better readability */
         }
         textarea {
             width: 100%;
@@ -24,6 +33,11 @@
     </style>
 </head>
 <body>
+    <header style="height: 100px; overflow: hidden;">
+        <a href="/">
+            <img src="{{ url_for('static', filename='LCC-Cube-1.png') }}" alt="Home" style="height: 100%;">
+        </a>
+    </header>
     <div id="errorText" style="color: red; display: none;" disabled>An error occurred. Please try again.</div>
     <div style="display: flex; justify-content: space-between;">
         <div style="width: 48%;">
@@ -101,7 +115,7 @@
                     // console.log("status: " + xhr.status);
                     showError("Error: " + xhr.responseText);
                     console.log("Error: " + xhr.status);
-                } else {
+                } else if (xhr.status != 200) {
                     showError("status: " + xhr.status);
                     console.log("status: " + xhr.status);
                 }
@@ -132,7 +146,7 @@
                 } else if (xhr.status === 404) {
                     showError("Error: " + xhr.responseText);
                     console.log("Error: " + xhr.responseText);
-                } else {
+                } else if (xhr.status != 200) {
                     showError("status: " + xhr.status);
                     console.log("status: " + xhr.status);
                 }

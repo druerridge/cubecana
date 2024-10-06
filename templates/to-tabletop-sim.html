@@ -7,24 +7,57 @@
         Lorcana Cube Toolkit
     </title>
     <style>
+        header {
+            text-align: left;
+        }
         .column {
-  float: left;
-  width: 50%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.button:download-btn {
-    align-self: center;
-}
+            float: left;
+            width: 50%;
+        }
+        .download-instrutions {
+            text-align: left;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-image: url('static/lorcana-cube-club-bg2.jpeg');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            color: white; /* White text for better readability */
+        }
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        .button:disabled {
+            background-color: #888; /* Gray */
+            cursor: not-allowed;
+        }
     </style>
 </head>
 
 <body>
+    <header style="height: 100px; overflow: hidden;">
+        <a href="/">
+            <img src="{{ url_for('static', filename='LCC-Cube-1.png') }}" alt="Home" style="height: 100%;">
+        </a>
+    </header>
     <div class="row">
         <div class="column">
             <h2>Your Draftmancer deck export</h2>
@@ -32,32 +65,30 @@
 1 Rapunzel - Gifted Artist
 1 LeFou - Opportunistic Flunky
 ..."></textarea>
-            <button id="post-btn">Convert</button>
+            <button id="post-btn" class="button">Convert</button>
         </div>
         <div class="column">
             <h2>Your Tabletop Simulator deck</h2>
-            <p>Instructions:</p>
-            <ol>
-                <li>Press Download</li>
-                <li>Copy file to C:\Users\USERNAME\Documents\My Games\Tabletop Simulator\Saves\Saved Objects</li>
-                <li>In a Tabletop Simulator room:
-                    <ol>
-                        <li>Press "Objects" in the top left</li>
-                        <li>Click "Saved"</li>
-                        <li>Drag + drop the file onto the table!</li>
-                    </ol>
-            </ol>
-        <!-- <textarea id="tts-output-area" rows="45" cols="100">
-            json data will show up here
-        </textarea> -->
-    <button id="download-btn" disabled="true">Download</button>
+            <div class="download-instrutions">
+                <p>Instructions:</p>
+                <ol>
+                    <li>Press Download</li>
+                    <li>Copy file to C:\Users\USERNAME\Documents\My Games\Tabletop Simulator\Saves\Saved Objects</li>
+                    <li>In a Tabletop Simulator room:
+                        <ol>
+                            <li>Press "Objects" in the top left</li>
+                            <li>Click "Saved"</li>
+                            <li>Drag + drop the file onto the table!</li>
+                        </ol>
+                </ol>    
+            </div>
+            <button id="download-btn" class="button" disabled="true">Download</button>
         </div>
-      </div> 
+    </div> 
     
 </body>
 <script type="text/javascript">
     const convertButton = document.getElementById('post-btn');
-    // const ttsOutputArea = document.getElementById('tts-output-area');
     const downloadButton = document.getElementById('download-btn');
 
     // https://stackoverflow.com/questions/13405129/create-and-save-a-file-with-javascript
@@ -90,9 +121,6 @@
             console.log("status: " + xhr.status);
             if (xhr.readyState === 4 && xhr.status === 200) {
                 console.log("responseText: " + xhr.responseText);
-                // ttsOutputArea.value = xhr.responseText;
-                // var json = JSON.parse(xhr.responseText);
-                // druDownload(xhr.responseText, "tts-cube-deck", "json");
                 downloadButton.addEventListener('click', async _ => {
                     download(xhr.responseText, "tts-cube-deck.json", "json");
                 })
@@ -103,8 +131,7 @@
         };
         var data = JSON.stringify({ "draftmancer_export": draftmancerInputArea });
         xhr.send(data);
-    }
-    );
+    });
 </script>
 
 </html>

@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorcana Cube Club - Home</title>
     <style>
+        header {
+            text-align: left;
+        }
         body {
             font-family: Arial, sans-serif;
             text-align: center;
@@ -62,28 +66,39 @@
     </style>
 </head>
 <body>
+    <header style="height: 100px; overflow: hidden;">
+        <a href="/">
+            <img src="{{ url_for('static', filename='LCC-Cube-1.png') }}" alt="Home" style="height: 100%;">
+        </a>
+    </header>
     <h1>Welcome to Our Home Page</h1>
     <div class="container">
         <div class="column">
-            <h2>Design</h2>
-            
-            <h4>Resources</h4>
+            <h2>1. Build a Lorcana Cube</h2>
+            <a href="dreamborn.ink" class="button">on Dreamborn.ink</a>
+
+            <!-- <h4>Resources</h4>
             <a href="http://dreamborn.ink/">Dreamborn.ink</a><br />
             <a href="https://docs.google.com/spreadsheets/d/1IYJiFGUvJLXCichwQfXh1j8RV6RR5YYq9kMHAY56t_g/edit?gid=0#gid=0">Archetype Support Matrix</a><br />
             <a href="https://lorcast.com/">Lorecast</a> - Excellent card search tool<br />
             <h4>Articles</h4>
             <a href="https://www.reddit.com/r/Lorcana/comments/1egsno5/making_the_antimeta_cube/">Making The Anti-Meta Cube</a> <br />
-            <a href="https://riptidelab.com/forum/threads/archetype-shapes.2022/">Archetype Shapes (MTG)</a><br />
+            <a href="https://riptidelab.com/forum/threads/archetype-shapes.2022/">Archetype Shapes (MTG)</a><br /> -->
         </div>
         <div class="column">
-            <h2>Draft</h2>
+            <h2>2. Draft it Online</h2>
+            ...against bots or your friends on <a href="draftmancer.com">draftmancer.com</a><br />
             <a href="to-draftmancer.html" class="button">Dreamborn -> Draftmancer</a>
         </div>
         <div class="column">
-            <h2>Play</h2>
+            <h2>3. Play it</h2>
+            ...against friends on Tabletop Simulator <br />
             <a href="to-tabletop-sim.html" class="button">Draftmancer -> Tabletop Simulator</a><br />
-            <a href="https://www.dropbox.com/scl/fo/qjgp4iv5c2kaxetpvft9f/ADd721en5FnrK4nlLgba-LM?rlkey=twujmqnrqkmwjvd2yk5x47hxr&e=3&dl=0" class="button">Lorcana Cube files</a>
         </div>
+    </div>
+    <div>
+        <p>Grab a pre-built cube and give it a try!</p>
+        <a href="https://www.dropbox.com/scl/fo/qjgp4iv5c2kaxetpvft9f/ADd721en5FnrK4nlLgba-LM?rlkey=twujmqnrqkmwjvd2yk5x47hxr&e=3&dl=0" class="button">Lorcana Cubes</a>
     </div>
     <a href="https://discord.gg/Y4WyY6rMBk" class="discord-link">Join #cube-chat on the Fortyborn Discord</a>
 </body>

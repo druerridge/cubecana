@@ -42,14 +42,23 @@
             padding: 10px 20px;
             border-radius: 5px;
         }
+        .cube-club-link {
+            display: block;
+            margin-top: 50px;
+            font-size: 16px;
+            color: #ffffff;
+            text-decoration: none;
+            background-color: #5a6fb2; /* Slightly different color */
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
         .discord-link:hover {
+            background-color: #677bc4;
             text-decoration: underline;
-            background-color: #5b6eae;
-            justify-content: center;
-            display: flex;
-            width: 100%;
-            bottom: 20px;
-            position: fixed;
+        }
+        .cube-club-link:hover {
+            background-color: #677bc4;
+            text-decoration: underline;
         }
         .container {
             display: flex;
@@ -71,7 +80,8 @@
             <img src="{{ url_for('static', filename='LCC-Cube-1.png') }}" alt="Home" style="height: 100%;">
         </a>
     </header>
-    <h1>Welcome to Our Home Page</h1>
+    <h1>Lorcana Cube Toolkit</h1>
+    <p>by Lorcana Cube Club</p>
     <div class="container">
         <div class="column">
             <h2>1. Build a Lorcana Cube</h2>
@@ -101,5 +111,6 @@
         <a href="https://www.dropbox.com/scl/fo/qjgp4iv5c2kaxetpvft9f/ADd721en5FnrK4nlLgba-LM?rlkey=twujmqnrqkmwjvd2yk5x47hxr&e=3&dl=0" class="button">Lorcana Cubes</a>
     </div>
     <a href="https://discord.gg/Y4WyY6rMBk" class="discord-link">Join #cube-chat on the Fortyborn Discord</a>
+    <a href="https://discord.gg/Y4WyY6rMBk" class="cube-club-link"><b>Lorcana Cube Club</b> drafts a different cube every other Sunday at 3pm PT / 6pm ET in the Fortyorn discord</a>
 </body>
 </html>

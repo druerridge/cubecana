@@ -17,6 +17,7 @@ import json
 from pathlib import Path
 import re
 import csv
+from lcc_error import LccError, UnidentifiedCardError
 
 CACHED_API_DATA_FILEPATH = 'api_data_cache.json'
 DEFAULT_CARD_EVALUATIONS_FILE = "DraftBots\\FrankKarstenEvaluations-HighPower.csv"
@@ -287,8 +288,12 @@ def read_draftmancer_export(draftmancer_deck_export_file):
 def id_to_count_from(lines):
     id_to_count = defaultdict(int)
     for line in lines:
-        count, name = line.rstrip().split(' ', 1)
-        id_to_count[to_id(name)] += int(count)
+        string_count, name = line.rstrip().split(' ', 1)
+        try:
+            int_count = int(string_count)
+            id_to_count[to_id(name)] += int_count
+        except ValueError:
+            raise LccError("Missing count or name in line:\n " + line + "\nShould look like:\n1 Elsa - Snow Queen", 400)
     return id_to_count
 
 TTS_SCALE_X = 1.2
@@ -381,11 +386,6 @@ def dreamborn_card_list_to_draftmancer(card_list_input, card_evaluations_file, s
     card_list_lines = card_list_input.split('\n')
     id_to_count_input = id_to_count_from(card_list_lines)
     return add_card_list_to_draftmancer_custom_cards(id_to_count_input, "simple_template.draftmancer.txt")
-
-class UnidentifiedCardError(Exception):
-    def __init__(self, message):
-        self.message = message
-        super().__init__(self.message)
 
 def add_card_list_to_draftmancer_custom_cards(id_to_count_input, draftmancer_custom_card_file):
     file_contents = ""

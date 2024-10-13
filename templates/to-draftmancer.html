@@ -185,62 +185,41 @@
         </div>
     </div>
 
+    <script src="{{ url_for('static', filename='js/shared.js') }}"></script>
     <script>
-        const ttsConvertButton = document.getElementById('ttsConvertButton');
+        
+        const fromTtsConvertButton = document.getElementById('ttsConvertButton');
         const ttsDownloadButton = document.getElementById('ttsDownloadButton');
-        let cardListConvertButton = document.getElementById('cardListConvertButton');
+        let fromCardListConvertButton = document.getElementById('cardListConvertButton');
         const cardListDownloadButton = document.getElementById('cardListDownloadButton');
         let ttsInput = null;
 
-        function download(data, filename, type) {
-            var file = new Blob([data], {type: type});
-            if (window.navigator.msSaveOrOpenBlob) // IE10+
-                window.navigator.msSaveOrOpenBlob(file, filename);
-            else { // Others
-                var a = document.createElement("a"),
-                        url = URL.createObjectURL(file);
-                a.href = url;
-                a.download = filename;
-                document.body.appendChild(a);
-                a.click();
-                setTimeout(function() {
-                    document.body.removeChild(a);
-                    window.URL.revokeObjectURL(url);  
-                }, 0); 
-            }
-        }
+        fromTtsConvertButton.addEventListener('click', async _ => {
+            hideError();
+            ttsDownloadButton.disabled = true;
 
-        function showError(errorText) {
-            const errorTextElement = document.getElementById('errorText');
-            errorTextElement.innerText = errorText;
-            errorTextElement.style.display = 'block';
-            errorTextElement.style.disabled = false;
-        }
-
-        ttsConvertButton.addEventListener('click', async _ => {
-            // const ttsInput = document.getElementById('ttsInput').value.trim();
             var xhr = new XMLHttpRequest();
             var url = "/dreamborn-to-draftmancer/";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
             xhr.onreadystatechange = function () {
-                console.log("status: " + xhr.status);
-                if (xhr.readyState === 4 && xhr.status === 200) {
+                if (xhr.readyState !== 4) {
+                    return;
+                }
+                
+                // success
+                if (xhr.status === 200) {
                     console.log("responseText: " + xhr.responseText);
-                    // ttsOutputArea.value = xhr.responseText;
-                    // var json = JSON.parse(xhr.responseText);
-                    // druDownload(xhr.responseText, "tts-cube-deck", "json");
                     ttsDownloadButton.addEventListener('click', async _ => {
                         download(xhr.responseText, "custom-cube.draftmancer.txt", "txt");
                     })
                     ttsDownloadButton.disabled = false;
-                }  else if (xhr.status === 404) {
-                    // console.log("status: " + xhr.status);
-                    showError("Error: " + xhr.responseText);
-                    console.log("Error: " + xhr.status);
-                } else if (xhr.status != 200) {
-                    showError("status: " + xhr.status);
-                    console.log("status: " + xhr.status);
+                    return;
+                } 
+
+                // error
+                if (xhr.status != 200) {
+                    handleNon200Response(xhr);
                 }
             };
             var data = JSON.stringify({ "dreamborn_export": ttsInput });
@@ -248,29 +227,33 @@
         }
         );
 
-        cardListConvertButton.addEventListener('click', async _ => {
+        fromCardListConvertButton.addEventListener('click', async _ => {
+            hideError();
+            cardListDownloadButton.disabled = true;
+
             const cardListInput = document.getElementById('cardListInput').value.trim();
             var xhr = new XMLHttpRequest();
             var url = "/card-list-to-draftmancer/";
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
             xhr.onreadystatechange = function () {
-                console.log("status: " + xhr.status);
-                if (xhr.readyState === 4 && xhr.status === 200) {
+                if (xhr.readyState !== 4) {
+                    return;
+                }
+                
+                // success
+                if (xhr.status === 200) {
                     console.log("responseText: " + xhr.responseText);
-                    // ttsOutputArea.value = xhr.responseText;
-                    // var json = JSON.parse(xhr.responseText);
-                    // druDownload(xhr.responseText, "tts-cube-deck", "json");
                     cardListDownloadButton.addEventListener('click', async _ => {
                         download(xhr.responseText, "custom-cube.draftmancer.txt", "txt");
-                    })
+                    });
                     cardListDownloadButton.disabled = false;
-                } else if (xhr.status === 404) {
-                    showError("Error: " + xhr.responseText);
-                    console.log("Error: " + xhr.responseText);
-                } else if (xhr.status != 200) {
-                    showError("status: " + xhr.status);
-                    console.log("status: " + xhr.status);
+                    return;
+                } 
+
+                // error
+                if (xhr.status != 200) {
+                    handleNon200Response(xhr);
                 }
             };
             var data = JSON.stringify({ "card_list": cardListInput });

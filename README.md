@@ -1,3 +1,6 @@
+This codebase now includes the code for the website [stopthief.pythonanywhere.com](https://stopthief.pythonanywhere.com/) which includes most of the functionality described below and more in a more user-friendly format! I recommend you start there, and come back if you feel you need more.
+
+
 I think I just created the fastest, easiest way to draft Lorcana online. If there is an easier or faster way to draft, please let me know at zacharysmith4989@gmail.com !
 
 A video tutorial on how to draft as either a non-host participant or a host: https://www.youtube.com/watch?v=lm1xPenIKQg

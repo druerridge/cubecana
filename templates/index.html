@@ -63,6 +63,16 @@
             padding: 10px 20px;
             border-radius: 5px;
         }
+        a {
+            color: #ffcc00; /* Bright yellow for better visibility */
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #ffffff; /* White on hover for contrast */
+        }
+        a:visited:not(.button) {
+            color: #cc9900;
+        }
     </style>
 </head>
 <body>
@@ -98,6 +108,7 @@
         <div class="column">
             <h2>3. Play it</h2>
             ...against friends on Tabletop Simulator <br />
+            ...or bots on <a href="https://www.inktable.net/">inktable.net</a><br />
             <a href="to-tabletop-sim.html" class="button">Draftmancer -> Tabletop Simulator</a><br />
             <img src="{{ url_for('static', filename='tts_play_image.png') }}" alt="Play Image" style="width: 90%; margin-top: 20px;">
         </div>

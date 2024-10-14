@@ -20,7 +20,7 @@ import csv
 from lcc_error import LccError, UnidentifiedCardError
 
 CACHED_API_DATA_FILEPATH = 'api_data_cache.json'
-DEFAULT_CARD_EVALUATIONS_FILE = "DraftBots\\FrankKarstenEvaluations-HighPower.csv"
+DEFAULT_CARD_EVALUATIONS_FILE = "DraftBots/FrankKarstenEvaluations-HighPower.csv"
 
 parser = argparse.ArgumentParser(
                     prog='ProgramName',

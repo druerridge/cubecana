@@ -63,7 +63,7 @@
         <div class="column">
             <h2>Your Draftmancer deck export</h2>
             <textarea id="draftmancer-input-area" rows="45" cols="100" placeholder="1 Alice - Growing Girl
-1 Rapunzel - Gifted Artist
+1 Let it Go
 1 LeFou - Opportunistic Flunky
 ..."></textarea>
         </div>
@@ -74,7 +74,7 @@
                 <ol>
                     <li><b>Draft</b> + build your deck on draftmancer.com</li>
                     <li>On draftmancer, click Export > Card Names</li>
-                    <li>Paste in the text box then press 'convert', then 'download'</li>
+                    <li>Paste in the text box then press 'convert' to download</li>
                     <li>Copy downloaded file to <br />C:\Users\USERNAME\Documents\My Games\Tabletop Simulator\Saves\Saved Objects</li>
                     <li>In a Tabletop Simulator room:
                         <ol>
@@ -84,8 +84,7 @@
                         </ol>
                 </ol>    
             </div>
-            <button id="post-btn" class="button">Convert</button>
-            <button id="download-btn" class="button" disabled="true">Download</button>
+            <button id="post-btn" class="button" disabled>Convert</button>
         </div>
     </div> 
     
@@ -93,12 +92,15 @@
 <script src="{{ url_for('static', filename='js/shared.js') }}"></script>
 <script type="text/javascript">
     const convertButton = document.getElementById('post-btn');
-    const downloadButton = document.getElementById('download-btn');
     const errorTextElement = document.getElementById('errorText');
+    const draftmancerInputArea = document.getElementById('draftmancer-input-area');
+
+    draftmancerInputArea.addEventListener('input', () => {
+        convertButton.disabled = draftmancerInputArea.value.trim().length === 0;
+    });
 
     convertButton.addEventListener('click', async _ => {
         hideError();
-        const draftmancerInputArea = document.getElementById('draftmancer-input-area').value.trim();
         var xhr = new XMLHttpRequest();
         var url = "/draftmancer-to-tts/";
         xhr.open("POST", url, true);
@@ -111,10 +113,7 @@
             // success
             if (xhr.status === 200) {
                 console.log("responseText: " + xhr.responseText);
-                downloadButton.addEventListener('click', async _ => {
-                    download(xhr.responseText, "tts-cube-deck.json", "json");
-                })
-                downloadButton.disabled = false;
+                download(xhr.responseText, "tts-cube-deck.json", "json");
                 return;
             } 
 
@@ -123,7 +122,7 @@
                 handleNon200Response(xhr);
             }
         };
-        var data = JSON.stringify({ "draftmancer_export": draftmancerInputArea });
+        var data = JSON.stringify({ "draftmancer_export": draftmancerInputArea.value.trim() });
         xhr.send(data);
     });
 </script>

@@ -24,6 +24,7 @@ function showError(errorText) {
     errorTextElement.innerText = errorText;
     errorTextElement.style.display = 'block';
     errorTextElement.style.disabled = false;
+    console.error(errorText);
 }
 
 function hideError() {

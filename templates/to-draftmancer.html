@@ -44,6 +44,13 @@
             font-weight: bold;
             display: none;
         }
+        a {
+            color: #ffcc00; /* Bright yellow for better visibility */
+            text-decoration: underline;
+        }
+        a:visited:not(.button) {
+            color: #b8860b;
+        }
     </style>
 </head>
 <body>
@@ -60,10 +67,10 @@
                 <div id="tts-instructions" style="list-style-position: inside;">
                     <p>Convert Instructions:
                     <ol>
-                        <li>dreamborn.ink: go to your cube's page</li>
+                        <li>On <a href="https://dreamborn.ink">dreamborn.ink</a>: go to your cube's page</li>
                         <li>Export as TTS: menu > export > TTS > Download JSON</li>
                         <li>Drag and Drop: the file from your downloads folder below</li>
-                        <li>Click Convert then Click Download</li>
+                        <li>Click Convert to download</li>
                     </ol><br />
                     <p>Note: Retains card versions (e.g. enchanteds)</p>
                     <br>
@@ -91,6 +98,7 @@
                         ttsInput = null;
                         fileNameSpan.textContent = '';
                         dropZone.style.display = 'block';
+                        ttsConvertButton.disabled = true;
                     });
                 </script>
                 <input type="file" id="fileInput" style="display: none;">
@@ -141,7 +149,7 @@
                                 JSON.parse(content);
                                 ttsInput = content;
                             } catch (e) {
-                                console.log(e);
+                                console.error(e);
                                 showError('Invalid JSON file. Please upload a valid JSON file.');
                             }
                         };
@@ -149,19 +157,18 @@
                         fileNameSpan.textContent = file.name;
                         fileInfo.style.display = 'block';
                         dropZone.style.display = 'none';
+                        ttsConvertButton.disabled = false;
                     } else {
-                        console.log("no file or file is not a json file");
                         showError('no file or file is not a json file');
                     }
                 }
             </script>
-            <button id="ttsConvertButton">Convert</button>
-            <button id="ttsDownloadButton" disabled>Download</button>
+            <button id="ttsConvertButton" disabled>Convert</button>
             <div style="width: fit-content; margin: auto; text-align: left;">
                 <div id="draft-instructions" style="list-style-position: inside;">
                     <p>Draft Instructions:
                     <ol>
-                        <li>Use the download link above</li>
+                        <li>Press convert above to download</li>
                         <li>https://draftmancer.com/ > Settings > Scroll to bottom > <br />Drag-drop the file where it says "Upload a custom card list file by..."</li>
                         <li>Close Settings Window > Bots: 5 > Timer: 0 > "Start"</li>
                     </ol><br />
@@ -169,19 +176,31 @@
             </div>
         </div>
         
-        <div style="width: 48%;">
+        <div style="width: 45%;">
             <h1>Card List Converter</h1>
-            <p>Suppports Ursula's Return Illumineer's Quest Cards</p>
-            <p>Note: Does not retain card versions (e.g. enchanteds)</p>
-            <textarea id="cardListInput" placeholder="dreamborn.ink > your cube > menu > export to TTS > open json file > paste contents here > press convert
-
-1 Alice - Growing Girl
-1 Rapunzel - Gifted Artist
+        <div style="width: fit-content; margin: auto; text-align: left;">
+            <div id="draft-instructions" style="list-style-position: inside;">
+                <p>INSTRUCTIONS:</p>
+                <ol>
+                    <li>On <a href="https://dreamborn.ink">dreamborn.ink</a>: go to your cube's page</li>
+                    <li>Press Menu > Export > Copy to clipboard</li>
+                    <li>Paste below + press Convert</li>
+                </ol>
+                <p>Notes:</p>
+                <ul>
+                    <li>Suppports Ursula's Return Illumineer's Quest Cards</li>
+                    <li>May support some cards from unreleased sets</li>
+                    <li>Does not retain card versions (e.g. enchanteds)</li>
+                </ul>
+            </div>
+        </div>
+        <br />
+            <textarea id="cardListInput" placeholder="1 Alice - Growing Girl
+1 Let it Go
 1 LeFou - Opportunistic Flunky
 ..."></textarea>
             <br>
-            <button id="cardListConvertButton">Convert</button>
-            <button id="cardListDownloadButton" disabled>Download</button>
+            <button id="cardListConvertButton" disabled>Convert</button>
         </div>
     </div>
 
@@ -189,14 +208,11 @@
     <script>
         
         const fromTtsConvertButton = document.getElementById('ttsConvertButton');
-        const ttsDownloadButton = document.getElementById('ttsDownloadButton');
         let fromCardListConvertButton = document.getElementById('cardListConvertButton');
-        const cardListDownloadButton = document.getElementById('cardListDownloadButton');
         let ttsInput = null;
 
         fromTtsConvertButton.addEventListener('click', async _ => {
             hideError();
-            ttsDownloadButton.disabled = true;
 
             var xhr = new XMLHttpRequest();
             var url = "/dreamborn-to-draftmancer/";
@@ -210,10 +226,7 @@
                 // success
                 if (xhr.status === 200) {
                     console.log("responseText: " + xhr.responseText);
-                    ttsDownloadButton.addEventListener('click', async _ => {
-                        download(xhr.responseText, "custom-cube.draftmancer.txt", "txt");
-                    })
-                    ttsDownloadButton.disabled = false;
+                    download(xhr.responseText, "custom-cube.draftmancer.txt", "txt");
                     return;
                 } 
 
@@ -227,9 +240,12 @@
         }
         );
 
+        cardListInput.addEventListener('input', () => {
+            fromCardListConvertButton.disabled = cardListInput.value.trim().length === 0;
+        });
+
         fromCardListConvertButton.addEventListener('click', async _ => {
             hideError();
-            cardListDownloadButton.disabled = true;
 
             const cardListInput = document.getElementById('cardListInput').value.trim();
             var xhr = new XMLHttpRequest();
@@ -244,10 +260,7 @@
                 // success
                 if (xhr.status === 200) {
                     console.log("responseText: " + xhr.responseText);
-                    cardListDownloadButton.addEventListener('click', async _ => {
-                        download(xhr.responseText, "custom-cube.draftmancer.txt", "txt");
-                    });
-                    cardListDownloadButton.disabled = false;
+                    download(xhr.responseText, "custom-cube.draftmancer.txt", "txt");
                     return;
                 } 
 

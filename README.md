@@ -1,4 +1,4 @@
-This codebase now includes the code for the website [stopthief.pythonanywhere.com](https://stopthief.pythonanywhere.com/) which includes most of the functionality described below and more in a more user-friendly format! I recommend you start there, and come back if you feel you need more.
+This codebase now includes the code for the website [www.cubecana.com](https://www.cubecana.com/) which includes most of the functionality described below and more in a more user-friendly format! I recommend you start there, and come back if you feel you need more.
 
 
 I think I just created the fastest, easiest way to draft Lorcana online. If there is an easier or faster way to draft, please let me know at zacharysmith4989@gmail.com !

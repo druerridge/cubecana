@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubecana|Disclaimer</title>
+    <style>
+        header {
+            text-align: left;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-image: url('static/lorcana-cube-club-bg2.jpeg');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            color: white;
+        }
+        a {
+            color: #ffcc00; 
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        a:visited:not(.button) {
+            color: #ffcc00;
+        }
+        .footer-card {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: block;
+            margin-top: 50px;
+            font-size: 16px;
+            color: #ffffff;
+            text-decoration: none;
+            background-color: #7289da;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .footer-card:hover {
+            background-color: #677bc4;
+        }
+        .disclaimer-link {
+            margin-right: 20px;
+            float: left;
+        }
+        .disclaimer-link:hover {
+            text-decoration: underline;
+        }
+        .disclaimer-text {
+            margin: 0 auto;
+            width: 50%;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header style="height: 100px; overflow: hidden;">
+        <a href="/">
+            <img src="{{ url_for('static', filename='LCC-Cube-1.png') }}" alt="Home" style="height: 100%;">
+        </a>
+    </header>
+    <div class="disclaimer-text">
+        <h1>Disclaimer</h1>
+        This website uses trademarks and/or copyrights associated with Disney Lorcana TCG, used under Ravensburger’s <a href="https://cdn.ravensburger.com/lorcana/community-code-en">Community Code Policy</a>. We are expressly prohibited from charging you to use or access this content. This website is not published, endorsed, or specifically approved by Disney or Ravensburger. For more information about Disney Lorcana TCG, visit <a href="https://www.disneylorcana.com/">https://www.disneylorcana.com/</a>.
+    </div>
+
+    <div class="footer-card">
+        <a href="/disclaimer">
+            <div class="disclaimer-link">&#x24D8; Disclaimer</div>
+        </a>
+        <a href="https://discord.gg/Y4WyY6rMBk">
+            <div class="discord-footer-card">
+                <div class="discord-link">
+                    #cube-chat is buzzing on the Fortyborn <img src="{{ url_for('static', filename='icon_clyde_white_RGB.png') }}" alt="Discord Icon" style="width: 20px; vertical-align: middle; margin-right: 5px; margin-left: 5px;"> Plus, draft a different cube online every other Sunday at 3pm PT / 6pm ET
+                </div>
+            </div>
+        </a>
+    </div>
+
+</body>
+</html>

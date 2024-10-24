@@ -12,6 +12,10 @@ def index():
 def to_tabletop_sim():
   return render_template('to-tabletop-sim.html')
 
+@app.route('/disclaimer')
+def disclaimer():
+  return render_template('disclaimer.html')
+
 @app.route('/draftmancer-to-tts/', methods=['POST'])
 def process_json():
   data = request.get_data()

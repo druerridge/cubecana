@@ -32,10 +32,6 @@
         .button:hover {
             background-color: #0056b3;
         }
-        .footer-card:hover {
-            background-color: #677bc4;
-            text-decoration: underline;
-        }
         .container {
             display: flex;
             justify-content: center;
@@ -63,6 +59,9 @@
             padding: 10px 20px;
             border-radius: 5px;
         }
+        .footer-card:hover {
+            background-color: #677bc4;
+        }
         a {
             color: #ffcc00; /* Bright yellow for better visibility */
             text-decoration: underline;
@@ -71,7 +70,15 @@
             color: #ffffff; /* White on hover for contrast */
         }
         a:visited:not(.button) {
-            color: #b8860b;
+            color: #ffcc00;
+        }
+        .disclaimer-link {
+            margin-right: 20px;
+            float: left;
+        }
+        .disclaimer-link:hover {
+            /* background-color: #677bc4; */
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -81,7 +88,7 @@
             <img src="{{ url_for('static', filename='LCC-Cube-1.png') }}" alt="Home" style="height: 100%;">
         </a>
     </header>
-    <h1>Lorcana Cube Toolkit</h1>
+    <h1>A Lorcana Cube Toolkit</h1>
     <p>by Lorcana Cube Club</p>
     <div class="container">
         <div class="column">
@@ -113,16 +120,19 @@
             <img src="{{ url_for('static', filename='tts_play_image.png') }}" alt="Play Image" style="width: 90%; margin-top: 20px;">
         </div>
     </div>
-    <div>
 
-    </div>
-    
-    <a href="https://discord.gg/Y4WyY6rMBk">
     <div class="footer-card">
-        <div class="discord-link">
-            
-            #cube-chat is buzzing on the Fortyborn  <img src="{{ url_for('static', filename='icon_clyde_white_RGB.png') }}" alt="Discord Icon" style="width: 20px; vertical-align: middle; margin-right: 5px; margin-left: 5px;"> Plus, draft a different cube online every other Sunday at 3pm PT / 6pm ET
-        </div></div>
-    </div></a>
+        <a href="/disclaimer">
+            <div class="disclaimer-link">&#x24D8; Disclaimer</div>
+        </a>
+        <a href="https://discord.gg/Y4WyY6rMBk">
+            <div class="discord-footer-card">
+                <div class="discord-link">
+                    #cube-chat is buzzing on the Fortyborn <img src="{{ url_for('static', filename='icon_clyde_white_RGB.png') }}" alt="Discord Icon" style="width: 20px; vertical-align: middle; margin-right: 5px; margin-left: 5px;"> Plus, draft a different cube online every other Sunday at 3pm PT / 6pm ET
+                </div>
+            </div>
+        </a>
+    </div>
+
 </body>
 </html>

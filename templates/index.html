@@ -72,12 +72,18 @@
         a:visited:not(.button) {
             color: #ffcc00;
         }
+        .bug-link {
+            margin-left: 20px;
+            float: right;
+        }
+        .bug-link:hover {
+            background-color: #ffcc00;
+        }
         .disclaimer-link {
             margin-right: 20px;
             float: left;
         }
         .disclaimer-link:hover {
-            /* background-color: #677bc4; */
             text-decoration: underline;
         }
     </style>
@@ -122,6 +128,10 @@
     </div>
 
     <div class="footer-card">
+        
+        <a href="https://forms.gle/dTjVztpd1nkadKb1A">
+            <div class="bug-link"><img src="{{ url_for('static', filename='bug-icon-white.png') }}" alt="Bug Icon" style="width: 20px; vertical-align: middle; margin-right: 5px; margin-left: 5px;"></div>
+        </a>
         <a href="/disclaimer">
             <div class="disclaimer-link">&#x24D8; Disclaimer</div>
         </a>

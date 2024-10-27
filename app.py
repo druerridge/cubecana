@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, Response
 import json
 import create_template
+import pixelborn
 import lcc_error
 app = Flask(__name__)
 
@@ -16,17 +17,26 @@ def to_tabletop_sim():
 def disclaimer():
   return render_template('disclaimer.html')
 
+@app.route('/draftmancer-to-inktable/', methods=['POST'])
+def draftmancer_to_inktable():
+  data = request.get_data()
+  json_data = json.loads(request.data)
+  all_lines = json_data['draftmancer_export'].split('\n')
+  mainboard_lines = create_template.get_mainboard_lines(all_lines)
+  id_to_count = create_template.id_to_count_from(mainboard_lines)
+  pixelborn_deck = pixelborn.generate_pixelborn_deck(id_to_count)
+  return pixelborn.inktable_import_link(pixelborn_deck)
+
 @app.route('/draftmancer-to-tts/', methods=['POST'])
 def process_json():
   data = request.get_data()
   json_data = json.loads(request.data)
 
   all_lines = json_data['draftmancer_export'].split('\n')
-  empty_index = all_lines.index("")
-  mainboard_lines = all_lines[:empty_index]
-  count_by_name = create_template.id_to_count_from(mainboard_lines)
+  mainboard_lines = create_template.get_mainboard_lines(all_lines)
+  id_to_count = create_template.id_to_count_from(mainboard_lines)
   id_to_custom_card = create_template.read_draftmancer_custom_cardlist()
-  tts_deck = create_template.generate_tts_deck(count_by_name, id_to_custom_card)
+  tts_deck = create_template.generate_tts_deck(id_to_count, id_to_custom_card)
 
   return json.dumps(tts_deck)
 

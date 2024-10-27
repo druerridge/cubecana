@@ -82,7 +82,8 @@
                         </ol>
                 </ol>    
             </div>
-            <button id="post-btn" class="button" disabled>Convert</button>
+            <button id="post-btn" class="button" disabled>To Tabletop Simulator</button><br />
+            <button id="inktable-btn" class="button" disabled>To Inktable.net</button>
         </div>
     </div> 
     
@@ -92,9 +93,40 @@
     const convertButton = document.getElementById('post-btn');
     const errorTextElement = document.getElementById('errorText');
     const draftmancerInputArea = document.getElementById('draftmancer-input-area');
+    const InktableButton = document.getElementById('inktable-btn');
 
     draftmancerInputArea.addEventListener('input', () => {
         convertButton.disabled = draftmancerInputArea.value.trim().length === 0;
+        InktableButton.disabled = draftmancerInputArea.value.trim().length === 0;
+    });
+
+    InktableButton.addEventListener('click', async _ => { 
+        hideError();
+        var xhr = new XMLHttpRequest();
+        var url = "/draftmancer-to-inktable/";
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader("Content-Type", "application/json");
+        let newTab = window.open();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState !== 4) {
+                return;
+            }
+            
+            // success
+            if (xhr.status === 200) {
+                console.log("responseText: " + xhr.responseText);
+                newTab.location.href = xhr.responseText;
+                return;
+            } 
+
+            // error
+            if (xhr.status != 200) {
+                handleNon200Response(xhr);
+                newTab.close();
+            }
+        };
+        var data = JSON.stringify({ "draftmancer_export": draftmancerInputArea.value.trim() });
+        xhr.send(data);
     });
 
     convertButton.addEventListener('click', async _ => {

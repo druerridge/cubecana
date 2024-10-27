@@ -55,6 +55,13 @@ def fetch_api_data():
 def generate_id_to_card(name_to_card):
     return {to_id(card_name) : name_to_card[card_name] for card_name in name_to_card}
 
+def get_mainboard_lines(all_lines):
+  try: 
+    empty_index = all_lines.index("")
+    return all_lines[:empty_index]
+  except ValueError:
+    return all_lines
+
 def read_or_fetch_id_to_api_card():
     cached_api_data_file = Path(CACHED_API_DATA_FILEPATH)
     if cached_api_data_file.is_file():

@@ -50,11 +50,12 @@ def card_list_to_draftmancer():
   data = request.get_data()
   json_data = json.loads(request.data)
   card_list = json_data['card_list']
+  settings_input = json_data['settings']
 
   settings = create_template.Settings(
         boosters_per_player=4,
         card_list_name="custom_cube",
-        cards_per_booster=12,
+        cards_per_booster=settings_input['cards_per_booster'],
         set_card_colors=False,
         color_balance_packs=False
     )
@@ -65,12 +66,13 @@ def card_list_to_draftmancer():
 def handle_dreamborn_to_draftmancer():
   json_data = json.loads(request.data)
   json_obj_tss_export = json.loads(json_data['dreamborn_export'])
+  settings_input = json_data['settings']
   id_to_tts_card = create_template.generate_id_to_tts_card_from_json_obj(json_obj_tss_export)
 
   settings = create_template.Settings(
         boosters_per_player=4,
         card_list_name="custom_cube",
-        cards_per_booster=12,
+        cards_per_booster=settings_input['cards_per_booster'],
         set_card_colors=False,
         color_balance_packs=False
     )

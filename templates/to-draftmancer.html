@@ -203,12 +203,16 @@
             <button id="cardListConvertButton" disabled>Convert</button>
         </div>
     </div>
+    <div>
+        Cards per Booster: <input type="number" id="cardsPerBooster" value="12" min="1" max="20" step="1" style="width: 50px;" />
+    </div>
 
     <script src="{{ url_for('static', filename='js/shared.js') }}"></script>
     <script>
         
         const fromTtsConvertButton = document.getElementById('ttsConvertButton');
         let fromCardListConvertButton = document.getElementById('cardListConvertButton');
+        let cardsPerBooster = document.getElementById('cardsPerBooster');
         let ttsInput = null;
 
         fromTtsConvertButton.addEventListener('click', async _ => {
@@ -235,7 +239,7 @@
                     handleNon200Response(xhr);
                 }
             };
-            var data = JSON.stringify({ "dreamborn_export": ttsInput });
+            var data = JSON.stringify({ "dreamborn_export": ttsInput, "settings": { "cards_per_booster": cardsPerBooster.value } });
             xhr.send(data);
         }
         );
@@ -269,7 +273,7 @@
                     handleNon200Response(xhr);
                 }
             };
-            var data = JSON.stringify({ "card_list": cardListInput });
+            var data = JSON.stringify({ "card_list": cardListInput, "settings": { "cards_per_booster": cardsPerBooster.value }  });
             xhr.send(data);
         }
         );

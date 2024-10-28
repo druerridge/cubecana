@@ -239,11 +239,7 @@ def write_draftmancer_file(draftmancer_file_string, card_list_name):
             file.write(line + '\n')
 
 def generate_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_name, settings):
-    draftmancer_settings = {
-        'boostersPerPlayer': settings.boosters_per_player,
-        'name': settings.card_list_name,
-        'cardBack': 'https://wiki.mushureport.com/images/thumb/d/d7/Card_Back_official.png/450px-Card_Back_official.png'
-    }
+    draftmancer_settings = settings.to_draftmancer_settings()
     if settings.color_balance_packs == True:
         draftmancer_settings['colorBalance'] = True
             
@@ -392,13 +388,24 @@ def dreamborn_tts_to_draftmancer_from_file(dreamborn_export_for_tabletop_sim, ca
 def dreamborn_card_list_to_draftmancer(card_list_input, card_evaluations_file, settings):
     card_list_lines = card_list_input.split('\n')
     id_to_count_input = id_to_count_from(card_list_lines)
-    return add_card_list_to_draftmancer_custom_cards(id_to_count_input, "simple_template.draftmancer.txt")
+    return add_card_list_to_draftmancer_custom_cards(id_to_count_input, "incomplete_simple_template.draftmancer.txt", settings)
 
-def add_card_list_to_draftmancer_custom_cards(id_to_count_input, draftmancer_custom_card_file):
+def add_card_list_to_draftmancer_custom_cards(id_to_count_input, draftmancer_custom_card_file, settings):
     file_contents = ""
     with open(draftmancer_custom_card_file, encoding='utf8') as file:
-        file_contents = '\n'.join(file.readlines())
+        file_contents = ''.join(file.readlines())
     id_to_custom_card = read_draftmancer_custom_cardlist(draftmancer_custom_card_file)
+    draftmancer_settings = settings.to_draftmancer_settings()
+
+    lines = [
+            '\n[Settings]',
+            json.dumps(
+                draftmancer_settings,
+                indent=4
+            ),
+            f'[MainSlot({settings.cards_per_booster})]',
+        ]
+    file_contents += '\n'.join(lines)
     for id in id_to_count_input:
         try:
             canonical_name = id_to_custom_card[id]['name']
@@ -421,6 +428,13 @@ class Settings:
         self.cards_per_booster = int(cards_per_booster)
         self.set_card_colors = bool(set_card_colors)
         self.color_balance_packs = bool(color_balance_packs)
+
+    def to_draftmancer_settings(self):
+        return {
+            'boostersPerPlayer': self.boosters_per_player,
+            'name': self.card_list_name,
+            'cardBack': 'https://wiki.mushureport.com/images/thumb/d/d7/Card_Back_official.png/450px-Card_Back_official.png'
+        }
 
 if __name__ == '__main__':
     # parse CLI arguments

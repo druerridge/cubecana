@@ -1,6 +1,7 @@
 import create_template
 import base64
 from datetime import datetime
+import lcc_error
 
 def id_to_pixelborn_name(id):
     return id
@@ -21,7 +22,10 @@ def generate_pixelborn_deck(id_to_count):
     id_to_pixelborn_name = load_id_to_pixelborn_name()
     pixelborn_deck_decoded = ""
     for id, count in id_to_count.items():
-        pixelborn_deck_decoded += f"{id_to_pixelborn_name[id]}${count}|"
+        try:
+            pixelborn_deck_decoded += f"{id_to_pixelborn_name[id]}${count}|"            
+        except KeyError:
+            raise lcc_error.UnidentifiedCardError(f"Unable to identify card with id {id} ")
     print("pixelborn_deck_decoded")
     print(pixelborn_deck_decoded)
     pixelborn_deck_encoded = base64.b64encode(pixelborn_deck_decoded.encode('utf-8')).decode('utf-8')

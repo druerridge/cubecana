@@ -277,9 +277,21 @@ def read_draftmancer_custom_cardlist(file_path='all_cards_cube.draftmancer.txt')
                 read_custom_cards = True
         custom_cards_json = json.loads(custom_card_string)
         
+        # for id in id_to_count_input:
+        #     try:
+        #         canonical_name = id_to_custom_card[id]['name']
+        #         file_contents += f"\n{id_to_count_input[id]} {canonical_name}"
+        #     except KeyError:
+        #         raise UnidentifiedCardError(f"Unable to identify card with id {id} ")
+
         id_to_custom_card = {}
         for custom_card in custom_cards_json:
-            id_to_custom_card[to_id(custom_card['name'])] = custom_card
+            try:
+                input_name = custom_card['name']
+                id = to_id(input_name)
+                id_to_custom_card[id] = custom_card
+            except KeyError:
+                raise UnidentifiedCardError(f"Unable to identify card with input name {input_name} and id {id} ")
         return id_to_custom_card
     return None
 
@@ -344,14 +356,17 @@ def generate_tts_deck(id_to_count, id_to_custom_card):
     custom_deck = {}
     for id, count in id_to_count.items():
         for i in range(0, count):
-            contained_obj = generate_contained_obj(id_to_custom_card[id]['name'], current_card_index, previous_card_index)
-            card_image_url = id_to_custom_card[id]['image_uris']['en']
-            custom_deck_obj = generate_custom_deck_obj(card_image_url)
-            contained_obj_list.append(contained_obj)
-            deck_ids.append(contained_obj['CardID'])
-            custom_deck[str(current_card_index)] = custom_deck_obj
-            previous_card_index = current_card_index
-            current_card_index += 1
+            try:
+                contained_obj = generate_contained_obj(id_to_custom_card[id]['name'], current_card_index, previous_card_index)
+                card_image_url = id_to_custom_card[id]['image_uris']['en']
+                custom_deck_obj = generate_custom_deck_obj(card_image_url)
+                contained_obj_list.append(contained_obj)
+                deck_ids.append(contained_obj['CardID'])
+                custom_deck[str(current_card_index)] = custom_deck_obj
+                previous_card_index = current_card_index
+                current_card_index += 1
+            except KeyError:
+                raise UnidentifiedCardError(f"Unable to identify card with id {id} ")
     return {
         'ObjectStates': [
             {

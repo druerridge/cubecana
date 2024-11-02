@@ -9,13 +9,17 @@ app = Flask(__name__)
 def index():
   return render_template('index.html')
 
-@app.route('/to-tabletop-sim.html')
+@app.route('/play.html')
 def to_tabletop_sim():
-  return render_template('to-tabletop-sim.html')
+  return render_template('play.html')
 
 @app.route('/disclaimer')
 def disclaimer():
   return render_template('disclaimer.html')
+
+@app.route('/draft.html')
+def to_draftmancer():
+  return render_template('draft.html')
 
 @app.route('/draftmancer-to-inktable/', methods=['POST'])
 def draftmancer_to_inktable():
@@ -39,10 +43,6 @@ def process_json():
   tts_deck = create_template.generate_tts_deck(id_to_count, id_to_custom_card)
 
   return json.dumps(tts_deck)
-
-@app.route('/to-draftmancer.html')
-def to_draftmancer():
-  return render_template('to-draftmancer.html')
 
 
 @app.route('/card-list-to-draftmancer/', methods=['POST'])

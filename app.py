@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, Response
+from flask import Flask, render_template, request, Response, send_from_directory
 import json
 import create_template
 import pixelborn
@@ -6,20 +6,24 @@ import lcc_error
 app = Flask(__name__)
 
 @app.route('/')
-def index():
+def serve_index():
   return render_template('index.html')
 
 @app.route('/play.html')
-def to_tabletop_sim():
+def serve_play():
   return render_template('play.html')
 
 @app.route('/disclaimer')
-def disclaimer():
+def serve_disclaimer():
   return render_template('disclaimer.html')
 
 @app.route('/draft.html')
-def to_draftmancer():
+def serve_draft():
   return render_template('draft.html')
+
+@app.route('/sitemap.xml')
+def serve_sitemap():
+    return send_from_directory('static', 'sitemap.xml')
 
 @app.route('/draftmancer-to-inktable/', methods=['POST'])
 def draftmancer_to_inktable():

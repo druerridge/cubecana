@@ -67,6 +67,10 @@
             color: #ffcc00; /* Bright yellow for better visibility */
             text-decoration: underline;
         }
+        a:not(.nounderline) {
+            color: #ffcc00; /* Bright yellow for better visibility */
+            text-decoration: underline;
+        }
         a:hover {
             color: #ffffff; /* White on hover for contrast */
         }
@@ -107,14 +111,14 @@
         <div class="column">
             <h2>2. Draft it Online</h2>
             ...against bots or your friends on <a href="draftmancer.com">draftmancer.com</a><br />
-            <a href="draft.html" class="button">Draft</a>
+            <a href="draft.html" class="button">Draft Cube</a>
             <img src="{{ url_for('static', filename='draftmancer_draft_image.png') }}" alt="Draft Online Image" style="width: 90%; margin-top: 20px;">
         </div>
         <div class="column">
             <h2>3. Play it</h2>
             ...against friends on Tabletop Simulator <br />
             ...or bots on <a href="https://www.inktable.net/">inktable.net</a><br />
-            <a href="play.html" class="button">Play</a><br />
+            <a href="play.html" class="button">Play Cube</a><br />
             <img src="{{ url_for('static', filename='tts_play_image.png') }}" alt="Play Image" style="width: 90%; margin-top: 20px;">
         </div>
     </div>
@@ -130,11 +134,33 @@
         <a href="https://discord.gg/Y4WyY6rMBk">
             <div class="discord-footer-card">
                 <div class="discord-link">
-                    #cube-chat is buzzing on the Fortyborn <img src="{{ url_for('static', filename='icon_clyde_white_RGB.png') }}" alt="Discord Icon" style="width: 20px; vertical-align: middle; margin-right: 5px; margin-left: 5px;"> Plus, draft a different cube online every other Sunday at 3pm PT / 6pm ET
+                    <img src="{{ url_for('static', filename='icon_clyde_white_RGB.png') }}" alt="Discord Icon" style="width: 20px; vertical-align: middle; margin-right: 5px; margin-left: 5px;">Fortyborn Discord: #cube-chat + cube drafts every other Sunday!<br />
                 </div>
+                <div id="nextCubeClubDateText" class="nounderline" style="color: #ffffff;"></div>
             </div>
         </a>
     </div>
+    <script>
+        const nextCubeClubDateText = document.getElementById('nextCubeClubDateText');
+        const lastKnownCubeClubDate = new Date(1730066400000) // Oct. 27, 2024 @ 3pm PT
+        let nextCubeClubDate = lastKnownCubeClubDate;
+        while (nextCubeClubDate < Date.now()) {
+            nextCubeClubDate.setDate(nextCubeClubDate.getDate() + 14);
+        }
+        let formatter = Intl.DateTimeFormat(
+            "default",
+            {
+                weekday: "short", 
+                month: "short",
+                day: "numeric",
+                hour: "numeric",
+                minute: "numeric",
+                timeZoneName: "short"
+            }
+        );
+        nextCubeClubDateText.innerText = "Next Cube Draft: " + formatter.format(nextCubeClubDate);
+        console.log(nextCubeClubDate); 
+    </script>
 
 </body>
 </html>

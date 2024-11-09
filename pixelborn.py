@@ -26,8 +26,6 @@ def generate_pixelborn_deck(id_to_count):
             pixelborn_deck_decoded += f"{id_to_pixelborn_name[id]}${count}|"            
         except KeyError:
             raise lcc_error.UnidentifiedCardError(f"Unable to identify card with id {id} ")
-    print("pixelborn_deck_decoded")
-    print(pixelborn_deck_decoded)
     pixelborn_deck_encoded = base64.b64encode(pixelborn_deck_decoded.encode('utf-8')).decode('utf-8')
     return pixelborn_deck_encoded
 

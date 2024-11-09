@@ -3,6 +3,7 @@ import json
 import create_template
 import pixelborn
 import lcc_error
+from settings import Settings
 app = Flask(__name__)
 
 @app.route('/')
@@ -56,7 +57,7 @@ def card_list_to_draftmancer():
   card_list = json_data['card_list']
   settings_input = json_data['settings']
 
-  settings = create_template.Settings(
+  settings = Settings(
         boosters_per_player=4,
         card_list_name="custom_cube",
         cards_per_booster=settings_input['cards_per_booster'],
@@ -73,7 +74,7 @@ def handle_dreamborn_to_draftmancer():
   settings_input = json_data['settings']
   id_to_tts_card = create_template.generate_id_to_tts_card_from_json_obj(json_obj_tss_export)
 
-  settings = create_template.Settings(
+  settings = Settings(
         boosters_per_player=4,
         card_list_name="custom_cube",
         cards_per_booster=settings_input['cards_per_booster'],

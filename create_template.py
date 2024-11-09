@@ -11,31 +11,16 @@ Notes:
 - https://draftmancer.com/cubeformat.html
 """
 import requests
-import argparse
 from collections import defaultdict
 import json
 from pathlib import Path
 import re
 import csv
 from lcc_error import LccError, UnidentifiedCardError
+from settings import Settings
 
 CACHED_API_DATA_FILEPATH = 'api_data_cache.json'
 DEFAULT_CARD_EVALUATIONS_FILE = "DraftBots/FrankKarstenEvaluations-HighPower.csv"
-
-parser = argparse.ArgumentParser(
-                    prog='ProgramName',
-                    description='given a dreamborn \"deck\" of a cube / set / card list, exported in Tabletop Simulator format, create a draftmancer custom card list that can be uploaded and drafted on draftmancer.com',
-                    epilog='Text at the bottom of help')
-
-parser.add_argument('dreamborn_export_for_tabletop_sim', help="file path to a .deck export in Tabletop Sim format from dreamborn.ink deck of the cube e.g. example-cube.json or C:\\Users\\dru\\Desktop\\deck.json")
-parser.add_argument('--card_evaluations_file', default=DEFAULT_CARD_EVALUATIONS_FILE, help="relative path to a .csv file containing card name -> 0-5 card rating (power in a vacuum). default: \"DraftBots\\\\FrankKarstenEvaluations-HighPower.csv\"")
-parser.add_argument('--boosters_per_player', default=4)
-parser.add_argument('--cards_per_booster', default=12)
-parser.add_argument('--name', default="custom_card_list", help="Sets name of both the output file and the set/cube list as it appears in draftmancer")
-parser.add_argument('--set_card_colors', default=False, help="WARNING** This sets card colors, allowing draftmancer to do color-balancing for you, but it will also encourage bots to draft 1-2 color decks")
-parser.add_argument('--color_balance_packs', default=False, help="WARNING** this color-balances ONLY your largest slot, IF it contains enough cards, AND steel may be wonky (treated as colorless). This will ONLY work if card_colors is true, which will encourage bots to draft 1-2 color decks")
-# parser.add_argument('--draftmancer_card_list', default=False, help="card list to use for deck conversion to tts")
-parser.add_argument('--draftmancer_deck_export', default=False, help="deck export to convert to tts")
 
 def fetch_api_data():
     name_to_card = {}
@@ -60,7 +45,11 @@ def get_mainboard_lines(all_lines):
     empty_index = all_lines.index("")
     return all_lines[:empty_index]
   except ValueError:
-    return all_lines
+    try:
+        empty_index = all_lines.index("\n")
+        return all_lines[:empty_index]
+    except ValueError:
+        return all_lines
 
 def read_or_fetch_id_to_api_card():
     cached_api_data_file = Path(CACHED_API_DATA_FILEPATH)
@@ -178,28 +167,28 @@ lorcana_rarity_to_draftmancer_rarity =  {
 def to_draftmancer_rarity(lorcana_rarity):
     return lorcana_rarity_to_draftmancer_rarity[lorcana_rarity]
 
-def generate_custom_card_list_non_tts(id_to_api_card, id_to_rating, id_to_count, id_to_dreamborn_name):
-    custom_card_list = []
-    for id in id_to_count:
-        card = id_to_card[id]
-        ink_cost = card['Cost']
-        cannonical_name = canonical_name_from_id(id, id_to_dreamborn_name, None) # only accept cannonical names
-        custom_card = {
-            'name': cannonical_name, 
-            'mana_cost': f'{{{ink_cost}}}',
-            'type': 'Instant',
-            'image_uris': {
-                'en': id_to_tts_card[id]['image_uri']
-            },
-            'rating': name_to_rating[id],
-            'rarity': to_draftmancer_rarity(card['Rarity']),
-        }
-        if (set_card_colors):
-            custom_card['colors'] = [to_draftmancer_color(card['Color'])]
-        custom_card_list.append(custom_card)
-    return custom_card_list
+# def generate_custom_card_list_non_tts(id_to_api_card, id_to_rating, id_to_count, id_to_dreamborn_name, settings):
+#     custom_card_list = []
+#     for id in id_to_count:
+#         card = id_to_card[id]
+#         ink_cost = card['Cost']
+#         cannonical_name = canonical_name_from_id(id, id_to_dreamborn_name, None) # only accept cannonical names
+#         custom_card = {
+#             'name': cannonical_name, 
+#             'mana_cost': f'{{{ink_cost}}}',
+#             'type': 'Instant',
+#             'image_uris': {
+#                 'en': id_to_tts_card[id]['image_uri']
+#             },
+#             'rating': name_to_rating[id],
+#             'rarity': to_draftmancer_rarity(card['Rarity']),
+#         }
+#         if (settings.set_card_colors):
+#             custom_card['colors'] = [to_draftmancer_color(card['Color'])]
+#         custom_card_list.append(custom_card)
+#     return custom_card_list
 
-def generate_custom_card_list(id_to_card, name_to_rating, id_to_tts_card, id_to_dreamborn_name):
+def generate_custom_card_list(id_to_card, name_to_rating, id_to_tts_card, id_to_dreamborn_name, settings):
     custom_card_list = []
     for id in id_to_tts_card:
         card = id_to_card[id]
@@ -215,7 +204,7 @@ def generate_custom_card_list(id_to_card, name_to_rating, id_to_tts_card, id_to_
             'rating': name_to_rating[id],
             'rarity': to_draftmancer_rarity(card['Rarity']),
         }
-        if (set_card_colors):
+        if (settings.set_card_colors):
             custom_card['colors'] = [to_draftmancer_color(card['Color'])]
         custom_card_list.append(custom_card)
     return custom_card_list
@@ -237,8 +226,9 @@ def write_draftmancer_file(draftmancer_file_string, card_list_name):
     with open(file_name, 'w', encoding="utf-8") as file:
         for line in draftmancer_file_as_lines:
             file.write(line + '\n')
+    print(f'Wrote draftmancer file to {file_name}')
 
-def generate_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_name, settings):
+def generate_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_name, settings, slot_name_to_slot=None):
     draftmancer_settings = settings.to_draftmancer_settings()
     if settings.color_balance_packs == True:
         draftmancer_settings['colorBalance'] = True
@@ -251,12 +241,21 @@ def generate_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_
                 draftmancer_settings,
                 indent=4
             ),
-            f'[MainSlot({settings.cards_per_booster})]',
         ]
-    for id in id_to_tts_card:
-        cannonical_name = canonical_name_from_id(id, id_to_dreamborn_name, id_to_tts_card)
-        line_str = f"{id_to_tts_card[id]['count']} {cannonical_name}"
-        lines.append(line_str)
+    if slot_name_to_slot==None:
+        lines.append(f'[MainSlot({settings.cards_per_booster})]')
+        for id in id_to_tts_card:
+            cannonical_name = canonical_name_from_id(id, id_to_dreamborn_name, id_to_tts_card)
+            line_str = f"{id_to_tts_card[id]['count']} {cannonical_name}"
+            lines.append(line_str)
+    else:
+        for slot_name in slot_name_to_slot:
+            slot = slot_name_to_slot[slot_name]
+            lines.append(f'[{slot_name}({slot.num_cards})]')
+            for slot_card in slot.slot_cards:
+                cannonical_name = canonical_name_from_id(slot_card.card_id, id_to_dreamborn_name, id_to_tts_card)
+                line_str = f"{slot_card.num_copies} {cannonical_name}"
+                lines.append(line_str)
     return '\n'.join(lines)
 
 def read_draftmancer_custom_cardlist(file_path='all_cards_cube.draftmancer.txt'):
@@ -277,13 +276,6 @@ def read_draftmancer_custom_cardlist(file_path='all_cards_cube.draftmancer.txt')
                 read_custom_cards = True
         custom_cards_json = json.loads(custom_card_string)
         
-        # for id in id_to_count_input:
-        #     try:
-        #         canonical_name = id_to_custom_card[id]['name']
-        #         file_contents += f"\n{id_to_count_input[id]} {canonical_name}"
-        #     except KeyError:
-        #         raise UnidentifiedCardError(f"Unable to identify card with id {id} ")
-
         id_to_custom_card = {}
         for custom_card in custom_cards_json:
             try:
@@ -298,7 +290,8 @@ def read_draftmancer_custom_cardlist(file_path='all_cards_cube.draftmancer.txt')
 def read_draftmancer_export(draftmancer_deck_export_file):
     with open(draftmancer_deck_export_file, encoding='utf8') as file:
         lines = file.readlines()
-    return id_to_count_from(lines)
+        mainboard_lines = get_mainboard_lines(lines)
+        return id_to_count_from(mainboard_lines)
 
 def id_to_count_from(lines):
     id_to_count = defaultdict(int)
@@ -319,6 +312,7 @@ TTS_OUTPUT_PATH = "tts_deck.json"
 def write_tts_deck_file(tts_deck):
     with open(TTS_OUTPUT_PATH, "w") as file:
         json.dump(tts_deck, file)
+        print("wrote tts deck to: " + TTS_OUTPUT_PATH)
 
 def generate_contained_obj(card_name, current_card_index, previous_card_index):
     card_id = '{cur}{prev:02d}'.format(cur=current_card_index, prev=previous_card_index)
@@ -389,13 +383,6 @@ def generate_tts_deck(id_to_count, id_to_custom_card):
         ]
     }
 
-card_evaluations_file = None
-boosters_per_player = None
-cards_per_booster = None
-card_list_name = None
-set_card_colors = False
-color_balance_packs = False
-
 def dreamborn_tts_to_draftmancer_from_file(dreamborn_export_for_tabletop_sim, card_evaluations_file, settings):
     id_to_tts_card = read_id_to_tts_card_from_filesystem(dreamborn_export_for_tabletop_sim)
     return dreamborn_tts_to_draftmancer(id_to_tts_card, card_evaluations_file, settings)
@@ -433,43 +420,5 @@ def dreamborn_tts_to_draftmancer(id_to_tts_card, card_evaluations_file, settings
     id_to_dreamborn_name = read_id_to_dreamborn_name()
     id_to_api_card = read_or_fetch_id_to_api_card()
     id_to_rating = read_id_to_rating(card_evaluations_file)
-    custom_card_list = generate_custom_card_list(id_to_api_card, id_to_rating, id_to_tts_card, id_to_dreamborn_name)
+    custom_card_list = generate_custom_card_list(id_to_api_card, id_to_rating, id_to_tts_card, id_to_dreamborn_name, settings)
     return generate_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_name, settings)
-
-class Settings:
-    def __init__(self, boosters_per_player, card_list_name, cards_per_booster, set_card_colors, color_balance_packs):
-        self.boosters_per_player = int(boosters_per_player)
-        self.card_list_name = card_list_name
-        self.cards_per_booster = int(cards_per_booster)
-        self.set_card_colors = bool(set_card_colors)
-        self.color_balance_packs = bool(color_balance_packs)
-
-    def to_draftmancer_settings(self):
-        return {
-            'boostersPerPlayer': self.boosters_per_player,
-            'name': self.card_list_name,
-            'cardBack': 'https://wiki.mushureport.com/images/thumb/d/d7/Card_Back_official.png/450px-Card_Back_official.png'
-        }
-
-if __name__ == '__main__':
-    # parse CLI arguments
-    args = parser.parse_args()
-    card_evaluations_file = args.card_evaluations_file
-
-    settings = Settings(
-        args.boosters_per_player,
-        args.name,
-        args.cards_per_booster,
-        args.set_card_colors,
-        args.color_balance_packs
-    )
-
-    if args.draftmancer_deck_export:
-        id_to_custom_card = read_draftmancer_custom_cardlist()
-        id_to_count = read_draftmancer_export(args.draftmancer_deck_export)
-        tts_deck = generate_tts_deck(id_to_count, id_to_custom_card)
-        write_tts_deck_file(tts_deck)
-        print("wrote tts deck to: " + TTS_OUTPUT_PATH)
-    else:
-        draftmancer_file_string = dreamborn_tts_to_draftmancer_from_file(args.dreamborn_export_for_tabletop_sim, card_evaluations_file, settings)
-        write_draftmancer_file(draftmancer_file_string, args.name)

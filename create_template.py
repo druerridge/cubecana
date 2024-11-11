@@ -10,35 +10,17 @@ TODOs:
 Notes:
 - https://draftmancer.com/cubeformat.html
 """
-import requests
 from collections import defaultdict
 import json
 from pathlib import Path
-import re
 import csv
 from lcc_error import LccError, UnidentifiedCardError
 from settings import Settings
+from lorcana_api import ApiCard
+import lorcana_api
+import id_helper
 
-CACHED_API_DATA_FILEPATH = 'api_data_cache.json'
 DEFAULT_CARD_EVALUATIONS_FILE = "DraftBots/FrankKarstenEvaluations-HighPower.csv"
-
-def fetch_api_data():
-    name_to_card = {}
-    page = 1
-    while True:
-        url = f'https://api.lorcana-api.com/cards/all?page={page}'
-        print(f'Fetching {url}...')
-        res = requests.get(url)
-        data = res.json()
-        if len(data) == 0:
-            break
-        for card in data:
-            name_to_card[card['Name']] = card
-        page += 1
-    return name_to_card
-
-def generate_id_to_card(name_to_card):
-    return {to_id(card_name) : name_to_card[card_name] for card_name in name_to_card}
 
 def get_mainboard_lines(all_lines):
   try: 
@@ -50,19 +32,6 @@ def get_mainboard_lines(all_lines):
         return all_lines[:empty_index]
     except ValueError:
         return all_lines
-
-def read_or_fetch_id_to_api_card():
-    cached_api_data_file = Path(CACHED_API_DATA_FILEPATH)
-    if cached_api_data_file.is_file():
-        with cached_api_data_file.open() as f:
-            id_to_card = json.load(f)
-    else:
-        name_to_card = fetch_api_data()
-        fix_card_names(name_to_card)
-        id_to_card = generate_id_to_card(name_to_card)
-        with cached_api_data_file.open(mode='w') as f:
-            json.dump(id_to_card, f)
-    return id_to_card
 
 def generate_id_to_tts_card_from_file(file, id_to_tts_card=None):
     with file.open(encoding='utf8') as file:
@@ -76,7 +45,7 @@ def generate_id_to_tts_card_from_json_obj(json_obj, id_to_tts_card=None):
     i = 1
     while True:
         try:
-            id = to_id(json_obj['ContainedObjects'][i - 1]['Nickname'])
+            id = id_helper.to_id(json_obj['ContainedObjects'][i - 1]['Nickname'])
         except IndexError:
             break
         id_to_tts_card[id]['count'] += 1
@@ -98,49 +67,13 @@ def read_id_to_tts_card_from_filesystem(dreamborn_tts_export_filepath):
         id_to_tts_card = generate_id_to_tts_card_from_file(dreamborn_tts_export_path, id_to_tts_card)
     return id_to_tts_card
 
-pattern = re.compile(r"[\W_]+", re.ASCII)
-def to_id(string):
-    string = string.replace('ā', 'a')
-    string = string.replace('é','e')
-    return re.sub(pattern, '', string).lower()
-
-def fix_card_name(name_to_card, old_name, new_name):
-    name_to_card[new_name] = name_to_card[old_name]
-    name_to_card[new_name]['Name'] = new_name
-    del name_to_card[old_name]    
-
-def fix_card_names(name_to_card):
-    # there are typos in the https://api.lorcana-api.com card names.  We have to fix those or we cannot translate between data sources
-    fix_card_name(name_to_card, 'Benja - Bold United', 'Benja - Bold Uniter')
-    fix_card_name(name_to_card, 'Kristoff - Offical Ice Master', 'Kristoff - Official Ice Master')
-    fix_card_name(name_to_card, 'Snowanna Rainbeau', 'Snowanna Rainbeau - Cool Competitor')
-    fix_card_name(name_to_card, 'Vannelope Von Schweetz - Random Roster Racer', 'Vanellope von Schweetz - Random Roster Racer')
-    fix_card_name(name_to_card, 'Snow White - Fair-haired', 'Snow White - Fair-Hearted')
-    fix_card_name(name_to_card, 'Merlin\'s Cottage', 'Merlin\'s Cottage - The Wizard\'s Home')
-    fix_card_name(name_to_card, 'Arthur - King Victorius', 'Arthur - King Victorious')
-    fix_card_name(name_to_card, 'Seven Dwarfs\' Mine', 'Seven Dwarfs\' Mine - Secure Fortress')
-
-def canonical_name_from_id(id, id_to_dreamborn_name, id_to_tts_card):
-    # IMPORTANT dreamborn names are canonical to enable import / export to / from dreamborn.ink (which subsequently enables deck export to inktable.net + Tabletop Simulator)
-    # dreamborn plain export is the best name for our custom card list, enabling all import / export and hand-editing of the card list (e.g. simple_template.draftmancer.txt)
-    # UPDATE INSTRUCTIONS: dreamborn.ink > Collection > export > copy-paste the "Name" column w/o the header row
-    cannonical_name = id_to_dreamborn_name.get(id, None) 
-    
-    # dreamborn TTS export is the second best name
-    # this enables us to generate cubes with cards we haven't exported yet in all_dreamborn_names.txt, and import / export from dreamborn
-    # HOWEVER, hand-editing the booster slot(s) after generation has edge cases, e.g. card names are missing apostrophes (') in custom card list, so they won't match
-    # therefore this method is not suitable to generate simple_template.draftmancer.txt which is meant to have the booster slot(s) "hand-edited"
-    if cannonical_name is None: 
-        cannonical_name = id_to_tts_card[id]['name']
-    return cannonical_name
-
 def read_id_to_dreamborn_name():
     with open('all_dreamborn_names.txt', encoding='utf8') as f:
         lines = f.readlines()
     id_to_dreamborn_name = {}
     for l in lines:
         name = l.strip()
-        id_to_dreamborn_name[to_id(name)] = name
+        id_to_dreamborn_name[id_helper.to_id(name)] = name
     return id_to_dreamborn_name
 
 lorcana_color_to_draftmancer_color =  {
@@ -151,8 +84,8 @@ lorcana_color_to_draftmancer_color =  {
     "Steel": "",
     "Sapphire": "U"
 }
-def to_draftmancer_color(lorcana_color):
-    if set_card_colors:
+def to_draftmancer_color(lorcana_color, settings: Settings):
+    if settings.set_card_colors:
         return lorcana_color_to_draftmancer_color[lorcana_color]
     else:
         return ""
@@ -188,12 +121,16 @@ def to_draftmancer_rarity(lorcana_rarity):
 #         custom_card_list.append(custom_card)
 #     return custom_card_list
 
-def generate_custom_card_list(id_to_card, name_to_rating, id_to_tts_card, id_to_dreamborn_name, settings):
+def generate_custom_card_list(id_to_api_card: dict[str, ApiCard], 
+                              id_to_rating: dict[str, int],
+                              id_to_tts_card: dict[str, dict], 
+                              id_to_dreamborn_name: dict[str, str], 
+                              settings: Settings):
     custom_card_list = []
     for id in id_to_tts_card:
-        card = id_to_card[id]
-        ink_cost = card['Cost']
-        cannonical_name = canonical_name_from_id(id, id_to_dreamborn_name, id_to_tts_card)
+        api_card: ApiCard = id_to_api_card[id]
+        ink_cost = api_card.cost
+        cannonical_name = id_helper.canonical_name_from_id(id, id_to_dreamborn_name, id_to_tts_card)
         custom_card = {
             'name': cannonical_name, 
             'mana_cost': f'{{{ink_cost}}}',
@@ -201,11 +138,11 @@ def generate_custom_card_list(id_to_card, name_to_rating, id_to_tts_card, id_to_
             'image_uris': {
                 'en': id_to_tts_card[id]['image_uri']
             },
-            'rating': name_to_rating[id],
-            'rarity': to_draftmancer_rarity(card['Rarity']),
+            'rating': id_to_rating[id],
+            'rarity': to_draftmancer_rarity(api_card.rarity),
         }
         if (settings.set_card_colors):
-            custom_card['colors'] = [to_draftmancer_color(card['Color'])]
+            custom_card['colors'] = [to_draftmancer_color(api_card.color, settings)]
         custom_card_list.append(custom_card)
     return custom_card_list
 
@@ -217,7 +154,7 @@ def read_id_to_rating(card_evaluations_file):
         csvfile.seek(0)
         reader = csv.DictReader(csvfile, dialect=dialect)
         for row in reader:
-            id_to_rating[to_id(row['Card Name'])] = int(row['Rating - Draftmancer'])
+            id_to_rating[id_helper.to_id(row['Card Name'])] = int(row['Rating - Draftmancer'])
     return id_to_rating
 
 def write_draftmancer_file(draftmancer_file_string, card_list_name):
@@ -245,7 +182,7 @@ def generate_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_
     if slot_name_to_slot==None:
         lines.append(f'[MainSlot({settings.cards_per_booster})]')
         for id in id_to_tts_card:
-            cannonical_name = canonical_name_from_id(id, id_to_dreamborn_name, id_to_tts_card)
+            cannonical_name = id_helper.canonical_name_from_id(id, id_to_dreamborn_name, id_to_tts_card)
             line_str = f"{id_to_tts_card[id]['count']} {cannonical_name}"
             lines.append(line_str)
     else:
@@ -253,7 +190,7 @@ def generate_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_
             slot = slot_name_to_slot[slot_name]
             lines.append(f'[{slot_name}({slot.num_cards})]')
             for slot_card in slot.slot_cards:
-                cannonical_name = canonical_name_from_id(slot_card.card_id, id_to_dreamborn_name, id_to_tts_card)
+                cannonical_name = id_helper.canonical_name_from_id(slot_card.card_id, id_to_dreamborn_name, id_to_tts_card)
                 line_str = f"{slot_card.num_copies} {cannonical_name}"
                 lines.append(line_str)
     return '\n'.join(lines)
@@ -280,7 +217,7 @@ def read_draftmancer_custom_cardlist(file_path='all_cards_cube.draftmancer.txt')
         for custom_card in custom_cards_json:
             try:
                 input_name = custom_card['name']
-                id = to_id(input_name)
+                id = id_helper.to_id(input_name)
                 id_to_custom_card[id] = custom_card
             except KeyError:
                 raise UnidentifiedCardError(f"Unable to identify card with input name {input_name} and id {id} ")
@@ -299,7 +236,7 @@ def id_to_count_from(lines):
         string_count, name = line.rstrip().split(' ', 1)
         try:
             int_count = int(string_count)
-            id_to_count[to_id(name)] += int_count
+            id_to_count[id_helper.to_id(name)] += int_count
         except ValueError:
             raise LccError("Missing count or name in line:\n " + line + "\nShould look like:\n1 Elsa - Snow Queen", 400)
     return id_to_count
@@ -418,7 +355,7 @@ def add_card_list_to_draftmancer_custom_cards(id_to_count_input, draftmancer_cus
 
 def dreamborn_tts_to_draftmancer(id_to_tts_card, card_evaluations_file, settings):
     id_to_dreamborn_name = read_id_to_dreamborn_name()
-    id_to_api_card = read_or_fetch_id_to_api_card()
+    id_to_api_card = lorcana_api.read_or_fetch_id_to_api_card()
     id_to_rating = read_id_to_rating(card_evaluations_file)
     custom_card_list = generate_custom_card_list(id_to_api_card, id_to_rating, id_to_tts_card, id_to_dreamborn_name, settings)
     return generate_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_name, settings)

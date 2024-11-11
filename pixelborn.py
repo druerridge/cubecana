@@ -2,19 +2,17 @@ import create_template
 import base64
 from datetime import datetime
 import lcc_error
+import id_helper
 
-def id_to_pixelborn_name(id):
-    return id
-
-# def name_to_pixelborn_name(name):
-#     return name
+# def id_to_pixelborn_name(id):
+#     return id
 
 def load_id_to_pixelborn_name():
     id_to_pixelborn_name = {}
     with open('inputs/pixelborn_all_cards.txt', 'r') as file:
         for line in file:
             pixelborn_name = line.strip()
-            id = create_template.to_id(pixelborn_name)
+            id = id_helper.to_id(pixelborn_name)
             id_to_pixelborn_name[id] = pixelborn_name
     return id_to_pixelborn_name
 

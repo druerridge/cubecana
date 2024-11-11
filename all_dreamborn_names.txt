@@ -1018,3 +1018,207 @@ Plate Armor
 Steel Chromicon
 Bad-Anon - Villain Support Center
 Seven Dwarfs' Mine - Secure Fortress
+Owl - Pirate Lookout
+Lilo - Escape Artist
+Winnie The Pooh - Hunny Pirate
+Gopher - Ship's Carpenter
+Simba - Happy-Go-Lucky
+Chip - Friend Indeed
+Dale - Friend in Need
+David - Impressive Surfer
+Prince Naveen - Vigilant First Mate
+Prince Naveen - Carefree Explorer
+Chief Bogo - Gazelle Fan
+Chip - Ranger Leader
+Monterey Jack - Good-hearted Ranger
+Chip 'n' Dale - Recovery Rangers
+Judy Hopps - Resourceful Rabbit
+Tiana - Restaurant Owner
+Grand Councilwoman - Federation Leader
+Dale - Mischievous Ranger
+Nani - Caring Sister
+Simba - Pride Protector
+Kanga - Nurturing Mother
+Rabbit - Indignant Pirate
+Roo - Littlest Pirate
+Mr. Litwak - Arcade Owner
+Jim Hawkins - Honorable Pirate
+Stitch - Little Trickster
+Good Job!
+I Won't Give In
+Rescue Rangers Away!
+Safe and Sound
+Naveen's Ukulele
+Pooh Pirate Ship
+Scrump
+Hundred Acre Island - Pooh's Home
+Sugar Rush Speedway - Finish Line
+Hades - Lord of the Dead
+Madam Mim - Tiny Adversary
+Genie - Excited Shipbuilder
+Sisu - In Her Element
+The White Rose - Jewel of the Garden
+Juju - Mama Odie's Companion
+Rafiki - Shaman of the Savanna
+Tinker Bell - Fast Flier
+The Carpenter - Dinner Companion
+Iago - Reappearing Parrot
+The Walrus - Greedy Gourmand
+Scar - Tempestuous Lion
+Tinker Bell - Queen of the Azurite Fairies
+Diablo - Obedient Raven
+March Hare - Absurd Host
+Magic Carpet - Amazing Flier
+Rafiki - Ethereal Guide
+Genie - Wish Fulfilled
+Sisu - Uniting Dragon
+Madam Mim - Truly Marvelous
+Yzma - Conniving Chemist
+Mama Odie - Solitary Sage
+Peter Pan - Shadow Catcher
+Mad Hatter - Eccentric Host
+A Very Merry Unbirthday
+Genie - Wonderful Trickster
+Making Magic
+Lose The Way
+Seeking the Half Crown
+Maleficent's Staff
+Mad Hatter's Teapot
+Pixie Dust
+Fairy Ship - Royal Vessel
+Mystical Tree - Mama Odie's Home
+Jasmine - Royal Seafarer
+Captain Hook - Underhanded
+Stitch - Alien Buccaneer
+Go Go Tomago - Darting Dynamo
+Honey Lemon - Chemical Genius
+Fred - Mascot by Day
+Tootles - Lost Boy
+Dawson - Basil's Assistant
+Heathcliff - Stoic Butler
+Basil - Hypnotized Mouse
+Donald Duck - First Mate
+Daisy Duck - Pirate Captain
+Mertle Edmonds - Lilo's Rival
+Prince Phillip - Royal Explorer
+Jasmine - Royal Commodore
+Peter Pan - Never Land Prankster
+Hercules - Baby Demigod
+Alistair Krei - Ambitious Entrepreneur
+Gazelle - Angel with Horns
+Goofy - Expert Shipwright
+Bellwether - Assistant Mayor
+Basil - Disguised Detective
+Olivia Flaversham - The Toymaker's Daughter
+Bend To My Will
+Prepare To Board!
+Heffalumps and Woozles
+Mosquito Bite
+You Came Back
+Megabot
+Galactic Communicator
+Transport Pod
+Perilous Maze - Watery Labyrinth
+Owl Island - Secluded Entrance
+Mickey Mouse - Pirate Captain
+Kakamora - Boarding Party
+Kakamora - Pirate Pitcher
+Jasmine - Rebellious Princess
+Raya - Kumandran Rider
+Wendy Darling - Courageous Captain
+John Silver - Ferocious Friend
+Vanellope von Schweetz - Gutsy Go-Getter
+Michael Darling - Playful Swordsman
+Aladdin - Fearless Navigator
+Markowski - Space Trooper
+Abu - Bold Helmsman
+Mickey Mouse - Courageous Sailor
+Adorabeezle Winterpop - lce Rocket Racer
+Moana - Self-Taught Sailor
+John Darling - Sophisticated Swordsman
+Aladdin - Intrepid Commander
+Minnie Mouse - Pirate Lookout
+Moana - Kakamora Leader
+Pete - Freebooter
+Goofy - Flying Goof
+Maui - Half Shark
+Hades - Strong Arm
+Tigger - In the Crow's Nest
+Scar - Heartless Hunter
+Thievery
+Lead The Way
+The Islands I Pulled From The Sea
+Energy Blast
+Longboat
+Gold Coin
+Card Soldier's Spear
+Flotilla - Coconut Armada
+Skull Rock - Isolated Fortress
+B.E.N. - Eccentric Robot
+Aunt Cass - Biggest Fan
+Gadget Hackwrench - Creative Thinker
+Gadget Hackwrench - Brilliant Bosun
+Zipper - Astute Decoy
+Oswald - The Lucky Rabbit
+Yokai - Enigmatic Inventor
+Pleakley - Scientific Expert
+Hiro Hamada - Robotics Prodigy
+HeiHei - Not-So-Tricky Chicken
+Sour Bill - Surly Henchman
+Nick Wilde - Soggy Fox
+Wasabi - Methodical Engineer
+Nick Wilde - Sly Fox
+Gadget Hackwrench - Perceptive Mouse
+Dr. Delbert Doppler - Fussy Astronomer
+Tadashi Hamada - Baymax Inventor
+Hiro Hamada - Team Leader
+Tadashi Hamada - Gifted Roboticist
+Baymax - Personal Healthcare Companion
+Baymax - Armored Companion
+Yokai - Professor Callaghan
+Hiram Flaversham - Intrigued Inventor
+Yokai - Scientific Supervillain
+Alice - Savvy Sailor
+We Could Be Immortals
+Sail The Azurite Sea
+Helping Hand
+Prepare Your Bot
+Baymax's Healthcare Chip
+Microbots
+Jumbo Pop
+Rescue Rangers Submarine - Mobile Headquarters
+Institute of Technology - Prestigious University
+Kakamora - Long-Range Specialist
+Kakamora - Pirate Chief
+Jim Hawkins - Stubborn Cabin Boy
+Mr. Big - Shrewd Tycoon
+Mr. Smee - Steadfast Mate
+Mr. Smee - Captain of the Jolly Roger
+Mullins - Seasoned Shipmate
+Kohut - Trusted Marine
+King Hubert - Phillip's Father
+Hercules - Unwavering Demigod
+John Silver - Ship's Cook
+Mr. Arrow - Legacy's First Mate
+Jim Hawkins - Rigging Specialist
+Tuk Tuk - Big Buddy
+Billy Bones - Space Sailor
+Pluto - Guard Dog
+Mickey Mouse - Night Watch
+Cobra Bubbles - Former CIA
+Gantu - Captain Crankyhead
+Wreck-It Ralph - Ham Hands
+Calhoun - Marine Sergeant
+Captain Amelia - Commander of the Legacy
+Jafar - Power-Hungry Vizier
+John Silver - Stern Captain
+Hot Potato
+I'm Still Here
+Twin Fire
+Ambush!
+Unfortunate Situation
+King's Sensor Core
+Training Dummy
+Sunglasses
+Treasure Mountain - Azurite Sea Island
+Galactic Council Chamber - Courtroom

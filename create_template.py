@@ -17,7 +17,7 @@ import csv
 from lcc_error import LccError, UnidentifiedCardError
 from settings import Settings
 from lorcana_api import ApiCard
-import lorcana_api
+import lorcast_api as lorcana_api
 import id_helper
 
 DEFAULT_CARD_EVALUATIONS_FILE = "DraftBots/FrankKarstenEvaluations-HighPower.csv"
@@ -66,6 +66,15 @@ def read_id_to_tts_card_from_filesystem(dreamborn_tts_export_filepath):
     else:
         id_to_tts_card = generate_id_to_tts_card_from_file(dreamborn_tts_export_path, id_to_tts_card)
     return id_to_tts_card
+
+# def read_id_to_dreamborn_name():
+#     with open('all_dreamborn_names.txt', encoding='utf8') as f:
+#         lines = f.readlines()
+#     id_to_dreamborn_name = {}
+#     for l in lines:
+#         name = l.strip()
+#         id_to_dreamborn_name[id_helper.to_id(name)] = name
+#     return id_to_dreamborn_name
 
 def read_id_to_dreamborn_name():
     with open('all_dreamborn_names.txt', encoding='utf8') as f:
@@ -127,6 +136,7 @@ def generate_custom_card_list(id_to_api_card: dict[str, ApiCard],
                               id_to_dreamborn_name: dict[str, str], 
                               settings: Settings):
     custom_card_list = []
+    print(len(id_to_api_card.keys()))
     for id in id_to_tts_card:
         api_card: ApiCard = id_to_api_card[id]
         ink_cost = api_card.cost
@@ -138,9 +148,14 @@ def generate_custom_card_list(id_to_api_card: dict[str, ApiCard],
             'image_uris': {
                 'en': id_to_tts_card[id]['image_uri']
             },
-            'rating': id_to_rating[id],
             'rarity': to_draftmancer_rarity(api_card.rarity),
         }
+        if id in id_to_rating:
+            custom_card['rating'] = id_to_rating[id]
+        else:
+            print(f"Missing rating for {cannonical_name}")
+            # TODO: probably tell user rating is missing
+        
         if (settings.set_card_colors):
             custom_card['colors'] = [to_draftmancer_color(api_card.color, settings)]
         custom_card_list.append(custom_card)

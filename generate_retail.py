@@ -1,4 +1,5 @@
 import create_template
+import lorcast_api as lorcana_api
 
 rarity_to_frequency = {
     "Common": 60,
@@ -32,9 +33,10 @@ def calculate_slots_to_append(rarity, color):
 
 def generate_retail_draftmancer_file(id_to_tts_card, card_evaluations_file, settings):
     id_to_dreamborn_name = create_template.read_id_to_dreamborn_name()
-    id_to_api_card = create_template.read_or_fetch_id_to_api_card()
+    id_to_api_card = lorcana_api.read_or_fetch_id_to_api_card()
+    print("card_evaluations_file")
+    print(card_evaluations_file)
     id_to_rating = create_template.read_id_to_rating(card_evaluations_file)
-
     slot_name_to_slot = {
         'CommonSlotSteel': Slot("CommonSlotSteel", 1, []),
         'CommonSlotSapphire': Slot("CommonSlotSapphire", 1, []),
@@ -49,14 +51,13 @@ def generate_retail_draftmancer_file(id_to_tts_card, card_evaluations_file, sett
 
     for id in id_to_tts_card:
         api_card = id_to_api_card[id]
-        rarity = api_card["Rarity"]
-        color = api_card["Color"]
+        rarity = api_card.rarity
+        color = api_card.color
         frequency = rarity_to_frequency[rarity]
         slots_to_append = calculate_slots_to_append(rarity, color)
         for slot_name in slots_to_append:
             slot_card = SlotCard(id, frequency)
             slot_name_to_slot[slot_name].slot_cards.append(slot_card)
 
-    id_to_rating = create_template.read_id_to_rating("DraftBots\\FrankKarstenEvaluations-AveragePower.csv")
     custom_card_list = create_template.generate_custom_card_list(id_to_api_card, id_to_rating, id_to_tts_card, id_to_dreamborn_name, settings)
     return create_template.generate_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_name, settings, slot_name_to_slot)

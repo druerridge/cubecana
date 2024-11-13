@@ -136,7 +136,6 @@ def generate_custom_card_list(id_to_api_card: dict[str, ApiCard],
                               id_to_dreamborn_name: dict[str, str], 
                               settings: Settings):
     custom_card_list = []
-    print(len(id_to_api_card.keys()))
     for id in id_to_tts_card:
         api_card: ApiCard = id_to_api_card[id]
         ink_cost = api_card.cost

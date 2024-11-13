@@ -40,8 +40,6 @@ def fetch_api_data():
     print(f'Fetching {url}...')
     res = requests.get(url=url)
     sets_data = res.json()
-    print("sets_data")
-    print(sets_data)
     if sets_data is None:
         raise Exception('Failed to fetch sets no json data')
     if 'results' not in sets_data:
@@ -54,7 +52,6 @@ def fetch_api_data():
         code = set['code']
         if not is_number(code):
             continue
-        print("set code " + code)
         url = f'https://api.lorcast.com/v0/sets/{code}/cards'
         print(f'Fetching {url}...')
         res = requests.get(url=url)
@@ -85,7 +82,6 @@ def generate_id_to_card_untyped(name_to_card) -> dict[str, ApiCard]:
     for card_name in name_to_card:
         card = name_to_card[card_name]
         id_to_card_untyped[id_helper.to_id(card_name)] = card
-        print(f"Adding {card_name}")
     return id_to_card_untyped
 
 def generate_id_to_api_card(name_to_card) -> dict[str, ApiCard]:
@@ -123,7 +119,6 @@ def fix_card_name(name_to_card, old_full_name, new_full_name):
 
 def fix_card_names(name_to_card_untyped):
     # there are typos in the https://api.lorcana-api.com card names.  We have to fix those or we cannot translate between data sources
-    print("fix_card_names()")
     fix_card_name(name_to_card_untyped, 'Princip Naveen - Carefree Explorer', 'Prince Naveen - Carefree Explorer')
     fix_card_name(name_to_card_untyped, 'The White Rose - Gem of the Garden', 'The White Rose - Jewel of the Garden')
     fix_card_name(name_to_card_untyped, 'Tinker Bell - Flying at Full Speed', 'Tinker Bell - Fast Flier')

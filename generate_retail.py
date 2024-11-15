@@ -1,5 +1,6 @@
 import create_template
 import lorcast_api as lorcana_api
+from settings import Settings
 
 rarity_to_frequency = {
     "Common": 60,
@@ -31,7 +32,7 @@ def calculate_slots_to_append(rarity, color):
     slots_to_append.append("FoilSlot")
     return slots_to_append
 
-def generate_retail_draftmancer_file(id_to_tts_card, card_evaluations_file, settings):
+def generate_retail_draftmancer_file(id_to_tts_card, card_evaluations_file, settings: Settings):
     id_to_dreamborn_name = create_template.read_id_to_dreamborn_name()
     id_to_api_card = lorcana_api.read_or_fetch_id_to_api_card()
     print("card_evaluations_file")

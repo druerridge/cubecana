@@ -179,7 +179,7 @@ def write_draftmancer_file(draftmancer_file_string, card_list_name):
             file.write(line + '\n')
     print(f'Wrote draftmancer file to {file_name}')
 
-def generate_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_name, settings, slot_name_to_slot=None):
+def generate_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_name, settings: Settings, slot_name_to_slot=None):
     draftmancer_settings = settings.to_draftmancer_settings()
     if settings.color_balance_packs == True:
         draftmancer_settings['colorBalance'] = True

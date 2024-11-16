@@ -10631,7 +10631,7 @@
         "rating": 0
     },
     {
-        "name": "Adorabeezle Winterpop - lce Rocket Racer",
+        "name": "Adorabeezle Winterpop - Ice Rocket Racer",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -13571,7 +13571,7 @@
 1 Markowski - Space Trooper
 1 Abu - Bold Helmsman
 1 Mickey Mouse - Courageous Sailor
-1 Adorabeezle Winterpop - lce Rocket Racer
+1 Adorabeezle Winterpop - Ice Rocket Racer
 1 Moana - Self-Taught Sailor
 1 John Darling - Sophisticated Swordsman
 1 Thievery

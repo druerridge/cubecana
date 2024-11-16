@@ -10631,7 +10631,7 @@
         "rating": 0
     },
     {
-        "name": "Adorabeezle Winterpop - lce Rocket Racer",
+        "name": "Adorabeezle Winterpop - Ice Rocket Racer",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {

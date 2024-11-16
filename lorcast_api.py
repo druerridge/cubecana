@@ -124,5 +124,4 @@ def fix_card_names(name_to_card_untyped):
     fix_card_name(name_to_card_untyped, 'Tinker Bell - Flying at Full Speed', 'Tinker Bell - Fast Flier')
     fix_card_name(name_to_card_untyped, 'Make Some Magic', 'Making Magic')
     fix_card_name(name_to_card_untyped, 'Aladdin - Intrepid Navigator', 'Aladdin - Fearless Navigator')
-    fix_card_name(name_to_card_untyped, 'Adorabeezle Winterpop - Ice Rocket Racer', 'Adorabeezle Winterpop - lce Rocket Racer') # typo in dreamborn.ink
     fix_card_name(name_to_card_untyped, 'John Darling - Distinguished Swordsman', 'John Darling - Sophisticated Swordsman')

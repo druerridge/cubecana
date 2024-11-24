@@ -1,0 +1,87 @@
+<!-- This must be the last element in your <body> -->
+<style>
+    .footer-card {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: block;
+        margin-top: 50px;
+        font-size: 16px;
+        color: #ffffff;
+        text-decoration: none;
+        background-color: #7289da;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    .footer-card:hover {
+        background-color: #677bc4;
+    }
+    .bug-link {
+            margin-left: 20px;
+            float: right;
+        }
+        .bug-link:hover {
+            background-color: #ffcc00;
+        }
+        .disclaimer-link {
+            margin-right: 20px;
+            float: left;
+        }
+        .disclaimer-link:hover {
+            text-decoration: underline;
+        }
+        .footer-buffer {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: block;
+            margin-top: 50px;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+</style>
+
+<div class="footer-card">
+    <a href="https://forms.gle/dTjVztpd1nkadKb1A">
+        <div class="bug-link"><img src="{{ url_for('static', filename='bug-icon-white.png') }}" alt="Bug Icon" style="width: 20px; vertical-align: middle; margin-right: 5px; margin-left: 5px;"></div>
+    </a>
+    <a href="/disclaimer">
+        <div class="disclaimer-link">&#x24D8; Disclaimer</div>
+    </a>
+    <a href="https://discord.gg/Y4WyY6rMBk">
+        <div class="discord-footer-card">
+            <div class="discord-link">
+                <img src="{{ url_for('static', filename='icon_clyde_white_RGB.png') }}" alt="Discord Icon" style="width: 20px; vertical-align: middle; margin-right: 5px; margin-left: 5px;">Fortyborn Discord: #cube-chat + cube drafts every other Sunday!<br />
+            </div>
+            <div id="nextCubeClubDateText" class="nounderline" style="color: #ffffff;"></div>
+        </div>
+    </a>
+</div>
+<div class="footer-buffer">
+
+</div>
+<script>
+    const nextCubeClubDateText = document.getElementById('nextCubeClubDateText');
+    const lastKnownCubeClubDate = new Date(1730066400000) // Oct. 27, 2024 @ 3pm PT
+    let nextCubeClubDate = lastKnownCubeClubDate;
+    while (nextCubeClubDate < Date.now()) {
+        nextCubeClubDate.setDate(nextCubeClubDate.getDate() + 14);
+    }
+    let formatter = Intl.DateTimeFormat(
+        "default",
+        {
+            weekday: "short", 
+            month: "short",
+            day: "numeric",
+            hour: "numeric",
+            minute: "numeric",
+            timeZoneName: "short"
+        }
+    );
+    nextCubeClubDateText.innerText = "Next Cube Draft: " + formatter.format(nextCubeClubDate);
+    console.log(nextCubeClubDate); 
+</script>

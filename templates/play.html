@@ -2,9 +2,8 @@
 <html lang="en">
 <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 <head>
-    <meta charset="utf-8">
     <meta name="Play your drafted Lorana cube deck online vs bots or friends with just a card list!">
-    <title>Cubecana - Draft & Play Lorcana Cubes Online</title>
+    {% include 'shared/common_head.html' %}
     <style>
         header {
             text-align: left;
@@ -52,11 +51,7 @@
 </head>
 
 <body>
-    <header style="height: 100px; overflow: hidden;">
-        <a href="/">
-            <img src="{{ url_for('static', filename='LCC-Cube-1.png') }}" alt="Home" style="height: 100%;">
-        </a>
-    </header>
+    {% include 'shared/content_header.html' %}
     <div id="errorText" style="color: red; display: none; background-color: lightcoral; width: 100%; padding: 10px;" disabled>An error occurred. Please try again.</div>
     <div class="row">
         <div class="column">
@@ -87,9 +82,8 @@
             <button id="inktable-btn" class="button" disabled>To Inktable.net</button>
         </div>
     </div> 
-    
+    {% include 'shared/content_footer.html' %}
 </body>
-<script src="{{ url_for('static', filename='js/shared.js') }}"></script>
 <script type="text/javascript">
     const convertButton = document.getElementById('post-btn');
     const errorTextElement = document.getElementById('errorText');

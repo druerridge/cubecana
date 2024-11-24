@@ -2,23 +2,10 @@
 <html lang="en">
 <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Draft your Lorcana cube online vs bots or friends with just a card list!">
-    <title>Cubecana - Draft & Play Lorcana Cubes Online</title>
+    {% include 'shared/common_head.html' %}
+    
     <style>
-        header {
-            text-align: left;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-            background-image: url('static/lorcana-cube-club-bg2.jpeg');
-            background-size: cover; 
-            background-repeat: no-repeat;
-            color: white; /* White text for better readability */
-        }
         textarea {
             width: 100%;
             height: 300px;
@@ -55,11 +42,7 @@
     </style>
 </head>
 <body>
-    <header style="height: 100px; overflow: hidden;">
-        <a href="/">
-            <img src="{{ url_for('static', filename='LCC-Cube-1.png') }}" alt="Home" style="height: 100%;">
-        </a>
-    </header>
+    {% include 'shared/content_header.html' %}
     <div id="errorText" style="color: red; display: none; background-color: lightcoral; width: 100%; padding: 10px;" disabled>An error occurred. Please try again.</div>
     <div style="display: flex; justify-content: space-between;">
         <div style="width: 48%;">
@@ -208,9 +191,7 @@
         Cards per Booster: <input type="number" id="cardsPerBooster" value="12" min="1" max="20" step="1" style="width: 50px;" />
     </div>
 
-    <script src="{{ url_for('static', filename='js/shared.js') }}"></script>
     <script>
-        
         const fromTtsConvertButton = document.getElementById('ttsConvertButton');
         let fromCardListConvertButton = document.getElementById('cardListConvertButton');
         let cardsPerBooster = document.getElementById('cardsPerBooster');
@@ -279,5 +260,6 @@
         }
         );
     </script>
+    {% include 'shared/content_footer.html' %}
 </body>
 </html>

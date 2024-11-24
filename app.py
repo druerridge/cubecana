@@ -18,6 +18,10 @@ def serve_play():
 def serve_disclaimer():
   return render_template('disclaimer.html')
 
+@app.route('/cubes')
+def serve_cubes():
+  return render_template('cubes.html')
+
 @app.route('/draft.html')
 def serve_draft():
   return render_template('draft.html')

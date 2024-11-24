@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cubecana - Largest Lorcana Cube List Online</title> <!-- Intentional override -->
+    {% include 'shared/common_head.html' %}
+
+    <style>
+        .container {
+            width: 55%;
+            height: 80%;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 20px auto; /* Center the container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example shadow */
+        }
+        .item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            text-decoration: none; /* Remove underline from links */
+            color: inherit; /* Inherit text color */
+            display: block; /* Make the entire item clickable */
+        }
+        .item:last-child {
+            border-bottom: none;
+        }
+        .tags {
+            margin-top: 5px;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f1f1f1;
+            border-radius: 3px;
+            padding: 2px 5px;
+            margin-right: 5px;
+            font-size: 12px;
+        }
+</style>
+</head>
+<body>
+    {% include 'shared/content_header.html' %}
+    <h1>Cube Directory</h1>
+    <div class="container" id="cubeContainer">
+        <!-- Items will be populated here by JavaScript -->
+    </div>
+    <script>
+        let cubes = [
+        {
+            name: 'InkPlayQuest 480 Cube',
+            cards: 480,
+            tags: ['Power Max'],
+            link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
+            author: "InkPlayQuest"
+        },
+        {
+            name: 'The Anti-Meta Cube v1.0',
+            cards: 400,
+            tags: ['Synergy'],
+            link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
+            author: "Stopthief"
+        },
+        {
+            name: 'JottoOtts Lorcana Cube 5.0',
+            cards: 540,
+            tags: ['Power Max'],
+            link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
+            author: "JottoOtts"
+        },
+        {
+            name: 'InkPlayQuest 480 Cube',
+            cards: 480,
+            tags: ['Power Max'],
+            link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
+            author: "InkPlayQuest"
+        },
+        {
+            name: 'The Anti-Meta Cube v1.0',
+            cards: 400,
+            tags: ['Synergy'],
+            link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
+            author: "Stopthief"
+        },
+        {
+            name: 'JottoOtts Lorcana Cube 5.0',
+            cards: 540,
+            tags: ['Power Max'],
+            link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
+            author: "JottoOtts"
+        },
+        {
+            name: 'InkPlayQuest 480 Cube',
+            cards: 480,
+            tags: ['Power Max'],
+            link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
+            author: "InkPlayQuest"
+        },
+        {
+            name: 'The Anti-Meta Cube v1.0',
+            cards: 400,
+            tags: ['Synergy'],
+            link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
+            author: "Stopthief"
+        },
+        {
+            name: 'JottoOtts Lorcana Cube 5.0',
+            cards: 540,
+            tags: ['Power Max'],
+            link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
+            author: "JottoOtts"
+        },
+        {
+            name: 'InkPlayQuest 480 Cube',
+            cards: 480,
+            tags: ['Power Max'],
+            link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
+            author: "InkPlayQuest"
+        },
+        {
+            name: 'The Anti-Meta Cube v1.0',
+            cards: 400,
+            tags: ['Synergy'],
+            link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
+            author: "Stopthief"
+        },
+        {
+            name: 'JottoOtts Lorcana Cube 5.0',
+            cards: 540,
+            tags: ['Power Max'],
+            link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
+            author: "JottoOtts"
+        },
+        {
+            name: 'InkPlayQuest 480 Cube',
+            cards: 480,
+            tags: ['Power Max'],
+            link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
+            author: "InkPlayQuest"
+        },
+        {
+            name: 'The Anti-Meta Cube v1.0',
+            cards: 400,
+            tags: ['Synergy'],
+            link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
+            author: "Stopthief"
+        },
+        {
+            name: 'JottoOtts Lorcana Cube 5.0',
+            cards: 540,
+            tags: ['Power Max'],
+            link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
+            author: "JottoOtts"
+        },
+        {
+            name: 'InkPlayQuest 480 Cube',
+            cards: 480,
+            tags: ['Power Max'],
+            link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
+            author: "InkPlayQuest"
+        },
+        {
+            name: 'The Anti-Meta Cube v1.0',
+            cards: 400,
+            tags: ['Synergy'],
+            link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
+            author: "Stopthief"
+        },
+        {
+            name: 'JottoOtts Lorcana Cube 5.0',
+            cards: 540,
+            tags: ['Power Max'],
+            link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
+            author: "JottoOtts"
+        }
+    ];
+
+        const container = document.getElementById('cubeContainer');
+
+        cubes.forEach(cube => {
+            const itemLink = document.createElement('a');
+            itemLink.href = cube.link;
+            itemLink.className = 'item';
+
+            const nameDiv = document.createElement('div');
+            nameDiv.className = 'name';
+            nameDiv.textContent = cube.name;
+            itemLink.appendChild(nameDiv);
+
+            const cardsDiv = document.createElement('div');
+            cardsDiv.className = 'cards';
+            const cardImg = document.createElement('img');
+            cardImg.src = '{{ url_for('static', filename='cards.png') }}'; // Replace with the actual path to your image
+            cardImg.alt = 'Card Image';
+            cardImg.style.width = '20px'; // Adjust the size as needed
+            cardImg.style.height = '20px'; // Adjust the size as needed
+            cardsDiv.appendChild(cardImg);
+            cardsDiv.appendChild(document.createTextNode(` ${cube.cards}`));
+            itemLink.appendChild(cardsDiv);
+
+            const authorDiv = document.createElement('div');
+            authorDiv.className = 'author';
+            authorDiv.textContent = `by: ${cube.author}`;
+            itemLink.appendChild(authorDiv);
+
+            const tagsDiv = document.createElement('div');
+            tagsDiv.className = 'tags';
+            cube.tags.forEach(tag => {
+            const tagSpan = document.createElement('span');
+            tagSpan.className = 'tag';
+            tagSpan.textContent = tag;
+            tagsDiv.appendChild(tagSpan);
+            });
+            itemLink.appendChild(tagsDiv);
+
+            container.appendChild(itemLink);
+        });
+    </script>
+    {% include 'shared/content_footer.html' %}
+</body>
+</html>

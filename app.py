@@ -73,6 +73,7 @@ def card_list_to_draftmancer():
 
 @app.route('/dreamborn-to-draftmancer/', methods=['POST'])
 def handle_dreamborn_to_draftmancer():
+  print(request.data)
   json_data = json.loads(request.data)
   json_obj_tss_export = json.loads(json_data['dreamborn_export'])
   settings_input = json_data['settings']

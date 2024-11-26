@@ -1,6 +1,15 @@
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="Find, Draft, and Play Lorcana cubes online vs bots and friends with a cube toolkit by Lorcana Cube Club.">
 <title>Cubecana - Draft & Play Lorcana Cubes with Bots</title>
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
-<script src="{{ url_for('static', filename='js/shared.js') }}"></script>
+<script type="importmap">
+    {
+        "imports": {
+          "socketio": "https://cdn.socket.io/4.7.5/socket.io.esm.min.js",
+          "draftmancer-connect": "{{ url_for('static', filename='js/draftmancer-connect.js') }}"
+        }
+    }
+</script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/shared.js') }}"></script>

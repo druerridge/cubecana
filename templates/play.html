@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 <head>
     <meta name="Play your drafted Lorana cube deck online vs bots or friends with just a card list!">
     {% include 'shared/common_head.html' %}
@@ -97,58 +96,21 @@
 
     InktableButton.addEventListener('click', async _ => { 
         hideError();
-        var xhr = new XMLHttpRequest();
         var url = "/draftmancer-to-inktable/";
-        xhr.open("POST", url, true);
-        xhr.setRequestHeader("Content-Type", "application/json");
-        let newTab = window.open();
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState !== 4) {
-                return;
-            }
-            
-            // success
-            if (xhr.status === 200) {
-                console.log("responseText: " + xhr.responseText);
-                newTab.location.href = xhr.responseText;
-                return;
-            } 
-
-            // error
-            if (xhr.status != 200) {
-                handleNon200Response(xhr);
-                newTab.close();
-            }
-        };
         var data = JSON.stringify({ "draftmancer_export": draftmancerInputArea.value.trim() });
-        xhr.send(data);
+        let newTab = window.open();
+        request(url, data, (responseText) => {
+            newTab.location.href = responseText;
+        });
     });
 
     convertButton.addEventListener('click', async _ => {
         hideError();
-        var xhr = new XMLHttpRequest();
         var url = "/draftmancer-to-tts/";
-        xhr.open("POST", url, true);
-        xhr.setRequestHeader("Content-Type", "application/json");
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState !== 4) {
-                return;
-            }
-            
-            // success
-            if (xhr.status === 200) {
-                console.log("responseText: " + xhr.responseText);
-                download(xhr.responseText, "tts-cube-deck.json", "json");
-                return;
-            } 
-
-            // error
-            if (xhr.status != 200) {
-                handleNon200Response(xhr);
-            }
-        };
         var data = JSON.stringify({ "draftmancer_export": draftmancerInputArea.value.trim() });
-        xhr.send(data);
+        request(url, data, (responseText) => {
+            download(responseText, "tts-cube-deck.json", "json");
+        });
     });
 </script>
 

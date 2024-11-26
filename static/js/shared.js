@@ -1,4 +1,3 @@
-
 // https://stackoverflow.com/questions/13405129/create-and-save-a-file-with-javascript
 // Function to download data to a file
 function download(data, filename, type) {
@@ -55,4 +54,28 @@ function handleNon200Response(xhr) {
     // lcc error case
     showError("Error: " + errorResponse.user_facing_message);
     console.log("Error: " + errorResponse.user_facing_message);
+}
+
+function request(url, data, onSuccessHandler) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState !== 4) {
+            return;
+        }
+        
+        // success
+        if (xhr.status === 200) {
+            console.log("responseText: " + xhr.responseText);
+            onSuccessHandler(xhr.responseText);
+            return;
+        } 
+
+        // error
+        if (xhr.status != 200) {
+            handleNon200Response(xhr);
+        }
+    };
+    xhr.send(data);
 }

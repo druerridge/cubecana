@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 <head>
     <meta name="Draft your Lorcana cube online vs bots or friends with just a card list!">
     {% include 'shared/common_head.html' %}
-    
+      
     <style>
         textarea {
             width: 100%;
@@ -70,21 +69,6 @@
                     <span id="fileName"></span>
                     <button id="removeFileButton" style="color: white; background-color: red;">Remove file</button>
                 </div>
-                
-                <script>
-                    const fileInfo = document.getElementById('fileInfo');
-                    const fileNameSpan = document.getElementById('fileName');
-                    const removeFileButton = document.getElementById('removeFileButton');
-
-                    removeFileButton.addEventListener('click', () => {
-                        fileInfo.style.display = 'none';
-                        fileInput.value = '';
-                        ttsInput = null;
-                        fileNameSpan.textContent = '';
-                        dropZone.style.display = 'block';
-                        ttsConvertButton.disabled = true;
-                    });
-                </script>
                 <input type="file" id="fileInput" style="display: none;">
             </div>
             <style>
@@ -92,62 +76,8 @@
                     color: blue;
                 }
             </style>
-            <script>
-                const dropZone = document.getElementById('dropZone');
-                const fileInput = document.getElementById('fileInput');
-
-                dropZone.addEventListener('click', () => fileInput.click());
-
-                dropZone.addEventListener('dragover', (e) => {
-                    e.preventDefault();
-                    dropZone.style.borderColor = 'green';
-                });
-
-                dropZone.addEventListener('dragleave', () => {
-                    dropZone.style.borderColor = '#ccc';
-                });
-
-                dropZone.addEventListener('drop', (e) => {
-                    e.preventDefault();
-                    dropZone.style.borderColor = '#ccc';
-                    const files = e.dataTransfer.files;
-                    handleFiles(files);
-                });
-
-                fileInput.addEventListener('change', (e) => {
-                    const files = e.target.files;
-                    handleFiles(files);
-                });
-
-                function handleFiles(files) {
-                    if (files.length > 0 && files[0].type === 'application/json') {
-                        const file = files[0];
-                        const reader = new FileReader();
-                        reader.onload = (e) => {
-                            const content = e.target.result;
-                            if (content.length > 50000000) {
-                                showError('File is too large. Please upload a file smaller than 50MB.');
-                                return;
-                            }
-                            try {
-                                JSON.parse(content);
-                                ttsInput = content;
-                            } catch (e) {
-                                console.error(e);
-                                showError('Invalid JSON file. Please upload a valid JSON file.');
-                            }
-                        };
-                        reader.readAsText(file);
-                        fileNameSpan.textContent = file.name;
-                        fileInfo.style.display = 'block';
-                        dropZone.style.display = 'none';
-                        ttsConvertButton.disabled = false;
-                    } else {
-                        showError('no file or file is not a json file');
-                    }
-                }
-            </script>
-            <button id="ttsConvertButton" disabled>Convert</button>
+            <button id="ttsSaveButton" disabled>Download</button>
+            <button id="ttsDraftButton" disabled>Draft Now</button>
             <div style="width: fit-content; margin: auto; text-align: left;">
                 <div id="draft-instructions" style="list-style-position: inside;">
                     <p>Draft Instructions:
@@ -184,82 +114,15 @@
 1 LeFou - Opportunistic Flunky
 ..."></textarea>
             <br>
-            <button id="cardListConvertButton" disabled>Convert</button>
+            <button id="cardListSaveButton" disabled>Download</button>
+            <button id="cardListDraftButton" disabled>Draft Now</button>
         </div>
     </div>
     <div>
         Cards per Booster: <input type="number" id="cardsPerBooster" value="12" min="1" max="20" step="1" style="width: 50px;" />
     </div>
 
-    <script>
-        const fromTtsConvertButton = document.getElementById('ttsConvertButton');
-        let fromCardListConvertButton = document.getElementById('cardListConvertButton');
-        let cardsPerBooster = document.getElementById('cardsPerBooster');
-        let ttsInput = null;
-
-        fromTtsConvertButton.addEventListener('click', async _ => {
-            hideError();
-
-            var xhr = new XMLHttpRequest();
-            var url = "/dreamborn-to-draftmancer/";
-            xhr.open("POST", url, true);
-            xhr.setRequestHeader("Content-Type", "application/json");
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState !== 4) {
-                    return;
-                }
-                
-                // success
-                if (xhr.status === 200) {
-                    console.log("responseText: " + xhr.responseText);
-                    download(xhr.responseText, "custom-cube.draftmancer.txt", "txt");
-                    return;
-                } 
-
-                // error
-                if (xhr.status != 200) {
-                    handleNon200Response(xhr);
-                }
-            };
-            var data = JSON.stringify({ "dreamborn_export": ttsInput, "settings": { "cards_per_booster": cardsPerBooster.value } });
-            xhr.send(data);
-        }
-        );
-
-        cardListInput.addEventListener('input', () => {
-            fromCardListConvertButton.disabled = cardListInput.value.trim().length === 0;
-        });
-
-        fromCardListConvertButton.addEventListener('click', async _ => {
-            hideError();
-
-            const cardListInput = document.getElementById('cardListInput').value.trim();
-            var xhr = new XMLHttpRequest();
-            var url = "/card-list-to-draftmancer/";
-            xhr.open("POST", url, true);
-            xhr.setRequestHeader("Content-Type", "application/json");
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState !== 4) {
-                    return;
-                }
-                
-                // success
-                if (xhr.status === 200) {
-                    console.log("responseText: " + xhr.responseText);
-                    download(xhr.responseText, "custom-cube.draftmancer.txt", "txt");
-                    return;
-                } 
-
-                // error
-                if (xhr.status != 200) {
-                    handleNon200Response(xhr);
-                }
-            };
-            var data = JSON.stringify({ "card_list": cardListInput, "settings": { "cards_per_booster": cardsPerBooster.value }  });
-            xhr.send(data);
-        }
-        );
-    </script>
+    <script type="module" src="{{ url_for('static', filename='js/draft.js') }}"></script>
     {% include 'shared/content_footer.html' %}
 </body>
 </html>

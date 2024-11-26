@@ -40,6 +40,17 @@
 <body>
     {% include 'shared/content_header.html' %}
     <h1>Cube Directory</h1>
+
+    <template id="cube-list-element-template">
+        <div id="element-name" class="name"></div>
+        <div id="element-cards" class="cards"><img src="/static/cards.png" alt="Card Image" style="width: 20px; height: 20px;"></div>
+        <div id="element-author" class="author"></div>
+        <div id="element-tags" class="tags">
+            <!-- <span class="tag">Synergy</span> -->
+        </div>
+        <div id="element-last-updated" class="last-updated"></div>
+    </template>
+
     <div class="container" id="cubeContainer">
         <!-- Items will be populated here by JavaScript -->
     </div>
@@ -50,170 +61,207 @@
             cards: 480,
             tags: ['Power Max'],
             link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
-            author: "InkPlayQuest"
+            author: "InkPlayQuest",
+            lastUpdated: "2021-09-01"
         },
         {
             name: 'The Anti-Meta Cube v1.0',
             cards: 400,
             tags: ['Synergy'],
             link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
-            author: "Stopthief"
+            author: "Stopthief",
+            lastUpdated: "2021-09-01"
         },
         {
             name: 'JottoOtts Lorcana Cube 5.0',
             cards: 540,
             tags: ['Power Max'],
             link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
-            author: "JottoOtts"
+            author: "JottoOtts",
+            lastUpdated: "2021-09-01"
         },
         {
             name: 'InkPlayQuest 480 Cube',
             cards: 480,
             tags: ['Power Max'],
             link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
-            author: "InkPlayQuest"
+            author: "InkPlayQuest",
+            lastUpdated: "2021-09-01"
         },
         {
             name: 'The Anti-Meta Cube v1.0',
             cards: 400,
             tags: ['Synergy'],
             link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
-            author: "Stopthief"
+            author: "Stopthief",
+            lastUpdated: "2021-09-01"
         },
         {
             name: 'JottoOtts Lorcana Cube 5.0',
             cards: 540,
             tags: ['Power Max'],
             link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
-            author: "JottoOtts"
+            author: "JottoOtts",
+            lastUpdated: "2021-09-01"
         },
         {
             name: 'InkPlayQuest 480 Cube',
             cards: 480,
             tags: ['Power Max'],
             link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
-            author: "InkPlayQuest"
+            author: "InkPlayQuest",
+            lastUpdated: "2021-09-01"
         },
         {
             name: 'The Anti-Meta Cube v1.0',
             cards: 400,
             tags: ['Synergy'],
             link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
-            author: "Stopthief"
+            author: "Stopthief",
+            lastUpdated: "2021-09-01"
         },
         {
             name: 'JottoOtts Lorcana Cube 5.0',
             cards: 540,
             tags: ['Power Max'],
             link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
-            author: "JottoOtts"
+            author: "JottoOtts",
+            lastUpdated: "2021-09-01"
         },
         {
             name: 'InkPlayQuest 480 Cube',
             cards: 480,
             tags: ['Power Max'],
             link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
-            author: "InkPlayQuest"
+            author: "InkPlayQuest",
+            lastUpdated: "2021-09-01"
         },
         {
             name: 'The Anti-Meta Cube v1.0',
             cards: 400,
             tags: ['Synergy'],
             link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
-            author: "Stopthief"
+            author: "Stopthief",
+            lastUpdated: "2021-09-01"
         },
         {
             name: 'JottoOtts Lorcana Cube 5.0',
             cards: 540,
             tags: ['Power Max'],
             link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
-            author: "JottoOtts"
+            author: "JottoOtts",
+            lastUpdated: "2021-09-01"
         },
         {
             name: 'InkPlayQuest 480 Cube',
             cards: 480,
             tags: ['Power Max'],
             link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
-            author: "InkPlayQuest"
+            author: "InkPlayQuest",
+            lastUpdated: "2021-09-01"
         },
         {
             name: 'The Anti-Meta Cube v1.0',
             cards: 400,
             tags: ['Synergy'],
             link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
-            author: "Stopthief"
+            author: "Stopthief",
+            lastUpdated: "2021-09-01"
         },
         {
             name: 'JottoOtts Lorcana Cube 5.0',
             cards: 540,
             tags: ['Power Max'],
             link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
-            author: "JottoOtts"
+            author: "JottoOtts",
+            lastUpdated: "2021-09-01"
         },
         {
             name: 'InkPlayQuest 480 Cube',
             cards: 480,
             tags: ['Power Max'],
             link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
-            author: "InkPlayQuest"
+            author: "InkPlayQuest",
+            lastUpdated: "2021-09-01"
         },
         {
             name: 'The Anti-Meta Cube v1.0',
             cards: 400,
             tags: ['Synergy'],
             link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
-            author: "Stopthief"
+            author: "Stopthief",
+            lastUpdated: "2021-09-01"
         },
         {
             name: 'JottoOtts Lorcana Cube 5.0',
             cards: 540,
             tags: ['Power Max'],
             link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
-            author: "JottoOtts"
+            author: "JottoOtts",
+            lastUpdated: "2021-09-01"
         }
     ];
 
         const container = document.getElementById('cubeContainer');
 
         cubes.forEach(cube => {
-            const itemLink = document.createElement('a');
-            itemLink.href = cube.link;
-            itemLink.className = 'item';
+            if ("content" in document.createElement("template")) {
+                // Instantiate the table with the existing HTML tbody
+                // and the row with the template
+                const template = document.getElementById("cube-list-element-template");
 
-            const nameDiv = document.createElement('div');
-            nameDiv.className = 'name';
-            nameDiv.textContent = cube.name;
-            itemLink.appendChild(nameDiv);
+                // Clone the new row and insert it into the table
+                let clone = template.content.cloneNode(true);
+                let name = clone.getElementById("element-name").texContent = cube.name;
+                let cards = clone.getElementById("element-cards").texContent = cube.cards;
+                let author = clone.getElementById("element-author").texContent = "by: " + cube.author;
+                let tags = clone.getElementById("element-tags").texContent = cube.tags;
+                let lastUpdated = clone.getElementById("element-last-updated").texContent = cube.lastUpdated;
+             
+                container.appendChild(clone);
+            }
 
-            const cardsDiv = document.createElement('div');
-            cardsDiv.className = 'cards';
-            const cardImg = document.createElement('img');
-            cardImg.src = '{{ url_for('static', filename='cards.png') }}'; // Replace with the actual path to your image
-            cardImg.alt = 'Card Image';
-            cardImg.style.width = '20px'; // Adjust the size as needed
-            cardImg.style.height = '20px'; // Adjust the size as needed
-            cardsDiv.appendChild(cardImg);
-            cardsDiv.appendChild(document.createTextNode(` ${cube.cards}`));
-            itemLink.appendChild(cardsDiv);
 
-            const authorDiv = document.createElement('div');
-            authorDiv.className = 'author';
-            authorDiv.textContent = `by: ${cube.author}`;
-            itemLink.appendChild(authorDiv);
+            // const itemLink = document.createElement('a');
+            // itemLink.href = cube.link;
+            // itemLink.className = 'item';
 
-            const tagsDiv = document.createElement('div');
-            tagsDiv.className = 'tags';
-            cube.tags.forEach(tag => {
-            const tagSpan = document.createElement('span');
-            tagSpan.className = 'tag';
-            tagSpan.textContent = tag;
-            tagsDiv.appendChild(tagSpan);
-            });
-            itemLink.appendChild(tagsDiv);
+            // const nameDiv = document.createElement('div');
+            // nameDiv.className = 'name';
+            // nameDiv.textContent = cube.name;
+            // itemLink.appendChild(nameDiv);
 
-            container.appendChild(itemLink);
+            // const cardsDiv = document.createElement('div');
+            // cardsDiv.className = 'cards';
+            // const cardImg = document.createElement('img');
+            // cardImg.src = '{{ url_for('static', filename='cards.png') }}'; // Replace with the actual path to your image
+            // cardImg.alt = 'Card Image';
+            // cardImg.style.width = '20px'; // Adjust the size as needed
+            // cardImg.style.height = '20px'; // Adjust the size as needed
+            // cardsDiv.appendChild(cardImg);
+            // cardsDiv.appendChild(document.createTextNode(` ${cube.cards}`));
+            // itemLink.appendChild(cardsDiv);
+
+            // const authorDiv = document.createElement('div');
+            // authorDiv.className = 'author';
+            // authorDiv.textContent = `by: ${cube.author}`;
+            // itemLink.appendChild(authorDiv);
+
+            // const tagsDiv = document.createElement('div');
+            // tagsDiv.className = 'tags';
+            // cube.tags.forEach(tag => {
+            // const tagSpan = document.createElement('span');
+            // tagSpan.className = 'tag';
+            // tagSpan.textContent = tag;
+            // tagsDiv.appendChild(tagSpan);
+            // });
+            // itemLink.appendChild(tagsDiv);
+
+            // container.appendChild(itemLink);
         });
     </script>
+    
+
     {% include 'shared/content_footer.html' %}
 </body>
 </html>

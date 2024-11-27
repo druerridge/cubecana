@@ -56,7 +56,7 @@ function handleNon200Response(xhr) {
     console.log("Error: " + errorResponse.user_facing_message);
 }
 
-function request(url, data, onSuccessHandler) {
+function request(url, data, onSuccessHandler, onErrorHandler) {
     var xhr = new XMLHttpRequest();
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
@@ -75,6 +75,7 @@ function request(url, data, onSuccessHandler) {
         // error
         if (xhr.status != 200) {
             handleNon200Response(xhr);
+            onErrorHandler(xhr);
         }
     };
     xhr.send(data);

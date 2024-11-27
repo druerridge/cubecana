@@ -98,9 +98,11 @@
         hideError();
         var url = "/draftmancer-to-inktable/";
         var data = JSON.stringify({ "draftmancer_export": draftmancerInputArea.value.trim() });
-        let newTab = window.open();
+        let newTab = window.open("/loading");
         request(url, data, (responseText) => {
             newTab.location.href = responseText;
+        }, (xhr) => {
+            newTab.close();
         });
     });
 

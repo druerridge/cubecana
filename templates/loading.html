@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading-text">Loading</div>
+    <script>
+        let dots = 0;
+        const loadingText = document.getElementById('loading-text');
+        setInterval(() => {
+            dots = (dots + 1) % 4;
+            loadingText.textContent = 'Loading' + '.'.repeat(dots);
+        }, 500);
+    </script>
+</body>
+</html>

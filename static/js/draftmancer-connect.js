@@ -1,17 +1,18 @@
 import { io } from "socketio";
 
-export function generateDraftmancerSession(CubeFile, tabToOpen) {
+export function generateDraftmancerSession(CubeFile, tabToOpen, metadata) {
     
     const Domain = "https://draftmancer.com";
 
     // Generate unique user ID and session ID
     const BotID = "CubecanaBot_" + crypto.randomUUID();
     const SessionID = "Cubecana_" + crypto.randomUUID();
-
+    const maxSupportedPlayers = Math.floor( metadata.cardCount / (metadata.boostersPerPlayer * metadata.cardsPerBooster) )
+    const numBots = Math.min(maxSupportedPlayers - 1, 7) ;
     const query = {
         userID: BotID,
         userName: "Cubecana Bot",
-        sessionSettings: JSON.stringify({bots: 7, maxTimer: 0}),
+        sessionSettings: JSON.stringify({bots: numBots, maxTimer: 0}),
         sessionID: SessionID,
     };
 

@@ -1,5 +1,5 @@
 class Settings:
-    def __init__(self, boosters_per_player, card_list_name, cards_per_booster, set_card_colors, color_balance_packs, with_replacement=False):
+    def __init__(self, boosters_per_player=4, card_list_name='custom_cube', cards_per_booster=12, set_card_colors=False, color_balance_packs=False, with_replacement=False):
         self.boosters_per_player = int(boosters_per_player)
         self.card_list_name = card_list_name
         self.cards_per_booster = int(cards_per_booster)

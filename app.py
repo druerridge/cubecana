@@ -10,7 +10,7 @@ app = Flask(__name__)
 def serve_index():
   return render_template('index.html')
 
-@app.route('/play.html')
+@app.route('/play')
 def serve_play():
   return render_template('play.html')
 
@@ -22,7 +22,11 @@ def serve_disclaimer():
 def serve_cubes():
   return render_template('cubes.html')
 
-@app.route('/draft.html')
+@app.route('/loading')
+def serve_loading():
+  return render_template('loading.html')
+
+@app.route('/draft')
 def serve_draft():
   return render_template('draft.html')
 
@@ -61,33 +65,40 @@ def card_list_to_draftmancer():
   card_list = json_data['card_list']
   settings_input = json_data['settings']
 
+  card_list_lines = card_list.split('\n')
+  id_to_count_input = create_template.id_to_count_from(card_list_lines)
+  card_count = 0
+  [card_count := card_count + count for count in id_to_count_input.values()]
+
   settings = Settings(
-        boosters_per_player=4,
+        boosters_per_player=settings_input.get('boosters_per_player', 4),
         card_list_name="custom_cube",
-        cards_per_booster=settings_input['cards_per_booster'],
+        cards_per_booster=settings_input.get('cards_per_booster', 12),
         set_card_colors=False,
         color_balance_packs=False
     )
   draftmancer_file = create_template.dreamborn_card_list_to_draftmancer(card_list, create_template.DEFAULT_CARD_EVALUATIONS_FILE, settings)
-  return draftmancer_file
+  response = {'draftmancerFile': draftmancer_file, 'metadata': {'cardCount': card_count, 'cardsPerBooster': settings.cards_per_booster, 'boostersPerPlayer': settings.boosters_per_player}}
+  return json.dumps(response)
 
 @app.route('/dreamborn-to-draftmancer/', methods=['POST'])
 def handle_dreamborn_to_draftmancer():
-  print(request.data)
   json_data = json.loads(request.data)
   json_obj_tss_export = json.loads(json_data['dreamborn_export'])
   settings_input = json_data['settings']
   id_to_tts_card = create_template.generate_id_to_tts_card_from_json_obj(json_obj_tss_export)
-
+  card_count = 0
+  [card_count := card_count + card['count'] for card in id_to_tts_card.values()]
   settings = Settings(
-        boosters_per_player=4,
+        boosters_per_player=settings_input.get('boosters_per_player', 4),
         card_list_name="custom_cube",
-        cards_per_booster=settings_input['cards_per_booster'],
+        cards_per_booster=settings_input.get('cards_per_booster', 12),
         set_card_colors=False,
         color_balance_packs=False
     )
   draftmancer_file = create_template.dreamborn_tts_to_draftmancer(id_to_tts_card, create_template.DEFAULT_CARD_EVALUATIONS_FILE, settings)
-  return draftmancer_file
+  response = {'draftmancerFile': draftmancer_file, 'metadata': {'cardCount': card_count, 'cardsPerBooster': settings.cards_per_booster, 'boostersPerPlayer': settings.boosters_per_player}}
+  return json.dumps(response)
 
 @app.errorhandler(lcc_error.LccError)
 def handle_foo_exception(error):

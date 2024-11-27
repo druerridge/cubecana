@@ -13,6 +13,7 @@ const saveFromTtsButton = document.getElementById('ttsSaveButton');
 let saveFromCardListButton = document.getElementById('cardListSaveButton');
 let draftFromCardListButton = document.getElementById('cardListDraftButton');
 let cardsPerBooster = document.getElementById('cardsPerBooster');
+let boostersPerPlayer = document.getElementById('boostersPerPlayer');
 let ttsInput = null;
 
 removeFileButton.addEventListener('click', () => {
@@ -81,10 +82,13 @@ draftFromTtsButton.addEventListener('click', async _ => {
     hideError();
 
     var url = "/dreamborn-to-draftmancer/";
-    var data = JSON.stringify({ "dreamborn_export": ttsInput, "settings": { "cards_per_booster": cardsPerBooster.value } });
-    let newTab = window.open();
+    var data = JSON.stringify({ "dreamborn_export": ttsInput, "settings": { "cards_per_booster": cardsPerBooster.value, "boosters_per_player": boostersPerPlayer.value } });
+    let newTab = window.open("/loading");
     request(url, data, (responseText) => {
-        generateDraftmancerSession(responseText, newTab);
+        let response = JSON.parse(responseText);
+        generateDraftmancerSession(response.draftmancerFile, newTab, response.metadata);
+    }, (xhr) => {
+        newTab.close();
     });
 });
 
@@ -92,26 +96,11 @@ saveFromTtsButton.addEventListener('click', async _ => {
     hideError();
 
     var url = "/dreamborn-to-draftmancer/";
-    var data = JSON.stringify({ "dreamborn_export": ttsInput, "settings": { "cards_per_booster": cardsPerBooster.value } });
+    var data = JSON.stringify({ "dreamborn_export": ttsInput, "settings": { "cards_per_booster": cardsPerBooster.value, "boosters_per_player": boostersPerPlayer.value } });
     request(url, data, (responseText) => {
-        download(responseText, "custom-cube.draftmancer.txt", "txt");
+        let response = JSON.parse(responseText);
+        download(response.draftmancerFile, "custom-cube.draftmancer.txt", "txt");
     });
-});
-
-draftFromTtsButton.addEventListener('click', async _ => {
-    hideError();
-
-    var url = "/dreamborn-to-draftmancer/";
-    var data = JSON.stringify({ "dreamborn_export": ttsInput, "settings": { "cards_per_booster": cardsPerBooster.value } });
-    let newTab = window.open();
-    request(url, data, (responseText) => {
-        generateDraftmancerSession(responseText, newTab);
-    });
-});
-
-cardListInput.addEventListener('input', () => {
-    saveFromCardListButton.disabled = cardListInput.value.trim().length === 0;
-    draftFromCardListButton.disabled = cardListInput.value.trim().length === 0;
 });
 
 saveFromCardListButton.addEventListener('click', async _ => {
@@ -119,9 +108,10 @@ saveFromCardListButton.addEventListener('click', async _ => {
 
     const cardListInput = document.getElementById('cardListInput').value.trim();
     var url = "/card-list-to-draftmancer/";
-    var data = JSON.stringify({ "card_list": cardListInput, "settings": { "cards_per_booster": cardsPerBooster.value } });
+    var data = JSON.stringify({ "card_list": cardListInput, "settings": { "cards_per_booster": cardsPerBooster.value, "boosters_per_player": boostersPerPlayer.value } });
     request(url, data, (responseText) => {
-        download(responseText, "custom-cube.draftmancer.txt", "txt");
+        let response = JSON.parse(responseText);
+        download(response.draftmancerFile, "custom-cube.draftmancer.txt", "txt");
     });
 });
 
@@ -130,9 +120,17 @@ draftFromCardListButton.addEventListener('click', async _ => {
 
     const cardListInput = document.getElementById('cardListInput').value.trim();
     var url = "/card-list-to-draftmancer/";
-    var data = JSON.stringify({ "card_list": cardListInput, "settings": { "cards_per_booster": cardsPerBooster.value } });
-    let newTab = window.open();
+    var data = JSON.stringify({ "card_list": cardListInput, "settings": { "cards_per_booster": cardsPerBooster.value, "boosters_per_player": boostersPerPlayer.value } });
+    let newTab = window.open("/loading");
     request(url, data, (responseText) => {
-        generateDraftmancerSession(responseText, newTab);
+        let response = JSON.parse(responseText);
+        generateDraftmancerSession(response.draftmancerFile, newTab, response.metadata);
+    }, (xhr) => {
+        newTab.close();
     });
+});
+
+cardListInput.addEventListener('input', () => {
+    saveFromCardListButton.disabled = cardListInput.value.trim().length === 0;
+    draftFromCardListButton.disabled = cardListInput.value.trim().length === 0;
 });

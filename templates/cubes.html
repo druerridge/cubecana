@@ -43,6 +43,33 @@
             margin-right: 5px;
             font-size: 12px;
         }
+        .name {
+            text-align: left;
+            vertical-align: top;
+        }
+        .cards {
+            text-align: left;
+        }
+        .author {
+            text-align: right;
+            color: gray;
+            vertical-align: middle;
+        }
+        .element-row-1 {
+            text-align: left;
+            vertical-align: top;
+            align-items: start;
+        }
+        .cube-tags {
+            text-align: left;
+            vertical-align: middle;
+            align-items: start;
+        }
+        .last-updated {
+            text-align: right;
+            color: gray;
+            vertical-align: bottom;
+        }
 </style>
 </head>
 <body>
@@ -50,13 +77,25 @@
     <h1>Cube Directory</h1>
 
     <template class="cube-element" id="cube-list-element-template">
-        <div id="element-name" class="name">INSERT_NAME</div>
-        <div id="element-cards" class="cards"><img src="/static/cards.png" alt="Card Image" style="width: 20px; height: 20px;">CARD_COUNT</div>
-        <div id="element-author" class="author">AUTHOR</div>
-        <div id="element-tags" class="cube-tags">
-            <!-- <span class="cube-tag">Synergy</span> -->
+        <div style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin-bottom: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <div id="element-row-1" class="element-row-1" style="display: table; width:100%; margin: 0;">
+                <div id="left-part" style="display: table-cell;">
+                    <span id="element-name" class="name">INSERT_NAME</span>
+                    <span id="element-cards" class="cards"><img src="{{ url_for('static', filename='cards.png') }}" alt="Card Image" style="width: 20px; height: 20px;">CARD_COUNT</span>
+                    <span id="element-author" class="author">AUTHOR</span>
+                </div>
+                <div style="display: table-cell; text-align: right;">
+                    <span><a href="LINK" id="element-link" style="text-decoration: none; color: inherit;"><button>View Cube</button></a></span>
+                    <span><a href="LINK" id="element-draft" style="text-decoration: none; color: inherit;"><button>Draft Now</button></a></span>   
+                </div>
+            </div>
+            <div id="element-row-2" class="element-row-2" style="display: table; width: 100%;margin:0;">
+                <div id="element-tags" class="cube-tags" style="text-align: left; display: table-cell;">
+                    <!-- <span class="cube-tag">Synergy</span> -->
+                </div>
+                <div id="element-last-updated" class="last-updated" style="text-align: right; display: table-cell;">last updated: 12-04-1991</div>
+            </div>
         </div>
-        <div id="element-last-updated" class="last-updated">12-04-1991</div>
     </template>
 
     <div class="container" id="cubeContainer">
@@ -219,8 +258,9 @@
 
                 let clone = template.content.cloneNode(true);
                 let name = clone.getElementById("element-name").textContent = cube.name;
-                let cards = clone.getElementById("element-cards").textContent = cube.cards;
+                let cards = clone.getElementById("element-cards").textContent = "(" + cube.cards + " cards)";
                 let author = clone.getElementById("element-author").textContent = "by: " + cube.author;
+                let link = clone.getElementById("element-link").href = cube.link;
                 
                 let elementTags = clone.getElementById("element-tags")
                 cube.tags.forEach(tag => {
@@ -229,7 +269,7 @@
                     tagElement.textContent = tag;
                     elementTags.appendChild(tagElement);
                 });
-                let lastUpdated = clone.getElementById("element-last-updated").textContent = cube.lastUpdated;
+                let lastUpdated = clone.getElementById("element-last-updated").textContent = "last updated: " + cube.lastUpdated;
              
                 container.appendChild(clone);
             }

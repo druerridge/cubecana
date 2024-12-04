@@ -96,7 +96,7 @@
 
     InktableButton.addEventListener('click', async _ => { 
         hideError();
-        var url = "/draftmancer-to-inktable/";
+        var url = "/api/draftmancer-to-inktable/";
         var data = JSON.stringify({ "draftmancer_export": draftmancerInputArea.value.trim() });
         let newTab = window.open("/loading");
         request(url, data, (responseText) => {
@@ -108,7 +108,7 @@
 
     convertButton.addEventListener('click', async _ => {
         hideError();
-        var url = "/draftmancer-to-tts/";
+        var url = "/api/draftmancer-to-tts/";
         var data = JSON.stringify({ "draftmancer_export": draftmancerInputArea.value.trim() });
         request(url, data, (responseText) => {
             download(responseText, "tts-cube-deck.json", "json");

@@ -1,3 +1,5 @@
+import api
+
 class Settings:
     def __init__(self, boosters_per_player=4, card_list_name='custom_cube', cards_per_booster=12, set_card_colors=False, color_balance_packs=False, with_replacement=False):
         self.boosters_per_player = int(boosters_per_player)
@@ -14,3 +16,9 @@ class Settings:
             'cardBack': 'https://wiki.mushureport.com/images/thumb/d/d7/Card_Back_official.png/450px-Card_Back_official.png',
             'withReplacement': self.with_replacement
         }
+    
+    def to_api_cube_settings(self):
+        return api.CubeSettings(
+            boostersPerPlayer= self.boosters_per_player,
+            cardsPerBooster=self.cards_per_booster
+        )

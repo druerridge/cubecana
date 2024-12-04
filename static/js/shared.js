@@ -56,26 +56,33 @@ function handleNon200Response(xhr) {
     console.log("Error: " + errorResponse.user_facing_message);
 }
 
-function request(url, data, onSuccessHandler, onErrorHandler) {
+function request(url, data, onSuccessHandler, onErrorHandler, verb='POST') {
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", url, true);
-    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.open(verb, url, true);
+    if (data) {
+        xhr.setRequestHeader("Content-Type", "application/json");
+    }
     xhr.onreadystatechange = function () {
         if (xhr.readyState !== 4) {
             return;
         }
         
         // success
-        if (xhr.status === 200) {
+        if (xhr.status < 300 && xhr.status >= 200) {
             console.log("responseText: " + xhr.responseText);
-            onSuccessHandler(xhr.responseText);
+            if (onSuccessHandler) {
+                onSuccessHandler(xhr.responseText);
+            }
             return;
         } 
 
         // error
-        if (xhr.status != 200) {
+        if (xhr.status >= 300) {
             handleNon200Response(xhr);
-            onErrorHandler(xhr);
+            console.log(xhr.statusText)
+            if (onErrorHandler) {
+                onErrorHandler(xhr);
+            }
         }
     };
     xhr.send(data);

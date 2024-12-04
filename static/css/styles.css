@@ -10,6 +10,14 @@ body {
     background-repeat: no-repeat;
     color: white; /* White text for better readability */
 }
+.cube-input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #007BFF;
+    border-radius: 4px;
+}
 /* .button {
     display: inline-block;
     margin: 10px;

@@ -74,6 +74,8 @@
 </head>
 <body>
     {% include 'shared/content_header.html' %}
+    <div id="errorText" style="color: red; display: none; background-color: lightcoral; width: 100%; padding: 10px;" disabled>An error occurred. Please try again.</div>
+
     <h1>Cube Directory</h1>
 
     <template class="cube-element" id="cube-list-element-template">
@@ -102,178 +104,188 @@
         <!-- Items will be populated here by JavaScript -->
     </div>
     <script>
-        let cubes = [
-        {
-            name: 'InkPlayQuest 480 Cube',
-            cards: 480,
-            tags: ['Power Max'],
-            link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
-            author: "InkPlayQuest",
-            lastUpdated: "2021-09-01"
-        },
-        {
-            name: 'The Anti-Meta Cube v1.0',
-            cards: 400,
-            tags: ['Synergy'],
-            link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
-            author: "Stopthief",
-            lastUpdated: "2021-09-01"
-        },
-        {
-            name: 'JottoOtts Lorcana Cube 5.0',
-            cards: 540,
-            tags: ['Power Max'],
-            link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
-            author: "JottoOtts",
-            lastUpdated: "2021-09-01"
-        },
-        {
-            name: 'InkPlayQuest 480 Cube',
-            cards: 480,
-            tags: ['Power Max'],
-            link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
-            author: "InkPlayQuest",
-            lastUpdated: "2021-09-01"
-        },
-        {
-            name: 'The Anti-Meta Cube v1.0',
-            cards: 400,
-            tags: ['Synergy'],
-            link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
-            author: "Stopthief",
-            lastUpdated: "2021-09-01"
-        },
-        {
-            name: 'JottoOtts Lorcana Cube 5.0',
-            cards: 540,
-            tags: ['Power Max'],
-            link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
-            author: "JottoOtts",
-            lastUpdated: "2021-09-01"
-        },
-        {
-            name: 'InkPlayQuest 480 Cube',
-            cards: 480,
-            tags: ['Power Max'],
-            link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
-            author: "InkPlayQuest",
-            lastUpdated: "2021-09-01"
-        },
-        {
-            name: 'The Anti-Meta Cube v1.0',
-            cards: 400,
-            tags: ['Synergy'],
-            link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
-            author: "Stopthief",
-            lastUpdated: "2021-09-01"
-        },
-        {
-            name: 'JottoOtts Lorcana Cube 5.0',
-            cards: 540,
-            tags: ['Power Max'],
-            link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
-            author: "JottoOtts",
-            lastUpdated: "2021-09-01"
-        },
-        {
-            name: 'InkPlayQuest 480 Cube',
-            cards: 480,
-            tags: ['Power Max'],
-            link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
-            author: "InkPlayQuest",
-            lastUpdated: "2021-09-01"
-        },
-        {
-            name: 'The Anti-Meta Cube v1.0',
-            cards: 400,
-            tags: ['Synergy'],
-            link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
-            author: "Stopthief",
-            lastUpdated: "2021-09-01"
-        },
-        {
-            name: 'JottoOtts Lorcana Cube 5.0',
-            cards: 540,
-            tags: ['Power Max'],
-            link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
-            author: "JottoOtts",
-            lastUpdated: "2021-09-01"
-        },
-        {
-            name: 'InkPlayQuest 480 Cube',
-            cards: 480,
-            tags: ['Power Max'],
-            link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
-            author: "InkPlayQuest",
-            lastUpdated: "2021-09-01"
-        },
-        {
-            name: 'The Anti-Meta Cube v1.0',
-            cards: 400,
-            tags: ['Synergy'],
-            link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
-            author: "Stopthief",
-            lastUpdated: "2021-09-01"
-        },
-        {
-            name: 'JottoOtts Lorcana Cube 5.0',
-            cards: 540,
-            tags: ['Power Max'],
-            link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
-            author: "JottoOtts",
-            lastUpdated: "2021-09-01"
-        },
-        {
-            name: 'InkPlayQuest 480 Cube',
-            cards: 480,
-            tags: ['Power Max'],
-            link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
-            author: "InkPlayQuest",
-            lastUpdated: "2021-09-01"
-        },
-        {
-            name: 'The Anti-Meta Cube v1.0',
-            cards: 400,
-            tags: ['Synergy', 'Budget'],
-            link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
-            author: "Stopthief",
-            lastUpdated: "2021-09-01"
-        },
-        {
-            name: 'JottoOtts Lorcana Cube 5.0',
-            cards: 540,
-            tags: ['Power Max', 'Budget'],
-            link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
-            author: "JottoOtts",
-            lastUpdated: "2021-09-01"
-        }
-    ];
+    //     let cubes = [
+    //     {
+    //         name: 'InkPlayQuest 480 Cube',
+    //         cards: 480,
+    //         tags: ['Power Max'],
+    //         link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
+    //         author: "InkPlayQuest",
+    //         lastUpdated: "2021-09-01"
+    //     },
+    //     {
+    //         name: 'The Anti-Meta Cube v1.0',
+    //         cards: 400,
+    //         tags: ['Synergy'],
+    //         link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
+    //         author: "Stopthief",
+    //         lastUpdated: "2021-09-01"
+    //     },
+    //     {
+    //         name: 'JottoOtts Lorcana Cube 5.0',
+    //         cards: 540,
+    //         tags: ['Power Max'],
+    //         link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
+    //         author: "JottoOtts",
+    //         lastUpdated: "2021-09-01"
+    //     },
+    //     {
+    //         name: 'InkPlayQuest 480 Cube',
+    //         cards: 480,
+    //         tags: ['Power Max'],
+    //         link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
+    //         author: "InkPlayQuest",
+    //         lastUpdated: "2021-09-01"
+    //     },
+    //     {
+    //         name: 'The Anti-Meta Cube v1.0',
+    //         cards: 400,
+    //         tags: ['Synergy'],
+    //         link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
+    //         author: "Stopthief",
+    //         lastUpdated: "2021-09-01"
+    //     },
+    //     {
+    //         name: 'JottoOtts Lorcana Cube 5.0',
+    //         cards: 540,
+    //         tags: ['Power Max'],
+    //         link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
+    //         author: "JottoOtts",
+    //         lastUpdated: "2021-09-01"
+    //     },
+    //     {
+    //         name: 'InkPlayQuest 480 Cube',
+    //         cards: 480,
+    //         tags: ['Power Max'],
+    //         link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
+    //         author: "InkPlayQuest",
+    //         lastUpdated: "2021-09-01"
+    //     },
+    //     {
+    //         name: 'The Anti-Meta Cube v1.0',
+    //         cards: 400,
+    //         tags: ['Synergy'],
+    //         link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
+    //         author: "Stopthief",
+    //         lastUpdated: "2021-09-01"
+    //     },
+    //     {
+    //         name: 'JottoOtts Lorcana Cube 5.0',
+    //         cards: 540,
+    //         tags: ['Power Max'],
+    //         link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
+    //         author: "JottoOtts",
+    //         lastUpdated: "2021-09-01"
+    //     },
+    //     {
+    //         name: 'InkPlayQuest 480 Cube',
+    //         cards: 480,
+    //         tags: ['Power Max'],
+    //         link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
+    //         author: "InkPlayQuest",
+    //         lastUpdated: "2021-09-01"
+    //     },
+    //     {
+    //         name: 'The Anti-Meta Cube v1.0',
+    //         cards: 400,
+    //         tags: ['Synergy'],
+    //         link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
+    //         author: "Stopthief",
+    //         lastUpdated: "2021-09-01"
+    //     },
+    //     {
+    //         name: 'JottoOtts Lorcana Cube 5.0',
+    //         cards: 540,
+    //         tags: ['Power Max'],
+    //         link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
+    //         author: "JottoOtts",
+    //         lastUpdated: "2021-09-01"
+    //     },
+    //     {
+    //         name: 'InkPlayQuest 480 Cube',
+    //         cards: 480,
+    //         tags: ['Power Max'],
+    //         link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
+    //         author: "InkPlayQuest",
+    //         lastUpdated: "2021-09-01"
+    //     },
+    //     {
+    //         name: 'The Anti-Meta Cube v1.0',
+    //         cards: 400,
+    //         tags: ['Synergy'],
+    //         link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
+    //         author: "Stopthief",
+    //         lastUpdated: "2021-09-01"
+    //     },
+    //     {
+    //         name: 'JottoOtts Lorcana Cube 5.0',
+    //         cards: 540,
+    //         tags: ['Power Max'],
+    //         link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
+    //         author: "JottoOtts",
+    //         lastUpdated: "2021-09-01"
+    //     },
+    //     {
+    //         name: 'InkPlayQuest 480 Cube',
+    //         cards: 480,
+    //         tags: ['Power Max'],
+    //         link: "https://dreamborn.ink/decks/QkdBtTVQ0hTXaG33LsKC",
+    //         author: "InkPlayQuest",
+    //         lastUpdated: "2021-09-01"
+    //     },
+    //     {
+    //         name: 'The Anti-Meta Cube v1.0',
+    //         cards: 400,
+    //         tags: ['Synergy', 'Budget'],
+    //         link: "https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo",
+    //         author: "Stopthief",
+    //         lastUpdated: "2021-09-01"
+    //     },
+    //     {
+    //         name: 'JottoOtts Lorcana Cube 5.0',
+    //         cards: 540,
+    //         tags: ['Power Max', 'Budget'],
+    //         link: "https://dreamborn.ink/decks/Yrfs4JNmWqUMWhz8SfsB",
+    //         author: "JottoOtts",
+    //         lastUpdated: "2021-09-01"
+    //     }
+    // ];
 
         const container = document.getElementById('cubeContainer');
 
+        function populateCubes(cubes) {
+            cubes.forEach(cube => {
+                if ("content" in document.createElement("template")) {
+                    const template = document.getElementById("cube-list-element-template");
 
-        cubes.forEach(cube => {
-            if ("content" in document.createElement("template")) {
-                const template = document.getElementById("cube-list-element-template");
-
-                let clone = template.content.cloneNode(true);
-                let name = clone.getElementById("element-name").textContent = cube.name;
-                let cards = clone.getElementById("element-cards").textContent = "(" + cube.cards + " cards)";
-                let author = clone.getElementById("element-author").textContent = "by: " + cube.author;
-                let link = clone.getElementById("element-link").href = cube.link;
+                    let clone = template.content.cloneNode(true);
+                    let name = clone.getElementById("element-name").textContent = cube.name;
+                    let cards = clone.getElementById("element-cards").textContent = "(" + cube.cardCount + " cards)";
+                    let author = clone.getElementById("element-author").textContent = "by: " + cube.author;
+                    let link = clone.getElementById("element-link").href = cube.link;
+                    let draft = clone.getElementById("element-draft").href = "cube/" + cube.id + "/draft";
+                    let lastUpdated = clone.getElementById("element-last-updated").textContent = "last updated: " + new Date(cube.lastUpdatedEpochSeconds * 1000).toDateString();
+                    
+                    let elementTags = clone.getElementById("element-tags")
+                    cube.tags.forEach(tag => {
+                        let tagElement = document.createElement("span");
+                        tagElement.classList.add("cube-tag");
+                        tagElement.textContent = tag;
+                        elementTags.appendChild(tagElement);
+                    });
                 
-                let elementTags = clone.getElementById("element-tags")
-                cube.tags.forEach(tag => {
-                    let tagElement = document.createElement("span");
-                    tagElement.classList.add("cube-tag");
-                    tagElement.textContent = tag;
-                    elementTags.appendChild(tagElement);
-                });
-                let lastUpdated = clone.getElementById("element-last-updated").textContent = "last updated: " + cube.lastUpdated;
-             
-                container.appendChild(clone);
-            }
-        });
+                    container.appendChild(clone);
+                }
+            });
+        }
+
+        function onRetrieveCubesSuccess(response) {
+            const cubes = JSON.parse(response);
+            populateCubes(cubes);
+        }
+
+        const url = "/api/cube";
+        request(url, null, onRetrieveCubesSuccess, null, 'GET');        
     </script>
     
 

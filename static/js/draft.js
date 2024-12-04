@@ -81,7 +81,7 @@ function handleFiles(files) {
 draftFromTtsButton.addEventListener('click', async _ => {
     hideError();
 
-    var url = "/dreamborn-to-draftmancer/";
+    var url = "/api/dreamborn-to-draftmancer/";
     var data = JSON.stringify({ "dreamborn_export": ttsInput, "settings": { "cards_per_booster": cardsPerBooster.value, "boosters_per_player": boostersPerPlayer.value } });
     let newTab = window.open("/loading");
     request(url, data, (responseText) => {
@@ -95,7 +95,7 @@ draftFromTtsButton.addEventListener('click', async _ => {
 saveFromTtsButton.addEventListener('click', async _ => {
     hideError();
 
-    var url = "/dreamborn-to-draftmancer/";
+    var url = "/api/dreamborn-to-draftmancer/";
     var data = JSON.stringify({ "dreamborn_export": ttsInput, "settings": { "cards_per_booster": cardsPerBooster.value, "boosters_per_player": boostersPerPlayer.value } });
     request(url, data, (responseText) => {
         let response = JSON.parse(responseText);
@@ -107,7 +107,7 @@ saveFromCardListButton.addEventListener('click', async _ => {
     hideError();
 
     const cardListInput = document.getElementById('cardListInput').value.trim();
-    var url = "/card-list-to-draftmancer/";
+    var url = "/api/card-list-to-draftmancer/";
     var data = JSON.stringify({ "card_list": cardListInput, "settings": { "cards_per_booster": cardsPerBooster.value, "boosters_per_player": boostersPerPlayer.value } });
     request(url, data, (responseText) => {
         let response = JSON.parse(responseText);
@@ -119,7 +119,7 @@ draftFromCardListButton.addEventListener('click', async _ => {
     hideError();
 
     const cardListInput = document.getElementById('cardListInput').value.trim();
-    var url = "/card-list-to-draftmancer/";
+    var url = "/api/card-list-to-draftmancer/";
     var data = JSON.stringify({ "card_list": cardListInput, "settings": { "cards_per_booster": cardsPerBooster.value, "boosters_per_player": boostersPerPlayer.value } });
     let newTab = window.open("/loading");
     request(url, data, (responseText) => {

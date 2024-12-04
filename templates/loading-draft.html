@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'shared/common_head.html' %}
+    <title>Loading</title>
+    <style>
+        .loading-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    {% include 'shared/content_header.html' %}
+
+    <div id="loading-text">
+        Loading
+    </div>
+    <br />
+    
+    <button id="draft-now-button" disabled>Draft Now</button>
+    
+    <script type="module" src="{{ url_for('static', filename='js/loading-draft.js') }}"></script>
+</body>
+</html>

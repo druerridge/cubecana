@@ -31,6 +31,23 @@ class CreateCubeRequest:
         indent=4)
 
 @dataclass(frozen=True)
+class EditCubeRequest:
+  id: str
+  name: str
+  cardListText: str
+  tags: List[str]
+  link: str
+  author: str
+  cubeSettings: CubeSettings
+  
+  def toJSON(self):
+    return json.dumps(
+        self,
+        default=lambda o: o.__dict__, 
+        sort_keys=True,
+        indent=4)
+
+@dataclass(frozen=True)
 class CubeListEntry:
   name: str
   cardCount: int

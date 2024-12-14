@@ -3,6 +3,8 @@ const submitButton = document.getElementById('submit-button')
 const cardListInput = document.getElementById('cardListInput');
 const currentUrl = window.location.href;
 const cubeForm = document.getElementById('cubeForm');
+const successNotification = document.getElementById('successNotification');
+let cubeId = null;
 
 function getActiveTags() {
     const tags = document.getElementsByClassName('tag-button active');
@@ -13,13 +15,22 @@ function getActiveTags() {
     return activeTags;
 }
 
+function toCardList(cardIdToCardCount) {
+    let cardList = '';
+    for (const cardId in cardIdToCardCount) {
+        cardList += `${cardIdToCardCount[cardId]} ${cardId}\n`;
+    }
+    return cardList;
+}
+
 function populateInputs(responseCube) {
     cubeForm.cubeName.value = responseCube.name;
     cubeForm.cubeLink.value = responseCube.link;
     cubeForm.cubeAuthor.value = responseCube.author;
-    cardListInput.value = JSON.stringify(responseCube.cardIdToCardCount); // TODO: convert to cardListText
+    cardListInput.value = toCardList(responseCube.cardIdToCardCount);
     cubeForm.cubeBoostersPerPlayer.value = responseCube.cubeSettings.boostersPerPlayer;
     cubeForm.cubeCardsPerBooster.value = responseCube.cubeSettings.cardsPerBooster;
+    cubeId = responseCube.id;
     const tags = document.getElementsByClassName('tag-button');
     for (let i = 0; i < tags.length; i++) {
         if (responseCube.tags.includes(tags[i].innerText)) {
@@ -56,11 +67,37 @@ cardListInput.addEventListener('input', function() {
     submitButton.disabled = cardListInput.value.trim().length === 0;
 });
 
-submitButton.addEventListener('click', function(event) {
-    event.preventDefault();
-    
-    const successNotification = document.getElementById('successNotification');
-    
+function putUpdateCube() {
+    const formData = {
+        id: cubeId,
+        name: cubeForm.cubeName.value.trim(),
+        tags: getActiveTags(),
+        link: cubeForm.cubeLink.value.trim(),
+        author: cubeForm.cubeAuthor.value.trim(),
+        cardListText: cardListInput.value.trim(),
+        cubeSettings: {
+            boostersPerPlayer: cubeForm.cubeBoostersPerPlayer.value,
+            cardsPerBooster: cubeForm.cubeCardsPerBooster.value
+        }
+    };
+
+    const editSecret = new URLSearchParams(window.location.search).get('editSecret');
+    const url = `/api/cube/${cubeId}?editSecret=${editSecret}`;
+    request(url, JSON.stringify(formData), (responseText) => {
+        const response = JSON.parse(responseText);
+        successNotification.innerText = "Successfully uploaded.";
+        successNotification.style.display = 'block';
+        successNotification.style.disabled = false;
+        const fullEditCubeLink = `${window.location.origin + response.editCubeLink}`;
+        successNotification.innerHTML = `Successfully uploaded.<br \\>Save this link somewhere to edit your cube:<br \\><a href="${fullEditCubeLink}"'>${fullEditCubeLink}</a>`;
+        clearInputs();
+    },() => {
+        submitButton.disabled = false;
+    },
+    'PUT');
+}
+
+function postCreateCube() {
     const formData = {
         name: cubeForm.cubeName.value.trim(),
         tags: getActiveTags(),
@@ -72,23 +109,29 @@ submitButton.addEventListener('click', function(event) {
             cardsPerBooster: cubeForm.cubeCardsPerBooster.value
         }
     };
-    
-    hideError();
-    submitButton.disabled = true;
-    const url = '/api/cube';
-    const verb = 'POST';
-    if (window.location.href.includes('cube-edit')) {
-        verb = 'PUT';
-    }
-    request(url, JSON.stringify(formData), (responseText) => {
+
+    request('/api/cube', JSON.stringify(formData), (responseText) => {
         const response = JSON.parse(responseText);
         successNotification.innerText = "Successfully uploaded.";
         successNotification.style.display = 'block';
         successNotification.style.disabled = false;
-        successNotification.innerHTML = `Successfully uploaded.<br \\>Save this link somewhere to edit your cube:<br \\><a href="${response.editCubeLink}"'>${response.editCubeLink}</a>`;
+        const fullEditCubeLink = `${window.location.origin + response.editCubeLink}`;
+        successNotification.innerHTML = `Successfully uploaded.<br \\>Save this link somewhere to edit your cube:<br \\><a href="${fullEditCubeLink}"'>${fullEditCubeLink}</a>`;
         // clearInputs();
     },() => {
         submitButton.disabled = false;
     },
-    verb);
+    'POST');
+}
+
+submitButton.addEventListener('click', function(event) {
+    event.preventDefault();
+        
+    hideError();
+    submitButton.disabled = true;
+    if (window.location.href.includes('edit-cube')) {
+        putUpdateCube();
+    } else {
+        postCreateCube();
+    }
 });

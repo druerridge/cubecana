@@ -6,6 +6,9 @@ import create_template
 from typing import List
 import uuid
 from settings import Settings
+import json
+
+CUBE_DIR_SAVE_PATH = "cube_directory.json"
 
 @dataclass(frozen=True)
 class CubecanaCube:
@@ -81,25 +84,24 @@ class CubeManager:
         cube = self.cubes.get(id)
         return cube
 
-    def update_cube(self, api_create_cube: api.CreateCubeRequest):
-        old_cube = self.cubes.get(api_create_cube.id)
-        id_to_count = create_template.id_to_count_from(api_create_cube.cardListText.split('\n'))
+    def update_cube(self, api_edit_cube: api.EditCubeRequest):
+        old_cube = self.cubes.get(api_edit_cube.id)
+        id_to_count = create_template.id_to_count_from(api_edit_cube.cardListText.split('\n'))
         updated_cube = CubecanaCube(
-            name=api_create_cube.name,
+            name=api_edit_cube.name,
             card_id_to_count=id_to_count,
-            tags=api_create_cube.tags,
-            link=api_create_cube.link,
-            author=api_create_cube.author,
+            tags=api_edit_cube.tags,
+            link=api_edit_cube.link,
+            author=api_edit_cube.author,
             last_updated_epoch_seconds=int(time.time()),
             id=old_cube.id,
             edit_secret=old_cube.edit_secret,
             settings=Settings(
-                boosters_per_player=api_create_cube.cubeSettings.boostersPerPlayer,
-                cards_per_booster=api_create_cube.cubeSettings.cardsPerBooster
+                boosters_per_player=api_edit_cube.cubeSettings.boostersPerPlayer,
+                cards_per_booster=api_edit_cube.cubeSettings.cardsPerBooster
             ),
         )
         self.cubes[old_cube.id] = updated_cube
-        return updated_cube
-    
+        return updated_cube    
 
 cube_manager: CubeManager = CubeManager()

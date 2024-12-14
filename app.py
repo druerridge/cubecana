@@ -9,6 +9,8 @@ from cube_manager import cube_manager
 import api
 app = Flask(__name__)
 
+MAX_CARD_LIST_LENGTH = 80000
+
 # USER FACING PAGES
 
 @app.route('/')
@@ -129,6 +131,8 @@ def get_cubes():
 
 @app.route('/api/cube', methods=['POST'])
 def add_cube():
+  if len(request.json['cardListText']) > MAX_CARD_LIST_LENGTH:
+    return Response(status=413)
   api_create_cube = api.CreateCubeRequest(
     name=request.json['name'],
     cardListText=request.json['cardListText'],
@@ -160,15 +164,38 @@ def get_cube(cube_id):
 
 @app.route('/api/cube/<string:cube_id>', methods=['PUT'])
 def update_cube(cube_id):
-  cube = cube_manager.get(cube_id)
+  cube = cube_manager.get_cube(request.json['id'])
   if not cube:
     return Response(status=404)
+  if len(request.json['cardListText']) > MAX_CARD_LIST_LENGTH:
+    return Response(status=413)
   if request.args.get('editSecret') != cube.edit_secret:
     return Response(status=401)
-  api_create_cube = api.CreateCubeRequest(**request.json)
-  updated_cube: CubecanaCube = cube_manager.update_cube(api_create_cube)
+  api_edit_cube = api.EditCubeRequest(
+    id=request.json['id'],
+    name=request.json['name'],
+    cardListText=request.json['cardListText'],
+    tags=request.json['tags'],
+    link=request.json['link'],
+    author=request.json['author'],
+    cubeSettings=api.CubeSettings(**request.json['cubeSettings'])
+  )
+  updated_cube: CubecanaCube = cube_manager.update_cube(api_edit_cube)
   response = {'id': updated_cube.id,'editCubeLink': f'/edit-cube/{updated_cube.id}?editSecret={updated_cube.edit_secret}'}
   return json.dumps(response), 201
+
+
+# cheats! don't expose these in production
+
+@app.route('/api/load-cubes', methods=['GET'])
+def load_cubes():
+  cube_manager.load_cubes()
+  return Response(status=200)
+
+@app.route('/api/save-cubes', methods=['GET'])
+def save_cubes():
+  cube_manager.save_cubes()
+  return Response(status=200)
 
 # can't delete cubes w/o Accounts
 # @app.route('/api/cubes/<string:cube_id>', methods=['DELETE'])

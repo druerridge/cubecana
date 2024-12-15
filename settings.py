@@ -1,5 +1,4 @@
 import api
-import json
 
 class Settings:
     def __init__(self, boosters_per_player=4, card_list_name='custom_cube', cards_per_booster=12, set_card_colors=False, color_balance_packs=False, with_replacement=False):

@@ -6,9 +6,6 @@ import create_template
 from typing import List
 import uuid
 from settings import Settings
-import json
-
-CUBE_DIR_SAVE_PATH = "cube_directory.json"
 
 @dataclass(frozen=True)
 class CubecanaCube:

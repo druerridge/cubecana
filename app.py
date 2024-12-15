@@ -184,19 +184,6 @@ def update_cube(cube_id):
   response = {'id': updated_cube.id,'editCubeLink': f'/edit-cube/{updated_cube.id}?editSecret={updated_cube.edit_secret}'}
   return json.dumps(response), 201
 
-
-# cheats! don't expose these in production
-
-@app.route('/api/load-cubes', methods=['GET'])
-def load_cubes():
-  cube_manager.load_cubes()
-  return Response(status=200)
-
-@app.route('/api/save-cubes', methods=['GET'])
-def save_cubes():
-  cube_manager.save_cubes()
-  return Response(status=200)
-
 # can't delete cubes w/o Accounts
 # @app.route('/api/cubes/<string:cube_id>', methods=['DELETE'])
 # def delete_cube(cube_id):

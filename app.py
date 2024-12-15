@@ -7,6 +7,7 @@ from settings import Settings
 from cube_manager import CubecanaCube
 from cube_manager import cube_manager
 import api
+from flask import jsonify
 app = Flask(__name__)
 
 MAX_CARD_LIST_LENGTH = 80000
@@ -127,7 +128,7 @@ def get_cubes():
   page = int(request.args.get('page', 1))
   per_page = int(request.args.get('per_page', 10))
   paginated_cube_list_entries = cube_manager.get_cubes(page, per_page)
-  return paginated_cube_list_entries
+  return jsonify(paginated_cube_list_entries)
 
 @app.route('/api/cube', methods=['POST'])
 def add_cube():

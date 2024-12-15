@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include 'shared/common_head.html' %}
     <title>Loading</title>
     <style>
-        body {
+        .loading-text {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -16,7 +15,13 @@
     </style>
 </head>
 <body>
-    <div id="loading-text">Loading</div>
+    {% include 'shared/content_header.html' %}
+
+    <h1><div id="loading-text">
+        Loading
+    </div></h1>
+    <br />
+    
     <script>
         let dots = 0;
         const loadingText = document.getElementById('loading-text');

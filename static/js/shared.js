@@ -56,6 +56,23 @@ function handleNon200Response(xhr) {
     console.log("Error: " + errorResponse.user_facing_message);
 }
 
+function popToastNotification(textContent){
+    let popup = document.createElement("div");
+    popup.textContent = textContent;
+    popup.style.position = "fixed";
+    popup.style.bottom = "20px";
+    popup.style.right = "20px";
+    popup.style.backgroundColor = "lightgreen";
+    popup.style.padding = "10px";
+    popup.style.borderRadius = "5px";
+    popup.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.1)";
+    document.body.appendChild(popup);
+
+    setTimeout(() => {
+        document.body.removeChild(popup);
+    }, 2000);
+}
+
 function request(url, data, onSuccessHandler, onErrorHandler, verb='POST') {
     var xhr = new XMLHttpRequest();
     xhr.open(verb, url, true);

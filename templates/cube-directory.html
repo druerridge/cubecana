@@ -77,6 +77,9 @@
     <div id="errorText" style="color: red; display: none; background-color: lightcoral; width: 100%; padding: 10px;" disabled>An error occurred. Please try again.</div>
 
     <h1>Cube Directory</h1>
+    <div style="text-align: center; margin-bottom: 20px;">
+        <a href="add-cube"><button id="add-cube">Add Cube</button></a>
+    </div>
 
     <template class="cube-element" id="cube-list-element-template">
         <div style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin-bottom: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
@@ -87,8 +90,9 @@
                     <span id="element-author" class="author">AUTHOR</span>
                 </div>
                 <div style="display: table-cell; text-align: right;">
+                    <span><button id="copy-link-btn">Share Draft Link</button></span>
                     <span><a href="LINK" id="element-link" style="text-decoration: none; color: inherit;"><button>View Cube</button></a></span>
-                    <span><a href="LINK" id="element-draft" style="text-decoration: none; color: inherit;"><button>Draft Now</button></a></span>   
+                    <span><button id="element-draft">Draft Now</button></span>   
                 </div>
             </div>
             <div id="element-row-2" class="element-row-2" style="display: table; width: 100%;margin:0;">
@@ -103,45 +107,8 @@
     <div class="container" id="cubeContainer">
         <!-- Items will be populated here by JavaScript -->
     </div>
-    <script>
-        const container = document.getElementById('cubeContainer');
-
-        function populateCubes(cubes) {
-            cubes.forEach(cube => {
-                if ("content" in document.createElement("template")) {
-                    const template = document.getElementById("cube-list-element-template");
-
-                    let clone = template.content.cloneNode(true);
-                    let name = clone.getElementById("element-name").textContent = cube.name;
-                    let cards = clone.getElementById("element-cards").textContent = "(" + cube.cardCount + " cards)";
-                    let author = clone.getElementById("element-author").textContent = "by: " + cube.author;
-                    let link = clone.getElementById("element-link").href = cube.link;
-                    let draft = clone.getElementById("element-draft").href = "cube/" + cube.id + "/draft";
-                    let lastUpdated = clone.getElementById("element-last-updated").textContent = "last updated: " + new Date(cube.lastUpdatedEpochSeconds * 1000).toDateString();
-                    
-                    let elementTags = clone.getElementById("element-tags")
-                    cube.tags.forEach(tag => {
-                        let tagElement = document.createElement("span");
-                        tagElement.classList.add("cube-tag");
-                        tagElement.textContent = tag;
-                        elementTags.appendChild(tagElement);
-                    });
-                
-                    container.appendChild(clone);
-                }
-            });
-        }
-
-        function onRetrieveCubesSuccess(response) {
-            const cubes = JSON.parse(response);
-            populateCubes(cubes);
-        }
-
-        const url = "/api/cube";
-        request(url, null, onRetrieveCubesSuccess, null, 'GET');        
-    </script>
+    <script type="module" src="{{ url_for('static', filename='js/cube-directory.js') }}"></script>
     
-
     {% include 'shared/content_footer.html' %}
 </body>
 </html>

@@ -25,9 +25,9 @@ def serve_play():
 def serve_disclaimer():
   return render_template('disclaimer.html')
 
-@app.route('/cubes')
+@app.route('/cube-directory')
 def serve_cubes():
-  return render_template('cubes.html')
+  return render_template('cube-directory.html')
 
 @app.route('/add-cube/')
 def serve_add_cube():

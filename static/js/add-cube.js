@@ -68,7 +68,7 @@ function postCreateCube() {
         }
     };
 
-    request('/api/cube', JSON.stringify(formData), (responseText) => {
+    request(`${window.location.origin}/api/cube`, JSON.stringify(formData), (responseText) => {
         const response = JSON.parse(responseText);
         successNotification.style.display = 'block';
         successNotification.style.disabled = false;

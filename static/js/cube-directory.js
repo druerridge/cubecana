@@ -6,7 +6,7 @@ function populateCubes(cubes) {
     cubes.forEach(cube => {
         if ("content" in document.createElement("template")) {
             const template = document.getElementById("cube-list-element-template");
-            const cubeDraftLink = `http://localhost:5000/cube/${cube.id}/draft`
+            const cubeDraftLink = `${window.location.origin}/cube/${cube.id}/draft`
 
             let clone = template.content.cloneNode(true);
             clone.getElementById("element-name").textContent = cube.name;
@@ -19,7 +19,7 @@ function populateCubes(cubes) {
             clone.getElementById("element-link").href = cube.link;
             clone.getElementById("element-draft").addEventListener("click", function() {
                 let newTab = window.open("/loading");
-                const cubeDraftmancerUrl = `/api/cube/${cube.id}/draftmancerFile`
+                const cubeDraftmancerUrl = `${window.location.origin}/api/cube/${cube.id}/draftmancerFile`
                 request(cubeDraftmancerUrl, null, (responseText) => {
                     let response = JSON.parse(responseText);
                     generateDraftmancerSession(response.draftmancerFile, newTab, response.metadata);
@@ -46,5 +46,5 @@ function onRetrieveCubesSuccess(response) {
     populateCubes(cubes);
 }
 
-const url = "/api/cube";
+const url = `${window.location.origin}/api/cube`;
 request(url, null, onRetrieveCubesSuccess, null, 'GET');     

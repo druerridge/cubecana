@@ -40,7 +40,6 @@ function populateInputs(responseCube) {
     cardListInput.value = toCardList(responseCube.cardIdToCardCount);
     cubeForm.cubeBoostersPerPlayer.value = responseCube.cubeSettings.boostersPerPlayer;
     cubeForm.cubeCardsPerBooster.value = responseCube.cubeSettings.cardsPerBooster;
-    cubeId = responseCube.id;
     const tags = document.getElementsByClassName('tag-button');
     for (let i = 0; i < tags.length; i++) {
         if (responseCube.tags.includes(tags[i].innerText)) {

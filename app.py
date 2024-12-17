@@ -161,7 +161,9 @@ def get_cube(cube_id):
   if not cube:
     return Response(status=404)
   api_cube = cube.to_api_cube()
-  return jsonify(api_cube)
+  r = api_cube.__dict__
+  r['cubeSettings'] = r['cubeSettings'].__dict__
+  return jsonify(r)
 
 @app.route('/api/cube/<string:cube_id>', methods=['PUT'])
 def update_cube(cube_id):

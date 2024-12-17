@@ -1,11 +1,14 @@
 
 const submitButton = document.getElementById('submit-button')
+const deleteButton = document.getElementById('delete-button')
 const cardListInput = document.getElementById('cardListInput');
 const currentUrl = window.location.href;
 const cubeForm = document.getElementById('cubeForm');
 const successNotification = document.getElementById('successNotification');
 const cubeId = currentUrl.split('/edit-cube/')[1].split("?")[0];
 const cubeUrl = `/api/cube/${cubeId}`;
+const editSecret = new URLSearchParams(window.location.search).get('editSecret');
+
 request(cubeUrl, null, (responseText) => {
     const responseCube = JSON.parse(responseText);
     populateInputs(responseCube);
@@ -77,7 +80,6 @@ function putUpdateCube() {
         }
     };
 
-    const editSecret = new URLSearchParams(window.location.search).get('editSecret');
     const url = `/api/cube/${cubeId}?editSecret=${editSecret}`;
     request(url, JSON.stringify(formData), (responseText) => {
         const response = JSON.parse(responseText);
@@ -96,4 +98,23 @@ submitButton.addEventListener('click', function(event) {
     hideError();
     submitButton.disabled = true;
     putUpdateCube();
+});
+
+deleteButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    if (confirm('Are you sure you want to delete this cube?')) {
+        deleteButton.disabled = true;
+        const url = `/api/cube/${cubeId}?editSecret=${editSecret}`;
+        request(url, null, (responseText) => {
+            successNotification.style.display = 'block';
+            successNotification.style.disabled = false;
+            successNotification.innerHTML = "Successfully deleted.";
+            clearInputs();
+            deleteButton.disabled = false;
+        }, () => {
+            alert('Failed to delete the cube.');
+            deleteButton.disabled = false;
+        }, 'DELETE');
+    }
+
 });

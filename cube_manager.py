@@ -83,6 +83,13 @@ class CubeManager:
         cube = self.cubes.get(id)
         return cube
 
+    def delete_cube(self, id: str, edit_secret: str):
+        cube = self.cubes.get(id)
+        if cube.edit_secret != edit_secret:
+            return False
+        self.cubes.pop(id)
+        return True
+
     def update_cube(self, api_edit_cube: api.EditCubeRequest):
         old_cube = self.cubes.get(api_edit_cube.id)
         id_to_count = create_template.id_to_count_from(api_edit_cube.cardListText.split('\n'))

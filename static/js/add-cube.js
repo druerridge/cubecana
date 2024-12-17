@@ -74,6 +74,7 @@ function postCreateCube() {
         successNotification.style.disabled = false;
         const fullEditCubeLink = `${window.location.origin + response.editCubeLink}`;
         successNotification.innerHTML = `Successfully uploaded.<br \\>Save this link somewhere to edit your cube:<br \\><a href="${fullEditCubeLink}"'>${fullEditCubeLink}</a>`;
+        clearInputs();
     },() => {
         submitButton.disabled = false;
     },

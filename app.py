@@ -185,15 +185,17 @@ def update_cube(cube_id):
   response = {'id': updated_cube.id,'editCubeLink': f'/edit-cube/{updated_cube.id}?editSecret={updated_cube.edit_secret}'}
   return jsonify(response)
 
-# can't delete cubes w/o Accounts
-# @app.route('/api/cubes/<string:cube_id>', methods=['DELETE'])
-# def delete_cube(cube_id):
-#   cube = cubes.get(cube_id)
-#   if cube:
-#     cubes.remove(cube_id)
-#     return json.dumps(cube)
-#   else:
-#     return Response(status=404)
+@app.route('/api/cube/<string:cube_id>', methods=['DELETE'])
+def delete_cube(cube_id):
+  cube = cube_manager.get_cube(cube_id)
+  if not cube:
+    return Response(status=404)
+  edit_secret = request.args.get('editSecret')
+  if edit_secret != cube.edit_secret:
+    return Response(status=401)
+  if not cube_manager.delete_cube(cube_id, edit_secret):
+    return Response(401)
+  return Response(status=200)
 
 @app.errorhandler(lcc_error.LccError)
 def handle_foo_exception(error):

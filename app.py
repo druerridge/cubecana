@@ -36,7 +36,7 @@ def serve_add_cube():
 
 @app.route('/edit-cube/<string:cube_id>')
 def serve_edit_cube(cube_id):
-  return render_template('add-cube.html')
+  return render_template('edit-cube.html')
 
 @app.route('/loading')
 def serve_loading():
@@ -100,7 +100,7 @@ def card_list_to_draftmancer():
     )
   draftmancer_file = create_template.dreamborn_card_list_to_draftmancer(card_list, create_template.DEFAULT_CARD_EVALUATIONS_FILE, settings)
   response = {'draftmancerFile': draftmancer_file, 'metadata': {'cardCount': card_count, 'cardsPerBooster': settings.cards_per_booster, 'boostersPerPlayer': settings.boosters_per_player}}
-  return json.dumps(response)
+  return jsonify(response)
 
 @app.route('/api/dreamborn-to-draftmancer/', methods=['POST'])
 def handle_dreamborn_to_draftmancer():
@@ -119,7 +119,7 @@ def handle_dreamborn_to_draftmancer():
     )
   draftmancer_file = create_template.dreamborn_tts_to_draftmancer(id_to_tts_card, create_template.DEFAULT_CARD_EVALUATIONS_FILE, settings)
   response = {'draftmancerFile': draftmancer_file, 'metadata': {'cardCount': card_count, 'cardsPerBooster': settings.cards_per_booster, 'boostersPerPlayer': settings.boosters_per_player}}
-  return json.dumps(response)
+  return jsonify(response)
 
 # CUBE API ENDPOINTS
 
@@ -144,7 +144,7 @@ def add_cube():
   )
   cubecana_cube = cube_manager.create_cube(api_create_cube)
   response = {'id': cubecana_cube.id,'editCubeLink': f'/edit-cube/{cubecana_cube.id}?editSecret={cubecana_cube.edit_secret}'}
-  return json.dumps(response), 201
+  return jsonify(response)
 
 @app.route('/api/cube/<string:cube_id>/draftmancerFile', methods=['GET'])
 def get_cube_draftmancer_file(cube_id):
@@ -153,7 +153,7 @@ def get_cube_draftmancer_file(cube_id):
     return Response(status=404)
   draftmancer_file: str = create_template.add_card_list_to_draftmancer_custom_cards(cube.card_id_to_count, "incomplete_simple_template.draftmancer.txt", cube.settings)
   response = {'draftmancerFile': draftmancer_file, 'metadata': {'cardCount': cube.card_count(), 'cardsPerBooster': cube.settings.cards_per_booster, 'boostersPerPlayer': cube.settings.boosters_per_player}}
-  return json.dumps(response)
+  return jsonify(response)
 
 @app.route('/api/cube/<string:cube_id>', methods=['GET'])
 def get_cube(cube_id):
@@ -161,7 +161,7 @@ def get_cube(cube_id):
   if not cube:
     return Response(status=404)
   api_cube = cube.to_api_cube()
-  return api_cube.toJSON()
+  return jsonify(api_cube)
 
 @app.route('/api/cube/<string:cube_id>', methods=['PUT'])
 def update_cube(cube_id):
@@ -183,7 +183,7 @@ def update_cube(cube_id):
   )
   updated_cube: CubecanaCube = cube_manager.update_cube(api_edit_cube)
   response = {'id': updated_cube.id,'editCubeLink': f'/edit-cube/{updated_cube.id}?editSecret={updated_cube.edit_secret}'}
-  return json.dumps(response), 201
+  return jsonify(response)
 
 # can't delete cubes w/o Accounts
 # @app.route('/api/cubes/<string:cube_id>', methods=['DELETE'])

@@ -6,6 +6,7 @@ import create_template
 from typing import List
 import uuid
 from settings import Settings
+from flask import jsonify
 
 @dataclass(frozen=True)
 class CubecanaCube:
@@ -70,6 +71,7 @@ class CubeManager:
             id=new_id,
             edit_secret=edit_secret,
             settings=Settings(
+                card_list_name=api_create_cube.name,
                 boosters_per_player=api_create_cube.cubeSettings.boostersPerPlayer,
                 cards_per_booster=api_create_cube.cubeSettings.cardsPerBooster
             ),
@@ -94,6 +96,7 @@ class CubeManager:
             id=old_cube.id,
             edit_secret=old_cube.edit_secret,
             settings=Settings(
+                card_list_name=api_edit_cube.name,
                 boosters_per_player=api_edit_cube.cubeSettings.boostersPerPlayer,
                 cards_per_booster=api_edit_cube.cubeSettings.cardsPerBooster
             ),

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'shared/common_head.html' %}
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        #cardListInput {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    {% include 'shared/content_header.html' %}
+    
+    <div id="errorText" style="color: red; display: none; background-color: lightcoral; width: 100%; padding: 10px;" disabled>An error occurred. Please try again.</div>
+
+    <div class="container">
+        <div>
+            <h1>Edit Cube Details</h1>
+            <form id="cubeForm">
+                <div class="form-group">
+                    <label for="cubeName">Cube Name:</label>
+                    <input type="text" id="cubeName" name="cubeName" class="form-control" placeholder="Cool Cube">
+                </div>
+
+                <div class="form-group">
+                    <label for="cubeLink">Link:</label>
+                    <input type="url" id="cubeLink" name="cubeLink" class="form-control" placeholder="https://dreamborn.ink/decks/FGahixWEOeaEGDwHVhQo">
+                </div>
+                <div class="form-group">
+                    <label for="cubeAuthor">Author:</label>
+                    <input type="text" id="cubeAuthor" name="cubeAuthor" class="form-control" placeholder="JoeCool">
+                </div>
+                <div class="form-group">
+                    Cards per Booster: <input type="number" id="cubeCardsPerBooster" value="12" min="1" max="20" step="1" style="width: 50px;" /><br />
+                    Boosters per Player: <input type="number" id="cubeBoostersPerPlayer" value="4" min="1" max="20" step="1" style="width: 50px;" />
+                </div>
+                <div class="form-group">
+                    <label for="cubeTags">Tags:</label>
+                    <div id="tagsContainer">
+                            <button type="button" class="tag-button" onclick="toggleTag(this)">Powered</button>
+                            <button type="button" class="tag-button" onclick="toggleTag(this)">Synergy</button>
+                            <button type="button" class="tag-button" onclick="toggleTag(this)">Theme</button>
+                            <button type="button" class="tag-button" onclick="toggleTag(this)">Set</button>
+                            <button type="button" class="tag-button" onclick="toggleTag(this)">Rarity-Restricted</button>
+                            <button type="button" class="tag-button" onclick="toggleTag(this)">Custom Rules</button>
+                            <button type="button" class="tag-button" onclick="toggleTag(this)">Clown Shoes</button>
+                            <button type="button" class="tag-button" onclick="toggleTag(this)">Other</button>
+                        <script>
+                            function toggleTag(button) {
+                                button.classList.toggle('active');
+                            }
+                        </script>
+
+                        <style>
+                            .tag-button {
+                                margin: 5px;
+                                padding: 10px;
+                                border: 1px solid #ccc;
+                                background-color: #f9f9f9;
+                                cursor: pointer;
+                            }
+                            .tag-button.active {
+                                background-color: #007bff;
+                                color: white;
+                            }
+                        </style>
+                    </div>
+                </div>
+                <button id="submit-button" class="btn btn-primary">Submit</button>
+            </form>
+            <div id="successNotification" style="color: green;"></div>
+        </div>
+        <div class="form-group">
+            <textarea id="cardListInput" rows="30" cols="100" placeholder="1 Alice - Growing Girl
+1 Let it Go
+1 LeFou - Opportunistic Flunky
+..."></textarea>
+        </div>
+    </div>
+
+    <script type="module" src="{{ url_for('static', filename='js/edit-cube.js') }}"></script>
+    {% include 'shared/content_footer.html' %}
+</body>
+
+</html>

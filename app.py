@@ -8,9 +8,8 @@ from cube_manager import CubecanaCube
 from cube_manager import cube_manager
 import api
 from flask import jsonify
+from cube_dao import MAX_CARD_LIST_LENGTH
 app = Flask(__name__)
-
-MAX_CARD_LIST_LENGTH = 80000
 
 # USER FACING PAGES
 

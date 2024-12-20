@@ -27,6 +27,7 @@ class DbCubecanaCube(Base):
     set_card_colors = Column(Integer)
     color_balance_packs = Column(Integer)
     with_replacement = Column(Integer)
+    popularity = Column(Integer)
 
 def get_session(db_url: str):
     engine = create_engine(db_url)
@@ -65,4 +66,16 @@ def delete_cubecana_cube(cube_id: bytes) -> None:
         session.delete(cube)
         session.commit()
     session.close()
+
+def get_cubecana_cube_by_id(cube_id: bytes) -> Optional[DbCubecanaCube]:
+    session = get_session(DB_URL)
+    cube = session.query(DbCubecanaCube).filter(DbCubecanaCube.id == cube_id).first()
+    session.close()
+    return cube
+
+def get_cubecana_cubes_paginated_by_popularity(page: int, per_page: int) -> List[DbCubecanaCube]:
+    session = get_session(DB_URL)
+    cubes = session.query(DbCubecanaCube).order_by(DbCubecanaCube.popularity.desc()).offset((page - 1) * per_page).limit(per_page).all()
+    session.close()
+    return cubes
 

@@ -64,17 +64,36 @@ def to_db_cubecana_cube(new_cube: CubecanaCube):
         cards_per_booster=new_cube.settings.cards_per_booster,
         set_card_colors=new_cube.settings.set_card_colors,
         color_balance_packs=new_cube.settings.color_balance_packs,
-        with_replacement=new_cube.settings.with_replacement
+        with_replacement=new_cube.settings.with_replacement,
+        popularity=0
+    )
+
+def from_db_cubecana_cube(db_cube: cube_dao.DbCubecanaCube) -> CubecanaCube:
+    return CubecanaCube(
+        name=db_cube.name,
+        card_id_to_count=json.loads(db_cube.card_id_to_count),
+        tags=json.loads(db_cube.tags),
+        link=db_cube.link,
+        author=db_cube.author,
+        last_updated_epoch_seconds=db_cube.last_updated_epoch_seconds,
+        id=str(uuid.UUID(bytes=db_cube.id)),
+        edit_secret=db_cube.edit_secret,
+        settings=Settings(
+            boosters_per_player=db_cube.boosters_per_player,
+            cards_per_booster=db_cube.cards_per_booster,
+            set_card_colors=db_cube.set_card_colors,
+            color_balance_packs=db_cube.color_balance_packs,
+            with_replacement=db_cube.with_replacement
+        )
     )
 
 class CubeManager:
     cubes: dict[str, CubecanaCube] = {} 
 
-    def get_cubes(self, page: int = 1, per_page: int = 10):
-        start = (page - 1) * per_page
-        end = start + per_page
-        paginated_cubecana_cubes = list(self.cubes.values())[start:end]
-        paginated_cube_list_entries = [cube.to_cube_list_entry() for cube in paginated_cubecana_cubes]
+    def get_cubes(self, page: int = 1, per_page: int = 30):
+        paginated_db_cubecana_cubes = cube_dao.get_cubecana_cubes_paginated_by_popularity(page, per_page)
+        paginated_cubes = [from_db_cubecana_cube(dbcube) for dbcube in paginated_db_cubecana_cubes]
+        paginated_cube_list_entries = [cube.to_cube_list_entry() for cube in paginated_cubes]
         return paginated_cube_list_entries
 
     def create_cube(self, api_create_cube: api.CreateCubeRequest):
@@ -102,7 +121,8 @@ class CubeManager:
         return new_cube
 
     def get_cube(self, id: str):
-        cube = self.cubes.get(id)
+        db_cube = cube_dao.get_cubecana_cube_by_id(uuid.UUID(id).bytes)
+        cube = from_db_cubecana_cube(db_cube)
         return cube
 
     def delete_cube(self, id: str, edit_secret: str):

@@ -131,6 +131,8 @@ def get_cubes():
 
 @app.route('/api/cube', methods=['POST'])
 def add_cube():
+  if len(request.json['cardListText']) == 0:
+    return Response(status=400)
   if len(request.json['cardListText']) > MAX_CARD_LIST_LENGTH:
     return Response(status=413)
   api_create_cube = api.CreateCubeRequest(

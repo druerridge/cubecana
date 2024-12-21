@@ -43,7 +43,16 @@ function populateCubes(cubes) {
 }
 
 let currentPage = 1;
-const perPage = 10;
+const pageParam = new URLSearchParams(window.location.search).get('page');
+if (pageParam) {
+    currentPage = parseInt(pageParam);
+}
+
+let perPage = 20;
+const perPageParam = new URLSearchParams(window.location.search).get('per_page');
+if (perPageParam) {
+    perPage = parseInt(perPageParam);
+}
 
 const pageNumbers = document.getElementById('page-numbers');
 const prevPage = document.getElementById('prev-page');
@@ -64,13 +73,13 @@ function fetchCubes(page) {
 prevPage.addEventListener('click', () => {
     if (currentPage > 1) {
         currentPage--;
-        fetchCubes(currentPage);
+        window.location.search = `?page=${currentPage}&per_page=${perPage}`;
     }
 });
 
 nextPage.addEventListener('click', () => {
     currentPage++;
-    fetchCubes(currentPage);
+    window.location.search = `?page=${currentPage}&per_page=${perPage}`;
 });
 
 function onRetrieveCubesSuccess(response) {

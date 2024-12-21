@@ -48,23 +48,23 @@ class CubecanaCube:
       cubeSettings=self.settings.to_api_cube_settings()
     )
 
-def to_db_cubecana_cube(new_cube: CubecanaCube):
-    new_uuid = uuid.UUID(new_cube.id)
+def to_db_cubecana_cube(cc_cube: CubecanaCube):
+    new_uuid = uuid.UUID(cc_cube.id)
     new_id = new_uuid.bytes
     return cube_dao.DbCubecanaCube(
         id=new_id,
-        name=new_cube.name.encode('utf-8'),
-        card_id_to_count=json.dumps(new_cube.card_id_to_count).encode('utf-8'), # come back to this
-        tags=json.dumps(new_cube.tags),
-        link=new_cube.link.encode('utf-8'),
-        author=new_cube.author.encode('utf-8'),
-        last_updated_epoch_seconds=new_cube.last_updated_epoch_seconds,
-        edit_secret=new_cube.edit_secret.encode('utf-8'),
-        boosters_per_player=new_cube.settings.boosters_per_player,
-        cards_per_booster=new_cube.settings.cards_per_booster,
-        set_card_colors=new_cube.settings.set_card_colors,
-        color_balance_packs=new_cube.settings.color_balance_packs,
-        with_replacement=new_cube.settings.with_replacement,
+        name=cc_cube.name.encode('utf-8'),
+        card_id_to_count=json.dumps(cc_cube.card_id_to_count).encode('utf-8'), # come back to this
+        tags=json.dumps(cc_cube.tags),
+        link=cc_cube.link.encode('utf-8'),
+        author=cc_cube.author.encode('utf-8'),
+        last_updated_epoch_seconds=cc_cube.last_updated_epoch_seconds,
+        edit_secret=cc_cube.edit_secret.encode('utf-8'),
+        boosters_per_player=cc_cube.settings.boosters_per_player,
+        cards_per_booster=cc_cube.settings.cards_per_booster,
+        set_card_colors=cc_cube.settings.set_card_colors,
+        color_balance_packs=cc_cube.settings.color_balance_packs,
+        with_replacement=cc_cube.settings.with_replacement,
         popularity=0
     )
 
@@ -88,9 +88,10 @@ def from_db_cubecana_cube(db_cube: cube_dao.DbCubecanaCube) -> CubecanaCube:
     )
 
 class CubeManager:
-    cubes: dict[str, CubecanaCube] = {} 
+    def get_cube_count(self):
+       return cube_dao.get_cubecana_cube_count()
 
-    def get_cubes(self, page: int = 1, per_page: int = 30):
+    def get_cubes(self, page: int = 1, per_page: int = 25):
         paginated_db_cubecana_cubes = cube_dao.get_cubecana_cubes_paginated_by_popularity(page, per_page)
         paginated_cubes = [from_db_cubecana_cube(dbcube) for dbcube in paginated_db_cubecana_cubes]
         paginated_cube_list_entries = [cube.to_cube_list_entry() for cube in paginated_cubes]
@@ -115,7 +116,6 @@ class CubeManager:
                 cards_per_booster=api_create_cube.cubeSettings.cardsPerBooster
             ),
         )
-        self.cubes[new_id] = new_cube
         db_cubecana_cube = to_db_cubecana_cube(new_cube)
         cube_dao.create_cubecana_cube(db_cubecana_cube)
         return new_cube
@@ -126,15 +126,15 @@ class CubeManager:
         return cube
 
     def delete_cube(self, id: str, edit_secret: str):
-        cube = self.cubes.get(id)
+        cube = cube_dao.get_cubecana_cube_by_id(uuid.UUID(id).bytes)
+        # just... double checking.
         if cube.edit_secret != edit_secret:
             return False
-        self.cubes.pop(id)
         cube_dao.delete_cubecana_cube(uuid.UUID(id).bytes)
         return True
 
     def update_cube(self, api_edit_cube: api.EditCubeRequest):
-        old_cube = self.cubes.get(api_edit_cube.id)
+        old_cube = cube_dao.get_cubecana_cube_by_id(uuid.UUID(api_edit_cube.id).bytes)
         id_to_count = create_template.id_to_count_from(api_edit_cube.cardListText.split('\n'))
         updated_cube = CubecanaCube(
             name=api_edit_cube.name,
@@ -143,7 +143,7 @@ class CubeManager:
             link=api_edit_cube.link,
             author=api_edit_cube.author,
             last_updated_epoch_seconds=int(time.time()),
-            id=old_cube.id,
+            id=api_edit_cube.id,
             edit_secret=old_cube.edit_secret,
             settings=Settings(
                 card_list_name=api_edit_cube.name,
@@ -154,7 +154,6 @@ class CubeManager:
         db_cubecana_cube = to_db_cubecana_cube(updated_cube)
         id_bytes = uuid.UUID(updated_cube.id).bytes
         cube_dao.update_cubecana_cube(cube_id=id_bytes, updated_cube=db_cubecana_cube)
-        self.cubes[old_cube.id] = updated_cube
         return updated_cube    
 
 cube_manager: CubeManager = CubeManager()

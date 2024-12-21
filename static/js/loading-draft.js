@@ -10,6 +10,8 @@ let intervalId = setInterval(() => {
 const currentUrl = window.location.href;
 const cubeId = currentUrl.split('/cube/')[1].split("/draft")[0];
 const draftNowButton = document.getElementById('draft-now-button');
+const cubeTitle = document.getElementById('cube-title');
+const authorText = document.getElementById('author-text');
 
 const cubeDraftmancerUrl = `/api/cube/${cubeId}/draftmancerFile`
 request(cubeDraftmancerUrl, null, (responseText) => {
@@ -17,6 +19,8 @@ request(cubeDraftmancerUrl, null, (responseText) => {
     draftNowButton.disabled = false;
     clearInterval(intervalId);
     loadingText.hidden = true;
+    cubeTitle.textContent = response.metadata.cubeName;
+    authorText.textContent = `By: ${response.metadata.author}`;
     draftNowButton.addEventListener('click', () => {
         let newTab = window.open("/loading");
         generateDraftmancerSession(response.draftmancerFile, newTab, response.metadata);

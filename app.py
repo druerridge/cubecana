@@ -98,7 +98,7 @@ def card_list_to_draftmancer():
         color_balance_packs=False
     )
   draftmancer_file = create_template.dreamborn_card_list_to_draftmancer(card_list, create_template.DEFAULT_CARD_EVALUATIONS_FILE, settings)
-  response = {'draftmancerFile': draftmancer_file, 'metadata': {'cardCount': card_count, 'cardsPerBooster': settings.cards_per_booster, 'boostersPerPlayer': settings.boosters_per_player}}
+  response = {'draftmancerFile': draftmancer_file, 'metadata': {'cardCount': card_count, 'cardsPerBooster': settings.cards_per_booster, 'boostersPerPlayer': settings.boosters_per_player, 'cubeName': settings.card_list_name}}
   return jsonify(response)
 
 @app.route('/api/dreamborn-to-draftmancer/', methods=['POST'])
@@ -122,12 +122,19 @@ def handle_dreamborn_to_draftmancer():
 
 # CUBE API ENDPOINTS
 
+@app.route('/api/cube/count', methods=['GET'])
+def get_cube_count():
+  return jsonify({'count': cube_manager.get_cube_count()})
+
 @app.route('/api/cube', methods=['GET'])
 def get_cubes():
   page = int(request.args.get('page', 1))
-  per_page = int(request.args.get('per_page', 10))
+  print(f"page: {page}")
+  per_page = min(int(request.args.get('per_page', 10)), 100)
+  print(f"per_page: {per_page}")
   paginated_cube_list_entries = cube_manager.get_cubes(page, per_page)
-  return jsonify(paginated_cube_list_entries)
+  response = {'cubes': paginated_cube_list_entries, 'totalCubes': cube_manager.get_cube_count()}
+  return jsonify(response)
 
 @app.route('/api/cube', methods=['POST'])
 def add_cube():
@@ -153,7 +160,14 @@ def get_cube_draftmancer_file(cube_id):
   if not cube:
     return Response(status=404)
   draftmancer_file: str = create_template.add_card_list_to_draftmancer_custom_cards(cube.card_id_to_count, "incomplete_simple_template.draftmancer.txt", cube.settings)
-  response = {'draftmancerFile': draftmancer_file, 'metadata': {'cardCount': cube.card_count(), 'cardsPerBooster': cube.settings.cards_per_booster, 'boostersPerPlayer': cube.settings.boosters_per_player}}
+  response = {
+    'draftmancerFile': draftmancer_file, 
+    'metadata': {
+      'cardCount': cube.card_count(), 
+      'cardsPerBooster': cube.settings.cards_per_booster, 
+      'boostersPerPlayer': cube.settings.boosters_per_player, 
+      'cubeName': cube.name, 
+      'author': cube.author}}
   return jsonify(response)
 
 @app.route('/api/cube/<string:cube_id>', methods=['GET'])

@@ -92,28 +92,7 @@
         
         <div style="width: 48%;">
             <h1>Card List Converter</h1>
-        <div style="width: fit-content; margin: auto; text-align: left;">
-            <div id="draft-instructions" style="list-style-position: inside;">
-                <p>INSTRUCTIONS:</p>
-                <ol>
-                    <li>On <a href="https://dreamborn.ink">dreamborn.ink</a>: go to your cube's page</li>
-                    <li>Press Menu > Export > Copy to clipboard</li>
-                    <li>Paste below + press Convert</li>
-                </ol>
-                <p>Notes:</p>
-                <ul>
-                    <li>Suppports Ursula's Return Illumineer's Quest Cards</li>
-                    <li>May support some cards from unreleased sets</li>
-                    <li>Does not retain card versions (e.g. enchanteds)</li>
-                </ul>
-            </div>
-        </div>
-        <br />
-            <textarea id="cardListInput" placeholder="1 Alice - Growing Girl
-1 Let it Go
-1 LeFou - Opportunistic Flunky
-..."></textarea>
-            <br>
+            {% include 'shared/common_card_list_input.html' %}
             <button id="cardListSaveButton" disabled>Download</button>
             <button id="cardListDraftButton" disabled>Draft Now</button>
         </div>

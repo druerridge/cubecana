@@ -133,6 +133,13 @@
     <div class="container" id="cubeContainer">
         <!-- Items will be populated here by JavaScript -->
     </div>
+
+    <div id="pagination" style="text-align: center; margin-top: 20px;">
+        <button id="prev-page" disabled>Previous</button>
+        <span id="page-numbers"></span>
+        <button id="next-page">Next</button>
+    </div>
+
     <script type="module" src="{{ url_for('static', filename='js/cube-directory.js') }}"></script>
     
     {% include 'shared/content_footer.html' %}

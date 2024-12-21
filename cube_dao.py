@@ -36,46 +36,82 @@ def get_session(db_url: str):
 
 def create_cubecana_cube(cube: DbCubecanaCube) -> None:
     session = get_session(DB_URL)
-    session.add(cube)
-    session.commit()
-    session.close()
+    try:
+        session.add(cube)
+        session.commit()
+    except Exception as e:
+        session.rollback()
+        raise e
+    finally:
+        session.close()
 
 def update_cubecana_cube(cube_id: bytes, updated_cube: DbCubecanaCube) -> None:
     session = get_session(DB_URL)
-    cube = session.query(DbCubecanaCube).filter(DbCubecanaCube.id == cube_id).first()
-    if cube:
-        cube.name = updated_cube.name
-        cube.card_id_to_count = updated_cube.card_id_to_count
-        cube.tags = updated_cube.tags
-        cube.link = updated_cube.link
-        cube.author = updated_cube.author
-        cube.last_updated_epoch_seconds = updated_cube.last_updated_epoch_seconds
-        cube.edit_secret = updated_cube.edit_secret
-        cube.boosters_per_player = updated_cube.boosters_per_player
-        cube.cards_per_booster = updated_cube.cards_per_booster
-        cube.set_card_colors = updated_cube.set_card_colors
-        cube.color_balance_packs = updated_cube.color_balance_packs
-        cube.with_replacement = updated_cube.with_replacement
-        session.commit()
-    session.close()
+    try:
+        cube = session.query(DbCubecanaCube).filter(DbCubecanaCube.id == cube_id).first()
+        if cube:
+            cube.name = updated_cube.name
+            cube.card_id_to_count = updated_cube.card_id_to_count
+            cube.tags = updated_cube.tags
+            cube.link = updated_cube.link
+            cube.author = updated_cube.author
+            cube.last_updated_epoch_seconds = updated_cube.last_updated_epoch_seconds
+            cube.edit_secret = updated_cube.edit_secret
+            cube.boosters_per_player = updated_cube.boosters_per_player
+            cube.cards_per_booster = updated_cube.cards_per_booster
+            cube.set_card_colors = updated_cube.set_card_colors
+            cube.color_balance_packs = updated_cube.color_balance_packs
+            cube.with_replacement = updated_cube.with_replacement
+            session.commit()
+    except Exception as e:
+        session.rollback()
+        raise e
+    finally:
+        session.close()
 
 def delete_cubecana_cube(cube_id: bytes) -> None:
     session = get_session(DB_URL)
-    cube = session.query(DbCubecanaCube).filter(DbCubecanaCube.id == cube_id).first()
-    if cube:
-        session.delete(cube)
-        session.commit()
-    session.close()
+    try:
+        cube = session.query(DbCubecanaCube).filter(DbCubecanaCube.id == cube_id).first()
+        if cube:
+            session.delete(cube)
+            session.commit()
+    except Exception as e:
+        session.rollback()
+        raise e
+    finally:
+        session.close()
 
 def get_cubecana_cube_by_id(cube_id: bytes) -> Optional[DbCubecanaCube]:
     session = get_session(DB_URL)
-    cube = session.query(DbCubecanaCube).filter(DbCubecanaCube.id == cube_id).first()
-    session.close()
+    try:
+        cube = session.query(DbCubecanaCube).filter(DbCubecanaCube.id == cube_id).first()
+    except Exception as e:
+        session.rollback()
+        raise e
+    finally:
+        session.close()
     return cube
 
 def get_cubecana_cubes_paginated_by_popularity(page: int, per_page: int) -> List[DbCubecanaCube]:
     session = get_session(DB_URL)
-    cubes = session.query(DbCubecanaCube).order_by(DbCubecanaCube.popularity.desc()).offset((page - 1) * per_page).limit(per_page).all()
-    session.close()
-    return cubes
+    try:
+        cubes = session.query(DbCubecanaCube).order_by(DbCubecanaCube.popularity.desc()).offset((page - 1) * per_page).limit(per_page).all()
+        return cubes
+    except Exception as e:
+        session.rollback()
+        raise e
+    finally:
+        session.close()
+
+def get_cubecana_cube_count() -> int:
+    session = get_session(DB_URL)
+    try:
+        count = session.query(DbCubecanaCube).count()
+    except Exception as e:
+        session.rollback()
+        raise e
+    finally:
+        session.close()
+    return count
 

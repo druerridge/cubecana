@@ -32,11 +32,11 @@ class DbCubecanaCube(Base):
 
 class CubeDao:
     def __init__(self):
-        creds_file = Path('creds.json')
+        creds_file = Path('creds/creds.json')
         if creds_file.is_file():
             with creds_file.open() as f:
                 creds_json = json.load(f)
-                self.db_url = f"mysql+pymysql://{creds_json['db_username']}:{creds_json['db_password']}@{creds_json['db_host']}/cubecana_{creds_json['db_shard']}?charset=utf8"
+                self.db_url = f"mysql+pymysql://{creds_json['db_username']}:{creds_json['db_password']}@{creds_json['db_host']}/{creds_json['db_name']}?charset=utf8"
         else:
             print("No creds file found, exiting")
             raise SystemExit(1)

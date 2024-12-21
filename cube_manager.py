@@ -7,7 +7,7 @@ import create_template
 from typing import List
 import uuid
 from settings import Settings
-import cube_dao
+from cube_dao import cube_dao, DbCubecanaCube
 
 @dataclass(frozen=True)
 class CubecanaCube:
@@ -51,7 +51,7 @@ class CubecanaCube:
 def to_db_cubecana_cube(cc_cube: CubecanaCube):
     new_uuid = uuid.UUID(cc_cube.id)
     new_id = new_uuid.bytes
-    return cube_dao.DbCubecanaCube(
+    return DbCubecanaCube(
         id=new_id,
         name=cc_cube.name.encode('utf-8'),
         card_id_to_count=json.dumps(cc_cube.card_id_to_count).encode('utf-8'), # come back to this
@@ -68,7 +68,7 @@ def to_db_cubecana_cube(cc_cube: CubecanaCube):
         popularity=0
     )
 
-def from_db_cubecana_cube(db_cube: cube_dao.DbCubecanaCube) -> CubecanaCube:
+def from_db_cubecana_cube(db_cube: DbCubecanaCube) -> CubecanaCube:
     return CubecanaCube(
         name=db_cube.name,
         card_id_to_count=json.loads(db_cube.card_id_to_count),

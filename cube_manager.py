@@ -122,6 +122,8 @@ class CubeManager:
 
     def get_cube(self, id: str):
         db_cube = cube_dao.get_cubecana_cube_by_id(uuid.UUID(id).bytes)
+        if not db_cube:
+           return None
         cube = from_db_cubecana_cube(db_cube)
         return cube
 

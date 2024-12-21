@@ -36,7 +36,7 @@ class CubeDao:
         if creds_file.is_file():
             with creds_file.open() as f:
                 creds_json = json.load(f)
-                self.db_url = f"mysql+pymysql://{creds_json['db_username']}:{creds_json['db_password']}@{creds_json['db_host']}/{creds_json['db_name']}?charset=utf8"
+                self.db_url = f"mysql://{creds_json['db_username']}:{creds_json['db_password']}@{creds_json['db_host']}/{creds_json['db_name']}?charset=utf8"
         else:
             print("No creds file found, exiting")
             raise SystemExit(1)

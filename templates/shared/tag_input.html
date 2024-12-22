@@ -1,0 +1,34 @@
+<div class="form-group">
+    <label for="cubeTags">Tags:</label>
+    <div id="tagsContainer">
+            <button type="button" class="tag-button" onclick="toggleTag(this)">Overpowered</button>
+            <button type="button" class="tag-button" onclick="toggleTag(this)">Powered</button>
+            <button type="button" class="tag-button" onclick="toggleTag(this)">Synergy</button>
+            <button type="button" class="tag-button" onclick="toggleTag(this)">Budget</button>
+            <button type="button" class="tag-button" onclick="toggleTag(this)">Theme</button>
+            <button type="button" class="tag-button" onclick="toggleTag(this)">Set</button>
+            <button type="button" class="tag-button" onclick="toggleTag(this)">Rarity-Restricted</button>
+            <button type="button" class="tag-button" onclick="toggleTag(this)">Clown Shoes</button>
+            <button type="button" class="tag-button" onclick="toggleTag(this)">Custom Rules</button>
+            <button type="button" class="tag-button" onclick="toggleTag(this)">Other</button>
+        <script>
+            function toggleTag(button) {
+                button.classList.toggle('active');
+            }
+        </script>
+
+        <style>
+            .tag-button {
+                margin: 5px;
+                padding: 10px;
+                border: 1px solid #ccc;
+                background-color: #f9f9f9;
+                cursor: pointer;
+            }
+            .tag-button.active {
+                background-color: #007bff;
+                color: white;
+            }
+        </style>
+    </div>
+</div>

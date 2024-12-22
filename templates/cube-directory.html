@@ -49,11 +49,12 @@
         }
         .cards {
             text-align: left;
+            vertical-align: top;
         }
         .author {
             text-align: right;
             color: gray;
-            vertical-align: middle;
+            vertical-align: top;
         }
         .element-row-1 {
             text-align: left;
@@ -96,6 +97,33 @@
             text-decoration: underline;
             margin-top: 10px;
         }
+        #copy-link-btn {
+            margin-top: 2px;
+            padding: 2px 3px;
+            background-color: blue;
+            color: #f8f8ffe7; 
+            border-radius: 3px;
+            cursor: pointer;    
+        }
+        #inspect-btn {
+            margin-top: 2px;
+            padding: 2px 3px;
+            background-color: purple;
+            color: #f8f8ffe7; 
+            border-radius: 3px;
+            cursor: pointer; 
+        }
+        #element-draft {
+            margin-top: 2px;
+            padding: 2px 3px;
+            background-color: green;
+            color: #f8f8ffe7; 
+            border-radius: 3px;
+            cursor: pointer; 
+        }
+        .cards {
+            color:antiquewhite;
+        }
 </style>
 </head>
 <body>
@@ -112,13 +140,13 @@
             <div id="element-row-1" class="element-row-1" style="display: table; width:100%; margin: 0;">
                 <div id="left-part" style="display: table-cell;">
                     <span id="element-name" class="name">INSERT_NAME</span>
-                    <span id="element-cards" class="cards"><img src="{{ url_for('static', filename='cards.png') }}" alt="Card Image" style="width: 20px; height: 20px;">CARD_COUNT</span>
                     <span id="element-author" class="author">AUTHOR</span>
+                    <span class="cards">( <span id="element-cards" >CARD_COUNT</span> <img src="static/img/cards.png" alt="Fanned Cards" height="14px"/> ) </span>
                 </div>
                 <div style="display: table-cell; text-align: right;">
-                    <span><button id="copy-link-btn">Share Draft Link</button></span>
-                    <span><a href="LINK" id="element-link" style="text-decoration: none; color: inherit;"><button>View Cube</button></a></span>
-                    <span><button id="element-draft">Draft Now</button></span>   
+                    <span><button id="copy-link-btn"><img src="static/img/link.png" height="14px"/> Share</button></span>
+                    <span><a href="LINK" id="element-link"><button id="inspect-btn"><img src="static/img/magnifying.png" height="14px"/> Inspect</button></a></span>
+                    <span><button id="element-draft"><img src="static/img/cards.png" height="14px"/> Draft!</button></span>   
                 </div>
             </div>
             <div id="element-row-2" class="element-row-2" style="display: table; width: 100%;margin:0;">

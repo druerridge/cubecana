@@ -11,7 +11,7 @@ function populateCubes(cubes) {
 
             let clone = template.content.cloneNode(true);
             clone.getElementById("element-name").textContent = cube.name;
-            clone.getElementById("element-cards").textContent = "(" + cube.cardCount + " cards)";
+            clone.getElementById("element-cards").textContent = cube.cardCount;
             clone.getElementById("element-author").textContent = "by: " + cube.author;
             clone.getElementById("copy-link-btn").addEventListener("click", function() {
                 navigator.clipboard.writeText(cubeDraftLink);

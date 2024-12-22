@@ -63,15 +63,15 @@ body {
     background-color: #677bc4;
 }
 a {
-    color: #ffcc00; /* Bright yellow for better visibility */
+    color: #ffcc00;
     text-decoration: underline;
 }
 a:not(.nounderline) {
-    color: #ffcc00; /* Bright yellow for better visibility */
+    color: #ffcc00;
     text-decoration: underline;
 }
 a:hover {
-    color: #ffffff; /* White on hover for contrast */
+    color: #ffffff;
 }
 a:visited:not(.button) {
     color: #ffcc00;

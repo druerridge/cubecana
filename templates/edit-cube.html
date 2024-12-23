@@ -14,30 +14,6 @@
         #cardListInput {
             width: 100%;
         }
-        #delete-button {
-            background-color: #dc3545;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-        #delete-button:hover {
-            background-color: #c82333;
-        }
-        #submit-button {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            font-size: 16px;
-            color: white;
-            background-color: #007BFF;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-        #submit-button:hover {
-            background-color: #0056b3;
-        }
     </style>
 </head>
 
@@ -68,8 +44,8 @@
                     Boosters per Player: <input type="number" id="cubeBoostersPerPlayer" value="4" min="1" max="20" step="1" style="width: 50px;" />
                 </div>
                 {% include 'shared/tag_input.html' %}
-                <button id="submit-button" class="btn btn-primary">Submit</button><br />
-                <button id="delete-button" class="btn btn-danger" style="margin-top: 15px;">Delete</button>
+                <button id="submit-button" class="action-button">Submit</button><br />
+                <button id="delete-button" class="danger-button" style="margin-top: 15px;">Delete</button>
             </form>
             <div id="successNotification" style="color: green;"></div>
         </div>

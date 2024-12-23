@@ -9,23 +9,6 @@
             width: 100%;
             height: 300px;
         }
-        button {
-            margin-top: 10px;
-            padding: 10px 20px;
-            background-color: #4CAF50; /* Green background */
-            color: white; /* White text */
-            border: none; /* Remove borders */
-            border-radius: 5px; /* Rounded corners */
-            cursor: pointer; /* Pointer/hand icon */
-            font-size: 16px; /* Increase font size */
-        }
-        button:disabled {
-            background-color: gray; /* Gray background for disabled buttons */
-            cursor: not-allowed; /* Not-allowed cursor for disabled buttons */
-        }
-        button:hover:enabled {
-            background-color: #45a049; /* Darker green on hover */
-        }
         #errorText {
             color: red;
             font-weight: bold;
@@ -67,7 +50,7 @@
                 </div>
                 <div id="fileInfo" style="display: none; margin-top: 10px;">
                     <span id="fileName"></span>
-                    <button id="removeFileButton" style="color: white; background-color: red;">Remove file</button>
+                    <button id="removeFileButton" class="danger-button">Remove file</button>
                 </div>
                 <input type="file" id="fileInput" style="display: none;">
             </div>
@@ -76,8 +59,8 @@
                     color: blue;
                 }
             </style>
-            <button id="ttsSaveButton" disabled>Download</button>
-            <button id="ttsDraftButton" disabled>Draft Now</button>
+            <button id="ttsSaveButton" class="action-button" disabled>Download</button>
+            <button id="ttsDraftButton" class="action-button" disabled>Draft Now</button>
             <div style="width: fit-content; margin: auto; text-align: left;">
                 <div id="draft-instructions" style="list-style-position: inside;">
                     <p>Draft Instructions:
@@ -93,8 +76,8 @@
         <div style="width: 48%;">
             <h1>Card List Converter</h1>
             {% include 'shared/common_card_list_input.html' %}
-            <button id="cardListSaveButton" disabled>Download</button>
-            <button id="cardListDraftButton" disabled>Draft Now</button>
+            <button id="cardListSaveButton" class="action-button" disabled>Download</button>
+            <button id="cardListDraftButton" class="action-button" disabled>Draft Now</button>
         </div>
     </div>
     <div>

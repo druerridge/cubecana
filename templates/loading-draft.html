@@ -16,15 +16,21 @@
 <body>
     {% include 'shared/content_header.html' %}
     
-    <h1 id="cube-title">title</h1>
-    <p id="author-text">author</p>
+    <h1 id="cube-title">Loading title...</h1>
+    <p id="author-text">Loading author...</p>
 
     <div id="loading-text">
         Loading
     </div>
     <br />
+
+    <div style="display: flex; justify-content: center;">
+        <div id="instructions">
+            <p>After clicking below, press "Start" on draftmancer to begin.</p>
+        </div>
+    </div>
     
-    <button id="draft-now-button" disabled>Draft Now</button>
+    <button id="draft-now-button" class="action-button" disabled>Draft Now</button>
     
     <script type="module" src="{{ url_for('static', filename='js/loading-draft.js') }}"></script>
 </body>

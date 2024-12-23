@@ -18,6 +18,48 @@ body {
     border: 2px solid #007BFF;
     border-radius: 4px;
 }
+.action-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove borders */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer/hand icon */
+    font-size: 16px; /* Increase font size */
+}
+.action-button:disabled {
+    background-color: gray; /* Gray background for disabled buttons */
+    cursor: not-allowed; /* Not-allowed cursor for disabled buttons */
+}
+.action-button:hover:enabled {
+    background-color: #45a049; /* Darker green on hover */
+}
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #0056b3;
+}
+
+.danger-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.danger-button:hover {
+    background-color: #c82333;
+}
 /* .button {
     display: inline-block;
     margin: 10px;

@@ -1,6 +1,7 @@
 import { generateDraftmancerSession } from "draftmancer-connect";
 
 const container = document.getElementById('cubeContainer');
+const loadingText = document.getElementById('loading-text');
 
 function populateCubes(cubes) {
     container.innerHTML = '';
@@ -36,7 +37,7 @@ function populateCubes(cubes) {
                 tagElement.textContent = tag;
                 elementTags.appendChild(tagElement);
             });
-        
+            loadingText.disabled = true;
             container.appendChild(clone);
         }
     });

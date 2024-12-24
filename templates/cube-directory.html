@@ -9,10 +9,10 @@
             min-width: 55%;
             max-width: 55em;
             height: 80%;
-            overflow-y: scroll;
+            overflow-y: hidden;
             border: 1px solid #ccc;
-            padding: 10px;
-            margin: 20px auto; /* Center the container */
+            padding: 8px;
+            margin: 15px auto; /* Center the container */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example shadow */
         }
         .cube-list-element-template {
@@ -57,11 +57,6 @@
             color: gray;
             vertical-align: top;
         }
-        .element-row-1 {
-            text-align: left;
-            vertical-align: top;
-            align-items: start;
-        }
         .cube-tags {
             text-align: left;
             vertical-align: middle;
@@ -81,32 +76,59 @@
             text-decoration: underline;
             margin-top: 10px;
         }
-        #copy-link-btn {
-            margin-top: 2px;
-            padding: 2px 3px;
-            background-color: blue;
-            color: #f8f8ffe7; 
-            border-radius: 3px;
-            cursor: pointer;    
-        }
-        #inspect-btn {
-            margin-top: 2px;
-            padding: 2px 3px;
-            background-color: purple;
-            color: #f8f8ffe7; 
-            border-radius: 3px;
-            cursor: pointer; 
-        }
-        #element-draft {
-            margin-top: 2px;
-            padding: 2px 3px;
-            background-color: green;
-            color: #f8f8ffe7; 
-            border-radius: 3px;
-            cursor: pointer; 
-        }
         .cards {
             color:antiquewhite;
+        }
+        .cube-dir-btn-img {
+            vertical-align: top;
+        }
+        .cube-dir-btn {
+            text-align: center;
+            padding: 2px;
+            color: #f8f8ffe7; 
+            border-radius: 3px;
+            margin: 1px;
+            padding: 2px 3px;
+            cursor: pointer;    
+        }
+        #copy-link-btn {
+            background-color: blue;
+        }
+        #inspect-btn {
+            background-color: purple;
+        }
+        #element-draft {
+            background-color: green;
+        }
+        #cube-element-div {
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            padding: 8px; 
+            margin-bottom: 8px; 
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+        #element-row-1 {
+            text-align: left;
+            vertical-align: top;
+            align-items: start;
+            display: table; 
+            width:100%; 
+            margin: 0; 
+            table-layout: fixed;
+        }
+        #element-row-2 {
+            display: table; 
+            width: 100%;
+            margin:0;
+        }
+        #element-row-1-left {
+            display: table-cell; 
+            width: 45%;
+        }
+        #element-row-1-right {
+            display: table-cell; 
+            text-align: right; 
+            width: 55%;
         }
 </style>
 </head>
@@ -120,19 +142,19 @@
     <a id="old-cube-dir" href="https://www.dropbox.com/scl/fo/qjgp4iv5c2kaxetpvft9f/ADd721en5FnrK4nlLgba-LM?rlkey=twujmqnrqkmwjvd2yk5x47hxr&e=3&dl=0">Old Cube Directory</a>
 
     <template class="cube-element" id="cube-list-element-template">
-        <div style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin-bottom: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
-            <div id="element-row-1" class="element-row-1" style="display: table; width:100%; margin: 0; table-layout: fixed;">
-                <div id="element-row-1-left" style="display: table-cell; max-width: 40%;">
+        <div id="cube-element-div">
+            <div id="element-row-1" class="element-row-1">
+                <div id="element-row-1-left">
                     <span id="element-name" class="name">INSERT_NAME</span>
                     <span class="cards" style="white-space: nowrap;">( <span id="element-cards" >CARD_COUNT</span> <img src="static/img/cards.png" alt="Fanned Cards" height="14px"/> ) </span>
                 </div>
-                <div id="element-row-1-right" style="display: table-cell; text-align: right; min-width: 60%;">
-                    <span><button id="copy-link-btn"><img src="static/img/link.png" height="14px"/> Share</button></span>
-                    <span><a href="LINK" id="element-link"><button id="inspect-btn"><img src="static/img/magnifying.png" height="14px"/> Inspect</button></a></span>
-                    <span><button id="element-draft"><img src="static/img/cards.png" height="14px"/> Draft!</button></span>   
+                <div id="element-row-1-right">
+                    <span><button id="copy-link-btn" class="cube-dir-btn"><img class="cube-dir-btn-img" src="static/img/link.png" height="14px"/> Share</button></span>
+                    <span><a href="LINK" id="element-link"><button id="inspect-btn" class="cube-dir-btn"><img class="cube-dir-btn-img" src="static/img/magnifying.png" height="14px"/> View</button></a></span>
+                    <span><button id="element-draft" class="cube-dir-btn" ><img class="cube-dir-btn-img" src="static/img/cards.png" height="14px"/> Draft!</button></span>   
                 </div>
             </div>
-            <div id="element-row-2" class="element-row-2" style="display: table; width: 100%;margin:0;">
+            <div id="element-row-2" class="element-row-2" >
                 <div id="element-left-2" style="text-align: left; display: table-cell;">
                     <span id="element-author" class="author">AUTHOR</span>
                     <span id="element-tags" class="cube-tags" style="text-align: left;">

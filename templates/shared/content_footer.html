@@ -33,15 +33,7 @@
             text-decoration: underline;
         }
         .footer-buffer {
-            bottom: 0;
-            left: 0;
-            right: 0;
-            display: block;
-            margin-top: 50px;
-            font-size: 16px;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+            margin-top: 10px;
         }
 </style>
 
@@ -55,7 +47,7 @@
     <a href="https://discord.com/invite/DsbeKc2zsP">
         <div class="discord-footer-card">
             <div class="discord-link">
-                <img src="{{ url_for('static', filename='icon_clyde_white_RGB.png') }}" alt="Discord Icon" style="width: 20px; vertical-align: middle; margin-right: 5px; margin-left: 5px;">Fortyborn Discord: #cube-chat + cube drafts every other Sunday!<br />
+                <img src="{{ url_for('static', filename='icon_clyde_white_RGB.png') }}" alt="Discord Icon" style="width: 20px; vertical-align: middle; margin-right: 5px; margin-left: 5px;">Lorcana Limited Discord: #cube-chat + cube drafts every other Sunday!<br />
             </div>
             <div id="nextCubeClubDateText" class="nounderline" style="color: #ffffff;"></div>
         </div>
@@ -65,23 +57,39 @@
 
 </div>
 <script>
-    const nextCubeClubDateText = document.getElementById('nextCubeClubDateText');
-    const lastKnownCubeClubDate = new Date(1736118000000) // Jan. 05, 2025 @ 3pm PT
-    let nextCubeClubDate = lastKnownCubeClubDate;
-    while (nextCubeClubDate < Date.now()) {
-        nextCubeClubDate.setDate(nextCubeClubDate.getDate() + 14);
-    }
-    let formatter = Intl.DateTimeFormat(
-        "default",
-        {
-            weekday: "short", 
-            month: "short",
-            day: "numeric",
-            hour: "numeric",
-            minute: "numeric",
-            timeZoneName: "short"
+    function setNextCubeClubDate() {
+        const nextCubeClubDateText = document.getElementById('nextCubeClubDateText');
+        const lastKnownCubeClubDate = new Date(1736118000000) // Jan. 05, 2025 @ 3pm PT
+        let nextCubeClubDate = lastKnownCubeClubDate;
+        while (nextCubeClubDate < Date.now()) {
+            nextCubeClubDate.setDate(nextCubeClubDate.getDate() + 14);
         }
-    );
-    nextCubeClubDateText.innerText = "Next Cube Draft: " + formatter.format(nextCubeClubDate);
-    console.log(nextCubeClubDate); 
+        let formatter = Intl.DateTimeFormat(
+            "default",
+            {
+                weekday: "short", 
+                month: "short",
+                day: "numeric",
+                hour: "numeric",
+                minute: "numeric",
+                timeZoneName: "short"
+            }
+        );
+        nextCubeClubDateText.innerText = "Next Cube Draft: " + formatter.format(nextCubeClubDate);
+    }
+
+    function offsetContentFromFooter() {
+        const footerCard = document.querySelector('.footer-card');
+        const footerBuffer = document.querySelector('.footer-buffer');
+        footerBuffer.style.height = `${footerCard.offsetHeight}px`;
+    }
+
+    window.addEventListener('load', () => {
+        setNextCubeClubDate();
+        offsetContentFromFooter();
+    });
+
+    window.addEventListener('resize', () => {
+        offsetContentFromFooter();
+    });
 </script>

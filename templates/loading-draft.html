@@ -11,6 +11,12 @@
             font-family: Arial, sans-serif;
             font-size: 24px;
         }
+        #view-list-button:enabled {
+            background-color: purple;
+        }
+        #view-list-button:enabled:hover {
+            background-color: rgb(95, 0, 95);
+        }
     </style>
 </head>
 <body>
@@ -30,7 +36,8 @@
         </div>
     </div>
     
-    <button id="draft-now-button" class="action-button" disabled>Draft Now</button>
+    <button id="draft-now-button" class="action-button" disabled>Draft Now</button> <br />
+    <button id="view-list-button" class="action-button" disabled>Inspect List</button>
     
     <script type="module" src="{{ url_for('static', filename='js/loading-draft.js') }}"></script>
 </body>

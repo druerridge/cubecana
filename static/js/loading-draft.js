@@ -10,6 +10,7 @@ let intervalId = setInterval(() => {
 const currentUrl = window.location.href;
 const cubeId = currentUrl.split('/cube/')[1].split("/draft")[0];
 const draftNowButton = document.getElementById('draft-now-button');
+const viewListButton = document.getElementById('view-list-button');
 const cubeTitle = document.getElementById('cube-title');
 const authorText = document.getElementById('author-text');
 
@@ -17,6 +18,7 @@ const cubeDraftmancerUrl = `/api/cube/${cubeId}/draftmancerFile`
 request(cubeDraftmancerUrl, null, (responseText) => {
     let response = JSON.parse(responseText);
     draftNowButton.disabled = false;
+    viewListButton.disabled = false;
     clearInterval(intervalId);
     loadingText.hidden = true;
     cubeTitle.textContent = response.metadata.cubeName;
@@ -24,6 +26,10 @@ request(cubeDraftmancerUrl, null, (responseText) => {
     draftNowButton.addEventListener('click', () => {
         let newTab = window.open("/loading");
         generateDraftmancerSession(response.draftmancerFile, newTab, response.metadata);
+    });
+
+    viewListButton.addEventListener('click', () => {
+        window.open(response.metadata.link);
     });
 }, 
 null, 

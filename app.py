@@ -167,6 +167,7 @@ def get_cube_draftmancer_file(cube_id):
       'cardsPerBooster': cube.settings.cards_per_booster, 
       'boostersPerPlayer': cube.settings.boosters_per_player, 
       'cubeName': cube.name, 
+      'link': cube.link,
       'author': cube.author}}
   return jsonify(response)
 

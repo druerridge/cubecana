@@ -1,16 +1,16 @@
 <div class="form-group">
     <label for="cubeTags">Tags:</label>
     <div id="tagsContainer">
-            <button type="button" class="tag-button" onclick="toggleTag(this)">Overpowered</button>
-            <button type="button" class="tag-button" onclick="toggleTag(this)">Powered</button>
-            <button type="button" class="tag-button" onclick="toggleTag(this)">Synergy</button>
-            <button type="button" class="tag-button" onclick="toggleTag(this)">Budget</button>
-            <button type="button" class="tag-button" onclick="toggleTag(this)">Theme</button>
-            <button type="button" class="tag-button" onclick="toggleTag(this)">Set</button>
-            <button type="button" class="tag-button" onclick="toggleTag(this)">Rarity-Restricted</button>
-            <button type="button" class="tag-button" onclick="toggleTag(this)">Clown Shoes</button>
-            <button type="button" class="tag-button" onclick="toggleTag(this)">Custom Rules</button>
-            <button type="button" class="tag-button" onclick="toggleTag(this)">Other</button>
+        <button type="button" class="tag-button" onclick="toggleTag(this)" title="Overpowered cubes include cards, like Illumineer's Quest cards, that are not legal in constructed.">Overpowered</button>
+        <button type="button" class="tag-button" onclick="toggleTag(this)" title="Powered cubes focus on including the most powerful (legal) cards.">Powered</button>
+        <button type="button" class="tag-button" onclick="toggleTag(this)" title="Synergy cubes focus on specific card interactions and strategies.">Synergy</button>
+        <button type="button" class="tag-button" onclick="toggleTag(this)" title="Budget cubes are built with cost-effective cards.">Budget</button>
+        <button type="button" class="tag-button" onclick="toggleTag(this)" title="Theme cubes are built around a specific theme or flavor.">Theme</button>
+        <button type="button" class="tag-button" onclick="toggleTag(this)" title="Set cubes are built using cards from a specific set.">Set</button>
+        <button type="button" class="tag-button" onclick="toggleTag(this)" title="Rarity-Restricted cubes limit the rarity of cards included.">Rarity-Restricted</button>
+        <button type="button" class="tag-button" onclick="toggleTag(this)" title="Clown Shoes cubes are whacky and often feel awkward, like playing Lorcana... but with clown shoes on.">Clown Shoes</button>
+        <button type="button" class="tag-button" onclick="toggleTag(this)" title="Custom Rules cubes are meant to be played or drafted with adjusted rules like color, thematic, or mechanical restrictions.">Custom Rules</button>
+        <button type="button" class="tag-button" onclick="toggleTag(this)" title="Other cubes do not fit into the predefined categories.">Other</button>
         <script>
             function toggleTag(button) {
                 button.classList.toggle('active');

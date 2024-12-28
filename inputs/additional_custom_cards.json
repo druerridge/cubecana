@@ -258,5 +258,15 @@
         },
         "rating": 5,
         "rarity": "mythic"
+    },
+{
+        "name": "Hercules - Manipulated Hero",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://wiki.mushureport.com/images/thumb/1/14/Hercules-ManipulatedHero-Q1-7.png/450px-Hercules-ManipulatedHero-Q1-7.png"
+        },
+        "rating": 4,
+        "rarity": "mythic"
     }
 ]

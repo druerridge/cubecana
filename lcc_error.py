@@ -7,3 +7,7 @@ class LccError(Exception):
 class UnidentifiedCardError(LccError):
     def __init__(self, user_facing_message):
         super().__init__(user_facing_message, 404)
+   
+class UnauthorizedError(LccError):
+    def __init__(self, user_facing_message):
+        super().__init__(user_facing_message, 401)

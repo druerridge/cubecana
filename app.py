@@ -35,6 +35,11 @@ def serve_add_cube():
 
 @app.route('/edit-cube/<string:cube_id>')
 def serve_edit_cube(cube_id):
+  cube = cube_manager.get_cube(cube_id)
+  if not cube:
+    return Response(status=404)
+  if request.args.get('editSecret') != cube.edit_secret:
+    raise lcc_error.UnauthorizedError("Edit secret is incorrect")
   return render_template('edit-cube.html')
 
 @app.route('/loading')
@@ -214,6 +219,10 @@ def delete_cube(cube_id):
   if not cube_manager.delete_cube(cube_id, edit_secret):
     return Response(401)
   return Response(status=200)
+
+@app.errorhandler(lcc_error.UnauthorizedError)
+def handle_401_exception(error):
+  return render_template('401.html'), error.http_status_code
 
 @app.errorhandler(lcc_error.LccError)
 def handle_foo_exception(error):

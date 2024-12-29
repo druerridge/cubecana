@@ -32,5 +32,7 @@ request(cubeDraftmancerUrl, null, (responseText) => {
         window.open(response.metadata.link);
     });
 }, 
-null, 
+() => {
+    newTab.close();
+}, 
 'GET');

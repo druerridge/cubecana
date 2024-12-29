@@ -26,7 +26,9 @@ function populateCubes(cubes) {
                     let response = JSON.parse(responseText);
                     generateDraftmancerSession(response.draftmancerFile, newTab, response.metadata);
                 }, 
-                null, 
+                () => {
+                    newTab.close();
+                }, 
                 'GET');
             });
             clone.getElementById("element-last-updated").textContent = "last updated: " + new Date(cube.lastUpdatedEpochSeconds * 1000).toDateString();

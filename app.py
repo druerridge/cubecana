@@ -37,7 +37,7 @@ def serve_add_cube():
 def serve_edit_cube(cube_id):
   cube = cube_manager.get_cube(cube_id)
   if not cube:
-    return Response(status=404)
+    raise lcc_error.CubeNotFoundError("Cube not found")
   if request.args.get('editSecret') != cube.edit_secret:
     raise lcc_error.UnauthorizedError("Edit secret is incorrect")
   return render_template('edit-cube.html')
@@ -52,6 +52,9 @@ def serve_draft():
 
 @app.route('/cube/<string:cube_id>/draft', methods=['GET'])
 def serve_loading_draft(cube_id):
+  cube = cube_manager.get_cube(cube_id)
+  if not cube:
+    raise lcc_error.CubeNotFoundError("Cube not found")
   return render_template('loading-draft.html')
 
 @app.route('/sitemap.xml')
@@ -223,6 +226,10 @@ def delete_cube(cube_id):
 @app.errorhandler(lcc_error.UnauthorizedError)
 def handle_401_exception(error):
   return render_template('401.html'), error.http_status_code
+
+@app.errorhandler(lcc_error.CubeNotFoundError)
+def handle_404_exception(error):
+  return render_template('404.html'), error.http_status_code
 
 @app.errorhandler(lcc_error.LccError)
 def handle_foo_exception(error):

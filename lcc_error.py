@@ -11,3 +11,7 @@ class UnidentifiedCardError(LccError):
 class UnauthorizedError(LccError):
     def __init__(self, user_facing_message):
         super().__init__(user_facing_message, 401)
+        
+class CubeNotFoundError(LccError):
+    def __init__(self, user_facing_message):
+        super().__init__(user_facing_message, 404)

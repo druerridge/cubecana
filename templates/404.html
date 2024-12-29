@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'shared/common_head.html' %}
+
+    <title>404 Not Found</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 50px;
+            color: #ff0000;
+        }
+        p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    {% include 'shared/content_header.html' %}
+
+    <h1>404 Not Found</h1>
+    <p>We couldn't find a cube with that Id</p>
+
+    {% include 'shared/content_footer.html' %}
+
+</body>
+</html>

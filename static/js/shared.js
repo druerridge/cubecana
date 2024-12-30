@@ -42,21 +42,24 @@ function handleNon200Response(xhr) {
     if (xhr.getResponseHeader('content-type') !== 'application/json') {
         console.log("not application/json error");
         showGenericError(xhr.status);
+        popToastNotification(`Failed. Error Code: ${xhr.status}`, true);
         return;
     }
     errorResponse = JSON.parse(xhr.responseText);
     if (!errorResponse.lcc_error) {
         console.log("not lcc_error");
         showGenericError(xhr.status);
+        popToastNotification(`Failed. Error Code: ${xhr.status}`, true);
         return;
     }
 
     // lcc error case
     showError("Error: " + errorResponse.user_facing_message);
+    popToastNotification(`${errorResponse.user_facing_message}`, true);
     console.log("Error: " + errorResponse.user_facing_message);
 }
 
-function popToastNotification(textContent){
+function popToastNotification(textContent, isError=false) {
     let popup = document.createElement("div");
     popup.textContent = textContent;
     popup.style.position = "fixed";
@@ -66,6 +69,9 @@ function popToastNotification(textContent){
     popup.style.padding = "10px";
     popup.style.borderRadius = "5px";
     popup.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.1)";
+    if (isError) {
+        popup.style.backgroundColor = "lightcoral";
+    }
     document.body.appendChild(popup);
 
     setTimeout(() => {

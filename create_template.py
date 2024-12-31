@@ -136,8 +136,12 @@ def generate_custom_card_list(id_to_api_card: dict[str, ApiCard],
                               id_to_dreamborn_name: dict[str, str], 
                               settings: Settings):
     custom_card_list = []
+    failed_ids = []
     for id in id_to_tts_card:
-        api_card: ApiCard = id_to_api_card[id]
+        if not id in id_to_api_card:
+            failed_ids.append(id)
+            continue
+        api_card: ApiCard = id_to_api_card[id]            
         ink_cost = api_card.cost
         cannonical_name = id_helper.canonical_name_from_id(id, id_to_dreamborn_name, id_to_tts_card)
         custom_card = {
@@ -158,6 +162,11 @@ def generate_custom_card_list(id_to_api_card: dict[str, ApiCard],
         if (settings.set_card_colors):
             custom_card['colors'] = [to_draftmancer_color(api_card.color, settings)]
         custom_card_list.append(custom_card)
+    if len(failed_ids) > 0:
+        error_message = f"Unable to identify {len(failed_ids)} cards, including:\n"
+        for failed_id in failed_ids:
+            error_message += f"{failed_id}\n"
+        raise UnidentifiedCardError(error_message)
     return custom_card_list
 
 def read_id_to_rating(card_evaluations_file):
@@ -299,19 +308,25 @@ def generate_tts_deck(id_to_count, id_to_custom_card):
     contained_obj_list = []
     deck_ids = []
     custom_deck = {}
+    failed_ids = []
     for id, count in id_to_count.items():
         for i in range(0, count):
-            try:
-                contained_obj = generate_contained_obj(id_to_custom_card[id]['name'], current_card_index, previous_card_index)
-                card_image_url = id_to_custom_card[id]['image_uris']['en']
-                custom_deck_obj = generate_custom_deck_obj(card_image_url)
-                contained_obj_list.append(contained_obj)
-                deck_ids.append(contained_obj['CardID'])
-                custom_deck[str(current_card_index)] = custom_deck_obj
-                previous_card_index = current_card_index
-                current_card_index += 1
-            except KeyError:
-                raise UnidentifiedCardError(f"Unable to identify card with id {id} ")
+            if not id in id_to_custom_card:
+                failed_ids.append(id)
+                continue
+            contained_obj = generate_contained_obj(id_to_custom_card[id]['name'], current_card_index, previous_card_index)
+            card_image_url = id_to_custom_card[id]['image_uris']['en']
+            custom_deck_obj = generate_custom_deck_obj(card_image_url)
+            contained_obj_list.append(contained_obj)
+            deck_ids.append(contained_obj['CardID'])
+            custom_deck[str(current_card_index)] = custom_deck_obj
+            previous_card_index = current_card_index
+            current_card_index += 1
+    if len(failed_ids) > 0:
+        error_message = f"Unable to identify {len(failed_ids)} cards, including:\n"
+        for failed_id in failed_ids:
+            error_message += f"{failed_id}\n"
+        raise UnidentifiedCardError(error_message) 
     return {
         'ObjectStates': [
             {
@@ -359,13 +374,44 @@ def add_card_list_to_draftmancer_custom_cards(id_to_count_input, draftmancer_cus
             f'[MainSlot({settings.cards_per_booster})]',
         ]
     file_contents += '\n'.join(lines)
+    failed_ids = []
     for id in id_to_count_input:
-        try:
-            canonical_name = id_to_custom_card[id]['name']
-            file_contents += f"\n{id_to_count_input[id]} {canonical_name}"
-        except KeyError:
-            raise UnidentifiedCardError(f"Unable to identify card with id {id} ")
+        if not id in id_to_custom_card:
+            failed_ids.append(id)
+            continue
+        canonical_name = id_to_custom_card[id]['name']
+        file_contents += f"\n{id_to_count_input[id]} {canonical_name}"
+    if len(failed_ids) > 0:
+        error_message = f"Unable to identify {len(failed_ids)} cards, including:\n"
+        for failed_id in failed_ids:
+            error_message += f"{failed_id}\n"
+        raise UnidentifiedCardError(error_message)
     return file_contents
+
+def validate_card_list_against(card_list_input, draftmancer_custom_card_file="incomplete_simple_template.draftmancer.txt"):
+    id_to_custom_card = read_draftmancer_custom_cardlist(draftmancer_custom_card_file)
+    card_list_lines = card_list_input.split('\n')
+    failed_card_names = []
+
+    for line in card_list_lines:
+        string_count, name = line.rstrip().split(' ', 1)
+        try:
+            int(string_count)
+        except ValueError:
+            raise LccError("Missing count or name in line:\n " + line + "\nShould look like:\n1 Elsa - Snow Queen", 400)
+        id = id_helper.to_id(name)
+        if not id in id_to_custom_card:
+            failed_card_names.append(name)
+            continue
+        
+    if len(failed_card_names) > 0:
+        error_message = f"Unable to identify {len(failed_card_names)} cards, including:\n"
+        if len(failed_card_names) > len(card_list_lines) / 2: 
+            error_message = "If using non-English cards, you must convert to English card names for now\n" + error_message
+        for failed_id in failed_card_names:
+            error_message += f"{failed_id}\n"
+        raise UnidentifiedCardError(error_message)
+    
 
 def dreamborn_tts_to_draftmancer(id_to_tts_card, card_evaluations_file, settings):
     id_to_dreamborn_name = read_id_to_dreamborn_name()

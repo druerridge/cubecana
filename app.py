@@ -93,6 +93,8 @@ def card_list_to_draftmancer():
   card_list = json_data['card_list']
   settings_input = json_data['settings']
 
+  create_template.validate_card_list_against(card_list)
+
   card_list_lines = card_list.split('\n')
   id_to_count_input = create_template.id_to_count_from(card_list_lines)
   card_count = 0
@@ -106,7 +108,15 @@ def card_list_to_draftmancer():
         color_balance_packs=False
     )
   draftmancer_file = create_template.dreamborn_card_list_to_draftmancer(card_list, create_template.DEFAULT_CARD_EVALUATIONS_FILE, settings)
-  response = {'draftmancerFile': draftmancer_file, 'metadata': {'cardCount': card_count, 'cardsPerBooster': settings.cards_per_booster, 'boostersPerPlayer': settings.boosters_per_player, 'cubeName': settings.card_list_name}}
+  response = {
+    'draftmancerFile': draftmancer_file, 
+    'metadata': {
+      'cardCount': card_count, 
+      'cardsPerBooster': settings.cards_per_booster, 
+      'boostersPerPlayer': settings.boosters_per_player, 
+      'cubeName': settings.card_list_name
+    }
+  }
   return jsonify(response)
 
 @app.route('/api/dreamborn-to-draftmancer/', methods=['POST'])
@@ -150,6 +160,7 @@ def add_cube():
     return Response(status=400)
   if len(request.json['cardListText']) > MAX_CARD_LIST_LENGTH:
     return Response(status=413)
+  create_template.validate_card_list_against(request.json['cardListText'])
   api_create_cube = api.CreateCubeRequest(
     name=request.json['name'],
     cardListText=request.json['cardListText'],

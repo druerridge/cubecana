@@ -1,9 +1,10 @@
-
 const submitButton = document.getElementById('submit-button')
 const cardListInput = document.getElementById('cardListInput');
 const currentUrl = window.location.href;
 const cubeForm = document.getElementById('cubeForm');
-const successNotification = document.getElementById('successNotification');
+const successModal = document.getElementById('successModal');
+const modalMessage = document.getElementById('modalMessage');
+const modalOkButton = document.getElementById('modalOkButton');
 
 function getActiveTags() {
     const tags = document.getElementsByClassName('tag-button active');
@@ -55,6 +56,15 @@ cardListInput.addEventListener('input', function() {
     submitButton.disabled = cardListInput.value.trim().length === 0;
 });
 
+function showSuccessModal(innerHtml) {
+    modalMessage.innerHTML = innerHtml;
+    successModal.style.display = 'flex';
+}
+
+modalOkButton.addEventListener('click', () => {
+    successModal.style.display = 'none';
+});
+
 function postCreateCube() {
     const formData = {
         name: cubeForm.cubeName.value.trim(),
@@ -70,11 +80,9 @@ function postCreateCube() {
 
     request(`${window.location.origin}/api/cube`, JSON.stringify(formData), (responseText) => {
         const response = JSON.parse(responseText);
-        successNotification.style.display = 'block';
-        successNotification.style.disabled = false;
         const fullEditCubeLink = `${window.location.origin + response.editCubeLink}`;
-        successNotification.innerHTML = `Successfully uploaded.<br \\>Save this link somewhere to edit your cube:<br \\><a href="${fullEditCubeLink}"'>${fullEditCubeLink}</a>`;
         clearInputs();
+        showSuccessModal(`Cube successfully created!<br \\>You <span class="emphasis-word">MUST</span> save this link to edit your cube:<br \\><br \\><a href="${fullEditCubeLink}">${fullEditCubeLink}</a>`);
     },() => {
         submitButton.disabled = false;
     },

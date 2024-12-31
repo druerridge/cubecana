@@ -358,7 +358,7 @@ def dreamborn_card_list_to_draftmancer(card_list_input, card_evaluations_file, s
     id_to_count_input = id_to_count_from(card_list_lines)
     return add_card_list_to_draftmancer_custom_cards(id_to_count_input, "incomplete_simple_template.draftmancer.txt", settings)
 
-def add_card_list_to_draftmancer_custom_cards(id_to_count_input, draftmancer_custom_card_file, settings):
+def add_card_list_to_draftmancer_custom_cards(id_to_count_input, draftmancer_custom_card_file, settings: Settings):
     file_contents = ""
     with open(draftmancer_custom_card_file, encoding='utf8') as file:
         file_contents = ''.join(file.readlines())

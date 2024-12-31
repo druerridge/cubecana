@@ -80,6 +80,7 @@ def from_db_cubecana_cube(db_cube: DbCubecanaCube) -> CubecanaCube:
         edit_secret=db_cube.edit_secret,
         settings=Settings(
             boosters_per_player=db_cube.boosters_per_player,
+            card_list_name=db_cube.name,
             cards_per_booster=db_cube.cards_per_booster,
             set_card_colors=db_cube.set_card_colors,
             color_balance_packs=db_cube.color_balance_packs,

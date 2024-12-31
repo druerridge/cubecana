@@ -5,6 +5,7 @@ from sqlalchemy import create_engine, Column, String, Integer, Text, JSON
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.dialects.mysql import BINARY
+import api
 import uuid
 
 Base = declarative_base()
@@ -29,6 +30,11 @@ class DbCubecanaCube(Base):
     color_balance_packs = Column(Integer)
     with_replacement = Column(Integer)
     popularity = Column(Integer)
+
+API_SORT_TYPE_TO_COLUMN =  {
+    api.SortType.RANK: DbCubecanaCube.popularity,
+    api.SortType.DATE: DbCubecanaCube.last_updated_epoch_seconds,
+}
 
 class CubeDao:
     def __init__(self):
@@ -105,10 +111,14 @@ class CubeDao:
             session.close()
         return cube
 
-    def get_cubecana_cubes_paginated_by_popularity(self, page: int, per_page: int) -> List[DbCubecanaCube]:
+    def get_cubecana_cubes_paginated_by(self, page: int, per_page: int, sort: api.SortType, order: api.OrderType) -> List[DbCubecanaCube]:
         session = self.get_session()
+        sort_column = API_SORT_TYPE_TO_COLUMN[sort]
         try:
-            cubes = session.query(DbCubecanaCube).order_by(DbCubecanaCube.popularity.desc()).offset((page - 1) * per_page).limit(per_page).all()
+            if order == api.OrderType.DESC:
+                cubes = session.query(DbCubecanaCube).order_by(sort_column.desc()).offset((page - 1) * per_page).limit(per_page).all()
+            else:
+                cubes = session.query(DbCubecanaCube).order_by(sort_column.asc()).offset((page - 1) * per_page).limit(per_page).all()
             return cubes
         except Exception as e:
             session.rollback()

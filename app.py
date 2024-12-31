@@ -147,10 +147,10 @@ def get_cube_count():
 @app.route('/api/cube', methods=['GET'])
 def get_cubes():
   page = int(request.args.get('page', 1))
-  print(f"page: {page}")
   per_page = min(int(request.args.get('per_page', 10)), 100)
-  print(f"per_page: {per_page}")
-  paginated_cube_list_entries = cube_manager.get_cubes(page, per_page)
+  sort = request.args.get('sort', api.SortType.RANK)
+  order = request.args.get('order', api.OrderType.DESC)
+  paginated_cube_list_entries = cube_manager.get_cubes(page, per_page, sort, order)
   response = {'cubes': paginated_cube_list_entries, 'totalCubes': cube_manager.get_cube_count()}
   return jsonify(response)
 

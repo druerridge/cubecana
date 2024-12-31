@@ -2,6 +2,11 @@ import { generateDraftmancerSession } from "draftmancer-connect";
 
 const container = document.getElementById('cubeContainer');
 const loadingText = document.getElementById('loading-text');
+const sortOptions = document.getElementById('sortOptions');
+const orderOptions = document.getElementById('orderOptions');
+const pageNumbers = document.getElementById('page-numbers');
+const prevPage = document.getElementById('prev-page');
+const nextPage = document.getElementById('next-page');
 
 function populateCubes(cubes) {
     container.innerHTML = '';
@@ -45,11 +50,12 @@ function populateCubes(cubes) {
     });
 }
 
+let totalPages = -1;
 let currentPage = 1;
 const pageParam = new URLSearchParams(window.location.search).get('page');
 if (pageParam) {
     currentPage = parseInt(pageParam);
-}
+}   
 
 let perPage = 20;
 const perPageParam = new URLSearchParams(window.location.search).get('per_page');
@@ -57,9 +63,19 @@ if (perPageParam) {
     perPage = parseInt(perPageParam);
 }
 
-const pageNumbers = document.getElementById('page-numbers');
-const prevPage = document.getElementById('prev-page');
-const nextPage = document.getElementById('next-page');
+let sort = 'rank';
+const sortTypeParam = new URLSearchParams(window.location.search).get('sort');
+if (sortTypeParam) {
+    sort = sortTypeParam;
+    sortOptions.value = sort;
+}
+
+let order = 'desc';
+const orderTypeParam = new URLSearchParams(window.location.search).get('order');
+if (orderTypeParam) {
+    order = orderTypeParam;
+    orderOptions.value = order;
+}
 
 function updatePagination(totalPages) {
     pageNumbers.innerHTML = `Page ${currentPage} of ${totalPages}`;
@@ -68,29 +84,49 @@ function updatePagination(totalPages) {
     nextPage.disabled = currentPage === totalPages;
 }
 
-function fetchCubes(page) {
-    const url = `${window.location.origin}/api/cube?page=${page}&per_page=${perPage}`;
+sortOptions.addEventListener('change', () => {
+    if (sortOptions.value != sort) {
+        sort = sortOptions.value;
+        refetchPage();
+    }
+});
+
+orderOptions.addEventListener('change', () => {
+    if (orderOptions.value != order) {
+        order = orderOptions.value;
+        refetchPage();
+    }
+});
+
+function fetchCubes(page, perPage, sort, order) {
+    const url = `${window.location.origin}/api/cube?page=${page}&per_page=${perPage}&sort=${sort}&order=${order}`;
     request(url, null, onRetrieveCubesSuccess, null, 'GET');
+}
+
+function refetchPage() {
+    window.location.search = `?page=${currentPage}&per_page=${perPage}&sort=${sort}&order=${order}`;
 }
 
 prevPage.addEventListener('click', () => {
     if (currentPage > 1) {
         currentPage--;
-        window.location.search = `?page=${currentPage}&per_page=${perPage}`;
+        refetchPage();
     }
 });
 
 nextPage.addEventListener('click', () => {
-    currentPage++;
-    window.location.search = `?page=${currentPage}&per_page=${perPage}`;
+    if (currentPage < totalPages) {
+        currentPage++;
+        refetchPage();
+    }
 });
 
 function onRetrieveCubesSuccess(response) {
     const parsedRespone = JSON.parse(response);
     populateCubes(parsedRespone.cubes);
-    const totalPages = Math.ceil(parsedRespone.totalCubes / perPage);
+    totalPages = Math.ceil(parsedRespone.totalCubes / perPage);
     updatePagination(totalPages);
 }
 
 // Initial fetch
-fetchCubes(currentPage);
+fetchCubes(currentPage, perPage, sort, order);

@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from typing import List
 import json
+from enum import Enum
 
 @dataclass(frozen=True)
 class CubeSettings:
@@ -82,3 +83,11 @@ class Cube:
         default=lambda o: o.__dict__, 
         sort_keys=True,
         indent=4)
+
+class OrderType(str, Enum):
+    ASC = 'asc'
+    DESC = 'desc'
+
+class SortType(str, Enum):
+    RANK = 'rank'
+    DATE = 'date'

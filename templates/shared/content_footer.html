@@ -6,7 +6,9 @@
         left: 0;
         right: 0;
         background: rgba(0, 0, 0, 0.5);
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         margin-top: 50px;
         font-size: 16px;
         color: #ffffff;
@@ -15,50 +17,72 @@
         padding: 10px 20px;
         border-radius: 5px;
     }
-    .footer-card:hover {
-        background-color: #677bc4;
-    }
+    .footer-card a {color:#ffffff;}         /* Unvisited */
+    .footer-card a:visited {color:#ffffff;} /* Visited */
+    .footer-card a:hover {color:#ffcc00;}   /* Mouse over */
+    .footer-card a:active {color:#ffffff;}  /* Selected */
     .bug-link {
-            margin-left: 20px;
-            float: right;
-        }
-        .bug-link:hover {
-            background-color: #ffcc00;
-        }
-        .disclaimer-link {
-            margin-right: 20px;
-            float: left;
-        }
-        .disclaimer-link:hover {
-            text-decoration: underline;
-        }
-        .footer-buffer {
-            margin-top: 10px;
-        }
+        margin-left: 20px;
+        float: right;
+    }
+    .bug-link:hover {
+        background-color: #ffcc00;
+    }
+    .disclaimer-link {
+        margin-right: 20px;
+        float: left;
+    }
+    .disclaimer-link:hover {
+        text-decoration: underline;
+    }
+    .footer-buffer {
+        margin-top: 10px;
+    }
+    .footer-middle {
+        text-align: left;
+        align-items: center;
+    }
+    .discord-icon {
+        width: 20px; 
+        vertical-align: middle; 
+        margin-right: 5px; 
+        margin-left: 5px;
+    }
+    .bug-icon {
+        width: 20px; 
+        vertical-align: middle; 
+        margin-right: 5px; 
+        margin-left: 5px;
+    }
 </style>
 
 <div class="footer-card">
-    <a href="https://forms.gle/dTjVztpd1nkadKb1A">
-        <div class="bug-link"><img src="{{ url_for('static', filename='bug-icon-white.png') }}" alt="Bug Icon" style="width: 20px; vertical-align: middle; margin-right: 5px; margin-left: 5px;"></div>
-    </a>
-    <a href="/disclaimer">
-        <div class="disclaimer-link">&#x24D8; Disclaimer</div>
-    </a>
-    <a href="https://discord.com/invite/DsbeKc2zsP">
-        <div class="discord-footer-card">
-            <div class="discord-link">
-                <img src="{{ url_for('static', filename='icon_clyde_white_RGB.png') }}" alt="Discord Icon" style="width: 20px; vertical-align: middle; margin-right: 5px; margin-left: 5px;">Lorcana Limited Discord: #cube-chat + cube drafts every other Sunday!<br />
-            </div>
-            <div id="nextCubeClubDateText" class="nounderline" style="color: #ffffff;"></div>
+    <div id="footer-left">
+        <a href="/disclaimer">
+            <div class="disclaimer-link">&#x24D8; Disclaimer</div>
+        </a>
+    </div>
+    <div id="footer-middle" class="footer-middle">
+        Cube Online: <a href="https://discord.com/invite/DsbeKc2zsP"><span id="cubeOnlineText" style="white-space: nowrap;"></span></a>
+        <div id="cubeIrlText">
+            Cube IRL: <a href="https://partiful.com/e/5Bt4egsdnAqkwq8PoWF6" style="white-space: nowrap;">NA Continentals in Anaheim!</a>
         </div>
-    </a>
+    </div>
+    <div id="footer-right">
+            <a class="discord-link" href="https://discord.com/invite/DsbeKc2zsP">
+                <img src="{{ url_for('static', filename='icon_clyde_white_RGB.png') }}" alt="Discord Icon" class="discord-icon">
+            </a>
+            <a class="bug-link" href="https://forms.gle/dTjVztpd1nkadKb1A">
+                <img src="{{ url_for('static', filename='bug-icon-white.png') }}" alt="Bug Icon" class="bug-icon">
+            </a>
+    </div>
 </div>
 <div class="footer-buffer">
 
 </div>
 <script>
     function setNextCubeClubDate() {
-        const nextCubeClubDateText = document.getElementById('nextCubeClubDateText');
+        const cubeOnlineText = document.getElementById('cubeOnlineText');
         const lastKnownCubeClubDate = new Date(1736118000000) // Jan. 05, 2025 @ 3pm PT
         let nextCubeClubDate = lastKnownCubeClubDate;
         while (nextCubeClubDate < Date.now()) {
@@ -67,7 +91,7 @@
         let formatter = Intl.DateTimeFormat(
             "default",
             {
-                weekday: "short", 
+                // weekday: "short", 
                 month: "short",
                 day: "numeric",
                 hour: "numeric",
@@ -75,7 +99,7 @@
                 timeZoneName: "short"
             }
         );
-        nextCubeClubDateText.innerText = "Next Cube Draft: " + formatter.format(nextCubeClubDate);
+        cubeOnlineText.innerText = `${formatter.format(nextCubeClubDate)}  (bi-weekly)`;
     }
 
     function offsetContentFromFooter() {

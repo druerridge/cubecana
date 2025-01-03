@@ -19,6 +19,7 @@ from settings import Settings
 from lorcana_api import ApiCard
 import lorcast_api as lorcana_api
 import id_helper
+import franchise
 
 DEFAULT_CARD_EVALUATIONS_FILE = "DraftBots/FrankKarstenEvaluations-HighPower.csv"
 
@@ -90,7 +91,7 @@ lorcana_color_to_draftmancer_color =  {
     "Amethyst": "B",
     "Emerald": "G",
     "Ruby": "R",
-    "Steel": "",
+    "Steel": None,
     "Sapphire": "U"
 }
 def to_draftmancer_color(lorcana_color, settings: Settings):
@@ -159,8 +160,20 @@ def generate_custom_card_list(id_to_api_card: dict[str, ApiCard],
             print(f"Missing rating for {cannonical_name}")
             # TODO: probably tell user rating is missing
         
+
         if (settings.set_card_colors):
-            custom_card['colors'] = [to_draftmancer_color(api_card.color, settings)]
+            color = to_draftmancer_color(api_card.color, settings)
+            if color:
+                custom_card['colors'] = [color]
+            else: # TODO: This needs additional Testing outside double feature cube
+                custom_card['colors'] = []
+            custom_card['colors'] = []
+        if (settings.franchise_to_color):
+            color = franchise.retrieve_franchise_to_draftmancer_color(id)
+            if color:
+                custom_card['colors'] = [color]
+            else:
+                custom_card['colors'] = []
         custom_card_list.append(custom_card)
     if len(failed_ids) > 0:
         error_message = f"Unable to identify {len(failed_ids)} cards, including:\n"

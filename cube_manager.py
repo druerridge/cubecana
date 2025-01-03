@@ -94,7 +94,6 @@ class CubeManager:
 
     def get_cubes(self, page: int = 1, per_page: int = 25, sort = api.SortType.RANK, order = api.OrderType.DESC):
         paginated_db_cubecana_cubes = cube_dao.get_cubecana_cubes_paginated_by(page, per_page, sort, order)
-        # paginated_db_cubecana_cubes = cube_dao.get_cubecana_cubes_paginated_by_popularity(page, per_page)
         paginated_cubes = [from_db_cubecana_cube(dbcube) for dbcube in paginated_db_cubecana_cubes]
         paginated_cube_list_entries = [cube.to_cube_list_entry() for cube in paginated_cubes]
         return paginated_cube_list_entries

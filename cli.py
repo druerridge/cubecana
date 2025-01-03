@@ -18,6 +18,7 @@ parser.add_argument('--name', default="custom_card_list", help="Sets name of bot
 parser.add_argument('--set_card_colors', default=False, help="WARNING** This sets card colors, allowing draftmancer to do color-balancing for you, but it will also encourage bots to draft 1-2 color decks")
 parser.add_argument('--color_balance_packs', default=False, help="WARNING** this color-balances ONLY your largest slot, IF it contains enough cards, AND steel may be wonky (treated as colorless). This will ONLY work if card_colors is true, which will encourage bots to draft 1-2 color decks")
 parser.add_argument('--draftmancer_card_list', default=False, help="card list to use for deck conversion to tts")
+parser.add_argument('--franchise_to_color', default=False, help="sets colors based on franchise to enable a double-feature cube")
 
 def retail_tts_to_draftmancer(dreamborn_export_for_tabletop_sim, card_evaluations_file, settings):
     settings.with_replacement = True
@@ -39,11 +40,13 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     settings = Settings(
-        args.boosters_per_player,
-        args.name,
-        args.cards_per_booster,
-        args.set_card_colors,
-        args.color_balance_packs
+        boosters_per_player=args.boosters_per_player,
+        card_list_name=args.name,
+        cards_per_booster=args.cards_per_booster,
+        set_card_colors=args.set_card_colors,
+        color_balance_packs=args.color_balance_packs,
+        with_replacement=False,
+        franchise_to_color=args.franchise_to_color
     )
 
     match args.verb:

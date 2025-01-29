@@ -8,13 +8,14 @@ franchise_to_draftmancer_color =  {
     "The Little Mermaid": "G",
     "Aladdin": "R",
     "Mickey & Friends": None,
+    "Disney Lorcana": None,
+    "Treasure Planet": None,
     "Beauty and the Beast": "U"
 }
 
 def load_id_to_franchise() -> dict:
     id_to_franchise = {}
-    # only had characters for the double feature cube. expand to all cards
-    card_by_franchise_file = 'inputs\\The Double Feature Cube - CardByFranchise.csv'
+    card_by_franchise_file = 'inputs\\FranchiseByCardName.csv'
     with open(card_by_franchise_file, newline='', encoding='utf8') as csvfile:
         dialect = csv.Sniffer().sniff(csvfile.read(1024))
         dialect.quoting = csv.QUOTE_MINIMAL

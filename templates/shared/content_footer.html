@@ -83,7 +83,7 @@
 <script>
     function setNextCubeClubDate() {
         const cubeOnlineText = document.getElementById('cubeOnlineText');
-        const lastKnownCubeClubDate = new Date(1736118000000) // Jan. 05, 2025 @ 3pm PT
+        const lastKnownCubeClubDate = new Date(1740956400000) // Mar. 2, 2025 @ 3pm PT
         let nextCubeClubDate = lastKnownCubeClubDate;
         while (nextCubeClubDate < Date.now()) {
             nextCubeClubDate.setDate(nextCubeClubDate.getDate() + 14);
@@ -91,7 +91,7 @@
         let formatter = Intl.DateTimeFormat(
             "default",
             {
-                // weekday: "short", 
+                weekday: "short", 
                 month: "short",
                 day: "numeric",
                 hour: "numeric",

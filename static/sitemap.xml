@@ -6,27 +6,35 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
   <loc>https://www.cubecana.com/</loc>
-  <lastmod>2024-11-02T22:07:19+00:00</lastmod>
+  <lastmod>2025-02-03T07:32:58+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.cubecana.com/draft.html</loc>
-  <lastmod>2024-11-02T22:07:19+00:00</lastmod>
+  <loc>https://www.cubecana.com/cube-directory</loc>
+  <lastmod>2025-02-03T07:32:58+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.cubecana.com/draft</loc>
+  <lastmod>2025-02-03T07:32:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.cubecana.com/play.html</loc>
-  <lastmod>2024-11-02T22:07:19+00:00</lastmod>
+  <loc>https://www.cubecana.com/play</loc>
+  <lastmod>2025-02-03T07:32:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.cubecana.com/disclaimer</loc>
-  <lastmod>2024-11-02T22:07:19+00:00</lastmod>
-  <priority>0.10</priority>
+  <lastmod>2025-02-03T07:32:58+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
-
+<url>
+  <loc>https://www.cubecana.com/add-cube/</loc>
+  <lastmod>2025-02-03T07:32:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 
 </urlset>

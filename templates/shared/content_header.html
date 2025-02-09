@@ -1,11 +1,39 @@
 <style>
-    header {
-        text-align: left;
+    .header-div {
+        display: flex;
+        align-items: center;
+        height: 100px; 
+    }
+    .logo-image {
+        height: 100px;
+    }
+    .header-link {
+        padding: 10px 10px;
+        cursor: pointer;
+        font-size: larger;
+    }
+    .header-link-bar {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
     }
 </style>
 
-<header style="height: 100px; overflow: hidden;">
-    <a href="/">
-        <img src="{{ url_for('static', filename='LCC-Cube-1.png') }}" alt="Home" style="height: 100%;">
-    </a>
+<header>
+    <div class="header-div">
+        <a href="/">
+            <img class="logo-image" src="{{ url_for('static', filename='LCC-Cube-1.png') }}" alt="Home">
+        </a>
+        <span class="header-link-bar">
+            <a class="header-link" href="/cube-directory" alt="Cube Directory">
+                <b>Directory</b>
+            </a>
+            <a class="header-link" href="/draft" alt="Draft">
+                <b>Draft</b>
+            </a>
+            <a class="header-link" href="/play" alt="Play">
+                <b>Play</b>
+            </a>
+        </span>
+    </div>
 </header>

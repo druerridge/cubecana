@@ -1,3 +1,30 @@
+// https://stackoverflow.com/questions/5717093/check-if-a-javascript-string-is-a-url
+function isValidHttpUrl(string) {
+    let url;
+    
+    try {
+      url = new URL(string);
+    } catch (_) {
+      return false;  
+    }
+  
+    return url.protocol === "http:" || url.protocol === "https:";
+}
+
+let validHosts = ["dreamborn.ink", "lorcana.gg"];
+function isValidCardlistUrl(urlString) {
+    if (!isValidHttpUrl(urlString)) {
+        return false;
+    } 
+
+    let url = new URL(urlString);
+    if (!validHosts.includes(url.host)) {
+        return false;
+    }
+    
+    return true;
+}
+
 // https://stackoverflow.com/questions/13405129/create-and-save-a-file-with-javascript
 // Function to download data to a file
 function download(data, filename, type) {

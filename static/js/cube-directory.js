@@ -24,6 +24,13 @@ function populateCubes(cubes) {
                 popToastNotification(`Copied draft link to your clipboard`);
             });
             clone.getElementById("element-link").href = cube.link;
+            if (!isValidCardlistUrl(cube.link)) {
+                clone.getElementById("element-link").href = "/404.html";
+                clone.getElementById("element-link").style.disabled = true;
+                clone.getElementById("inspect-btn").style.disabled = true;
+                clone.getElementById("inspect-btn").disabled = true;
+                clone.getElementById("element-link").disabled = true;
+            }
             clone.getElementById("element-draft").addEventListener("click", function() {
                 let newTab = window.open("/loading");
                 const cubeDraftmancerUrl = `${window.location.origin}/api/cube/${cube.id}/draftmancerFile`

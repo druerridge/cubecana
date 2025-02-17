@@ -18,7 +18,9 @@ const cubeDraftmancerUrl = `/api/cube/${cubeId}/draftmancerFile`
 request(cubeDraftmancerUrl, null, (responseText) => {
     let response = JSON.parse(responseText);
     draftNowButton.disabled = false;
-    viewListButton.disabled = false;
+    if (isValidCardlistUrl(response.metadata.link)) {
+        viewListButton.disabled = false
+    }
     clearInterval(intervalId);
     loadingText.hidden = true;
     cubeTitle.textContent = response.metadata.cubeName;

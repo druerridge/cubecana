@@ -94,11 +94,15 @@ lorcana_color_to_draftmancer_color =  {
     "Steel": None,
     "Sapphire": "U"
 }
-def to_draftmancer_color(lorcana_color, settings: Settings):
-    if settings.set_card_colors:
-        return lorcana_color_to_draftmancer_color[lorcana_color]
-    else:
-        return ""
+def to_draftmancer_colors(lorcana_ink, settings: Settings, lorcast_inks: list[str]):
+    if not settings.set_card_colors:
+        return []
+    if lorcast_inks:
+        draftmancer_colors = []
+        for lorcast_color in lorcast_inks:
+            draftmancer_colors.append(lorcana_color_to_draftmancer_color[lorcast_color])
+        return draftmancer_colors
+    return lorcana_color_to_draftmancer_color[lorcana_ink]
 
 lorcana_rarity_to_draftmancer_rarity =  {
     "Common": "common",
@@ -162,13 +166,8 @@ def generate_custom_card_list(id_to_api_card: dict[str, ApiCard],
         
 
         if (settings.set_card_colors):
-            color = to_draftmancer_color(api_card.color, settings)
-            if color:
-                custom_card['colors'] = [color]
-            else: # TODO: This needs additional Testing outside double feature cube
-                custom_card['colors'] = []
-            custom_card['colors'] = []
-        if (settings.franchise_to_color):
+            custom_card['colors'] = to_draftmancer_colors(api_card.color, settings, api_card.inks)
+        if (settings.franchise_to_color): # TODO: This needs additional Testing outside double feature cube
             color = franchise.retrieve_franchise_to_draftmancer_color(id)
             if color:
                 custom_card['colors'] = [color]

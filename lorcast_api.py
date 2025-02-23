@@ -6,10 +6,11 @@ import requests
 CACHED_API_DATA_FILEPATH = 'lorcast_api_data_cache.json'
 
 class ApiCard:
-    def __init__(self, cost, rarity, color):
+    def __init__(self, cost, rarity, color, inks):
         self.cost = cost
         self.rarity = rarity
         self.color = color
+        self.inks = inks
 
     def toJSON(self):
         return json.dumps(
@@ -75,7 +76,8 @@ def get_full_name(card):
 def api_card_from(card):
     return ApiCard(card['cost'], 
                    lorcast_to_dtd_rarity[card['rarity']], 
-                   card['ink'])
+                   card['ink'],
+                   card['inks'])
 
 def generate_id_to_card_untyped(name_to_card) -> dict[str, ApiCard]:
     id_to_card_untyped: dict[str, dict] = {}

@@ -14,10 +14,10 @@ DEFAULT_CARD_EVALUATIONS_FILE = "DraftBots/FrankKarstenEvaluations-HighPower.csv
 
 @dataclass(frozen=True)
 class DraftmancerSettings:
-  boostersPerPlayer: int
-  name: str
-  cardBack: str
-  withReplacement: bool
+  boostersPerPlayer: int = 4
+  name: str = "Custom Cube"
+  cardBack: str = None
+  withReplacement: bool = False
   
   def toJSON(self):
     return json.dumps(

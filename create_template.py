@@ -254,6 +254,7 @@ def read_draftmancer_file(file_path: str):
         settings_string = ""
         read_settings = False
         text_contents = ""
+        draftmancer_settings: DraftmancerSettings = None
         for line in f:
             text_contents += line
             if "[CustomCards]" in line:
@@ -271,7 +272,7 @@ def read_draftmancer_file(file_path: str):
                 # try to decode, if it's done, it'll decode, otherwise it'll fail and we continue
                 if "}" in line:
                     try:
-                        draftmancer_settings: DraftmancerSettings = DraftmancerSettings(**json.loads(settings_string))
+                        draftmancer_settings = DraftmancerSettings(**json.loads(settings_string))
                         read_settings = False
                     except json.JSONDecodeError:
                         continue

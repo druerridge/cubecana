@@ -1,15 +1,4 @@
-"""
-This is a python script to create a template to convert a dreamborn.ink Tabletop Simulator export into a Draftmancer Custom Card List.
-
-Run the script like so:
-python3 create_template.py '/path/to/dreamborn_tabletop_sim_export.json'
-
-TODOs:
-- How to balance packs versus random 12 cards?
-
-Notes:
-- https://draftmancer.com/cubeformat.html
-"""
+from dataclasses import dataclass
 from collections import defaultdict
 import json
 from pathlib import Path
@@ -22,6 +11,27 @@ import id_helper
 import franchise
 
 DEFAULT_CARD_EVALUATIONS_FILE = "DraftBots/FrankKarstenEvaluations-HighPower.csv"
+
+@dataclass(frozen=True)
+class DraftmancerSettings:
+  boostersPerPlayer: int
+  name: str
+  cardBack: str
+  withReplacement: bool
+  
+  def toJSON(self):
+    return json.dumps(
+        self,
+        default=lambda o: o.__dict__, 
+        sort_keys=True,
+        indent=4)
+
+
+@dataclass(frozen=True)
+class DraftmancerFile:
+  draftmancer_settings: DraftmancerSettings
+  id_to_custom_card: dict[str, dict]
+  text_contents: str
 
 def get_mainboard_lines(all_lines):
   try: 
@@ -232,21 +242,39 @@ def generate_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_
     return '\n'.join(lines)
 
 def read_draftmancer_custom_cardlist(file_path='all_cards_cube.draftmancer.txt'):
+    draftmancer_file:DraftmancerFile = read_draftmancer_file(file_path)
+    if draftmancer_file == None:
+        return None
+    return draftmancer_file.id_to_custom_card
+
+def read_draftmancer_file(file_path: str):
     with open(file_path, encoding='utf8') as f:
-        # custom_card_string = "{\"CustomCards\":"
         custom_card_string = ""
         read_custom_cards = False
+        settings_string = ""
+        read_settings = False
+        text_contents = ""
         for line in f:
-            if "[Settings]" in line:
-                # custom_card_string += "}"
-                read_custom_cards = False
-                break
-
-            if read_custom_cards:
-                custom_card_string += line.strip()
-
+            text_contents += line
             if "[CustomCards]" in line:
                 read_custom_cards = True
+                read_settings = False
+                continue
+            if "[Settings]" in line:
+                read_custom_cards = False
+                read_settings = True
+                continue
+            if read_custom_cards:
+                custom_card_string += line.strip()
+            if read_settings:
+                settings_string += line.strip()
+                # try to decode, if it's done, it'll decode, otherwise it'll fail and we continue
+                if "}" in line:
+                    try:
+                        draftmancer_settings: DraftmancerSettings = DraftmancerSettings(**json.loads(settings_string))
+                        read_settings = False
+                    except json.JSONDecodeError:
+                        continue
         custom_cards_json = json.loads(custom_card_string)
         
         id_to_custom_card = {}
@@ -257,7 +285,8 @@ def read_draftmancer_custom_cardlist(file_path='all_cards_cube.draftmancer.txt')
                 id_to_custom_card[id] = custom_card
             except KeyError:
                 raise UnidentifiedCardError(f"Unable to identify card with input name {input_name} and id {id} ")
-        return id_to_custom_card
+        draftmancer_file = DraftmancerFile(draftmancer_settings, id_to_custom_card, text_contents)
+        return draftmancer_file
     return None
 
 def read_draftmancer_export(draftmancer_deck_export_file):

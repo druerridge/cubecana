@@ -6,6 +6,7 @@ import lcc_error
 from settings import Settings
 from cube_manager import CubecanaCube
 from cube_manager import cube_manager
+from retail_manager import retail_manager
 import api
 from flask import jsonify
 from cube_dao import MAX_CARD_LIST_LENGTH
@@ -28,6 +29,10 @@ def serve_disclaimer():
 @app.route('/cube-directory')
 def serve_cubes():
   return render_template('cube-directory.html')
+
+@app.route('/retail-directory')
+def serve_retail_sets():
+  return render_template('retail-directory.html')
 
 @app.route('/add-cube/')
 def serve_add_cube():
@@ -136,6 +141,40 @@ def handle_dreamborn_to_draftmancer():
     )
   draftmancer_file = create_template.dreamborn_tts_to_draftmancer(id_to_tts_card, create_template.DEFAULT_CARD_EVALUATIONS_FILE, settings)
   response = {'draftmancerFile': draftmancer_file, 'metadata': {'cardCount': card_count, 'cardsPerBooster': settings.cards_per_booster, 'boostersPerPlayer': settings.boosters_per_player}}
+  return jsonify(response)
+
+# RETAIL API ENDPOINTS
+
+@app.route('/api/retail_sets', methods=['GET'])
+def get_retail_sets():
+  page = int(request.args.get('page', 1))
+  per_page = min(int(request.args.get('per_page', 10)), 100)
+  order = request.args.get('order', api.OrderType.DESC)
+  paginated_retail_set_entries = retail_manager.get_sets(page, per_page, order)
+  response = {'sets': paginated_retail_set_entries, 'totalSets': retail_manager.get_set_count()}
+  return jsonify(response)
+
+@app.route('/api/retail_sets/<string:set_id>', methods=['GET'])
+def get_retail_set(set_id:str):
+  set = retail_manager.get_set(set_id)
+  if not set:
+    return lcc_error.RetailSetNotFoundError("Retail set not found")
+  return jsonify(set)
+
+@app.route('/api/retail_sets/<string:set_id>/draftmancerFile', methods=['GET'])
+def get_retail_set_draftmancer_file(set_id:str):
+  set: api.RetailSet = retail_manager.get_set(set_id)
+  if not set:
+    return lcc_error.RetailSetNotFoundError("Retail set not found")
+  response = {
+    'draftmancerFile': set.draftmancerFile, 
+    'metadata': {
+      'cardCount': 4 * 12 * 8, 
+      'cardsPerBooster': 12, 
+      'boostersPerPlayer': 4, 
+      'cubeName': set.name, 
+      'link': f"https://www.cubecana.com//api/retail_sets/{set_id}",
+      'author': "Ravensburger"}}
   return jsonify(response)
 
 # CUBE API ENDPOINTS

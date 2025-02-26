@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lorcana Cube - Largest List Online @ Cubecana</title> <!-- Intentional override -->
+    {% include 'shared/common_head.html' %}
+
+    <style>
+        .container {
+            min-width: 55%;
+            max-width: 55em;
+            height: 80%;
+            overflow-y: hidden;
+            border: 1px solid #ccc;
+            padding: 8px;
+            margin: 15px auto; /* Center the container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example shadow */
+        }
+        .cube-list-element-template {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            text-decoration: none; /* Remove underline from links */
+            color: inherit; /* Inherit text color */
+            display: block; /* Make the entire item clickable */
+        }
+        .item:last-child {
+            border-bottom: none;
+        }
+        .cube-tags {
+            margin-top: 5px;
+        }
+        .cube-element {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .cube-tag {
+            display: inline-block;
+            background-color: gray;
+            color: white;
+            border-radius: 3px;
+            padding: 2px 5px;
+            margin-right: 5px;
+            font-size: 12px;
+        }
+        .name {
+            text-align: left;
+            vertical-align: top;
+        }
+        .cards {
+            text-align: left;
+            vertical-align: top;
+        }
+        .author {
+            text-align: right;
+            color: gray;
+            vertical-align: top;
+        }
+        .cube-tags {
+            text-align: left;
+            vertical-align: middle;
+            align-items: start;
+        }
+        .last-updated {
+            text-align: right;
+            color: gray;
+            vertical-align: bottom;
+        }
+        #old-cube-dir {
+            display: inline-block;
+            font-size: 14px;
+            color: blue;
+            padding: 5px 10px;
+            border-radius: 3px;
+            text-decoration: underline;
+            margin-top: 10px;
+        }
+        .cards {
+            color:antiquewhite;
+        }
+        .cube-dir-btn-img {
+            vertical-align: top;
+        }
+        .cube-dir-btn {
+            text-align: center;
+            padding: 2px;
+            color: #f8f8ffe7; 
+            border-radius: 3px;
+            margin: 1px;
+            padding: 2px 3px;
+            cursor: pointer;    
+        }
+        #copy-link-btn {
+            background-color: blue;
+        }
+        #inspect-btn {
+            background-color: purple;
+        }
+        #inspect-btn:disabled {
+            background-color: #ccc;
+            cursor: default;
+        }
+        #cube-element-draft {
+            background-color: green;
+        }
+        #cube-element-div {
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            padding: 8px; 
+            margin-bottom: 8px; 
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+        #element-row-1 {
+            text-align: left;
+            vertical-align: top;
+            align-items: start;
+            display: table; 
+            width:100%; 
+            margin: 0; 
+            table-layout: fixed;
+        }
+        #element-row-2 {
+            display: table; 
+            width: 100%;
+            margin:0;
+        }
+        #element-row-1-left {
+            display: table-cell; 
+            width: 45%;
+        }
+        #element-row-1-right {
+            display: table-cell; 
+            text-align: right; 
+            width: 55%;
+        }
+</style>
+</head>
+<body>
+    {% include 'shared/content_header.html' %}
+    <div id="errorText" style="color: red; display: none; background-color: lightcoral; width: 100%; padding: 10px;" disabled>An error occurred. Please try again.</div>
+
+    <h1 style="display: inline-block;">Retail Set Directory (Beta)</h1><br />
+
+    <div style="margin-top: 20px;">
+        <label for="orderOptions">Order:</label>
+        <select id="orderOptions">
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+        </select>
+    </div>
+
+    <template class="cube-element" id="cube-list-element-template">
+        <div id="cube-element-div">
+            <div id="element-row-1" class="cube-element-row-1">
+                <div id="element-row-1-left">
+                    <span id="cube-element-name" class="name">INSERT_NAME</span>
+                </div>
+                <div id="element-row-1-right">
+                    <span><button id="cube-element-draft" class="cube-dir-btn" ><img class="cube-dir-btn-img" src="static/img/cards.png" height="14px"/> Draft!</button></span>   
+                </div>
+            </div>
+        </div>
+    </template>
+    <div class="container" id="retail-sets-container">
+        <!-- Items will be populated here by JavaScript -->
+        <div id="loading-text">Loading Retail Sets...</div>
+    </div>
+
+    <div id="pagination" style="text-align: center; margin-top: 20px;">
+        <button id="prev-page" disabled>Previous</button>
+        <span id="page-numbers"></span>
+        <button id="next-page">Next</button>
+    </div>
+
+    <script type="module" src="{{ url_for('static', filename='js/retail-directory.js') }}"></script>
+    
+    {% include 'shared/content_footer.html' %}
+</body>
+</html>
+

@@ -1,0 +1,2467 @@
+[CustomCards]
+[
+    {
+        "name": "Weight Set",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-204?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Mouse Armor",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-203?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Last Cannon",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-202?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Strength of a Raging Fire",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-201?tts"
+        },
+        "rarity": "rare",
+        "rating": 4
+    },
+    {
+        "name": "Pick a Fight",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-200?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 0
+    },
+    {
+        "name": "Let the Storm Rage On",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-199?tts"
+        },
+        "rarity": "common",
+        "rating": 4
+    },
+    {
+        "name": "Charge!",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-198?tts"
+        },
+        "rarity": "common",
+        "rating": 2
+    },
+    {
+        "name": "Tiana - Diligent Waitress",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-197?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Tiana - Celebrating Princess",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-196?tts"
+        },
+        "rarity": "mythic",
+        "rating": 1
+    },
+    {
+        "name": "The Prince - Never Gives Up",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-195?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "The Huntsman - Reluctant Enforcer",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-194?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Robin Hood - Capable Fighter",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-193?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Queen of Hearts - Capricious Monarch",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-192?tts"
+        },
+        "rarity": "rare",
+        "rating": 3
+    },
+    {
+        "name": "Prince Naveen - Penniless Royal",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-191?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Pacha - Village Leader",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-190?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 4
+    },
+    {
+        "name": "Namaari - Morning Mist",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-189?tts"
+        },
+        "rarity": "mythic",
+        "rating": 1
+    },
+    {
+        "name": "Magic Broom - Industrial Model",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-188?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Li Shang - Archery Instructor",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-187?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Lawrence - Jealous Manservant",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-186?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 2
+    },
+    {
+        "name": "Kronk - Junior Chipmunk",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-185?tts"
+        },
+        "rarity": "rare",
+        "rating": 5
+    },
+    {
+        "name": "Jafar - Royal Vizier",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-184?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Jafar - Dreadnought",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-183?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 4
+    },
+    {
+        "name": "Hercules - Hero in Training",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-182?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Hercules - Divine Hero",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-181?tts"
+        },
+        "rarity": "rare",
+        "rating": 4
+    },
+    {
+        "name": "Goofy - Knight for a Day",
+        "mana_cost": "{9}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-180?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Eli La Bouff - Big Daddy",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-179?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Donald Duck - Deep-Sea Diver",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-178?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Cinderella - Stouthearted",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-177?tts"
+        },
+        "rarity": "mythic",
+        "rating": 4
+    },
+    {
+        "name": "Cinderella - Knight in Training",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-176?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Chief Bogo - Respected Officer",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-175?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Benja - Guardian of the Dragon Gem",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-174?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Beast - Tragic Hero",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-173?tts"
+        },
+        "rarity": "mythic",
+        "rating": 5
+    },
+    {
+        "name": "Beast - Selfless Protector",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-172?tts"
+        },
+        "rarity": "mythic",
+        "rating": 5
+    },
+    {
+        "name": "Beast - Forbidding Recluse",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-171?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Sardine Can",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-170?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 0
+    },
+    {
+        "name": "Pawpsicle",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-169?tts"
+        },
+        "rarity": "common",
+        "rating": 2
+    },
+    {
+        "name": "Maurice's Workshop",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-168?tts"
+        },
+        "rarity": "rare",
+        "rating": 0
+    },
+    {
+        "name": "Gumbo Pot",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-167?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Fang Crossbow",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-166?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 0
+    },
+    {
+        "name": "Nothing to Hide",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-165?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Launch",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-164?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 0
+    },
+    {
+        "name": "Four Dozen Eggs",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-163?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Falling Down the Rabbit Hole",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-162?tts"
+        },
+        "rarity": "rare",
+        "rating": 0
+    },
+    {
+        "name": "Winnie the Pooh - Having a Think",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-161?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "The Nokk - Water Spirit",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-160?tts"
+        },
+        "rarity": "common",
+        "rating": 0
+    },
+    {
+        "name": "Sisu - Divine Water Dragon",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-159?tts"
+        },
+        "rarity": "mythic",
+        "rating": 4
+    },
+    {
+        "name": "Rabbit - Reluctant Host",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-158?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Prince Charming - Heir to the Throne",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-157?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Owl - Logical Lecturer",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-156?tts"
+        },
+        "rarity": "common",
+        "rating": 2
+    },
+    {
+        "name": "Noi - Orphaned Thief",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-155?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Nick Wilde - Wily Fox",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-154?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Mrs. Judson - Housekeeper",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-153?tts"
+        },
+        "rarity": "rare",
+        "rating": 0
+    },
+    {
+        "name": "Judy Hopps - Optimistic Officer",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-152?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Jasmine - Heir of Agrabah",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-151?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "James - Role Model",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-150?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Hiram Flaversham - Toymaker",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-149?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Grand Pabbie - Oldest and Wisest",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-148?tts"
+        },
+        "rarity": "mythic",
+        "rating": 2
+    },
+    {
+        "name": "Gaston - Intellectual Powerhouse",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-147?tts"
+        },
+        "rarity": "rare",
+        "rating": 4
+    },
+    {
+        "name": "Duke Weaselton - Small-Time Crook",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-146?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Cruella De Vil - Perfectly Wretched",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-145?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 2
+    },
+    {
+        "name": "Cruella De Vil - Fashionable Cruiser",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-144?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Cogsworth - Talking Clock",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-143?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Cogsworth - Grandfather Clock",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-142?tts"
+        },
+        "rarity": "mythic",
+        "rating": 5
+    },
+    {
+        "name": "Caterpillar - Calm and Collected",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-141?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Basil - Perceptive Investigator",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-140?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Basil - Of Baker Street",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-139?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Basil - Great Mouse Detective",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-138?tts"
+        },
+        "rarity": "mythic",
+        "rating": 1
+    },
+    {
+        "name": "Alice - Growing Girl",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-137?tts"
+        },
+        "rarity": "mythic",
+        "rating": 4
+    },
+    {
+        "name": "Sword in the Stone",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-136?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 0
+    },
+    {
+        "name": "Peter Pan's Dagger",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-135?tts"
+        },
+        "rarity": "common",
+        "rating": 0
+    },
+    {
+        "name": "Dinner Bell",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-134?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "You Can Fly!",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-133?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 0
+    },
+    {
+        "name": "What Did You Call Me?",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-132?tts"
+        },
+        "rarity": "common",
+        "rating": 0
+    },
+    {
+        "name": "The Most Diabolical Scheme",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-131?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 0
+    },
+    {
+        "name": "Teeth and Ambitions",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-130?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Go the Distance",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-129?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Tuk Tuk - Wrecking Ball",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-128?tts"
+        },
+        "rarity": "rare",
+        "rating": 2
+    },
+    {
+        "name": "Tigger - One of a Kind",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-127?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Shere Khan - Menacing Predator",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-126?tts"
+        },
+        "rarity": "rare",
+        "rating": 4
+    },
+    {
+        "name": "Scar - Vicious Cheater",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-125?tts"
+        },
+        "rarity": "mythic",
+        "rating": 3
+    },
+    {
+        "name": "Raya - Warrior of Kumandra",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-124?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Raya - Leader of Heart",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-123?tts"
+        },
+        "rarity": "mythic",
+        "rating": 2
+    },
+    {
+        "name": "Raya - Headstrong",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-122?tts"
+        },
+        "rarity": "common",
+        "rating": 0
+    },
+    {
+        "name": "Ratigan - Very Large Mouse",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-121?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Queen of Hearts - Sensing Weakness",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-120?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 4
+    },
+    {
+        "name": "Queen of Hearts - Impulsive Ruler",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-119?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Namaari - Nemesis",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-118?tts"
+        },
+        "rarity": "mythic",
+        "rating": 3
+    },
+    {
+        "name": "Mulan - Soldier in Training",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-117?tts"
+        },
+        "rarity": "common",
+        "rating": 2
+    },
+    {
+        "name": "Mother Gothel - Withered and Wicked",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-116?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Minnie Mouse - Zipping Around",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-115?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Minnie Mouse - Wide-Eyed Diver",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-114?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Minnie Mouse - Stylish Surfer",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-113?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 4
+    },
+    {
+        "name": "Lumiere - Hotheaded Candelabra",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-112?tts"
+        },
+        "rarity": "rare",
+        "rating": 2
+    },
+    {
+        "name": "Lady Tremaine - Overbearing Matriarch",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-111?tts"
+        },
+        "rarity": "common",
+        "rating": 0
+    },
+    {
+        "name": "Lady Tremaine - Imperious Queen",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-110?tts"
+        },
+        "rarity": "mythic",
+        "rating": 5
+    },
+    {
+        "name": "Honest John - Not That Honest",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-109?tts"
+        },
+        "rarity": "rare",
+        "rating": 0
+    },
+    {
+        "name": "Fidget - Ratigan's Henchman",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-108?tts"
+        },
+        "rarity": "common",
+        "rating": 2
+    },
+    {
+        "name": "Felicia - Always Hungry",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-107?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Donald Duck - Not Again!",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-106?tts"
+        },
+        "rarity": "mythic",
+        "rating": 3
+    },
+    {
+        "name": "Card Soldiers - Full Deck",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-105?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Boun - Precocious Entrepreneur",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-104?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Baloo - Fun-Loving Bear",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-103?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Ratigan's Marvelous Trap",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-102?tts"
+        },
+        "rarity": "rare",
+        "rating": 0
+    },
+    {
+        "name": "Ring the Bell",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-101?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 2
+    },
+    {
+        "name": "Pack Tactics",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-100?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Improvise",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-099?tts"
+        },
+        "rarity": "common",
+        "rating": 2
+    },
+    {
+        "name": "Hypnotize",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-098?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Bounce",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-097?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Bibbidi Bobbidi Boo",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-096?tts"
+        },
+        "rarity": "rare",
+        "rating": 0
+    },
+    {
+        "name": "Virana - Fang Chief",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-095?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Tiana - True Princess",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-094?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "The Queen - Disguised Peddler",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-093?tts"
+        },
+        "rarity": "mythic",
+        "rating": 0
+    },
+    {
+        "name": "Ray - Easygoing Firefly",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-092?tts"
+        },
+        "rarity": "common",
+        "rating": 4
+    },
+    {
+        "name": "Ratigan - Criminal Mastermind",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-091?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Queen of Hearts - Quick-Tempered",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-090?tts"
+        },
+        "rarity": "common",
+        "rating": 0
+    },
+    {
+        "name": "Prince John - Greediest of All",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-089?tts"
+        },
+        "rarity": "rare",
+        "rating": 0
+    },
+    {
+        "name": "Pete - Bad Guy",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-088?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Panic - Underworld Imp",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-087?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Pain - Underworld Imp",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-086?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Lucifer - Cunning Cat",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-085?tts"
+        },
+        "rarity": "rare",
+        "rating": 4
+    },
+    {
+        "name": "Little John - Loyal Friend",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-084?tts"
+        },
+        "rarity": "rare",
+        "rating": 4
+    },
+    {
+        "name": "Gaston - Scheming Suitor",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-083?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Flynn Rider - His Own Biggest Fan",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-082?tts"
+        },
+        "rarity": "rare",
+        "rating": 3
+    },
+    {
+        "name": "Flynn Rider - Confident Vagabond",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-081?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Enchantress - Unexpected Judge",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-080?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Dr. Facilier - Fortune Teller",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-079?tts"
+        },
+        "rarity": "mythic",
+        "rating": 4
+    },
+    {
+        "name": "Donald Duck - Sleepwalker",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-078?tts"
+        },
+        "rarity": "common",
+        "rating": 0
+    },
+    {
+        "name": "Donald Duck - Perfect Gentleman",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-077?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Daisy Duck - Secret Agent",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-076?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Cheshire Cat - From the Shadows",
+        "mana_cost": "{8}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-075?tts"
+        },
+        "rarity": "mythic",
+        "rating": 2
+    },
+    {
+        "name": "Cheshire Cat - Always Grinning",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-074?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Bucky - Squirrel Squeak Tutor",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-073?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Belle - Hidden Archer",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-072?tts"
+        },
+        "rarity": "mythic",
+        "rating": 4
+    },
+    {
+        "name": "Belle - Bookworm",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-071?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Beast - Relentless",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-070?tts"
+        },
+        "rarity": "mythic",
+        "rating": 5
+    },
+    {
+        "name": "Arthur - Trained Swordsman",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-069?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "The Sorcerer's Spellbook",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-068?tts"
+        },
+        "rarity": "rare",
+        "rating": 0
+    },
+    {
+        "name": "Perplexing Signposts",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-067?tts"
+        },
+        "rarity": "rare",
+        "rating": 0
+    },
+    {
+        "name": "Croquet Mallet",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-066?tts"
+        },
+        "rarity": "common",
+        "rating": 0
+    },
+    {
+        "name": "Binding Contract",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-065?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 0
+    },
+    {
+        "name": "Legend of the Sword in the Stone",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-064?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "I'm Stuck!",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-063?tts"
+        },
+        "rarity": "common",
+        "rating": 0
+    },
+    {
+        "name": "Gruesome and Grim",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-062?tts"
+        },
+        "rarity": "rare",
+        "rating": 0
+    },
+    {
+        "name": "Yzma - Without Beauty Sleep",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-061?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Yzma - Scary Beyond All Reason",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-060?tts"
+        },
+        "rarity": "mythic",
+        "rating": 5
+    },
+    {
+        "name": "Winnie the Pooh - Hunny Wizard",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-059?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Pinocchio - Talkative Puppet",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-058?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 0
+    },
+    {
+        "name": "Pinocchio - On the Run",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-057?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Pinocchio - Star Attraction",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-056?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Peter Pan's Shadow - Not Sewn On",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-055?tts"
+        },
+        "rarity": "mythic",
+        "rating": 4
+    },
+    {
+        "name": "Merlin - Squirrel",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-054?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Merlin - Shapeshifter",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-053?tts"
+        },
+        "rarity": "rare",
+        "rating": 0
+    },
+    {
+        "name": "Merlin - Rabbit",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-052?tts"
+        },
+        "rarity": "rare",
+        "rating": 4
+    },
+    {
+        "name": "Merlin - Goat",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-051?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Merlin - Crab",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-050?tts"
+        },
+        "rarity": "common",
+        "rating": 4
+    },
+    {
+        "name": "Madam Mim - Snake",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-049?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Madam Mim - Rival of Merlin",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-048?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Madam Mim - Purple Dragon",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-047?tts"
+        },
+        "rarity": "mythic",
+        "rating": 3
+    },
+    {
+        "name": "Madam Mim - Fox",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-046?tts"
+        },
+        "rarity": "rare",
+        "rating": 4
+    },
+    {
+        "name": "Kuzco - Wanted Llama",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-045?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Jiminy Cricket - Pinocchio's Conscience",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-044?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "HeiHei - Persistent Presence",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-043?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 4
+    },
+    {
+        "name": "Fairy Godmother - Pure Heart",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-042?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Fairy Godmother - Mystic Armorer",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-041?tts"
+        },
+        "rarity": "mythic",
+        "rating": 5
+    },
+    {
+        "name": "Fairy Godmother - Here to Help",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-040?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Elsa - Gloves Off",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-039?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Dr. Facilier - Savvy Opportunist",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-038?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Chip the Teacup - Gentle Soul",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-037?tts"
+        },
+        "rarity": "common",
+        "rating": 2
+    },
+    {
+        "name": "Blue Fairy - Rewarding Good Deeds",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-036?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Arthur - Wizard's Apprentice",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-035?tts"
+        },
+        "rarity": "mythic",
+        "rating": 1
+    },
+    {
+        "name": "Sleepy's Flute",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-034?tts"
+        },
+        "rarity": "rare",
+        "rating": 0
+    },
+    {
+        "name": "Dragon Gem",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-033?tts"
+        },
+        "rarity": "rare",
+        "rating": 0
+    },
+    {
+        "name": "Zero to Hero",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-032?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 0
+    },
+    {
+        "name": "World's Greatest Criminal Mind",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-031?tts"
+        },
+        "rarity": "rare",
+        "rating": 4
+    },
+    {
+        "name": "Painting the Roses Red",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-030?tts"
+        },
+        "rarity": "common",
+        "rating": 2
+    },
+    {
+        "name": "Last Stand",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-029?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Hold Still",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-028?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "The Queen - Regal Monarch",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-027?tts"
+        },
+        "rarity": "common",
+        "rating": 2
+    },
+    {
+        "name": "The Queen - Commanding Presence",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-026?tts"
+        },
+        "rarity": "mythic",
+        "rating": 5
+    },
+    {
+        "name": "Snow White - Well Wisher",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-025?tts"
+        },
+        "rarity": "mythic",
+        "rating": 5
+    },
+    {
+        "name": "Snow White - Unexpected Houseguest",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-024?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 0
+    },
+    {
+        "name": "Snow White - Lost in the Forest",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-023?tts"
+        },
+        "rarity": "common",
+        "rating": 2
+    },
+    {
+        "name": "Sneezy - Very Allergic",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-022?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Sleepy - Nodding Off",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-021?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Rapunzel - Sunshine",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-020?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Rapunzel - Gifted Artist",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-019?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Piglet - Very Small Animal",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-018?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Nana - Darling Family Pet",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-017?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Mulan - Reflecting",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-016?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Mulan - Free Spirit",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-015?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Mufasa - Betrayed Leader",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-014?tts"
+        },
+        "rarity": "mythic",
+        "rating": 4
+    },
+    {
+        "name": "Mickey Mouse - Friendly Face",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-013?tts"
+        },
+        "rarity": "mythic",
+        "rating": 1
+    },
+    {
+        "name": "King Louie - Jungle VIP",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-012?tts"
+        },
+        "rarity": "mythic",
+        "rating": 3
+    },
+    {
+        "name": "Happy - Good-Natured",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-011?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Grumpy - Bad-Tempered",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-010?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Grand Duke - Advisor to the King",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-009?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Gaston - Baritone Bully",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-008?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Eudora - Accomplished Seamstress",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-007?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Dopey - Always Playful",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-006?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Doc - Leader of the Seven Dwarfs",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-005?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Cobra Bubbles - Just a Social Worker",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-004?tts"
+        },
+        "rarity": "rare",
+        "rating": 3
+    },
+    {
+        "name": "Cinderella - Ballroom Sensation",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-003?tts"
+        },
+        "rarity": "rare",
+        "rating": 0
+    },
+    {
+        "name": "Christopher Robin - Adventurer",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-002?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Bashful - Hopeless Romantic",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/002-001?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    }
+]
+[Settings]
+{
+    "boostersPerPlayer": 4,
+    "name": "Rise of the Floodborn",
+    "cardBack": "https://wiki.mushureport.com/images/thumb/d/d7/Card_Back_official.png/450px-Card_Back_official.png",
+    "withReplacement": true
+}
+[CommonSlotSteel(1)]
+60 Last Cannon
+60 Let the Storm Rage On
+60 Charge!
+60 Tiana - Diligent Waitress
+60 Prince Naveen - Penniless Royal
+60 Magic Broom - Industrial Model
+60 Jafar - Royal Vizier
+60 Hercules - Hero in Training
+60 Donald Duck - Deep-Sea Diver
+60 Cinderella - Knight in Training
+60 Benja - Guardian of the Dragon Gem
+60 Beast - Forbidding Recluse
+[CommonSlotSapphire(1)]
+60 Pawpsicle
+60 Gumbo Pot
+60 Nothing to Hide
+60 The Nokk - Water Spirit
+60 Rabbit - Reluctant Host
+60 Owl - Logical Lecturer
+60 Jasmine - Heir of Agrabah
+60 James - Role Model
+60 Duke Weaselton - Small-Time Crook
+60 Cruella De Vil - Fashionable Cruiser
+60 Basil - Perceptive Investigator
+60 Basil - Of Baker Street
+[CommonSlotRuby(1)]
+60 Peter Pan's Dagger
+60 What Did You Call Me?
+60 Go the Distance
+60 Tigger - One of a Kind
+60 Raya - Headstrong
+60 Mulan - Soldier in Training
+60 Minnie Mouse - Zipping Around
+60 Lady Tremaine - Overbearing Matriarch
+60 Fidget - Ratigan's Henchman
+60 Felicia - Always Hungry
+60 Boun - Precocious Entrepreneur
+60 Baloo - Fun-Loving Bear
+[CommonSlotEmerald(1)]
+60 Improvise
+60 Hypnotize
+60 Virana - Fang Chief
+60 Ray - Easygoing Firefly
+60 Ratigan - Criminal Mastermind
+60 Queen of Hearts - Quick-Tempered
+60 Panic - Underworld Imp
+60 Gaston - Scheming Suitor
+60 Flynn Rider - Confident Vagabond
+60 Enchantress - Unexpected Judge
+60 Donald Duck - Sleepwalker
+60 Arthur - Trained Swordsman
+[CommonSlotAmethyst(1)]
+60 Croquet Mallet
+60 Legend of the Sword in the Stone
+60 I'm Stuck!
+60 Winnie the Pooh - Hunny Wizard
+60 Merlin - Squirrel
+60 Merlin - Crab
+60 Kuzco - Wanted Llama
+60 Jiminy Cricket - Pinocchio's Conscience
+60 Fairy Godmother - Pure Heart
+60 Elsa - Gloves Off
+60 Dr. Facilier - Savvy Opportunist
+60 Chip the Teacup - Gentle Soul
+[CommonSlotAmber(1)]
+60 Painting the Roses Red
+60 Hold Still
+60 The Queen - Regal Monarch
+60 Snow White - Lost in the Forest
+60 Sneezy - Very Allergic
+60 Sleepy - Nodding Off
+60 Rapunzel - Sunshine
+60 Piglet - Very Small Animal
+60 Mulan - Free Spirit
+60 Happy - Good-Natured
+60 Grumpy - Bad-Tempered
+60 Eudora - Accomplished Seamstress
+[UncommonSlot(3)]
+30 Mouse Armor
+30 Pick a Fight
+30 The Prince - Never Gives Up
+30 Robin Hood - Capable Fighter
+30 Pacha - Village Leader
+30 Li Shang - Archery Instructor
+30 Lawrence - Jealous Manservant
+30 Jafar - Dreadnought
+30 Eli La Bouff - Big Daddy
+30 Sardine Can
+30 Fang Crossbow
+30 Launch
+30 Four Dozen Eggs
+30 Nick Wilde - Wily Fox
+30 Judy Hopps - Optimistic Officer
+30 Cruella De Vil - Perfectly Wretched
+30 Cogsworth - Talking Clock
+30 Caterpillar - Calm and Collected
+30 Sword in the Stone
+30 You Can Fly!
+30 The Most Diabolical Scheme
+30 Raya - Warrior of Kumandra
+30 Queen of Hearts - Sensing Weakness
+30 Queen of Hearts - Impulsive Ruler
+30 Mother Gothel - Withered and Wicked
+30 Minnie Mouse - Stylish Surfer
+30 Card Soldiers - Full Deck
+30 Ring the Bell
+30 Bounce
+30 Tiana - True Princess
+30 Pain - Underworld Imp
+30 Donald Duck - Perfect Gentleman
+30 Daisy Duck - Secret Agent
+30 Cheshire Cat - Always Grinning
+30 Bucky - Squirrel Squeak Tutor
+30 Belle - Bookworm
+30 Binding Contract
+30 Yzma - Without Beauty Sleep
+30 Pinocchio - Talkative Puppet
+30 Pinocchio - On the Run
+30 Merlin - Goat
+30 Madam Mim - Snake
+30 HeiHei - Persistent Presence
+30 Fairy Godmother - Here to Help
+30 Blue Fairy - Rewarding Good Deeds
+30 Zero to Hero
+30 Last Stand
+30 Snow White - Unexpected Houseguest
+30 Rapunzel - Gifted Artist
+30 Nana - Darling Family Pet
+30 Gaston - Baritone Bully
+30 Dopey - Always Playful
+30 Doc - Leader of the Seven Dwarfs
+30 Bashful - Hopeless Romantic
+[RareOrHigherSlot(2)]
+13 Weight Set
+13 Strength of a Raging Fire
+5 Tiana - Celebrating Princess
+13 The Huntsman - Reluctant Enforcer
+13 Queen of Hearts - Capricious Monarch
+2 Namaari - Morning Mist
+13 Kronk - Junior Chipmunk
+13 Hercules - Divine Hero
+13 Goofy - Knight for a Day
+5 Cinderella - Stouthearted
+13 Chief Bogo - Respected Officer
+2 Beast - Tragic Hero
+5 Beast - Selfless Protector
+13 Maurice's Workshop
+13 Falling Down the Rabbit Hole
+13 Winnie the Pooh - Having a Think
+2 Sisu - Divine Water Dragon
+13 Prince Charming - Heir to the Throne
+13 Noi - Orphaned Thief
+13 Mrs. Judson - Housekeeper
+13 Hiram Flaversham - Toymaker
+5 Grand Pabbie - Oldest and Wisest
+13 Gaston - Intellectual Powerhouse
+5 Cogsworth - Grandfather Clock
+5 Basil - Great Mouse Detective
+2 Alice - Growing Girl
+13 Dinner Bell
+13 Teeth and Ambitions
+13 Tuk Tuk - Wrecking Ball
+13 Shere Khan - Menacing Predator
+2 Scar - Vicious Cheater
+5 Raya - Leader of Heart
+13 Ratigan - Very Large Mouse
+5 Namaari - Nemesis
+13 Minnie Mouse - Wide-Eyed Diver
+13 Lumiere - Hotheaded Candelabra
+5 Lady Tremaine - Imperious Queen
+13 Honest John - Not That Honest
+2 Donald Duck - Not Again!
+13 Ratigan's Marvelous Trap
+13 Pack Tactics
+13 Bibbidi Bobbidi Boo
+5 The Queen - Disguised Peddler
+13 Prince John - Greediest of All
+13 Pete - Bad Guy
+13 Lucifer - Cunning Cat
+13 Little John - Loyal Friend
+13 Flynn Rider - His Own Biggest Fan
+5 Dr. Facilier - Fortune Teller
+5 Cheshire Cat - From the Shadows
+2 Belle - Hidden Archer
+2 Beast - Relentless
+13 The Sorcerer's Spellbook
+13 Perplexing Signposts
+13 Gruesome and Grim
+5 Yzma - Scary Beyond All Reason
+13 Pinocchio - Star Attraction
+5 Peter Pan's Shadow - Not Sewn On
+13 Merlin - Shapeshifter
+13 Merlin - Rabbit
+13 Madam Mim - Rival of Merlin
+2 Madam Mim - Purple Dragon
+13 Madam Mim - Fox
+2 Fairy Godmother - Mystic Armorer
+5 Arthur - Wizard's Apprentice
+13 Sleepy's Flute
+13 Dragon Gem
+13 World's Greatest Criminal Mind
+5 The Queen - Commanding Presence
+2 Snow White - Well Wisher
+13 Mulan - Reflecting
+2 Mufasa - Betrayed Leader
+5 Mickey Mouse - Friendly Face
+5 King Louie - Jungle VIP
+13 Grand Duke - Advisor to the King
+13 Cobra Bubbles - Just a Social Worker
+13 Cinderella - Ballroom Sensation
+13 Christopher Robin - Adventurer
+[FoilSlot(1)]
+13 Weight Set
+30 Mouse Armor
+60 Last Cannon
+13 Strength of a Raging Fire
+30 Pick a Fight
+60 Let the Storm Rage On
+60 Charge!
+60 Tiana - Diligent Waitress
+5 Tiana - Celebrating Princess
+30 The Prince - Never Gives Up
+13 The Huntsman - Reluctant Enforcer
+30 Robin Hood - Capable Fighter
+13 Queen of Hearts - Capricious Monarch
+60 Prince Naveen - Penniless Royal
+30 Pacha - Village Leader
+2 Namaari - Morning Mist
+60 Magic Broom - Industrial Model
+30 Li Shang - Archery Instructor
+30 Lawrence - Jealous Manservant
+13 Kronk - Junior Chipmunk
+60 Jafar - Royal Vizier
+30 Jafar - Dreadnought
+60 Hercules - Hero in Training
+13 Hercules - Divine Hero
+13 Goofy - Knight for a Day
+30 Eli La Bouff - Big Daddy
+60 Donald Duck - Deep-Sea Diver
+5 Cinderella - Stouthearted
+60 Cinderella - Knight in Training
+13 Chief Bogo - Respected Officer
+60 Benja - Guardian of the Dragon Gem
+2 Beast - Tragic Hero
+5 Beast - Selfless Protector
+60 Beast - Forbidding Recluse
+30 Sardine Can
+60 Pawpsicle
+13 Maurice's Workshop
+60 Gumbo Pot
+30 Fang Crossbow
+60 Nothing to Hide
+30 Launch
+30 Four Dozen Eggs
+13 Falling Down the Rabbit Hole
+13 Winnie the Pooh - Having a Think
+60 The Nokk - Water Spirit
+2 Sisu - Divine Water Dragon
+60 Rabbit - Reluctant Host
+13 Prince Charming - Heir to the Throne
+60 Owl - Logical Lecturer
+13 Noi - Orphaned Thief
+30 Nick Wilde - Wily Fox
+13 Mrs. Judson - Housekeeper
+30 Judy Hopps - Optimistic Officer
+60 Jasmine - Heir of Agrabah
+60 James - Role Model
+13 Hiram Flaversham - Toymaker
+5 Grand Pabbie - Oldest and Wisest
+13 Gaston - Intellectual Powerhouse
+60 Duke Weaselton - Small-Time Crook
+30 Cruella De Vil - Perfectly Wretched
+60 Cruella De Vil - Fashionable Cruiser
+30 Cogsworth - Talking Clock
+5 Cogsworth - Grandfather Clock
+30 Caterpillar - Calm and Collected
+60 Basil - Perceptive Investigator
+60 Basil - Of Baker Street
+5 Basil - Great Mouse Detective
+2 Alice - Growing Girl
+30 Sword in the Stone
+60 Peter Pan's Dagger
+13 Dinner Bell
+30 You Can Fly!
+60 What Did You Call Me?
+30 The Most Diabolical Scheme
+13 Teeth and Ambitions
+60 Go the Distance
+13 Tuk Tuk - Wrecking Ball
+60 Tigger - One of a Kind
+13 Shere Khan - Menacing Predator
+2 Scar - Vicious Cheater
+30 Raya - Warrior of Kumandra
+5 Raya - Leader of Heart
+60 Raya - Headstrong
+13 Ratigan - Very Large Mouse
+30 Queen of Hearts - Sensing Weakness
+30 Queen of Hearts - Impulsive Ruler
+5 Namaari - Nemesis
+60 Mulan - Soldier in Training
+30 Mother Gothel - Withered and Wicked
+60 Minnie Mouse - Zipping Around
+13 Minnie Mouse - Wide-Eyed Diver
+30 Minnie Mouse - Stylish Surfer
+13 Lumiere - Hotheaded Candelabra
+60 Lady Tremaine - Overbearing Matriarch
+5 Lady Tremaine - Imperious Queen
+13 Honest John - Not That Honest
+60 Fidget - Ratigan's Henchman
+60 Felicia - Always Hungry
+2 Donald Duck - Not Again!
+30 Card Soldiers - Full Deck
+60 Boun - Precocious Entrepreneur
+60 Baloo - Fun-Loving Bear
+13 Ratigan's Marvelous Trap
+30 Ring the Bell
+13 Pack Tactics
+60 Improvise
+60 Hypnotize
+30 Bounce
+13 Bibbidi Bobbidi Boo
+60 Virana - Fang Chief
+30 Tiana - True Princess
+5 The Queen - Disguised Peddler
+60 Ray - Easygoing Firefly
+60 Ratigan - Criminal Mastermind
+60 Queen of Hearts - Quick-Tempered
+13 Prince John - Greediest of All
+13 Pete - Bad Guy
+60 Panic - Underworld Imp
+30 Pain - Underworld Imp
+13 Lucifer - Cunning Cat
+13 Little John - Loyal Friend
+60 Gaston - Scheming Suitor
+13 Flynn Rider - His Own Biggest Fan
+60 Flynn Rider - Confident Vagabond
+60 Enchantress - Unexpected Judge
+5 Dr. Facilier - Fortune Teller
+60 Donald Duck - Sleepwalker
+30 Donald Duck - Perfect Gentleman
+30 Daisy Duck - Secret Agent
+5 Cheshire Cat - From the Shadows
+30 Cheshire Cat - Always Grinning
+30 Bucky - Squirrel Squeak Tutor
+2 Belle - Hidden Archer
+30 Belle - Bookworm
+2 Beast - Relentless
+60 Arthur - Trained Swordsman
+13 The Sorcerer's Spellbook
+13 Perplexing Signposts
+60 Croquet Mallet
+30 Binding Contract
+60 Legend of the Sword in the Stone
+60 I'm Stuck!
+13 Gruesome and Grim
+30 Yzma - Without Beauty Sleep
+5 Yzma - Scary Beyond All Reason
+60 Winnie the Pooh - Hunny Wizard
+30 Pinocchio - Talkative Puppet
+30 Pinocchio - On the Run
+13 Pinocchio - Star Attraction
+5 Peter Pan's Shadow - Not Sewn On
+60 Merlin - Squirrel
+13 Merlin - Shapeshifter
+13 Merlin - Rabbit
+30 Merlin - Goat
+60 Merlin - Crab
+30 Madam Mim - Snake
+13 Madam Mim - Rival of Merlin
+2 Madam Mim - Purple Dragon
+13 Madam Mim - Fox
+60 Kuzco - Wanted Llama
+60 Jiminy Cricket - Pinocchio's Conscience
+30 HeiHei - Persistent Presence
+60 Fairy Godmother - Pure Heart
+2 Fairy Godmother - Mystic Armorer
+30 Fairy Godmother - Here to Help
+60 Elsa - Gloves Off
+60 Dr. Facilier - Savvy Opportunist
+60 Chip the Teacup - Gentle Soul
+30 Blue Fairy - Rewarding Good Deeds
+5 Arthur - Wizard's Apprentice
+13 Sleepy's Flute
+13 Dragon Gem
+30 Zero to Hero
+13 World's Greatest Criminal Mind
+60 Painting the Roses Red
+30 Last Stand
+60 Hold Still
+60 The Queen - Regal Monarch
+5 The Queen - Commanding Presence
+2 Snow White - Well Wisher
+30 Snow White - Unexpected Houseguest
+60 Snow White - Lost in the Forest
+60 Sneezy - Very Allergic
+60 Sleepy - Nodding Off
+60 Rapunzel - Sunshine
+30 Rapunzel - Gifted Artist
+60 Piglet - Very Small Animal
+30 Nana - Darling Family Pet
+13 Mulan - Reflecting
+60 Mulan - Free Spirit
+2 Mufasa - Betrayed Leader
+5 Mickey Mouse - Friendly Face
+5 King Louie - Jungle VIP
+60 Happy - Good-Natured
+60 Grumpy - Bad-Tempered
+13 Grand Duke - Advisor to the King
+30 Gaston - Baritone Bully
+60 Eudora - Accomplished Seamstress
+30 Dopey - Always Playful
+30 Doc - Leader of the Seven Dwarfs
+13 Cobra Bubbles - Just a Social Worker
+13 Cinderella - Ballroom Sensation
+13 Christopher Robin - Adventurer
+30 Bashful - Hopeless Romantic

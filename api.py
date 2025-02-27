@@ -49,6 +49,31 @@ class EditCubeRequest:
         indent=4)
 
 @dataclass(frozen=True)
+class RetailSetEntry:
+  name: str
+  id: str
+  
+  def toJSON(self):
+    return json.dumps(
+        self,
+        default=lambda o: o.__dict__, 
+        sort_keys=True,
+        indent=4)
+
+@dataclass(frozen=True)
+class RetailSet:
+  name: str
+  id: str
+  draftmancerFile: str
+  
+  def toJSON(self):
+    return json.dumps(
+        self,
+        default=lambda o: o.__dict__, 
+        sort_keys=True,
+        indent=4)
+
+@dataclass(frozen=True)
 class CubeListEntry:
   name: str
   cardCount: int

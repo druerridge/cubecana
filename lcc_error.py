@@ -15,3 +15,7 @@ class UnauthorizedError(LccError):
 class CubeNotFoundError(LccError):
     def __init__(self, user_facing_message):
         super().__init__(user_facing_message, 404)
+        
+class RetailSetNotFoundError(LccError):
+    def __init__(self, user_facing_message):
+        super().__init__(user_facing_message, 404)

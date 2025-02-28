@@ -996,8 +996,6 @@ Megara_Captivating Cynic
 Jasmine_Desert Warrior
 Christopher Robin_Adventurer
 Bashful_Hopeless Romantic
-
-
 Doc_Bold Knight
 Simba_Son of Mufasa
 Happy_Lively Knight
@@ -1254,7 +1252,7 @@ Marie_Favored Kitten
 Honey Lemon_Chemistry Whiz
 Sapphire Coil
 Helga Sinclair_Tough as Nails
-Tuk Tuk_Disarminaly Cute
+Tuk Tuk_Disarmingly Cute
 Mickey Mouse_Inspirational Warrior
 Steel Coil
 Peg_Natural Performer

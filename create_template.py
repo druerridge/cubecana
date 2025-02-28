@@ -26,7 +26,6 @@ class DraftmancerSettings:
         sort_keys=True,
         indent=4)
 
-
 @dataclass(frozen=True)
 class DraftmancerFile:
   draftmancer_settings: DraftmancerSettings
@@ -101,7 +100,7 @@ lorcana_color_to_draftmancer_color =  {
     "Amethyst": "B",
     "Emerald": "G",
     "Ruby": "R",
-    "Steel": None,
+    "Steel": "",
     "Sapphire": "U"
 }
 def to_draftmancer_colors(lorcana_ink, settings: Settings, lorcast_inks: list[str]):
@@ -112,7 +111,9 @@ def to_draftmancer_colors(lorcana_ink, settings: Settings, lorcast_inks: list[st
         for lorcast_color in lorcast_inks:
             draftmancer_colors.append(lorcana_color_to_draftmancer_color[lorcast_color])
         return draftmancer_colors
-    return lorcana_color_to_draftmancer_color[lorcana_ink]
+    if lorcana_color_to_draftmancer_color[lorcana_ink]:
+        return [lorcana_color_to_draftmancer_color[lorcana_ink]]
+    return []
 
 lorcana_rarity_to_draftmancer_rarity =  {
     "Common": "common",

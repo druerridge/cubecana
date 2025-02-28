@@ -121,9 +121,4 @@ def fix_card_name(name_to_card, old_full_name, new_full_name):
 
 def fix_card_names(name_to_card_untyped):
     # there are typos in the https://api.lorcana-api.com card names.  We have to fix those or we cannot translate between data sources
-    fix_card_name(name_to_card_untyped, 'Princip Naveen - Carefree Explorer', 'Prince Naveen - Carefree Explorer')
-    fix_card_name(name_to_card_untyped, 'The White Rose - Gem of the Garden', 'The White Rose - Jewel of the Garden')
-    fix_card_name(name_to_card_untyped, 'Tinker Bell - Flying at Full Speed', 'Tinker Bell - Fast Flier')
-    fix_card_name(name_to_card_untyped, 'Make Some Magic', 'Making Magic')
-    fix_card_name(name_to_card_untyped, 'Aladdin - Intrepid Navigator', 'Aladdin - Fearless Navigator')
-    fix_card_name(name_to_card_untyped, 'John Darling - Distinguished Swordsman', 'John Darling - Sophisticated Swordsman')
+    print("Fixing card names")

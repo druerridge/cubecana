@@ -27,7 +27,8 @@ class RetailManager:
 
     def generate_retail_set(self, file: Path) -> RetailSet:
         draftmancer_file:create_template.DraftmancerFile = create_template.read_draftmancer_file(file)
-        return RetailSet(file.stem, draftmancer_file.draftmancer_settings.name, draftmancer_file.text_contents)
+        set_id = file.stem.rstrip('.draftmancer')
+        return RetailSet(set_id, draftmancer_file.draftmancer_settings.name, draftmancer_file.text_contents)
 
     def load_retail_sets(self, retail_sets_filepath: str):
         retail_sets_path = Path(retail_sets_filepath)

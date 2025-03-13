@@ -174,7 +174,9 @@ def generate_custom_card_list(id_to_api_card: dict[str, ApiCard],
         else:
             print(f"Missing rating for {cannonical_name}")
             # TODO: probably tell user rating is missing
-        
+
+        if "Location" in api_card.types:
+            custom_card['layout'] = "split" # causes card to be displayed horizontally were possible        
 
         if (settings.set_card_colors):
             custom_card['colors'] = to_draftmancer_colors(api_card.color, settings, api_card.inks)

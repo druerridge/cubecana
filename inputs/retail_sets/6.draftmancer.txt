@@ -128,7 +128,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-034?tts"
         },
         "rarity": "common",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Genie - Excited Shipbuilder",
@@ -258,7 +259,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-068?tts"
         },
         "rarity": "common",
-        "rating": 2
+        "rating": 2,
+        "layout": "split"
     },
     {
         "name": "Fred - Mascot by Day",
@@ -368,7 +370,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-101?tts"
         },
         "rarity": "common",
-        "rating": 2
+        "rating": 2,
+        "layout": "split"
     },
     {
         "name": "Kakamora - Pirate Pitcher",
@@ -498,7 +501,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-136?tts"
         },
         "rarity": "common",
-        "rating": 3
+        "rating": 3,
+        "layout": "split"
     },
     {
         "name": "B.E.N. - Eccentric Robot",
@@ -618,7 +622,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-170?tts"
         },
         "rarity": "common",
-        "rating": 2
+        "rating": 2,
+        "layout": "split"
     },
     {
         "name": "Kakamora - Long-Range Specialist",
@@ -738,7 +743,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-204?tts"
         },
         "rarity": "common",
-        "rating": 3
+        "rating": 3,
+        "layout": "split"
     },
     {
         "name": "Tiana - Restaurant Owner",
@@ -1018,7 +1024,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-069?tts"
         },
         "rarity": "rare",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Jasmine - Royal Seafarer",
@@ -1098,7 +1105,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-102?tts"
         },
         "rarity": "rare",
-        "rating": 0
+        "rating": 0,
+        "layout": "split"
     },
     {
         "name": "Raya - Kumandran Rider",
@@ -1178,7 +1186,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-135?tts"
         },
         "rarity": "rare",
-        "rating": 0
+        "rating": 0,
+        "layout": "split"
     },
     {
         "name": "Zipper - Astute Decoy",
@@ -1258,7 +1267,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-169?tts"
         },
         "rarity": "rare",
-        "rating": 2
+        "rating": 2,
+        "layout": "split"
     },
     {
         "name": "Kakamora - Pirate Chief",
@@ -1338,7 +1348,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-203?tts"
         },
         "rarity": "rare",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Lilo - Escape Artist",
@@ -1368,7 +1379,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-035?tts"
         },
         "rarity": "mythic",
-        "rating": 0
+        "rating": 0,
+        "layout": "split"
     },
     {
         "name": "Sisu - Uniting Dragon",

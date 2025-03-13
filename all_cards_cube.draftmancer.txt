@@ -4088,7 +4088,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/003-204?tts"
         },
         "rarity": "uncommon",
-        "rating": 0
+        "rating": 0,
+        "layout": "split"
     },
     {
         "name": "Nottingham - Prince John's Castle",
@@ -4098,7 +4099,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/003-203?tts"
         },
         "rarity": "common",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Maui's Place of Exile - Hidden Island",
@@ -4108,7 +4110,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/003-202?tts"
         },
         "rarity": "rare",
-        "rating": 2
+        "rating": 2,
+        "layout": "split"
     },
     {
         "name": "Map of Treasure Planet",
@@ -4428,7 +4431,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/003-170?tts"
         },
         "rarity": "uncommon",
-        "rating": 2
+        "rating": 2,
+        "layout": "split"
     },
     {
         "name": "McDuck Manor - Scrooge's Mansion",
@@ -4438,7 +4442,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/003-169?tts"
         },
         "rarity": "common",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Belle's House - Maurice's Workshop",
@@ -4448,7 +4453,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/003-168?tts"
         },
         "rarity": "rare",
-        "rating": 0
+        "rating": 0,
+        "layout": "split"
     },
     {
         "name": "Vault Door",
@@ -4768,7 +4774,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/003-136?tts"
         },
         "rarity": "rare",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Jolly Roger - Hook's Ship",
@@ -4778,7 +4785,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/003-135?tts"
         },
         "rarity": "uncommon",
-        "rating": 0
+        "rating": 0,
+        "layout": "split"
     },
     {
         "name": "Agrabah - Marketplace",
@@ -4788,7 +4796,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/003-134?tts"
         },
         "rarity": "common",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Sumerian Talisman",
@@ -5108,7 +5117,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/003-102?tts"
         },
         "rarity": "uncommon",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Fang - River City",
@@ -5118,7 +5128,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/003-101?tts"
         },
         "rarity": "rare",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "De Vil Manor - Cruella's Estate",
@@ -5128,7 +5139,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/003-100?tts"
         },
         "rarity": "common",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Starlight Vial",
@@ -5448,7 +5460,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/003-068?tts"
         },
         "rarity": "uncommon",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "The Queen's Castle - Mirror Chamber",
@@ -5458,7 +5471,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/003-067?tts"
         },
         "rarity": "rare",
-        "rating": 2
+        "rating": 2,
+        "layout": "split"
     },
     {
         "name": "Forbidden Mountain - Maleficent's Castle",
@@ -5468,7 +5482,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/003-066?tts"
         },
         "rarity": "common",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "The Sorcerer's Hat",
@@ -5788,7 +5803,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/003-034?tts"
         },
         "rarity": "uncommon",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Pride Lands - Pride Rock",
@@ -5798,7 +5814,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/003-033?tts"
         },
         "rarity": "rare",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Never Land - Mermaid Lagoon",
@@ -5808,7 +5825,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/003-032?tts"
         },
         "rarity": "common",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Wildcat's Wrench",
@@ -6918,7 +6936,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/004-034?tts"
         },
         "rarity": "rare",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Bruno Madrigal - Out of the Shadows",
@@ -6998,7 +7017,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/004-068?tts"
         },
         "rarity": "rare",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Cri-Kee - Lucky Cricket",
@@ -7078,7 +7098,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/004-102?tts"
         },
         "rarity": "rare",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Goofy - Super Goof",
@@ -7158,7 +7179,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/004-135?tts"
         },
         "rarity": "rare",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Dang Hu - Talon Chief",
@@ -7238,7 +7260,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/004-169?tts"
         },
         "rarity": "rare",
-        "rating": 0
+        "rating": 0,
+        "layout": "split"
     },
     {
         "name": "Hercules - Beloved Hero",
@@ -7318,7 +7341,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/004-203?tts"
         },
         "rarity": "rare",
-        "rating": 0
+        "rating": 0,
+        "layout": "split"
     },
     {
         "name": "Cinderella - Melody Weaver",
@@ -7558,7 +7582,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/004-033?tts"
         },
         "rarity": "common",
-        "rating": 0
+        "rating": 0,
+        "layout": "split"
     },
     {
         "name": "Belle - Untrained Mystic",
@@ -7678,7 +7703,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/004-067?tts"
         },
         "rarity": "common",
-        "rating": 0
+        "rating": 0,
+        "layout": "split"
     },
     {
         "name": "Diablo - Maleficent's Spy",
@@ -7798,7 +7824,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/004-101?tts"
         },
         "rarity": "common",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Benja - Bold Uniter",
@@ -7918,7 +7945,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/004-136?tts"
         },
         "rarity": "common",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Anna - Braving the Storm",
@@ -8038,7 +8066,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/004-170?tts"
         },
         "rarity": "common",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Aladdin - Resolute Swordsman",
@@ -8158,7 +8187,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/004-204?tts"
         },
         "rarity": "common",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Koda - Talkative Cub",
@@ -8488,7 +8518,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/005-033?tts"
         },
         "rarity": "uncommon",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Pride Lands - Jungle Oasis",
@@ -8498,7 +8529,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/005-034?tts"
         },
         "rarity": "rare",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Maleficent - Formidable Queen",
@@ -8828,7 +8860,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/005-067?tts"
         },
         "rarity": "rare",
-        "rating": 0
+        "rating": 0,
+        "layout": "split"
     },
     {
         "name": "The Library - A Gift for Belle",
@@ -8838,7 +8871,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/005-068?tts"
         },
         "rarity": "uncommon",
-        "rating": 4
+        "rating": 4,
+        "layout": "split"
     },
     {
         "name": "Robin Hood - Timely Contestant",
@@ -9168,7 +9202,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/005-101?tts"
         },
         "rarity": "rare",
-        "rating": 0
+        "rating": 0,
+        "layout": "split"
     },
     {
         "name": "Tropical Rainforest - Jaguar Lair",
@@ -9178,7 +9213,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/005-102?tts"
         },
         "rarity": "uncommon",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Taffyta Muttonfudge - Ruthless Rival",
@@ -9508,7 +9544,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/005-135?tts"
         },
         "rarity": "rare",
-        "rating": 0
+        "rating": 0,
+        "layout": "split"
     },
     {
         "name": "Ratigan's Party - Seedy Back Room",
@@ -9518,7 +9555,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/005-136?tts"
         },
         "rarity": "uncommon",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "King Candy - Sovereign of Sugar",
@@ -9848,7 +9886,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/005-169?tts"
         },
         "rarity": "rare",
-        "rating": 0
+        "rating": 0,
+        "layout": "split"
     },
     {
         "name": "Merlin's Cottage - The Wizard's Home",
@@ -9858,7 +9897,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/005-170?tts"
         },
         "rarity": "uncommon",
-        "rating": 0
+        "rating": 0,
+        "layout": "split"
     },
     {
         "name": "Stitch - Team Underdog",
@@ -10188,7 +10228,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/005-203?tts"
         },
         "rarity": "rare",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Seven Dwarfs' Mine - Secure Fortress",
@@ -10198,7 +10239,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/005-204?tts"
         },
         "rarity": "uncommon",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Simba - Happy-Go-Lucky",
@@ -10328,7 +10370,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-034?tts"
         },
         "rarity": "common",
-        "rating": 0
+        "rating": 0,
+        "layout": "split"
     },
     {
         "name": "Genie - Excited Shipbuilder",
@@ -10458,7 +10501,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-068?tts"
         },
         "rarity": "common",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Fred - Mascot by Day",
@@ -10568,7 +10612,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-101?tts"
         },
         "rarity": "common",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Kakamora - Pirate Pitcher",
@@ -10698,7 +10743,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-136?tts"
         },
         "rarity": "common",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "B.E.N. - Eccentric Robot",
@@ -10818,7 +10864,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-170?tts"
         },
         "rarity": "common",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Kakamora - Long-Range Specialist",
@@ -10938,7 +10985,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-204?tts"
         },
         "rarity": "common",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Tiana - Restaurant Owner",
@@ -11218,7 +11266,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-069?tts"
         },
         "rarity": "rare",
-        "rating": 0
+        "rating": 0,
+        "layout": "split"
     },
     {
         "name": "Jasmine - Royal Seafarer",
@@ -11298,7 +11347,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-102?tts"
         },
         "rarity": "rare",
-        "rating": 0
+        "rating": 0,
+        "layout": "split"
     },
     {
         "name": "Raya - Kumandran Rider",
@@ -11378,7 +11428,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-135?tts"
         },
         "rarity": "rare",
-        "rating": 0
+        "rating": 0,
+        "layout": "split"
     },
     {
         "name": "Zipper - Astute Decoy",
@@ -11458,7 +11509,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-169?tts"
         },
         "rarity": "rare",
-        "rating": 1
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Kakamora - Pirate Chief",
@@ -11538,7 +11590,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-203?tts"
         },
         "rarity": "rare",
-        "rating": 0
+        "rating": 0,
+        "layout": "split"
     },
     {
         "name": "Lilo - Escape Artist",
@@ -11568,7 +11621,8 @@
             "en": "https://cdn.dreamborn.ink/images/en/cards/006-035?tts"
         },
         "rarity": "mythic",
-        "rating": 0
+        "rating": 0,
+        "layout": "split"
     },
     {
         "name": "Sisu - Uniting Dragon",
@@ -12247,7 +12301,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-005?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Amber Coil",
@@ -12256,7 +12311,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-041?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Pain - Impudent Imp",
@@ -12265,7 +12321,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-061?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Dolores Madrigal - Within Earshot",
@@ -12274,7 +12331,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-078?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 0
     },
     {
         "name": "Lady - Elegant Spaniel",
@@ -12283,7 +12341,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-100?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 0
     },
     {
         "name": "He's a Tramp",
@@ -12292,7 +12351,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-117?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Toby - Dogged Companion",
@@ -12301,7 +12361,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-131?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Monsieur D'Arque - Despicable Proprietor",
@@ -12310,7 +12371,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-157?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Toulouse - Artistic Kitten",
@@ -12319,7 +12381,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-165?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "HeiHei - Rambling Rooster",
@@ -12328,7 +12391,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-185?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 2
     },
     {
         "name": "Trusty - Loyal Bloodhound",
@@ -12337,7 +12401,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-006?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Candlehead - Dedicated Racer",
@@ -12346,7 +12411,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-017?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "The Prince - Vigilant Suitor",
@@ -12355,7 +12421,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-024?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 0
     },
     {
         "name": "So Much To Give",
@@ -12364,7 +12431,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-038?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "The Glass Slipper",
@@ -12373,7 +12441,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-044?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 0
     },
     {
         "name": "Elsa - Trusted Sister",
@@ -12382,7 +12451,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-055?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Rajah - Ghostly Tiger",
@@ -12391,7 +12461,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-062?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 3
     },
     {
         "name": "Archimedes - Exceptional Owl",
@@ -12400,7 +12471,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-076?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "This Is My Family",
@@ -12409,7 +12481,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-081?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Grewnge - Cannon Expert",
@@ -12418,7 +12491,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-086?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Yokai - Intellectual Schemer",
@@ -12427,7 +12501,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-097?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 0
     },
     {
         "name": "Yzma - Exasperated Schemer",
@@ -12436,7 +12511,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-101?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Duchess - Elegant Feline",
@@ -12445,7 +12521,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-112?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Queen of Hearts - Losing Her Temper",
@@ -12454,7 +12531,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-122?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "The Phantom Blot - Shadowy Figure",
@@ -12463,7 +12541,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-135?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Milo Thatch - Undaunted Scholar",
@@ -12472,7 +12551,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-145?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 1
     },
     {
         "name": "Devil's Eye Diamond",
@@ -12481,7 +12561,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-152?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 0
     },
     {
         "name": "Marie - Favored Kitten",
@@ -12490,7 +12571,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-166?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Honey Lemon - Chemistry Whiz",
@@ -12499,7 +12581,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-169?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Sapphire Coil",
@@ -12508,7 +12591,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-179?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Helga Sinclair - Tough as Nails",
@@ -12517,7 +12601,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-183?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Tuk Tuk - Disarmingly Cute",
@@ -12526,7 +12611,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-187?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 0
     },
     {
         "name": "Mickey Mouse - Inspirational Warrior",
@@ -12535,7 +12621,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-200?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 1
     },
     {
         "name": "Steel Coil",
@@ -12544,7 +12631,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-203?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 0
     },
     {
         "name": "Peg - Natural Performer",
@@ -12553,7 +12641,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-007?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Aurora - Waking Beauty",
@@ -12562,7 +12651,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-014?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 1
     },
     {
         "name": "Perla - Nimble Seamstress",
@@ -12571,7 +12661,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-032?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 4
     },
     {
         "name": "Calhoun - Battle-Tested",
@@ -12580,7 +12671,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-036?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Giant Cobra - Ghostly Serpent",
@@ -12589,7 +12681,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-057?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 4
     },
     {
         "name": "Mother Gothel - Vain Sorceress",
@@ -12598,7 +12691,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-064?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 2
     },
     {
         "name": "Kashekim - Ancient Ruler",
@@ -12607,7 +12701,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-077?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Thomas O'Malley - Feline Charmer",
@@ -12616,7 +12711,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-088?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Berlioz - Mischievous Kitten",
@@ -12625,7 +12721,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-099?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Mr. Smee - Efficient Captain",
@@ -12634,7 +12731,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-107?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 0
     },
     {
         "name": "Ink Geyser",
@@ -12643,7 +12741,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-119?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 0
     },
     {
         "name": "Denahi - Impatient Hunter",
@@ -12652,7 +12751,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-124?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Li Shang - Newly Promoted",
@@ -12661,7 +12761,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-133?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Maurice's Machine",
@@ -12670,7 +12771,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-151?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 0
     },
     {
         "name": "Gaetan Moliere - The Mole",
@@ -12679,7 +12781,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-158?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 2
     },
     {
         "name": "Lucky - Runt of the Litter",
@@ -12688,7 +12791,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-160?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 0
     },
     {
         "name": "Robin Hood - Eye for Detail",
@@ -12697,7 +12801,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-170?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 2
     },
     {
         "name": "Raya - Guidance Seeker",
@@ -12706,7 +12811,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-186?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 1
     },
     {
         "name": "Jafar - Aspiring Ruler",
@@ -12715,7 +12821,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-190?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 3
     },
     {
         "name": "Perdita - Playful Mother",
@@ -12724,7 +12831,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-002?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 1
     },
     {
         "name": "Cinderella - The Right One",
@@ -12733,7 +12841,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-015?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 1
     },
     {
         "name": "Pascal - Garden Chameleon",
@@ -12742,7 +12851,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-019?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 4
     },
     {
         "name": "Kenai - Protective Brother",
@@ -12751,7 +12861,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-030?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 1
     },
     {
         "name": "Tanana - Tribal Elder",
@@ -12760,7 +12871,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-046?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Iago - Giant Spectral Parrot",
@@ -12769,7 +12881,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-049?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 5
     },
     {
         "name": "Madame Medusa - Diamond Lover",
@@ -12778,7 +12891,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-053?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Anna - Ice Breaker",
@@ -12787,7 +12901,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-072?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 2
     },
     {
         "name": "Panic - High-Strung Imp",
@@ -12796,7 +12911,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-075?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 3
     },
     {
         "name": "Shere Khan - Infamous Tiger",
@@ -12805,7 +12921,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-092?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 3
     },
     {
         "name": "Fidget - Sneaky Bat",
@@ -12814,7 +12931,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-106?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 4
     },
     {
         "name": "The Matchmaker - Unforgiving Expert",
@@ -12823,7 +12941,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-123?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Beagle Boys - Small-Time Crooks",
@@ -12832,7 +12951,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-132?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 2
     },
     {
         "name": "Maurice - Unconventional Inventor",
@@ -12841,7 +12961,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-138?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 1
     },
     {
         "name": "Clarabelle - News Reporter",
@@ -12850,7 +12971,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-153?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 1
     },
     {
         "name": "Kida - Creative Thinker",
@@ -12859,7 +12981,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-164?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 2
     },
     {
         "name": "Maid Marian - Badminton Ace",
@@ -12868,7 +12991,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-176?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 1
     },
     {
         "name": "Kakamora - Band of Pirates",
@@ -12877,7 +13001,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-192?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Aladdin - Research Assistant",
@@ -12886,7 +13011,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-197?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 1
     },
     {
         "name": "King Stefan - New Father",
@@ -12895,7 +13021,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-003?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 2
     },
     {
         "name": "Mittens - Sassy Street Cat",
@@ -12904,7 +13031,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-009?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 3
     },
     {
         "name": "Thunderbolt - Wonder Dog",
@@ -12913,7 +13041,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-023?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 4
     },
     {
         "name": "Lady - Miss Park Avenue",
@@ -12922,7 +13051,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-028?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 5
     },
     {
         "name": "Kuzco - Temporary Whale",
@@ -12931,7 +13061,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-045?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 2
     },
     {
         "name": "Kronk - Laid Back",
@@ -12940,7 +13071,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-063?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 1
     },
     {
         "name": "Cheshire Cat - Perplexing Feline",
@@ -12949,7 +13081,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-091?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 2
     },
     {
         "name": "Tweedle Dee & Tweedle Dum - Strange Storytellers",
@@ -12958,7 +13091,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-103?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 2
     },
     {
         "name": "Stabbington Brother - With a Patch",
@@ -12967,7 +13101,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-128?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Edgar Balthazar - Ambitious Butler",
@@ -12976,7 +13111,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-146?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 2
     },
     {
         "name": "Lady Kluck - Protective Confidant",
@@ -12985,7 +13121,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-172?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 3
     },
     {
         "name": "Baymax - Upgraded Robot",
@@ -12994,7 +13131,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-175?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 1
     },
     {
         "name": "Tick-Tock - Relentless Crocodile",
@@ -13003,7 +13141,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-191?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 2
     },
     {
         "name": "Restoring Atlantis",
@@ -13012,7 +13151,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-201?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 1
     },
     {
         "name": "Calhoun - Courageous Rescuer",
@@ -13021,7 +13161,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-026?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 2
     },
     {
         "name": "Pongo - Dear Old Dad",
@@ -13030,7 +13171,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-029?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 2
     },
     {
         "name": "Hades - Fast Talker",
@@ -13039,7 +13181,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-052?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 5
     },
     {
         "name": "Te K\u0101 - Lava Monster",
@@ -13048,7 +13191,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-058?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 3
     },
     {
         "name": "Basil - Secret Informer",
@@ -13057,7 +13201,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-093?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 3
     },
     {
         "name": "Baymax - Giant Robot",
@@ -13066,7 +13211,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-104?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 3
     },
     {
         "name": "Lady Tremaine - Bitterly Jealous",
@@ -13075,7 +13221,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-115?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 1
     },
     {
         "name": "Baloo - Ol' Iron Paws",
@@ -13084,7 +13231,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-142?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 1
     },
     {
         "name": "Miss Bianca - Unwavering Agent",
@@ -13093,7 +13241,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-195?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 4
     },
     {
         "name": "Wendy Darling - Pirate Queen",
@@ -13102,7 +13251,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-012?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 4
     },
     {
         "name": "Elsa - Ice Maker",
@@ -13111,7 +13261,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-069?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 1
     },
     {
         "name": "Mufasa - Among the Stars",
@@ -13120,7 +13271,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-079?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 4
     },
     {
         "name": "Goofy - Extreme Athlete",
@@ -13129,7 +13281,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-139?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 3
     },
     {
         "name": "Out Of Order",
@@ -13138,7 +13291,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-148?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "John Silver - Vengeful Pirate",
@@ -13147,7 +13301,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-109?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 2
     },
     {
         "name": "Belle - Mechanic Extraordinaire",
@@ -13156,7 +13311,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-126?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 0
     },
     {
         "name": "Te K\u0101 - Elemental Terror",
@@ -13165,7 +13321,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-054?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 0
     },
     {
         "name": "Lyle Tiberius Rourke - Crystallized Mercenary",
@@ -13174,7 +13331,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-140?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 0
     },
     {
         "name": "Daisy Duck - Multitalented Pirate",
@@ -13183,7 +13341,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-108?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 0
     },
     {
         "name": "Mulan - Imperial General",
@@ -13192,7 +13351,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-141?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 4
     },
     {
         "name": "Hiro Hamada - Armor Designer",
@@ -13201,7 +13361,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-096?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 2
     },
     {
         "name": "Donald Duck - Flustered Sorcerer",
@@ -13210,7 +13371,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-073?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 2
     },
     {
         "name": "Yzma - Above It All",
@@ -13219,7 +13381,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-068?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 3
     },
     {
         "name": "Tramp - Street-Smart Dog",
@@ -13228,7 +13391,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-010?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 2
     },
     {
         "name": "Tamatoa - Happy as a Clam",
@@ -13237,7 +13401,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-162?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 1
     },
     {
         "name": "Beast - Frustrated Designer",
@@ -13246,7 +13411,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-136?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 1
     },
     {
         "name": "Pete - Space Pirate",
@@ -13255,7 +13421,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-114?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 4
     },
     {
         "name": "Mad Hatter - Unruly Eccentric",
@@ -13264,7 +13431,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-094?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 4
     },
     {
         "name": "Restoring the Crown",
@@ -13273,7 +13441,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-083?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 2
     },
     {
         "name": "Madam Mim - Cheating Spellcaster",
@@ -13282,7 +13451,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-056?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 4
     },
     {
         "name": "Mirabel Madrigal - Musically Talented",
@@ -13291,7 +13461,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-035?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 1
     },
     {
         "name": "Wreck-It Ralph - Hero's Duty",
@@ -13300,7 +13471,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-027?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 3
     },
     {
         "name": "Rhino - Motivational Speaker",
@@ -13309,7 +13481,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-001?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 5
     },
     {
         "name": "Bagheera - Guardian Jaguar",
@@ -13318,7 +13491,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-198?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 5
     },
     {
         "name": "All is Found",
@@ -13327,7 +13501,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-178?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 1
     },
     {
         "name": "Jasmine - Inspired Researcher",
@@ -13336,7 +13511,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-173?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 3
     },
     {
         "name": "HeiHei - Expanded Consciousness",
@@ -13345,7 +13521,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-163?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Mushu - Majestic Dragon",
@@ -13354,7 +13531,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-137?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 5
     },
     {
         "name": "The Return of Hercules",
@@ -13363,7 +13541,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-118?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 0
     },
     {
         "name": "Queen of Hearts - Unpredictable Bully",
@@ -13372,7 +13551,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-095?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 1
     },
     {
         "name": "Sven - Keen-Eyed Reindeer",
@@ -13381,7 +13561,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-065?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 3
     },
     {
         "name": "Chernabog - Creature of the Night",
@@ -13390,7 +13571,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-050?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 1
     },
     {
         "name": "The Family Madrigal",
@@ -13399,7 +13581,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-040?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 0
     },
     {
         "name": "Isabela Madrigal - In the Moment",
@@ -13408,7 +13591,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-025?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 3
     },
     {
         "name": "Fix-it Felix, Jr. - Pint-Sized Hero",
@@ -13417,7 +13601,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-022?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Bolt - Superdog",
@@ -13426,7 +13611,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-004?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 3
     },
     {
         "name": "Gantu - Experienced Enforcer",
@@ -13435,7 +13621,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-199?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 0
     },
     {
         "name": "Mufasa - Respected King",
@@ -13444,7 +13631,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-196?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Dr. Calico - Green-Eyed Man",
@@ -13453,7 +13641,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-181?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 2
     },
     {
         "name": "Jebidiah Farnsworth - Expedition Cook",
@@ -13462,7 +13651,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-174?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 3
     },
     {
         "name": "Scrooge McDuck - Resourceful Miser",
@@ -13471,7 +13661,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-154?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 1
     },
     {
         "name": "Ratigan - Nefarious Criminal",
@@ -13480,7 +13671,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-143?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 1
     },
     {
         "name": "Moana - Island Explorer",
@@ -13489,7 +13681,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-134?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 3
     },
     {
         "name": "Stabbington Brother - 'Without a Patch",
@@ -13498,7 +13691,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-125?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 2
     },
     {
         "name": "King of Hearts - Picky Ruler",
@@ -13507,7 +13701,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-111?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 1
     },
     {
         "name": "Gizmoduck - Suited Up",
@@ -13516,7 +13711,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-105?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 3
     },
     {
         "name": "Drizella - Spoiled Stepsister",
@@ -13525,7 +13721,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-085?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "The Queen - Jealous Beauty",
@@ -13534,7 +13731,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-074?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 2
     },
     {
         "name": "Kuzco - Panicked Llama",
@@ -13543,7 +13741,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-071?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 2
     },
     {
         "name": "Jafar - Newly Crowned",
@@ -13552,7 +13751,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-051?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 1
     },
     {
         "name": "Treasure Guardian - Foreboding Sentry",
@@ -13561,7 +13761,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-047?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Snow White - Fairest in the Land",
@@ -13570,7 +13771,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-033?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 4
     },
     {
         "name": "King Candy - Royal Racer",
@@ -13579,7 +13781,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-020?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 0
     },
     {
         "name": "Bolt - Dependable Friend",
@@ -13588,7 +13791,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-018?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Suzy - Master Seamstress",
@@ -13597,7 +13801,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-008?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Orville - Albatross Air",
@@ -13606,7 +13811,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-194?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Fa Zhou - War Hero",
@@ -13615,7 +13821,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-188?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 1
     },
     {
         "name": "Baymax's Charging Station",
@@ -13624,7 +13831,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-180?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 0
     },
     {
         "name": "Pepper - Quick-Thinking Puppy",
@@ -13633,7 +13841,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-167?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Belle - Apprentice Inventor",
@@ -13642,7 +13851,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-159?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Moana - Adventurer of Land and Sea",
@@ -13651,7 +13861,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-156?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "We've Got Company!",
@@ -13660,7 +13871,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-147?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 0
     },
     {
         "name": "Cogsworth - Climbing Clock",
@@ -13669,7 +13881,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-130?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Emerald Coil",
@@ -13678,7 +13891,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-120?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 0
     },
     {
         "name": "Anastasia - Bossy Stepsister",
@@ -13687,7 +13901,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-113?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 3
     },
     {
         "name": "Pacha - Trekmate",
@@ -13696,7 +13911,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-102?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Hiro Hamada - Future Champion",
@@ -13705,7 +13921,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-090?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Amethyst Coil",
@@ -13714,7 +13931,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-084?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Kenai - Magical Bear",
@@ -13723,7 +13941,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-070?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 3
     },
     {
         "name": "Bucky - Nutty Rascal",
@@ -13732,7 +13951,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-060?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 3
     },
     {
         "name": "Pepa Madrigal - Sensitive Sister",
@@ -13741,7 +13961,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-037?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Koda - Smallish Bear",
@@ -13750,7 +13971,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-034?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Mariano Guzman - Handsome Suitor",
@@ -13759,7 +13981,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-016?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 3
     },
     {
         "name": "Mirabel Madrigal - Hopeful Dreamer",
@@ -13768,7 +13991,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-013?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Training Staff",
@@ -13777,7 +14001,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-204?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Double Trouble",
@@ -13786,7 +14011,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-202?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Razoul - Menacing Guard",
@@ -13795,7 +14021,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-189?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 0
     },
     {
         "name": "Bolt - Headstrong Dog",
@@ -13804,7 +14031,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-184?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Akela - Wolf Pack Elder",
@@ -13813,7 +14041,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-182?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Penny the Orphan - Clever Child",
@@ -13822,7 +14051,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-171?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Freckles - Good Boy",
@@ -13831,7 +14061,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-168?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Mattias - Arendelle General",
@@ -13840,7 +14071,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-155?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Ruby Coil",
@@ -13849,7 +14081,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-149?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Sir Kay - Unruly Knight",
@@ -13858,7 +14091,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-144?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Cy-bug - Invasive Enemy",
@@ -13867,7 +14101,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-127?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Grandmother Fa - Spirited Elder",
@@ -13876,7 +14111,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-121?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Tramp - Enterprising Dog",
@@ -13885,7 +14121,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-110?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 1
     },
     {
         "name": "Donald Duck - Lively Pirate",
@@ -13894,7 +14131,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-098?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 0
     },
     {
         "name": "Baymax - Low Battery",
@@ -13903,7 +14141,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-087?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 2
     },
     {
         "name": "Show Me More!",
@@ -13912,7 +14151,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-082?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 0
     },
     {
         "name": "Magical Maneuvers",
@@ -13921,7 +14161,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-080?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Diablo - Spiteful Raven",
@@ -13930,7 +14171,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-066?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 2
     },
     {
         "name": "Yzma - Transformed Kitten",
@@ -13939,7 +14181,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-059?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Honeymaren - Northuldra Guide",
@@ -13948,7 +14191,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-048?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Spaghetti Dinner",
@@ -13957,7 +14201,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-042?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 0
     },
     {
         "name": "Minnie Mouse - Storyteller",
@@ -13966,7 +14211,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-031?tts"
         },
-        "rarity": "mythic"
+        "rarity": "mythic",
+        "rating": 0
     },
     {
         "name": "Penny - Bolt's Person",
@@ -13975,7 +14221,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-021?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "The Troubadour - Musical Narrator",
@@ -13984,7 +14231,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-011?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 1
     },
     {
         "name": "Mulan - Disguised Soldier",
@@ -13993,7 +14241,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-193?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 3
     },
     {
         "name": "Water Has Memory",
@@ -14002,7 +14251,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-177?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 0
     },
     {
         "name": "Dawson - Puzzling Sleuth",
@@ -14011,7 +14261,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-161?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 0
     },
     {
         "name": "Unconventional Tool",
@@ -14020,7 +14271,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-150?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 0
     },
     {
         "name": "Card Soldiers - Royal Troops",
@@ -14029,7 +14281,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-129?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 2
     },
     {
         "name": "Wake Up, Alice!",
@@ -14038,7 +14291,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-116?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 0
     },
     {
         "name": "Pete - Pirate Scoundrel",
@@ -14047,7 +14301,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-089?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 1
     },
     {
         "name": "Merlin - Clever Clairvoyant",
@@ -14056,7 +14311,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-067?tts"
         },
-        "rarity": "rare"
+        "rarity": "rare",
+        "rating": 0
     },
     {
         "name": "Kanine Krunchies",
@@ -14065,7 +14321,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-043?tts"
         },
-        "rarity": "common"
+        "rarity": "common",
+        "rating": 0
     },
     {
         "name": "Restoring the Heart",
@@ -14074,7 +14331,8 @@
         "image_uris": {
             "en": "https://cdn.dreamborn.ink/images/en/cards/007-039?tts"
         },
-        "rarity": "uncommon"
+        "rarity": "uncommon",
+        "rating": 2
     }
 ]
 [Settings]

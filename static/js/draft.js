@@ -12,8 +12,9 @@ const draftFromTtsButton = document.getElementById('ttsDraftButton');
 const saveFromTtsButton = document.getElementById('ttsSaveButton');
 let saveFromCardListButton = document.getElementById('cardListSaveButton');
 let draftFromCardListButton = document.getElementById('cardListDraftButton');
-let cardsPerBooster = document.getElementById('cardsPerBooster');
-let boostersPerPlayer = document.getElementById('boostersPerPlayer');
+let cardsPerBooster = document.getElementById('cubeCardsPerBooster');
+let boostersPerPlayer = document.getElementById('cubeBoostersPerPlayer');
+let powerBand = document.getElementById('cubePowerBand');
 let ttsInput = null;
 
 removeFileButton.addEventListener('click', () => {
@@ -82,7 +83,7 @@ draftFromTtsButton.addEventListener('click', async _ => {
     hideError();
 
     var url = "/api/dreamborn-to-draftmancer/";
-    var data = JSON.stringify({ "dreamborn_export": ttsInput, "settings": { "cards_per_booster": cardsPerBooster.value, "boosters_per_player": boostersPerPlayer.value } });
+    var data = JSON.stringify({ "dreamborn_export": ttsInput, "settings": { "cards_per_booster": cardsPerBooster.value, "boosters_per_player": boostersPerPlayer.value, "powerBand": powerBand.value } });
     let newTab = window.open("/loading");
     request(url, data, (responseText) => {
         let response = JSON.parse(responseText);
@@ -96,7 +97,7 @@ saveFromTtsButton.addEventListener('click', async _ => {
     hideError();
 
     var url = "/api/dreamborn-to-draftmancer/";
-    var data = JSON.stringify({ "dreamborn_export": ttsInput, "settings": { "cards_per_booster": cardsPerBooster.value, "boosters_per_player": boostersPerPlayer.value } });
+    var data = JSON.stringify({ "dreamborn_export": ttsInput, "settings": { "cards_per_booster": cardsPerBooster.value, "boosters_per_player": boostersPerPlayer.value, "powerBand": powerBand.value } });
     request(url, data, (responseText) => {
         let response = JSON.parse(responseText);
         download(response.draftmancerFile, "custom-cube.draftmancer.txt", "txt");
@@ -108,7 +109,7 @@ saveFromCardListButton.addEventListener('click', async _ => {
 
     const cardListInput = document.getElementById('cardListInput').value.trim();
     var url = "/api/card-list-to-draftmancer/";
-    var data = JSON.stringify({ "card_list": cardListInput, "settings": { "cards_per_booster": cardsPerBooster.value, "boosters_per_player": boostersPerPlayer.value } });
+    var data = JSON.stringify({ "card_list": cardListInput, "settings": { "cards_per_booster": cardsPerBooster.value, "boosters_per_player": boostersPerPlayer.value, "powerBand": powerBand.value } });
     request(url, data, (responseText) => {
         let response = JSON.parse(responseText);
         download(response.draftmancerFile, "custom-cube.draftmancer.txt", "txt");
@@ -120,7 +121,7 @@ draftFromCardListButton.addEventListener('click', async _ => {
 
     const cardListInput = document.getElementById('cardListInput').value.trim();
     var url = "/api/card-list-to-draftmancer/";
-    var data = JSON.stringify({ "card_list": cardListInput, "settings": { "cards_per_booster": cardsPerBooster.value, "boosters_per_player": boostersPerPlayer.value } });
+    var data = JSON.stringify({ "card_list": cardListInput, "settings": { "cards_per_booster": cardsPerBooster.value, "boosters_per_player": boostersPerPlayer.value, "powerBand": powerBand.value } });
     let newTab = window.open("/loading");
     request(url, data, (responseText) => {
         let response = JSON.parse(responseText);

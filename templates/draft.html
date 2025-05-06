@@ -80,10 +80,7 @@
             <button id="cardListDraftButton" class="action-button" disabled>Draft Now</button>
         </div>
     </div>
-    <div>
-        Cards per Booster: <input type="number" id="cardsPerBooster" value="12" min="1" max="20" step="1" style="width: 50px;" />
-        Boosters per Player: <input type="number" id="boostersPerPlayer" value="4" min="1" max="20" step="1" style="width: 50px;" />
-    </div>
+    {% include 'shared/cube_settings_input.html' %}
 
     <script type="module" src="{{ url_for('static', filename='js/draft.js') }}"></script>
     {% include 'shared/content_footer.html' %}

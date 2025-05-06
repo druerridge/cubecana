@@ -12,17 +12,9 @@
         <label for="cubeAuthor">Author:</label>
         <input type="text" id="cubeAuthor" name="cubeAuthor" class="form-control" placeholder="JoeCool">
     </div>
-    <div class="form-group">
-        <label for="cubeCardsPerBooster">Cards per Booster:</label> <input type="number" id="cubeCardsPerBooster" value="12" min="1" max="20" step="1" style="width: 50px;" /><br />
-        <label for="cubeBoostersPerPlayer">Boosters per Player:</label> <input type="number" id="cubeBoostersPerPlayer" value="4" min="1" max="20" step="1" style="width: 50px;" /><br />
-        <label for="cubePowerBand" title="Improves bot drafting">Power Band:</label> 
-        <select id="cubePowerBand" name="powerBand" class="form-control" style="width: auto; display: inline-block;">
-            <option value="OVERPOWERED" title="Like max, but with many Illumineer's Quest or other cards never legal in Core Constructed">Overpowered</option>
-            <option value="MAX" selected="selected" title="Most commonly used. Almost exclusively retail A's and B's">Max</option>
-            <option value="NARROW-MEDIUM" title="Little/no 'bad' cards and little/no 'bombs' or 'excellent' cards. Mostly retail C's + B's">Narrow Medium</option>
-            <option value="RETAIL" title="Power band of a retail booster. Wide band with abundant low-powered commons to a few high-powered legendaries">Retail </option>
-        </select><br />
-    </div>
+    
+    {% include 'shared/cube_settings_input.html' %}
+
     {% include 'shared/tag_input.html' %}
     <button id="submit-button" class="action-button">Submit</button>
 </form>

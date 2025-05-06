@@ -22,6 +22,7 @@ parser.add_argument('--franchise_to_color', default=False, help="sets colors bas
 
 def retail_tts_to_draftmancer(dreamborn_export_for_tabletop_sim, card_evaluations_file, settings):
     settings.with_replacement = True
+    settings.power_band = Settings.POWER_BAND_RETAIL
     id_to_tts_card = create_template.read_id_to_tts_card_from_filesystem(dreamborn_export_for_tabletop_sim)
     draftmancer_file_contents = generate_retail.generate_retail_draftmancer_file(id_to_tts_card, card_evaluations_file, settings)
     create_template.write_draftmancer_file(draftmancer_file_contents, settings.card_list_name)

@@ -30,6 +30,7 @@ class DbCubecanaCube(Base):
     color_balance_packs = Column(Integer)
     with_replacement = Column(Integer)
     popularity = Column(Integer)
+    power_band = Column(String(255))
 
 API_SORT_TYPE_TO_COLUMN =  {
     api.SortType.RANK: DbCubecanaCube.popularity,
@@ -80,6 +81,7 @@ class CubeDao:
                 cube.set_card_colors = updated_cube.set_card_colors
                 cube.color_balance_packs = updated_cube.color_balance_packs
                 cube.with_replacement = updated_cube.with_replacement
+                cube.power_band = updated_cube.power_band
                 session.commit()
         except Exception as e:
             session.rollback()

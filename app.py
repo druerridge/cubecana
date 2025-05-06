@@ -231,7 +231,7 @@ def get_cube_draftmancer_file(cube_id):
 
 @app.route('/api/cube/<string:cube_id>', methods=['GET'])
 def get_cube(cube_id):
-  cube = cube_manager.get_cube(cube_id)
+  cube: CubecanaCube = cube_manager.get_cube(cube_id)
   if not cube:
     return Response(status=404)
   api_cube = cube.to_api_cube()

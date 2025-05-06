@@ -25,10 +25,13 @@ class CubecanaCube:
     return sum(self.card_id_to_count.values())
   
   def to_cube_list_entry(self):
+    expanded_tags = []
+    expanded_tags.extend(self.tags)
+    expanded_tags.append("Power: " + self.settings.power_band.lower())
     return api.CubeListEntry(
       name=self.name,
       cardCount=self.card_count(),
-      tags=self.tags,
+      tags=expanded_tags,
       link=self.link,
       author=self.author,
       lastUpdatedEpochSeconds=self.last_updated_epoch_seconds,
@@ -55,7 +58,7 @@ def to_db_cubecana_cube(cc_cube: CubecanaCube):
         id=new_id,
         name=cc_cube.name.encode('utf-8'),
         card_id_to_count=json.dumps(cc_cube.card_id_to_count).encode('utf-8'), # come back to this
-        tags=json.dumps(cc_cube.tags),
+        tags=cc_cube.tags,
         link=cc_cube.link.encode('utf-8'),
         author=cc_cube.author.encode('utf-8'),
         last_updated_epoch_seconds=cc_cube.last_updated_epoch_seconds,
@@ -65,6 +68,7 @@ def to_db_cubecana_cube(cc_cube: CubecanaCube):
         set_card_colors=cc_cube.settings.set_card_colors,
         color_balance_packs=cc_cube.settings.color_balance_packs,
         with_replacement=cc_cube.settings.with_replacement,
+        power_band=cc_cube.settings.power_band,
         popularity=0
     )
 
@@ -72,7 +76,7 @@ def from_db_cubecana_cube(db_cube: DbCubecanaCube) -> CubecanaCube:
     return CubecanaCube(
         name=db_cube.name,
         card_id_to_count=json.loads(db_cube.card_id_to_count),
-        tags=json.loads(db_cube.tags),
+        tags=db_cube.tags,
         link=db_cube.link,
         author=db_cube.author,
         last_updated_epoch_seconds=db_cube.last_updated_epoch_seconds,
@@ -84,7 +88,8 @@ def from_db_cubecana_cube(db_cube: DbCubecanaCube) -> CubecanaCube:
             cards_per_booster=db_cube.cards_per_booster,
             set_card_colors=db_cube.set_card_colors,
             color_balance_packs=db_cube.color_balance_packs,
-            with_replacement=db_cube.with_replacement
+            with_replacement=db_cube.with_replacement,
+            power_band=db_cube.power_band
         )
     )
 
@@ -93,7 +98,7 @@ class CubeManager:
        return cube_dao.get_cubecana_cube_count()
 
     def get_cubes(self, page: int = 1, per_page: int = 25, sort = api.SortType.RANK, order = api.OrderType.DESC):
-        paginated_db_cubecana_cubes = cube_dao.get_cubecana_cubes_paginated_by(page, per_page, sort, order)
+        paginated_db_cubecana_cubes: List[DbCubecanaCube] = cube_dao.get_cubecana_cubes_paginated_by(page, per_page, sort, order)
         paginated_cubes = [from_db_cubecana_cube(dbcube) for dbcube in paginated_db_cubecana_cubes]
         paginated_cube_list_entries = [cube.to_cube_list_entry() for cube in paginated_cubes]
         return paginated_cube_list_entries
@@ -114,7 +119,8 @@ class CubeManager:
             settings=Settings(
                 card_list_name=api_create_cube.name,
                 boosters_per_player=api_create_cube.cubeSettings.boostersPerPlayer,
-                cards_per_booster=api_create_cube.cubeSettings.cardsPerBooster
+                cards_per_booster=api_create_cube.cubeSettings.cardsPerBooster,
+                power_band=api_create_cube.cubeSettings.powerBand
             ),
         )
         db_cubecana_cube = to_db_cubecana_cube(new_cube)
@@ -151,7 +157,8 @@ class CubeManager:
             settings=Settings(
                 card_list_name=api_edit_cube.name,
                 boosters_per_player=api_edit_cube.cubeSettings.boostersPerPlayer,
-                cards_per_booster=api_edit_cube.cubeSettings.cardsPerBooster
+                cards_per_booster=api_edit_cube.cubeSettings.cardsPerBooster,
+                power_band=api_edit_cube.cubeSettings.powerBand,
             ),
         )
         db_cubecana_cube = to_db_cubecana_cube(updated_cube)

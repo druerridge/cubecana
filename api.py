@@ -7,7 +7,8 @@ from enum import Enum
 class CubeSettings:
   boostersPerPlayer: int
   cardsPerBooster: int
-  
+  powerBand: str
+
   def toJSON(self):
     return json.dumps(
         self,
@@ -72,6 +73,23 @@ class RetailSet:
         default=lambda o: o.__dict__, 
         sort_keys=True,
         indent=4)
+
+# @dataclass(frozen=True)
+# class CubeMetadata:
+#   cardsPerBooster: int
+#   cardCount: int
+#   boostersPerPlayer: int
+#   cubeName: str
+#   link: str
+#   author: str
+#   power_band: str
+  
+#   def toJSON(self):
+#     return json.dumps(
+#         self,
+#         default=lambda o: o.__dict__, 
+#         sort_keys=True,
+#         indent=4)
 
 @dataclass(frozen=True)
 class CubeListEntry:

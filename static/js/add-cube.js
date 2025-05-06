@@ -30,6 +30,7 @@ function populateInputs(responseCube) {
     cardListInput.value = toCardList(responseCube.cardIdToCardCount);
     cubeForm.cubeBoostersPerPlayer.value = responseCube.cubeSettings.boostersPerPlayer;
     cubeForm.cubeCardsPerBooster.value = responseCube.cubeSettings.cardsPerBooster;
+    cubeForm.powerBand.value = responseCube.cubeSettings.powerBand;
     cubeId = responseCube.id;
     const tags = document.getElementsByClassName('tag-button');
     for (let i = 0; i < tags.length; i++) {
@@ -74,7 +75,8 @@ function postCreateCube() {
         cardListText: cardListInput.value.trim(),
         cubeSettings: {
             boostersPerPlayer: cubeForm.cubeBoostersPerPlayer.value,
-            cardsPerBooster: cubeForm.cubeCardsPerBooster.value
+            cardsPerBooster: cubeForm.cubeCardsPerBooster.value,
+            powerBand: cubeForm.powerBand.value
         }
     };
 

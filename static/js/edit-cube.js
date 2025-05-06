@@ -5,9 +5,10 @@ const cardListInput = document.getElementById('cardListInput');
 const currentUrl = window.location.href;
 const cubeForm = document.getElementById('cubeForm');
 const successNotification = document.getElementById('successNotification');
+const editSecret = new URLSearchParams(window.location.search).get('editSecret');
+
 const cubeId = currentUrl.split('/edit-cube/')[1].split("?")[0];
 const cubeUrl = `${window.location.origin}/api/cube/${cubeId}`;
-const editSecret = new URLSearchParams(window.location.search).get('editSecret');
 
 request(cubeUrl, null, (responseText) => {
     const responseCube = JSON.parse(responseText);
@@ -40,6 +41,7 @@ function populateInputs(responseCube) {
     cardListInput.value = toCardList(responseCube.cardIdToCardCount);
     cubeForm.cubeBoostersPerPlayer.value = responseCube.cubeSettings.boostersPerPlayer;
     cubeForm.cubeCardsPerBooster.value = responseCube.cubeSettings.cardsPerBooster;
+    cubeForm.cubePowerBand.value = responseCube.cubeSettings.powerBand;
     const tags = document.getElementsByClassName('tag-button');
     for (let i = 0; i < tags.length; i++) {
         if (responseCube.tags.includes(tags[i].innerText)) {
@@ -75,7 +77,8 @@ function putUpdateCube() {
         cardListText: cardListInput.value.trim(),
         cubeSettings: {
             boostersPerPlayer: cubeForm.cubeBoostersPerPlayer.value,
-            cardsPerBooster: cubeForm.cubeCardsPerBooster.value
+            cardsPerBooster: cubeForm.cubeCardsPerBooster.value,
+            powerBand: cubeForm.cubePowerBand.value
         }
     };
 

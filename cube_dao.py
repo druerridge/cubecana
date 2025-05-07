@@ -3,14 +3,14 @@ from pathlib import Path
 from typing import List, Optional
 from sqlalchemy import create_engine, Column, String, Integer, Text, JSON
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, scoped_session
 from sqlalchemy.dialects.mysql import BINARY
 import api
 import uuid
 
 Base = declarative_base()
 
-MAX_CARD_LIST_LENGTH = 80000 # MIGHT have to update the DB if you change this... but maybe not
+MAX_CARD_LIST_LENGTH = 80000  # MIGHT have to update the DB if you change this... but maybe not
 
 
 class DbCubecanaCube(Base):
@@ -18,7 +18,7 @@ class DbCubecanaCube(Base):
     pk = Column(Integer, primary_key=True)
     id = Column(BINARY(16), default=lambda: uuid.uuid4().bytes, unique=True, nullable=False)
     name = Column(String(255))
-    card_id_to_count = Column(Text(MAX_CARD_LIST_LENGTH)) # lets see if it accepts the length, doesn't matter as long as it creates the row
+    card_id_to_count = Column(Text(MAX_CARD_LIST_LENGTH))  # lets see if it accepts the length, doesn't matter as long as it creates the row
     tags = Column(JSON)
     link = Column(String(2048))
     author = Column(String(255))
@@ -32,10 +32,11 @@ class DbCubecanaCube(Base):
     popularity = Column(Integer)
     power_band = Column(String(255))
 
-API_SORT_TYPE_TO_COLUMN =  {
+API_SORT_TYPE_TO_COLUMN = {
     api.SortType.RANK: DbCubecanaCube.popularity,
     api.SortType.DATE: DbCubecanaCube.last_updated_epoch_seconds,
 }
+
 
 class CubeDao:
     def __init__(self):
@@ -48,10 +49,12 @@ class CubeDao:
             print("No creds file found, exiting")
             raise SystemExit(1)
 
+        # Create a connection pool
+        self.engine = create_engine(self.db_url, pool_size=3, max_overflow=2, pool_timeout=30, pool_recycle=1800)
+        self.Session = scoped_session(sessionmaker(bind=self.engine))
+
     def get_session(self):
-        engine = create_engine(self.db_url)
-        Session = sessionmaker(bind=engine)
-        return Session()
+        return self.Session()
 
     def create_cubecana_cube(self, cube: DbCubecanaCube) -> None:
         session = self.get_session()
@@ -138,5 +141,6 @@ class CubeDao:
         finally:
             session.close()
         return count
+
 
 cube_dao: CubeDao = CubeDao()

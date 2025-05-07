@@ -392,7 +392,7 @@ def generate_draftmancer_file_from_cube(cube: CubecanaCube):
     return generate_draftmancer_file_from(cube.card_id_to_count, card_evaluations_filename, cube.settings)   
 
 def generate_draftmancer_file_from(id_to_count_input, card_evaluations_file, settings):
-    ALL_CARDS_DREAMBORN_TTS = "inputs\\dreamborn_tts_all_cards"
+    ALL_CARDS_DREAMBORN_TTS = "inputs/dreamborn_tts_all_cards"
     id_to_tts_card = read_id_to_tts_card_from_filesystem(ALL_CARDS_DREAMBORN_TTS, id_to_count_input)
     return dreamborn_tts_to_draftmancer(id_to_tts_card, card_evaluations_file, settings)
 

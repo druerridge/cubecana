@@ -15,7 +15,7 @@ franchise_to_draftmancer_color =  {
 
 def load_id_to_franchise() -> dict:
     id_to_franchise = {}
-    card_by_franchise_file = 'inputs\\FranchiseByCardName.csv'
+    card_by_franchise_file = 'inputs/FranchiseByCardName.csv'
     with open(card_by_franchise_file, newline='', encoding='utf8') as csvfile:
         dialect = csv.Sniffer().sniff(csvfile.read(1024))
         dialect.quoting = csv.QUOTE_MINIMAL

@@ -11,7 +11,9 @@ import uuid
 Base = declarative_base()
 
 MAX_CARD_LIST_LENGTH = 80000  # MIGHT have to update the DB if you change this... but maybe not
-
+PAGE_VIEW_COEFFICIENT = 1
+LIST_VIEW_COEFFICIENT = 1
+DRAFT_COEFFICIENT = 5 
 
 class DbCubecanaCube(Base):
     __tablename__ = 'cubecana_cubes'
@@ -31,6 +33,9 @@ class DbCubecanaCube(Base):
     with_replacement = Column(Integer)
     popularity = Column(Integer)
     power_band = Column(String(255))
+    card_list_views = Column(Integer, default=0)
+    page_views = Column(Integer, default=0)
+    drafts = Column(Integer, default=0)      
 
 API_SORT_TYPE_TO_COLUMN = {
     api.SortType.RANK: DbCubecanaCube.popularity,
@@ -67,6 +72,49 @@ class CubeDao:
         finally:
             session.close()
 
+
+    def increment_card_list_views(self, cube_id: bytes) -> None:
+        session = self.get_session()
+        try:
+            cube = session.query(DbCubecanaCube).filter(DbCubecanaCube.id == cube_id).first()
+            if cube:
+                cube.card_list_views += 1
+                cube.popularity = cube.drafts * DRAFT_COEFFICIENT + cube.card_list_views * LIST_VIEW_COEFFICIENT + cube.page_views * PAGE_VIEW_COEFFICIENT
+                session.commit()
+        except Exception as e:
+            session.rollback()
+            raise e
+        finally:
+            session.close()
+
+    def increment_page_views(self, cube_id: bytes) -> None:
+        session = self.get_session()
+        try:
+            cube = session.query(DbCubecanaCube).filter(DbCubecanaCube.id == cube_id).first()
+            if cube:
+                cube.page_views += 1
+                cube.popularity = cube.drafts * DRAFT_COEFFICIENT + cube.card_list_views * LIST_VIEW_COEFFICIENT + cube.page_views * PAGE_VIEW_COEFFICIENT
+                session.commit()
+        except Exception as e:
+            session.rollback()
+            raise e
+        finally:
+            session.close()
+
+    def increment_drafts(self, cube_id: bytes) -> None:
+        session = self.get_session()
+        try:
+            cube = session.query(DbCubecanaCube).filter(DbCubecanaCube.id == cube_id).first()
+            if cube:
+                cube.drafts += 1
+                cube.popularity = cube.drafts * DRAFT_COEFFICIENT + cube.card_list_views * LIST_VIEW_COEFFICIENT + cube.page_views * PAGE_VIEW_COEFFICIENT
+                session.commit()
+        except Exception as e:
+            session.rollback()
+            raise e
+        finally:
+            session.close()
+    
     def update_cubecana_cube(self, cube_id: bytes, updated_cube: DbCubecanaCube) -> None:
         session = self.get_session()
         try:
@@ -85,6 +133,9 @@ class CubeDao:
                 cube.color_balance_packs = updated_cube.color_balance_packs
                 cube.with_replacement = updated_cube.with_replacement
                 cube.power_band = updated_cube.power_band
+                cube.card_list_views = updated_cube.card_list_views
+                cube.page_views = updated_cube.page_views          
+                cube.drafts = updated_cube.drafts                  
                 session.commit()
         except Exception as e:
             session.rollback()

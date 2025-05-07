@@ -58,6 +58,27 @@ class CubeManager:
         cube_dao.delete_cubecana_cube(uuid.UUID(id).bytes)
         return True
 
+    def increment_drafts(self, id: str):
+        cube = cube_dao.get_cubecana_cube_by_id(uuid.UUID(id).bytes)
+        if not cube:
+            return False
+        cube_dao.increment_drafts(uuid.UUID(id).bytes)
+        return True
+
+    def increment_page_views(self, id: str):
+        cube = cube_dao.get_cubecana_cube_by_id(uuid.UUID(id).bytes)
+        if not cube:
+            return False
+        cube_dao.increment_page_views(uuid.UUID(id).bytes)
+        return True
+
+    def increment_card_list_views(self, id: str):
+        cube = cube_dao.get_cubecana_cube_by_id(uuid.UUID(id).bytes)
+        if not cube:
+            return False
+        cube_dao.increment_card_list_views(uuid.UUID(id).bytes)
+        return True
+
     def update_cube(self, api_edit_cube: api.EditCubeRequest):
         old_cube = cube_dao.get_cubecana_cube_by_id(uuid.UUID(api_edit_cube.id).bytes)
         id_to_count = create_template.id_to_count_from(api_edit_cube.cardListText.split('\n'))

@@ -4,7 +4,7 @@ from cubecana_cube import CubecanaCube
 import tags
 
 DEFAULT_CARD_EVALUATIONS_FOLDER = "DraftBots/"
-DEFAULT_CARD_EVALUATIONS_FILE = "DraftBots/FrankKarstenEvaluations-HighPower.csv"
+DEFAULT_CARD_EVALUATIONS_FILE = "DraftBots/FrankKarsten-normalInk-maxPower-Evaluations.csv"
 
 class CardEvaluationsManager:
 

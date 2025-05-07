@@ -1,8 +1,9 @@
-from flask import Flask, render_template, request, Response, send_from_directory
+from flask import Flask, render_template, request, Response, send_from_directory, redirect
 import json
 import create_template
 import pixelborn
 import lcc_error
+import card_evaluations
 from settings import Settings
 from cube_manager import CubecanaCube
 from cube_manager import cube_manager
@@ -60,7 +61,16 @@ def serve_loading_draft(cube_id):
   cube = cube_manager.get_cube(cube_id)
   if not cube:
     raise lcc_error.CubeNotFoundError("Cube not found")
+  cube_manager.increment_page_views(cube_id)
   return render_template('loading-draft.html')
+
+@app.route('/cube/<string:cube_id>/inspect-list', methods=['GET'])
+def serve_inspect_list(cube_id):
+  cube = cube_manager.get_cube(cube_id)
+  if not cube:
+    raise lcc_error.CubeNotFoundError("Cube not found")
+  cube_manager.increment_card_list_views(cube_id)
+  return redirect(cube.link)
 
 @app.route('/sitemap.xml')
 def serve_sitemap():
@@ -112,7 +122,7 @@ def card_list_to_draftmancer():
         set_card_colors=False,
         color_balance_packs=False
     )
-  draftmancer_file = create_template.dreamborn_card_list_to_draftmancer(card_list, create_template.DEFAULT_CARD_EVALUATIONS_FILE, settings)
+  draftmancer_file = create_template.dreamborn_card_list_to_draftmancer(card_list, card_evaluations.DEFAULT_CARD_EVALUATIONS_FILE, settings)
   response = {
     'draftmancerFile': draftmancer_file, 
     'metadata': {
@@ -139,7 +149,7 @@ def handle_dreamborn_to_draftmancer():
         set_card_colors=False,
         color_balance_packs=False
     )
-  draftmancer_file = create_template.dreamborn_tts_to_draftmancer(id_to_tts_card, create_template.DEFAULT_CARD_EVALUATIONS_FILE, settings)
+  draftmancer_file = create_template.dreamborn_tts_to_draftmancer(id_to_tts_card, card_evaluations.DEFAULT_CARD_EVALUATIONS_FILE, settings)
   response = {'draftmancerFile': draftmancer_file, 'metadata': {'cardCount': card_count, 'cardsPerBooster': settings.cards_per_booster, 'boostersPerPlayer': settings.boosters_per_player}}
   return jsonify(response)
 
@@ -227,6 +237,7 @@ def get_cube_draftmancer_file(cube_id):
       'cubeName': cube.name, 
       'link': cube.link,
       'author': cube.author}}
+  cube_manager.increment_drafts(cube_id)
   return jsonify(response)
 
 @app.route('/api/cube/<string:cube_id>', methods=['GET'])

@@ -23,7 +23,7 @@ function populateCubes(cubes) {
                 navigator.clipboard.writeText(cubeDraftLink);
                 popToastNotification(`Copied draft link to your clipboard`);
             });
-            clone.getElementById("element-link").href = cube.link;
+            clone.getElementById("element-link").href = `${window.location.origin}/cube/${cube.id}/inspect-list`;
             if (!isValidCardlistUrl(cube.link)) {
                 clone.getElementById("element-link").href = "/404.html";
                 clone.getElementById("element-link").style.disabled = true;
@@ -33,7 +33,7 @@ function populateCubes(cubes) {
             }
             clone.getElementById("element-draft").addEventListener("click", function() {
                 let newTab = window.open("/loading");
-                const cubeDraftmancerUrl = `${window.location.origin}/api/cube/${cube.id}/draftmancerFile`
+                const cubeDraftmancerUrl = `${window.location.origin}/api/cube/${cube.id}/draftmancerFile`;
                 request(cubeDraftmancerUrl, null, (responseText) => {
                     let response = JSON.parse(responseText);
                     generateDraftmancerSession(response.draftmancerFile, newTab, response.metadata);

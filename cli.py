@@ -1,5 +1,6 @@
 import create_template
 import generate_retail
+import card_evaluations
 from settings import Settings
 import argparse
 
@@ -11,7 +12,7 @@ parser = argparse.ArgumentParser(
 
 parser.add_argument('verb', help="verb is one of: ( retail_tts_to_draftmancer | tts_to_draftmancer | draftmancer_to_tts )")
 parser.add_argument('--dreamborn_export_for_tabletop_sim', help="file path to a .deck export in Tabletop Sim format from dreamborn.ink deck of the cube e.g. example-cube.json or C:\\Users\\dru\\Desktop\\deck.json")
-parser.add_argument('--card_evaluations_file', default=create_template.DEFAULT_CARD_EVALUATIONS_FILE, help="relative path to a .csv file containing card name -> 0-5 card rating (power in a vacuum). default: \"DraftBots\\\\FrankKarstenEvaluations-HighPower.csv\"")
+parser.add_argument('--card_evaluations_file', default=card_evaluations.DEFAULT_CARD_EVALUATIONS_FILE, help="relative path to a .csv file containing card name -> 0-5 card rating (power in a vacuum). default: \"DraftBots\\\\FrankKarstenEvaluations-HighPower.csv\"")
 parser.add_argument('--boosters_per_player', default=4)
 parser.add_argument('--cards_per_booster', default=12)
 parser.add_argument('--name', default="custom_card_list", help="Sets name of both the output file and the set/cube list as it appears in draftmancer")

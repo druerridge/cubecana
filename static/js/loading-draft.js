@@ -15,6 +15,7 @@ const cubeTitle = document.getElementById('cube-title');
 const authorText = document.getElementById('author-text');
 
 const cubeDraftmancerUrl = `/api/cube/${cubeId}/draftmancerFile`
+const cubeInspectListUrl = `/cube/${cubeId}/inspect-list`
 request(cubeDraftmancerUrl, null, (responseText) => {
     let response = JSON.parse(responseText);
     draftNowButton.disabled = false;
@@ -31,7 +32,7 @@ request(cubeDraftmancerUrl, null, (responseText) => {
     });
 
     viewListButton.addEventListener('click', () => {
-        window.open(response.metadata.link);
+        window.open(cubeInspectListUrl);
     });
 }, 
 () => {

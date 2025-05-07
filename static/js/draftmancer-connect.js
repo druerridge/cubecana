@@ -27,14 +27,16 @@ export function generateDraftmancerSession(CubeFile, tabToOpen, metadata) {
     socket.once("sessionOwner", (ownerID) => {
         if (ownerID !== BotID) {
             console.error("Not the owner!");
+            tabToOpen.close();
             socket.disconnect();
             return;
         }
 
         socket.emit("parseCustomCardList", CubeFile, (res) => {
             if (res.code < 0) {
-                socket.disconnect();
                 console.error(res);
+                tabToOpen.close();
+                socket.disconnect();
             } else {
                 // Automatically disconnect once the user has joined the session
                 socket.once("sessionUsers", () => {

@@ -4,6 +4,7 @@ import id_helper
 import requests
 
 CACHED_API_DATA_FILEPATH = 'lorcast_api_data_cache.json'
+CACHED_API_DATA_SET_Q1_FILEPATH = 'lorcast_api_data_cache_q1.json'
 
 class ApiCard:
     def __init__(self, cost, rarity, color, inks, types: list[str]):
@@ -35,7 +36,7 @@ def is_number(code):
     except ValueError:
         return False
 
-def fetch_api_data():
+def fetch_api_data() -> dict[str, dict]:
     name_to_card = {}
     # get sets
     url = f'https://api.lorcast.com/v0/sets'
@@ -95,10 +96,20 @@ def generate_id_to_api_card(name_to_card) -> dict[str, ApiCard]:
         id_to_api_card[id_helper.to_id(card_name)] = api_card_from(card)
     return id_to_api_card
 
+def fetch_set_q1_data() -> dict[str, dict]:
+    id_to_card_untyped = {}
+    cached_set_q1_api_data_file = Path(CACHED_API_DATA_SET_Q1_FILEPATH)
+    with cached_set_q1_api_data_file.open(mode='r') as file_to_read:
+        id_to_card_untyped = json.load(file_to_read)    
+    return id_to_card_untyped
+
 def read_or_fetch_id_to_api_card() -> dict[str, ApiCard]:
     cached_api_data_file = Path(CACHED_API_DATA_FILEPATH)
     if not cached_api_data_file.is_file():
         name_to_card_untyped = fetch_api_data()
+        print("Fetching set Q1 cards from local file...")
+        name_to_card_untyped_set_q1 = fetch_set_q1_data()
+        name_to_card_untyped.update(name_to_card_untyped_set_q1) # merge the two dicts
         fix_card_names(name_to_card_untyped)
         id_to_card_untyped = generate_id_to_card_untyped(name_to_card_untyped)
         with cached_api_data_file.open(mode='w') as file_to_write:

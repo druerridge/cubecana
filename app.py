@@ -217,7 +217,7 @@ def get_cube_draftmancer_file(cube_id):
   cube = cube_manager.get_cube(cube_id)
   if not cube:
     return Response(status=404)
-  draftmancer_file: str = create_template.add_card_list_to_draftmancer_custom_cards(cube.card_id_to_count, "incomplete_simple_template.draftmancer.txt", cube.settings)
+  draftmancer_file: str = create_template.generate_draftmancer_file_from_cube(cube)
   response = {
     'draftmancerFile': draftmancer_file, 
     'metadata': {

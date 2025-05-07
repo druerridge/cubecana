@@ -1,0 +1,1244 @@
+{
+    "tritonsdaughtersdiscordantchorus": {
+        "id": "tritonsdaughtersdiscordantchorus",
+        "name": "Triton's Daughters - Discordant Chorus",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 0,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Character"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "princeericgrimgroom": {
+        "id": "princeericgrimgroom",
+        "name": "Prince Eric - Grim Groom",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 1,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Character"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "brunomadrigalunspeakableseer": {
+        "id": "brunomadrigalunspeakableseer",
+        "name": "Bruno Madrigal - Unspeakable Seer",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 2,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Character"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "gastonegotisticalbully": {
+        "id": "gastonegotisticalbully",
+        "name": "Gaston - Egotistical Bully",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 2,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Character"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "madhattersinisterhost": {
+        "id": "madhattersinisterhost",
+        "name": "Mad Hatter - Sinister Host",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 2,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Character"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "jetsamwickedwhisperer": {
+        "id": "jetsamwickedwhisperer",
+        "name": "Jetsam - Wicked Whisperer",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 2,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Character"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "magicadespellshadowysorceress": {
+        "id": "magicadespellshadowysorceress",
+        "name": "Magica De Spell - Shadowy Sorceress",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 3,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Character"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "flotsamwickeddefender": {
+        "id": "flotsamwickeddefender",
+        "name": "Flotsam - Wicked Defender",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 4,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Character"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "tamatoagrabbycrab": {
+        "id": "tamatoagrabbycrab",
+        "name": "Tamatoa - Grabby Crab",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 4,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Character"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "sharktoothyterror": {
+        "id": "sharktoothyterror",
+        "name": "Shark - Toothy Terror",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 5,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Character"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "annaensnaredsister": {
+        "id": "annaensnaredsister",
+        "name": "Anna - Ensnared Sister",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 6,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Character"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "minniemousewildeyeddiver": {
+        "id": "minniemousewildeyeddiver",
+        "name": "Minnie Mouse - Wild-Eyed Diver",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 7,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Character"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "lashout": {
+        "id": "lashout",
+        "name": "Lash Out",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 2,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Action"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "lightningstorm": {
+        "id": "lightningstorm",
+        "name": "Lightning Storm",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 6,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Action"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "choppywaters": {
+        "id": "choppywaters",
+        "name": "Choppy Waters",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 3,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Action"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "entanglingmagic": {
+        "id": "entanglingmagic",
+        "name": "Entangling Magic",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 2,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Action"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "tentacleswipe": {
+        "id": "tentacleswipe",
+        "name": "Tentacle Swipe",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 2,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Action"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "capsize": {
+        "id": "capsize",
+        "name": "Capsize",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 3,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Action"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "whirlpool": {
+        "id": "whirlpool",
+        "name": "Whirlpool",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 4,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Action"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "crushingwave": {
+        "id": "crushingwave",
+        "name": "Crushing Wave",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 4,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Action"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "typhoon": {
+        "id": "typhoon",
+        "name": "Typhoon",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 5,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Action"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "riptide": {
+        "id": "riptide",
+        "name": "Riptide",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 6,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Action"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "ursulasstolentrident": {
+        "id": "ursulasstolentrident",
+        "name": "Ursula's Stolen Trident",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 0,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Item"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "ursulascontract": {
+        "id": "ursulascontract",
+        "name": "Ursula's Contract",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 0,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Item"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "thehexwellcrown": {
+        "id": "thehexwellcrown",
+        "name": "The Hexwell Crown",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 3,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Item"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "tsunami": {
+        "id": "tsunami",
+        "name": "Tsunami",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 7,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Action"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    },
+    "herculesmanipulatedhero": {
+        "id": "herculesmanipulatedhero",
+        "name": "Tsunami",
+        "layout": "normal",
+        "released_at": "",
+        "image_uris": {
+            "digital": {
+                "small": "",
+                "normal": "",
+                "large": ""
+            }
+        },
+        "cost": 4,
+        "inkwell": true,
+        "ink": null,
+        "inks": [
+            
+        ],
+        "type": [
+            "Character"
+        ],
+        "classifications": null,
+        "text": "",
+        "keywords": [],
+        "move_cost": null,
+        "strength": null,
+        "willpower": null,
+        "lore": null,
+        "rarity": "Common",
+        "illustrators": [
+            ""
+        ],
+        "collector_number": "",
+        "lang": "en",
+        "flavor_text": "",
+        "tcgplayer_id": null,
+        "legalities": {
+            "core": "not_legal"
+        },
+        "set": {
+            "id": "set_q1",
+            "code": "Q1",
+            "name": "Illumineer's Quest - Deep Trouble"
+        },
+        "prices": {}
+    }
+}

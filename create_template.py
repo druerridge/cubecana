@@ -9,14 +9,14 @@ from lorcana_api import ApiCard
 import lorcast_api as lorcana_api
 import id_helper
 import franchise
-
-DEFAULT_CARD_EVALUATIONS_FILE = "DraftBots/FrankKarstenEvaluations-HighPower.csv"
+from cube_manager import CubecanaCube
+from card_evaluations import card_evaluations_manager
 
 @dataclass(frozen=True)
 class DraftmancerSettings:
   boostersPerPlayer: int = 4
   name: str = "Custom Cube"
-  cardBack: str = None
+  cardBack: str = "https://wiki.mushureport.com/images/thumb/d/d7/Card_Back_official.png/450px-Card_Back_official.png"
   withReplacement: bool = False
   
   def toJSON(self):
@@ -43,12 +43,12 @@ def get_mainboard_lines(all_lines):
     except ValueError:
         return all_lines
 
-def generate_id_to_tts_card_from_file(file, id_to_tts_card=None):
+def generate_id_to_tts_card_from_file(file, id_to_tts_card=None, id_to_count_filter:dict[str, ApiCard] = None):
     with file.open(encoding='utf8') as file:
         data = json.load(file)
-    return generate_id_to_tts_card_from_json_obj(data, id_to_tts_card)
+    return generate_id_to_tts_card_from_json_obj(data, id_to_tts_card, id_to_count_filter)
 
-def generate_id_to_tts_card_from_json_obj(json_obj, id_to_tts_card=None):
+def generate_id_to_tts_card_from_json_obj(json_obj, id_to_tts_card=None, id_to_count_filter:dict[str, ApiCard] = None):
     json_obj = json_obj['ObjectStates'][0]
     if id_to_tts_card == None:
         id_to_tts_card = defaultdict(lambda: {'count': 0})
@@ -58,13 +58,19 @@ def generate_id_to_tts_card_from_json_obj(json_obj, id_to_tts_card=None):
             id = id_helper.to_id(json_obj['ContainedObjects'][i - 1]['Nickname'])
         except IndexError:
             break
-        id_to_tts_card[id]['count'] += 1
-        id_to_tts_card[id]['name'] = json_obj['ContainedObjects'][i - 1]['Nickname']
-        id_to_tts_card[id]['image_uri'] = json_obj['CustomDeck'][str(i)]['FaceURL']
+        if (not id_to_count_filter):
+            id_to_tts_card[id]['count'] += 1
+            id_to_tts_card[id]['name'] = json_obj['ContainedObjects'][i - 1]['Nickname']
+            id_to_tts_card[id]['image_uri'] = json_obj['CustomDeck'][str(i)]['FaceURL']
+        elif (id_to_count_filter and id in id_to_count_filter):
+            id_to_tts_card[id]['count'] = id_to_count_filter[id]
+            id_to_tts_card[id]['name'] = json_obj['ContainedObjects'][i - 1]['Nickname']
+            id_to_tts_card[id]['image_uri'] = json_obj['CustomDeck'][str(i)]['FaceURL']
+        # else case intentionally ignored, as we don't want to add cards that are not in the filter
         i += 1
     return id_to_tts_card
 
-def read_id_to_tts_card_from_filesystem(dreamborn_tts_export_filepath):
+def read_id_to_tts_card_from_filesystem(dreamborn_tts_export_filepath, id_to_count_filter:dict[str, ApiCard] = None):
     dreamborn_tts_export_path = Path(dreamborn_tts_export_filepath)
     id_to_tts_card = None
     if dreamborn_tts_export_path.is_dir():
@@ -72,9 +78,9 @@ def read_id_to_tts_card_from_filesystem(dreamborn_tts_export_filepath):
         for file in files:
             if file.is_file():
                 print(file)
-                id_to_tts_card = generate_id_to_tts_card_from_file(file, id_to_tts_card)
+                id_to_tts_card = generate_id_to_tts_card_from_file(file, id_to_tts_card, id_to_count_filter)
     else:
-        id_to_tts_card = generate_id_to_tts_card_from_file(dreamborn_tts_export_path, id_to_tts_card)
+        id_to_tts_card = generate_id_to_tts_card_from_file(dreamborn_tts_export_path, id_to_tts_card, id_to_count_filter)
     return id_to_tts_card
 
 # def read_id_to_dreamborn_name():
@@ -193,17 +199,6 @@ def generate_custom_card_list(id_to_api_card: dict[str, ApiCard],
             error_message += f"{failed_id}\n"
         raise UnidentifiedCardError(error_message)
     return custom_card_list
-
-def read_id_to_rating(card_evaluations_file):
-    id_to_rating = {}
-    with open(file=card_evaluations_file, newline='', encoding='utf8') as csvfile:
-        dialect = csv.Sniffer().sniff(csvfile.read(1024))
-        dialect.quoting = csv.QUOTE_MINIMAL
-        csvfile.seek(0)
-        reader = csv.DictReader(csvfile, dialect=dialect)
-        for row in reader:
-            id_to_rating[id_helper.to_id(row['Card Name'])] = int(row['Rating - Draftmancer'])
-    return id_to_rating
 
 def write_draftmancer_file(draftmancer_file_string, card_list_name):
     draftmancer_file_as_lines = draftmancer_file_string.split('\n')
@@ -392,6 +387,15 @@ def generate_tts_deck(id_to_count, id_to_custom_card):
         ]
     }
 
+def generate_draftmancer_file_from_cube(cube: CubecanaCube):
+    card_evaluations_filename = card_evaluations_manager.determine_card_evaluations_file(cube)
+    return generate_draftmancer_file_from(cube.card_id_to_count, card_evaluations_filename, cube.settings)   
+
+def generate_draftmancer_file_from(id_to_count_input, card_evaluations_file, settings):
+    ALL_CARDS_DREAMBORN_TTS = "inputs\\dreamborn_tts_all_cards"
+    id_to_tts_card = read_id_to_tts_card_from_filesystem(ALL_CARDS_DREAMBORN_TTS, id_to_count_input)
+    return dreamborn_tts_to_draftmancer(id_to_tts_card, card_evaluations_file, settings)
+
 def dreamborn_tts_to_draftmancer_from_file(dreamborn_export_for_tabletop_sim, card_evaluations_file, settings):
     id_to_tts_card = read_id_to_tts_card_from_filesystem(dreamborn_export_for_tabletop_sim)
     return dreamborn_tts_to_draftmancer(id_to_tts_card, card_evaluations_file, settings)
@@ -459,6 +463,6 @@ def validate_card_list_against(card_list_input, draftmancer_custom_card_file="in
 def dreamborn_tts_to_draftmancer(id_to_tts_card, card_evaluations_file, settings):
     id_to_dreamborn_name = read_id_to_dreamborn_name()
     id_to_api_card = lorcana_api.read_or_fetch_id_to_api_card()
-    id_to_rating = read_id_to_rating(card_evaluations_file)
+    id_to_rating = card_evaluations_manager.read_id_to_rating(card_evaluations_file)
     custom_card_list = generate_custom_card_list(id_to_api_card, id_to_rating, id_to_tts_card, id_to_dreamborn_name, settings)
     return generate_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_name, settings)

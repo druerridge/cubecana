@@ -1,0 +1,1 @@
+TAG_LOW_INK = "Low-ink"

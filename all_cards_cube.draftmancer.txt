@@ -14333,6 +14333,276 @@
         },
         "rarity": "uncommon",
         "rating": 2
+    },
+    {
+        "name": "Triton's Daughters - Discordant Chorus",
+        "mana_cost": "{0}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/TritonsDaughters-DiscordantChorus-Q1-16-1103x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Prince Eric - Grim Groom",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/PrinceEric-GrimGroom-Q1-13-1130x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Bruno Madrigal - Unspeakable Seer",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/BrunoMadrigal-UnspeakableSeer-Q1-2-1096x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Gaston - Egotistical Bully",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/Gaston-EgotisticalBully-Q1-5-1110x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Mad Hatter - Sinister Host",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/MadHatter-SinisterHost-Q1-10-1120x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Jetsam - Wicked Whisperer",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/Jetsam-WickedWhisperer-Q1-9-1117x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Magica De Spell - Shadowy Sorceress",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/MagicaDeSpell-ShadowySorceress-Q1-11-1114x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Flotsam - Wicked Defender",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/Flotsam-WickedDefender-Q1-4-1124x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Tamatoa - Grabby Crab",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/Tamatoa-GrabbyCrab-Q1-15-1110x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Shark - Toothy Terror",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/Shark-ToothyTerror-Q1-14-1115x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Anna - Ensnared Sister",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/Anna-EnsnaredSister-Q1-1-1149x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Minnie Mouse - Wild-Eyed Diver",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/MinnieMouse-Wild-EyedDiver-Q1-12-1127x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Lash Out",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/LashOut-Q1-22-1107x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+    {
+        "name": "Lightning Storm",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://wiki.mushureport.com/images/thumb/f/f0/LightningStorm-Q1-23.png/450px-LightningStorm-Q1-23.png"
+        },
+        "rating": 2,
+        "rarity": "mythic"
+    },
+        {
+        "name": "Choppy Waters",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://wiki.mushureport.com/images/thumb/2/22/ChoppyWaters-Q1-18.png/450px-ChoppyWaters-Q1-18.png"
+        },
+        "rating": 3,
+        "rarity": "mythic"
+    },
+{
+        "name": "Entangling Magic",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/EntanglingMagic-4-20-1112x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Tentacle Swipe",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/TentacleSwipe-Q1-25-1152x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Capsize",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/Capsize-Q1-17-1109x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Whirlpool",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/Whirlpool-Q1-28-1098x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Crushing Wave",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/CrushingWave-4-19-1098x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Typhoon",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/Typhoon-Q1-27-1109x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Riptide",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/Riptide-Q1-24-1102x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Ursula's Stolen Trident",
+        "mana_cost": "{0}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/UrsulasStolenTrident-Q1-31-1115x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Ursula's Contract",
+        "mana_cost": "{0}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/UrsulasContract-Q1-30-1136x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "The Hexwell Crown",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://wiki.mushureport.com/images/thumb/c/c6/TheHexwellCrown-Q1-29.png/450px-TheHexwellCrown-Q1-29.png"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Tsunami",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.mushureport.com/wp-content/uploads/2024/05/Tsunami-Q1-26-1123x1536.jpg"
+        },
+        "rating": 5,
+        "rarity": "mythic"
+    },
+{
+        "name": "Hercules - Manipulated Hero",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://wiki.mushureport.com/images/thumb/1/14/Hercules-ManipulatedHero-Q1-7.png/450px-Hercules-ManipulatedHero-Q1-7.png"
+        },
+        "rating": 4,
+        "rarity": "mythic"
     }
 ]
 [Settings]
@@ -15771,3 +16041,30 @@
 1 Merlin - Clever Clairvoyant
 1 Kanine Krunchies
 1 Restoring the Heart
+1 Triton's Daughters - Discordant Chorus
+1 Prince Eric - Grim Groom
+1 Bruno Madrigal - Unspeakable Seer
+1 Gaston - Egotistical Bully
+1 Mad Hatter - Sinister Host
+1 Jetsam - Wicked Whisperer
+1 Magica De Spell - Shadowy Sorceress
+1 Flotsam - Wicked Defender
+1 Tamatoa - Grabby Crab
+1 Shark - Toothy Terror
+1 Anna - Ensnared Sister
+1 Minnie Mouse - Wild-Eyed Diver
+1 Lash Out
+1 Lightning Storm
+1 Choppy Waters
+1 Entangling Magic
+1 Tentacle Swipe
+1 Capsize
+1 Whirlpool
+1 Crushing Wave
+1 Typhoon
+1 Riptide
+1 Ursula's Stolen Trident
+1 Ursula's Contract
+1 The Hexwell Crown
+1 Tsunami
+1 Hercules - Manipulated Hero

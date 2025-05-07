@@ -3,7 +3,7 @@ import api
 POWER_BAND_OVERPOWERED: str = "OVERPOWERED"
 POWER_BAND_MAX: str = "MAX"
 POWER_BAND_RETAIL: str = "RETAIL"
-POWER_BAND_NARROW_MIDDLE: str = "NARROW_MIDDLE"
+POWER_BAND_NARROW_MEDIUM: str = "NARROW_MEDIUM"
 
 class Settings:
     def __init__(self, boosters_per_player=4, card_list_name='custom_cube', cards_per_booster=12, set_card_colors=False, color_balance_packs=False, with_replacement=False, franchise_to_color=False, power_band=POWER_BAND_MAX):

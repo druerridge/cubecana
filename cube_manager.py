@@ -37,7 +37,7 @@ class CubeManager:
                 boosters_per_player=api_create_cube.cubeSettings.boostersPerPlayer,
                 cards_per_booster=api_create_cube.cubeSettings.cardsPerBooster,
                 power_band=api_create_cube.cubeSettings.powerBand
-            ),
+            )
         )
         db_cubecana_cube = to_db_cubecana_cube(new_cube)
         cube_dao.create_cubecana_cube(db_cubecana_cube)

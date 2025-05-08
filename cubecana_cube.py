@@ -18,10 +18,10 @@ class CubecanaCube:
     last_updated_epoch_seconds: int
     id: str
     edit_secret: str
-    card_list_views: int
-    page_views: int     
-    drafts: int      
-    settings: Settings  
+    settings: Settings
+    card_list_views: int = 0
+    page_views: int = 0     
+    drafts: int = 0  
 
     def card_count(self):
         return sum(self.card_id_to_count.values())

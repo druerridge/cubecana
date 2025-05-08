@@ -57,10 +57,10 @@ class CubeDao:
         # Create a connection pool
         self.engine = create_engine(
             self.db_url, 
-            pool_size=3, 
-            max_overflow=2, 
+            pool_size=1, 
+            max_overflow=5, 
             pool_timeout=30, 
-            pool_recycle=1800, 
+            pool_recycle=900, 
             pool_pre_ping=True
         )
         self.Session = scoped_session(sessionmaker(bind=self.engine))

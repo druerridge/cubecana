@@ -16,7 +16,7 @@ class CubeManager:
     def get_cubes(self, page: int = 1, per_page: int = 25, sort = api.SortType.RANK, order = api.OrderType.DESC):
         paginated_db_cubecana_cubes: List[DbCubecanaCube] = cube_dao.get_cubecana_cubes_paginated_by(page, per_page, sort, order)
         paginated_cubes = [from_db_cubecana_cube(dbcube) for dbcube in paginated_db_cubecana_cubes]
-        paginated_cube_list_entries = [cube.to_cube_list_entry() for cube in paginated_cubes]
+        paginated_cube_list_entries: api.CubeListEntry = [cube.to_cube_list_entry() for cube in paginated_cubes]
         return paginated_cube_list_entries
 
     def create_cube(self, api_create_cube: api.CreateCubeRequest):
@@ -43,7 +43,7 @@ class CubeManager:
         cube_dao.create_cubecana_cube(db_cubecana_cube)
         return new_cube
 
-    def get_cube(self, id: str):
+    def get_cube(self, id: str) -> CubecanaCube:
         db_cube = cube_dao.get_cubecana_cube_by_id(uuid.UUID(id).bytes)
         if not db_cube:
            return None

@@ -26,7 +26,7 @@ class CubecanaCube:
     def card_count(self):
         return sum(self.card_id_to_count.values())
 
-    def to_cube_list_entry(self):
+    def to_cube_list_entry(self) -> api.CubeListEntry:
         expanded_tags = []
         expanded_tags.extend(self.tags)
         expanded_tags.append("Power: " + self.settings.power_band.lower())
@@ -37,6 +37,8 @@ class CubecanaCube:
             link=self.link,
             author=self.author,
             lastUpdatedEpochSeconds=self.last_updated_epoch_seconds,
+            timesDrafted=self.drafts,
+            timesViewed=self.page_views + self.card_list_views,
             id=self.id
         )
 

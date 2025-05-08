@@ -224,7 +224,7 @@ def add_cube():
 
 @app.route('/api/cube/<string:cube_id>/draftmancerFile', methods=['GET'])
 def get_cube_draftmancer_file(cube_id):
-  cube = cube_manager.get_cube(cube_id)
+  cube: CubecanaCube = cube_manager.get_cube(cube_id)
   if not cube:
     return Response(status=404)
   draftmancer_file: str = create_template.generate_draftmancer_file_from_cube(cube)
@@ -236,7 +236,11 @@ def get_cube_draftmancer_file(cube_id):
       'boostersPerPlayer': cube.settings.boosters_per_player, 
       'cubeName': cube.name, 
       'link': cube.link,
-      'author': cube.author}}
+      'author': cube.author,
+      'timesDrafted': cube.drafts,
+      'timesViewed': cube.page_views + cube.card_list_views
+      }
+    }
   cube_manager.increment_drafts(cube_id)
   return jsonify(response)
 

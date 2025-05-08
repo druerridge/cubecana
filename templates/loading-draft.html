@@ -23,19 +23,20 @@
     {% include 'shared/content_header.html' %}
     
     <h1 id="cube-title">Loading title...</h1>
+    <span class="cards" style="white-space: nowrap;">( <span id="element-cards" >Card Count...</span> <img src="/static/img/deck-of-cards.png" alt="Card Count (deck of cards)" height="14px"/> <span id="element-times-viewed" >Times Viewed...</span> <img src="/static/img/eye.png" alt="Times Drafted (hand of cards)" height="14px"/> <span id="element-times-drafted" >Times drafted</span> <img src="/static/img/hand-of-cards.png" alt="Times Drafted (hand of cards)" height="14px"/> ) </span><br />
     <p id="author-text">Loading author...</p>
 
     <div id="loading-text">
         Loading
     </div>
-    <br />
 
+    
     <div style="display: flex; justify-content: center;">
         <div id="instructions">
             <p>After clicking below, press "Start" on draftmancer to begin.</p>
         </div>
     </div>
-    
+   
     <button id="draft-now-button" class="action-button" disabled>Draft Now</button> <br />
     <button id="view-list-button" class="action-button" disabled>Inspect List</button>
     

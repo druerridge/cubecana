@@ -100,6 +100,8 @@ class CubeListEntry:
   author: str
   lastUpdatedEpochSeconds: str
   id: str
+  timesDrafted: int
+  timesViewed: int
   
   def toJSON(self):
     return json.dumps(

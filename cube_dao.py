@@ -79,7 +79,6 @@ class CubeDao:
         finally:
             session.close()
 
-
     def increment_card_list_views(self, cube_id: bytes) -> None:
         session = self.get_session()
         try:
@@ -174,14 +173,18 @@ class CubeDao:
             session.close()
         return cube
 
-    def get_cubecana_cubes_paginated_by(self, page: int, per_page: int, sort: api.SortType, order: api.OrderType) -> List[DbCubecanaCube]:
+    def get_cubecana_cubes(self, page: int, per_page: int, sort: api.SortType, order: api.OrderType, tags: Optional[List[str]] = None) -> List[DbCubecanaCube]:
         session = self.get_session()
         sort_column = API_SORT_TYPE_TO_COLUMN[sort]
         try:
+            query = session.query(DbCubecanaCube)
+            if tags!= None and len(tags) > 0:
+                query = query.filter(DbCubecanaCube.tags.contains(tags))
             if order == api.OrderType.DESC:
-                cubes = session.query(DbCubecanaCube).order_by(sort_column.desc()).offset((page - 1) * per_page).limit(per_page).all()
+                query = query.order_by(sort_column.desc())
             else:
-                cubes = session.query(DbCubecanaCube).order_by(sort_column.asc()).offset((page - 1) * per_page).limit(per_page).all()
+                query = query.order_by(sort_column.asc())
+            cubes = query.offset((page - 1) * per_page).limit(per_page).all()
             return cubes
         except Exception as e:
             session.rollback()

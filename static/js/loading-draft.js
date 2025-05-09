@@ -16,6 +16,7 @@ const authorText = document.getElementById('author-text');
 const cardCount = document.getElementById("element-cards")
 const timesViewed = document.getElementById("element-times-viewed")
 const timesDrafted = document.getElementById("element-times-drafted")
+
 const cubeDraftmancerUrl = `/api/cube/${cubeId}/draftmancerFile`
 const cubeInspectListUrl = `/cube/${cubeId}/inspect-list`
 

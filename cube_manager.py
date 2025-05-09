@@ -13,8 +13,8 @@ class CubeManager:
     def get_cube_count(self):
        return cube_dao.get_cubecana_cube_count()
 
-    def get_cubes(self, page: int = 1, per_page: int = 25, sort = api.SortType.RANK, order = api.OrderType.DESC):
-        paginated_db_cubecana_cubes: List[DbCubecanaCube] = cube_dao.get_cubecana_cubes_paginated_by(page, per_page, sort, order)
+    def get_cubes(self, page: int = 1, per_page: int = 25, sort = api.SortType.RANK, order = api.OrderType.DESC, tags: List[str] = None) -> List[api.CubeListEntry]:
+        paginated_db_cubecana_cubes: List[DbCubecanaCube] = cube_dao.get_cubecana_cubes(page, per_page, sort, order, tags)
         paginated_cubes = [from_db_cubecana_cube(dbcube) for dbcube in paginated_db_cubecana_cubes]
         paginated_cube_list_entries: api.CubeListEntry = [cube.to_cube_list_entry() for cube in paginated_cubes]
         return paginated_cube_list_entries

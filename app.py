@@ -199,7 +199,12 @@ def get_cubes():
   per_page = min(int(request.args.get('per_page', 10)), 100)
   sort = request.args.get('sort', api.SortType.RANK)
   order = request.args.get('order', api.OrderType.DESC)
-  paginated_cube_list_entries = cube_manager.get_cubes(page, per_page, sort, order)
+  print("getlist")
+  print(request.args.get('tags', None))
+  tags = None
+  if 'tags' in request.args and len(request.args.getlist('tags')) > 0:
+    tags = request.args.getlist('tags')
+  paginated_cube_list_entries = cube_manager.get_cubes(page, per_page, sort, order, tags)
   response = {'cubes': paginated_cube_list_entries, 'totalCubes': cube_manager.get_cube_count()}
   return jsonify(response)
 

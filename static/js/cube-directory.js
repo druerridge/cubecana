@@ -86,6 +86,12 @@ if (orderTypeParam) {
     orderOptions.value = order;
 }
 
+let tagsToFilterBy = null;
+const tagsToFilterByParam = new URLSearchParams(window.location.search).get('tags');
+if (tagsToFilterByParam) {
+    tagsToFilterBy = tagsToFilterByParam;
+}
+
 function updatePagination(totalPages) {
     pageNumbers.innerHTML = `Page ${currentPage} of ${totalPages}`;
 
@@ -108,7 +114,14 @@ orderOptions.addEventListener('change', () => {
 });
 
 function fetchCubes(page, perPage, sort, order) {
-    const url = `${window.location.origin}/api/cube?page=${page}&per_page=${perPage}&sort=${sort}&order=${order}`;
+    const url = new URL(`${window.location.origin}/api/cube`);
+    url.searchParams.append('page', page);
+    url.searchParams.append('per_page', perPage);
+    url.searchParams.append('sort', sort);
+    url.searchParams.append('order', order);
+    if (tagsToFilterBy) {
+        url.searchParams.append('tags', tagsToFilterBy);
+    }
     request(url, null, onRetrieveCubesSuccess, null, 'GET');
 }
 

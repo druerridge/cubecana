@@ -199,8 +199,6 @@ def get_cubes():
   per_page = min(int(request.args.get('per_page', 10)), 100)
   sort = request.args.get('sort', api.SortType.RANK)
   order = request.args.get('order', api.OrderType.DESC)
-  print("getlist")
-  print(request.args.get('tags', None))
   tags = None
   if 'tags' in request.args and len(request.args.getlist('tags')) > 0:
     tags = request.args.getlist('tags')

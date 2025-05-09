@@ -18,7 +18,8 @@ class DraftmancerSettings:
   name: str = "Custom Cube"
   cardBack: str = "https://wiki.mushureport.com/images/thumb/d/d7/Card_Back_official.png/450px-Card_Back_official.png"
   withReplacement: bool = False
-  
+  # colorBalance: bool = False # do I need to add this back in?
+
   def toJSON(self):
     return json.dumps(
         self,

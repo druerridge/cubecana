@@ -36,8 +36,9 @@ class CubeManager:
                 card_list_name=api_create_cube.name,
                 boosters_per_player=api_create_cube.cubeSettings.boostersPerPlayer,
                 cards_per_booster=api_create_cube.cubeSettings.cardsPerBooster,
-                power_band=api_create_cube.cubeSettings.powerBand
-            )
+                power_band=api_create_cube.cubeSettings.powerBand,
+                author=api_create_cube.author,
+            ),
         )
         db_cubecana_cube = to_db_cubecana_cube(new_cube)
         cube_dao.create_cubecana_cube(db_cubecana_cube)
@@ -96,6 +97,7 @@ class CubeManager:
                 boosters_per_player=api_edit_cube.cubeSettings.boostersPerPlayer,
                 cards_per_booster=api_edit_cube.cubeSettings.cardsPerBooster,
                 power_band=api_edit_cube.cubeSettings.powerBand,
+                author=api_edit_cube.author,
             ),
         )
         db_cubecana_cube = to_db_cubecana_cube(updated_cube)

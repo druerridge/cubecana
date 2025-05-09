@@ -99,6 +99,7 @@ def from_db_cubecana_cube(db_cube: DbCubecanaCube) -> CubecanaCube:
             set_card_colors=db_cube.set_card_colors,
             color_balance_packs=db_cube.color_balance_packs,
             with_replacement=db_cube.with_replacement,
-            power_band=db_cube.power_band
+            power_band=db_cube.power_band,
+            author=db_cube.author
         )
     )

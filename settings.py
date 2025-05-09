@@ -6,7 +6,7 @@ POWER_BAND_RETAIL: str = "RETAIL"
 POWER_BAND_NARROW_MEDIUM: str = "NARROW_MEDIUM"
 
 class Settings:
-    def __init__(self, boosters_per_player=4, card_list_name='custom_cube', cards_per_booster=12, set_card_colors=False, color_balance_packs=False, with_replacement=False, franchise_to_color=False, power_band=POWER_BAND_MAX):
+    def __init__(self, boosters_per_player=4, card_list_name='custom_cube', cards_per_booster=12, set_card_colors=False, color_balance_packs=False, with_replacement=False, franchise_to_color=False, power_band=POWER_BAND_MAX, author: str = None):
         self.boosters_per_player = int(boosters_per_player)
         self.card_list_name = card_list_name
         self.cards_per_booster = int(cards_per_booster)
@@ -15,11 +15,16 @@ class Settings:
         self.with_replacement = bool(with_replacement)
         self.franchise_to_color = bool(franchise_to_color)
         self.power_band = power_band
+        self.author = author
 
     def to_draftmancer_settings(self):
+        if self.author:
+            name = f"{self.card_list_name} by {self.author}"
+        else:
+            name = self.card_list_name
         draftmancer_settings = {
             'boostersPerPlayer': self.boosters_per_player,
-            'name': self.card_list_name,
+            'name': name,
             'cardBack': 'https://wiki.mushureport.com/images/thumb/d/d7/Card_Back_official.png/450px-Card_Back_official.png',
             'withReplacement': self.with_replacement
         }

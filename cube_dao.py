@@ -58,8 +58,8 @@ class CubeDao:
         # Create a connection pool
         self.engine = create_engine(
             self.db_url,
-            pool_size=4,
-            max_overflow=1,
+            pool_size=1,
+            max_overflow=4,
             pool_timeout=30,
             pool_recycle=900,
             pool_pre_ping=True

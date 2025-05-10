@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 from typing import List, Optional
+from MySQLdb import OperationalError
 from sqlalchemy import create_engine, Column, String, Integer, Text, JSON
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
@@ -14,6 +15,7 @@ MAX_CARD_LIST_LENGTH = 80000  # MIGHT have to update the DB if you change this..
 PAGE_VIEW_COEFFICIENT = 1
 LIST_VIEW_COEFFICIENT = 1
 DRAFT_COEFFICIENT = 5 
+OPERATIONAL_ERROR_RETRIES = 1
 
 class DbCubecanaCube(Base):
     __tablename__ = 'cubecana_cubes'
@@ -42,7 +44,6 @@ API_SORT_TYPE_TO_COLUMN = {
     api.SortType.DATE: DbCubecanaCube.last_updated_epoch_seconds,
 }
 
-
 class CubeDao:
     def __init__(self):
         creds_file = Path('creds/creds.json')
@@ -56,11 +57,11 @@ class CubeDao:
 
         # Create a connection pool
         self.engine = create_engine(
-            self.db_url, 
-            pool_size=1, 
-            max_overflow=5, 
-            pool_timeout=30, 
-            pool_recycle=900, 
+            self.db_url,
+            pool_size=4,
+            max_overflow=1,
+            pool_timeout=30,
+            pool_recycle=900,
             pool_pre_ping=True
         )
         self.Session = scoped_session(sessionmaker(bind=self.engine))
@@ -68,62 +69,73 @@ class CubeDao:
     def get_session(self):
         return self.Session()
 
-    def create_cubecana_cube(self, cube: DbCubecanaCube) -> None:
-        session = self.get_session()
+    def execute_with_retry(self, operation, retries_attempted=0, *args, **kwargs):
+        session = None
         try:
-            session.add(cube)
-            session.commit()
-        except Exception as e:
+            session = self.get_session()
+            return operation(session, *args, **kwargs)
+        except OperationalError as e:
             session.rollback()
+            session.close()
+            session = None
+            print("OperationalError occurred, retrying with a new session...")
+            if retries_attempted < OPERATIONAL_ERROR_RETRIES:
+                return self.execute_with_retry(operation, retries_attempted + 1, *args, **kwargs)
+            else:
+                print("Max retries reached, raising exception.")
+                raise e
+        except Exception as e:
+            if session:
+                session.rollback()
             raise e
         finally:
-            session.close()
+            if session:
+                session.close()
 
     def increment_card_list_views(self, cube_id: bytes) -> None:
-        session = self.get_session()
-        try:
+        def operation(session, cube_id):
             cube = session.query(DbCubecanaCube).filter(DbCubecanaCube.id == cube_id).first()
             if cube:
                 cube.card_list_views += 1
-                cube.popularity = cube.drafts * DRAFT_COEFFICIENT + cube.card_list_views * LIST_VIEW_COEFFICIENT + cube.page_views * PAGE_VIEW_COEFFICIENT
+                cube.popularity = (
+                    cube.drafts * DRAFT_COEFFICIENT +
+                    cube.card_list_views * LIST_VIEW_COEFFICIENT +
+                    cube.page_views * PAGE_VIEW_COEFFICIENT
+                )
                 session.commit()
-        except Exception as e:
-            session.rollback()
-            raise e
-        finally:
-            session.close()
+
+        self.execute_with_retry(operation, cube_id=cube_id)
 
     def increment_page_views(self, cube_id: bytes) -> None:
-        session = self.get_session()
-        try:
+        def operation(session, cube_id):
             cube = session.query(DbCubecanaCube).filter(DbCubecanaCube.id == cube_id).first()
             if cube:
                 cube.page_views += 1
-                cube.popularity = cube.drafts * DRAFT_COEFFICIENT + cube.card_list_views * LIST_VIEW_COEFFICIENT + cube.page_views * PAGE_VIEW_COEFFICIENT
+                cube.popularity = (
+                    cube.drafts * DRAFT_COEFFICIENT +
+                    cube.card_list_views * LIST_VIEW_COEFFICIENT +
+                    cube.page_views * PAGE_VIEW_COEFFICIENT
+                )
                 session.commit()
-        except Exception as e:
-            session.rollback()
-            raise e
-        finally:
-            session.close()
+
+        self.execute_with_retry(operation, cube_id=cube_id)
 
     def increment_drafts(self, cube_id: bytes) -> None:
-        session = self.get_session()
-        try:
+        def operation(session, cube_id):
             cube = session.query(DbCubecanaCube).filter(DbCubecanaCube.id == cube_id).first()
             if cube:
                 cube.drafts += 1
-                cube.popularity = cube.drafts * DRAFT_COEFFICIENT + cube.card_list_views * LIST_VIEW_COEFFICIENT + cube.page_views * PAGE_VIEW_COEFFICIENT
+                cube.popularity = (
+                    cube.drafts * DRAFT_COEFFICIENT +
+                    cube.card_list_views * LIST_VIEW_COEFFICIENT +
+                    cube.page_views * PAGE_VIEW_COEFFICIENT
+                )
                 session.commit()
-        except Exception as e:
-            session.rollback()
-            raise e
-        finally:
-            session.close()
-    
+
+        self.execute_with_retry(operation, cube_id=cube_id)
+
     def update_cubecana_cube(self, cube_id: bytes, updated_cube: DbCubecanaCube) -> None:
-        session = self.get_session()
-        try:
+        def operation(session, cube_id, updated_cube: DbCubecanaCube):
             cube = session.query(DbCubecanaCube).filter(DbCubecanaCube.id == cube_id).first()
             if cube:
                 cube.name = updated_cube.name
@@ -141,67 +153,45 @@ class CubeDao:
                 cube.power_band = updated_cube.power_band
                 cube.card_list_views = updated_cube.card_list_views
                 cube.page_views = updated_cube.page_views          
-                cube.drafts = updated_cube.drafts                  
+                cube.drafts = updated_cube.drafts 
                 session.commit()
-        except Exception as e:
-            session.rollback()
-            raise e
-        finally:
-            session.close()
+
+        self.execute_with_retry(operation, cube_id=cube_id, updated_cube=updated_cube)
 
     def delete_cubecana_cube(self, cube_id: bytes) -> None:
-        session = self.get_session()
-        try:
+        def operation(session, cube_id):
             cube = session.query(DbCubecanaCube).filter(DbCubecanaCube.id == cube_id).first()
             if cube:
                 session.delete(cube)
                 session.commit()
-        except Exception as e:
-            session.rollback()
-            raise e
-        finally:
-            session.close()
+
+        self.execute_with_retry(operation, cube_id=cube_id)
+
 
     def get_cubecana_cube_by_id(self, cube_id: bytes) -> Optional[DbCubecanaCube]:
-        session = self.get_session()
-        try:
-            cube = session.query(DbCubecanaCube).filter(DbCubecanaCube.id == cube_id).first()
-        except Exception as e:
-            session.rollback()
-            raise e
-        finally:
-            session.close()
-        return cube
+        def operation(session, cube_id):
+            return session.query(DbCubecanaCube).filter(DbCubecanaCube.id == cube_id).first()
 
+        return self.execute_with_retry(operation, cube_id=cube_id)
+    
     def get_cubecana_cubes(self, page: int, per_page: int, sort: api.SortType, order: api.OrderType, tags: Optional[List[str]] = None) -> List[DbCubecanaCube]:
-        session = self.get_session()
-        sort_column = API_SORT_TYPE_TO_COLUMN[sort]
-        try:
+        def operation(session, page, per_page, sort, order, tags):
+            sort_column = API_SORT_TYPE_TO_COLUMN[sort]
             query = session.query(DbCubecanaCube)
-            if tags!= None and len(tags) > 0:
+            if tags is not None and len(tags) > 0:
                 query = query.filter(DbCubecanaCube.tags.contains(tags))
             if order == api.OrderType.DESC:
                 query = query.order_by(sort_column.desc())
             else:
                 query = query.order_by(sort_column.asc())
-            cubes = query.offset((page - 1) * per_page).limit(per_page).all()
-            return cubes
-        except Exception as e:
-            session.rollback()
-            raise e
-        finally:
-            session.close()
+            return query.offset((page - 1) * per_page).limit(per_page).all()
+
+        return self.execute_with_retry(operation, page=page, per_page=per_page, sort=sort, order=order, tags=tags)
 
     def get_cubecana_cube_count(self) -> int:
-        session = self.get_session()
-        try:
-            count = session.query(DbCubecanaCube).count()
-        except Exception as e:
-            session.rollback()
-            raise e
-        finally:
-            session.close()
-        return count
+        def operation(session):
+            return session.query(DbCubecanaCube).count()
 
-
+        return self.execute_with_retry(operation)
+    
 cube_dao: CubeDao = CubeDao()

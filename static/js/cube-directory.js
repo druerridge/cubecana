@@ -7,13 +7,38 @@ const orderOptions = document.getElementById('orderOptions');
 const pageNumbers = document.getElementById('page-numbers');
 const prevPage = document.getElementById('prev-page');
 const nextPage = document.getElementById('next-page');
+const filtersContainer = document.getElementById('filters-container');
+
+function renderActiveFilters() {
+    filtersContainer.innerHTML = '';
+    if (tagsToFilterBy && tagsToFilterBy.length > 0 && tagsToFilterBy[0] !== ',') {
+        tagsToFilterBy.forEach(tag => {
+            const filterElement = document.createElement('span');
+            filterElement.style.marginRight = '10px';
+            filterElement.style.padding = '5px';
+            filterElement.style.border = '1px solid gray';
+            filterElement.style.borderRadius = '3px';
+            filterElement.style.backgroundColor = 'lightgray';
+            filterElement.style.cursor = 'pointer';
+
+            filterElement.textContent = `${tag} ✕`;
+            filterElement.addEventListener('click', () => {
+                tagsToFilterBy = tagsToFilterBy.filter(item => item !== tag);
+                currentPage = 1;
+                refetchPage();
+            });
+
+            filtersContainer.appendChild(filterElement);
+        });
+    }
+}
 
 function populateCubes(cubes) {
     container.innerHTML = '';
     cubes.forEach(cube => {
         if ("content" in document.createElement("template")) {
             const template = document.getElementById("cube-list-element-template");
-            const cubeDraftLink = `${window.location.origin}/cube/${cube.id}/draft`
+            const cubeDraftLink = `${window.location.origin}/cube/${cube.id}/draft`;
 
             let clone = template.content.cloneNode(true);
             clone.getElementById("element-name").textContent = cube.name;
@@ -46,17 +71,28 @@ function populateCubes(cubes) {
                 'GET');
             });
             clone.getElementById("element-last-updated").textContent = "last updated: " + new Date(cube.lastUpdatedEpochSeconds * 1000).toDateString();
-            let elementTags = clone.getElementById("element-tags")
+            let elementTags = clone.getElementById("element-tags");
             cube.tags.forEach(tag => {
                 let tagElement = document.createElement("span");
                 tagElement.classList.add("cube-tag");
                 tagElement.textContent = tag;
+                tagElement.addEventListener('click', () => {
+                    if (!tagsToFilterBy) {
+                        tagsToFilterBy = [];
+                    } 
+                    if (!tagsToFilterBy.includes(tag)) {
+                        tagsToFilterBy.push(tag);
+                        currentPage = 1;
+                        refetchPage();
+                    }
+                });
                 elementTags.appendChild(tagElement);
             });
             loadingText.disabled = true;
             container.appendChild(clone);
         }
     });
+    renderActiveFilters();
 }
 
 let totalPages = -1;
@@ -89,7 +125,7 @@ if (orderTypeParam) {
 let tagsToFilterBy = null;
 const tagsToFilterByParam = new URLSearchParams(window.location.search).get('tags');
 if (tagsToFilterByParam) {
-    tagsToFilterBy = tagsToFilterByParam;
+    tagsToFilterBy = new URL(window.location.href).searchParams.getAll('tags');
 }
 
 function updatePagination(totalPages) {
@@ -115,20 +151,36 @@ orderOptions.addEventListener('change', () => {
     }
 });
 
+function setSearchParams(searchParams) {
+    let keys = [];
+    searchParams.keys().forEach((key) => {
+        keys.push(key);
+    });
+    keys.forEach((key) => {      
+        searchParams.delete(key);
+    });
+    
+    searchParams.append('page', currentPage);
+    searchParams.append('per_page', perPage);
+    searchParams.append('sort', sort);
+    searchParams.append('order', order);
+    if (tagsToFilterBy && tagsToFilterBy.length > 0 && tagsToFilterBy[0] !== ',') {
+        tagsToFilterBy.forEach((tag) => {
+            searchParams.append('tags', tag);
+        });
+    }
+}
+
 function fetchCubes(page, perPage, sort, order) {
     const url = new URL(`${window.location.origin}/api/cube`);
-    url.searchParams.append('page', page);
-    url.searchParams.append('per_page', perPage);
-    url.searchParams.append('sort', sort);
-    url.searchParams.append('order', order);
-    if (tagsToFilterBy) {
-        url.searchParams.append('tags', tagsToFilterBy);
-    }
+    setSearchParams(url.searchParams);
     request(url, null, onRetrieveCubesSuccess, null, 'GET');
 }
 
 function refetchPage() {
-    window.location.search = `?page=${currentPage}&per_page=${perPage}&sort=${sort}&order=${order}`;
+    let searchParams = new URLSearchParams(window.location.search);
+    setSearchParams(searchParams);
+    window.location.search = searchParams.toString();
 }
 
 prevPage.addEventListener('click', () => {

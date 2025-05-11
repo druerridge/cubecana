@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 from typing import List, Optional
 from MySQLdb import OperationalError
-from sqlalchemy import create_engine, Column, String, Integer, Text, JSON
+from sqlalchemy import create_engine, Column, String, Integer, Text, JSON, func, literal
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 from sqlalchemy.dialects.mysql import BINARY
@@ -184,8 +184,8 @@ class CubeDao:
         def operation(session, page, per_page, sort, order, tags):
             sort_column = API_SORT_TYPE_TO_COLUMN[sort]
             query = session.query(DbCubecanaCube)
-            if tags is not None and len(tags) > 0:
-                query = query.filter(DbCubecanaCube.tags.contains(tags))
+            if tags is not None and len(tags) > 0 and tags[0] != "":
+                query = query.filter(DbCubecanaCube.tags.isnot(None)).filter(func.json_contains(DbCubecanaCube.tags, json.dumps(tags)))
             if order == api.OrderType.DESC:
                 query = query.order_by(sort_column.desc())
             else:

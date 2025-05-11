@@ -44,6 +44,10 @@
             margin-right: 5px;
             font-size: 12px;
         }
+        .cube-tag:hover {
+            cursor: pointer;
+            background-color: darkgray;
+        }
         .name {
             text-align: left;
             vertical-align: top;
@@ -141,6 +145,11 @@
     <div id="errorText" style="color: red; display: none; background-color: lightcoral; width: 100%; padding: 10px;" disabled>An error occurred. Please try again.</div>
 
     <h1 style="display: inline-block;">Lorcana Cube Directory (Beta)</h1><br />
+
+    <div id="active-filters" style="margin-top: 10px;">
+        <span id="active-filters-label" style="font-weight: bold;">Active Filters:</span>
+        <div id="filters-container" style="display: inline-block; margin-left: 10px;"></div>
+    </div>
 
     <a href="add-cube"><button id="add-cube-btn" class="action-button">Add Cube</button></a>
     <a id="old-cube-dir" href="https://www.dropbox.com/scl/fo/qjgp4iv5c2kaxetpvft9f/ADd721en5FnrK4nlLgba-LM?rlkey=twujmqnrqkmwjvd2yk5x47hxr&e=3&dl=0">Old Cube Directory</a>

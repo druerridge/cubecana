@@ -74,6 +74,15 @@ class CubeDao:
         try:
             session = self.get_session()
             return operation(session, *args, **kwargs)
+        except OperationalError as e:
+            session.close()
+            session = None
+            if retries_attempted < OPERATIONAL_ERROR_RETRIES:
+                print(f"OperationalError: {e}, retrying...")
+                return self.execute(operation, retries_attempted + 1, *args, **kwargs)
+            else:
+                print("Max retries reached, raising exception")
+                raise e
         except Exception as e:
             print("Error executing db query")
             print(e)

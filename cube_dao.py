@@ -58,10 +58,10 @@ class CubeDao:
         # Create a connection pool
         self.engine = create_engine(
             self.db_url,
-            pool_size=1,
-            max_overflow=4,
+            pool_size=3,
+            max_overflow=2,
             pool_timeout=30,
-            pool_recycle=900,
+            pool_recycle=1800,
             pool_pre_ping=True
         )
         self.Session = scoped_session(sessionmaker(bind=self.engine))
@@ -69,24 +69,14 @@ class CubeDao:
     def get_session(self):
         return self.Session()
 
-    def execute_with_retry(self, operation, retries_attempted=0, *args, **kwargs):
+    def execute(self, operation, retries_attempted=0, *args, **kwargs):
         session = None
         try:
             session = self.get_session()
             return operation(session, *args, **kwargs)
-        except OperationalError as e:
-            session.rollback()
-            session.close()
-            session = None
-            print("OperationalError occurred, retrying with a new session...")
-            if retries_attempted < OPERATIONAL_ERROR_RETRIES:
-                return self.execute_with_retry(operation, retries_attempted + 1, *args, **kwargs)
-            else:
-                print("Max retries reached, raising exception.")
-                raise e
         except Exception as e:
-            if session:
-                session.rollback()
+            print("Error executing db query")
+            print(e)
             raise e
         finally:
             if session:
@@ -104,7 +94,7 @@ class CubeDao:
                 )
                 session.commit()
 
-        self.execute_with_retry(operation, cube_id=cube_id)
+        self.execute(operation, cube_id=cube_id)
 
     def increment_page_views(self, cube_id: bytes) -> None:
         def operation(session, cube_id):
@@ -118,7 +108,7 @@ class CubeDao:
                 )
                 session.commit()
 
-        self.execute_with_retry(operation, cube_id=cube_id)
+        self.execute(operation, cube_id=cube_id)
 
     def increment_drafts(self, cube_id: bytes) -> None:
         def operation(session, cube_id):
@@ -132,7 +122,7 @@ class CubeDao:
                 )
                 session.commit()
 
-        self.execute_with_retry(operation, cube_id=cube_id)
+        self.execute(operation, cube_id=cube_id)
 
     def update_cubecana_cube(self, cube_id: bytes, updated_cube: DbCubecanaCube) -> None:
         def operation(session, cube_id, updated_cube: DbCubecanaCube):
@@ -156,7 +146,7 @@ class CubeDao:
                 cube.drafts = updated_cube.drafts 
                 session.commit()
 
-        self.execute_with_retry(operation, cube_id=cube_id, updated_cube=updated_cube)
+        self.execute(operation, cube_id=cube_id, updated_cube=updated_cube)
 
     def delete_cubecana_cube(self, cube_id: bytes) -> None:
         def operation(session, cube_id):
@@ -165,14 +155,14 @@ class CubeDao:
                 session.delete(cube)
                 session.commit()
 
-        self.execute_with_retry(operation, cube_id=cube_id)
+        self.execute(operation, cube_id=cube_id)
 
 
     def get_cubecana_cube_by_id(self, cube_id: bytes) -> Optional[DbCubecanaCube]:
         def operation(session, cube_id):
             return session.query(DbCubecanaCube).filter(DbCubecanaCube.id == cube_id).first()
 
-        return self.execute_with_retry(operation, cube_id=cube_id)
+        return self.execute(operation, cube_id=cube_id)
     
     def get_cubecana_cubes(self, page: int, per_page: int, sort: api.SortType, order: api.OrderType, tags: Optional[List[str]] = None) -> List[DbCubecanaCube]:
         def operation(session, page, per_page, sort, order, tags):
@@ -186,12 +176,12 @@ class CubeDao:
                 query = query.order_by(sort_column.asc())
             return query.offset((page - 1) * per_page).limit(per_page).all()
 
-        return self.execute_with_retry(operation, page=page, per_page=per_page, sort=sort, order=order, tags=tags)
+        return self.execute(operation, page=page, per_page=per_page, sort=sort, order=order, tags=tags)
 
     def get_cubecana_cube_count(self) -> int:
         def operation(session):
             return session.query(DbCubecanaCube).count()
 
-        return self.execute_with_retry(operation)
+        return self.execute(operation)
     
 cube_dao: CubeDao = CubeDao()

@@ -1,8 +1,7 @@
 import json
 from pathlib import Path
 from typing import List, Optional
-from MySQLdb import OperationalError
-from sqlalchemy import create_engine, Column, String, Integer, Text, JSON, func, literal
+from sqlalchemy import create_engine, Column, String, Integer, Text, JSON, func, exc
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 from sqlalchemy.dialects.mysql import BINARY
@@ -74,7 +73,7 @@ class CubeDao:
         try:
             session = self.get_session()
             return operation(session, *args, **kwargs)
-        except OperationalError as e:
+        except exc.OperationalError as e:
             session.close()
             session = None
             if retries_attempted < OPERATIONAL_ERROR_RETRIES:

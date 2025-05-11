@@ -102,6 +102,7 @@ function updatePagination(totalPages) {
 sortOptions.addEventListener('change', () => {
     if (sortOptions.value != sort) {
         sort = sortOptions.value;
+        currentPage = 1;
         refetchPage();
     }
 });
@@ -109,6 +110,7 @@ sortOptions.addEventListener('change', () => {
 orderOptions.addEventListener('change', () => {
     if (orderOptions.value != order) {
         order = orderOptions.value;
+        currentPage = 1;
         refetchPage();
     }
 });

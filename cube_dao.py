@@ -124,6 +124,13 @@ class CubeDao:
 
         self.execute(operation, cube_id=cube_id)
 
+    def create_cubecana_cube(self, cube: DbCubecanaCube) -> None:
+        def operation(session, cube: DbCubecanaCube):
+            session.add(cube)
+            session.commit()
+
+        self.execute(operation, cube=cube)
+
     def update_cubecana_cube(self, cube_id: bytes, updated_cube: DbCubecanaCube) -> None:
         def operation(session, cube_id, updated_cube: DbCubecanaCube):
             cube = session.query(DbCubecanaCube).filter(DbCubecanaCube.id == cube_id).first()

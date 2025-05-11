@@ -76,16 +76,20 @@ function populateCubes(cubes) {
                 let tagElement = document.createElement("span");
                 tagElement.classList.add("cube-tag");
                 tagElement.textContent = tag;
-                tagElement.addEventListener('click', () => {
-                    if (!tagsToFilterBy) {
-                        tagsToFilterBy = [];
-                    } 
-                    if (!tagsToFilterBy.includes(tag)) {
-                        tagsToFilterBy.push(tag);
-                        currentPage = 1;
-                        refetchPage();
-                    }
-                });
+                if (!tag.startsWith('Power:')) {
+                    tagElement.classList.add("clickable-cube-tag");
+                
+                    tagElement.addEventListener('click', () => {
+                        if (!tagsToFilterBy) {
+                            tagsToFilterBy = [];
+                        } 
+                        if (!tagsToFilterBy.includes(tag)) {
+                            tagsToFilterBy.push(tag);
+                            currentPage = 1;
+                            refetchPage();
+                        }
+                    });
+                }
                 elementTags.appendChild(tagElement);
             });
             loadingText.disabled = true;

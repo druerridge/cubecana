@@ -38,12 +38,19 @@ export function generateDraftmancerSession(CubeFile, tabToOpen, metadata) {
                 tabToOpen.close();
                 socket.disconnect();
             } else {
-                // Automatically disconnect once the user has joined the session
-                socket.once("sessionUsers", () => {
-                    socket.disconnect();
-                });
-                // Open Draftmancer in specified tab
-                tabToOpen.location.href = `${Domain}/?session=${SessionID}`;
+                function startDraftOnCompletion(responseData) {
+                    // Automatically disconnect bot once the human user has joined the session
+                    socket.once("sessionUsers", () => {
+                        socket.disconnect();
+                    });
+                    // Open Draftmancer in specified tab
+                    tabToOpen.location.href = `${Domain}/?session=${SessionID}`;
+                }
+                if (metadata.cubeId) {
+                    request(`/api/cube/${metadata.cubeId}/startDraft`,null,startDraftOnCompletion,startDraftOnCompletion,'POST');
+                } else if (metadata.setId) {
+                    request(`/api/retail_sets/${metadata.setId}/startDraft`,null,startDraftOnCompletion,startDraftOnCompletion,'POST');
+                }
             }
         });
     });

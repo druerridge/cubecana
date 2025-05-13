@@ -183,9 +183,18 @@ def get_retail_set_draftmancer_file(set_id:str):
       'cardsPerBooster': 12, 
       'boostersPerPlayer': 4, 
       'cubeName': set.name, 
-      'link': f"https://www.cubecana.com//api/retail_sets/{set_id}",
-      'author': "Ravensburger"}}
+      'link': f"https://www.cubecana.com/api/retail_sets/{set_id}",
+      'author': "Ravensburger",
+      'setId': set_id}}
   return jsonify(response)
+
+@app.route('/api/retail_sets/<string:set_id>/startDraft', methods=['POST'])
+def increment_retail_drafts_on_start(set_id:str):
+  set: api.RetailSet = retail_manager.get_set(set_id)
+  if not set:
+    return lcc_error.RetailSetNotFoundError("Retail set not found")
+  # TODO: keep a table for retail sets and increment it
+  return Response(200)
 
 # CUBE API ENDPOINTS
 
@@ -241,11 +250,19 @@ def get_cube_draftmancer_file(cube_id):
       'link': cube.link,
       'author': cube.author,
       'timesDrafted': cube.drafts,
-      'timesViewed': cube.page_views + cube.card_list_views
+      'timesViewed': cube.page_views + cube.card_list_views,
+      'cubeId': cube.id,
       }
     }
-  cube_manager.increment_drafts(cube_id)
   return jsonify(response)
+
+@app.route('/api/cube/<string:cube_id>/startDraft', methods=['POST'])
+def increment_cube_drafts_on_start(cube_id):
+  cube: CubecanaCube = cube_manager.get_cube(cube_id)
+  if not cube:
+    return lcc_error.CubeNotFoundError("Cube not found")
+  cube_manager.increment_drafts(cube_id)
+  return Response(status=200)
 
 @app.route('/api/cube/<string:cube_id>', methods=['GET'])
 def get_cube(cube_id):

@@ -1,6 +1,7 @@
 import create_template
 import lorcast_api as lorcana_api
 from settings import Settings
+from card_evaluations import card_evaluations_manager, CardEvaluationsManager
 
 rarity_to_frequency = {
     "Common": 60,
@@ -37,7 +38,7 @@ def generate_retail_draftmancer_file(id_to_tts_card, card_evaluations_file, sett
     id_to_api_card = lorcana_api.read_or_fetch_id_to_api_card()
     print("card_evaluations_file")
     print(card_evaluations_file)
-    id_to_rating = create_template.read_id_to_rating(card_evaluations_file)
+    id_to_rating = card_evaluations_manager.read_id_to_rating(card_evaluations_file)
     slot_name_to_slot = {
         'CommonSlotSteel': Slot("CommonSlotSteel", 1, []),
         'CommonSlotSapphire': Slot("CommonSlotSapphire", 1, []),

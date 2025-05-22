@@ -153,6 +153,12 @@ def to_draftmancer_rarity(lorcana_rarity):
 #         custom_card_list.append(custom_card)
 #     return custom_card_list
 
+def to_language_coded_image_uri(image_uri, language_code):
+    if language_code == "en":
+        return image_uri
+    else:
+        return image_uri.replace("en", language_code)
+
 def generate_custom_card_list(id_to_api_card: dict[str, ApiCard], 
                               id_to_rating: dict[str, int],
                               id_to_tts_card: dict[str, dict], 
@@ -172,7 +178,12 @@ def generate_custom_card_list(id_to_api_card: dict[str, ApiCard],
             'mana_cost': f'{{{ink_cost}}}',
             'type': 'Instant',
             'image_uris': {
-                'en': id_to_tts_card[id]['image_uri']
+                'en': to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'en'),
+                'fr': to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'fr'),
+                'de': to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'de'),
+                'it': to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'it'),
+                'ja': to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'ja'),
+                'zh': to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'zh'),
             },
             'rarity': to_draftmancer_rarity(api_card.rarity),
         }

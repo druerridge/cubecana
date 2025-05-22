@@ -5,7 +5,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-006?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-006?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-006?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-006?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-006?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-006?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-006?tts"
         },
         "rarity": "uncommon",
         "rating": 3
@@ -15,7 +20,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-008?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-008?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-008?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-008?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-008?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-008?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-008?tts"
         },
         "rarity": "uncommon",
         "rating": 3
@@ -25,7 +35,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-009?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-009?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-009?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-009?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-009?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-009?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-009?tts"
         },
         "rarity": "uncommon",
         "rating": 3
@@ -35,7 +50,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-013?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-013?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-013?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-013?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-013?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-013?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-013?tts"
         },
         "rarity": "uncommon",
         "rating": 4
@@ -45,7 +65,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-015?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-015?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-015?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-015?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-015?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-015?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-015?tts"
         },
         "rarity": "uncommon",
         "rating": 4
@@ -55,7 +80,12 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-022?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-022?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-022?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-022?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-022?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-022?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-022?tts"
         },
         "rarity": "uncommon",
         "rating": 3
@@ -65,7 +95,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-026?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-026?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-026?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-026?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-026?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-026?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-026?tts"
         },
         "rarity": "uncommon",
         "rating": 2
@@ -75,7 +110,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-029?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-029?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-029?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-029?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-029?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-029?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-029?tts"
         },
         "rarity": "uncommon",
         "rating": 2
@@ -85,7 +125,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-030?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-030?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-030?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-030?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-030?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-030?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-030?tts"
         },
         "rarity": "uncommon",
         "rating": 0
@@ -95,7 +140,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-035?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-035?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-035?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-035?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-035?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-035?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-035?tts"
         },
         "rarity": "uncommon",
         "rating": 4
@@ -105,7 +155,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-040?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-040?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-040?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-040?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-040?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-040?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-040?tts"
         },
         "rarity": "uncommon",
         "rating": 4
@@ -115,7 +170,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-043?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-043?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-043?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-043?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-043?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-043?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-043?tts"
         },
         "rarity": "uncommon",
         "rating": 4
@@ -125,7 +185,12 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-044?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-044?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-044?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-044?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-044?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-044?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-044?tts"
         },
         "rarity": "uncommon",
         "rating": 3
@@ -135,7 +200,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-050?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-050?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-050?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-050?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-050?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-050?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-050?tts"
         },
         "rarity": "uncommon",
         "rating": 3
@@ -145,7 +215,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-051?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-051?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-051?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-051?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-051?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-051?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-051?tts"
         },
         "rarity": "uncommon",
         "rating": 2
@@ -155,7 +230,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-057?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-057?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-057?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-057?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-057?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-057?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-057?tts"
         },
         "rarity": "uncommon",
         "rating": 3
@@ -165,7 +245,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-063?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-063?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-063?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-063?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-063?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-063?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-063?tts"
         },
         "rarity": "uncommon",
         "rating": 1
@@ -175,7 +260,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-066?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-066?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-066?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-066?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-066?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-066?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-066?tts"
         },
         "rarity": "uncommon",
         "rating": 1
@@ -185,7 +275,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-075?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-075?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-075?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-075?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-075?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-075?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-075?tts"
         },
         "rarity": "uncommon",
         "rating": 4
@@ -195,7 +290,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-080?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-080?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-080?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-080?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-080?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-080?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-080?tts"
         },
         "rarity": "uncommon",
         "rating": 3
@@ -205,7 +305,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-081?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-081?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-081?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-081?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-081?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-081?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-081?tts"
         },
         "rarity": "uncommon",
         "rating": 3
@@ -215,7 +320,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-082?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-082?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-082?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-082?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-082?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-082?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-082?tts"
         },
         "rarity": "uncommon",
         "rating": 2
@@ -225,7 +335,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-083?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-083?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-083?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-083?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-083?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-083?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-083?tts"
         },
         "rarity": "uncommon",
         "rating": 4
@@ -235,7 +350,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-086?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-086?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-086?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-086?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-086?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-086?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-086?tts"
         },
         "rarity": "uncommon",
         "rating": 2
@@ -245,7 +365,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-096?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-096?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-096?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-096?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-096?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-096?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-096?tts"
         },
         "rarity": "uncommon",
         "rating": 0
@@ -255,7 +380,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-099?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-099?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-099?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-099?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-099?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-099?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-099?tts"
         },
         "rarity": "uncommon",
         "rating": 0
@@ -265,7 +395,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-100?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-100?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-100?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-100?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-100?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-100?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-100?tts"
         },
         "rarity": "uncommon",
         "rating": 1
@@ -275,7 +410,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-103?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-103?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-103?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-103?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-103?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-103?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-103?tts"
         },
         "rarity": "uncommon",
         "rating": 1
@@ -285,7 +425,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-109?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-109?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-109?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-109?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-109?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-109?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-109?tts"
         },
         "rarity": "uncommon",
         "rating": 3
@@ -295,7 +440,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-110?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-110?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-110?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-110?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-110?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-110?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-110?tts"
         },
         "rarity": "uncommon",
         "rating": 3
@@ -305,7 +455,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-112?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-112?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-112?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-112?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-112?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-112?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-112?tts"
         },
         "rarity": "uncommon",
         "rating": 3
@@ -315,7 +470,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-115?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-115?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-115?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-115?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-115?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-115?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-115?tts"
         },
         "rarity": "uncommon",
         "rating": 2
@@ -325,7 +485,12 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-118?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-118?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-118?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-118?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-118?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-118?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-118?tts"
         },
         "rarity": "uncommon",
         "rating": 4
@@ -335,7 +500,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-123?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-123?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-123?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-123?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-123?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-123?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-123?tts"
         },
         "rarity": "uncommon",
         "rating": 3
@@ -345,7 +515,12 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-128?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-128?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-128?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-128?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-128?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-128?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-128?tts"
         },
         "rarity": "uncommon",
         "rating": 3
@@ -355,7 +530,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-132?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-132?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-132?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-132?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-132?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-132?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-132?tts"
         },
         "rarity": "uncommon",
         "rating": 4
@@ -365,7 +545,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-144?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-144?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-144?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-144?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-144?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-144?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-144?tts"
         },
         "rarity": "uncommon",
         "rating": 2
@@ -375,7 +560,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-145?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-145?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-145?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-145?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-145?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-145?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-145?tts"
         },
         "rarity": "uncommon",
         "rating": 4
@@ -385,7 +575,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-147?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-147?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-147?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-147?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-147?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-147?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-147?tts"
         },
         "rarity": "uncommon",
         "rating": 3
@@ -395,7 +590,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-149?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-149?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-149?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-149?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-149?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-149?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-149?tts"
         },
         "rarity": "uncommon",
         "rating": 3
@@ -405,7 +605,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-154?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-154?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-154?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-154?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-154?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-154?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-154?tts"
         },
         "rarity": "uncommon",
         "rating": 2
@@ -415,7 +620,12 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-155?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-155?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-155?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-155?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-155?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-155?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-155?tts"
         },
         "rarity": "uncommon",
         "rating": 4
@@ -425,7 +635,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-160?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-160?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-160?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-160?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-160?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-160?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-160?tts"
         },
         "rarity": "uncommon",
         "rating": 3
@@ -435,7 +650,12 @@
         "mana_cost": "{8}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-162?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-162?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-162?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-162?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-162?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-162?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-162?tts"
         },
         "rarity": "uncommon",
         "rating": 2
@@ -445,7 +665,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-167?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-167?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-167?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-167?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-167?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-167?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-167?tts"
         },
         "rarity": "uncommon",
         "rating": 3
@@ -455,7 +680,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-171?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-171?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-171?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-171?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-171?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-171?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-171?tts"
         },
         "rarity": "uncommon",
         "rating": 3
@@ -465,7 +695,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-177?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-177?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-177?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-177?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-177?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-177?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-177?tts"
         },
         "rarity": "uncommon",
         "rating": 3
@@ -475,7 +710,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-182?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-182?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-182?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-182?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-182?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-182?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-182?tts"
         },
         "rarity": "uncommon",
         "rating": 4
@@ -485,7 +725,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-183?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-183?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-183?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-183?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-183?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-183?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-183?tts"
         },
         "rarity": "uncommon",
         "rating": 3
@@ -495,7 +740,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-189?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-189?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-189?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-189?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-189?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-189?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-189?tts"
         },
         "rarity": "uncommon",
         "rating": 4
@@ -505,7 +755,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-195?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-195?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-195?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-195?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-195?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-195?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-195?tts"
         },
         "rarity": "uncommon",
         "rating": 2
@@ -515,7 +770,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-196?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-196?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-196?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-196?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-196?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-196?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-196?tts"
         },
         "rarity": "uncommon",
         "rating": 1
@@ -525,7 +785,12 @@
         "mana_cost": "{10}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-198?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-198?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-198?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-198?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-198?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-198?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-198?tts"
         },
         "rarity": "uncommon",
         "rating": 4
@@ -535,7 +800,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-201?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-201?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-201?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-201?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-201?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-201?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-201?tts"
         },
         "rarity": "uncommon",
         "rating": 1
@@ -545,7 +815,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-010?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-010?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-010?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-010?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-010?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-010?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-010?tts"
         },
         "rarity": "mythic",
         "rating": 4
@@ -555,7 +830,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-017?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-017?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-017?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-017?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-017?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-017?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-017?tts"
         },
         "rarity": "mythic",
         "rating": 4
@@ -565,7 +845,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-018?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-018?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-018?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-018?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-018?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-018?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-018?tts"
         },
         "rarity": "mythic",
         "rating": 4
@@ -575,7 +860,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-036?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-036?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-036?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-036?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-036?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-036?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-036?tts"
         },
         "rarity": "mythic",
         "rating": 5
@@ -585,7 +875,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-039?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-039?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-039?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-039?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-039?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-039?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-039?tts"
         },
         "rarity": "mythic",
         "rating": 3
@@ -595,7 +890,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-054?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-054?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-054?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-054?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-054?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-054?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-054?tts"
         },
         "rarity": "mythic",
         "rating": 3
@@ -605,7 +905,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-085?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-085?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-085?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-085?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-085?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-085?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-085?tts"
         },
         "rarity": "mythic",
         "rating": 2
@@ -615,7 +920,12 @@
         "mana_cost": "{9}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-087?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-087?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-087?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-087?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-087?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-087?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-087?tts"
         },
         "rarity": "mythic",
         "rating": 2
@@ -625,7 +935,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-092?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-092?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-092?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-092?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-092?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-092?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-092?tts"
         },
         "rarity": "mythic",
         "rating": 3
@@ -635,7 +950,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-106?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-106?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-106?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-106?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-106?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-106?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-106?tts"
         },
         "rarity": "mythic",
         "rating": 4
@@ -645,7 +965,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-119?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-119?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-119?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-119?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-119?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-119?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-119?tts"
         },
         "rarity": "mythic",
         "rating": 4
@@ -655,7 +980,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-121?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-121?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-121?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-121?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-121?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-121?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-121?tts"
         },
         "rarity": "mythic",
         "rating": 4
@@ -665,7 +995,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-138?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-138?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-138?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-138?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-138?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-138?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-138?tts"
         },
         "rarity": "mythic",
         "rating": 3
@@ -675,7 +1010,12 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-139?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-139?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-139?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-139?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-139?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-139?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-139?tts"
         },
         "rarity": "mythic",
         "rating": 3
@@ -685,7 +1025,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-140?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-140?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-140?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-140?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-140?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-140?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-140?tts"
         },
         "rarity": "mythic",
         "rating": 2
@@ -695,7 +1040,12 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-175?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-175?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-175?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-175?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-175?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-175?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-175?tts"
         },
         "rarity": "mythic",
         "rating": 4
@@ -705,7 +1055,12 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-186?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-186?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-186?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-186?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-186?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-186?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-186?tts"
         },
         "rarity": "mythic",
         "rating": 3
@@ -715,7 +1070,12 @@
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-193?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-193?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-193?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-193?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-193?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-193?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-193?tts"
         },
         "rarity": "mythic",
         "rating": 5
@@ -725,7 +1085,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-002?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-002?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-002?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-002?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-002?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-002?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-002?tts"
         },
         "rarity": "rare",
         "rating": 2
@@ -735,7 +1100,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-003?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-003?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-003?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-003?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-003?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-003?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-003?tts"
         },
         "rarity": "rare",
         "rating": 2
@@ -745,7 +1115,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-011?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-011?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-011?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-011?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-011?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-011?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-011?tts"
         },
         "rarity": "rare",
         "rating": 0
@@ -755,7 +1130,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-012?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-012?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-012?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-012?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-012?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-012?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-012?tts"
         },
         "rarity": "rare",
         "rating": 2
@@ -765,7 +1145,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-024?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-024?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-024?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-024?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-024?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-024?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-024?tts"
         },
         "rarity": "rare",
         "rating": 3
@@ -775,7 +1160,12 @@
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-028?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-028?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-028?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-028?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-028?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-028?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-028?tts"
         },
         "rarity": "rare",
         "rating": 4
@@ -785,7 +1175,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-031?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-031?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-031?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-031?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-031?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-031?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-031?tts"
         },
         "rarity": "rare",
         "rating": 0
@@ -795,7 +1190,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-034?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-034?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-034?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-034?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-034?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-034?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-034?tts"
         },
         "rarity": "rare",
         "rating": 3,
@@ -806,7 +1206,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-038?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-038?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-038?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-038?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-038?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-038?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-038?tts"
         },
         "rarity": "rare",
         "rating": 4
@@ -816,7 +1221,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-042?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-042?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-042?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-042?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-042?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-042?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-042?tts"
         },
         "rarity": "rare",
         "rating": 4
@@ -826,7 +1236,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-045?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-045?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-045?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-045?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-045?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-045?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-045?tts"
         },
         "rarity": "rare",
         "rating": 5
@@ -836,7 +1251,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-052?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-052?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-052?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-052?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-052?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-052?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-052?tts"
         },
         "rarity": "rare",
         "rating": 3
@@ -846,7 +1266,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-053?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-053?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-053?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-053?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-053?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-053?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-053?tts"
         },
         "rarity": "rare",
         "rating": 3
@@ -856,7 +1281,12 @@
         "mana_cost": "{10}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-061?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-061?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-061?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-061?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-061?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-061?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-061?tts"
         },
         "rarity": "rare",
         "rating": 3
@@ -866,7 +1296,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-064?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-064?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-064?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-064?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-064?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-064?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-064?tts"
         },
         "rarity": "rare",
         "rating": 1
@@ -876,7 +1311,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-068?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-068?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-068?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-068?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-068?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-068?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-068?tts"
         },
         "rarity": "rare",
         "rating": 3,
@@ -887,7 +1327,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-069?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-069?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-069?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-069?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-069?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-069?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-069?tts"
         },
         "rarity": "rare",
         "rating": 5
@@ -897,7 +1342,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-076?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-076?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-076?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-076?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-076?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-076?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-076?tts"
         },
         "rarity": "rare",
         "rating": 1
@@ -907,7 +1357,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-078?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-078?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-078?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-078?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-078?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-078?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-078?tts"
         },
         "rarity": "rare",
         "rating": 4
@@ -917,7 +1372,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-088?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-088?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-088?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-088?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-088?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-088?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-088?tts"
         },
         "rarity": "rare",
         "rating": 2
@@ -927,7 +1387,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-090?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-090?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-090?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-090?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-090?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-090?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-090?tts"
         },
         "rarity": "rare",
         "rating": 3
@@ -937,7 +1402,12 @@
         "mana_cost": "{8}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-095?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-095?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-095?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-095?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-095?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-095?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-095?tts"
         },
         "rarity": "rare",
         "rating": 2
@@ -947,7 +1417,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-097?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-097?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-097?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-097?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-097?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-097?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-097?tts"
         },
         "rarity": "rare",
         "rating": 4
@@ -957,7 +1432,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-102?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-102?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-102?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-102?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-102?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-102?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-102?tts"
         },
         "rarity": "rare",
         "rating": 3,
@@ -968,7 +1448,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-107?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-107?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-107?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-107?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-107?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-107?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-107?tts"
         },
         "rarity": "rare",
         "rating": 4
@@ -978,7 +1463,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-113?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-113?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-113?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-113?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-113?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-113?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-113?tts"
         },
         "rarity": "rare",
         "rating": 4
@@ -988,7 +1478,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-117?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-117?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-117?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-117?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-117?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-117?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-117?tts"
         },
         "rarity": "rare",
         "rating": 4
@@ -998,7 +1493,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-124?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-124?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-124?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-124?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-124?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-124?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-124?tts"
         },
         "rarity": "rare",
         "rating": 4
@@ -1008,7 +1508,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-127?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-127?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-127?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-127?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-127?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-127?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-127?tts"
         },
         "rarity": "rare",
         "rating": 4
@@ -1018,7 +1523,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-129?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-129?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-129?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-129?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-129?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-129?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-129?tts"
         },
         "rarity": "rare",
         "rating": 3
@@ -1028,7 +1538,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-131?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-131?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-131?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-131?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-131?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-131?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-131?tts"
         },
         "rarity": "rare",
         "rating": 1
@@ -1038,7 +1553,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-135?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-135?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-135?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-135?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-135?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-135?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-135?tts"
         },
         "rarity": "rare",
         "rating": 2,
@@ -1049,7 +1569,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-142?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-142?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-142?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-142?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-142?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-142?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-142?tts"
         },
         "rarity": "rare",
         "rating": 3
@@ -1059,7 +1584,12 @@
         "mana_cost": "{8}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-148?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-148?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-148?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-148?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-148?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-148?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-148?tts"
         },
         "rarity": "rare",
         "rating": 3
@@ -1069,7 +1599,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-152?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-152?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-152?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-152?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-152?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-152?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-152?tts"
         },
         "rarity": "rare",
         "rating": 3
@@ -1079,7 +1614,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-153?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-153?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-153?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-153?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-153?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-153?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-153?tts"
         },
         "rarity": "rare",
         "rating": 4
@@ -1089,7 +1629,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-159?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-159?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-159?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-159?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-159?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-159?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-159?tts"
         },
         "rarity": "rare",
         "rating": 3
@@ -1099,7 +1644,12 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-165?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-165?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-165?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-165?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-165?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-165?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-165?tts"
         },
         "rarity": "rare",
         "rating": 0
@@ -1109,7 +1659,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-166?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-166?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-166?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-166?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-166?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-166?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-166?tts"
         },
         "rarity": "rare",
         "rating": 0
@@ -1119,7 +1674,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-169?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-169?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-169?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-169?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-169?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-169?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-169?tts"
         },
         "rarity": "rare",
         "rating": 0,
@@ -1130,7 +1690,12 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-180?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-180?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-180?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-180?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-180?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-180?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-180?tts"
         },
         "rarity": "rare",
         "rating": 5
@@ -1140,7 +1705,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-181?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-181?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-181?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-181?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-181?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-181?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-181?tts"
         },
         "rarity": "rare",
         "rating": 3
@@ -1150,7 +1720,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-187?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-187?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-187?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-187?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-187?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-187?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-187?tts"
         },
         "rarity": "rare",
         "rating": 4
@@ -1160,7 +1735,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-190?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-190?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-190?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-190?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-190?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-190?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-190?tts"
         },
         "rarity": "rare",
         "rating": 3
@@ -1170,7 +1750,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-192?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-192?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-192?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-192?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-192?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-192?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-192?tts"
         },
         "rarity": "rare",
         "rating": 3
@@ -1180,7 +1765,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-197?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-197?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-197?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-197?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-197?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-197?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-197?tts"
         },
         "rarity": "rare",
         "rating": 2
@@ -1190,7 +1780,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-202?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-202?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-202?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-202?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-202?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-202?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-202?tts"
         },
         "rarity": "rare",
         "rating": 0
@@ -1200,7 +1795,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-203?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-203?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-203?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-203?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-203?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-203?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-203?tts"
         },
         "rarity": "rare",
         "rating": 0,
@@ -1211,7 +1811,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-004?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-004?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-004?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-004?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-004?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-004?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-004?tts"
         },
         "rarity": "mythic",
         "rating": 1
@@ -1221,7 +1826,12 @@
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-016?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-016?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-016?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-016?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-016?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-016?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-016?tts"
         },
         "rarity": "mythic",
         "rating": 3
@@ -1231,7 +1841,12 @@
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-058?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-058?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-058?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-058?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-058?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-058?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-058?tts"
         },
         "rarity": "mythic",
         "rating": 5
@@ -1241,7 +1856,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-059?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-059?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-059?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-059?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-059?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-059?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-059?tts"
         },
         "rarity": "mythic",
         "rating": 2
@@ -1251,7 +1871,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-070?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-070?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-070?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-070?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-070?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-070?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-070?tts"
         },
         "rarity": "mythic",
         "rating": 5
@@ -1261,7 +1886,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-074?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-074?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-074?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-074?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-074?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-074?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-074?tts"
         },
         "rarity": "mythic",
         "rating": 1
@@ -1271,7 +1901,12 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-114?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-114?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-114?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-114?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-114?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-114?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-114?tts"
         },
         "rarity": "mythic",
         "rating": 5
@@ -1281,7 +1916,12 @@
         "mana_cost": "{8}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-125?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-125?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-125?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-125?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-125?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-125?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-125?tts"
         },
         "rarity": "mythic",
         "rating": 4
@@ -1291,7 +1931,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-156?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-156?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-156?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-156?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-156?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-156?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-156?tts"
         },
         "rarity": "mythic",
         "rating": 3
@@ -1301,7 +1946,12 @@
         "mana_cost": "{9}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-158?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-158?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-158?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-158?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-158?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-158?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-158?tts"
         },
         "rarity": "mythic",
         "rating": 1
@@ -1311,7 +1961,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-179?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-179?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-179?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-179?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-179?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-179?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-179?tts"
         },
         "rarity": "mythic",
         "rating": 4
@@ -1321,7 +1976,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-191?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-191?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-191?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-191?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-191?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-191?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-191?tts"
         },
         "rarity": "mythic",
         "rating": 5
@@ -1331,7 +1991,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-001?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-001?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-001?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-001?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-001?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-001?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-001?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1341,7 +2006,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-005?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-005?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-005?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-005?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-005?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-005?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-005?tts"
         },
         "rarity": "common",
         "rating": 4
@@ -1351,7 +2021,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-007?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-007?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-007?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-007?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-007?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-007?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-007?tts"
         },
         "rarity": "common",
         "rating": 4
@@ -1361,7 +2036,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-014?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-014?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-014?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-014?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-014?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-014?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-014?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1371,7 +2051,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-019?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-019?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-019?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-019?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-019?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-019?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-019?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1381,7 +2066,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-020?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-020?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-020?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-020?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-020?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-020?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-020?tts"
         },
         "rarity": "common",
         "rating": 4
@@ -1391,7 +2081,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-021?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-021?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-021?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-021?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-021?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-021?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-021?tts"
         },
         "rarity": "common",
         "rating": 4
@@ -1401,7 +2096,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-023?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-023?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-023?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-023?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-023?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-023?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-023?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1411,7 +2111,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-025?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-025?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-025?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-025?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-025?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-025?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-025?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1421,7 +2126,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-027?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-027?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-027?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-027?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-027?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-027?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-027?tts"
         },
         "rarity": "common",
         "rating": 1
@@ -1431,7 +2141,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-032?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-032?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-032?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-032?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-032?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-032?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-032?tts"
         },
         "rarity": "common",
         "rating": 0
@@ -1441,7 +2156,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-033?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-033?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-033?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-033?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-033?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-033?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-033?tts"
         },
         "rarity": "common",
         "rating": 0,
@@ -1452,7 +2172,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-037?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-037?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-037?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-037?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-037?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-037?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-037?tts"
         },
         "rarity": "common",
         "rating": 4
@@ -1462,7 +2187,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-041?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-041?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-041?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-041?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-041?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-041?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-041?tts"
         },
         "rarity": "common",
         "rating": 4
@@ -1472,7 +2202,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-046?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-046?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-046?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-046?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-046?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-046?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-046?tts"
         },
         "rarity": "common",
         "rating": 4
@@ -1482,7 +2217,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-047?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-047?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-047?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-047?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-047?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-047?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-047?tts"
         },
         "rarity": "common",
         "rating": 4
@@ -1492,7 +2232,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-048?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-048?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-048?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-048?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-048?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-048?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-048?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1502,7 +2247,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-049?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-049?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-049?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-049?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-049?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-049?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-049?tts"
         },
         "rarity": "common",
         "rating": 2
@@ -1512,7 +2262,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-055?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-055?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-055?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-055?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-055?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-055?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-055?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1522,7 +2277,12 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-056?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-056?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-056?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-056?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-056?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-056?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-056?tts"
         },
         "rarity": "common",
         "rating": 4
@@ -1532,7 +2292,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-060?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-060?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-060?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-060?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-060?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-060?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-060?tts"
         },
         "rarity": "common",
         "rating": 1
@@ -1542,7 +2307,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-062?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-062?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-062?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-062?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-062?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-062?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-062?tts"
         },
         "rarity": "common",
         "rating": 1
@@ -1552,7 +2322,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-065?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-065?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-065?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-065?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-065?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-065?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-065?tts"
         },
         "rarity": "common",
         "rating": 2
@@ -1562,7 +2337,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-067?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-067?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-067?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-067?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-067?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-067?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-067?tts"
         },
         "rarity": "common",
         "rating": 1,
@@ -1573,7 +2353,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-071?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-071?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-071?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-071?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-071?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-071?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-071?tts"
         },
         "rarity": "common",
         "rating": 1
@@ -1583,7 +2368,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-072?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-072?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-072?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-072?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-072?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-072?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-072?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1593,7 +2383,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-073?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-073?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-073?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-073?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-073?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-073?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-073?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1603,7 +2398,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-077?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-077?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-077?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-077?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-077?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-077?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-077?tts"
         },
         "rarity": "common",
         "rating": 4
@@ -1613,7 +2413,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-079?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-079?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-079?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-079?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-079?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-079?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-079?tts"
         },
         "rarity": "common",
         "rating": 4
@@ -1623,7 +2428,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-084?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-084?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-084?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-084?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-084?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-084?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-084?tts"
         },
         "rarity": "common",
         "rating": 4
@@ -1633,7 +2443,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-089?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-089?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-089?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-089?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-089?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-089?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-089?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1643,7 +2458,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-091?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-091?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-091?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-091?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-091?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-091?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-091?tts"
         },
         "rarity": "common",
         "rating": 4
@@ -1653,7 +2473,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-093?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-093?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-093?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-093?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-093?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-093?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-093?tts"
         },
         "rarity": "common",
         "rating": 0
@@ -1663,7 +2488,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-094?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-094?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-094?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-094?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-094?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-094?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-094?tts"
         },
         "rarity": "common",
         "rating": 1
@@ -1673,7 +2503,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-098?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-098?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-098?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-098?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-098?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-098?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-098?tts"
         },
         "rarity": "common",
         "rating": 2
@@ -1683,7 +2518,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-101?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-101?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-101?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-101?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-101?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-101?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-101?tts"
         },
         "rarity": "common",
         "rating": 2,
@@ -1694,7 +2534,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-104?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-104?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-104?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-104?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-104?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-104?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-104?tts"
         },
         "rarity": "common",
         "rating": 2
@@ -1704,7 +2549,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-105?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-105?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-105?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-105?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-105?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-105?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-105?tts"
         },
         "rarity": "common",
         "rating": 1
@@ -1714,7 +2564,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-108?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-108?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-108?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-108?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-108?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-108?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-108?tts"
         },
         "rarity": "common",
         "rating": 4
@@ -1724,7 +2579,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-111?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-111?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-111?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-111?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-111?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-111?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-111?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1734,7 +2594,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-116?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-116?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-116?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-116?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-116?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-116?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-116?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1744,7 +2609,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-120?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-120?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-120?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-120?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-120?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-120?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-120?tts"
         },
         "rarity": "common",
         "rating": 4
@@ -1754,7 +2624,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-122?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-122?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-122?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-122?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-122?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-122?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-122?tts"
         },
         "rarity": "common",
         "rating": 2
@@ -1764,7 +2639,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-126?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-126?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-126?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-126?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-126?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-126?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-126?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1774,7 +2654,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-130?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-130?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-130?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-130?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-130?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-130?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-130?tts"
         },
         "rarity": "common",
         "rating": 4
@@ -1784,7 +2669,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-133?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-133?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-133?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-133?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-133?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-133?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-133?tts"
         },
         "rarity": "common",
         "rating": 0
@@ -1794,7 +2684,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-134?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-134?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-134?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-134?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-134?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-134?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-134?tts"
         },
         "rarity": "common",
         "rating": 2
@@ -1804,7 +2699,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-136?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-136?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-136?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-136?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-136?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-136?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-136?tts"
         },
         "rarity": "common",
         "rating": 2,
@@ -1815,7 +2715,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-137?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-137?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-137?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-137?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-137?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-137?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-137?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1825,7 +2730,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-141?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-141?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-141?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-141?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-141?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-141?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-141?tts"
         },
         "rarity": "common",
         "rating": 1
@@ -1835,7 +2745,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-143?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-143?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-143?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-143?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-143?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-143?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-143?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1845,7 +2760,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-146?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-146?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-146?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-146?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-146?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-146?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-146?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1855,7 +2775,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-150?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-150?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-150?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-150?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-150?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-150?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-150?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1865,7 +2790,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-151?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-151?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-151?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-151?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-151?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-151?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-151?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1875,7 +2805,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-157?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-157?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-157?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-157?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-157?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-157?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-157?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1885,7 +2820,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-161?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-161?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-161?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-161?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-161?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-161?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-161?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1895,7 +2835,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-163?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-163?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-163?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-163?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-163?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-163?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-163?tts"
         },
         "rarity": "common",
         "rating": 1
@@ -1905,7 +2850,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-164?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-164?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-164?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-164?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-164?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-164?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-164?tts"
         },
         "rarity": "common",
         "rating": 2
@@ -1915,7 +2865,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-168?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-168?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-168?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-168?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-168?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-168?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-168?tts"
         },
         "rarity": "common",
         "rating": 2
@@ -1925,7 +2880,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-170?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-170?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-170?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-170?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-170?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-170?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-170?tts"
         },
         "rarity": "common",
         "rating": 3,
@@ -1936,7 +2896,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-172?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-172?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-172?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-172?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-172?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-172?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-172?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1946,7 +2911,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-173?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-173?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-173?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-173?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-173?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-173?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-173?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1956,7 +2926,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-174?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-174?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-174?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-174?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-174?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-174?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-174?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1966,7 +2941,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-176?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-176?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-176?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-176?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-176?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-176?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-176?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -1976,7 +2956,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-178?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-178?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-178?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-178?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-178?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-178?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-178?tts"
         },
         "rarity": "common",
         "rating": 4
@@ -1986,7 +2971,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-184?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-184?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-184?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-184?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-184?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-184?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-184?tts"
         },
         "rarity": "common",
         "rating": 4
@@ -1996,7 +2986,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-185?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-185?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-185?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-185?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-185?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-185?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-185?tts"
         },
         "rarity": "common",
         "rating": 4
@@ -2006,7 +3001,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-188?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-188?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-188?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-188?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-188?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-188?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-188?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -2016,7 +3016,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-194?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-194?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-194?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-194?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-194?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-194?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-194?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -2026,7 +3031,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-199?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-199?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-199?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-199?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-199?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-199?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-199?tts"
         },
         "rarity": "common",
         "rating": 1
@@ -2036,7 +3046,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-200?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-200?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-200?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-200?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-200?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-200?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-200?tts"
         },
         "rarity": "common",
         "rating": 3
@@ -2046,7 +3061,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/004-204?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/004-204?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/004-204?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/004-204?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/004-204?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/004-204?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/004-204?tts"
         },
         "rarity": "common",
         "rating": 3,

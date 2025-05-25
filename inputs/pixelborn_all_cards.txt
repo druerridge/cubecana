@@ -1017,32 +1017,32 @@ Duck for Cover!
 Seven Dwarfs' Mine_Secure Fortress
 Bad-Anon_Villain Support Center
 Steel Chromicon
-Owl - Pirate Lookout
-Lilo - Escape Artist
-Winnie The Pooh - Hunny Pirate
-Gopher - Ship's Carpenter
-Simba - Happy-Go-Lucky
-Chip - Friend Indeed
-Dale - Friend in Need
-David - Impressive Surfer
-Prince Naveen - Vigilant First Mate
-Prince Naveen - Carefree Explorer
-Chief Bogo - Gazelle Fan
-Chip - Ranger Leader
-Monterey Jack - Good-hearted Ranger
-Chip 'n' Dale - Recovery Rangers
-Judy Hopps - Resourceful Rabbit
-Tiana - Restaurant Owner
-Grand Councilwoman - Federation Leader
-Dale - Mischievous Ranger
-Nani - Caring Sister
-Simba - Pride Protector
-Kanga - Nurturing Mother
-Rabbit - Indignant Pirate
-Roo - Littlest Pirate
-Mr. Litwak - Arcade Owner
-Jim Hawkins - Honorable Pirate
-Stitch - Little Trickster
+Owl_Pirate Lookout
+Lilo_Escape Artist
+Winnie The Pooh_Hunny Pirate
+Gopher_Ship's Carpenter
+Simba_Happy-Go-Lucky
+Chip_Friend Indeed
+Dale_Friend in Need
+David_Impressive Surfer
+Prince Naveen_Vigilant First Mate
+Prince Naveen_Carefree Explorer
+Chief Bogo_Gazelle Fan
+Chip_Ranger Leader
+Monterey Jack_Good-hearted Ranger
+Chip 'n' Dale_Recovery Rangers
+Judy Hopps_Resourceful Rabbit
+Tiana_Restaurant Owner
+Grand Councilwoman_Federation Leader
+Dale_Mischievous Ranger
+Nani_Caring Sister
+Simba_Pride Protector
+Kanga_Nurturing Mother
+Rabbit_Indignant Pirate
+Roo_Littlest Pirate
+Mr. Litwak_Arcade Owner
+Jim Hawkins_Honorable Pirate
+Stitch_Little Trickster
 Good Job!
 I Won't Give In
 Rescue Rangers Away!
@@ -1050,65 +1050,65 @@ Safe and Sound
 Naveen's Ukulele
 Pooh Pirate Ship
 Scrump
-Hundred Acre Island - Pooh's Home
-Sugar Rush Speedway - Finish Line
-Hades - Lord of the Dead
-Madam Mim - Tiny Adversary
-Genie - Excited Shipbuilder
-Sisu - In Her Element
-The White Rose - Jewel of the Garden
-Juju - Mama Odie's Companion
-Rafiki - Shaman of the Savanna
-Tinker Bell - Fast Flier
-The Carpenter - Dinner Companion
-Iago - Reappearing Parrot
-The Walrus - Greedy Gourmand
-Scar - Tempestuous Lion
-Tinker Bell - Queen of the Azurite Fairies
-Diablo - Obedient Raven
-March Hare - Absurd Host
-Magic Carpet - Amazing Flier
-Rafiki - Ethereal Guide
-Genie - Wish Fulfilled
-Sisu - Uniting Dragon
-Madam Mim - Truly Marvelous
-Yzma - Conniving Chemist
-Mama Odie - Solitary Sage
-Peter Pan - Shadow Catcher
-Mad Hatter - Eccentric Host
+Hundred Acre Island_Pooh's Home
+Sugar Rush Speedway_Finish Line
+Hades_Lord of the Dead
+Madam Mim_Tiny Adversary
+Genie_Excited Shipbuilder
+Sisu_In Her Element
+The White Rose_Jewel of the Garden
+Juju_Mama Odie's Companion
+Rafiki_Shaman of the Savanna
+Tinker Bell_Fast Flier
+The Carpenter_Dinner Companion
+Iago_Reappearing Parrot
+The Walrus_Greedy Gourmand
+Scar_Tempestuous Lion
+Tinker Bell_Queen of the Azurite Fairies
+Diablo_Obedient Raven
+March Hare_Absurd Host
+Magic Carpet_Amazing Flier
+Rafiki_Ethereal Guide
+Genie_Wish Fulfilled
+Sisu_Uniting Dragon
+Madam Mim_Truly Marvelous
+Yzma_Conniving Chemist
+Mama Odie_Solitary Sage
+Peter Pan_Shadow Catcher
+Mad Hatter_Eccentric Host
 A Very Merry Unbirthday
-Genie - Wonderful Trickster
+Genie_Wonderful Trickster
 Making Magic
 Lose The Way
 Seeking the Half Crown
 Maleficent's Staff
 Mad Hatter's Teapot
 Pixie Dust
-Fairy Ship - Royal Vessel
-Mystical Tree - Mama Odie's Home
-Jasmine - Royal Seafarer
-Captain Hook - Underhanded
-Stitch - Alien Buccaneer
-Go Go Tomago - Darting Dynamo
-Honey Lemon - Chemical Genius
-Fred - Mascot by Day
-Tootles - Lost Boy
-Dawson - Basil's Assistant
-Heathcliff - Stoic Butler
-Basil - Hypnotized Mouse
-Donald Duck - First Mate
-Daisy Duck - Pirate Captain
-Mertle Edmonds - Lilo's Rival
-Prince Phillip - Royal Explorer
-Jasmine - Royal Commodore
-Peter Pan - Never Land Prankster
-Hercules - Baby Demigod
-Alistair Krei - Ambitious Entrepreneur
-Gazelle - Angel with Horns
-Goofy - Expert Shipwright
-Bellwether - Assistant Mayor
-Basil - Disguised Detective
-Olivia Flaversham - The Toymaker's Daughter
+Fairy Ship_Royal Vessel
+Mystical Tree_Mama Odie's Home
+Jasmine_Royal Seafarer
+Captain Hook_Underhanded
+Stitch_Alien Buccaneer
+Go Go Tomago_Darting Dynamo
+Honey Lemon_Chemical Genius
+Fred_Mascot by Day
+Tootles_Lost Boy
+Dawson_Basil's Assistant
+Heathcliff_Stoic Butler
+Basil_Hypnotized Mouse
+Donald Duck_First Mate
+Daisy Duck_Pirate Captain
+Mertle Edmonds_Lilo's Rival
+Prince Phillip_Royal Explorer
+Jasmine_Royal Commodore
+Peter Pan_Never Land Prankster
+Hercules_Baby Demigod
+Alistair Krei_Ambitious Entrepreneur
+Gazelle_Angel with Horns
+Goofy_Expert Shipwright
+Bellwether_Assistant Mayor
+Basil_Disguised Detective
+Olivia Flaversham_The Toymaker's Daughter
 Bend To My Will
 Prepare To Board!
 Heffalumps and Woozles
@@ -1117,33 +1117,33 @@ You Came Back
 Megabot
 Galactic Communicator
 Transport Pod
-Perilous Maze - Watery Labyrinth
-Owl Island - Secluded Entrance
-Mickey Mouse - Pirate Captain
-Kakamora - Boarding Party
-Kakamora - Pirate Pitcher
-Jasmine - Rebellious Princess
-Raya - Kumandran Rider
-Wendy Darling - Courageous Captain
-John Silver - Ferocious Friend
-Vanellope von Schweetz - Gutsy Go-Getter
-Michael Darling - Playful Swordsman
-Aladdin - Fearless Navigator
-Markowski - Space Trooper
-Abu - Bold Helmsman
-Mickey Mouse - Courageous Sailor
-Adorabeezle Winterpop - Ice Rocket Racer
-Moana - Self-Taught Sailor
-John Darling - Sophisticated Swordsman
-Aladdin - Intrepid Commander
-Minnie Mouse - Pirate Lookout
-Moana - Kakamora Leader
-Pete - Freebooter
-Goofy - Flying Goof
-Maui - Half Shark
-Hades - Strong Arm
-Tigger - In the Crow's Nest
-Scar - Heartless Hunter
+Perilous Maze_Watery Labyrinth
+Owl Island_Secluded Entrance
+Mickey Mouse_Pirate Captain
+Kakamora_Boarding Party
+Kakamora_Pirate Pitcher
+Jasmine_Rebellious Princess
+Raya_Kumandran Rider
+Wendy Darling_Courageous Captain
+John Silver_Ferocious Friend
+Vanellope von Schweetz_Gutsy Go-Getter
+Michael Darling_Playful Swordsman
+Aladdin_Fearless Navigator
+Markowski_Space Trooper
+Abu_Bold Helmsman
+Mickey Mouse_Courageous Sailor
+Adorabeezle Winterpop_Ice Rocket Racer
+Moana_Self-Taught Sailor
+John Darling_Sophisticated Swordsman
+Aladdin_Intrepid Commander
+Minnie Mouse_Pirate Lookout
+Moana_Kakamora Leader
+Pete_Freebooter
+Goofy_Flying Goof
+Maui_Half Shark
+Hades_Strong Arm
+Tigger_In the Crow's Nest
+Scar_Heartless Hunter
 Thievery
 Lead The Way
 The Islands I Pulled From The Sea
@@ -1151,33 +1151,33 @@ Energy Blast
 Longboat
 Gold Coin
 Card Soldier's Spear
-Flotilla - Coconut Armada
-Skull Rock - Isolated Fortress
-B.E.N. - Eccentric Robot
-Aunt Cass - Biggest Fan
-Gadget Hackwrench - Creative Thinker
-Gadget Hackwrench - Brilliant Bosun
-Zipper - Astute Decoy
-Oswald - The Lucky Rabbit
-Yokai - Enigmatic Inventor
-Pleakley - Scientific Expert
-Hiro Hamada - Robotics Prodigy
-HeiHei - Not-So-Tricky Chicken
-Sour Bill - Surly Henchman
-Nick Wilde - Soggy Fox
-Wasabi - Methodical Engineer
-Nick Wilde - Sly Fox
-Gadget Hackwrench - Perceptive Mouse
-Dr. Delbert Doppler - Fussy Astronomer
-Tadashi Hamada - Baymax Inventor
-Hiro Hamada - Team Leader
-Tadashi Hamada - Gifted Roboticist
-Baymax - Personal Healthcare Companion
-Baymax - Armored Companion
-Yokai - Professor Callaghan
-Hiram Flaversham - Intrigued Inventor
-Yokai - Scientific Supervillain
-Alice - Savvy Sailor
+Flotilla_Coconut Armada
+Skull Rock_Isolated Fortress
+B.E.N._Eccentric Robot
+Aunt Cass_Biggest Fan
+Gadget Hackwrench_Creative Thinker
+Gadget Hackwrench_Brilliant Bosun
+Zipper_Astute Decoy
+Oswald_The Lucky Rabbit
+Yokai_Enigmatic Inventor
+Pleakley_Scientific Expert
+Hiro Hamada_Robotics Prodigy
+HeiHei_Not-So-Tricky Chicken
+Sour Bill_Surly Henchman
+Nick Wilde_Soggy Fox
+Wasabi_Methodical Engineer
+Nick Wilde_Sly Fox
+Gadget Hackwrench_Perceptive Mouse
+Dr. Delbert Doppler_Fussy Astronomer
+Tadashi Hamada_Baymax Inventor
+Hiro Hamada_Team Leader
+Tadashi Hamada_Gifted Roboticist
+Baymax_Personal Healthcare Companion
+Baymax_Armored Companion
+Yokai_Professor Callaghan
+Hiram Flaversham_Intrigued Inventor
+Yokai_Scientific Supervillain
+Alice_Savvy Sailor
 We Could Be Immortals
 Sail The Azurite Sea
 Helping Hand
@@ -1185,32 +1185,32 @@ Prepare Your Bot
 Baymax's Healthcare Chip
 Microbots
 Jumbo Pop
-Rescue Rangers Submarine - Mobile Headquarters
-Institute of Technology - Prestigious University
-Kakamora - Long-Range Specialist
-Kakamora - Pirate Chief
-Jim Hawkins - Stubborn Cabin Boy
-Mr. Big - Shrewd Tycoon
-Mr. Smee - Steadfast Mate
-Mr. Smee - Captain of the Jolly Roger
-Mullins - Seasoned Shipmate
-Kohut - Trusted Marine
-King Hubert - Phillip's Father
-Hercules - Unwavering Demigod
-John Silver - Ship's Cook
-Mr. Arrow - Legacy's First Mate
-Jim Hawkins - Rigging Specialist
-Tuk Tuk - Big Buddy
-Billy Bones - Space Sailor
-Pluto - Guard Dog
-Mickey Mouse - Night Watch
-Cobra Bubbles - Former CIA
-Gantu - Captain Crankyhead
-Wreck-It Ralph - Ham Hands
-Calhoun - Marine Sergeant
-Captain Amelia - Commander of the Legacy
-Jafar - Power-Hungry Vizier
-John Silver - Stern Captain
+Rescue Rangers Submarine_Mobile Headquarters
+Institute of Technology_Prestigious University
+Kakamora_Long-Range Specialist
+Kakamora_Pirate Chief
+Jim Hawkins_Stubborn Cabin Boy
+Mr. Big_Shrewd Tycoon
+Mr. Smee_Steadfast Mate
+Mr. Smee_Captain of the Jolly Roger
+Mullins_Seasoned Shipmate
+Kohut_Trusted Marine
+King Hubert_Phillip's Father
+Hercules_Unwavering Demigod
+John Silver_Ship's Cook
+Mr. Arrow_Legacy's First Mate
+Jim Hawkins_Rigging Specialist
+Tuk Tuk_Big Buddy
+Billy Bones_Space Sailor
+Pluto_Guard Dog
+Mickey Mouse_Night Watch
+Cobra Bubbles_Former CIA
+Gantu_Captain Crankyhead
+Wreck-It Ralph_Ham Hands
+Calhoun_Marine Sergeant
+Captain Amelia_Commander of the Legacy
+Jafar_Power-Hungry Vizier
+John Silver_Stern Captain
 Hot Potato
 I'm Still Here
 Twin Fire
@@ -1219,8 +1219,8 @@ Unfortunate Situation
 King's Sensor Core
 Training Dummy
 Sunglasses
-Treasure Mountain - Azurite Sea Island
-Galactic Council Chamber - Courtroom
+Treasure Mountain_Azurite Sea Island
+Galactic Council Chamber_Courtroom
 Roger Radcliffe_Dog Lover
 Amber Coil
 Pain_Impudent Imp
@@ -1425,3 +1425,207 @@ Pete_Pirate Scoundrel
 Merlin_Clever Clairvoyant
 Kanine Krunchies
 Restoring the Heart
+Charlotte La Bouff_Mardi Gras Princess
+Gene_Niceland Resident
+Patch_Playful Pup
+She's Your Person
+Royal Guard_Octopus Soldier
+Dale_Bumbler
+Twitterpated
+Olaf_Recapping the Story
+Little Sister_Responsible Rabbit
+Captain Hook_Forceful Duelist
+Ludwig Von Drake_All-Around Expert
+Perdita_On the Lookout
+Dalmatian Puppy_Tail Wagger
+Trials and Tribulations
+Bambi_Prince of the Forest
+Nero_Fearsome Crocodile
+Blue Fairy_Guiding Light
+Ice Spikes
+Dormouse_Easily Agitated
+Undermine
+Jeweled Collar
+Lumiere_Nimble Candelabra
+Tinker Bell_Insistent Fairy
+The Coachman_Greedy Deceiver
+Go Go Tomago_Mechanical Engineer
+Bernard_Over-Prepared
+Pouncing Practice
+Prince Achmed_Rival Suitor
+Nathaniel Flint_Notorious Pirate
+Louie_One Cool Duck
+Pua_Protective Pig
+Bolt_Down but Not Out
+Joey_Blue Pigeon
+Lena Sabrewing_Pure Energy
+Yelana_Northuldra Leader
+Madam Mim_Up to No Good
+Flower_Shy Skunk
+Pull the Lever!
+Wilhelmina Packard_The Radio Operator
+Fred_Major Science Enthusiast
+Don Karnage_Air Pirate Leader
+He Who Steals and Runs Away
+Walk the Plank!
+Gyro Gearloose_Eccentric Inventor
+Mushu_Fast-Talking Dragon
+Wreck-It Ralph_Back Seat Driver
+Prince John_Fraidy-Cat
+Anita Radcliffe_Dog Lover
+Mrs. Potts_Head Housekeeper
+Television Set
+Bobby_Purple Pigeon
+General Li_Head of the Imperial Army
+Zipper_Flying Ranger
+Desperate Plan
+Dewey_Lovable Showoff
+Antonio Madrigal_Friend to All
+Tiana_Natural Talent
+Rolly_Chubby Puppy
+Only So Much Room
+Bruno Madrigal_Single-Minded
+Ryder_Fleet-Footed Infiltrator
+Pinocchio_Strings Attached
+Chaca_Junior Chipmunk
+Mad Dog_Karnage's First Mate
+Chip_Quick Thinker
+Flynn Rider_Breaking and Entering
+Go Go Tomago_Cutting Edge
+Jock_Attentive Uncle
+Alice_Courageous Keyholder
+Cri-Kee_Part of the Team
+Faline_Playful Fawn
+The Wardrobe_Perceptive Friend
+Arthur_Determined Squire
+Jumba Jookiba_Critical Scientist
+Iago_Out of Reach
+Darling Dear_Beloved Wife
+Magica De Spell_Shadow Form
+Jafar_High Sultan of Lorcana
+Forest Duel
+Captain Hook_The Pirate King
+Lilo_Causing an Uproar
+Wasabi_Always Prepared
+Monterey Jack_Defiant Protector
+Namaari_Single-Minded Rival
+Tramp_Dapper Rascal
+Pluto_Tried and True
+Alma Madrigal_Accepting Grandmother
+Yzma_On Edge
+Anna_Magical Mission
+Alice_Clumsy as Can Be
+Honest John_Shameless Schemer
+Get Out!
+Heads Held High
+Bruno Madrigal_Singing Seer
+Hades_Ruthless Tyrant
+Basil_Undercover Detective
+Most Everyone's Mad Here
+Vincenzo Santorini_The Explosives Expert
+Donald Duck_Coin Collector
+Stopped Chaos in Its Tracks
+Ratigan_Greedy Genius
+Fantastical and Magical
+Mickey Mouse_Giant Mouse
+It Means No Worries
+Nothing We Won't Do
+Monstro_Infamous Whale
+Beyond the Horizon
+Atitaya_Fang General
+Fred_Giant-Sized
+Kuzco_Impulsive Llama
+Wreck-It Ralph_Big Lug
+Down in New Orleans
+Aladdin_Vigilant Guard
+Mushu_Your Worst Nightmare
+Maui_Stubborn Trickster
+Raya_Infiltration Expert
+Madam Mim_Rhino
+Abu_Illusory Pachyderm
+Calhoun_Hard-Nosed Leader
+Perdita_Determined Mother
+Chief Bogo_Commanding Officer
+Arianna_Queen of Corona
+Geppetto_Skilled Craftsman
+Lumiere_Fired Up
+Lafayette_Sleepy Basset Hound
+Rapunzel_High Climber
+Camilo Madrigal_Center Stage
+The Sultan_Royal Apparition
+The Colonel_Old Sheepdog
+Stitch_Alien Troublemaker
+Khan_War Horse
+Jasmine_Steady Strategist
+Nani_Heist Mastermind
+The Mouse Queen_Ruler of Mousedom
+Mulan_Charging Ahead
+Gaston_Arrogant Showoff
+Brutus_Fearsome Crocodile
+Honey Lemon_Costumed Catalyst
+Queen of Hearts_Haughty Monarch
+Gadget Hackwrench_Quirky Scientist
+Napoleon_Clever Bloodhound
+March Hare_Hare-Brained Eccentric
+Everybody's Got a Weakness
+Elsa_Fierce Protector
+Kuzco_Bored Royal
+Druun_Ravenous Plague
+Rhino_Power Hamster
+Kaa_Hypnotizing Python
+Minnie Mouse_Daring Defender
+Goofy_Groundbreaking Chef
+Hamster Ball
+Vinnie_Green Pigeon
+Genie_Satisfied Dragon
+Magic Carpet_Phantom Rug
+Belle's Favorite Book
+Stitch_Experiment 626
+Anna_Trusting Sister
+Sir Pellinore_Seasoned Knight
+Mr. Snoops_Betrayed Partner
+Figaro_Tuxedo Cat
+The Dodo_Outlandish Storyteller
+Gloyd Orangeboar_Fierce Competitor
+Wrong Lever!
+Archimedes_Resourceful Owl
+Louis_Endearing Alligator
+Tramp_Observant Guardian
+Into the Unknown
+They Never Come Back
+Bambi_Little Prince
+Poe De Spell_Magica's Brother
+Megara_Part of the Plan
+Madame Medusa_Deceiving Partner
+Clawhauser_Front Desk Officer
+King Candy_Sugar Rush Nightmare
+Lady_Family Dog
+Quick Shot
+Toby Turtle_Wary Friend
+Atlantean Crystal
+Roquefort_Lock Expert
+Adelaide Bonfamille_Patron of the Arts
+Friend Owl_Cantankerous Neighbor
+LeFou_Cake Thief
+Thumper_Young Bunny
+Vanellope Von Schweetz_Spunky Speedster
+Chem Purse
+Hiro Hamada_Intuitive Thinker
+Tipo_Junior Chipmunk
+Scarab
+Mother Gothel_Knows What's Best
+Jiminy Cricket_Level-Headed and Wise
+The Nephews' Piggy Bank
+Candy Drift
+Antonio's Jaguar_Faithful Companion
+Jim Dear_Beloved Husband
+Huey_Reliable Leader
+Dumptruck_Karnage's Second Mate
+Jasmine_Resourceful Infiltrator
+The Sword of Shan-Yu
+Light the Fuse
+Bill the Lizard_Chimney Sweep
+Palace Guard_Spectral Sentry
+Lady_Decisive Dog
+Rhino_One-Sixteenth Wolf
+Mirabel Madrigal_Curious Child

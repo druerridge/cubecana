@@ -198,7 +198,7 @@ def increment_retail_drafts_on_start(set_id:str):
   if not set:
     return lcc_error.RetailSetNotFoundError("Retail set not found")
   # TODO: keep a table for retail sets and increment it
-  return Response(200)
+  return Response(status=200)
 
 # CUBE API ENDPOINTS
 

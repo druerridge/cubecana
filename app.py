@@ -35,6 +35,10 @@ def serve_cubes():
 def serve_retail_sets():
   return render_template('retail-directory.html')
 
+@app.route('/discord')
+def serve_discord():
+  return redirect("https://discord.com/invite/DsbeKc2zsP")
+
 @app.route('/add-cube/')
 def serve_add_cube():
   return render_template('add-cube.html')

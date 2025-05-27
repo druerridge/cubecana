@@ -261,6 +261,7 @@ def read_draftmancer_file(file_path: str):
         settings_string = ""
         read_settings = False
         text_contents = ""
+        open_braces = 0
         draftmancer_settings: DraftmancerSettings = None
         for line in f:
             text_contents += line
@@ -277,12 +278,26 @@ def read_draftmancer_file(file_path: str):
             if read_settings:
                 settings_string += line.strip()
                 # try to decode, if it's done, it'll decode, otherwise it'll fail and we continue
+                if "{" in line:
+                    open_braces += 1
                 if "}" in line:
-                    try:
-                        draftmancer_settings = DraftmancerSettings(**json.loads(settings_string))
-                        read_settings = False
-                    except json.JSONDecodeError:
-                        continue
+                    open_braces -= 1
+                    if open_braces <= 0:
+                        try:
+                            # Get the set of allowed keys from the dataclass fields
+                            allowed_keys = set(DraftmancerSettings.__dataclass_fields__.keys())
+
+                            # Parse the JSON string into a dictionary
+                            settings_dict = json.loads(settings_string)
+
+                            # Filter the dictionary to only include allowed keys
+                            filtered_settings = {k: v for k, v in settings_dict.items() if k in allowed_keys}
+
+                            # Now safely instantiate the dataclass
+                            draftmancer_settings = DraftmancerSettings(**filtered_settings)
+                            read_settings = False
+                        except json.JSONDecodeError:
+                            continue
         custom_cards_json = json.loads(custom_card_string)
         
         id_to_custom_card = {}

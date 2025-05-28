@@ -6,7 +6,7 @@ POWER_BAND_RETAIL: str = "RETAIL"
 POWER_BAND_NARROW_MEDIUM: str = "NARROW_MEDIUM"
 
 class Settings:
-    def __init__(self, boosters_per_player=4, card_list_name='custom_cube', cards_per_booster=12, set_card_colors=False, color_balance_packs=False, with_replacement=False, franchise_to_color=False, power_band=POWER_BAND_MAX, author: str = None):
+    def __init__(self, boosters_per_player=4, card_list_name='custom_cube', cards_per_booster=12, set_card_colors=False, color_balance_packs=False, with_replacement=False, franchise_to_color=False, power_band=POWER_BAND_MAX, author: str = None, set_card_types = False):
         self.boosters_per_player = int(boosters_per_player)
         self.card_list_name = card_list_name
         self.cards_per_booster = int(cards_per_booster)
@@ -16,6 +16,7 @@ class Settings:
         self.franchise_to_color = bool(franchise_to_color)
         self.power_band = power_band
         self.author = author
+        self.set_card_types = bool(set_card_types)
 
     def to_draftmancer_settings(self):
         if self.author:

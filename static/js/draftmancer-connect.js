@@ -1,5 +1,8 @@
 import { io } from "socketio";
 
+const GAME_MODE_DRAFT = "DRAFT";
+const GAME_MODE_SUPER_SEALED = "SUPER_SEALED";
+
 export function generateDraftmancerSession(CubeFile, tabToOpen, metadata) {
     
     const Domain = "https://draftmancer.com";
@@ -41,7 +44,19 @@ export function generateDraftmancerSession(CubeFile, tabToOpen, metadata) {
                 function startDraftOnCompletion(responseData) {
                     // Automatically disconnect bot once the human user has joined the session
                     socket.once("sessionUsers", () => {
-                        socket.disconnect();
+                        if (metadata.defaultGameMode == GAME_MODE_SUPER_SEALED) {
+                            socket.emit("distributeSealed", 16, null, (res) => {
+                                if (res.code < 0) {
+                                    console.error(res);
+                                } else {
+                                    console.log("Draftmancer session started successfully.");
+                                }
+                                socket.disconnect();
+                            });
+                        } else {
+                            console.log("Draftmancer session started successfully.");
+                            socket.disconnect();
+                        }
                     });
                     // Open Draftmancer in specified tab
                     tabToOpen.location.href = `${Domain}/?session=${SessionID}`;

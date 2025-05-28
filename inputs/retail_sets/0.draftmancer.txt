@@ -28910,7 +28910,7 @@
 [Settings]
 {
     "boostersPerPlayer": 16,
-    "name": "Super Sealed (Press: Draft > Other Game Modes > Sealed > 16 packs)",
+    "name": "Super Sealed",
     "cardBack": "https://wiki.mushureport.com/images/thumb/d/d7/Card_Back_official.png/450px-Card_Back_official.png",
     "withReplacement": true,
     "layouts": {

@@ -66,6 +66,7 @@ class RetailSet:
   name: str
   id: str
   draftmancerFile: str
+  defaultGameMode: str
   
   def toJSON(self):
     return json.dumps(

@@ -189,7 +189,9 @@ def get_retail_set_draftmancer_file(set_id:str):
       'cubeName': set.name, 
       'link': f"https://www.cubecana.com/api/retail_sets/{set_id}",
       'author': "Ravensburger",
-      'setId': set_id}}
+      'setId': set_id,
+      'defaultGameMode': set.defaultGameMode
+    }}
   return jsonify(response)
 
 @app.route('/api/retail_sets/<string:set_id>/startDraft', methods=['POST'])

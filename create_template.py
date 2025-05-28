@@ -5,7 +5,7 @@ from pathlib import Path
 import csv
 from lcc_error import LccError, UnidentifiedCardError
 from settings import Settings
-from lorcana_api import ApiCard
+from lorcast_api import ApiCard
 import lorcast_api as lorcana_api
 import id_helper
 import franchise
@@ -159,6 +159,22 @@ def to_language_coded_image_uri(image_uri, language_code):
     else:
         return image_uri.replace("en", language_code)
 
+def to_draftmancer_card_type(api_card: ApiCard, settings: Settings):
+    if not settings.set_card_types:
+        return "Instant"
+    
+    if "Character" in api_card.types:
+        return "Creature"
+    if "Song" in api_card.types: # must come before "Action"
+        return "Instant"
+    if "Action" in api_card.types:
+        return "Sorcery"
+    if "Item" in api_card.types:
+        return "Artifact"
+    if "Location" in api_card.types:
+        return "Battle"
+    return "Instant"  # Default
+
 def generate_custom_card_list(id_to_api_card: dict[str, ApiCard], 
                               id_to_rating: dict[str, int],
                               id_to_tts_card: dict[str, dict], 
@@ -176,7 +192,7 @@ def generate_custom_card_list(id_to_api_card: dict[str, ApiCard],
         custom_card = {
             'name': cannonical_name, 
             'mana_cost': f'{{{ink_cost}}}',
-            'type': 'Instant',
+            'type': to_draftmancer_card_type(api_card, settings),
             'image_uris': {
                 'en': to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'en'),
                 'fr': to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'fr'),
@@ -197,7 +213,8 @@ def generate_custom_card_list(id_to_api_card: dict[str, ApiCard],
             custom_card['layout'] = "split" # causes card to be displayed horizontally were possible        
 
         if (settings.set_card_colors):
-            custom_card['colors'] = to_draftmancer_colors(api_card.color, settings, api_card.inks)
+                # FYI this is broken for Illumineer's quest boss cards
+                custom_card['colors'] = to_draftmancer_colors(api_card.color, settings, api_card.inks)
         if (settings.franchise_to_color): # TODO: This needs additional Testing outside double feature cube
             color = franchise.retrieve_franchise_to_draftmancer_color(id)
             if color:

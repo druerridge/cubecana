@@ -6,6 +6,8 @@ import lcc_error
 import create_template
 
 RETAIL_SETS_DIR_PATH = "inputs/retail_sets"
+GAME_MODE_SUPER_SEALED = "SUPER_SEALED"
+GAME_MODE_DRAFT = "DRAFT"
 
 @dataclass(frozen=True)
 class RetailSet:
@@ -52,10 +54,16 @@ class RetailManager:
         paginated_retail_set_entries:List[api.RetailSetEntry] = [retail_set.to_retail_set_entry() for retail_set in paginated_retail_sets]
         return paginated_retail_set_entries
 
+    def get_default_game_mode(self, retail_set_name) -> str:
+        if "Super Sealed" in retail_set_name:
+            return GAME_MODE_SUPER_SEALED
+        return GAME_MODE_DRAFT
+
     def get_set(self, id: str) -> RetailSet:
         retail_set = self.retail_sets.get(id)
         if retail_set is None:
             raise lcc_error.RetailSetNotFoundError(f"Retail set with id {id} not found")
-        return api.RetailSet(id=retail_set.id, name=retail_set.name, draftmancerFile=retail_set.draftmancer_file_contents)
+        defaut_game_mode = self.get_default_game_mode(retail_set.name)
+        return api.RetailSet(id=retail_set.id, name=retail_set.name, draftmancerFile=retail_set.draftmancer_file_contents, defaultGameMode=defaut_game_mode)
 
 retail_manager: RetailManager = RetailManager()

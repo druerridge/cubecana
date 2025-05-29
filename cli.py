@@ -1,4 +1,4 @@
-import create_template
+import draftmancer
 import generate_retail
 import card_evaluations
 from settings import Settings, POWER_BAND_RETAIL
@@ -25,19 +25,19 @@ parser.add_argument('--set_card_types', default=False, help="WARNING** This sets
 def retail_tts_to_draftmancer(dreamborn_export_for_tabletop_sim, card_evaluations_file, settings):
     settings.with_replacement = True
     settings.power_band = POWER_BAND_RETAIL
-    id_to_tts_card = create_template.read_id_to_tts_card_from_filesystem(dreamborn_export_for_tabletop_sim)
+    id_to_tts_card = draftmancer.read_id_to_tts_card_from_filesystem(dreamborn_export_for_tabletop_sim)
     draftmancer_file_contents = generate_retail.generate_retail_draftmancer_file(id_to_tts_card, card_evaluations_file, settings)
-    create_template.write_draftmancer_file(draftmancer_file_contents, settings.card_list_name)
+    draftmancer.write_draftmancer_file(draftmancer_file_contents, settings.card_list_name)
 
 def tts_to_draftmancer(dreamborn_export_for_tabletop_sim, card_evaluations_file, settings):
-    draftmancer_file_contents = create_template.dreamborn_tts_to_draftmancer_from_file(dreamborn_export_for_tabletop_sim, card_evaluations_file, settings)
-    create_template.write_draftmancer_file(draftmancer_file_contents, settings.card_list_name)
+    draftmancer_file_contents = draftmancer.dreamborn_tts_to_draftmancer_from_file(dreamborn_export_for_tabletop_sim, card_evaluations_file, settings)
+    draftmancer.write_draftmancer_file(draftmancer_file_contents, settings.card_list_name)
 
 def draftmancer_to_tts(draftmancer_card_list):
-    id_to_custom_card = create_template.read_draftmancer_custom_cardlist()
-    id_to_count = create_template.read_draftmancer_export(draftmancer_card_list)
-    tts_deck = create_template.generate_tts_deck(id_to_count, id_to_custom_card)
-    create_template.write_tts_deck_file(tts_deck)
+    id_to_custom_card = draftmancer.read_draftmancer_custom_cardlist()
+    id_to_count = draftmancer.read_draftmancer_export(draftmancer_card_list)
+    tts_deck = draftmancer.generate_tts_deck(id_to_count, id_to_custom_card)
+    draftmancer.write_tts_deck_file(tts_deck)
 
 if __name__ == '__main__':
     args = parser.parse_args()

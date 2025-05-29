@@ -1,4 +1,4 @@
-import create_template
+import draftmancer
 import lorcast_api as lorcana_api
 from settings import Settings
 from card_evaluations import card_evaluations_manager, CardEvaluationsManager
@@ -34,7 +34,7 @@ def calculate_slots_to_append(rarity, color):
     return slots_to_append
 
 def generate_retail_draftmancer_file(id_to_tts_card, card_evaluations_file, settings: Settings):
-    id_to_dreamborn_name = create_template.read_id_to_dreamborn_name()
+    id_to_dreamborn_name = draftmancer.read_id_to_dreamborn_name()
     id_to_api_card = lorcana_api.read_or_fetch_id_to_api_card()
     print("card_evaluations_file")
     print(card_evaluations_file)
@@ -61,5 +61,5 @@ def generate_retail_draftmancer_file(id_to_tts_card, card_evaluations_file, sett
             slot_card = SlotCard(id, frequency)
             slot_name_to_slot[slot_name].slot_cards.append(slot_card)
 
-    custom_card_list = create_template.generate_custom_card_list(id_to_api_card, id_to_rating, id_to_tts_card, id_to_dreamborn_name, settings)
-    return create_template.generate_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_name, settings, slot_name_to_slot)
+    custom_card_list = draftmancer.generate_custom_card_list(id_to_api_card, id_to_rating, id_to_tts_card, id_to_dreamborn_name, settings)
+    return draftmancer.generate_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_name, settings, slot_name_to_slot)

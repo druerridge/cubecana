@@ -3,7 +3,7 @@ from pathlib import Path
 import api
 from typing import List
 import lcc_error
-import create_template
+import draftmancer
 
 RETAIL_SETS_DIR_PATH = "inputs/retail_sets"
 GAME_MODE_SUPER_SEALED = "SUPER_SEALED"
@@ -28,7 +28,7 @@ class RetailManager:
         self.load_retail_sets(RETAIL_SETS_DIR_PATH)
 
     def generate_retail_set(self, file: Path) -> RetailSet:
-        draftmancer_file:create_template.DraftmancerFile = create_template.read_draftmancer_file(file)
+        draftmancer_file:draftmancer.DraftmancerFile = draftmancer.read_draftmancer_file(file)
         set_id = file.stem.rstrip('.draftmancer')
         return RetailSet(set_id, draftmancer_file.draftmancer_settings.name, draftmancer_file.text_contents)
 

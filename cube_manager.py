@@ -2,7 +2,7 @@ import uuid
 import time
 from dataclasses import dataclass
 import api
-import create_template
+import draftmancer
 from typing import List
 import uuid
 from settings import Settings
@@ -22,7 +22,7 @@ class CubeManager:
     def create_cube(self, api_create_cube: api.CreateCubeRequest):
         new_id = str(uuid.uuid4())
         edit_secret = str(uuid.uuid4())
-        id_to_count = create_template.id_to_count_from(api_create_cube.cardListText.split('\n'))
+        id_to_count = draftmancer.id_to_count_from(api_create_cube.cardListText.split('\n'))
         new_cube = CubecanaCube(
             name=api_create_cube.name,
             card_id_to_count=id_to_count,
@@ -82,7 +82,7 @@ class CubeManager:
 
     def update_cube(self, api_edit_cube: api.EditCubeRequest):
         old_cube = cube_dao.get_cubecana_cube_by_id(uuid.UUID(api_edit_cube.id).bytes)
-        id_to_count = create_template.id_to_count_from(api_edit_cube.cardListText.split('\n'))
+        id_to_count = draftmancer.id_to_count_from(api_edit_cube.cardListText.split('\n'))
         updated_cube = CubecanaCube(
             name=api_edit_cube.name,
             card_id_to_count=id_to_count,

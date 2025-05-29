@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, Response, send_from_directory, redirect
 import json
-import create_template
+import draftmancer
 import pixelborn
 import lcc_error
 import card_evaluations
@@ -87,8 +87,8 @@ def draftmancer_to_inktable():
   data = request.get_data()
   json_data = json.loads(request.data)
   all_lines = json_data['draftmancer_export'].split('\n')
-  mainboard_lines = create_template.get_mainboard_lines(all_lines)
-  id_to_count = create_template.id_to_count_from(mainboard_lines)
+  mainboard_lines = draftmancer.get_mainboard_lines(all_lines)
+  id_to_count = draftmancer.id_to_count_from(mainboard_lines)
   pixelborn_deck = pixelborn.generate_pixelborn_deck(id_to_count)
   return pixelborn.inktable_import_link(pixelborn_deck)
 
@@ -98,10 +98,10 @@ def process_json():
   json_data = json.loads(request.data)
 
   all_lines = json_data['draftmancer_export'].split('\n')
-  mainboard_lines = create_template.get_mainboard_lines(all_lines)
-  id_to_count = create_template.id_to_count_from(mainboard_lines)
-  id_to_custom_card = create_template.read_draftmancer_custom_cardlist()
-  tts_deck = create_template.generate_tts_deck(id_to_count, id_to_custom_card)
+  mainboard_lines = draftmancer.get_mainboard_lines(all_lines)
+  id_to_count = draftmancer.id_to_count_from(mainboard_lines)
+  id_to_custom_card = draftmancer.read_draftmancer_custom_cardlist()
+  tts_deck = draftmancer.generate_tts_deck(id_to_count, id_to_custom_card)
 
   return json.dumps(tts_deck)
 
@@ -112,10 +112,10 @@ def card_list_to_draftmancer():
   card_list = json_data['card_list']
   settings_input = json_data['settings']
 
-  create_template.validate_card_list_against(card_list)
+  draftmancer.validate_card_list_against(card_list)
 
   card_list_lines = card_list.split('\n')
-  id_to_count_input = create_template.id_to_count_from(card_list_lines)
+  id_to_count_input = draftmancer.id_to_count_from(card_list_lines)
   card_count = 0
   [card_count := card_count + count for count in id_to_count_input.values()]
 
@@ -126,7 +126,7 @@ def card_list_to_draftmancer():
         set_card_colors=False,
         color_balance_packs=False
     )
-  draftmancer_file = create_template.dreamborn_card_list_to_draftmancer(card_list, card_evaluations.DEFAULT_CARD_EVALUATIONS_FILE, settings)
+  draftmancer_file = draftmancer.dreamborn_card_list_to_draftmancer(card_list, card_evaluations.DEFAULT_CARD_EVALUATIONS_FILE, settings)
   response = {
     'draftmancerFile': draftmancer_file, 
     'metadata': {
@@ -143,7 +143,7 @@ def handle_dreamborn_to_draftmancer():
   json_data = json.loads(request.data)
   json_obj_tss_export = json.loads(json_data['dreamborn_export'])
   settings_input = json_data['settings']
-  id_to_tts_card = create_template.generate_id_to_tts_card_from_json_obj(json_obj_tss_export)
+  id_to_tts_card = draftmancer.generate_id_to_tts_card_from_json_obj(json_obj_tss_export)
   card_count = 0
   [card_count := card_count + card['count'] for card in id_to_tts_card.values()]
   settings = Settings(
@@ -153,7 +153,7 @@ def handle_dreamborn_to_draftmancer():
         set_card_colors=False,
         color_balance_packs=False
     )
-  draftmancer_file = create_template.dreamborn_tts_to_draftmancer(id_to_tts_card, card_evaluations.DEFAULT_CARD_EVALUATIONS_FILE, settings)
+  draftmancer_file = draftmancer.dreamborn_tts_to_draftmancer(id_to_tts_card, card_evaluations.DEFAULT_CARD_EVALUATIONS_FILE, settings)
   response = {'draftmancerFile': draftmancer_file, 'metadata': {'cardCount': card_count, 'cardsPerBooster': settings.cards_per_booster, 'boostersPerPlayer': settings.boosters_per_player}}
   return jsonify(response)
 
@@ -227,7 +227,7 @@ def add_cube():
     return Response(status=400)
   if len(request.json['cardListText']) > MAX_CARD_LIST_LENGTH:
     return Response(status=413)
-  create_template.validate_card_list_against(request.json['cardListText'])
+  draftmancer.validate_card_list_against(request.json['cardListText'])
   api_create_cube = api.CreateCubeRequest(
     name=request.json['name'],
     cardListText=request.json['cardListText'],
@@ -245,7 +245,7 @@ def get_cube_draftmancer_file(cube_id):
   cube: CubecanaCube = cube_manager.get_cube(cube_id)
   if not cube:
     return Response(status=404)
-  draftmancer_file: str = create_template.generate_draftmancer_file_from_cube(cube)
+  draftmancer_file: str = draftmancer.generate_draftmancer_file_from_cube(cube)
   response = {
     'draftmancerFile': draftmancer_file, 
     'metadata': {

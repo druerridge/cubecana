@@ -8,6 +8,7 @@ import lorcast_api as lorcana_api
 import id_helper
 import franchise
 from cube_manager import CubecanaCube
+import card_list_helper
 from card_evaluations import card_evaluations_manager
 import tabletop_simulator
 
@@ -31,17 +32,6 @@ class DraftmancerFile:
   draftmancer_settings: DraftmancerSettings
   id_to_custom_card: dict[str, dict]
   text_contents: str
-
-def get_mainboard_lines(all_lines):
-  try: 
-    empty_index = all_lines.index("")
-    return all_lines[:empty_index]
-  except ValueError:
-    try:
-        empty_index = all_lines.index("\n")
-        return all_lines[:empty_index]
-    except ValueError:
-        return all_lines
     
 # def read_id_to_dreamborn_name():
 #     with open('all_dreamborn_names.txt', encoding='utf8') as f:
@@ -270,19 +260,8 @@ def read_draftmancer_file(file_path: str):
 def read_draftmancer_export(draftmancer_deck_export_file):
     with open(draftmancer_deck_export_file, encoding='utf8') as file:
         lines = file.readlines()
-        mainboard_lines = get_mainboard_lines(lines)
-        return id_to_count_from(mainboard_lines)
-
-def id_to_count_from(lines):
-    id_to_count = defaultdict(int)
-    for line in lines:
-        string_count, name = line.rstrip().split(' ', 1)
-        try:
-            int_count = int(string_count)
-            id_to_count[id_helper.to_id(name)] += int_count
-        except ValueError:
-            raise LccError("Missing count or name in line:\n " + line + "\nShould look like:\n1 Elsa - Snow Queen", 400)
-    return id_to_count
+        mainboard_lines = card_list_helper.get_mainboard_lines(lines)
+        return card_list_helper.id_to_count_from(mainboard_lines)
 
 def generate_draftmancer_file_from_cube(cube: CubecanaCube):
     card_evaluations_filename = card_evaluations_manager.determine_card_evaluations_file(cube)
@@ -299,7 +278,7 @@ def dreamborn_tts_to_draftmancer_from_file(dreamborn_export_for_tabletop_sim, ca
 
 def dreamborn_card_list_to_draftmancer(card_list_input, card_evaluations_file, settings):
     card_list_lines = card_list_input.split('\n')
-    id_to_count_input = id_to_count_from(card_list_lines)
+    id_to_count_input = card_list_helper.id_to_count_from(card_list_lines)
     return add_card_list_to_draftmancer_custom_cards(id_to_count_input, "incomplete_simple_template.draftmancer.txt", settings)
 
 def add_card_list_to_draftmancer_custom_cards(id_to_count_input, draftmancer_custom_card_file, settings: Settings):

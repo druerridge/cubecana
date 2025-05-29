@@ -4,6 +4,7 @@ import draftmancer
 import pixelborn
 import lcc_error
 import card_evaluations
+import card_list_helper
 from settings import Settings
 from cube_manager import CubecanaCube
 from cube_manager import cube_manager
@@ -88,8 +89,8 @@ def draftmancer_to_inktable():
   data = request.get_data()
   json_data = json.loads(request.data)
   all_lines = json_data['draftmancer_export'].split('\n')
-  mainboard_lines = draftmancer.get_mainboard_lines(all_lines)
-  id_to_count = draftmancer.id_to_count_from(mainboard_lines)
+  mainboard_lines = card_list_helper.get_mainboard_lines(all_lines)
+  id_to_count = card_list_helper.id_to_count_from(mainboard_lines)
   pixelborn_deck = pixelborn.generate_pixelborn_deck(id_to_count)
   return pixelborn.inktable_import_link(pixelborn_deck)
 
@@ -99,8 +100,8 @@ def process_json():
   json_data = json.loads(request.data)
 
   all_lines = json_data['draftmancer_export'].split('\n')
-  mainboard_lines = draftmancer.get_mainboard_lines(all_lines)
-  id_to_count = draftmancer.id_to_count_from(mainboard_lines)
+  mainboard_lines = card_list_helper.get_mainboard_lines(all_lines)
+  id_to_count = card_list_helper.id_to_count_from(mainboard_lines)
   id_to_custom_card = draftmancer.read_draftmancer_custom_cardlist()
   tts_deck = tabletop_simulator.generate_tts_deck(id_to_count, id_to_custom_card)
 
@@ -116,7 +117,7 @@ def card_list_to_draftmancer():
   draftmancer.validate_card_list_against(card_list)
 
   card_list_lines = card_list.split('\n')
-  id_to_count_input = draftmancer.id_to_count_from(card_list_lines)
+  id_to_count_input = card_list_helper.id_to_count_from(card_list_lines)
   card_count = 0
   [card_count := card_count + count for count in id_to_count_input.values()]
 

@@ -11,6 +11,7 @@ from retail_manager import retail_manager
 import api
 from flask import jsonify
 from cube_dao import MAX_CARD_LIST_LENGTH
+import tabletop_simulator
 app = Flask(__name__)
 
 # USER FACING PAGES
@@ -101,7 +102,7 @@ def process_json():
   mainboard_lines = draftmancer.get_mainboard_lines(all_lines)
   id_to_count = draftmancer.id_to_count_from(mainboard_lines)
   id_to_custom_card = draftmancer.read_draftmancer_custom_cardlist()
-  tts_deck = draftmancer.generate_tts_deck(id_to_count, id_to_custom_card)
+  tts_deck = tabletop_simulator.generate_tts_deck(id_to_count, id_to_custom_card)
 
   return json.dumps(tts_deck)
 
@@ -143,7 +144,7 @@ def handle_dreamborn_to_draftmancer():
   json_data = json.loads(request.data)
   json_obj_tss_export = json.loads(json_data['dreamborn_export'])
   settings_input = json_data['settings']
-  id_to_tts_card = draftmancer.generate_id_to_tts_card_from_json_obj(json_obj_tss_export)
+  id_to_tts_card = tabletop_simulator.generate_id_to_tts_card_from_json_obj(json_obj_tss_export)
   card_count = 0
   [card_count := card_count + card['count'] for card in id_to_tts_card.values()]
   settings = Settings(

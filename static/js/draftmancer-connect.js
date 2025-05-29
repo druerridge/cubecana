@@ -44,7 +44,7 @@ export function generateDraftmancerSession(CubeFile, tabToOpen, metadata) {
                 function startDraftOnCompletion(responseData) {
                     // Automatically disconnect bot once the human user has joined the session
                     socket.once("sessionUsers", () => {
-                        if (metadata.defaultGameMode == GAME_MODE_SUPER_SEALED) {
+                        if (metadata.defaultGameMode && metadata.defaultGameMode == GAME_MODE_SUPER_SEALED) {
                             socket.emit("distributeSealed", 16, null, (res) => {
                                 if (res.code < 0) {
                                     console.error(res);
@@ -65,6 +65,8 @@ export function generateDraftmancerSession(CubeFile, tabToOpen, metadata) {
                     request(`/api/cube/${metadata.cubeId}/startDraft`,null,startDraftOnCompletion,startDraftOnCompletion,'POST');
                 } else if (metadata.setId) {
                     request(`/api/retail_sets/${metadata.setId}/startDraft`,null,startDraftOnCompletion,startDraftOnCompletion,'POST');
+                } else {
+                    startDraftOnCompletion(null);
                 }
             }
         });

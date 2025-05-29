@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, Response, send_from_directory, redirect
 import json
 import draftmancer
-import pixelborn
+from pixelborn_manager import pixelborn_manager
 import lcc_error
 import card_evaluations
 import card_list_helper
@@ -91,8 +91,18 @@ def draftmancer_to_inktable():
   all_lines = json_data['draftmancer_export'].split('\n')
   mainboard_lines = card_list_helper.get_mainboard_lines(all_lines)
   id_to_count = card_list_helper.id_to_count_from(mainboard_lines)
-  pixelborn_deck = pixelborn.generate_pixelborn_deck(id_to_count)
-  return pixelborn.inktable_import_link(pixelborn_deck)
+  pixelborn_deck = pixelborn_manager.generate_pixelborn_deck(id_to_count)
+  return pixelborn_manager.inktable_import_link(pixelborn_deck)
+
+@app.route('/api/draftmancer-to-lorcanito/', methods=['POST'])
+def draftmancer_to_lorcanito():
+  data = request.get_data()
+  json_data = json.loads(request.data)
+  all_lines = json_data['draftmancer_export'].split('\n')
+  mainboard_lines = card_list_helper.get_mainboard_lines(all_lines)
+  id_to_count = card_list_helper.id_to_count_from(mainboard_lines)
+  pixelborn_deck = pixelborn_manager.generate_pixelborn_deck(id_to_count)
+  return pixelborn_manager.lorcanito_import_link(pixelborn_deck)
 
 @app.route('/api/draftmancer-to-tts/', methods=['POST'])
 def process_json():

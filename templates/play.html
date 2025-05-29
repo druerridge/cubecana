@@ -50,7 +50,7 @@
                 <ol>
                     <li><b>Draft</b> + build your deck on draftmancer.com</li>
                     <li>On draftmancer, click Export > Card Names</li>
-                    <li>Paste in the text box then press 'convert' to download</li>
+                    <li>Paste in the text box then press 'to Tabletop Simulator' to download</li>
                     <li>Copy downloaded file to <br />C:\Users\USERNAME\Documents\My Games\Tabletop Simulator\Saves\Saved Objects</li>
                     <li>In a Tabletop Simulator room:
                         <ol>
@@ -61,20 +61,23 @@
                 </ol>    
             </div>
             <button id="post-btn" class="action-button" disabled>To Tabletop Simulator</button><br />
-            <button id="inktable-btn" class="action-button" disabled>To Inktable.net</button>
+            <button id="inktable-btn" class="action-button" disabled>To Inktable</button><br />
+            <button id="lorcanito-btn" class="action-button" disabled>To Lorcanito</button>
         </div>
     </div> 
     {% include 'shared/content_footer.html' %}
 </body>
 <script type="text/javascript">
-    const convertButton = document.getElementById('post-btn');
+    const ttsButton = document.getElementById('post-btn');
     const errorTextElement = document.getElementById('errorText');
     const draftmancerInputArea = document.getElementById('draftmancer-input-area');
     const InktableButton = document.getElementById('inktable-btn');
+    const LorcanitoButton = document.getElementById('lorcanito-btn');
 
     draftmancerInputArea.addEventListener('input', () => {
-        convertButton.disabled = draftmancerInputArea.value.trim().length === 0;
+        ttsButton.disabled = draftmancerInputArea.value.trim().length === 0;
         InktableButton.disabled = draftmancerInputArea.value.trim().length === 0;
+        LorcanitoButton.disabled = draftmancerInputArea.value.trim().length === 0;
     });
 
     InktableButton.addEventListener('click', async _ => { 
@@ -89,7 +92,19 @@
         });
     });
 
-    convertButton.addEventListener('click', async _ => {
+    LorcanitoButton.addEventListener('click', async _ => { 
+        hideError();
+        var url = "/api/draftmancer-to-lorcanito/";
+        var data = JSON.stringify({ "draftmancer_export": draftmancerInputArea.value.trim() });
+        let newTab = window.open("/loading");
+        request(url, data, (responseText) => {
+            newTab.location.href = responseText;
+        }, (xhr) => {
+            newTab.close();
+        });
+    });
+
+    ttsButton.addEventListener('click', async _ => {
         hideError();
         var url = "/api/draftmancer-to-tts/";
         var data = JSON.stringify({ "draftmancer_export": draftmancerInputArea.value.trim() });

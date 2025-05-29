@@ -11,6 +11,7 @@ from cube_manager import CubecanaCube
 import card_list_helper
 from card_evaluations import card_evaluations_manager
 import tabletop_simulator
+from dreamborn_manager import dreamborn_manager
 
 @dataclass(frozen=True)
 class DraftmancerSettings:
@@ -32,24 +33,6 @@ class DraftmancerFile:
   draftmancer_settings: DraftmancerSettings
   id_to_custom_card: dict[str, dict]
   text_contents: str
-    
-# def read_id_to_dreamborn_name():
-#     with open('all_dreamborn_names.txt', encoding='utf8') as f:
-#         lines = f.readlines()
-#     id_to_dreamborn_name = {}
-#     for l in lines:
-#         name = l.strip()
-#         id_to_dreamborn_name[id_helper.to_id(name)] = name
-#     return id_to_dreamborn_name
-
-def read_id_to_dreamborn_name():
-    with open('all_dreamborn_names.txt', encoding='utf8') as f:
-        lines = f.readlines()
-    id_to_dreamborn_name = {}
-    for l in lines:
-        name = l.strip()
-        id_to_dreamborn_name[id_helper.to_id(name)] = name
-    return id_to_dreamborn_name
 
 lorcana_color_to_draftmancer_color =  {
     "Amber": "W",
@@ -80,12 +63,6 @@ lorcana_rarity_to_draftmancer_rarity =  {
 }
 def to_draftmancer_rarity(lorcana_rarity):
     return lorcana_rarity_to_draftmancer_rarity[lorcana_rarity]
-
-def to_language_coded_image_uri(image_uri, language_code):
-    if language_code == "en":
-        return image_uri
-    else:
-        return image_uri.replace("en", language_code)
 
 def to_draftmancer_card_type(api_card: ApiCard, settings: Settings):
     if not settings.set_card_types:
@@ -122,12 +99,12 @@ def generate_custom_card_list(id_to_api_card: dict[str, ApiCard],
             'mana_cost': f'{{{ink_cost}}}',
             'type': to_draftmancer_card_type(api_card, settings),
             'image_uris': {
-                'en': to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'en'),
-                'fr': to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'fr'),
-                'de': to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'de'),
-                'it': to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'it'),
-                'ja': to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'ja'),
-                'zh': to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'zh'),
+                'en': dreamborn_manager.to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'en'),
+                'fr': dreamborn_manager.to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'fr'),
+                'de': dreamborn_manager.to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'de'),
+                'it': dreamborn_manager.to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'it'),
+                'ja': dreamborn_manager.to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'ja'),
+                'zh': dreamborn_manager.to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'zh'),
             },
             'rarity': to_draftmancer_rarity(api_card.rarity),
         }
@@ -337,7 +314,7 @@ def validate_card_list_against(card_list_input, draftmancer_custom_card_file="in
     
 
 def dreamborn_tts_to_draftmancer(id_to_tts_card, card_evaluations_file, settings):
-    id_to_dreamborn_name = read_id_to_dreamborn_name()
+    id_to_dreamborn_name = dreamborn_manager.get_id_to_dreamborn_name()
     id_to_api_card = lorcana_api.read_or_fetch_id_to_api_card()
     id_to_rating = card_evaluations_manager.read_id_to_rating(card_evaluations_file)
     custom_card_list = generate_custom_card_list(id_to_api_card, id_to_rating, id_to_tts_card, id_to_dreamborn_name, settings)

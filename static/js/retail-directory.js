@@ -1,4 +1,4 @@
-import { generateDraftmancerSession } from "draftmancer-connect";
+import { generateDraftmancerSession, GAME_MODE } from "draftmancer-connect";
 
 const container = document.getElementById('retail-sets-container');
 const loadingText = document.getElementById('loading-text');
@@ -13,22 +13,45 @@ function populateRetailSets(retailSets) {
     retailSets.forEach(retailSet => {
         if ("content" in document.createElement("template")) {
             const template = document.getElementById("cube-list-element-template");
-            const retailSetDraftLink = `${window.location.origin}/retail_sets/${retailSet.id}/draft`
-
             let clone = template.content.cloneNode(true);
+
             clone.getElementById("cube-element-name").textContent = retailSet.name;
-            clone.getElementById("cube-element-draft").addEventListener("click", function() {
-                let newTab = window.open("/loading");
-                const retailSetDraftmancerUrl = `${window.location.origin}/api/retail_sets/${retailSet.id}/draftmancerFile`
-                request(retailSetDraftmancerUrl, null, (responseText) => {
-                    let response = JSON.parse(responseText);
-                    generateDraftmancerSession(response.draftmancerFile, newTab, response.metadata);
-                }, 
-                () => {
-                    newTab.close();
-                }, 
-                'GET');
-            });
+            if (retailSet.availableGameModes.includes(GAME_MODE.DRAFT)) {
+                const draftButton = clone.getElementById("cube-element-draft")
+                draftButton.disabled = false;
+                draftButton.addEventListener("click", function() {
+                    let newTab = window.open("/loading");
+                    const retailSetDraftmancerUrl = `${window.location.origin}/api/retail_sets/${retailSet.id}/draftmancerFile`
+                    request(retailSetDraftmancerUrl, null, (responseText) => {
+                        let response = JSON.parse(responseText);
+                        generateDraftmancerSession(response.draftmancerFile, newTab, response.metadata);
+                    }, 
+                    () => {
+                        newTab.close();
+                    }, 
+                    'GET');
+                });
+            }
+            if (retailSet.availableGameModes.includes(GAME_MODE.SEALED) || retailSet.availableGameModes.includes(GAME_MODE.SUPER_SEALED)) {
+                const sealedButton = clone.getElementById("cube-element-sealed");
+                sealedButton.disabled = false;
+                sealedButton.addEventListener("click", function() {
+                    let newTab = window.open("/loading");
+                    const retailSetDraftmancerUrl = `${window.location.origin}/api/retail_sets/${retailSet.id}/draftmancerFile`
+                    request(retailSetDraftmancerUrl, null, (responseText) => {
+                        let response = JSON.parse(responseText);
+                        let selectedGameMode = GAME_MODE.SEALED;
+                        if (retailSet.defaultGameMode == GAME_MODE.SUPER_SEALED) {
+                            selectedGameMode = GAME_MODE.SUPER_SEALED;
+                        }
+                        generateDraftmancerSession(response.draftmancerFile, newTab, response.metadata, selectedGameMode);
+                    }, 
+                    () => {
+                        newTab.close();
+                    }, 
+                    'GET');
+                });
+            }
             loadingText.disabled = true;
             container.appendChild(clone);
         }

@@ -53,6 +53,8 @@ class EditCubeRequest:
 class RetailSetEntry:
   name: str
   id: str
+  defaultGameMode: str
+  availableGameModes: List[str]
   
   def toJSON(self):
     return json.dumps(
@@ -66,7 +68,6 @@ class RetailSet:
   name: str
   id: str
   draftmancerFile: str
-  defaultGameMode: str
   
   def toJSON(self):
     return json.dumps(

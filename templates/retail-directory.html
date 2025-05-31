@@ -104,6 +104,17 @@
         #cube-element-draft {
             background-color: green;
         }
+        #cube-element-draft:disabled {
+            background-color: #ccc;
+            cursor: default;
+        }
+        #cube-element-sealed {
+            background-color: orange;
+        }
+        #cube-element-sealed:disabled {
+            background-color: #ccc;
+            cursor: default;
+        }
         #cube-element-div {
             border: 1px solid #ccc; 
             border-radius: 5px; 
@@ -160,7 +171,8 @@
                     <span id="cube-element-name" class="name">INSERT_NAME</span>
                 </div>
                 <div id="element-row-1-right">
-                    <span><button id="cube-element-draft" class="cube-dir-btn" ><img class="cube-dir-btn-img" src="static/img/hand-of-cards.png" height="14px"/> Draft!</button></span>   
+                    <span><button disabled id="cube-element-draft" class="cube-dir-btn" ><img class="cube-dir-btn-img" src="static/img/hand-of-cards.png" height="14px"/> Draft!</button></span>   
+                    <span><button disabled id="cube-element-sealed" class="cube-dir-btn" ><img class="cube-dir-btn-img" src="static/img/hand-of-cards.png" height="14px"/> Sealed!</button></span>   
                 </div>
             </div>
         </div>

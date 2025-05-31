@@ -7,7 +7,18 @@ import draftmancer
 
 RETAIL_SETS_DIR_PATH = "inputs/retail_sets"
 GAME_MODE_SUPER_SEALED = "SUPER_SEALED"
+GAME_MODE_SEALED = "SEALED"
 GAME_MODE_DRAFT = "DRAFT"
+
+def get_default_game_mode(retail_set_name) -> str:
+    if "Super Sealed" in retail_set_name:
+        return GAME_MODE_SUPER_SEALED
+    return GAME_MODE_DRAFT
+
+def get_available_game_modes(retail_set_name) -> str:
+    if "Super Sealed" in retail_set_name:
+        return [GAME_MODE_SUPER_SEALED]
+    return [GAME_MODE_DRAFT, GAME_MODE_SEALED]
 
 @dataclass(frozen=True)
 class RetailSet:
@@ -19,7 +30,9 @@ class RetailSet:
   def to_retail_set_entry(self) -> api.RetailSetEntry:
     return api.RetailSetEntry(
       name=self.name,
-      id=self.id
+      id=self.id, 
+      defaultGameMode=get_default_game_mode(self.name),
+      availableGameModes=get_available_game_modes(self.name)
     )
 
 class RetailManager:
@@ -54,16 +67,10 @@ class RetailManager:
         paginated_retail_set_entries:List[api.RetailSetEntry] = [retail_set.to_retail_set_entry() for retail_set in paginated_retail_sets]
         return paginated_retail_set_entries
 
-    def get_default_game_mode(self, retail_set_name) -> str:
-        if "Super Sealed" in retail_set_name:
-            return GAME_MODE_SUPER_SEALED
-        return GAME_MODE_DRAFT
-
     def get_set(self, id: str) -> RetailSet:
         retail_set = self.retail_sets.get(id)
         if retail_set is None:
             raise lcc_error.RetailSetNotFoundError(f"Retail set with id {id} not found")
-        defaut_game_mode = self.get_default_game_mode(retail_set.name)
-        return api.RetailSet(id=retail_set.id, name=retail_set.name, draftmancerFile=retail_set.draftmancer_file_contents, defaultGameMode=defaut_game_mode)
+        return api.RetailSet(id=retail_set.id, name=retail_set.name, draftmancerFile=retail_set.draftmancer_file_contents)
 
 retail_manager: RetailManager = RetailManager()

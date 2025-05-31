@@ -124,7 +124,7 @@ function onRetrieveRetailSetsSuccess(response) {
 
 function fetchRetailSets(page, perPage, order) {
     const url = `${window.location.origin}/api/retail_sets?page=${page}&per_page=${perPage}&order=${order}`;
-    request(url, null, onRetrieveRetailSetsSuccess, null, 'GET');
+    request(url, null, onRetrieveRetailSetsSuccess, null, 'POST');
 }
 
 // Initial fetch

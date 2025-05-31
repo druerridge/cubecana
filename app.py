@@ -171,6 +171,15 @@ def handle_dreamborn_to_draftmancer():
 
 # RETAIL API ENDPOINTS
 
+@app.route('/api/retail_sets', methods=['POST'])
+def get_retail_sets_post():
+  page = int(request.args.get('page', 1))
+  per_page = min(int(request.args.get('per_page', 10)), 100)
+  order = request.args.get('order', api.OrderType.DESC)
+  paginated_retail_set_entries = retail_manager.get_sets(page, per_page, order)
+  response = {'sets': paginated_retail_set_entries, 'totalSets': retail_manager.get_set_count()}
+  return jsonify(response)
+
 @app.route('/api/retail_sets', methods=['GET'])
 def get_retail_sets():
   page = int(request.args.get('page', 1))

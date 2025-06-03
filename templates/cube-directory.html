@@ -138,20 +138,33 @@
             text-align: right; 
             width: 55%;
         }
-</style>
+        .active-filter-tag {
+            margin-right: 10px;
+            padding: 5px;
+            border: 1px solid gray;
+            border-radius: 3px;
+            background-color: lightgray;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s, border-color 0.2s;
+        }
+        .active-filter-tag:hover {
+            background-color: #ff4d4d;
+            color: white;
+            border-color: #b30000;
+        }
+    </style>
 </head>
 <body>
     {% include 'shared/content_header.html' %}
 
     <h1 style="display: inline-block;">Lorcana Cube Directory</h1><br />
 
+    <a href="add-cube"><button id="add-cube-btn" class="action-button">Add Cube</button></a>
+
     <div id="active-filters" style="margin-top: 10px;">
         <span id="active-filters-label" style="font-weight: bold;">Active Filters:</span>
         <div id="filters-container" style="display: inline-block; margin-left: 10px;"></div>
     </div>
-
-    <a href="add-cube"><button id="add-cube-btn" class="action-button">Add Cube</button></a>
-    <a id="old-cube-dir" href="https://www.dropbox.com/scl/fo/qjgp4iv5c2kaxetpvft9f/ADd721en5FnrK4nlLgba-LM?rlkey=twujmqnrqkmwjvd2yk5x47hxr&e=3&dl=0">Old Cube Directory</a>
 
     <div style="margin-top: 20px;">
         <label for="sortOptions">Sort by:</label>

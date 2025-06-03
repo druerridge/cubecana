@@ -10,26 +10,23 @@ const nextPage = document.getElementById('next-page');
 const filtersContainer = document.getElementById('filters-container');
 
 function renderActiveFilters() {
+    const activeFiltersDiv = document.getElementById('active-filters');
     filtersContainer.innerHTML = '';
     if (tagsToFilterBy && tagsToFilterBy.length > 0 && tagsToFilterBy[0] !== ',') {
+        activeFiltersDiv.style.display = '';
         tagsToFilterBy.forEach(tag => {
             const filterElement = document.createElement('span');
-            filterElement.style.marginRight = '10px';
-            filterElement.style.padding = '5px';
-            filterElement.style.border = '1px solid gray';
-            filterElement.style.borderRadius = '3px';
-            filterElement.style.backgroundColor = 'lightgray';
-            filterElement.style.cursor = 'pointer';
-
+            filterElement.className = 'active-filter-tag';
             filterElement.textContent = `${tag} ✕`;
             filterElement.addEventListener('click', () => {
                 tagsToFilterBy = tagsToFilterBy.filter(item => item !== tag);
                 currentPage = 1;
                 refetchPage();
             });
-
             filtersContainer.appendChild(filterElement);
         });
+    } else {
+        activeFiltersDiv.style.display = 'none';
     }
 }
 

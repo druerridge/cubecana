@@ -16,20 +16,6 @@
         .column h2 {
             margin-bottom: 20px;
         }
-        a {
-            color: #ffcc00; /* Bright yellow for better visibility */
-            text-decoration: underline;
-        }
-        a:not(.nounderline) {
-            color: #ffcc00; /* Bright yellow for better visibility */
-            text-decoration: underline;
-        }
-        a:hover {
-            color: #ffffff; /* White on hover for contrast */
-        }
-        a:visited:not(.button) {
-            color: #ffcc00;
-        }
     </style>
 </head>
 <body>
@@ -51,8 +37,8 @@
         </div>
         <div class="column">
             <h2>3. Play it</h2>
-            ...against friends on Lorcanito / Tabletop Simulator <br />
-            ...or bots on <a href="https://www.inktable.net/">inktable.net</a><br />
+            ...against friends on <a href="https://lorcanito.com/">Lorcanito</a> / Tabletop Simulator <br />
+            ...or bots on <a href="https://www.inktable.net/">Inktable</a><br />
             <a href="play" class="button">Play Cube</a><br />
             <img src="{{ url_for('static', filename='tts_play_image.png') }}" alt="Play Image" style="width: 90%; margin-top: 20px;">
         </div>

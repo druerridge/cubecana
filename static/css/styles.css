@@ -60,3 +60,20 @@ body {
 .danger-button:hover {
     background-color: #c82333;
 }
+a {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+a:not(.nounderline) {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+a:hover:not(.button) {
+    color: #17e6e6;
+}
+a:visited:not(.button) {
+    color: #ffcc00;
+}
+a:visited:hover:not(.button) {
+    color: #17e6e6;
+}

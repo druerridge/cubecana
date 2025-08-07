@@ -4,7 +4,7 @@ import json
 from lcc_error import LccError, UnidentifiedCardError
 from settings import Settings
 from lorcast_api import ApiCard
-import lorcast_api as lorcana_api
+from lorcast_api import lorcast_api as lorcana_api
 import id_helper
 import franchise
 from cube_manager import CubecanaCube

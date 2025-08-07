@@ -2,6 +2,7 @@ from dataclasses import dataclass
 import json
 from cube_manager import CubeManager, cube_manager
 from settings import POWER_BAND_MAX, POWER_BAND_OVERPOWERED
+from lorcast_api import lorcast_api as lorcana_api
 import csv
 
 @dataclass(frozen=True)
@@ -12,29 +13,26 @@ class CardPopularityReport:
     included_tags: list[str]
     included_power_bands: list[str]
 
-    def to_csv(self, filename: str):
+    def write_to_csv(self, filename: str):
         """Export the report to a CSV file."""
         with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
             writer = csv.writer(csvfile)
-            # Write header
-            writer.writerow(['Card ID', 'Num Copies', 'Num Cubes Containing', 'Ratio Cubes Included'])
-            # Write data rows
+            writer.writerow(['Card Name','Set Number', 'Num Copies', 'Num Cubes Containing', 'Ratio Cubes Included'])
             for card_id in self.id_to_num_copies_in_cubes:
-                writer.writerow([
-                    card_id,
-                    self.id_to_num_copies_in_cubes[card_id],
-                    self.id_to_num_cubes_containing[card_id],
-                    self.id_to_ratio_cubes_included[card_id]
-                ])
+                try:
+                    full_name = lorcana_api.get_full_name_from_id(card_id)
+                    set_num = lorcana_api.id_to_api_card[card_id].set_num
+                    writer.writerow([
+                        full_name,
+                        set_num,
+                        self.id_to_num_copies_in_cubes[card_id],
+                        self.id_to_num_cubes_containing[card_id],
+                        self.id_to_ratio_cubes_included[card_id],
+                    ])
+                except ValueError:
+                    # Card ID {card_id} not found in API data while generating CardPopularityReport, skipping.
+                    continue
         print(f"CSV file created at {filename}")
-
-    def to_csv_string(self) -> str:
-        """Return the report as a CSV formatted string."""
-        output = []
-        output.append('Card ID,Num Copies,Num Cubes Containing,Ratio Cubes Included')
-        for card_id in self.id_to_num_copies_in_cubes:
-            output.append(f"{card_id},{self.id_to_num_copies_in_cubes[card_id]},{self.id_to_num_cubes_containing[card_id]},{self.id_to_ratio_cubes_included[card_id]}")
-        return '\n'.join(output)
 
 class Cubealytics:
     def generate_card_popularity_report(self, included_tags: list[str] = None, included_power_bands: str = None) -> CardPopularityReport:
@@ -60,7 +58,7 @@ class Cubealytics:
             included_tags=included_tags,
             included_power_bands=included_power_bands,
         )
-        card_popularity_report.to_csv("static/reports/power_max_card_popularity_report.csv")
+        card_popularity_report.write_to_csv("static/reports/power_max_card_popularity_report.csv")
         print(f"Cube report generated for tags: {included_tags}, power bands: {included_power_bands} analyzed {len(all_cube_lists)} cubes.")
         return card_popularity_report
 

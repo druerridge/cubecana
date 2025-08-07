@@ -7,12 +7,14 @@ CACHED_API_DATA_FILEPATH = 'lorcast_api_data_cache.json'
 CACHED_API_DATA_SET_Q1_FILEPATH = 'lorcast_api_data_cache_q1.json'
 
 class ApiCard:
-    def __init__(self, cost, rarity, color, inks, types: list[str]):
+    def __init__(self, full_name: str, cost: int, rarity: str, color: str, inks: list[str], types: list[str], set_num: int):
+        self.full_name = full_name
         self.cost = cost
         self.rarity = rarity
         self.color = color
         self.inks = inks
         self.types = types
+        self.set_num = set_num
 
     def toJSON(self):
         return json.dumps(
@@ -29,109 +31,129 @@ lorcast_to_dtd_rarity =  {
     "Legendary" : "Legendary" 
 }
 
-def is_number(code):
-    try:
-        int(code)
-        return True
-    except ValueError:
-        return False
+class LorcastApi:
+    def __init__(self):
+        self.id_to_api_card: dict[str, ApiCard] = {}
 
-def fetch_api_data() -> dict[str, dict]:
-    name_to_card = {}
-    # get sets
-    url = f'https://api.lorcast.com/v0/sets'
-    print(f'Fetching {url}...')
-    res = requests.get(url=url)
-    sets_data = res.json()
-    if sets_data is None:
-        raise Exception('Failed to fetch sets no json data')
-    if 'results' not in sets_data:
-        raise Exception('Failed to fetch sets no results in response')
-    sets_results = sets_data['results']
-    if sets_results is None:
-        raise Exception(f'Failed to fetch sets: results are None')
-    # iterate sets
-    for set in sets_results:
-        code = set['code']
-        if not is_number(code):
-            continue
-        url = f'https://api.lorcast.com/v0/sets/{code}/cards'
+    def is_number(self,code):
+        try:
+            int(code)
+            return True
+        except ValueError:
+            return False
+
+    def fetch_api_data(self) -> dict[str, dict]:
+        name_to_card = {}
+        # get sets
+        url = f'https://api.lorcast.com/v0/sets'
         print(f'Fetching {url}...')
         res = requests.get(url=url)
-        cards_in_set = res.json()
-        # iterate cards
-        for card in cards_in_set:
-            full_name = get_full_name(card)
-            if card['rarity'] == 'Enchanted':
+        sets_data = res.json()
+        if sets_data is None:
+            raise Exception('Failed to fetch sets no json data')
+        if 'results' not in sets_data:
+            raise Exception('Failed to fetch sets no results in response')
+        sets_results = sets_data['results']
+        if sets_results is None:
+            raise Exception(f'Failed to fetch sets: results are None')
+        # iterate sets
+        for set in sets_results:
+            code = set['code']
+            if not self.is_number(code):
                 continue
-            if is_number(card['collector_number']) and int(card['collector_number']) > 204:
-                continue
-            name_to_card[full_name] = card
-    return name_to_card
+            url = f'https://api.lorcast.com/v0/sets/{code}/cards'
+            print(f'Fetching {url}...')
+            res = requests.get(url=url)
+            cards_in_set = res.json()
+            # iterate cards
+            for card in cards_in_set:
+                full_name = self.get_full_name(card)
+                if card['rarity'] == 'Enchanted':
+                    continue
+                if self.is_number(card['collector_number']) and int(card['collector_number']) > 204:
+                    continue
+                name_to_card[full_name] = card
+        return name_to_card
 
-def get_full_name(card):
-    if 'version' in card:
-        full_name = f"{card['name']} - {card['version']}"
-        return full_name
-    return card['name']
+    def get_full_name_from_id(self, card_id: str) -> str:
+        if card_id not in self.id_to_api_card:
+            raise ValueError(f"Card ID {card_id} not found in API data")
+        api_card:ApiCard = self.id_to_api_card[card_id]
+        return api_card.full_name
 
-def api_card_from(card):
-    return ApiCard(card['cost'], 
-                   lorcast_to_dtd_rarity[card['rarity']], 
-                   card['ink'],
-                   card['inks'],
-                   card['type'])
+    def get_full_name(self, card_untyped) -> str:
+        if 'version' in card_untyped:
+            full_name: str = f"{card_untyped['name']} - {card_untyped['version']}"
+            return full_name
+        return card_untyped['name']
 
-def generate_id_to_card_untyped(name_to_card) -> dict[str, ApiCard]:
-    id_to_card_untyped: dict[str, dict] = {}
-    for card_name in name_to_card:
-        card = name_to_card[card_name]
-        id_to_card_untyped[id_helper.to_id(card_name)] = card
-    return id_to_card_untyped
+    def api_card_from(self, card_untyped) -> ApiCard:
+        full_name:str = str(self.get_full_name(card_untyped))
+        return ApiCard(
+                    full_name=full_name,    
+                    cost=card_untyped['cost'], 
+                    rarity=lorcast_to_dtd_rarity[card_untyped['rarity']], 
+                    color=card_untyped['ink'],
+                    inks=card_untyped['inks'],
+                    types=card_untyped['type'],
+                    set_num=card_untyped['set']['code'])
 
-def generate_id_to_api_card(name_to_card) -> dict[str, ApiCard]:
-    id_to_api_card: dict[str, ApiCard] = {}
-    for card_name in name_to_card:
-        card = name_to_card[card_name]
-        id_to_api_card[id_helper.to_id(card_name)] = api_card_from(card)
-    return id_to_api_card
+    def generate_id_to_card_untyped(self, name_to_card) -> dict[str, ApiCard]:
+        id_to_card_untyped: dict[str, dict] = {}
+        for card_name in name_to_card:
+            card = name_to_card[card_name]
+            id_to_card_untyped[id_helper.to_id(card_name)] = card
+        return id_to_card_untyped
 
-def fetch_set_q1_data() -> dict[str, dict]:
-    id_to_card_untyped = {}
-    cached_set_q1_api_data_file = Path(CACHED_API_DATA_SET_Q1_FILEPATH)
-    with cached_set_q1_api_data_file.open(mode='r') as file_to_read:
-        id_to_card_untyped = json.load(file_to_read)    
-    return id_to_card_untyped
+    def generate_id_to_api_card(self, id_to_card_untyped) -> dict[str, ApiCard]:
+        id_to_api_card: dict[str, ApiCard] = {}
+        for card_id in id_to_card_untyped:
+            card_untyped = id_to_card_untyped[card_id]
+            id_to_api_card[card_id] = self.api_card_from(card_untyped)
+        return id_to_api_card
 
-def read_or_fetch_id_to_api_card() -> dict[str, ApiCard]:
-    cached_api_data_file = Path(CACHED_API_DATA_FILEPATH)
-    if not cached_api_data_file.is_file():
-        name_to_card_untyped = fetch_api_data()
-        print("Fetching set Q1 cards from local file...")
-        name_to_card_untyped_set_q1 = fetch_set_q1_data()
-        name_to_card_untyped.update(name_to_card_untyped_set_q1) # merge the two dicts
-        fix_card_names(name_to_card_untyped)
-        id_to_card_untyped = generate_id_to_card_untyped(name_to_card_untyped)
-        with cached_api_data_file.open(mode='w') as file_to_write:
-            json.dump(id_to_card_untyped, file_to_write)
+    def fetch_set_q1_data(self) -> dict[str, dict]:
+        id_to_card_untyped = {}
+        cached_set_q1_api_data_file = Path(CACHED_API_DATA_SET_Q1_FILEPATH)
+        with cached_set_q1_api_data_file.open(mode='r') as file_to_read:
+            id_to_card_untyped = json.load(file_to_read)    
+        return id_to_card_untyped
 
-    with cached_api_data_file.open(mode='r') as file_to_read:
-        id_to_card_untyped = json.load(file_to_read)
-        id_to_api_card = generate_id_to_api_card(id_to_card_untyped)
-    return id_to_api_card
+    def read_or_fetch_id_to_api_card(self) -> dict[str, ApiCard]:
+        return self.id_to_api_card
 
-def fix_card_name(name_to_card, old_full_name, new_full_name):
-    if old_full_name not in name_to_card:
-        return
-    name_to_card[new_full_name] = name_to_card[old_full_name]
-    splits = new_full_name.split(' - ')
-    new_name = splits[0]
-    name_to_card[new_full_name]['name'] = new_name
-    if len(splits) > 1:
-        new_version = splits[1]
-        name_to_card[new_full_name]['version'] = new_version
-    del name_to_card[old_full_name]    
+    def init(self):
+        cached_api_data_file = Path(CACHED_API_DATA_FILEPATH)
+        if not cached_api_data_file.is_file():
+            name_to_card_untyped = self.fetch_api_data()
+            print("Fetching set Q1 cards from local file...")
+            name_to_card_untyped_set_q1 = self.fetch_set_q1_data()
+            name_to_card_untyped.update(name_to_card_untyped_set_q1) # merge the two dicts
+            self.fix_card_names(name_to_card_untyped)
+            id_to_card_untyped = self.generate_id_to_card_untyped(name_to_card_untyped)
+            with cached_api_data_file.open(mode='w') as file_to_write:
+                json.dump(id_to_card_untyped, file_to_write)
 
-def fix_card_names(name_to_card_untyped):
-    # there are typos in the https://api.lorcana-api.com card names.  We have to fix those or we cannot translate between data sources
-    print("Fixing card names")
+        with cached_api_data_file.open(mode='r') as file_to_read:
+            id_to_card_untyped = json.load(file_to_read)
+            id_to_api_card = self.generate_id_to_api_card(id_to_card_untyped)
+        self.id_to_api_card = id_to_api_card
+
+    def fix_card_name(self, name_to_card, old_full_name, new_full_name):
+        if old_full_name not in name_to_card:
+            return
+        name_to_card[new_full_name] = name_to_card[old_full_name]
+        splits = new_full_name.split(' - ')
+        new_name = splits[0]
+        name_to_card[new_full_name]['name'] = new_name
+        if len(splits) > 1:
+            new_version = splits[1]
+            name_to_card[new_full_name]['version'] = new_version
+        del name_to_card[old_full_name]    
+
+    def fix_card_names(self, name_to_card_untyped):
+        # there are typos in the https://api.lorcana-api.com card names.  We have to fix those or we cannot translate between data sources
+        print("Fixing card names")
+
+lorcast_api: LorcastApi = LorcastApi()
+lorcast_api.init()

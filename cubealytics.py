@@ -4,6 +4,7 @@ from cube_manager import CubeManager, cube_manager
 from settings import POWER_BAND_MAX, POWER_BAND_OVERPOWERED
 from lorcast_api import lorcast_api as lorcana_api
 import csv
+from pathlib import Path
 
 @dataclass(frozen=True)
 class CardPopularityReport: 
@@ -14,7 +15,7 @@ class CardPopularityReport:
     included_power_bands: list[str]
 
     def write_to_csv(self, filename: str):
-        """Export the report to a CSV file."""
+        Path(filename).parent.mkdir(parents=True, exist_ok=True)
         with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
             writer = csv.writer(csvfile)
             writer.writerow(['Card Name','Set Number', 'Num Copies', 'Num Cubes Containing', 'Ratio Cubes Included'])

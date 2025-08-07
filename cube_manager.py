@@ -105,5 +105,12 @@ class CubeManager:
         id_bytes = uuid.UUID(updated_cube.id).bytes
         cube_dao.update_cubecana_cube(cube_id=id_bytes, updated_cube=db_cubecana_cube)
         return updated_cube    
-
+    
+    # big perf hit, do only on startup or when not under load
+    def get_all_cube_lists(self, tags: list[str] = None, power_bands: list[str] = None) -> List[dict[str, int]]:
+        count = self.get_cube_count()
+        db_cubes: list[DbCubecanaCube] = cube_dao.get_cubecana_cubes(page=1, per_page=count, sort=api.SortType.RANK, order=api.OrderType.DESC, tags=tags, power_bands=power_bands)
+        cube_lists = [from_db_cubecana_cube(db_cube).card_id_to_count for db_cube in db_cubes]
+        return cube_lists
+        
 cube_manager: CubeManager = CubeManager()

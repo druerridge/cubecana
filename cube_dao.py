@@ -178,20 +178,22 @@ class CubeDao:
             return session.query(DbCubecanaCube).filter(DbCubecanaCube.id == cube_id).first()
 
         return self.execute(operation, cube_id=cube_id)
-    
-    def get_cubecana_cubes(self, page: int, per_page: int, sort: api.SortType, order: api.OrderType, tags: Optional[List[str]] = None) -> List[DbCubecanaCube]:
-        def operation(session, page, per_page, sort, order, tags):
+
+    def get_cubecana_cubes(self, page: int, per_page: int, sort: api.SortType, order: api.OrderType, tags: Optional[List[str]] = None, power_bands: Optional[List[str]] = None) -> List[DbCubecanaCube]:
+        def operation(session, page, per_page, sort, order, tags, power_bands   ):
             sort_column = API_SORT_TYPE_TO_COLUMN[sort]
             query = session.query(DbCubecanaCube)
             if tags is not None and len(tags) > 0 and tags[0] != "":
                 query = query.filter(DbCubecanaCube.tags.isnot(None)).filter(func.json_contains(DbCubecanaCube.tags, json.dumps(tags)))
+            if power_bands is not None and len(power_bands) > 0 and power_bands[0] != "":
+                query = query.filter(DbCubecanaCube.power_band.isnot(None)).filter(DbCubecanaCube.power_band.in_(power_bands))
             if order == api.OrderType.DESC:
                 query = query.order_by(sort_column.desc())
             else:
                 query = query.order_by(sort_column.asc())
             return query.offset((page - 1) * per_page).limit(per_page).all()
 
-        return self.execute(operation, page=page, per_page=per_page, sort=sort, order=order, tags=tags)
+        return self.execute(operation, page=page, per_page=per_page, sort=sort, order=order, tags=tags, power_bands=power_bands)
 
     def get_cubecana_cube_count(self) -> int:
         def operation(session):

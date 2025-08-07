@@ -13,6 +13,7 @@ import api
 from flask import jsonify
 from cube_dao import MAX_CARD_LIST_LENGTH
 import tabletop_simulator
+from cubealytics import cubealytics, Cubealytics
 app = Flask(__name__)
 
 # USER FACING PAGES

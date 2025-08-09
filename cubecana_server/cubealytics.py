@@ -22,10 +22,10 @@ class CardPopularityReport:
             for card_id in self.id_to_num_copies_in_cubes:
                 try:
                     full_name = lorcana_api.get_full_name_from_id(card_id)
-                    set_num = lorcana_api.id_to_api_card[card_id].set_num
+                    set_code = lorcana_api.id_to_api_card[card_id].default_printing.set_code
                     writer.writerow([
                         full_name,
-                        set_num,
+                        set_code,
                         self.id_to_num_copies_in_cubes[card_id],
                         self.id_to_num_cubes_containing[card_id],
                         self.id_to_ratio_cubes_included[card_id],

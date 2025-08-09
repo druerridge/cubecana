@@ -1,5 +1,5 @@
 {
-    "tritonsdaughtersdiscordantchorus": {
+    "tritonsdaughtersdiscordantchorus-q1-16": {
         "id": "tritonsdaughtersdiscordantchorus",
         "name": "Triton's Daughters - Discordant Chorus",
         "layout": "normal",
@@ -31,7 +31,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "16",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -45,7 +45,7 @@
         },
         "prices": {}
     },
-    "princeericgrimgroom": {
+    "princeericgrimgroom-q1-13": {
         "id": "princeericgrimgroom",
         "name": "Prince Eric - Grim Groom",
         "layout": "normal",
@@ -77,7 +77,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "13",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -91,7 +91,7 @@
         },
         "prices": {}
     },
-    "brunomadrigalunspeakableseer": {
+    "brunomadrigalunspeakableseer-q1-2": {
         "id": "brunomadrigalunspeakableseer",
         "name": "Bruno Madrigal - Unspeakable Seer",
         "layout": "normal",
@@ -123,7 +123,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "2",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -137,7 +137,7 @@
         },
         "prices": {}
     },
-    "gastonegotisticalbully": {
+    "gastonegotisticalbully-q1-5": {
         "id": "gastonegotisticalbully",
         "name": "Gaston - Egotistical Bully",
         "layout": "normal",
@@ -169,7 +169,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "5",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -183,7 +183,7 @@
         },
         "prices": {}
     },
-    "madhattersinisterhost": {
+    "madhattersinisterhost-q1-10": {
         "id": "madhattersinisterhost",
         "name": "Mad Hatter - Sinister Host",
         "layout": "normal",
@@ -215,7 +215,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "10",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -229,7 +229,7 @@
         },
         "prices": {}
     },
-    "jetsamwickedwhisperer": {
+    "jetsamwickedwhisperer-q1-9": {
         "id": "jetsamwickedwhisperer",
         "name": "Jetsam - Wicked Whisperer",
         "layout": "normal",
@@ -261,7 +261,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "9",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -275,7 +275,7 @@
         },
         "prices": {}
     },
-    "magicadespellshadowysorceress": {
+    "magicadespellshadowysorceress-q1-11": {
         "id": "magicadespellshadowysorceress",
         "name": "Magica De Spell - Shadowy Sorceress",
         "layout": "normal",
@@ -307,7 +307,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "11",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -321,7 +321,7 @@
         },
         "prices": {}
     },
-    "flotsamwickeddefender": {
+    "flotsamwickeddefender-q1-4": {
         "id": "flotsamwickeddefender",
         "name": "Flotsam - Wicked Defender",
         "layout": "normal",
@@ -353,7 +353,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "4",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -367,7 +367,7 @@
         },
         "prices": {}
     },
-    "tamatoagrabbycrab": {
+    "tamatoagrabbycrab-q1-15": {
         "id": "tamatoagrabbycrab",
         "name": "Tamatoa - Grabby Crab",
         "layout": "normal",
@@ -399,7 +399,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "15",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -413,7 +413,7 @@
         },
         "prices": {}
     },
-    "sharktoothyterror": {
+    "sharktoothyterror-q1-14": {
         "id": "sharktoothyterror",
         "name": "Shark - Toothy Terror",
         "layout": "normal",
@@ -445,7 +445,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "14",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -459,7 +459,7 @@
         },
         "prices": {}
     },
-    "annaensnaredsister": {
+    "annaensnaredsister-q1-1": {
         "id": "annaensnaredsister",
         "name": "Anna - Ensnared Sister",
         "layout": "normal",
@@ -491,7 +491,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "1",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -505,7 +505,7 @@
         },
         "prices": {}
     },
-    "minniemousewildeyeddiver": {
+    "minniemousewildeyeddiver-q1-12": {
         "id": "minniemousewildeyeddiver",
         "name": "Minnie Mouse - Wild-Eyed Diver",
         "layout": "normal",
@@ -537,7 +537,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "12",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -551,7 +551,7 @@
         },
         "prices": {}
     },
-    "lashout": {
+    "lashout-q1-22": {
         "id": "lashout",
         "name": "Lash Out",
         "layout": "normal",
@@ -583,7 +583,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "22",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -597,7 +597,7 @@
         },
         "prices": {}
     },
-    "lightningstorm": {
+    "lightningstorm-q1-23": {
         "id": "lightningstorm",
         "name": "Lightning Storm",
         "layout": "normal",
@@ -629,7 +629,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "23",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -643,7 +643,7 @@
         },
         "prices": {}
     },
-    "choppywaters": {
+    "choppywaters-q1-18": {
         "id": "choppywaters",
         "name": "Choppy Waters",
         "layout": "normal",
@@ -675,7 +675,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "18",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -689,7 +689,7 @@
         },
         "prices": {}
     },
-    "entanglingmagic": {
+    "entanglingmagic-q1-20": {
         "id": "entanglingmagic",
         "name": "Entangling Magic",
         "layout": "normal",
@@ -721,7 +721,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "20",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -735,7 +735,7 @@
         },
         "prices": {}
     },
-    "tentacleswipe": {
+    "tentacleswipe-q1-25": {
         "id": "tentacleswipe",
         "name": "Tentacle Swipe",
         "layout": "normal",
@@ -767,7 +767,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "25",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -781,7 +781,7 @@
         },
         "prices": {}
     },
-    "capsize": {
+    "capsize-q1-17": {
         "id": "capsize",
         "name": "Capsize",
         "layout": "normal",
@@ -813,7 +813,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "17",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -827,7 +827,7 @@
         },
         "prices": {}
     },
-    "whirlpool": {
+    "whirlpool-q1-28": {
         "id": "whirlpool",
         "name": "Whirlpool",
         "layout": "normal",
@@ -859,7 +859,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "28",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -873,7 +873,7 @@
         },
         "prices": {}
     },
-    "crushingwave": {
+    "crushingwave-q1-19": {
         "id": "crushingwave",
         "name": "Crushing Wave",
         "layout": "normal",
@@ -905,7 +905,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "19",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -919,7 +919,7 @@
         },
         "prices": {}
     },
-    "typhoon": {
+    "typhoon-q1-27": {
         "id": "typhoon",
         "name": "Typhoon",
         "layout": "normal",
@@ -951,7 +951,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "27",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -965,7 +965,7 @@
         },
         "prices": {}
     },
-    "riptide": {
+    "riptide-q1-24": {
         "id": "riptide",
         "name": "Riptide",
         "layout": "normal",
@@ -997,7 +997,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "24",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -1011,7 +1011,7 @@
         },
         "prices": {}
     },
-    "ursulasstolentrident": {
+    "ursulasstolentrident-q1-31": {
         "id": "ursulasstolentrident",
         "name": "Ursula's Stolen Trident",
         "layout": "normal",
@@ -1043,7 +1043,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "31",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -1057,7 +1057,7 @@
         },
         "prices": {}
     },
-    "ursulascontract": {
+    "ursulascontract-q1-30": {
         "id": "ursulascontract",
         "name": "Ursula's Contract",
         "layout": "normal",
@@ -1089,7 +1089,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "30",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -1103,7 +1103,7 @@
         },
         "prices": {}
     },
-    "thehexwellcrown": {
+    "thehexwellcrown-q1-29": {
         "id": "thehexwellcrown",
         "name": "The Hexwell Crown",
         "layout": "normal",
@@ -1135,7 +1135,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "29",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -1149,7 +1149,7 @@
         },
         "prices": {}
     },
-    "tsunami": {
+    "tsunami-q1-26": {
         "id": "tsunami",
         "name": "Tsunami",
         "layout": "normal",
@@ -1181,7 +1181,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "26",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,
@@ -1195,7 +1195,7 @@
         },
         "prices": {}
     },
-    "herculesmanipulatedhero": {
+    "herculesmanipulatedhero-q1-7": {
         "id": "herculesmanipulatedhero",
         "name": "Tsunami",
         "layout": "normal",
@@ -1227,7 +1227,7 @@
         "illustrators": [
             ""
         ],
-        "collector_number": "",
+        "collector_number": "7",
         "lang": "en",
         "flavor_text": "",
         "tcgplayer_id": null,

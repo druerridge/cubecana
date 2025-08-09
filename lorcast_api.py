@@ -2,26 +2,10 @@ from pathlib import Path
 import json
 import id_helper
 import requests
+from card import ApiCard
 
 CACHED_API_DATA_FILEPATH = 'lorcast_api_data_cache.json'
 CACHED_API_DATA_SET_Q1_FILEPATH = 'lorcast_api_data_cache_q1.json'
-
-class ApiCard:
-    def __init__(self, full_name: str, cost: int, rarity: str, color: str, inks: list[str], types: list[str], set_num: int):
-        self.full_name = full_name
-        self.cost = cost
-        self.rarity = rarity
-        self.color = color
-        self.inks = inks
-        self.types = types
-        self.set_num = set_num
-
-    def toJSON(self):
-        return json.dumps(
-            self,
-            default=lambda o: o.__dict__, 
-            sort_keys=True,
-            indent=4)
 
 lorcast_to_dtd_rarity =  {
     "Common" : "Common",

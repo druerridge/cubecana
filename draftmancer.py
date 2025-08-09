@@ -3,7 +3,7 @@ from collections import defaultdict
 import json
 from lcc_error import LccError, UnidentifiedCardError
 from settings import Settings
-from lorcast_api import ApiCard
+from card import ApiCard
 from lorcast_api import lorcast_api as lorcana_api
 import id_helper
 import franchise

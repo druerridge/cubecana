@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 import id_helper
 from collections import defaultdict
-from lorcast_api import ApiCard
+from card import ApiCard
 from lcc_error import UnidentifiedCardError
 
 TTS_SCALE_X = 1.2

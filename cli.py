@@ -1,9 +1,9 @@
-import draftmancer
-import tabletop_simulator
-import generate_retail
-import card_evaluations
-from settings import Settings, POWER_BAND_RETAIL
 import argparse
+from cubecana_server import draftmancer
+from cubecana_server import tabletop_simulator
+from cubecana_server import generate_retail
+from cubecana_server import card_evaluations
+from cubecana_server.settings import Settings, POWER_BAND_RETAIL
 
 
 parser = argparse.ArgumentParser(

@@ -1,8 +1,8 @@
-import draftmancer
-from lorcast_api import lorcast_api as lorcana_api
-from settings import Settings
-from dreamborn_manager import dreamborn_manager
-from card_evaluations import card_evaluations_manager
+from . import draftmancer
+from .lorcast_api import lorcast_api as lorcana_api
+from .settings import Settings
+from .dreamborn_manager import dreamborn_manager
+from .card_evaluations import card_evaluations_manager
 
 rarity_to_frequency = {
     "Common": 60,

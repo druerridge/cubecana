@@ -1,19 +1,19 @@
-from flask import Flask, render_template, request, Response, send_from_directory, redirect
 import json
-import draftmancer
-from pixelborn_manager import pixelborn_manager
-import lcc_error
-import card_evaluations
-import card_list_helper
-from settings import Settings
-from cube_manager import CubecanaCube
-from cube_manager import cube_manager
-from retail_manager import retail_manager
-import api
+from flask import Flask, render_template, request, Response, send_from_directory, redirect
 from flask import jsonify
-from cube_dao import MAX_CARD_LIST_LENGTH
-import tabletop_simulator
-from cubealytics import cubealytics, Cubealytics
+from cubecana_server import draftmancer
+from cubecana_server.pixelborn_manager import pixelborn_manager
+from cubecana_server import lcc_error
+from cubecana_server import card_evaluations
+from cubecana_server import card_list_helper
+from cubecana_server.settings import Settings
+from cubecana_server.cube_manager import CubecanaCube
+from cubecana_server.cube_manager import cube_manager
+from cubecana_server.retail_manager import retail_manager
+from cubecana_server import api
+from cubecana_server.cube_dao import MAX_CARD_LIST_LENGTH
+from cubecana_server import tabletop_simulator
+from cubecana_server import cubealytics # This is imported so it will init + generate startup report(s)
 app = Flask(__name__)
 
 # USER FACING PAGES

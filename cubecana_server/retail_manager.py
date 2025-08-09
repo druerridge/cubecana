@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 from pathlib import Path
-import api
+from . import api
 from typing import List
-import lcc_error
-import draftmancer
+from . import lcc_error
+from . import draftmancer
 
 RETAIL_SETS_DIR_PATH = "inputs/retail_sets"
 GAME_MODE_SUPER_SEALED = "SUPER_SEALED"
@@ -48,7 +48,7 @@ class RetailManager:
     def load_retail_sets(self, retail_sets_filepath: str):
         retail_sets_path = Path(retail_sets_filepath)
         if not retail_sets_path.is_dir():
-            raise Exception("retail_sets_filepath is not a directory")
+            raise Exception(f"retail_sets_filepath at {retail_sets_filepath} is not a directory")
         files = retail_sets_path.glob('*')
         for file in files:
             if file.is_file():

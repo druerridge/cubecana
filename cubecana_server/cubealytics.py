@@ -1,8 +1,8 @@
-from dataclasses import dataclass
 import json
-from cube_manager import CubeManager, cube_manager
-from settings import POWER_BAND_MAX, POWER_BAND_OVERPOWERED
-from lorcast_api import lorcast_api as lorcana_api
+from dataclasses import dataclass
+from .cube_manager import CubeManager, cube_manager
+from .settings import POWER_BAND_MAX, POWER_BAND_OVERPOWERED
+from .lorcast_api import lorcast_api as lorcana_api
 import csv
 from pathlib import Path
 

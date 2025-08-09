@@ -1,0 +1,3487 @@
+[CustomCards]
+[
+    {
+        "name": "Charlotte La Bouff - Mardi Gras Princess",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-008?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-008?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-008?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-008?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-008?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-008?tts"
+        },
+        "rarity": "common",
+        "rating": 2
+    },
+    {
+        "name": "Gene - Niceland Resident",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-013?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-013?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-013?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-013?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-013?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-013?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Patch - Playful Pup",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-025?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-025?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-025?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-025?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-025?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-025?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 0
+    },
+    {
+        "name": "She's Your Person",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-040?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-040?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-040?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-040?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-040?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-040?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Royal Guard - Octopus Soldier",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-052?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-052?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-052?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-052?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-052?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-052?tts"
+        },
+        "rarity": "common",
+        "rating": 2
+    },
+    {
+        "name": "Dale - Bumbler",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-094?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-094?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-094?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-094?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-094?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-094?tts"
+        },
+        "rarity": "common",
+        "rating": 2
+    },
+    {
+        "name": "Twitterpated",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-150?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-150?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-150?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-150?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-150?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-150?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Olaf - Recapping the Story",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-156?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-156?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-156?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-156?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-156?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-156?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Little Sister - Responsible Rabbit",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-163?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-163?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-163?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-163?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-163?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-163?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Captain Hook - Forceful Duelist",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-186?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-186?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-186?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-186?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-186?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-186?tts"
+        },
+        "rarity": "common",
+        "rating": 4
+    },
+    {
+        "name": "Ludwig Von Drake - All-Around Expert",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-007?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-007?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-007?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-007?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-007?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-007?tts"
+        },
+        "rarity": "rare",
+        "rating": 3
+    },
+    {
+        "name": "Perdita - On the Lookout",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-014?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-014?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-014?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-014?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-014?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-014?tts"
+        },
+        "rarity": "common",
+        "rating": 2
+    },
+    {
+        "name": "Dalmatian Puppy - Tail Wagger",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-038?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-038?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-038?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-038?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-038?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-038?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Trials and Tribulations",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-043?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-043?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-043?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-043?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-043?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-043?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 2
+    },
+    {
+        "name": "Bambi - Prince of the Forest",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-057?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-057?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-057?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-057?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-057?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-057?tts"
+        },
+        "rarity": "common",
+        "rating": 2
+    },
+    {
+        "name": "Nero - Fearsome Crocodile",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-065?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-065?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-065?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-065?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-065?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-065?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Blue Fairy - Guiding Light",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-071?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-071?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-071?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-071?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-071?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-071?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 5
+    },
+    {
+        "name": "Ice Spikes",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-084?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-084?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-084?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-084?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-084?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-084?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Dormouse - Easily Agitated",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-103?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-103?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-103?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-103?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-103?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-103?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Undermine",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-117?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-117?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-117?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-117?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-117?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-117?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Jeweled Collar",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-120?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-120?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-120?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-120?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-120?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-120?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Lumiere - Nimble Candelabra",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-128?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-128?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-128?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-128?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-128?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-128?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Tinker Bell - Insistent Fairy",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-136?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-136?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-136?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-136?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-136?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-136?tts"
+        },
+        "rarity": "mythic",
+        "rating": 2
+    },
+    {
+        "name": "The Coachman - Greedy Deceiver",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-140?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-140?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-140?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-140?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-140?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-140?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Go Go Tomago - Mechanical Engineer",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-159?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-159?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-159?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-159?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-159?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-159?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Bernard - Over-Prepared",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-169?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-169?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-169?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-169?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-169?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-169?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 4
+    },
+    {
+        "name": "Pouncing Practice",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-176?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-176?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-176?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-176?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-176?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-176?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Prince Achmed - Rival Suitor",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-184?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-184?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-184?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-184?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-184?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-184?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Nathaniel Flint - Notorious Pirate",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-196?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-196?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-196?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-196?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-196?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-196?tts"
+        },
+        "rarity": "rare",
+        "rating": 3
+    },
+    {
+        "name": "Louie - One Cool Duck",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-001?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-001?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-001?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-001?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-001?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-001?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Pua - Protective Pig",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-019?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-019?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-019?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-019?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-019?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-019?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 5
+    },
+    {
+        "name": "Bolt - Down but Not Out",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-029?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-029?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-029?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-029?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-029?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-029?tts"
+        },
+        "rarity": "rare",
+        "rating": 3
+    },
+    {
+        "name": "Joey - Blue Pigeon",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-036?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-036?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-036?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-036?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-036?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-036?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Lena Sabrewing - Pure Energy",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-049?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-049?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-049?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-049?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-049?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-049?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 5
+    },
+    {
+        "name": "Yelana - Northuldra Leader",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-055?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-055?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-055?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-055?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-055?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-055?tts"
+        },
+        "rarity": "common",
+        "rating": 4
+    },
+    {
+        "name": "Madam Mim - Up to No Good",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-059?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-059?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-059?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-059?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-059?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-059?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 2
+    },
+    {
+        "name": "Flower - Shy Skunk",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-076?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-076?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-076?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-076?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-076?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-076?tts"
+        },
+        "rarity": "rare",
+        "rating": 3
+    },
+    {
+        "name": "Pull the Lever!",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-080?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-080?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-080?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-080?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-080?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-080?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Wilhelmina Packard - The Radio Operator",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-085?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-085?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-085?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-085?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-085?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-085?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Fred - Major Science Enthusiast",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-092?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-092?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-092?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-092?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-092?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-092?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Don Karnage - Air Pirate Leader",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-108?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-108?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-108?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-108?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-108?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-108?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "He Who Steals and Runs Away",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-114?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-114?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-114?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-114?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-114?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-114?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Walk the Plank!",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-118?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-118?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-118?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-118?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-118?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-118?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 0
+    },
+    {
+        "name": "Gyro Gearloose - Eccentric Inventor",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-123?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-123?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-123?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-123?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-123?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-123?tts"
+        },
+        "rarity": "rare",
+        "rating": 4
+    },
+    {
+        "name": "Mushu - Fast-Talking Dragon",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-130?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-130?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-130?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-130?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-130?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-130?tts"
+        },
+        "rarity": "common",
+        "rating": 4
+    },
+    {
+        "name": "Wreck-It Ralph - Back Seat Driver",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-135?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-135?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-135?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-135?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-135?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-135?tts"
+        },
+        "rarity": "rare",
+        "rating": 2
+    },
+    {
+        "name": "Prince John - Fraidy-Cat",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-146?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-146?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-146?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-146?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-146?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-146?tts"
+        },
+        "rarity": "rare",
+        "rating": 2
+    },
+    {
+        "name": "Anita Radcliffe - Dog Lover",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-155?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-155?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-155?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-155?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-155?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-155?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Mrs. Potts - Head Housekeeper",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-161?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-161?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-161?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-161?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-161?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-161?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Television Set",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-178?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-178?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-178?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-178?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-178?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-178?tts"
+        },
+        "rarity": "common",
+        "rating": 0
+    },
+    {
+        "name": "Bobby - Purple Pigeon",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-182?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-182?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-182?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-182?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-182?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-182?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "General Li - Head of the Imperial Army",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-187?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-187?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-187?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-187?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-187?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-187?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Zipper - Flying Ranger",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-192?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-192?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-192?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-192?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-192?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-192?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Desperate Plan",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-201?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-201?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-201?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-201?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-201?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-201?tts"
+        },
+        "rarity": "rare",
+        "rating": 0
+    },
+    {
+        "name": "Dewey - Lovable Showoff",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-002?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-002?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-002?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-002?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-002?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-002?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Antonio Madrigal - Friend to All",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-005?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-005?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-005?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-005?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-005?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-005?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Tiana - Natural Talent",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-009?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-009?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-009?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-009?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-009?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-009?tts"
+        },
+        "rarity": "rare",
+        "rating": 0
+    },
+    {
+        "name": "Rolly - Chubby Puppy",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-026?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-026?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-026?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-026?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-026?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-026?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Only So Much Room",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-041?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-041?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-041?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-041?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-041?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-041?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Bruno Madrigal - Single-Minded",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-051?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-051?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-051?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-051?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-051?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-051?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Ryder - Fleet-Footed Infiltrator",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-056?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-056?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-056?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-056?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-056?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-056?tts"
+        },
+        "rarity": "common",
+        "rating": 4
+    },
+    {
+        "name": "Pinocchio - Strings Attached",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-061?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-061?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-061?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-061?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-061?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-061?tts"
+        },
+        "rarity": "mythic",
+        "rating": 5
+    },
+    {
+        "name": "Chaca - Junior Chipmunk",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-088?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-088?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-088?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-088?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-088?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-088?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Mad Dog - Karnage's First Mate",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-093?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-093?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-093?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-093?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-093?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-093?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Chip - Quick Thinker",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-097?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-097?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-097?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-097?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-097?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-097?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Flynn Rider - Breaking and Entering",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-102?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-102?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-102?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-102?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-102?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-102?tts"
+        },
+        "rarity": "mythic",
+        "rating": 4
+    },
+    {
+        "name": "Go Go Tomago - Cutting Edge",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-107?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-107?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-107?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-107?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-107?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-107?tts"
+        },
+        "rarity": "mythic",
+        "rating": 4
+    },
+    {
+        "name": "Jock - Attentive Uncle",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-112?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-112?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-112?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-112?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-112?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-112?tts"
+        },
+        "rarity": "common",
+        "rating": 4
+    },
+    {
+        "name": "Alice - Courageous Keyholder",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-127?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-127?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-127?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-127?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-127?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-127?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Cri-Kee - Part of the Team",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-131?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-131?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-131?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-131?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-131?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-131?tts"
+        },
+        "rarity": "common",
+        "rating": 4
+    },
+    {
+        "name": "Faline - Playful Fawn",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-145?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-145?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-145?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-145?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-145?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-145?tts"
+        },
+        "rarity": "rare",
+        "rating": 3
+    },
+    {
+        "name": "The Wardrobe - Perceptive Friend",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-160?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-160?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-160?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-160?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-160?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-160?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Arthur - Determined Squire",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-168?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-168?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-168?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-168?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-168?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-168?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 5
+    },
+    {
+        "name": "Jumba Jookiba - Critical Scientist",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-173?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-173?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-173?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-173?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-173?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-173?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Iago - Out of Reach",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-195?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-195?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-195?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-195?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-195?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-195?tts"
+        },
+        "rarity": "rare",
+        "rating": 3
+    },
+    {
+        "name": "Darling Dear - Beloved Wife",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-016?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-016?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-016?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-016?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-016?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-016?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Magica De Spell - Shadow Form",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-066?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-066?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-066?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-066?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-066?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-066?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Jafar - High Sultan of Lorcana",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-074?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-074?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-074?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-074?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-074?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-074?tts"
+        },
+        "rarity": "mythic",
+        "rating": 3
+    },
+    {
+        "name": "Forest Duel",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-077?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-077?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-077?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-077?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-077?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-077?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Captain Hook - The Pirate King",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-109?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-109?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-109?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-109?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-109?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-109?tts"
+        },
+        "rarity": "rare",
+        "rating": 4
+    },
+    {
+        "name": "Lilo - Causing an Uproar",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-137?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-137?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-137?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-137?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-137?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-137?tts"
+        },
+        "rarity": "mythic",
+        "rating": 4
+    },
+    {
+        "name": "Wasabi - Always Prepared",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-158?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-158?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-158?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-158?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-158?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-158?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Monterey Jack - Defiant Protector",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-188?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-188?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-188?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-188?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-188?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-188?tts"
+        },
+        "rarity": "common",
+        "rating": 5
+    },
+    {
+        "name": "Namaari - Single-Minded Rival",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-198?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-198?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-198?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-198?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-198?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-198?tts"
+        },
+        "rarity": "mythic",
+        "rating": 3
+    },
+    {
+        "name": "Tramp - Dapper Rascal",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-022?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-022?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-022?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-022?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-022?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-022?tts"
+        },
+        "rarity": "mythic",
+        "rating": 5
+    },
+    {
+        "name": "Pluto - Tried and True",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-028?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-028?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-028?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-028?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-028?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-028?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 4
+    },
+    {
+        "name": "Alma Madrigal - Accepting Grandmother",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-034?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-034?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-034?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-034?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-034?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-034?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Yzma - On Edge",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-068?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-068?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-068?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-068?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-068?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-068?tts"
+        },
+        "rarity": "mythic",
+        "rating": 0
+    },
+    {
+        "name": "Anna - Magical Mission",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-072?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-072?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-072?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-072?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-072?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-072?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Alice - Clumsy as Can Be",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-104?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-104?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-104?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-104?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-104?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-104?tts"
+        },
+        "rarity": "rare",
+        "rating": 0
+    },
+    {
+        "name": "Honest John - Shameless Schemer",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-122?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-122?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-122?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-122?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-122?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-122?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Get Out!",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-148?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-148?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-148?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-148?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-148?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-148?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Heads Held High",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-175?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-175?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-175?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-175?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-175?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-175?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Bruno Madrigal - Singing Seer",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-020?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-020?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-020?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-020?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-020?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-020?tts"
+        },
+        "rarity": "mythic",
+        "rating": 0
+    },
+    {
+        "name": "Hades - Ruthless Tyrant",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-048?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-048?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-048?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-048?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-048?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-048?tts"
+        },
+        "rarity": "mythic",
+        "rating": 0
+    },
+    {
+        "name": "Basil - Undercover Detective",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-086?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-086?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-086?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-086?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-086?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-086?tts"
+        },
+        "rarity": "rare",
+        "rating": 3
+    },
+    {
+        "name": "Most Everyone's Mad Here",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-151?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-151?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-151?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-151?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-151?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-151?tts"
+        },
+        "rarity": "rare",
+        "rating": 0
+    },
+    {
+        "name": "Vincenzo Santorini - The Explosives Expert",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-197?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-197?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-197?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-197?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-197?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-197?tts"
+        },
+        "rarity": "rare",
+        "rating": 4
+    },
+    {
+        "name": "Donald Duck - Coin Collector",
+        "mana_cost": "{8}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-037?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-037?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-037?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-037?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-037?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-037?tts"
+        },
+        "rarity": "mythic",
+        "rating": 1
+    },
+    {
+        "name": "Stopped Chaos in Its Tracks",
+        "mana_cost": "{8}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-115?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-115?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-115?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-115?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-115?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-115?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Ratigan - Greedy Genius",
+        "mana_cost": "{8}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-167?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-167?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-167?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-167?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-167?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-167?tts"
+        },
+        "rarity": "mythic",
+        "rating": 1
+    },
+    {
+        "name": "Fantastical and Magical",
+        "mana_cost": "{9}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-079?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-079?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-079?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-079?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-079?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-079?tts"
+        },
+        "rarity": "rare",
+        "rating": 3
+    },
+    {
+        "name": "Mickey Mouse - Giant Mouse",
+        "mana_cost": "{10}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-199?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-199?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-199?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-199?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-199?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-199?tts"
+        },
+        "rarity": "mythic",
+        "rating": 0
+    },
+    {
+        "name": "It Means No Worries",
+        "mana_cost": "{9}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-042?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-042?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-042?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-042?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-042?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-042?tts"
+        },
+        "rarity": "rare",
+        "rating": 3
+    },
+    {
+        "name": "Nothing We Won't Do",
+        "mana_cost": "{8}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-147?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-147?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-147?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-147?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-147?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-147?tts"
+        },
+        "rarity": "rare",
+        "rating": 4
+    },
+    {
+        "name": "Monstro - Infamous Whale",
+        "mana_cost": "{8}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-064?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-064?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-064?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-064?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-064?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-064?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Beyond the Horizon",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-202?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-202?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-202?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-202?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-202?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-202?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Atitaya - Fang General",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-181?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-181?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-181?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-181?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-181?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-181?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Fred - Giant-Sized",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-098?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-098?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-098?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-098?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-098?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-098?tts"
+        },
+        "rarity": "rare",
+        "rating": 3
+    },
+    {
+        "name": "Kuzco - Impulsive Llama",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-067?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-067?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-067?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-067?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-067?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-067?tts"
+        },
+        "rarity": "rare",
+        "rating": 0
+    },
+    {
+        "name": "Wreck-It Ralph - Big Lug",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-024?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-024?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-024?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-024?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-024?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-024?tts"
+        },
+        "rarity": "mythic",
+        "rating": 0
+    },
+    {
+        "name": "Down in New Orleans",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-177?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-177?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-177?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-177?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-177?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-177?tts"
+        },
+        "rarity": "mythic",
+        "rating": 0
+    },
+    {
+        "name": "Aladdin - Vigilant Guard",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-170?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-170?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-170?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-170?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-170?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-170?tts"
+        },
+        "rarity": "rare",
+        "rating": 4
+    },
+    {
+        "name": "Mushu - Your Worst Nightmare",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-142?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-142?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-142?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-142?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-142?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-142?tts"
+        },
+        "rarity": "rare",
+        "rating": 5
+    },
+    {
+        "name": "Maui - Stubborn Trickster",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-110?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-110?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-110?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-110?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-110?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-110?tts"
+        },
+        "rarity": "mythic",
+        "rating": 5
+    },
+    {
+        "name": "Raya - Infiltration Expert",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-100?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-100?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-100?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-100?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-100?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-100?tts"
+        },
+        "rarity": "mythic",
+        "rating": 4
+    },
+    {
+        "name": "Madam Mim - Rhino",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-069?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-069?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-069?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-069?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-069?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-069?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 0
+    },
+    {
+        "name": "Abu - Illusory Pachyderm",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-050?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-050?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-050?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-050?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-050?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-050?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Calhoun - Hard-Nosed Leader",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-032?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-032?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-032?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-032?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-032?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-032?tts"
+        },
+        "rarity": "common",
+        "rating": 4
+    },
+    {
+        "name": "Perdita - Determined Mother",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-027?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-027?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-027?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-027?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-027?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-027?tts"
+        },
+        "rarity": "mythic",
+        "rating": 1
+    },
+    {
+        "name": "Chief Bogo - Commanding Officer",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-018?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-018?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-018?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-018?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-018?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-018?tts"
+        },
+        "rarity": "mythic",
+        "rating": 1
+    },
+    {
+        "name": "Arianna - Queen of Corona",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-191?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-191?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-191?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-191?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-191?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-191?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Geppetto - Skilled Craftsman",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-174?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-174?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-174?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-174?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-174?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-174?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Lumiere - Fired Up",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-139?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-139?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-139?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-139?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-139?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-139?tts"
+        },
+        "rarity": "mythic",
+        "rating": 5
+    },
+    {
+        "name": "Lafayette - Sleepy Basset Hound",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-132?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-132?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-132?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-132?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-132?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-132?tts"
+        },
+        "rarity": "common",
+        "rating": 2
+    },
+    {
+        "name": "Rapunzel - High Climber",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-101?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-101?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-101?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-101?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-101?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-101?tts"
+        },
+        "rarity": "mythic",
+        "rating": 5
+    },
+    {
+        "name": "Camilo Madrigal - Center Stage",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-075?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-075?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-075?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-075?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-075?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-075?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "The Sultan - Royal Apparition",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-073?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-073?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-073?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-073?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-073?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-073?tts"
+        },
+        "rarity": "rare",
+        "rating": 4
+    },
+    {
+        "name": "The Colonel - Old Sheepdog",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-017?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-017?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-017?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-017?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-017?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-017?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Stitch - Alien Troublemaker",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-200?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-200?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-200?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-200?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-200?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-200?tts"
+        },
+        "rarity": "rare",
+        "rating": 4
+    },
+    {
+        "name": "Khan - War Horse",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-193?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-193?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-193?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-193?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-193?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-193?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Jasmine - Steady Strategist",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-171?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-171?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-171?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-171?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-171?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-171?tts"
+        },
+        "rarity": "mythic",
+        "rating": 3
+    },
+    {
+        "name": "Nani - Heist Mastermind",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-165?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-165?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-165?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-165?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-165?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-165?tts"
+        },
+        "rarity": "rare",
+        "rating": 3
+    },
+    {
+        "name": "The Mouse Queen - Ruler of Mousedom",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-153?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-153?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-153?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-153?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-153?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-153?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Mulan - Charging Ahead",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-141?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-141?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-141?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-141?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-141?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-141?tts"
+        },
+        "rarity": "mythic",
+        "rating": 0
+    },
+    {
+        "name": "Gaston - Arrogant Showoff",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-129?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-129?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-129?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-129?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-129?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-129?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Brutus - Fearsome Crocodile",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-125?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-125?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-125?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-125?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-125?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-125?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Honey Lemon - Costumed Catalyst",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-111?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-111?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-111?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-111?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-111?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-111?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Queen of Hearts - Haughty Monarch",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-105?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-105?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-105?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-105?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-105?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-105?tts"
+        },
+        "rarity": "mythic",
+        "rating": 3
+    },
+    {
+        "name": "Gadget Hackwrench - Quirky Scientist",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-099?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-099?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-099?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-099?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-099?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-099?tts"
+        },
+        "rarity": "rare",
+        "rating": 4
+    },
+    {
+        "name": "Napoleon - Clever Bloodhound",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-096?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-096?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-096?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-096?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-096?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-096?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "March Hare - Hare-Brained Eccentric",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-091?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-091?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-091?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-091?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-091?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-091?tts"
+        },
+        "rarity": "common",
+        "rating": 4
+    },
+    {
+        "name": "Everybody's Got a Weakness",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-082?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-082?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-082?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-082?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-082?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-082?tts"
+        },
+        "rarity": "rare",
+        "rating": 3
+    },
+    {
+        "name": "Elsa - Fierce Protector",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-060?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-060?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-060?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-060?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-060?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-060?tts"
+        },
+        "rarity": "rare",
+        "rating": 2
+    },
+    {
+        "name": "Kuzco - Bored Royal",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-053?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-053?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-053?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-053?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-053?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-053?tts"
+        },
+        "rarity": "common",
+        "rating": 0
+    },
+    {
+        "name": "Druun - Ravenous Plague",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-046?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-046?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-046?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-046?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-046?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-046?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 2
+    },
+    {
+        "name": "Rhino - Power Hamster",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-030?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-030?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-030?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-030?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-030?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-030?tts"
+        },
+        "rarity": "mythic",
+        "rating": 4
+    },
+    {
+        "name": "Kaa - Hypnotizing Python",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-021?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-021?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-021?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-021?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-021?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-021?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Minnie Mouse - Daring Defender",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-006?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-006?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-006?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-006?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-006?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-006?tts"
+        },
+        "rarity": "rare",
+        "rating": 4
+    },
+    {
+        "name": "Goofy - Groundbreaking Chef",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-004?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-004?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-004?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-004?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-004?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-004?tts"
+        },
+        "rarity": "mythic",
+        "rating": 5
+    },
+    {
+        "name": "Hamster Ball",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-204?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-204?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-204?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-204?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-204?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-204?tts"
+        },
+        "rarity": "common",
+        "rating": 0
+    },
+    {
+        "name": "Vinnie - Green Pigeon",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-194?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-194?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-194?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-194?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-194?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-194?tts"
+        },
+        "rarity": "rare",
+        "rating": 3
+    },
+    {
+        "name": "Genie - Satisfied Dragon",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-189?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-189?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-189?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-189?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-189?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-189?tts"
+        },
+        "rarity": "common",
+        "rating": 4
+    },
+    {
+        "name": "Magic Carpet - Phantom Rug",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-183?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-183?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-183?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-183?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-183?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-183?tts"
+        },
+        "rarity": "common",
+        "rating": 2
+    },
+    {
+        "name": "Belle's Favorite Book",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-179?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-179?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-179?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-179?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-179?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-179?tts"
+        },
+        "rarity": "rare",
+        "rating": 0
+    },
+    {
+        "name": "Stitch - Experiment 626",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-166?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-166?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-166?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-166?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-166?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-166?tts"
+        },
+        "rarity": "mythic",
+        "rating": 0
+    },
+    {
+        "name": "Anna - Trusting Sister",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-157?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-157?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-157?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-157?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-157?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-157?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Sir Pellinore - Seasoned Knight",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-154?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-154?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-154?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-154?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-154?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-154?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 2
+    },
+    {
+        "name": "Mr. Snoops - Betrayed Partner",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-143?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-143?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-143?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-143?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-143?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-143?tts"
+        },
+        "rarity": "common",
+        "rating": 4
+    },
+    {
+        "name": "Figaro - Tuxedo Cat",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-133?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-133?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-133?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-133?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-133?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-133?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "The Dodo - Outlandish Storyteller",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-126?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-126?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-126?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-126?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-126?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-126?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Gloyd Orangeboar - Fierce Competitor",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-121?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-121?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-121?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-121?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-121?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-121?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Wrong Lever!",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-116?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-116?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-116?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-116?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-116?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-116?tts"
+        },
+        "rarity": "rare",
+        "rating": 2
+    },
+    {
+        "name": "Archimedes - Resourceful Owl",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-113?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-113?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-113?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-113?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-113?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-113?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Louis - Endearing Alligator",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-095?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-095?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-095?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-095?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-095?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-095?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 4
+    },
+    {
+        "name": "Tramp - Observant Guardian",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-087?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-087?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-087?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-087?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-087?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-087?tts"
+        },
+        "rarity": "common",
+        "rating": 2
+    },
+    {
+        "name": "Into the Unknown",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-081?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-081?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-081?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-081?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-081?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-081?tts"
+        },
+        "rarity": "mythic",
+        "rating": 4
+    },
+    {
+        "name": "They Never Come Back",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-078?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-078?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-078?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-078?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-078?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-078?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Bambi - Little Prince",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-063?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-063?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-063?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-063?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-063?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-063?tts"
+        },
+        "rarity": "mythic",
+        "rating": 0
+    },
+    {
+        "name": "Poe De Spell - Magica's Brother",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-058?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-058?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-058?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-058?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-058?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-058?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Megara - Part of the Plan",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-054?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-054?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-054?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-054?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-054?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-054?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Madame Medusa - Deceiving Partner",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-047?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-047?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-047?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-047?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-047?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-047?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Clawhauser - Front Desk Officer",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-035?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-035?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-035?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-035?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-035?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-035?tts"
+        },
+        "rarity": "rare",
+        "rating": 2
+    },
+    {
+        "name": "King Candy - Sugar Rush Nightmare",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-023?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-023?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-023?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-023?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-023?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-023?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Lady - Family Dog",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-011?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-011?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-011?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-011?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-011?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-011?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Quick Shot",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-203?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-203?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-203?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-203?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-203?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-203?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Toby Turtle - Wary Friend",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-190?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-190?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-190?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-190?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-190?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-190?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Atlantean Crystal",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-180?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-180?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-180?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-180?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-180?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-180?tts"
+        },
+        "rarity": "rare",
+        "rating": 3
+    },
+    {
+        "name": "Roquefort - Lock Expert",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-172?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-172?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-172?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-172?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-172?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-172?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Adelaide Bonfamille - Patron of the Arts",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-164?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-164?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-164?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-164?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-164?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-164?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Friend Owl - Cantankerous Neighbor",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-144?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-144?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-144?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-144?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-144?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-144?tts"
+        },
+        "rarity": "common",
+        "rating": 2
+    },
+    {
+        "name": "LeFou - Cake Thief",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-138?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-138?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-138?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-138?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-138?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-138?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Thumper - Young Bunny",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-134?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-134?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-134?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-134?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-134?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-134?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Vanellope Von Schweetz - Spunky Speedster",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-124?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-124?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-124?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-124?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-124?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-124?tts"
+        },
+        "rarity": "common",
+        "rating": 4
+    },
+    {
+        "name": "Chem Purse",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-119?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-119?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-119?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-119?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-119?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-119?tts"
+        },
+        "rarity": "common",
+        "rating": 0
+    },
+    {
+        "name": "Hiro Hamada - Intuitive Thinker",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-106?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-106?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-106?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-106?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-106?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-106?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 1
+    },
+    {
+        "name": "Tipo - Junior Chipmunk",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-089?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-089?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-089?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-089?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-089?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-089?tts"
+        },
+        "rarity": "common",
+        "rating": 4
+    },
+    {
+        "name": "Scarab",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-083?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-083?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-083?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-083?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-083?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-083?tts"
+        },
+        "rarity": "common",
+        "rating": 0
+    },
+    {
+        "name": "Mother Gothel - Knows What's Best",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-070?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-070?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-070?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-070?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-070?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-070?tts"
+        },
+        "rarity": "rare",
+        "rating": 3
+    },
+    {
+        "name": "Jiminy Cricket - Level-Headed and Wise",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-062?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-062?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-062?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-062?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-062?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-062?tts"
+        },
+        "rarity": "rare",
+        "rating": 3
+    },
+    {
+        "name": "The Nephews' Piggy Bank",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-044?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-044?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-044?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-044?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-044?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-044?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 0
+    },
+    {
+        "name": "Candy Drift",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-039?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-039?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-039?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-039?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-039?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-039?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Antonio's Jaguar - Faithful Companion",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-031?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-031?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-031?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-031?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-031?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-031?tts"
+        },
+        "rarity": "common",
+        "rating": 2
+    },
+    {
+        "name": "Jim Dear - Beloved Husband",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-012?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-012?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-012?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-012?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-012?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-012?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Huey - Reliable Leader",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-003?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-003?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-003?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-003?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-003?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-003?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 4
+    },
+    {
+        "name": "Dumptruck - Karnage's Second Mate",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-185?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-185?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-185?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-185?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-185?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-185?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Jasmine - Resourceful Infiltrator",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-162?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-162?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-162?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-162?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-162?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-162?tts"
+        },
+        "rarity": "common",
+        "rating": 2
+    },
+    {
+        "name": "The Sword of Shan-Yu",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-152?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-152?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-152?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-152?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-152?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-152?tts"
+        },
+        "rarity": "rare",
+        "rating": 2
+    },
+    {
+        "name": "Light the Fuse",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-149?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-149?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-149?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-149?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-149?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-149?tts"
+        },
+        "rarity": "uncommon",
+        "rating": 3
+    },
+    {
+        "name": "Bill the Lizard - Chimney Sweep",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-090?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-090?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-090?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-090?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-090?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-090?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Palace Guard - Spectral Sentry",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-045?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-045?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-045?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-045?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-045?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-045?tts"
+        },
+        "rarity": "common",
+        "rating": 3
+    },
+    {
+        "name": "Lady - Decisive Dog",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-033?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-033?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-033?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-033?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-033?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-033?tts"
+        },
+        "rarity": "rare",
+        "rating": 1
+    },
+    {
+        "name": "Rhino - One-Sixteenth Wolf",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-015?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-015?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-015?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-015?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-015?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-015?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    },
+    {
+        "name": "Mirabel Madrigal - Curious Child",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/008-010?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/008-010?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/008-010?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/008-010?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/008-010?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/008-010?tts"
+        },
+        "rarity": "common",
+        "rating": 1
+    }
+]
+[Settings]
+{
+    "boostersPerPlayer": 4,
+    "name": "8",
+    "cardBack": "https://wiki.mushureport.com/images/thumb/d/d7/Card_Back_official.png/450px-Card_Back_official.png",
+    "withReplacement": true
+}
+[CommonSlotSteel(1)]
+60 Captain Hook - Forceful Duelist
+60 Prince Achmed - Rival Suitor
+60 Bobby - Purple Pigeon
+60 General Li - Head of the Imperial Army
+60 Monterey Jack - Defiant Protector
+60 Arianna - Queen of Corona
+60 Khan - War Horse
+60 Hamster Ball
+60 Genie - Satisfied Dragon
+60 Magic Carpet - Phantom Rug
+60 Toby Turtle - Wary Friend
+60 Dumptruck - Karnage's Second Mate
+[CommonSlotSapphire(1)]
+60 Olaf - Recapping the Story
+60 Little Sister - Responsible Rabbit
+60 Go Go Tomago - Mechanical Engineer
+60 Anita Radcliffe - Dog Lover
+60 Mrs. Potts - Head Housekeeper
+60 Television Set
+60 The Wardrobe - Perceptive Friend
+60 Wasabi - Always Prepared
+60 The Mouse Queen - Ruler of Mousedom
+60 Anna - Trusting Sister
+60 Adelaide Bonfamille - Patron of the Arts
+60 Jasmine - Resourceful Infiltrator
+[CommonSlotRuby(1)]
+60 Lumiere - Nimble Candelabra
+60 Mushu - Fast-Talking Dragon
+60 Alice - Courageous Keyholder
+60 Cri-Kee - Part of the Team
+60 Lafayette - Sleepy Basset Hound
+60 Gaston - Arrogant Showoff
+60 Brutus - Fearsome Crocodile
+60 Mr. Snoops - Betrayed Partner
+60 The Dodo - Outlandish Storyteller
+60 Gloyd Orangeboar - Fierce Competitor
+60 Friend Owl - Cantankerous Neighbor
+60 Vanellope Von Schweetz - Spunky Speedster
+[CommonSlotEmerald(1)]
+60 Dale - Bumbler
+60 Wilhelmina Packard - The Radio Operator
+60 Fred - Major Science Enthusiast
+60 He Who Steals and Runs Away
+60 Chaca - Junior Chipmunk
+60 Mad Dog - Karnage's First Mate
+60 Jock - Attentive Uncle
+60 March Hare - Hare-Brained Eccentric
+60 Tramp - Observant Guardian
+60 Chem Purse
+60 Tipo - Junior Chipmunk
+60 Bill the Lizard - Chimney Sweep
+[CommonSlotAmethyst(1)]
+60 Royal Guard - Octopus Soldier
+60 Bambi - Prince of the Forest
+60 Nero - Fearsome Crocodile
+60 Yelana - Northuldra Leader
+60 Bruno Madrigal - Single-Minded
+60 Ryder - Fleet-Footed Infiltrator
+60 Camilo Madrigal - Center Stage
+60 Kuzco - Bored Royal
+60 Poe De Spell - Magica's Brother
+60 Megara - Part of the Plan
+60 Scarab
+60 Palace Guard - Spectral Sentry
+[CommonSlotAmber(1)]
+60 Charlotte La Bouff - Mardi Gras Princess
+60 Gene - Niceland Resident
+60 Perdita - On the Lookout
+60 Dalmatian Puppy - Tail Wagger
+60 Joey - Blue Pigeon
+60 Dewey - Lovable Showoff
+60 Darling Dear - Beloved Wife
+60 Calhoun - Hard-Nosed Leader
+60 Antonio's Jaguar - Faithful Companion
+60 Jim Dear - Beloved Husband
+60 Rhino - One-Sixteenth Wolf
+60 Mirabel Madrigal - Curious Child
+[UncommonSlot(3)]
+30 Patch - Playful Pup
+30 She's Your Person
+30 Twitterpated
+30 Trials and Tribulations
+30 Blue Fairy - Guiding Light
+30 Ice Spikes
+30 Dormouse - Easily Agitated
+30 Undermine
+30 Jeweled Collar
+30 The Coachman - Greedy Deceiver
+30 Bernard - Over-Prepared
+30 Pouncing Practice
+30 Louie - One Cool Duck
+30 Pua - Protective Pig
+30 Lena Sabrewing - Pure Energy
+30 Madam Mim - Up to No Good
+30 Pull the Lever!
+30 Don Karnage - Air Pirate Leader
+30 Walk the Plank!
+30 Zipper - Flying Ranger
+30 Rolly - Chubby Puppy
+30 Only So Much Room
+30 Chip - Quick Thinker
+30 Arthur - Determined Squire
+30 Jumba Jookiba - Critical Scientist
+30 Magica De Spell - Shadow Form
+30 Forest Duel
+30 Pluto - Tried and True
+30 Alma Madrigal - Accepting Grandmother
+30 Honest John - Shameless Schemer
+30 Get Out!
+30 Stopped Chaos in Its Tracks
+30 Beyond the Horizon
+30 Atitaya - Fang General
+30 Madam Mim - Rhino
+30 Abu - Illusory Pachyderm
+30 Napoleon - Clever Bloodhound
+30 Druun - Ravenous Plague
+30 Kaa - Hypnotizing Python
+30 Sir Pellinore - Seasoned Knight
+30 Figaro - Tuxedo Cat
+30 Louis - Endearing Alligator
+30 They Never Come Back
+30 Madame Medusa - Deceiving Partner
+30 King Candy - Sugar Rush Nightmare
+30 Quick Shot
+30 Roquefort - Lock Expert
+30 LeFou - Cake Thief
+30 Thumper - Young Bunny
+30 Hiro Hamada - Intuitive Thinker
+30 The Nephews' Piggy Bank
+30 Candy Drift
+30 Huey - Reliable Leader
+30 Light the Fuse
+[RareOrHigherSlot(2)]
+13 Ludwig Von Drake - All-Around Expert
+2 Tinker Bell - Insistent Fairy
+13 Nathaniel Flint - Notorious Pirate
+13 Bolt - Down but Not Out
+13 Flower - Shy Skunk
+13 Gyro Gearloose - Eccentric Inventor
+13 Wreck-It Ralph - Back Seat Driver
+13 Prince John - Fraidy-Cat
+13 Desperate Plan
+13 Antonio Madrigal - Friend to All
+13 Tiana - Natural Talent
+2 Pinocchio - Strings Attached
+5 Flynn Rider - Breaking and Entering
+5 Go Go Tomago - Cutting Edge
+13 Faline - Playful Fawn
+13 Iago - Out of Reach
+5 Jafar - High Sultan of Lorcana
+13 Captain Hook - The Pirate King
+2 Lilo - Causing an Uproar
+2 Namaari - Single-Minded Rival
+5 Tramp - Dapper Rascal
+5 Yzma - On Edge
+13 Anna - Magical Mission
+13 Alice - Clumsy as Can Be
+13 Heads Held High
+5 Bruno Madrigal - Singing Seer
+5 Hades - Ruthless Tyrant
+13 Basil - Undercover Detective
+13 Most Everyone's Mad Here
+13 Vincenzo Santorini - The Explosives Expert
+5 Donald Duck - Coin Collector
+2 Ratigan - Greedy Genius
+13 Fantastical and Magical
+2 Mickey Mouse - Giant Mouse
+13 It Means No Worries
+13 Nothing We Won't Do
+13 Monstro - Infamous Whale
+13 Fred - Giant-Sized
+13 Kuzco - Impulsive Llama
+5 Wreck-It Ralph - Big Lug
+5 Down in New Orleans
+13 Aladdin - Vigilant Guard
+13 Mushu - Your Worst Nightmare
+5 Maui - Stubborn Trickster
+2 Raya - Infiltration Expert
+5 Perdita - Determined Mother
+2 Chief Bogo - Commanding Officer
+13 Geppetto - Skilled Craftsman
+5 Lumiere - Fired Up
+2 Rapunzel - High Climber
+13 The Sultan - Royal Apparition
+13 The Colonel - Old Sheepdog
+13 Stitch - Alien Troublemaker
+5 Jasmine - Steady Strategist
+13 Nani - Heist Mastermind
+5 Mulan - Charging Ahead
+13 Honey Lemon - Costumed Catalyst
+5 Queen of Hearts - Haughty Monarch
+13 Gadget Hackwrench - Quirky Scientist
+13 Everybody's Got a Weakness
+13 Elsa - Fierce Protector
+5 Rhino - Power Hamster
+13 Minnie Mouse - Daring Defender
+2 Goofy - Groundbreaking Chef
+13 Vinnie - Green Pigeon
+13 Belle's Favorite Book
+2 Stitch - Experiment 626
+13 Wrong Lever!
+13 Archimedes - Resourceful Owl
+5 Into the Unknown
+2 Bambi - Little Prince
+13 Clawhauser - Front Desk Officer
+13 Lady - Family Dog
+13 Atlantean Crystal
+13 Mother Gothel - Knows What's Best
+13 Jiminy Cricket - Level-Headed and Wise
+13 The Sword of Shan-Yu
+13 Lady - Decisive Dog
+[FoilSlot(1)]
+60 Charlotte La Bouff - Mardi Gras Princess
+60 Gene - Niceland Resident
+30 Patch - Playful Pup
+30 She's Your Person
+60 Royal Guard - Octopus Soldier
+60 Dale - Bumbler
+30 Twitterpated
+60 Olaf - Recapping the Story
+60 Little Sister - Responsible Rabbit
+60 Captain Hook - Forceful Duelist
+13 Ludwig Von Drake - All-Around Expert
+60 Perdita - On the Lookout
+60 Dalmatian Puppy - Tail Wagger
+30 Trials and Tribulations
+60 Bambi - Prince of the Forest
+60 Nero - Fearsome Crocodile
+30 Blue Fairy - Guiding Light
+30 Ice Spikes
+30 Dormouse - Easily Agitated
+30 Undermine
+30 Jeweled Collar
+60 Lumiere - Nimble Candelabra
+2 Tinker Bell - Insistent Fairy
+30 The Coachman - Greedy Deceiver
+60 Go Go Tomago - Mechanical Engineer
+30 Bernard - Over-Prepared
+30 Pouncing Practice
+60 Prince Achmed - Rival Suitor
+13 Nathaniel Flint - Notorious Pirate
+30 Louie - One Cool Duck
+30 Pua - Protective Pig
+13 Bolt - Down but Not Out
+60 Joey - Blue Pigeon
+30 Lena Sabrewing - Pure Energy
+60 Yelana - Northuldra Leader
+30 Madam Mim - Up to No Good
+13 Flower - Shy Skunk
+30 Pull the Lever!
+60 Wilhelmina Packard - The Radio Operator
+60 Fred - Major Science Enthusiast
+30 Don Karnage - Air Pirate Leader
+60 He Who Steals and Runs Away
+30 Walk the Plank!
+13 Gyro Gearloose - Eccentric Inventor
+60 Mushu - Fast-Talking Dragon
+13 Wreck-It Ralph - Back Seat Driver
+13 Prince John - Fraidy-Cat
+60 Anita Radcliffe - Dog Lover
+60 Mrs. Potts - Head Housekeeper
+60 Television Set
+60 Bobby - Purple Pigeon
+60 General Li - Head of the Imperial Army
+30 Zipper - Flying Ranger
+13 Desperate Plan
+60 Dewey - Lovable Showoff
+13 Antonio Madrigal - Friend to All
+13 Tiana - Natural Talent
+30 Rolly - Chubby Puppy
+30 Only So Much Room
+60 Bruno Madrigal - Single-Minded
+60 Ryder - Fleet-Footed Infiltrator
+2 Pinocchio - Strings Attached
+60 Chaca - Junior Chipmunk
+60 Mad Dog - Karnage's First Mate
+30 Chip - Quick Thinker
+5 Flynn Rider - Breaking and Entering
+5 Go Go Tomago - Cutting Edge
+60 Jock - Attentive Uncle
+60 Alice - Courageous Keyholder
+60 Cri-Kee - Part of the Team
+13 Faline - Playful Fawn
+60 The Wardrobe - Perceptive Friend
+30 Arthur - Determined Squire
+30 Jumba Jookiba - Critical Scientist
+13 Iago - Out of Reach
+60 Darling Dear - Beloved Wife
+30 Magica De Spell - Shadow Form
+5 Jafar - High Sultan of Lorcana
+30 Forest Duel
+13 Captain Hook - The Pirate King
+2 Lilo - Causing an Uproar
+60 Wasabi - Always Prepared
+60 Monterey Jack - Defiant Protector
+2 Namaari - Single-Minded Rival
+5 Tramp - Dapper Rascal
+30 Pluto - Tried and True
+30 Alma Madrigal - Accepting Grandmother
+5 Yzma - On Edge
+13 Anna - Magical Mission
+13 Alice - Clumsy as Can Be
+30 Honest John - Shameless Schemer
+30 Get Out!
+13 Heads Held High
+5 Bruno Madrigal - Singing Seer
+5 Hades - Ruthless Tyrant
+13 Basil - Undercover Detective
+13 Most Everyone's Mad Here
+13 Vincenzo Santorini - The Explosives Expert
+5 Donald Duck - Coin Collector
+30 Stopped Chaos in Its Tracks
+2 Ratigan - Greedy Genius
+13 Fantastical and Magical
+2 Mickey Mouse - Giant Mouse
+13 It Means No Worries
+13 Nothing We Won't Do
+13 Monstro - Infamous Whale
+30 Beyond the Horizon
+30 Atitaya - Fang General
+13 Fred - Giant-Sized
+13 Kuzco - Impulsive Llama
+5 Wreck-It Ralph - Big Lug
+5 Down in New Orleans
+13 Aladdin - Vigilant Guard
+13 Mushu - Your Worst Nightmare
+5 Maui - Stubborn Trickster
+2 Raya - Infiltration Expert
+30 Madam Mim - Rhino
+30 Abu - Illusory Pachyderm
+60 Calhoun - Hard-Nosed Leader
+5 Perdita - Determined Mother
+2 Chief Bogo - Commanding Officer
+60 Arianna - Queen of Corona
+13 Geppetto - Skilled Craftsman
+5 Lumiere - Fired Up
+60 Lafayette - Sleepy Basset Hound
+2 Rapunzel - High Climber
+60 Camilo Madrigal - Center Stage
+13 The Sultan - Royal Apparition
+13 The Colonel - Old Sheepdog
+13 Stitch - Alien Troublemaker
+60 Khan - War Horse
+5 Jasmine - Steady Strategist
+13 Nani - Heist Mastermind
+60 The Mouse Queen - Ruler of Mousedom
+5 Mulan - Charging Ahead
+60 Gaston - Arrogant Showoff
+60 Brutus - Fearsome Crocodile
+13 Honey Lemon - Costumed Catalyst
+5 Queen of Hearts - Haughty Monarch
+13 Gadget Hackwrench - Quirky Scientist
+30 Napoleon - Clever Bloodhound
+60 March Hare - Hare-Brained Eccentric
+13 Everybody's Got a Weakness
+13 Elsa - Fierce Protector
+60 Kuzco - Bored Royal
+30 Druun - Ravenous Plague
+5 Rhino - Power Hamster
+30 Kaa - Hypnotizing Python
+13 Minnie Mouse - Daring Defender
+2 Goofy - Groundbreaking Chef
+60 Hamster Ball
+13 Vinnie - Green Pigeon
+60 Genie - Satisfied Dragon
+60 Magic Carpet - Phantom Rug
+13 Belle's Favorite Book
+2 Stitch - Experiment 626
+60 Anna - Trusting Sister
+30 Sir Pellinore - Seasoned Knight
+60 Mr. Snoops - Betrayed Partner
+30 Figaro - Tuxedo Cat
+60 The Dodo - Outlandish Storyteller
+60 Gloyd Orangeboar - Fierce Competitor
+13 Wrong Lever!
+13 Archimedes - Resourceful Owl
+30 Louis - Endearing Alligator
+60 Tramp - Observant Guardian
+5 Into the Unknown
+30 They Never Come Back
+2 Bambi - Little Prince
+60 Poe De Spell - Magica's Brother
+60 Megara - Part of the Plan
+30 Madame Medusa - Deceiving Partner
+13 Clawhauser - Front Desk Officer
+30 King Candy - Sugar Rush Nightmare
+13 Lady - Family Dog
+30 Quick Shot
+60 Toby Turtle - Wary Friend
+13 Atlantean Crystal
+30 Roquefort - Lock Expert
+60 Adelaide Bonfamille - Patron of the Arts
+60 Friend Owl - Cantankerous Neighbor
+30 LeFou - Cake Thief
+30 Thumper - Young Bunny
+60 Vanellope Von Schweetz - Spunky Speedster
+60 Chem Purse
+30 Hiro Hamada - Intuitive Thinker
+60 Tipo - Junior Chipmunk
+60 Scarab
+13 Mother Gothel - Knows What's Best
+13 Jiminy Cricket - Level-Headed and Wise
+30 The Nephews' Piggy Bank
+30 Candy Drift
+60 Antonio's Jaguar - Faithful Companion
+60 Jim Dear - Beloved Husband
+30 Huey - Reliable Leader
+60 Dumptruck - Karnage's Second Mate
+60 Jasmine - Resourceful Infiltrator
+13 The Sword of Shan-Yu
+30 Light the Fuse
+60 Bill the Lizard - Chimney Sweep
+60 Palace Guard - Spectral Sentry
+13 Lady - Decisive Dog
+60 Rhino - One-Sixteenth Wolf
+60 Mirabel Madrigal - Curious Child

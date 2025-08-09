@@ -1,11 +1,15 @@
-import id_helper
+from pathlib import Path
+from . import id_helper
+
+ALL_DREAMBORN_NAMES_FILE_PATH = 'inputs/all_dreamborn_names.txt'
 
 class DreambornManager:
     def __init__(self):
         self.id_to_dreamborn_name = self._read_id_to_dreamborn_name()
 
     def _read_id_to_dreamborn_name(self):
-        with open('all_dreamborn_names.txt', encoding='utf8') as f:
+        Path(ALL_DREAMBORN_NAMES_FILE_PATH).parent.mkdir(parents=True, exist_ok=True)
+        with open(ALL_DREAMBORN_NAMES_FILE_PATH, encoding='utf8') as f:
             lines = f.readlines()
         id_to_dreamborn_name = {}
         for l in lines:

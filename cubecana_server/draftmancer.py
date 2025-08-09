@@ -1,17 +1,21 @@
 from dataclasses import dataclass
 from collections import defaultdict
 import json
-from lcc_error import LccError, UnidentifiedCardError
-from settings import Settings
-from card import ApiCard
-from lorcast_api import lorcast_api as lorcana_api
-import id_helper
-import franchise
-from cube_manager import CubecanaCube
-import card_list_helper
-from card_evaluations import card_evaluations_manager
-import tabletop_simulator
-from dreamborn_manager import dreamborn_manager
+from .lcc_error import LccError, UnidentifiedCardError
+from .settings import Settings
+from .card import ApiCard
+from .lorcast_api import lorcast_api as lorcana_api
+from . import id_helper
+from . import franchise
+from .cube_manager import CubecanaCube
+from . import card_list_helper
+from .card_evaluations import card_evaluations_manager
+from . import tabletop_simulator
+from .dreamborn_manager import dreamborn_manager
+
+ALL_CARDS_DREAMBORN_TTS = "inputs/dreamborn_tts_all_cards"
+INCOMPLETE_SIMPLE_TEMPLATE_PATH = "inputs/incomplete_simple_template.draftmancer.txt"
+ALL_CARDS_CUBE_PATH = 'inputs/all_cards_cube.draftmancer.txt'
 
 @dataclass(frozen=True)
 class DraftmancerSettings:
@@ -170,7 +174,7 @@ def generate_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_
                 lines.append(line_str)
     return '\n'.join(lines)
 
-def read_draftmancer_custom_cardlist(file_path='all_cards_cube.draftmancer.txt'):
+def read_draftmancer_custom_cardlist(file_path=ALL_CARDS_CUBE_PATH):
     draftmancer_file:DraftmancerFile = read_draftmancer_file(file_path)
     if draftmancer_file == None:
         return None
@@ -245,7 +249,6 @@ def generate_draftmancer_file_from_cube(cube: CubecanaCube):
     return generate_draftmancer_file_from(cube.card_id_to_count, card_evaluations_filename, cube.settings)   
 
 def generate_draftmancer_file_from(id_to_count_input, card_evaluations_file, settings):
-    ALL_CARDS_DREAMBORN_TTS = "inputs/dreamborn_tts_all_cards"
     id_to_tts_card = tabletop_simulator.read_id_to_tts_card_from_filesystem(ALL_CARDS_DREAMBORN_TTS, id_to_count_input)
     return dreamborn_tts_to_draftmancer(id_to_tts_card, card_evaluations_file, settings)
 
@@ -256,7 +259,7 @@ def dreamborn_tts_to_draftmancer_from_file(dreamborn_export_for_tabletop_sim, ca
 def dreamborn_card_list_to_draftmancer(card_list_input, card_evaluations_file, settings):
     card_list_lines = card_list_input.split('\n')
     id_to_count_input = card_list_helper.id_to_count_from(card_list_lines)
-    return add_card_list_to_draftmancer_custom_cards(id_to_count_input, "incomplete_simple_template.draftmancer.txt", settings)
+    return add_card_list_to_draftmancer_custom_cards(id_to_count_input, INCOMPLETE_SIMPLE_TEMPLATE_PATH, settings)
 
 def add_card_list_to_draftmancer_custom_cards(id_to_count_input, draftmancer_custom_card_file, settings: Settings):
     file_contents = ""
@@ -288,7 +291,7 @@ def add_card_list_to_draftmancer_custom_cards(id_to_count_input, draftmancer_cus
         raise UnidentifiedCardError(error_message)
     return file_contents
 
-def validate_card_list_against(card_list_input, draftmancer_custom_card_file="incomplete_simple_template.draftmancer.txt"):
+def validate_card_list_against(card_list_input, draftmancer_custom_card_file=INCOMPLETE_SIMPLE_TEMPLATE_PATH):
     id_to_custom_card = read_draftmancer_custom_cardlist(draftmancer_custom_card_file)
     card_list_lines = card_list_input.split('\n')
     failed_card_names = []

@@ -1,5 +1,5 @@
 import csv
-import id_helper
+from . import id_helper
 
 # only works for The Double Feature Cube, move to a loadable file
 franchise_to_draftmancer_color =  {

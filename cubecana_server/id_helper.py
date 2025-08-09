@@ -13,8 +13,8 @@ def canonical_name_from_id(id, id_to_dreamborn_name, id_to_tts_card):
     cannonical_name = id_to_dreamborn_name.get(id, None) 
     
     # dreamborn TTS export is the second best name
-    # this enables us to generate cubes with cards we haven't exported yet in all_dreamborn_names.txt, and import / export from dreamborn
     # HOWEVER, hand-editing the booster slot(s) after generation has edge cases, e.g. card names are missing apostrophes (') in custom card list, so they won't match
+    # this enables us to generate cubes with cards we haven't exported yet in all_dreamborn_names.txt, and import / export from dreamborn
     # therefore this method is not suitable to generate simple_template.draftmancer.txt which is meant to have the booster slot(s) "hand-edited"
     if cannonical_name is None: 
         cannonical_name = id_to_tts_card[id]['name']

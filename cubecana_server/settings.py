@@ -1,4 +1,4 @@
-import api
+from . import api
 
 POWER_BAND_OVERPOWERED: str = "OVERPOWERED"
 POWER_BAND_MAX: str = "MAX"

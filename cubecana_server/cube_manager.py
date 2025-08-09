@@ -1,14 +1,14 @@
 import uuid
 import time
 from dataclasses import dataclass
-import api
-import draftmancer
 from typing import List
+from . import api
+from . import draftmancer
 import uuid
-from settings import Settings
-import card_list_helper
-from cube_dao import cube_dao, DbCubecanaCube
-from cubecana_cube import CubecanaCube, to_db_cubecana_cube, from_db_cubecana_cube
+from .settings import Settings
+from . import card_list_helper
+from .cube_dao import cube_dao, DbCubecanaCube
+from .cubecana_cube import CubecanaCube, to_db_cubecana_cube, from_db_cubecana_cube
 
 class CubeManager:
     def get_cube_count(self):

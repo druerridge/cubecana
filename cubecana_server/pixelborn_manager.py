@@ -1,7 +1,7 @@
 import base64
 from datetime import datetime
-import lcc_error
-import id_helper
+from . import lcc_error
+from . import id_helper
 
 class PixelbornManager:
     def __init__(self):

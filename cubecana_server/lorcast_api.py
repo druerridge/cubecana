@@ -1,11 +1,11 @@
 from pathlib import Path
 import json
-import id_helper
+from . import id_helper
 import requests
-from card import ApiCard
+from .card import ApiCard
 
-CACHED_API_DATA_FILEPATH = 'lorcast_api_data_cache.json'
-CACHED_API_DATA_SET_Q1_FILEPATH = 'lorcast_api_data_cache_q1.json'
+CACHED_API_DATA_FILEPATH = 'inputs/lorcast_api_cache/lorcast_api_data_cache.json'
+CACHED_API_DATA_SET_Q1_FILEPATH = 'inputs/lorcast_api_cache/lorcast_api_data_cache_q1.json'
 
 lorcast_to_dtd_rarity =  {
     "Common" : "Common",
@@ -115,6 +115,7 @@ class LorcastApi:
             name_to_card_untyped.update(name_to_card_untyped_set_q1) # merge the two dicts
             self.fix_card_names(name_to_card_untyped)
             id_to_card_untyped = self.generate_id_to_card_untyped(name_to_card_untyped)
+            Path(cached_api_data_file).parent.mkdir(parents=True, exist_ok=True)
             with cached_api_data_file.open(mode='w') as file_to_write:
                 json.dump(id_to_card_untyped, file_to_write)
 

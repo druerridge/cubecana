@@ -1,9 +1,9 @@
 import json
 from pathlib import Path
-import id_helper
 from collections import defaultdict
-from card import ApiCard
-from lcc_error import UnidentifiedCardError
+from . import id_helper
+from .card import ApiCard
+from .lcc_error import UnidentifiedCardError
 
 TTS_SCALE_X = 1.2
 TTS_SCALE_Y = 1

@@ -1,3 +1,4 @@
+import uuid
 import json
 from pathlib import Path
 from typing import List, Optional
@@ -5,8 +6,7 @@ from sqlalchemy import create_engine, Column, String, Integer, Text, JSON, func,
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 from sqlalchemy.dialects.mysql import BINARY
-import api
-import uuid
+from . import api
 
 Base = declarative_base()
 
@@ -51,7 +51,7 @@ class CubeDao:
                 creds_json = json.load(f)
                 self.db_url = f"mysql://{creds_json['db_username']}:{creds_json['db_password']}@{creds_json['db_host']}/{creds_json['db_name']}?charset=utf8"
         else:
-            print("No creds file found, exiting")
+            print(f"No creds file found at {creds_file.absolute()}, exiting")
             raise SystemExit(1)
 
         # Create a connection pool

@@ -1,6 +1,6 @@
 from collections import defaultdict
-import id_helper
-from lcc_error import LccError
+from . import id_helper
+from .lcc_error import LccError
 
 def get_mainboard_lines(all_lines):
   try: 

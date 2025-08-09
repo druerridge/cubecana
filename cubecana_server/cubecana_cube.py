@@ -2,11 +2,11 @@ import json
 import uuid
 import time
 from dataclasses import dataclass
-import api
+from . import api
 from typing import List
 import uuid
-from settings import Settings
-from cube_dao import DbCubecanaCube
+from .settings import Settings
+from .cube_dao import DbCubecanaCube
 
 @dataclass(frozen=True)
 class CubecanaCube:

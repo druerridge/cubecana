@@ -1,6 +1,6 @@
 from pathlib import Path
 import json
-import id_helper
+from . import id_helper
 import requests
 
 CACHED_API_DATA_FILEPATH = 'api_data_cache.json'

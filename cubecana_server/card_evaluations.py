@@ -1,7 +1,7 @@
 import csv
-import id_helper
-from cubecana_cube import CubecanaCube
-import tags
+from . import id_helper
+from .cubecana_cube import CubecanaCube
+from . import tags
 
 DEFAULT_CARD_EVALUATIONS_FOLDER = "DraftBots/"
 DEFAULT_CARD_EVALUATIONS_FILE = "DraftBots/FrankKarsten-normalInk-maxPower-Evaluations.csv"

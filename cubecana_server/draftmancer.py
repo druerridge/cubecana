@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from collections import defaultdict
 import json
+from pathlib import Path
 from .lcc_error import LccError, UnidentifiedCardError
 from .settings import Settings
 from .card import ApiCard
@@ -16,6 +17,7 @@ from .dreamborn_manager import dreamborn_manager
 ALL_CARDS_DREAMBORN_TTS = "inputs/dreamborn_tts_all_cards"
 INCOMPLETE_SIMPLE_TEMPLATE_PATH = "inputs/incomplete_simple_template.draftmancer.txt"
 ALL_CARDS_CUBE_PATH = 'inputs/all_cards_cube.draftmancer.txt'
+GENERATED_CUBES_DIR = 'generated_cubes'
 
 @dataclass(frozen=True)
 class DraftmancerSettings:
@@ -141,7 +143,9 @@ def generate_custom_card_list(id_to_api_card: dict[str, ApiCard],
 def write_draftmancer_file(draftmancer_file_string, card_list_name):
     draftmancer_file_as_lines = draftmancer_file_string.split('\n')
     file_name = f'{card_list_name}.draftmancer.txt'
-    with open(file_name, 'w', encoding="utf-8") as file:
+    file_path = Path(GENERATED_CUBES_DIR).joinpath(file_name)
+    Path(file_path).parent.mkdir(parents=True, exist_ok=True)
+    with open(file_path, 'w', encoding="utf-8") as file:
         for line in draftmancer_file_as_lines:
             file.write(line + '\n')
     print(f'Wrote draftmancer file to {file_name}')

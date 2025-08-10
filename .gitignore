@@ -166,3 +166,4 @@ cython_debug/
 #.idea/
 
 static/reports/
+generated_cubes/

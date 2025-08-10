@@ -110,7 +110,7 @@ def generate_custom_card_list(id_to_api_card: dict[str, ApiCard],
                 'ja': dreamborn_manager.to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'ja'),
                 'zh': dreamborn_manager.to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'zh'),
             },
-            'rarity': to_draftmancer_rarity(api_card.rarity),
+            'rarity': to_draftmancer_rarity(api_card.default_printing.rarity),
         }
         if id in id_to_rating:
             custom_card['rating'] = id_to_rating[id]

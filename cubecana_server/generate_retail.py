@@ -3,6 +3,7 @@ from .lorcast_api import lorcast_api as lorcana_api
 from .settings import Settings
 from .dreamborn_manager import dreamborn_manager
 from .card_evaluations import card_evaluations_manager
+from .card import ApiCard, CardPrinting
 
 rarity_to_frequency = {
     "Common": 60,
@@ -34,9 +35,15 @@ def calculate_slots_to_append(rarity, color):
     slots_to_append.append("FoilSlot")
     return slots_to_append
 
-def generate_retail_draftmancer_file(id_to_tts_card, card_evaluations_file, settings: Settings):
+def get_printing_from_set(api_card: ApiCard, set_code: str):
+    if set_code:
+        return next(filter(lambda printing: printing.set_code == set_code, api_card.card_printings))
+    else:
+        return api_card.default_printing
+
+def generate_retail_draftmancer_file(id_to_tts_card, card_evaluations_file, set_code:str, settings: Settings):
     id_to_dreamborn_name = dreamborn_manager.get_id_to_dreamborn_name()
-    id_to_api_card = lorcana_api.read_or_fetch_id_to_api_card()
+    id_to_api_card:dict[str, ApiCard] = lorcana_api.read_or_fetch_id_to_api_card()
     print("card_evaluations_file")
     print(card_evaluations_file)
     id_to_rating = card_evaluations_manager.read_id_to_rating(card_evaluations_file)
@@ -54,7 +61,8 @@ def generate_retail_draftmancer_file(id_to_tts_card, card_evaluations_file, sett
 
     for id in id_to_tts_card:
         api_card = id_to_api_card[id]
-        rarity = api_card.rarity
+        card_printing = get_printing_from_set(api_card, set_code)
+        rarity = card_printing.rarity
         color = api_card.color
         frequency = rarity_to_frequency[rarity]
         slots_to_append = calculate_slots_to_append(rarity, color)

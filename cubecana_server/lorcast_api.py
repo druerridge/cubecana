@@ -68,14 +68,14 @@ class LorcastApi:
         full_name:str = str(self.get_full_name(printing_untyped))
         printing: CardPrinting = self.printing_from_printing_untyped(printing_untyped)
         return ApiCard(
-                    full_name=full_name,    
-                    cost=printing_untyped['cost'], 
-                    rarity=lorcast_to_dtd_rarity[printing_untyped['rarity']],  # fixme: only get from printing
-                    color=printing_untyped['ink'],
-                    inks=printing_untyped['inks'],
-                    types=printing_untyped['type'],
-                    card_printings=[printing],
-                    default_printing=printing)
+            full_name=full_name,    
+            cost=printing_untyped['cost'], 
+            color=printing_untyped['ink'],
+            inks=printing_untyped['inks'],
+            types=printing_untyped['type'],
+            card_printings=[printing],
+            default_printing=printing
+        )
 
     def printing_from_printing_untyped(self, printing_untyped) -> CardPrinting:
         return CardPrinting(

@@ -1,10 +1,9 @@
 from dataclasses import dataclass
-from collections import defaultdict
 import json
 from pathlib import Path
-from .lcc_error import LccError, UnidentifiedCardError
+from .lcc_error import UnidentifiedCardError
 from .settings import Settings
-from .card import ApiCard
+from .card import ApiCard, CardPrinting, PrintingId
 from .lorcast_api import lorcast_api as lorcana_api
 from . import id_helper
 from . import franchise
@@ -86,57 +85,74 @@ def to_draftmancer_card_type(api_card: ApiCard, settings: Settings):
         return "Battle"
     return "Instant"  # Default
 
-def generate_custom_card_list(id_to_api_card: dict[str, ApiCard], 
-                              id_to_rating: dict[str, int],
-                              id_to_tts_card: dict[str, dict], 
-                              id_to_dreamborn_name: dict[str, str], 
-                              settings: Settings):
-    custom_card_list = []
-    failed_ids = []
-    for id in id_to_tts_card:
-        if not id in id_to_api_card:
-            failed_ids.append(id)
+def generate_custom_card_list(
+        id_to_rating: dict[str, int],
+        printing_ids_to_include: list[PrintingId],
+        settings: Settings
+    ) -> list[dict]:
+    custom_card_list:list[dict] = []
+    failed_printing_ids = list[PrintingId]()
+    for printing_id in printing_ids_to_include:
+        card_id = printing_id.card_id
+        api_card: ApiCard = lorcana_api.get_api_card(card_id)
+        if api_card is None:
+            failed_printing_ids.append(printing_id)
             continue
-        api_card: ApiCard = id_to_api_card[id]            
+
+        # Strict Mode
+        # printing: CardPrinting = next(filter(lambda printing: printing.printing_id() == printing_id, api_card.card_printings), None)
+        # if printing is None:
+        #     failed_printing_ids.append(printing_id)
+        #     continue
+        # Loose Mode
+        printing: CardPrinting = lorcana_api.get_card_printing(printing_id) # will use default printing if it doesn't recognize
+        # should add a warning
         ink_cost = api_card.cost
-        cannonical_name = id_helper.canonical_name_from_id(id, id_to_dreamborn_name, id_to_tts_card)
+        full_name = api_card.full_name
         custom_card = {
-            'name': cannonical_name, 
+            'name': full_name, 
             'mana_cost': f'{{{ink_cost}}}',
             'type': to_draftmancer_card_type(api_card, settings),
             'image_uris': {
-                'en': dreamborn_manager.to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'en'),
-                'fr': dreamborn_manager.to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'fr'),
-                'de': dreamborn_manager.to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'de'),
-                'it': dreamborn_manager.to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'it'),
-                'ja': dreamborn_manager.to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'ja'),
-                'zh': dreamborn_manager.to_language_coded_image_uri(id_to_tts_card[id]['image_uri'], 'zh'),
+                'en': dreamborn_manager.image_uri(printing_id, 'en'),
+                'fr': dreamborn_manager.image_uri(printing_id, 'fr'),
+                'de': dreamborn_manager.image_uri(printing_id, 'de'),
+                'it': dreamborn_manager.image_uri(printing_id, 'it'),
+                'ja': dreamborn_manager.image_uri(printing_id, 'ja'),
+                'zh': dreamborn_manager.image_uri(printing_id, 'zh'),
             },
-            'rarity': to_draftmancer_rarity(api_card.default_printing.rarity),
+            'rarity': to_draftmancer_rarity(printing.rarity),
+            'set': f"{printing.set_code}",
+            'collector_number': printing.collector_id,
         }
-        if id in id_to_rating:
-            custom_card['rating'] = id_to_rating[id]
+        if card_id in id_to_rating:
+            custom_card['rating'] = id_to_rating[card_id]
         else:
-            print(f"Missing rating for {cannonical_name}")
+            print(f"Missing rating for {full_name}")
             # TODO: probably tell user rating is missing
 
         if "Location" in api_card.types:
-            custom_card['layout'] = "split" # causes card to be displayed horizontally were possible        
+            custom_card['layout'] = "split" # causes card to be displayed horizontally where possible        
 
         if (settings.set_card_colors):
                 # FYI this is broken for Illumineer's quest boss cards
                 custom_card['colors'] = to_draftmancer_colors(api_card.color, settings, api_card.inks)
         if (settings.franchise_to_color): # TODO: This needs additional Testing outside double feature cube
-            color = franchise.retrieve_franchise_to_draftmancer_color(id)
+            color = franchise.retrieve_franchise_to_draftmancer_color(card_id)
             if color:
                 custom_card['colors'] = [color]
             else:
                 custom_card['colors'] = []
         custom_card_list.append(custom_card)
-    if len(failed_ids) > 0:
-        error_message = f"Unable to identify {len(failed_ids)} cards, including:\n"
-        for failed_id in failed_ids:
-            error_message += f"{failed_id}\n"
+    if len(failed_printing_ids) > 0:
+        error_message = f"Unable to identify {len(failed_printing_ids)} cards, including:"
+        for failed_printing_id in failed_printing_ids:
+            if lorcana_api.get_api_card(failed_printing_id.card_id) is None:
+                error_message += f"\n Card: {failed_printing_id.card_id}"
+            else:
+                error_message += f"\n Print: {failed_printing_id}. "
+                error_message += f"\n   Available printings: {', '.join([str(p.printing_id()) for p in api_card.card_printings])}"
+
         raise UnidentifiedCardError(error_message)
     return custom_card_list
 
@@ -150,7 +166,9 @@ def write_draftmancer_file(draftmancer_file_string, card_list_name):
             file.write(line + '\n')
     print(f'Wrote draftmancer file to {file_name}')
 
-def generate_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_name, settings: Settings, slot_name_to_slot=None):
+def generate_draftmancer_file(included_printing_ids_to_count:dict[PrintingId, int], card_evaluations_file: str, settings: Settings, slot_name_to_slot=None):
+    id_to_rating = card_evaluations_manager.read_id_to_rating(card_evaluations_file)
+    custom_card_list = generate_custom_card_list(id_to_rating, list(included_printing_ids_to_count.keys()), settings)
     draftmancer_settings = settings.to_draftmancer_settings()
             
     lines = [
@@ -164,17 +182,17 @@ def generate_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_
         ]
     if slot_name_to_slot==None:
         lines.append(f'[MainSlot({settings.cards_per_booster})]')
-        for id in id_to_tts_card:
-            cannonical_name = id_helper.canonical_name_from_id(id, id_to_dreamborn_name, id_to_tts_card)
-            line_str = f"{id_to_tts_card[id]['count']} {cannonical_name}"
+        for printing_id in included_printing_ids_to_count:
+            full_name = lorcana_api.get_api_card(printing_id.card_id).full_name
+            line_str = f"{included_printing_ids_to_count[printing_id]} {full_name} ({printing_id.set_code}) {printing_id.collector_id}"
             lines.append(line_str)
     else:
         for slot_name in slot_name_to_slot:
             slot = slot_name_to_slot[slot_name]
             lines.append(f'[{slot_name}({slot.num_cards})]')
             for slot_card in slot.slot_cards:
-                cannonical_name = id_helper.canonical_name_from_id(slot_card.card_id, id_to_dreamborn_name, id_to_tts_card)
-                line_str = f"{slot_card.num_copies} {cannonical_name}"
+                full_name = lorcana_api.get_api_card(slot_card.card_id).full_name
+                line_str = f"{slot_card.num_copies} {full_name}"
                 lines.append(line_str)
     return '\n'.join(lines)
 
@@ -250,11 +268,7 @@ def read_draftmancer_export(draftmancer_deck_export_file):
 
 def generate_draftmancer_file_from_cube(cube: CubecanaCube):
     card_evaluations_filename = card_evaluations_manager.determine_card_evaluations_file(cube)
-    return generate_draftmancer_file_from(cube.card_id_to_count, card_evaluations_filename, cube.settings)   
-
-def generate_draftmancer_file_from(id_to_count_input, card_evaluations_file, settings):
-    id_to_tts_card = tabletop_simulator.read_id_to_tts_card_from_filesystem(ALL_CARDS_DREAMBORN_TTS, id_to_count_input)
-    return dreamborn_tts_to_draftmancer(id_to_tts_card, card_evaluations_file, settings)
+    return generate_draftmancer_file(cube.printing_id_to_count, card_evaluations_filename, cube.settings)
 
 def dreamborn_tts_to_draftmancer_from_file(dreamborn_export_for_tabletop_sim, card_evaluations_file, settings):
     id_to_tts_card = tabletop_simulator.read_id_to_tts_card_from_filesystem(dreamborn_export_for_tabletop_sim)
@@ -262,8 +276,8 @@ def dreamborn_tts_to_draftmancer_from_file(dreamborn_export_for_tabletop_sim, ca
 
 def dreamborn_card_list_to_draftmancer(card_list_input, card_evaluations_file, settings):
     card_list_lines = card_list_input.split('\n')
-    id_to_count_input = card_list_helper.id_to_count_from(card_list_lines)
-    return add_card_list_to_draftmancer_custom_cards(id_to_count_input, INCOMPLETE_SIMPLE_TEMPLATE_PATH, settings)
+    printing_id_to_count = card_list_helper.printing_id_to_count_from(card_list_lines)
+    return generate_draftmancer_file(printing_id_to_count, card_evaluations_file, settings)
 
 def add_card_list_to_draftmancer_custom_cards(id_to_count_input, draftmancer_custom_card_file, settings: Settings):
     file_contents = ""
@@ -295,34 +309,14 @@ def add_card_list_to_draftmancer_custom_cards(id_to_count_input, draftmancer_cus
         raise UnidentifiedCardError(error_message)
     return file_contents
 
-def validate_card_list_against(card_list_input, draftmancer_custom_card_file=INCOMPLETE_SIMPLE_TEMPLATE_PATH):
-    id_to_custom_card = read_draftmancer_custom_cardlist(draftmancer_custom_card_file)
-    card_list_lines = card_list_input.split('\n')
-    failed_card_names = []
-
-    for line in card_list_lines:
-        string_count, name = line.rstrip().split(' ', 1)
-        try:
-            int(string_count)
-        except ValueError:
-            raise LccError("Missing count or name in line:\n " + line + "\nShould look like:\n1 Elsa - Snow Queen", 400)
-        id = id_helper.to_id(name)
-        if not id in id_to_custom_card:
-            failed_card_names.append(name)
-            continue
-        
-    if len(failed_card_names) > 0:
-        error_message = f"Unable to identify {len(failed_card_names)} cards, including:\n"
-        if len(failed_card_names) > len(card_list_lines) / 2: 
-            error_message = "If using non-English cards, you must convert to English card names for now\n" + error_message
-        for failed_id in failed_card_names:
-            error_message += f"{failed_id}\n"
-        raise UnidentifiedCardError(error_message)
-    
+def generate_printing_id_to_count_from_id_to_tts_card(id_to_tts_card) -> dict[PrintingId,int]:
+    id_to_api_card: dict[str, ApiCard] = lorcana_api.read_or_fetch_id_to_api_card()
+    printing_id_to_count = dict[PrintingId,int]()
+    for card_id in id_to_tts_card:
+        api_card: ApiCard = id_to_api_card[card_id]
+        printing_id_to_count[api_card.default_printing.printing_id()] = id_to_tts_card[card_id]['count']
+    return printing_id_to_count
 
 def dreamborn_tts_to_draftmancer(id_to_tts_card, card_evaluations_file, settings):
-    id_to_dreamborn_name = dreamborn_manager.get_id_to_dreamborn_name()
-    id_to_api_card = lorcana_api.read_or_fetch_id_to_api_card()
-    id_to_rating = card_evaluations_manager.read_id_to_rating(card_evaluations_file)
-    custom_card_list = generate_custom_card_list(id_to_api_card, id_to_rating, id_to_tts_card, id_to_dreamborn_name, settings)
-    return generate_draftmancer_file(custom_card_list, id_to_tts_card, id_to_dreamborn_name, settings)
+    printing_id_to_count = generate_printing_id_to_count_from_id_to_tts_card(id_to_tts_card)
+    return generate_draftmancer_file(printing_id_to_count, card_evaluations_file, settings)

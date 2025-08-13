@@ -13,6 +13,8 @@ from cubecana_server.retail_manager import retail_manager
 from cubecana_server import api
 from cubecana_server.cube_dao import MAX_CARD_LIST_LENGTH
 from cubecana_server import tabletop_simulator
+from cubecana_server.lorcast_api import lorcast_api as lorcana_api
+import traceback
 from cubecana_server import cubealytics # This is imported so it will init + generate startup report(s)
 app = Flask(__name__)
 
@@ -87,11 +89,11 @@ def serve_sitemap():
 
 @app.route('/api/draftmancer-to-inktable/', methods=['POST'])
 def draftmancer_to_inktable():
-  data = request.get_data()
   json_data = json.loads(request.data)
   all_lines = json_data['draftmancer_export'].split('\n')
   mainboard_lines = card_list_helper.get_mainboard_lines(all_lines)
-  id_to_count = card_list_helper.id_to_count_from(mainboard_lines)
+  printing_id_to_count = card_list_helper.printing_id_to_count_from(mainboard_lines)
+  id_to_count = card_list_helper.id_to_count_from_printing_id_to_count(printing_id_to_count)
   pixelborn_deck = pixelborn_manager.generate_pixelborn_deck(id_to_count)
   return pixelborn_manager.inktable_import_link(pixelborn_deck)
 
@@ -101,36 +103,31 @@ def draftmancer_to_lorcanito():
   json_data = json.loads(request.data)
   all_lines = json_data['draftmancer_export'].split('\n')
   mainboard_lines = card_list_helper.get_mainboard_lines(all_lines)
-  id_to_count = card_list_helper.id_to_count_from(mainboard_lines)
+  printing_id_to_count = card_list_helper.printing_id_to_count_from(mainboard_lines)
+  id_to_count = card_list_helper.id_to_count_from_printing_id_to_count(printing_id_to_count)
   pixelborn_deck = pixelborn_manager.generate_pixelborn_deck(id_to_count)
   return pixelborn_manager.lorcanito_import_link(pixelborn_deck)
 
 @app.route('/api/draftmancer-to-tts/', methods=['POST'])
 def process_json():
-  data = request.get_data()
   json_data = json.loads(request.data)
-
   all_lines = json_data['draftmancer_export'].split('\n')
   mainboard_lines = card_list_helper.get_mainboard_lines(all_lines)
-  id_to_count = card_list_helper.id_to_count_from(mainboard_lines)
-  id_to_custom_card = draftmancer.read_draftmancer_custom_cardlist()
-  tts_deck = tabletop_simulator.generate_tts_deck(id_to_count, id_to_custom_card)
-
+  printing_id_to_count = card_list_helper.printing_id_to_count_from(mainboard_lines)
+  tts_deck = tabletop_simulator.generate_tts_deck(printing_id_to_count)
   return json.dumps(tts_deck)
 
 @app.route('/api/card-list-to-draftmancer/', methods=['POST'])
 def card_list_to_draftmancer():
-  data = request.get_data()
   json_data = json.loads(request.data)
   card_list = json_data['card_list']
   settings_input = json_data['settings']
 
-  draftmancer.validate_card_list_against(card_list)
-
   card_list_lines = card_list.split('\n')
-  id_to_count_input = card_list_helper.id_to_count_from(card_list_lines)
+  printing_id_to_count = card_list_helper.printing_id_to_count_from(card_list_lines)
+
   card_count = 0
-  [card_count := card_count + count for count in id_to_count_input.values()]
+  [card_count := card_count + count for count in printing_id_to_count.values()]
 
   settings = Settings(
         boosters_per_player=settings_input.get('boosters_per_player', 4),
@@ -248,7 +245,7 @@ def add_cube():
     return Response(status=400)
   if len(request.json['cardListText']) > MAX_CARD_LIST_LENGTH:
     return Response(status=413)
-  draftmancer.validate_card_list_against(request.json['cardListText'])
+  card_list_helper.validate_card_list(request.json['cardListText'])
   api_create_cube = api.CreateCubeRequest(
     name=request.json['name'],
     cardListText=request.json['cardListText'],
@@ -296,7 +293,7 @@ def get_cube(cube_id):
   cube: CubecanaCube = cube_manager.get_cube(cube_id)
   if not cube:
     return Response(status=404)
-  api_cube = cube.to_api_cube()
+  api_cube = cube.to_api_cube(lorcana_api.read_or_fetch_id_to_api_card())
   r = api_cube.__dict__
   r['cubeSettings'] = r['cubeSettings'].__dict__
   return jsonify(r)
@@ -350,4 +347,6 @@ def handle_foo_exception(error):
         "user_facing_message": error.user_facing_message,
     }
     response = Response(json.dumps(user_facing_lcc_error), error.http_status_code, content_type="application/json")
+    if app.debug:
+      traceback.print_exc()
     return response

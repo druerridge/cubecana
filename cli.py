@@ -19,7 +19,6 @@ parser.add_argument('--cards_per_booster', default=12)
 parser.add_argument('--name', default="custom_card_list", help="Sets name of both the output file and the set/cube list as it appears in draftmancer")
 parser.add_argument('--set_card_colors', default=False, help="WARNING** This sets card colors, allowing draftmancer to do color-balancing for you, but it will also encourage bots to draft 1-2 color decks")
 parser.add_argument('--color_balance_packs', default=False, help="WARNING** this color-balances ONLY your largest slot, IF it contains enough cards, AND steel may be wonky (treated as colorless). This will ONLY work if card_colors is true, which will encourage bots to draft 1-2 color decks")
-parser.add_argument('--draftmancer_card_list', default=False, help="card list to use for deck conversion to tts")
 parser.add_argument('--franchise_to_color', default=False, help="sets colors based on franchise to enable a double-feature cube")
 parser.add_argument('--set_card_types', default=False, help="WARNING** This sets card types... it may affect bots... but I don't know")
 parser.add_argument('--set_code', default=None, help="This is required to generate a true retail draft set, but could be left blank to generate retail-like sets")
@@ -34,12 +33,6 @@ def retail_tts_to_draftmancer(dreamborn_export_for_tabletop_sim, card_evaluation
 def tts_to_draftmancer(dreamborn_export_for_tabletop_sim, card_evaluations_file, settings:Settings):
     draftmancer_file_contents = draftmancer.dreamborn_tts_to_draftmancer_from_file(dreamborn_export_for_tabletop_sim, card_evaluations_file, settings)
     draftmancer.write_draftmancer_file(draftmancer_file_contents, settings.card_list_name)
-
-def draftmancer_to_tts(draftmancer_card_list):
-    id_to_custom_card = draftmancer.read_draftmancer_custom_cardlist()
-    id_to_count = draftmancer.read_draftmancer_export(draftmancer_card_list)
-    tts_deck = tabletop_simulator.generate_tts_deck(id_to_count, id_to_custom_card)
-    tabletop_simulator.write_tts_deck_file(tts_deck)
 
 if __name__ == '__main__':
     args = parser.parse_args()
@@ -60,7 +53,5 @@ if __name__ == '__main__':
             retail_tts_to_draftmancer(args.dreamborn_export_for_tabletop_sim, args.card_evaluations_file, args.set_code, settings)
         case "tts_to_draftmancer":
             tts_to_draftmancer(args.dreamborn_export_for_tabletop_sim, args.card_evaluations_file, settings)
-        case "draftmancer_to_tts":
-            draftmancer_to_tts(args.draftmancer_card_list)
         case _:
             raise SystemExit(1, f"no verb '{args.verb}' found, exiting")

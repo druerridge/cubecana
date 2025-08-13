@@ -1,11 +1,15 @@
 from dataclasses import dataclass
 import json
+from . import id_helper
 
 @dataclass(frozen=True)
 class PrintingId:
     card_id: str
     set_code: str
     collector_id: str
+
+    def to_human_readable(self) -> str:
+        return f"{self.card_id} ({self.set_code}) {self.collector_id}"
 
     def __hash__(self):
         return hash((self.card_id, self.set_code, self.collector_id))
@@ -14,9 +18,22 @@ class PrintingId:
         if not isinstance(value, PrintingId):
             return NotImplemented
         return (self.card_id, self.set_code, self.collector_id) == (value.card_id, value.set_code, value.collector_id)
-    
-    def __str__(self):
+
+    def __lt__(self, other):
+        if not isinstance(other, PrintingId):
+            return NotImplemented
+        return (self.card_id, self.set_code, self.collector_id) < (other.card_id, other.set_code, other.collector_id)
+
+    def __gt__(self, other):
+        if not isinstance(other, PrintingId):
+            return NotImplemented
+        return (self.card_id, self.set_code, self.collector_id) > (other.card_id, other.set_code, other.collector_id)
+
+    def __str__(self) -> str:
         return f"{self.card_id}-{self.set_code}-{self.collector_id}"
+        
+    def __repr__(self) -> str:
+        return self.__str__()
     
     # def toDraftmancer(self):
     #     return f"{self.card_id} ({self.set_code}) {self.collector_id}"
@@ -34,6 +51,13 @@ class CardPrinting:
     collector_id: str
     set_code: str
     rarity: str
+
+    def printing_id(self) -> PrintingId:
+        return PrintingId(
+            card_id=id_helper.to_id(self.full_name),
+            set_code=self.set_code,
+            collector_id=self.collector_id
+        )
 
     def toJSON(self):
         return json.dumps(

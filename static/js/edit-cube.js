@@ -26,10 +26,10 @@ function getActiveTags() {
     return activeTags;
 }
 
-function toCardList(cardIdToCardCount) {
+function toCardList(nameToCardCount) {
     let cardList = '';
-    for (const cardId in cardIdToCardCount) {
-        cardList += `${cardIdToCardCount[cardId]} ${cardId}\n`;
+    for (const cardId in nameToCardCount) {
+        cardList += `${nameToCardCount[cardId]} ${cardId}\n`;
     }
     return cardList;
 }
@@ -38,7 +38,7 @@ function populateInputs(responseCube) {
     cubeForm.cubeName.value = responseCube.name;
     cubeForm.cubeLink.value = responseCube.link;
     cubeForm.cubeAuthor.value = responseCube.author;
-    cardListInput.value = toCardList(responseCube.cardIdToCardCount);
+    cardListInput.value = toCardList(responseCube.nameToCardCount);
     cubeForm.cubeBoostersPerPlayer.value = responseCube.cubeSettings.boostersPerPlayer;
     cubeForm.cubeCardsPerBooster.value = responseCube.cubeSettings.cardsPerBooster;
     cubeForm.cubePowerBand.value = responseCube.cubeSettings.powerBand;

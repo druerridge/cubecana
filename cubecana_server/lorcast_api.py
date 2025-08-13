@@ -1,5 +1,7 @@
 from pathlib import Path
 import json
+
+from .dreamborn_manager import dreamborn_manager
 from . import id_helper
 import requests
 from .card import ApiCard, CardPrinting, PrintingId, toPrintingId
@@ -20,6 +22,15 @@ lorcast_to_dtd_rarity =  {
 class LorcastApi:
     def __init__(self):
         self.id_to_api_card: dict[str, ApiCard] = {}
+    
+    def get_lorcast_full_name(self, printing_untyped: dict) -> str:
+        if 'version' in printing_untyped:
+            return f"{printing_untyped['name']} - {printing_untyped['version']}"
+        return printing_untyped['name']
+
+    def id_from_printing_untyped(self, printing_untyped: dict) -> str:
+        lorcast_full_name = self.get_lorcast_full_name(printing_untyped)
+        return id_helper.to_id(lorcast_full_name)
 
     def fetch_api_data(self) -> dict[str, dict]:
         printing_id_str_to_printing_untyped: dict[str, dict] = {}
@@ -42,31 +53,25 @@ class LorcastApi:
             res = requests.get(url=url)
             cards_in_set = res.json()
             # iterate cards
-            for card in cards_in_set:
-                full_name = self.get_full_name(card)
+            for printing_untyped in cards_in_set:
                 printing_id = PrintingId(
-                    card_id=id_helper.to_id(full_name),
-                    collector_id=card['collector_number'],
-                    set_code=card['set']['code']
+                    card_id=self.id_from_printing_untyped(printing_untyped),
+                    collector_id=printing_untyped['collector_number'],
+                    set_code=printing_untyped['set']['code']
                 )
-                printing_id_str_to_printing_untyped[printing_id.__str__()] = card
+                printing_id_str_to_printing_untyped[printing_id.__str__()] = printing_untyped
         return printing_id_str_to_printing_untyped
 
-    def get_full_name_from_id(self, card_id: str) -> str:
-        if card_id not in self.id_to_api_card:
-            raise ValueError(f"Card ID {card_id} not found in API data")
-        api_card:ApiCard = self.id_to_api_card[card_id]
-        return api_card.full_name
-
-    def get_full_name(self, card_untyped) -> str:
-        if 'version' in card_untyped:
-            full_name: str = f"{card_untyped['name']} - {card_untyped['version']}"
-            return full_name
-        return card_untyped['name']
+    def get_cannonical_name(self, printing_untyped:dict) -> str:
+        card_id = self.id_from_printing_untyped(printing_untyped)
+        dreamborn_name = dreamborn_manager.get_id_to_dreamborn_name(card_id)
+        if dreamborn_name is not None:
+            return dreamborn_name
+        return self.get_lorcast_full_name(printing_untyped)
 
     def api_card_from(self, printing_untyped) -> ApiCard:
-        full_name:str = str(self.get_full_name(printing_untyped))
         printing: CardPrinting = self.printing_from_printing_untyped(printing_untyped)
+        full_name = self.get_cannonical_name(printing_untyped)
         return ApiCard(
             full_name=full_name,    
             cost=printing_untyped['cost'], 
@@ -78,8 +83,9 @@ class LorcastApi:
         )
 
     def printing_from_printing_untyped(self, printing_untyped) -> CardPrinting:
+        full_name = self.get_cannonical_name(printing_untyped)
         return CardPrinting(
-            full_name=printing_untyped['name'],
+            full_name=full_name,
             collector_id=printing_untyped['collector_number'],
             set_code=printing_untyped['set']['code'],
             rarity=lorcast_to_dtd_rarity[printing_untyped['rarity']]
@@ -124,6 +130,18 @@ class LorcastApi:
             printing_id_str_to_printing_untyped = json.load(file_to_read)    
         return printing_id_str_to_printing_untyped
 
+    def get_card_printing(self, printing_id: PrintingId) -> CardPrinting | None:
+        api_card = self.get_api_card(printing_id.card_id)
+        if not api_card:
+            return None
+        card_printing = next((printing for printing in api_card.card_printings if printing.printing_id() == printing_id), None)
+        if card_printing == None:
+            return api_card.default_printing
+        return card_printing
+
+    def get_api_card(self, card_id: str) -> ApiCard | None:
+        return self.id_to_api_card.get(card_id)
+
     def read_or_fetch_id_to_api_card(self) -> dict[str, ApiCard]:
         return self.id_to_api_card
 
@@ -134,7 +152,7 @@ class LorcastApi:
             print("Fetching set Q1 cards from local file...")
             printing_id_to_printing_untyped_q1 = self.fetch_set_q1_data()
             printing_id_to_printing_untyped.update(printing_id_to_printing_untyped_q1) # merge the two dicts
-            # self.fix_card_names(name_to_card_untyped)
+            # self.fix_card_names(name_to_printing_untyped)
             Path(cached_api_data_file).parent.mkdir(parents=True, exist_ok=True)
             with cached_api_data_file.open(mode='w') as file_to_write:
                 json.dump(printing_id_to_printing_untyped, file_to_write)
@@ -143,6 +161,19 @@ class LorcastApi:
             printing_id_str_to_printing_untyped = json.load(file_to_read)
             id_to_api_card = self.generate_id_to_api_card(printing_id_str_to_printing_untyped)
         self.id_to_api_card = id_to_api_card
+
+        # self.print_all_printing_ids_to_file()
+
+    # def print_all_printing_ids_to_file(self, output_filepath: str = 'test_data/all_printing_ids.txt'):
+    #     output_file = Path(output_filepath)
+    #     output_file.parent.mkdir(parents=True, exist_ok=True)
+    #     count = 1
+    #     with output_file.open(mode='w', encoding='utf-8') as file:
+    #         for card_id, api_card in self.id_to_api_card.items():
+    #             for printing in api_card.card_printings:
+    #                 if printing.set_code != '9':
+    #                     file.write(f"{count} {api_card.full_name} ({printing.printing_id().set_code}) {printing.printing_id().collector_id}\n")
+    #     print(f"All PrintingIds written to {output_filepath}")
 
     # def fix_card_name(self, name_to_card, old_full_name, new_full_name):
     #     if old_full_name not in name_to_card:
@@ -156,7 +187,7 @@ class LorcastApi:
     #         name_to_card[new_full_name]['version'] = new_version
     #     del name_to_card[old_full_name]    
 
-    # def fix_card_names(self, name_to_card_untyped):
+    # def fix_card_names(self, name_to_printing_untyped):
     #     # there are typos in the https://api.lorcana-api.com card names.  We have to fix those or we cannot translate between data sources
     #     print("Fixing card names")
 

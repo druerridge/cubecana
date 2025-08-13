@@ -5,6 +5,7 @@ from .settings import POWER_BAND_MAX, POWER_BAND_OVERPOWERED
 from .lorcast_api import lorcast_api as lorcana_api
 import csv
 from pathlib import Path
+from .card import PrintingId
 
 @dataclass(frozen=True)
 class CardPopularityReport: 
@@ -20,28 +21,29 @@ class CardPopularityReport:
             writer = csv.writer(csvfile)
             writer.writerow(['Card Name','Set Number', 'Num Copies', 'Num Cubes Containing', 'Ratio Cubes Included'])
             for card_id in self.id_to_num_copies_in_cubes:
-                try:
-                    full_name = lorcana_api.get_full_name_from_id(card_id)
-                    set_code = lorcana_api.id_to_api_card[card_id].default_printing.set_code
-                    writer.writerow([
-                        full_name,
-                        set_code,
-                        self.id_to_num_copies_in_cubes[card_id],
-                        self.id_to_num_cubes_containing[card_id],
-                        self.id_to_ratio_cubes_included[card_id],
-                    ])
-                except ValueError:
-                    # Card ID {card_id} not found in API data while generating CardPopularityReport, skipping.
+                api_card = lorcana_api.get_api_card(card_id)
+                if api_card is None:
+                    # print(f"Card ID {card_id} not found in API data while generating CardPopularityReport, skipping.")
                     continue
+                full_name = api_card.full_name
+                set_code = api_card.default_printing.set_code
+                writer.writerow([
+                    full_name,
+                    set_code,
+                    self.id_to_num_copies_in_cubes[card_id],
+                    self.id_to_num_cubes_containing[card_id],
+                    self.id_to_ratio_cubes_included[card_id],
+                ])
         print(f"CSV file created at {filename}")
 
 class Cubealytics:
     def generate_card_popularity_report(self, included_tags: list[str] = None, included_power_bands: str = None) -> CardPopularityReport:
-        all_cube_lists = cube_manager.get_all_cube_lists(included_tags, included_power_bands)
+        all_cube_lists: list[dict[PrintingId, int]] = cube_manager.get_all_cube_lists(included_tags, included_power_bands)
         id_to_num_copies_in_cubes:dict[str, int] = dict[str, int]()
         id_to_num_cubes_containing: dict[str, int] = dict()
         for cube_list in all_cube_lists:
-            for card_id, count in cube_list.items():
+            for printing_id, count in cube_list.items():
+                card_id = printing_id.card_id
                 if card_id not in id_to_num_copies_in_cubes:
                     id_to_num_copies_in_cubes[card_id] = 0
                     id_to_num_cubes_containing[card_id] = 0

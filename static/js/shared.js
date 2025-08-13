@@ -103,7 +103,7 @@ function popToastNotification(textContent, isError=false) {
 
     setTimeout(() => {
         document.body.removeChild(popup);
-    }, 2000);
+    }, 10000);
 }
 
 function request(url, data, onSuccessHandler, onErrorHandler, verb='POST') {

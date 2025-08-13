@@ -2,8 +2,10 @@ import json
 from pathlib import Path
 from collections import defaultdict
 from . import id_helper
-from .card import ApiCard
+from .card import ApiCard, PrintingId
 from .lcc_error import UnidentifiedCardError
+from .lorcast_api import lorcast_api as lorcana_api
+from .dreamborn_manager import dreamborn_manager
 
 TTS_SCALE_X = 1.2
 TTS_SCALE_Y = 1
@@ -84,20 +86,26 @@ def generate_custom_deck_obj(card_image_url):
         'BackIsHidden': True
     }
 
-def generate_tts_deck(id_to_count, id_to_custom_card):
+def generate_tts_deck(printing_id_to_count: dict[PrintingId, int]):
     previous_card_index = 0
     current_card_index = 1
     contained_obj_list = []
     deck_ids = []
     custom_deck = {}
     failed_ids = []
-    for id, count in id_to_count.items():
+    for printing_id, count in printing_id_to_count.items():
         for i in range(0, count):
-            if not id in id_to_custom_card:
-                failed_ids.append(id)
+            api_card = lorcana_api.get_api_card(printing_id.card_id)
+            if api_card == None:
+                failed_ids.append(printing_id.card_id)
                 continue
-            contained_obj = generate_contained_obj(id_to_custom_card[id]['name'], current_card_index, previous_card_index)
-            card_image_url = id_to_custom_card[id]['image_uris']['en']
+            card_printing = lorcana_api.get_card_printing(printing_id)
+            if card_printing == None:
+                failed_ids.append(printing_id.card_id)
+                continue
+
+            contained_obj = generate_contained_obj(api_card.full_name, current_card_index, previous_card_index)
+            card_image_url = dreamborn_manager.image_uri(card_printing.printing_id(), 'en')
             custom_deck_obj = generate_custom_deck_obj(card_image_url)
             contained_obj_list.append(contained_obj)
             deck_ids.append(contained_obj['CardID'])

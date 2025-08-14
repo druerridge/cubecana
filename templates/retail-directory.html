@@ -153,30 +153,102 @@
             border-radius: 2px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.3);
         }
+        body {
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .cube-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #2c2c2c;
+            border-radius: 10px;
+        }
+        .page-header {
+            text-align: center;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, #333, #444);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #555;
+            position: relative;
+            overflow: hidden;
+        }
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255, 107, 53, 0.1), rgba(142, 36, 170, 0.1));
+            pointer-events: none;
+        }
+        .page-header h1 {
+            color: white;
+            margin: 0 0 10px 0;
+            font-size: 2.2em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            position: relative;
+            z-index: 1;
+        }
+        .page-header p {
+            color: #ccc;
+            margin: 5px 0;
+            font-size: 1.1em;
+            position: relative;
+            z-index: 1;
+        }
+        .controls-section {
+            background-color: #333;
+            border: 1px solid #555;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .language-info {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #555;
+            font-size: 14px;
+            text-align: center;
+            background-color: #333;
+            border-radius: 8px;
+            padding: 15px;
+        }
 </style>
 </head>
 <body>
     {% include 'shared/content_header.html' %}
 
-    <h1 style="display: inline-block;">Retail Set Directory (Beta*)</h1><br />
-<p>*rare+ slots may be out of order, but general rarity distribution should be accurate</p>
-    <div style="margin-top: 20px;">
-        <label for="orderOptions">Order:</label>
-        <select id="orderOptions">
-            <option value="asc">Ascending</option>
-            <option value="desc">Descending</option>
-        </select>
-    </div>
-    <p>
-    <img class="flag-icon" src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="English" title="English"> 
-    <img class="flag-icon" src="https://flagicons.lipis.dev/flags/4x3/fr.svg" alt="French" title="French"> 
-    <img class="flag-icon" src="https://flagicons.lipis.dev/flags/4x3/de.svg" alt="German" title="German"> 
-    <img class="flag-icon" src="https://flagicons.lipis.dev/flags/4x3/it.svg" alt="Italian" title="Italian"> 
-    <img class="flag-icon" src="https://flagicons.lipis.dev/flags/4x3/jp.svg" alt="Japanese" title="Japanese"> 
-    <img class="flag-icon" src="https://flagicons.lipis.dev/flags/4x3/cn.svg" alt="Chinese" title="Chinese"><br />
-    Choose "Card Language" on Draftmancer as needed.<br />
-    Foreign language cards thanks to dreamborn.ink<br />
-    </p>
+    <div class="cube-content">
+        <div class="page-header">
+            <h1>Retail Set Directory (Beta*)</h1>
+            <p>*rare+ slots may be out of order, but general rarity distribution should be accurate</p>
+        </div>
+
+        <div class="controls-section">
+            <div style="margin-top: 15px;">
+                <label for="orderOptions">Order:</label>
+                <select id="orderOptions">
+                    <option value="asc">Ascending</option>
+                    <option value="desc">Descending</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="language-info">
+            <p>
+            <img class="flag-icon" src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="English" title="English"> 
+            <img class="flag-icon" src="https://flagicons.lipis.dev/flags/4x3/fr.svg" alt="French" title="French"> 
+            <img class="flag-icon" src="https://flagicons.lipis.dev/flags/4x3/de.svg" alt="German" title="German"> 
+            <img class="flag-icon" src="https://flagicons.lipis.dev/flags/4x3/it.svg" alt="Italian" title="Italian"> 
+            <img class="flag-icon" src="https://flagicons.lipis.dev/flags/4x3/jp.svg" alt="Japanese" title="Japanese"> 
+            <img class="flag-icon" src="https://flagicons.lipis.dev/flags/4x3/cn.svg" alt="Chinese" title="Chinese"><br />
+            Choose "Card Language" on Draftmancer as needed.<br />
+            Foreign language cards thanks to dreamborn.ink<br />
+            </p>
+        </div>
     <template class="cube-element" id="cube-list-element-template">
         <div id="cube-element-div">
             <div id="element-row-1" class="cube-element-row-1">
@@ -195,10 +267,11 @@
         <div id="loading-text">Loading Retail Sets...</div>
     </div>
 
-    <div id="pagination" style="text-align: center; margin-top: 20px;">
-        <button id="prev-page" disabled>Previous</button>
-        <span id="page-numbers"></span>
-        <button id="next-page">Next</button>
+        <div id="pagination" style="text-align: center; margin-top: 20px;">
+            <button id="prev-page" disabled>Previous</button>
+            <span id="page-numbers"></span>
+            <button id="next-page">Next</button>
+        </div>
     </div>
 
     <script type="module" src="{{ url_for('static', filename='js/retail-directory.js') }}"></script>

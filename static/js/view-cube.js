@@ -1,6 +1,7 @@
 import { generateDraftmancerSession } from "draftmancer-connect";
 
 let dots = 0;
+let currentCardList = null; // Store the card list data for copying
 const loadingText = document.getElementById('loading-text');
 let intervalId = setInterval(() => {
     dots = (dots + 1) % 4;
@@ -22,6 +23,8 @@ const headerImage = document.getElementById("header-image")
 const featuredCardImage = document.getElementById("featured-card-image")
 const cardListContainer = document.getElementById("card-list-container")
 const cardList = document.getElementById("card-list")
+const copyListButton = document.getElementById("copy-list-button")
+const copyListSection = document.getElementById("copy-list-section")
 const instructionsSection = document.getElementById("instructions")
 
 const apiCubeUrl = `/api/cube/${cubeId}`
@@ -74,8 +77,10 @@ request(apiCubeUrl, null, (responseText) => {
 
     // Show and populate card list
     if (response.nameToCardCount) {
+        currentCardList = response.nameToCardCount; // Store for copying
         populateCardList(response.nameToCardCount);
         cardListContainer.style.display = 'block';
+        copyListSection.style.display = 'block'; // Show copy button section
     }
 
     // Show instructions and buttons
@@ -95,6 +100,13 @@ request(apiCubeUrl, null, (responseText) => {
 
     viewListButton.addEventListener('click', () => {
         window.open(cubeInspectListUrl);
+    });
+
+    // Add copy list functionality
+    copyListButton.addEventListener('click', () => {
+        if (currentCardList) {
+            copyCardList(currentCardList);
+        }
     });
 }, 
 () => {
@@ -122,5 +134,42 @@ function populateCardList(nameToCardCount) {
         cardItem.appendChild(nameDiv);
         cardItem.appendChild(countDiv);
         cardList.appendChild(cardItem);
+    });
+}
+
+function copyCardList(nameToCardCount) {
+    // Convert to array, sort by card name, and format as text
+    const cardArray = Object.entries(nameToCardCount).sort((a, b) => a[0].localeCompare(b[0]));
+    const listText = cardArray.map(([cardName, count]) => {
+        return `${count} ${cardName}`;
+    }).join('\n');
+    
+    // Copy to clipboard
+    navigator.clipboard.writeText(listText).then(() => {
+        // Visual feedback
+        const originalText = copyListButton.textContent;
+        copyListButton.textContent = 'Copied!';
+        copyListButton.style.background = 'linear-gradient(45deg, #4CAF50, #66BB6A)';
+        
+        setTimeout(() => {
+            copyListButton.textContent = originalText;
+            copyListButton.style.background = 'linear-gradient(45deg, #2196F3, #21CBF3)';
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+        // Fallback for older browsers
+        const textArea = document.createElement('textarea');
+        textArea.value = listText;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+        
+        // Visual feedback
+        const originalText = copyListButton.textContent;
+        copyListButton.textContent = 'Copied!';
+        setTimeout(() => {
+            copyListButton.textContent = originalText;
+        }, 2000);
     });
 }

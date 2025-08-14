@@ -40,6 +40,12 @@
             flex: 1;
             min-width: 0;
         }
+        .card-list-section {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+        }
         .buttons-section {
             text-align: center;
             background-color: #333;
@@ -288,6 +294,30 @@
             transform: none;
             box-shadow: none;
         }
+        .copy-button {
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            background: linear-gradient(45deg, #2196F3, #21CBF3);
+            color: white;
+            box-shadow: 0 2px 8px rgba(33, 150, 243, 0.3);
+            min-width: 140px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .copy-button:hover {
+            background: linear-gradient(45deg, #1976D2, #0288D1);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(33, 150, 243, 0.4);
+        }
+        .copy-button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 8px rgba(33, 150, 243, 0.3);
+        }
         .button-row {
             display: flex;
             justify-content: center;
@@ -358,9 +388,14 @@
         </div>
 
         <div class="main-content-area">
-            <div id="card-list-container" class="card-list-container" style="display: none;">
-                <div class="card-list-title">Card List</div>
-                <div id="card-list"></div>
+            <div class="card-list-section">
+                <div id="card-list-container" class="card-list-container" style="display: none;">
+                    <div class="card-list-title">Card List</div>
+                    <div id="card-list"></div>
+                </div>
+                <div class="copy-list-section" style="text-align: center; margin-top: 15px; display: none;" id="copy-list-section">
+                    <button id="copy-list-button" class="copy-button">Copy List</button>
+                </div>
             </div>
             
             <div id="instructions" class="buttons-section" style="display: none;">

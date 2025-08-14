@@ -53,20 +53,23 @@
         /* Mobile/Tablet responsive layout */
         @media (max-width: 768px) {
             .main-content-area {
-                flex-direction: column-reverse;
+                flex-direction: column;
                 gap: 20px;
             }
             .buttons-section {
                 flex: none;
-                width: 100%;
+                width: calc(100% - 60px);
                 min-width: auto;
                 order: 1;
+                text-align: center;
+                margin: 0;
             }
             .card-list-container {
                 flex: none;
-                width: 100%;
+                width: calc(100% - 30px);
                 order: 2;
                 max-height: 250px;
+                margin: 0;
             }
             .cube-content {
                 padding: 15px;
@@ -74,6 +77,7 @@
             .button-row {
                 flex-direction: column;
                 gap: 15px;
+                align-items: center;
             }
             .action-button {
                 min-width: auto;

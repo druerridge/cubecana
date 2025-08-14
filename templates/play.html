@@ -4,67 +4,209 @@
     <meta name="Play your drafted Lorana cube deck online vs bots or friends with just a card list!">
     {% include 'shared/common_head.html' %}
     <style>
-        header {
-            text-align: left;
-        }
-        .column {
-            float: left;
-            width: 50%;
-        }
-        .download-instrutions {
-            text-align: left;
-        }
         body {
+            background-color: #1a1a1a;
+            color: white;
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-            background-image: url('static/lorcana-cube-club-bg2.jpeg');
-            background-size: cover; 
-            background-repeat: no-repeat;
-            color: white; /* White text for better readability */
+            margin: 0;
+            padding: 0;
         }
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
+        .cube-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #2c2c2c;
+            border-radius: 10px;
+        }
+        .main-content-area {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+        .play-section {
+            flex: 1;
+            background-color: #333;
+            border: 1px solid #555;
+            border-radius: 12px;
+            padding: 30px;
+            min-width: 0;
+        }
+        .play-section h2 {
+            color: white;
+            margin: 0 0 20px 0;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        #draftmancer-input-area {
+            width: 100%;
+            height: 400px;
+            background-color: #222;
+            color: white;
+            border: 1px solid #555;
+            border-radius: 8px;
+            padding: 15px;
+            font-family: monospace;
+            resize: vertical;
+            box-sizing: border-box;
+        }
+        #draftmancer-input-area:focus {
+            outline: none;
+            border-color: #2196F3;
+            box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.2);
+        }
+        .instructions {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 1px solid #444;
+            text-align: left;
+        }
+        .instructions p {
+            margin: 0 0 10px 0;
+            color: #ccc;
+            font-weight: bold;
+        }
+        .instructions ol {
+            color: #ccc;
+            padding-left: 20px;
+            text-align: left;
+        }
+        .instructions li {
+            margin: 8px 0;
+            line-height: 1.5;
+            text-align: left;
+        }
+        .action-button {
+            font-size: 16px;
+            padding: 12px 24px;
+            margin: 10px 5px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            min-width: 200px;
+            display: block;
+            width: calc(100% - 10px);
+        }
+        #post-btn {
+            background: linear-gradient(45deg, #ff6b35, #ff8c42);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+        #post-btn:hover:not(:disabled) {
+            background: linear-gradient(45deg, #ff5722, #ff7043);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+        #inktable-btn {
+            background: linear-gradient(45deg, #2196F3, #21CBF3);
+            color: white;
+            box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+        }
+        #inktable-btn:hover:not(:disabled) {
+            background: linear-gradient(45deg, #1976D2, #0288D1);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+        }
+        #lorcanito-btn {
+            background: linear-gradient(45deg, #8e24aa, #9c27b0);
+            color: white;
+            box-shadow: 0 4px 15px rgba(142, 36, 170, 0.3);
+        }
+        #lorcanito-btn:hover:not(:disabled) {
+            background: linear-gradient(45deg, #7b1fa2, #8e24aa);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(142, 36, 170, 0.4);
+        }
+        .action-button:disabled {
+            background: #666;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        #errorText {
+            color: white;
+            font-weight: bold;
+            display: none;
+            background: linear-gradient(45deg, #f44336, #ff5722);
+            width: calc(100% - 20px);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #d32f2f;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        /* Mobile responsive layout */
+        @media (max-width: 768px) {
+            .main-content-area {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .cube-content {
+                padding: 15px;
+            }
+            .play-section {
+                padding: 20px;
+            }
+            .action-button {
+                width: 100%;
+                margin: 5px 0;
+            }
+            #draftmancer-input-area {
+                height: 300px;
+            }
         }
     </style>
 </head>
 
 <body>
     {% include 'shared/content_header.html' %}
-    <div id="errorText" style="color: red; display: none; background-color: lightcoral; width: 100%; padding: 10px;" disabled>An error occurred. Please try again.</div>
-    <div class="row">
-        <div class="column">
-            <h2>Your Draftmancer deck export</h2>
-            <textarea id="draftmancer-input-area" rows="45" cols="100" placeholder="1 Alice - Growing Girl
+    <div class="cube-content">
+        <div id="errorText">An error occurred. Please try again.</div>
+        <div class="main-content-area">
+            <div class="play-section">
+                <h2>Your Draftmancer deck export</h2>
+                <textarea id="draftmancer-input-area" placeholder="1 Alice - Growing Girl
 1 Let it Go
 1 LeFou - Opportunistic Flunky
 ..."></textarea>
-        </div>
-        <div class="column">
-            <h2>Your Tabletop Simulator deck</h2>
-            <div class="download-instrutions">
-                <p>Instructions:</p>
-                <ol>
-                    <li><b>Draft</b> + build your deck on draftmancer.com</li>
-                    <li>On draftmancer, click Export > Card Names</li>
-                    <li>Paste in the text box then press 'to Tabletop Simulator' to download</li>
-                    <li>Copy downloaded file to <br />C:\Users\USERNAME\Documents\My Games\Tabletop Simulator\Saves\Saved Objects</li>
-                    <li>In a Tabletop Simulator room:
-                        <ol>
-                            <li>Press "Objects" in the top left</li>
-                            <li>Click "Saved"</li>
-                            <li>Drag + drop the file onto the table!</li>
-                        </ol>
-                </ol>    
             </div>
-            <button id="post-btn" class="action-button" disabled>To Tabletop Simulator</button><br />
-            <button id="inktable-btn" class="action-button" disabled>To Inktable</button><br />
-            <button id="lorcanito-btn" class="action-button" disabled>To Lorcanito</button>
-        </div>
-    </div> 
+            
+            <div class="play-section">
+                <h2>Export to Play Platforms</h2>
+                <div class="instructions">
+                    <p>Instructions:</p>
+                    <ol>
+                        <li><b>Draft</b> + build your deck on draftmancer.com</li>
+                        <li>On draftmancer, click Export > Card Names</li>
+                        <li>Paste in the text box then press a platform button to export</li>
+                        <li>For TTS: Copy downloaded file to <br />C:\Users\USERNAME\Documents\My Games\Tabletop Simulator\Saves\Saved Objects</li>
+                        <li>In Tabletop Simulator room:
+                            <ol>
+                                <li>Press "Objects" in the top left</li>
+                                <li>Click "Saved"</li>
+                                <li>Drag + drop the file onto the table!</li>
+                            </ol>
+                        </li>
+                    </ol>    
+                </div>
+                <div class="button-container">
+                    <button id="post-btn" class="action-button" disabled>To Tabletop Simulator</button>
+                    <button id="inktable-btn" class="action-button" disabled>To Inktable</button>
+                    <button id="lorcanito-btn" class="action-button" disabled>To Lorcanito</button>
+                </div>
+            </div>
+        </div> 
+    </div>
     {% include 'shared/content_footer.html' %}
 </body>
 <script type="text/javascript">

@@ -53,8 +53,8 @@ class CubecanaCube:
                     full_name_to_card_count[f"{api_card.full_name}"] = count
                 else:
                     full_name_to_card_count[f"{api_card.full_name} ({printing_id.set_code}) {printing_id.collector_id}"] = count
-        
-        featured_card_printing = PrintingId("captainhookforcefulduelist","001","174")
+
+        featured_card_printing = next(iter(self.printing_id_to_count))
         return api.Cube(
             name=self.name,
             cardIdToCardCount=printing_id_str_to_count,

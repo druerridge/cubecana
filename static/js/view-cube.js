@@ -43,6 +43,22 @@ request(apiCubeUrl, null, (responseText) => {
     cardCount.textContent = Object.keys(response.nameToCardCount).length;
     timesViewed.textContent = response.timesViewed;
     timesDrafted.textContent = response.timesDrafted;
+    
+    // Show the views and drafts elements
+    timesViewed.removeAttribute('hidden');
+    timesDrafted.removeAttribute('hidden');
+    
+    // Show the eye and hand images
+    const eyeImage = document.querySelector('img[alt="Times Viewed"]');
+    const handImage = document.querySelector('img[alt="Times Drafted"]');
+    if (eyeImage) eyeImage.removeAttribute('hidden');
+    if (handImage) handImage.removeAttribute('hidden');
+    
+    // Show the parent span elements for views and drafts
+    const viewsSpan = document.querySelector('.views');
+    const draftsSpan = document.querySelector('.drafts');
+    if (viewsSpan) viewsSpan.style.display = 'inline';
+    if (draftsSpan) draftsSpan.style.display = 'inline';
 
     // Show and populate description
     if (response.description) {

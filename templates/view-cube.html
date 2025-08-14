@@ -17,32 +17,335 @@
         #view-list-button:enabled:hover {
             background-color: rgb(95, 0, 95);
         }
+        .cube-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #2c2c2c;
+            border-radius: 10px;
+        }
+        .main-content-area {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+        .card-list-container {
+            background-color: #333;
+            border: 1px solid #555;
+            border-radius: 8px;
+            padding: 15px;
+            max-height: 300px;
+            overflow-y: auto;
+            flex: 1;
+            min-width: 0;
+        }
+        .buttons-section {
+            text-align: center;
+            background-color: #333;
+            padding: 30px;
+            border-radius: 12px;
+            border: 2px solid #555;
+            flex: 0 0 350px;
+            min-width: 300px;
+        }
+        
+        /* Mobile/Tablet responsive layout */
+        @media (max-width: 768px) {
+            .main-content-area {
+                flex-direction: column-reverse;
+                gap: 20px;
+            }
+            .buttons-section {
+                flex: none;
+                width: 100%;
+                min-width: auto;
+                order: 1;
+            }
+            .card-list-container {
+                flex: none;
+                width: 100%;
+                order: 2;
+                max-height: 250px;
+            }
+            .cube-content {
+                padding: 15px;
+            }
+            .button-row {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .action-button {
+                min-width: auto;
+                width: 100%;
+                max-width: 280px;
+            }
+        }
+        .cube-header {
+            text-align: center;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, #333, #444);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #555;
+            position: relative;
+            overflow: hidden;
+        }
+        .cube-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255, 107, 53, 0.1), rgba(142, 36, 170, 0.1));
+            pointer-events: none;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        .header-text {
+            flex: 1;
+            text-align: left;
+            max-width: 600px;
+        }
+        .header-image {
+            flex: 0 0 auto;
+            width: 120px;
+            height: 120px;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+            border: 2px solid #666;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .header-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+        }
+        .header-image img {
+            width: auto;
+            height: 160px;
+            object-fit: cover;
+            object-position: center 25%;
+            transition: transform 0.3s ease;
+        }
+        .cube-header h1 {
+            color: white;
+            margin: 0 0 10px 0;
+            font-size: 2.2em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .cube-header p {
+            color: #ccc;
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+        .cube-stats {
+            color: #bbb;
+            font-size: 0.95em;
+            margin-top: 10px;
+        }
+        
+        /* Mobile responsive header */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+            .header-text {
+                text-align: center;
+                max-width: none;
+            }
+            .header-image {
+                width: 100px;
+                height: 100px;
+            }
+            .header-image img {
+                height: 130px;
+                object-position: center 25%;
+            }
+            .cube-header h1 {
+                font-size: 1.8em;
+            }
+            .cube-header {
+                padding: 20px;
+            }
+        }
+        .cube-description {
+            background-color: #444;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #ddd;
+        }
+        .featured-card {
+            display: none !important;
+        }
+        .card-list-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: white;
+            border-bottom: 2px solid #555;
+            padding-bottom: 8px;
+            font-size: 16px;
+        }
+        .card-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 3px 8px;
+            border-bottom: 1px solid #444;
+            font-size: 14px;
+        }
+        .card-item:last-child {
+            border-bottom: none;
+        }
+        .card-name {
+            flex-grow: 1;
+            text-align: left;
+            color: #ddd;
+        }
+        .card-count {
+            font-weight: bold;
+            color: #bbb;
+            min-width: 25px;
+            text-align: right;
+        }
+        .buttons-section p {
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+        .action-button {
+            font-size: 18px;
+            padding: 15px 30px;
+            margin: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            min-width: 200px;
+        }
+        #draft-now-button {
+            background: linear-gradient(45deg, #ff6b35, #ff8c42);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+        #draft-now-button:hover {
+            background: linear-gradient(45deg, #ff5722, #ff7043);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+        #draft-now-button:disabled {
+            background: #666;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        #view-list-button {
+            background: linear-gradient(45deg, #8e24aa, #ab47bc);
+            color: white;
+            box-shadow: 0 4px 15px rgba(142, 36, 170, 0.3);
+        }
+        #view-list-button:hover {
+            background: linear-gradient(45deg, #7b1fa2, #9c27b0);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(142, 36, 170, 0.4);
+        }
+        #view-list-button:disabled {
+            background: #666;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        .button-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .language-info {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #555;
+            font-size: 14px;
+        }
+        body {
+            background-color: #1a1a1a;
+            color: white;
+        }
     </style>
 </head>
 <body>
     {% include 'shared/content_header.html' %}
     
-    <h1 id="cube-title">Loading title...</h1>
-    <span class="cards" style="white-space: nowrap;">( <span id="element-cards" >Card Count...</span> <img src="/static/img/deck-of-cards.png" alt="Card Count (deck of cards)" height="14px"/> <span hidden="true" id="element-times-viewed" >Times Viewed...</span> <img hidden="true" src="/static/img/eye.png" alt="Times Drafted (hand of cards)" height="14px"/> <span hidden="true" id="element-times-drafted" >Times drafted</span> <img hidden="true" src="/static/img/hand-of-cards.png" alt="Times Drafted (hand of cards)" height="14px"/> ) </span><br />
-    <p id="author-text">Loading author...</p>
+    <div class="cube-content">
+        <div class="cube-header">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1 id="cube-title">Loading title...</h1>
+                    <p id="author-text">Loading author...</p>
+                    <div class="cube-stats">
+                        <span class="cards" style="white-space: nowrap;">
+                            <span id="element-cards">Card Count...</span> 
+                            <img src="/static/img/deck-of-cards.png" alt="Card Count" height="14px"/> 
+                            <span hidden="true" id="element-times-viewed">Times Viewed...</span> 
+                            <img hidden="true" src="/static/img/eye.png" alt="Times Viewed" height="14px"/> 
+                            <span hidden="true" id="element-times-drafted">Times drafted</span> 
+                            <img hidden="true" src="/static/img/hand-of-cards.png" alt="Times Drafted" height="14px"/>
+                        </span>
+                    </div>
+                </div>
+                <div class="header-image" id="header-image" style="display: none;">
+                    <img id="featured-card-image" src="" alt="Featured Card" />
+                </div>
+            </div>
+        </div>
 
-    <div id="loading-text">
-        Loading
-    </div>
-    
-    <div style="display: flex; justify-content: center;">
-        <div id="instructions">
-            <p>After clicking below, press "Start" on draftmancer to begin.</p>
+        <div id="loading-text">
+            Loading
+        </div>
+
+        <div id="cube-description" class="cube-description" style="display: none;">
+            <p id="description-text"></p>
+        </div>
+
+        <div id="featured-card" class="featured-card" style="display: none;">
+            <img id="featured-card-image" src="" alt="Featured Card" />
+        </div>
+
+        <div class="main-content-area">
+            <div id="card-list-container" class="card-list-container" style="display: none;">
+                <div class="card-list-title">Card List</div>
+                <div id="card-list"></div>
+            </div>
+            
+            <div id="instructions" class="buttons-section" style="display: none;">
+                <p>After clicking below, press "Start" on draftmancer to begin.</p>
+                <div class="button-row">
+                    <button id="draft-now-button" class="action-button" disabled>Draft Now</button>
+                    <button id="view-list-button" class="action-button" disabled>Inspect List</button>
+                </div>
+                <div class="language-info">
+                    <p>
+                    🇬🇧 🇫🇷 🇩🇪 🇮🇹 🇯🇵 🇨🇳<br />
+                    Choose "Card Language" on Draftmancer as needed.<br />
+                    Foreign language cards thanks to dreamborn.ink
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-   
-    <button id="draft-now-button" class="action-button" disabled>Draft Now</button> <br /> 
-    <button id="view-list-button" class="action-button" disabled>Inspect List</button> <br />
-    <p>
-    🇬🇧 🇫🇷 🇩🇪 🇮🇹 🇯🇵 🇨🇳<br />
-    Choose "Card Language" on Draftmancer as needed.<br />
-    Foreign language cards thanks to dreamborn.ink<br />
-    </p>
 
     <script type="module" src="{{ url_for('static', filename='js/view-cube.js') }}"></script>
 </body>

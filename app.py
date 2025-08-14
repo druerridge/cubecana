@@ -264,6 +264,27 @@ def get_cube_draftmancer_file(cube_id):
   if not cube:
     return Response(status=404)
   draftmancer_file: str = draftmancer.generate_draftmancer_file_from_cube(cube)
+  api_cube = cube.to_api_cube(lorcana_api.read_or_fetch_id_to_api_card())
+  
+  # Get a random card image for display
+  featured_card_image = None
+  if api_cube.nameToCardCount:
+    # Get first card name from the cube
+    first_card_name = next(iter(api_cube.nameToCardCount.keys()), None)
+    if first_card_name:
+      # Extract just the card name without set/collector info
+      card_name_only = first_card_name.split(' (')[0] if ' (' in first_card_name else first_card_name
+      try:
+        from cubecana_server import id_helper
+        card_id = id_helper.to_id(card_name_only)
+        api_card = lorcana_api.get_api_card(card_id)
+        if api_card and api_card.default_printing:
+          set_code = api_card.default_printing.set_code
+          collector_id = api_card.default_printing.collector_id
+          featured_card_image = f"https://cdn.dreamborn.ink/images/en/cards/{set_code.zfill(3)}-{collector_id.zfill(3)}"
+      except:
+        pass
+  
   response = {
     'draftmancerFile': draftmancer_file, 
     'metadata': {
@@ -276,6 +297,9 @@ def get_cube_draftmancer_file(cube_id):
       'timesDrafted': cube.drafts,
       'timesViewed': cube.page_views + cube.card_list_views,
       'cubeId': cube.id,
+      'nameToCardCount': api_cube.nameToCardCount,
+      'description': f"A {cube.settings.power_band.lower()} power cube featuring {cube.card_count()} cards across {len(api_cube.nameToCardCount)} unique card names.",
+      'featuredCardImage': featured_card_image
       }
     }
   return jsonify(response)

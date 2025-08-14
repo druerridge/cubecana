@@ -123,6 +123,10 @@ class Cube:
   lastUpdatedEpochSeconds: int
   id: str
   cubeSettings: CubeSettings
+  description: str
+  featuredCardImageLink: str
+  timesViewed: int
+  timesDrafted: int
   
   def toJSON(self):
     return json.dumps(

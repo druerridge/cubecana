@@ -53,6 +53,8 @@ class CubecanaCube:
                     full_name_to_card_count[f"{api_card.full_name}"] = count
                 else:
                     full_name_to_card_count[f"{api_card.full_name} ({printing_id.set_code}) {printing_id.collector_id}"] = count
+        
+        featured_card_printing = PrintingId("captainhookforcefulduelist","001","174")
         return api.Cube(
             name=self.name,
             cardIdToCardCount=printing_id_str_to_count,
@@ -62,5 +64,9 @@ class CubecanaCube:
             author=self.author,
             lastUpdatedEpochSeconds=self.last_updated_epoch_seconds,
             id=self.id,
-            cubeSettings=self.settings.to_api_cube_settings()
+            cubeSettings=self.settings.to_api_cube_settings(),
+            description= f"A power cube featuring cards across {len(full_name_to_card_count)} unique card names.",
+            featuredCardImageLink = f"https://cdn.dreamborn.ink/images/en/cards/{featured_card_printing.set_code.zfill(3)}-{featured_card_printing.collector_id.zfill(3)}",
+            timesViewed=self.page_views + self.card_list_views,
+            timesDrafted=self.drafts
         )

@@ -1,0 +1,1874 @@
+1 Mickey Mouse - Brave Little Tailor (P1) 1
+1 Mickey Mouse - Brave Little Tailor (1) 115
+1 Mickey Mouse - Brave Little Tailor (D23) 1
+1 Stitch - Rock Star (P1) 2
+1 Stitch - Rock Star (P1) 30
+1 Stitch - Rock Star (1) 23
+1 Elsa - Snow Queen (P1) 3
+1 Elsa - Snow Queen (1) 41
+1 Cruella De Vil - Miserable as Usual (P1) 4
+1 Cruella De Vil - Miserable as Usual (1) 72
+1 Maleficent - Monstrous Dragon (P1) 5
+1 Maleficent - Monstrous Dragon (1) 113
+1 Robin Hood - Unrivaled Archer (P1) 6
+1 Robin Hood - Unrivaled Archer (1) 157
+1 Captain Hook - Forceful Duelist (P1) 7
+1 Captain Hook - Forceful Duelist (1) 174
+1 Captain Hook - Forceful Duelist (8) 186
+1 Mickey Mouse - Detective (P1) 8
+1 Mickey Mouse - Detective (1) 154
+1 HeiHei - Boat Snack (P1) 9
+1 HeiHei - Boat Snack (1) 7
+1 Yzma - Alchemist (P1) 10
+1 Yzma - Alchemist (1) 60
+1 Mickey Mouse - Musketeer (P1) 11
+1 Mickey Mouse - Musketeer (1) 186
+1 Goofy - Musketeer (P1) 12
+1 Goofy - Musketeer (1) 4
+1 Donald Duck - Musketeer (P1) 13
+1 Donald Duck - Musketeer (1) 177
+1 Cinderella - Knight in Training (P1) 14
+1 Cinderella - Knight in Training (2) 176
+1 Bucky - Squirrel Squeak Tutor (P1) 15
+1 Bucky - Squirrel Squeak Tutor (2) 73
+1 Minnie Mouse - Wide-Eyed Diver (P1) 16
+1 Minnie Mouse - Wide-Eyed Diver (2) 114
+1 Robin Hood - Capable Fighter (P1) 17
+1 Robin Hood - Capable Fighter (2) 193
+1 Mickey Mouse - Friendly Face (P1) 18
+1 Mickey Mouse - Friendly Face (2) 13
+1 Elsa - Gloves Off (P1) 19
+1 Elsa - Gloves Off (2) 39
+1 Genie - Powers Unleashed (P1) 20
+1 Genie - Powers Unleashed (1) 76
+1 Stitch - Abomination (P1) 21
+1 Stitch - Abomination (1) 125
+1 Maleficent - Uninvited (P1) 22
+1 Maleficent - Uninvited (1) 151
+1 Maui - Demigod (P1) 23
+1 Maui - Demigod (1) 185
+1 Gaston - Arrogant Hunter (P1) 24
+1 Gaston - Arrogant Hunter (1) 110
+1 Mickey Mouse - True Friend (1) 12
+1 Mickey Mouse - True Friend (P2) 15
+1 Kit Cloudkicker - Tough Guy (P1) 26
+1 Kit Cloudkicker - Tough Guy (3) 77
+1 Jolly Roger - Hook's Ship (P1) 27
+1 Jolly Roger - Hook's Ship (3) 135
+1 How Far I'll Go (P1) 28
+1 How Far I'll Go (3) 161
+1 John Silver - Greedy Treasure Seeker (P1) 29
+1 John Silver - Greedy Treasure Seeker (3) 176
+1 Rapunzel - Gifted Artist (P1) 31
+1 Rapunzel - Gifted Artist (2) 19
+1 Pinocchio - Talkative Puppet (P1) 32
+1 Pinocchio - Talkative Puppet (2) 58
+1 Four Dozen Eggs (P1) 33
+1 Four Dozen Eggs (2) 163
+1 Mickey Mouse - Leader of the Band (P1) 34
+1 Mickey Mouse - Leader of the Band (4) 15
+1 Ursula's Lair - Eye of the Storm (P1) 35
+1 Ursula's Lair - Eye of the Storm (4) 68
+1 Hidden Inkcaster (P1) 36
+1 Hidden Inkcaster (4) 98
+1 Mulan - Enemy of Entanglement (P1) 37
+1 Mulan - Enemy of Entanglement (4) 115
+1 Ursula - Sea Witch Queen (P1) 38
+1 Ursula - Sea Witch Queen (4) 58
+1 Ursula - Sea Witch Queen (4) 208
+1 Scrooge Mcduck - Uncle Moneybags (P1) 39
+1 Scrooge Mcduck - Uncle Moneybags (3) 155
+1 Flotsam & Jetsam - Entangling Eels (P1) 40
+1 Flotsam & Jetsam - Entangling Eels (4) 44
+1 Ariel - On Human Legs (1) 1
+1 Ariel - Spectacular Singer (1) 2
+1 Cinderella - Gentle and Kind (1) 3
+1 Hades - King of Olympus (1) 5
+1 Hades - King of Olympus (1) 205
+1 Hades - Lord of the Underworld (1) 6
+1 LeFou - Bumbler (1) 8
+1 Lilo - Making a Wish (1) 9
+1 Maximus - Palace Horse (1) 10
+1 Maximus - Relentless Pursuer (1) 11
+1 Minnie Mouse - Beloved Princess (1) 13
+1 Moana - Of Motunui (1) 14
+1 Mr. Smee - Loyal First Mate (1) 15
+1 Prince Phillip - Dragonslayer (1) 16
+1 Pumbaa - Friendly Warthog (1) 17
+1 Rapunzel - Gifted with Healing (1) 18
+1 Rapunzel - Gifted with Healing (cp) 43
+1 Sebastian - Court Composer (1) 19
+1 Simba - Protective Cub (1) 20
+1 Stitch - Carefree Surfer (1) 21
+1 Stitch - Carefree Surfer (1) 206
+1 Stitch - New Dog (1) 22
+1 Timon - Grub Rustler (1) 24
+1 Be Our Guest (1) 25
+1 Control Your Temper! (1) 26
+1 Hakuna Matata (1) 27
+1 Healing Glow (1) 28
+1 Just in Time (1) 29
+1 Part of Your World (1) 30
+1 You Have Forgotten Me (1) 31
+1 Dinglehopper (1) 32
+1 Lantern (1) 33
+1 Ursula's Shell Necklace (1) 34
+1 Anna - Heir to Arendelle (1) 35
+1 Archimedes - Highly Educated Owl (1) 36
+1 Dr. Facilier - Agent Provocateur (1) 37
+1 Dr. Facilier - Charlatan (1) 38
+1 Dr. Facilier - Remarkable Gentleman (1) 39
+1 Elsa - Queen Regent (1) 40
+1 Elsa - Spirit of Winter (1) 42
+1 Elsa - Spirit of Winter (1) 207
+1 Flotsam - Ursula's Spy (1) 43
+1 Jafar - Keeper of Secrets (1) 44
+1 Jafar - Wicked Sorcerer (1) 45
+1 Jetsam - Ursula's Spy (1) 46
+1 Magic Broom - Bucket Brigade (1) 47
+1 Maleficent - Biding Her Time (1) 48
+1 Maleficent - Sorceress (1) 49
+1 Marshmallow - Persistent Guardian (1) 50
+1 Mickey Mouse - Wayward Sorcerer (1) 51
+1 Mickey Mouse - Wayward Sorcerer (1) 208
+1 Olaf - Friendly Snowman (1) 52
+1 Pascal - Rapunzel's Companion (1) 53
+1 Rafiki - Mysterious Sage (1) 54
+1 Sven - Official Ice Deliverer (1) 55
+1 The Queen - Wicked and Vain (1) 56
+1 The Wardrobe - Belle's Confidant (1) 57
+1 Tinker Bell - Peter Pan's Ally (1) 58
+1 Ursula - Power Hungry (1) 59
+1 Zeus - God of Lightning (1) 61
+1 Befuddle (1) 62
+1 Freeze (1) 63
+1 Friends on the Other Side (1) 64
+1 Reflection (1) 65
+1 Magic Mirror (1) 66
+1 Ursula's Cauldron (1) 67
+1 White Rabbit's Pocket Watch (1) 68
+1 Aladdin - Prince Ali (1) 69
+1 Beast - Wolfsbane (1) 70
+1 Cheshire Cat - Not All There (1) 71
+1 Duke of Weselton - Opportunistic Official (1) 73
+1 Flynn Rider - Charming Rogue (1) 74
+1 Genie - On the Job (1) 75
+1 Genie - On the Job (1) 209
+1 Genie - The Ever Impressive (1) 77
+1 Hans - Scheming Prince (1) 78
+1 Horace - No-Good Scoundrel (1) 79
+1 Iago - Loud-Mouthed Parrot (1) 80
+1 Jasper - Common Crook (1) 81
+1 John Silver - Alien Pirate (1) 82
+1 Jumba Jookiba - Renegade Scientist (1) 83
+1 Kuzco - Temperamental Emperor (1) 84
+1 Lady Tremaine - Wicked Stepmother (1) 85
+1 Mad Hatter - Gracious Host (1) 86
+1 Megara - Pulling the Strings (1) 87
+1 Mickey Mouse - Artful Rogue (1) 88
+1 Mickey Mouse - Artful Rogue (1) 210
+1 Mickey Mouse - Steamboat Pilot (1) 89
+1 Mother Gothel - Selfish Manipulator (1) 90
+1 Peter Pan - Never Landing (1) 91
+1 Tamatoa - Drab Little Crab (1) 92
+1 Tinker Bell - Most Helpful (1) 93
+1 Do It Again! (1) 94
+1 Mother Knows Best (1) 95
+1 Stampede (1) 96
+1 Steal from the Rich (1) 97
+1 Sudden Chill (1) 98
+1 The Beast is Mine! (1) 99
+1 Vicious Betrayal (1) 100
+1 Dr. Facilier's Cards (1) 101
+1 Stolen Scimitar (1) 102
+1 Abu - Mischievous Monkey (1) 103
+1 Aladdin - Heroic Outlaw (1) 104
+1 Aladdin - Heroic Outlaw (1) 211
+1 Aladdin - Street Rat (1) 105
+1 Captain - Colonel's Lieutenant (1) 106
+1 Captain Hook - Ruthless Pirate (1) 107
+1 Donald Duck - Boisterous Fowl (1) 108
+1 Elsa - Ice Surfer (1) 109
+1 Goofy - Daredevil (1) 111
+1 LeFou - Instigator (1) 112
+1 Maui - Hero to All (1) 114
+1 Maui - Hero to All (1) 212
+1 Minnie Mouse - Always Classy (1) 116
+1 Moana - Chosen by the Ocean (1) 117
+1 Mulan - Imperial Soldier (1) 118
+1 Peter Pan - Fearless Fighter (1) 119
+1 Pongo - Ol' Rascal (1) 120
+1 Rapunzel - Letting Down Her Hair (1) 121
+1 Scar - Fiery Usurper (1) 122
+1 Scar - Shameless Firebrand (1) 123
+1 Sergeant Tibbs - Courageous Cat (1) 124
+1 Te Kā - The Burning One (1) 126
+1 Tigger - Wonderful Thing (1) 127
+1 Be Prepared (1) 128
+1 Cut to the Chase (1) 129
+1 Dragon Fire (1) 130
+1 Dragon Fire (cp) 25
+1 Fan the Flames (1) 131
+1 He's Got a Sword! (1) 132
+1 Tangle (1) 133
+1 Poisoned Apple (1) 134
+1 Shield of Virtue (1) 135
+1 Sword of Truth (1) 136
+1 Ariel - Whoseit Collector (1) 137
+1 Aurora - Briar Rose (1) 138
+1 Aurora - Dreaming Guardian (1) 139
+1 Aurora - Dreaming Guardian (1) 213
+1 Aurora - Regal Princess (1) 140
+1 Belle - Inventive Engineer (1) 141
+1 Belle - Strange but Special (1) 142
+1 Belle - Strange but Special (1) 214
+1 Chief Tui - Respected Leader (1) 143
+1 Donald Duck - Strutting His Stuff (1) 144
+1 Flounder - Voice of Reason (1) 145
+1 Gramma Tala - Storyteller (1) 146
+1 Hades - Infernal Schemer (1) 147
+1 Jasmine - Disguised (1) 148
+1 Jasmine - Queen of Agrabah (1) 149
+1 Maleficent - Sinister Visitor (1) 150
+1 Maurice - World-Famous Inventor (1) 152
+1 Merlin - Self-Appointed Mentor (1) 153
+1 Mufasa - King of the Pride Lands (1) 155
+1 Philoctetes - Trainer of Heroes (1) 156
+1 Scar - Mastermind (1) 158
+1 Tamatoa - So Shiny! (1) 159
+1 Triton - The Sea King (1) 160
+1 Develop Your Brain (1) 161
+1 If it's Not Baroque (1) 162
+1 Let it Go (1) 163
+1 Let it Go (cp) 41
+1 One Jump Ahead (1) 164
+1 Work Together (1) 165
+1 Coconut Basket (1) 166
+1 Eye of the Fates (1) 167
+1 Fishbone Quill (1) 168
+1 Magic Golden Flower (1) 169
+1 Scepter of Arendelle (1) 170
+1 Aladdin - Cornered Swordsman (1) 171
+1 Beast - Hardheaded (1) 172
+1 Captain Hook - Captain of the Jolly Roger (1) 173
+1 Captain Hook - Thinking a Happy Thought (1) 175
+1 Cerberus - Three-Headed Dog (1) 176
+1 Gantu - Galactic Federation Captain (1) 178
+1 Goons - Maleficent's Underlings (1) 179
+1 Hans - Thirteenth in Line (1) 180
+1 Hercules - True Hero (1) 181
+1 Kristoff - Official Ice Master (1) 182
+1 Kronk - Right-Hand Man (1) 183
+1 Lilo - Galactic Hero (1) 184
+1 Prince Eric - Dashing and Brave (1) 187
+1 Simba - Future King (1) 188
+1 Simba - Returned King (1) 189
+1 Simba - Returned King (1) 215
+1 Simba - Rightful Heir (1) 190
+1 Starkey - Hook's Henchman (1) 191
+1 Te Kā - Heartless (1) 192
+1 Tinker Bell - Giant Fairy (1) 193
+1 Tinker Bell - Giant Fairy (1) 216
+1 Tinker Bell - Tiny Tactician (1) 194
+1 A Whole New World (1) 195
+1 Break (1) 196
+1 Fire the Cannons! (1) 197
+1 Grab Your Sword (1) 198
+1 Ransack (1) 199
+1 Smash (1) 200
+1 Beast's Mirror (1) 201
+1 Frying Pan (1) 202
+1 Musketeer Tabard (1) 203
+1 Plasma Blaster (1) 204
+1 Bashful - Hopeless Romantic (2) 1
+1 Christopher Robin - Adventurer (2) 2
+1 Cinderella - Ballroom Sensation (2) 3
+1 Cinderella - Ballroom Sensation (2) 205
+1 Cobra Bubbles - Just a Social Worker (2) 4
+1 Doc - Leader of the Seven Dwarfs (2) 5
+1 Dopey - Always Playful (2) 6
+1 Eudora - Accomplished Seamstress (2) 7
+1 Gaston - Baritone Bully (2) 8
+1 Grand Duke - Advisor to the King (2) 9
+1 Grumpy - Bad-Tempered (2) 10
+1 Happy - Good-Natured (2) 11
+1 King Louie - Jungle VIP (2) 12
+1 Mufasa - Betrayed Leader (2) 14
+1 Mulan - Free Spirit (2) 15
+1 Mulan - Reflecting (2) 16
+1 Nana - Darling Family Pet (2) 17
+1 Piglet - Very Small Animal (2) 18
+1 Rapunzel - Sunshine (2) 20
+1 Sleepy - Nodding Off (2) 21
+1 Sneezy - Very Allergic (2) 22
+1 Snow White - Lost in the Forest (2) 23
+1 Snow White - Unexpected Houseguest (2) 24
+1 Snow White - Well Wisher (2) 25
+1 Snow White - Well Wisher (2) 206
+1 The Queen - Commanding Presence (2) 26
+1 The Queen - Regal Monarch (2) 27
+1 Hold Still (2) 28
+1 Last Stand (2) 29
+1 Painting the Roses Red (2) 30
+1 World's Greatest Criminal Mind (2) 31
+1 Zero to Hero (2) 32
+1 Dragon Gem (2) 33
+1 Sleepy's Flute (2) 34
+1 Arthur - Wizard's Apprentice (2) 35
+1 Arthur - Wizard's Apprentice (2) 207
+1 Blue Fairy - Rewarding Good Deeds (2) 36
+1 Chip the Teacup - Gentle Soul (2) 37
+1 Dr. Facilier - Savvy Opportunist (2) 38
+1 Fairy Godmother - Here to Help (2) 40
+1 Fairy Godmother - Mystic Armorer (2) 41
+1 Fairy Godmother - Pure Heart (2) 42
+1 HeiHei - Persistent Presence (2) 43
+1 Jiminy Cricket - Pinocchio's Conscience (2) 44
+1 Kuzco - Wanted Llama (2) 45
+1 Madam Mim - Fox (2) 46
+1 Madam Mim - Purple Dragon (2) 47
+1 Madam Mim - Purple Dragon (2) 208
+1 Madam Mim - Rival of Merlin (2) 48
+1 Madam Mim - Snake (2) 49
+1 Merlin - Crab (2) 50
+1 Merlin - Goat (2) 51
+1 Merlin - Rabbit (2) 52
+1 Merlin - Shapeshifter (2) 53
+1 Merlin - Squirrel (2) 54
+1 Peter Pan's Shadow - Not Sewn On (2) 55
+1 Pinocchio - Star Attraction (2) 56
+1 Pinocchio - On the Run (2) 57
+1 Winnie the Pooh - Hunny Wizard (2) 59
+1 Yzma - Scary Beyond All Reason (2) 60
+1 Yzma - Without Beauty Sleep (2) 61
+1 Gruesome and Grim (2) 62
+1 I'm Stuck! (2) 63
+1 Legend of the Sword in the Stone (2) 64
+1 Binding Contract (2) 65
+1 Croquet Mallet (2) 66
+1 Perplexing Signposts (2) 67
+1 The Sorcerer's Spellbook (2) 68
+1 Arthur - Trained Swordsman (2) 69
+1 Beast - Relentless (2) 70
+1 Beast - Relentless (2) 210
+1 Belle - Bookworm (2) 71
+1 Belle - Hidden Archer (2) 72
+1 Cheshire Cat - Always Grinning (2) 74
+1 Cheshire Cat - From the Shadows (2) 75
+1 Daisy Duck - Secret Agent (2) 76
+1 Donald Duck - Perfect Gentleman (2) 77
+1 Donald Duck - Sleepwalker (2) 78
+1 Dr. Facilier - Fortune Teller (2) 79
+1 Enchantress - Unexpected Judge (2) 80
+1 Flynn Rider - Confident Vagabond (2) 81
+1 Flynn Rider - His Own Biggest Fan (2) 82
+1 Gaston - Scheming Suitor (2) 83
+1 Little John - Loyal Friend (2) 84
+1 Lucifer - Cunning Cat (2) 85
+1 Pain - Underworld Imp (2) 86
+1 Panic - Underworld Imp (2) 87
+1 Pete - Bad Guy (2) 88
+1 Pete - Bad Guy (2) 209
+1 Prince John - Greediest of All (2) 89
+1 Queen of Hearts - Quick-Tempered (2) 90
+1 Ratigan - Criminal Mastermind (2) 91
+1 Ray - Easygoing Firefly (2) 92
+1 The Queen - Disguised Peddler (2) 93
+1 Tiana - True Princess (2) 94
+1 Virana - Fang Chief (2) 95
+1 Bibbidi Bobbidi Boo (2) 96
+1 Bounce (2) 97
+1 Hypnotize (2) 98
+1 Improvise (2) 99
+1 Pack Tactics (2) 100
+1 Ring the Bell (2) 101
+1 Ratigan's Marvelous Trap (2) 102
+1 Baloo - Fun-Loving Bear (2) 103
+1 Boun - Precocious Entrepreneur (2) 104
+1 Card Soldiers - Full Deck (2) 105
+1 Donald Duck - Not Again! (2) 106
+1 Felicia - Always Hungry (2) 107
+1 Fidget - Ratigan's Henchman (2) 108
+1 Honest John - Not That Honest (2) 109
+1 Lady Tremaine - Imperious Queen (2) 110
+1 Lady Tremaine - Imperious Queen (2) 211
+1 Lady Tremaine - Overbearing Matriarch (2) 111
+1 Lumiere - Hotheaded Candelabra (2) 112
+1 Minnie Mouse - Stylish Surfer (2) 113
+1 Minnie Mouse - Zipping Around (2) 115
+1 Mother Gothel - Withered and Wicked (2) 116
+1 Mulan - Soldier in Training (2) 117
+1 Namaari - Nemesis (2) 118
+1 Queen of Hearts - Impulsive Ruler (2) 119
+1 Queen of Hearts - Sensing Weakness (2) 120
+1 Ratigan - Very Large Mouse (2) 121
+1 Raya - Headstrong (2) 122
+1 Raya - Leader of Heart (2) 123
+1 Raya - Warrior of Kumandra (2) 124
+1 Scar - Vicious Cheater (2) 125
+1 Shere Khan - Menacing Predator (2) 126
+1 Shere Khan - Menacing Predator (2) 212
+1 Tigger - One of a Kind (2) 127
+1 Tuk Tuk - Wrecking Ball (2) 128
+1 Go the Distance (2) 129
+1 Teeth and Ambitions (2) 130
+1 The Most Diabolical Scheme (2) 131
+1 What Did You Call Me? (2) 132
+1 You Can Fly! (2) 133
+1 Dinner Bell (2) 134
+1 Peter Pan's Dagger (2) 135
+1 Sword in the Stone (2) 136
+1 Alice - Growing Girl (2) 137
+1 Alice - Growing Girl (2) 213
+1 Basil - Great Mouse Detective (2) 138
+1 Basil - Of Baker Street (2) 139
+1 Basil - Perceptive Investigator (2) 140
+1 Caterpillar - Calm and Collected (2) 141
+1 Cogsworth - Grandfather Clock (2) 142
+1 Cogsworth - Talking Clock (2) 143
+1 Cruella De Vil - Fashionable Cruiser (2) 144
+1 Cruella De Vil - Perfectly Wretched (2) 145
+1 Duke Weaselton - Small-Time Crook (2) 146
+1 Gaston - Intellectual Powerhouse (2) 147
+1 Grand Pabbie - Oldest and Wisest (2) 148
+1 Hiram Flaversham - Toymaker (2) 149
+1 James - Role Model (2) 150
+1 Jasmine - Heir of Agrabah (2) 151
+1 Judy Hopps - Optimistic Officer (2) 152
+1 Mrs. Judson - Housekeeper (2) 153
+1 Nick Wilde - Wily Fox (2) 154
+1 Noi - Orphaned Thief (2) 155
+1 Owl - Logical Lecturer (2) 156
+1 Prince Charming - Heir to the Throne (2) 157
+1 Rabbit - Reluctant Host (2) 158
+1 Sisu - Divine Water Dragon (2) 159
+1 Sisu - Divine Water Dragon (2) 214
+1 The Nokk - Water Spirit (2) 160
+1 Winnie the Pooh - Having a Think (2) 161
+1 Falling Down the Rabbit Hole (2) 162
+1 Launch (2) 164
+1 Nothing to Hide (2) 165
+1 Fang Crossbow (2) 166
+1 Gumbo Pot (2) 167
+1 Maurice's Workshop (2) 168
+1 Pawpsicle (2) 169
+1 Sardine Can (2) 170
+1 Beast - Forbidding Recluse (2) 171
+1 Beast - Selfless Protector (2) 172
+1 Beast - Tragic Hero (2) 173
+1 Benja - Guardian of the Dragon Gem (2) 174
+1 Chief Bogo - Respected Officer (2) 175
+1 Cinderella - Stouthearted (2) 177
+1 Cinderella - Stouthearted (cp) 42
+1 Cinderella - Stouthearted (D23) 2
+1 Donald Duck - Deep-Sea Diver (2) 178
+1 Eli La Bouff - Big Daddy (2) 179
+1 Goofy - Knight for a Day (2) 180
+1 Hercules - Divine Hero (2) 181
+1 Hercules - Divine Hero (2) 215
+1 Hercules - Hero in Training (2) 182
+1 Jafar - Dreadnought (2) 183
+1 Jafar - Royal Vizier (2) 184
+1 Kronk - Junior Chipmunk (2) 185
+1 Lawrence - Jealous Manservant (2) 186
+1 Li Shang - Archery Instructor (2) 187
+1 Magic Broom - Industrial Model (2) 188
+1 Namaari - Morning Mist (2) 189
+1 Namaari - Morning Mist (2) 216
+1 Pacha - Village Leader (2) 190
+1 Prince Naveen - Penniless Royal (2) 191
+1 Queen of Hearts - Capricious Monarch (2) 192
+1 The Huntsman - Reluctant Enforcer (2) 194
+1 The Prince - Never Gives Up (2) 195
+1 Tiana - Celebrating Princess (2) 196
+1 Tiana - Diligent Waitress (2) 197
+1 Charge! (2) 198
+1 Let the Storm Rage On (2) 199
+1 Pick a Fight (2) 200
+1 Strength of a Raging Fire (2) 201
+1 Last Cannon (2) 202
+1 Mouse Armor (2) 203
+1 Weight Set (2) 204
+1 Baloo - von Bruinwald XIII (3) 1
+1 Bernard - Brand-New Agent (3) 2
+1 Chernabog - Evildoer (3) 3
+1 Chernabog - Evildoer (3) 205
+1 Dalmatian Puppy - Tail Wagger (3) 4a
+1 Dalmatian Puppy - Tail Wagger (3) 4b
+1 Dalmatian Puppy - Tail Wagger (3) 4c
+1 Dalmatian Puppy - Tail Wagger (3) 4d
+1 Dalmatian Puppy - Tail Wagger (3) 4e
+1 Dalmatian Puppy - Tail Wagger (8) 38
+1 Joshua Sweet - The Doctor (3) 5
+1 Kida - Atlantean (3) 6
+1 Kida - Protector of Atlantis (3) 7
+1 Kida - Protector of Atlantis (3) 206
+1 Lucky - The 15th Puppy (3) 8
+1 Minnie Mouse - Musical Artist (3) 9
+1 Miss Bianca - Rescue Aid Society Agent (3) 10
+1 Mr. Snoops - Inept Businessman (3) 11
+1 Nani - Protective Sister (3) 12
+1 Orville - Ace Pilot (3) 13
+1 Patch - Intimidating Pup (3) 14
+1 Perdita - Devoted Mother (3) 15
+1 Piglet - Pooh Pirate Captain (3) 16
+1 Pluto - Determined Defender (3) 17
+1 Pluto - Friendly Pooch (3) 18
+1 Pongo - Determined Father (3) 19
+1 Queen of Hearts - Wonderland Empress (3) 20
+1 Rolly - Hungry Pup (3) 21
+1 Tinker Bell - Generous Fairy (3) 22
+1 Wendy Darling - Talented Sailor (3) 23
+1 99 Puppies (3) 24
+1 Boss's Orders (3) 25
+1 Heal What Has Been Hurt (3) 26
+1 Quick Patch (3) 27
+1 The Bare Necessities (3) 28
+1 Cleansing Rainwater (3) 29
+1 Heart of Atlantis (3) 30
+1 Wildcat's Wrench (3) 31
+1 Never Land - Mermaid Lagoon (3) 32
+1 Pride Lands - Pride Rock (3) 33
+1 Pride Lands - Pride Rock (3) 207
+1 Tiana's Palace - Jazz Restaurant (3) 34
+1 Alice - Tea Alchemist (3) 35
+1 Chernabog's Followers - Creatures of Evil (3) 36
+1 Diablo - Faithful Pet (3) 37
+1 Genie - Supportive Friend (3) 38
+1 Hydros - Ice Titan (3) 39
+1 Iago - Pretty Polly (3) 40
+1 Jafar - Lamp Thief (3) 41
+1 Jafar - Striking Illusionist (3) 42
+1 Jafar - Striking Illusionist (3) 208
+1 Lena Sabrewing - Rebellious Teenager (3) 43
+1 Magic Broom - Dancing Duster (3) 44
+1 Magic Broom - Swift Cleaner (3) 45
+1 Magic Broom - The Big Sweeper (3) 46
+1 Magic Carpet - Flying Rug (3) 47
+1 Magica De Spell - Ambitious Witch (3) 48
+1 Magica De Spell - The Midas Touch (3) 49
+1 Magica De Spell - Thieving Sorceress (3) 50
+1 Maleficent - Mistress of All Evil (3) 51
+1 Maleficent - Mistress of All Evil (3) 209
+1 Mama Odie - Voice of Wisdom (3) 52
+1 Pua - Potbellied Buddy (3) 53
+1 Rafiki - Mystical Fighter (3) 54
+1 Stratos - Tornado Titan (3) 55
+1 The Firebird - Force of Destruction (3) 56
+1 The Queen - Hateful Rival (3) 57
+1 Treasure Guardian - Protector of the Cave (3) 58
+1 Ursula - Sea Witch (3) 59
+1 Bestow a Gift (3) 60
+1 It Calls Me (3) 61
+1 Last-Ditch Effort (3) 62
+1 The Boss Is On A Roll (3) 63
+1 The Lamp (3) 64
+1 The Sorcerer's Hat (3) 65
+1 The Sorcerer's Hat (3) 210
+1 Forbidden Mountain - Maleficent's Castle (3) 66
+1 The Queen's Castle - Mirror Chamber (3) 67
+1 The Sorcerer's Tower - Wondrous Workspace (3) 68
+1 Cubby - Mighty Lost Boy (3) 69
+1 Cursed Merfolk - Ursula's Handiwork (3) 70
+1 Don Karnage - Prince of Pirates (3) 71
+1 Flotsam - Riffraff (3) 72
+1 Friar Tuck - Priest Of Nottingham (3) 73
+1 Helga Sinclair - Femme Fatale (3) 74
+1 Helga Sinclair - Vengeful Partner (3) 75
+1 Jetsam - Riffraff (3) 76
+1 Lyle Tiberius Rourke - Cunning Mercenary (3) 78
+1 Milo Thatch - Clever Cartographer (3) 79
+1 Milo Thatch - King of Atlantis (3) 80
+1 Morph - Space Goo (3) 81
+1 Morph - Space Goo (3) 211
+1 Peter Pan - Lost Boy Leader (3) 82
+1 Prince John - Phony King (3) 83
+1 Robin Hood - Daydreamer (3) 84
+1 Shenzi - Hyena Pack Leader (3) 85
+1 Sir Hiss - Aggravating Asp (3) 86
+1 Skippy - Energetic Rabbit (3) 87
+1 Starkey - Devious Pirate (3) 88
+1 Stitch - Covert Agent (3) 89
+1 Ursula - Deceiver (3) 90
+1 Ursula - Deceiver (D23) 3
+1 Ursula - Deceiver of All (3) 91
+1 Ursula - Deceiver of All (3) 212
+1 Wildcat - Mechanic (3) 92
+1 Zazu - Steward of the Pride Lands (3) 93
+1 Has Set My Heaaaaaaart . . . (3) 94
+1 I Will Find My Way (3) 95
+1 Strike A Good Match (3) 96
+1 Airfoil (3) 97
+1 Robin's Bow (3) 98
+1 Starlight Vial (3) 99
+1 De Vil Manor - Cruella's Estate (3) 100
+1 Fang - River City (3) 101
+1 Kuzco's Palace - Home of the Emperor (3) 102
+1 Kuzco's Palace - Home of the Emperor (3) 213
+1 Ariel - Adventurous Collector (3) 103
+1 Billy Bones - Keeper of the Map (3) 104
+1 Captain Hook - Master Swordsman (3) 105
+1 Captain Hook - Master Swordsman (3) 214
+1 Della Duck - Unstoppable Mom (3) 106
+1 HeiHei - Accidental Explorer (3) 107
+1 Hydra - Deadly Serpent (3) 108
+1 Jim Hawkins - Space Traveler (3) 109
+1 Jim Hawkins - Thrill Seeker (3) 110
+1 Kakamora - Menacing Sailor (3) 111
+1 Madame Medusa - The Boss (3) 112
+1 Maui - Soaring Demigod (3) 113
+1 Maui - Whale (3) 114
+1 Milo Thatch - Spirited Scholar (3) 115
+1 Moana - Born Leader (3) 116
+1 Moana - Undeterred Voyager (3) 117
+1 Nutsy - Vulture Henchman (3) 118
+1 Peter Pan - Never Land Hero (3) 119
+1 Peter Pan - Pirate's Bane (3) 120
+1 Peter Pan - Pirate's Bane (3) 215
+1 Prince Eric - Expert Helmsman (3) 121
+1 Scroop - Backstabber (3) 122
+1 Simba - Scrappy Cub (3) 123
+1 Slightly - Lost Boy (3) 124
+1 Stitch - Little Rocket (3) 125
+1 Trigger - Not-So-Sharp Shooter (3) 126
+1 Webby Vanderquack - Enthusiastic Duck (3) 127
+1 Divebomb (3) 128
+1 I've Got a Dream (3) 129
+1 On Your Feet! Now! (3) 130
+1 Voyage (3) 131
+1 Maui's Fish Hook (3) 132
+1 Sumerian Talisman (3) 133
+1 Agrabah - Marketplace (3) 134
+1 RLS Legacy - Solar Galleon (3) 136
+1 RLS Legacy - Solar Galleon (3) 216
+1 Audrey Ramirez - The Engineer (3) 137
+1 Captain Amelia - First In Command (3) 138
+1 Dewey - Showy Nephew (3) 139
+1 Flintheart Glomgold - Lone Cheater (3) 140
+1 Genie - Cramped in the Lamp (3) 141
+1 Gramma Tala - Keeper of Ancient Stories (3) 142
+1 Gramma Tala - Spirit of the Ocean (3) 143
+1 Gramma Tala - Spirit of the Ocean (3) 217
+1 Gyro Gearloose - Gadget Whiz (3) 144
+1 Huey - Savvy Nephew (3) 145
+1 King Louie - Bandleader (3) 146
+1 Kit Cloudkicker - Navigator (3) 147
+1 Kit Cloudkicker - Spunky Bear Cub (3) 148
+1 Louie - Chill Nephew (3) 149
+1 Maid Marian - Delightful Dreamer (3) 150
+1 Mama Odie - Mystical Maven (3) 151
+1 Pluto - Mickey's Clever Friend (3) 152
+1 Rufus - Orphanage Cat (3) 153
+1 Scrooge McDuck - Richest Duck in the World (3) 154
+1 Scrooge McDuck - Richest Duck in the World (3) 218
+1 The Queen - Mirror Seeker (3) 156
+1 Tinker Bell - Very Clever Fairy (3) 157
+1 Wendy Darling - Authority on Peter Pan (3) 158
+1 Distract (3) 159
+1 Friend Like Me (3) 160
+1 Repair (3) 162
+1 Aurelian Gyrosensor (3) 163
+1 Heart of Te Fiti (3) 164
+1 Lucky Dime (3) 165
+1 Scrooge's Top Hat (3) 166
+1 Vault Door (3) 167
+1 Belle's House - Maurice's Workshop (3) 168
+1 Belle's House - Maurice's Workshop (3) 219
+1 McDuck Manor - Scrooge's Mansion (3) 169
+1 Motunui - Island Paradise (3) 170
+1 Chief Tui - Proud of Motunui (3) 171
+1 Eeyore - Overstuffed Donkey (3) 172
+1 Gustav The Giant - Terror of the Kingdom (3) 173
+1 Hades - Hotheaded Ruler (3) 174
+1 Helga Sinclair - Right-Hand Woman (3) 175
+1 Kida - Royal Warrior (3) 177
+1 Little John - Resourceful Outlaw (3) 178
+1 Little John - Robin's Pal (3) 179
+1 Lythos - Rock Titan (3) 180
+1 Mickey Mouse - Stalwart Explorer (3) 181
+1 Mickey Mouse - Trumpeter (3) 182
+1 Mickey Mouse - Trumpeter (3) 220
+1 Minnie Mouse - Funky Spelunker (3) 183
+1 Mr. Smee - Bumbling Mate (3) 184
+1 Mufasa - Champion of the Pride Lands (3) 185
+1 Nala - Fierce Friend (3) 186
+1 Pyros - Lava Titan (3) 187
+1 Razoul - Palace Guard (3) 188
+1 Robin Hood - Beloved Outlaw (3) 189
+1 Robin Hood - Champion of Sherwood (3) 190
+1 Robin Hood - Champion of Sherwood (3) 221
+1 Sheriff of Nottingham - Corrupt Official (3) 191
+1 Simba - Fighting Prince (3) 192
+1 Simba - Rightful King (3) 193
+1 Thaddeus E. Klang - Metallic Leader (3) 194
+1 And Then Along Came Zeus (3) 195
+1 And Then Along Came Zeus (3) 222
+1 Ba-boom! (3) 196
+1 Olympus Would Be That Way (3) 197
+1 Rise of the Titans (3) 198
+1 Captain Hook's Rapier (3) 199
+1 Gizmosuit (3) 200
+1 Map of Treasure Planet (3) 201
+1 Maui's Place of Exile - Hidden Island (3) 202
+1 Nottingham - Prince John's Castle (3) 203
+1 The Bayou - Mysterious Swamp (3) 204
+1 Agustin Madrigal - Clumsy Dad (4) 1
+1 Alma Madrigal - Family Matriarch (4) 2
+1 Ariel - Singing Mermaid (4) 3
+1 Cinderella - Melody Weaver (4) 4
+1 Cinderella - Melody Weaver (4) 205
+1 Cogsworth - Majordomo (4) 5
+1 Daisy Duck - Lovely Lady (4) 6
+1 Daisy Duck - Musketeer Spy (4) 7
+1 Donald Duck - Musketeer Soldier (4) 8
+1 Félix Madrigal - Fun-Loving Family Man (4) 9
+1 Gaston - Despicable Dealer (4) 10
+1 Golden Harp - Enchanter of the Land (4) 11
+1 Goofy - Musketeer Swordsman (4) 12
+1 Julieta Madrigal - Excellent Cook (4) 13
+1 Max - Loyal Sheepdog (4) 14
+1 Mickey Mouse - Musketeer Captain (4) 16
+1 Minnie Mouse - Musketeer Champion (4) 17
+1 Minnie Mouse - Musketeer Champion (4) 206
+1 Mirabel Madrigal - Gift of the Family (4) 18
+1 Mirabel Madrigal - Prophecy Finder (4) 19
+1 Pluto - Rescue Dog (4) 20
+1 Prince Eric - Seafaring Prince (4) 21
+1 Prince Eric - Ursula's Groom (4) 22
+1 Stitch - Alien Dancer (4) 23
+1 Ursula - Eric's Bride (4) 24
+1 Ursula - Vanessa (4) 25
+1 Bruno's Return (4) 26
+1 First Aid (4) 27
+1 Look At This Family (4) 28
+1 Look At This Family (4) 207
+1 Lost In The Woods (4) 29
+1 Sign The Scroll (4) 30
+1 Miracle Candle (4) 31
+1 Record Player (4) 32
+1 Atlantica - Concert Hall (4) 33
+1 The Underworld - River Styx (4) 34
+1 Antonio Madrigal - Animal Expert (4) 35
+1 Belle - Accomplished Mystic (4) 36
+1 Belle - Untrained Mystic (4) 37
+1 Bruno Madrigal - Out of the Shadows (4) 38
+1 Bruno Madrigal - Undetected Uncle (4) 39
+1 Bruno Madrigal - Undetected Uncle (D23) 4
+1 Camilo Madrigal - Prankster (4) 40
+1 Dolores Madrigal - Easy Listener (4) 41
+1 Elsa - Storm Chaser (4) 42
+1 Flotsam - Ursula's "Baby" (4) 43
+1 Isabela Madrigal - Golden Child (4) 45
+1 Jetsam - Ursula's "Baby" (4) 46
+1 Luisa Madrigal - Magically Strong One (4) 47
+1 Magic Broom - Illuminary Keeper (4) 48
+1 Magic Broom - Lively Sweeper (4) 49
+1 Magical Maid - Feather Duster (4) 50
+1 Marshmallow - Terrifying Snowman (4) 51
+1 Mrs. Potts - Enchanted Teapot (4) 52
+1 Pepa Madrigal - Weather Maker (4) 53
+1 Peter Pan - Shadow Finder (4) 54
+1 Pico - Helpful Toucan (4) 55
+1 Tick-Tock - Ever-Present Pursuer (4) 56
+1 Ursula - Mad Sea Witch (4) 57
+1 Yen Sid - Powerful Sorcerer (4) 59
+1 Yen Sid - Powerful Sorcerer (4) 209
+1 Yen Sid - Powerful Sorcerer (4) 223
+1 Poor Unfortunate Souls (4) 60
+1 Second Star To The Right (4) 61
+1 Second Star To The Right (4) 210
+1 Swing Into Action (4) 62
+1 Ursula's Plan (4) 63
+1 Mystical Rose (4) 64
+1 Rose Lantern (4) 65
+1 Triton's Trident (4) 66
+1 Casa Madrigal - Casita (4) 67
+1 Cri-Kee - Lucky Cricket (4) 69
+1 Diablo - Devoted Herald (4) 70
+1 Diablo - Devoted Herald (4) 211
+1 Diablo - Maleficent's Spy (4) 71
+1 Gunther - Interior Designer (4) 72
+1 Gus - Champion of Cheese (4) 73
+1 Hades - Double Dealer (4) 74
+1 HeiHei - Bumbling Rooster (4) 75
+1 Hera - Queen of the Gods (4) 76
+1 Jaq - Connoisseur of Climbing (4) 77
+1 Jasmine - Desert Warrior (4) 78
+1 Jasmine - Desert Warrior (4) 212
+1 Megara - Captivating Cynic (4) 79
+1 Megara - Liberated One (4) 80
+1 Pain - Immortal Sidekick (4) 81
+1 Panic - Immortal Sidekick (4) 82
+1 Pegasus - Cloud Racer (4) 83
+1 Pegasus - Gift for Hercules (4) 84
+1 Pete - Born to Cheat (4) 85
+1 Pete - Rotten Guy (4) 86
+1 Prince Phillip - Vanquisher of Foes (4) 87
+1 Prince Phillip - Warden of the Woods (4) 88
+1 The Fates - Only One Eye (4) 89
+1 The Muses - Proclaimers of Heroes (4) 90
+1 Tor - Florist (4) 91
+1 Zeus - Mr. Lightning Bolts (4) 92
+1 Dodge! (4) 93
+1 Make The Potion (4) 94
+1 Under The Sea (4) 95
+1 Ursula's Trickery (4) 96
+1 We Don't Talk About Bruno (4) 97
+1 We Don't Talk About Bruno (4) 213
+1 Signed Contract (4) 99
+1 Vision Slab (4) 100
+1 Hidden Cove - Tranquil Haven (4) 101
+1 Ursula's Garden - Full of the Unfortunate (4) 102
+1 Beast - Wounded (4) 103
+1 Benja - Bold Uniter (4) 104
+1 Fa Zhou - Mulan's Father (4) 105
+1 Flynn Rider - Frenemy (4) 106
+1 Goofy - Super Goof (4) 107
+1 Goofy - Super Goof (4) 214
+1 Hercules - Clumsy Kid (4) 108
+1 Hercules - Daring Demigod (4) 109
+1 Khan - Beloved Steed (4) 110
+1 Li Shang - General's Son (4) 111
+1 Li Shang - Valorous General (4) 112
+1 Lumiere - Fiery Friend (4) 113
+1 Mulan - Elite Archer (4) 114
+1 Mulan - Elite Archer (4) 224
+1 Mulan - Injured Soldier (4) 116
+1 Namaari - Heir of Fang (4) 117
+1 Nessus - River Guardian (4) 118
+1 Noi - Acrobatic Baby (4) 119
+1 Pegasus - Flying Steed (4) 120
+1 Raya - Fierce Protector (4) 121
+1 Raya - Guardian of the Dragon Gem (4) 122
+1 Sisu - Daring Visitor (4) 123
+1 Sisu - Emboldened Warrior (4) 124
+1 Sisu - Empowered Sibling (4) 125
+1 Sisu - Empowered Sibling (4) 215
+1 Tong - Survivor (4) 126
+1 Tuk Tuk - Lively Partner (4) 127
+1 A Pirate's Life (4) 128
+1 Be King Undisputed (4) 129
+1 Brawl (4) 130
+1 Imperial Proclamation (4) 131
+1 Medallion Weights (4) 132
+1 The Plank (4) 133
+1 Vitalisphere (4) 134
+1 Snuggly Duckling - Disreputable Pub (4) 135
+1 Snuggly Duckling - Disreputable Pub (4) 216
+1 Training Grounds - Impossible Pillar (4) 136
+1 Anna - Braving the Storm (4) 137
+1 Anna - Braving the Storm (P2) 17
+1 Anna - True-Hearted (4) 138
+1 Anna - True-Hearted (4) 217
+1 Ariel - Treasure Collector (4) 139
+1 Aurora - Lore Guardian (4) 140
+1 Aurora - Tranquil Princess (4) 141
+1 Dang Hu - Talon Chief (4) 142
+1 Fa Li - Mulan's Mother (4) 143
+1 Flounder - Collector's Companion (4) 144
+1 Hades - Meticulous Plotter (4) 145
+1 Hans - Noble Scoundrel (4) 146
+1 Iduna - Caring Mother (4) 147
+1 John Silver - Terror of the Realm (4) 148
+1 Olaf - Carrot Enthusiast (4) 149
+1 Olaf - Trusting Companion (4) 150
+1 Pascal - Inquisitive Pet (4) 151
+1 Prince Phillip - Gallant Defender (4) 152
+1 Rapunzel - Appreciative Artist (4) 153
+1 Scuttle - Expert on Humans (4) 154
+1 Sisu - Wise Friend (4) 155
+1 The Queen - Diviner (4) 156
+1 The Queen - Diviner (4) 218
+1 Transformed Chef - Castle Stove (4) 157
+1 Triton - Champion of Atlantica (4) 158
+1 Triton - Discerning King (4) 159
+1 Triton - Young Prince (4) 160
+1 Tuk Tuk - Curious Partner (4) 161
+1 Dig A Little Deeper (4) 162
+1 Glean (4) 163
+1 Seldom All They Seem (4) 164
+1 Treasures Untold (4) 165
+1 Field Of Ice (4) 166
+1 Great Stone Dragon (4) 167
+1 Ice Block (4) 168
+1 Ariel's Grotto - A Secret Place (4) 169
+1 Ariel's Grotto - A Secret Place (4) 219
+1 Winter Camp - Medical Tent (4) 170
+1 Aladdin - Brave Rescuer (4) 171
+1 Aladdin - Resolute Swordsman (4) 172
+1 Arges - The Cyclops (4) 173
+1 Ariel - Determined Mermaid (4) 174
+1 Ariel - Sonic Warrior (4) 175
+1 Ariel - Sonic Warrior (4) 220
+1 Beast - Thick-Skinned (4) 176
+1 Chi-Fu - Imperial Advisor (4) 177
+1 Chien-Po - Imperial Soldier (4) 178
+1 Donald Duck - Buccaneer (4) 179
+1 Hercules - Beloved Hero (4) 180
+1 LeFou - Opportunistic Flunky (4) 181
+1 Li Shang - Imperial Captain (4) 182
+1 Ling - Imperial Soldier (4) 183
+1 Luisa Madrigal - Rock of the Family (4) 184
+1 Magic Broom - Aerial Cleaner (4) 185
+1 Magic Broom - Brigade Commander (4) 186
+1 Mickey Mouse - Playful Sorcerer (4) 187
+1 Mickey Mouse - Playful Sorcerer (4) 225
+1 Mickey Mouse - Standard Bearer (4) 188
+1 Mulan - Armored Fighter (4) 189
+1 Philoctetes - No-Nonsense Instructor (4) 190
+1 Piglet - Sturdy Swordsman (4) 191
+1 Piglet - Sturdy Swordsman (4) 221
+1 Rajah - Royal Protector (4) 192
+1 Raya - Unstoppable Force (4) 193
+1 Yao - Imperial Soldier (4) 194
+1 Avalanche (4) 195
+1 I Find 'Em, I Flatten 'Em (4) 196
+1 One Last Hope (4) 197
+1 The Mob Song (4) 198
+1 Triton's Decree (4) 199
+1 Fortisphere (4) 200
+1 Imperial Bow (4) 201
+1 RLS Legacy's Cannon (4) 202
+1 The Wall - Border Fortress (4) 203
+1 The Wall - Border Fortress (4) 222
+1 Thebes - The Big Olive (4) 204
+1 Vanellope von Schweetz - Sugar Rush Princess (D23) 5
+1 Vanellope von Schweetz - Sugar Rush Princess (5) 19
+1 Vanellope von Schweetz - Sugar Rush Princess (5) 206
+1 Oswald - The Lucky Rabbit (D23) 6
+1 Oswald - The Lucky Rabbit (6) 142
+1 Koda - Talkative Cub (5) 1
+1 Nala - Mischievous Cub (5) 2
+1 Nala - Mischievous Cub (P2) 3
+1 Prince Naveen - Ukulele Player (5) 3
+1 Prince Naveen - Ukulele Player (5) 205
+1 Rutt - Northern Moose (5) 4
+1 Kenai - Big Brother (5) 5
+1 Vanellope von Schweetz - Sugar Rush Champ (5) 6
+1 Tuke - Northern Moose (5) 7
+1 Lilo - Junior Cake Decorator (5) 8
+1 Vanellope von Schweetz - Candy Mechanic (5) 9
+1 Fix-It Felix, Jr. - Trusty Builder (5) 10
+1 Gazelle - Pop Star (5) 11
+1 Fix-It Felix, Jr. - Niceland Steward (5) 12
+1 Kristoff - Reindeer Keeper (5) 13
+1 Kristoff - Reindeer Keeper (P2) 2
+1 Mirabel Madrigal - Family Gatherer (5) 14
+1 Mirabel Madrigal - Family Gatherer (P2) 7
+1 Minnie Mouse - Drum Major (5) 15
+1 Daisy Duck - Donald's Date (5) 16
+1 Fix-It Felix, Jr. - Delighted Sightseer (5) 17
+1 Moana - Determined Explorer (5) 18
+1 Alan-a-Dale - Rockin' Rooster (5) 20
+1 Wreck-It Ralph - Admiral Underpants (5) 21
+1 Maid Marian - Lady of the Lists (5) 22
+1 Sven - Reindeer Steed (5) 23
+1 Minnie Mouse - Compassionate Friend (5) 24
+1 Try Everything (5) 25
+1 Healing Touch (5) 26
+1 Revive (5) 27
+1 Revive (5) 207
+1 Blast From Your Past (5) 28
+1 Invited to the Ball (5) 29
+1 Healing Decanter (5) 30
+1 Queen's Sensor Core (5) 31
+1 Amber Chromicon (5) 32
+1 Rapunzel's Tower - Secluded Prison (5) 33
+1 Pride Lands - Jungle Oasis (5) 34
+1 Maleficent - Formidable Queen (5) 35
+1 The Nokk - Mythical Spirit (5) 36
+1 Cogsworth - Illuminary Watchman (5) 37
+1 Merlin - Turtle (5) 38
+1 Archimedes - Exasperated Owl (5) 39
+1 Bruni - Fire Salamander (5) 40
+1 Earth Giant - Living Mountain (5) 41
+1 Gale - Wind Spirit (5) 42
+1 White Rabbit - Royal Herald (5) 43
+1 Madam Mim - Elephant (5) 44
+1 Luisa Madrigal - Entertaining Muscle (5) 45
+1 Anna - Mystical Majesty (5) 46
+1 Archimedes - Electrified Owl (5) 47
+1 Archimedes - Electrified Owl (5) 208
+1 Elsa - The Fifth Spirit (5) 48
+1 Genie - Main Attraction (5) 49
+1 Olaf - Happy Passenger (5) 50
+1 Olaf - Happy Passenger (5) 209
+1 Maleficent - Vexed Partygoer (5) 51
+1 Monstro - Whale of a Whale (5) 52
+1 Magica De Spell - Cruel Sorceress (5) 53
+1 Maleficent - Vengeful Sorceress (5) 54
+1 Rafiki - Shaman Duelist (5) 55
+1 Anna - Eager Acolyte (5) 56
+1 King of Hearts - Monarch of Wonderland (5) 57
+1 Camilo Madrigal - Family Copycat (5) 58
+1 Hypnotic Strength (5) 59
+1 Finders Keepers (5) 60
+1 Finders Keepers (5) 210
+1 Finders Keepers (P2) 4
+1 We Know The Way (5) 61
+1 Gathering Knowledge And Wisdom (5) 62
+1 Magical Aid (5) 63
+1 Retrosphere (5) 64
+1 Half Hexwell Crown (5) 65
+1 Half Hexwell Crown (5) 223
+1 Amethyst Chromicon (5) 66
+1 Elsa's Ice Palace - Place of Solitude (5) 67
+1 The Library - A Gift for Belle (5) 68
+1 Robin Hood - Timely Contestant (5) 69
+1 Shenzi - Scar's Accomplice (5) 70
+1 Little John - Camp Cook (5) 71
+1 Zazu - Advisor to Mufasa (5) 72
+1 Ulf - Mime (5) 73
+1 Ed - Laughing Hyena (5) 74
+1 Flora - Good Fairy (5) 75
+1 Merryweather - Good Fairy (5) 76
+1 Robin Hood - Archery Contestant (5) 77
+1 Fauna - Good Fairy (5) 78
+1 Iago - Fake Flamingo (5) 79
+1 Banzai - Gluttonous Predator (5) 80
+1 Ed - Hysterical Partygoer (5) 81
+1 Scroop - Odious Mutineer (5) 82
+1 Prince Phillip - Swordsman of the Realm (5) 83
+1 Clarabelle - Light on Her Hooves (5) 84
+1 Clarabelle - Light on Her Hooves (5) 211
+1 Anna - Diplomatic Queen (5) 85
+1 Clarabelle - Clumsy Guest (5) 86
+1 Banzai - Taunting Hyena (5) 87
+1 Robin Hood - Sneaky Sleuth (5) 88
+1 Mother Gothel - Conceited Manipulator (5) 89
+1 Clarabelle - Contented Wallflower (5) 90
+1 Shenzi - Head Hyena (5) 91
+1 Mother Gothel - Unwavering Schemer (5) 92
+1 Scar - Vengeful Lion (5) 93
+1 Scar - Vengeful Lion (5) 212
+1 Hypnotic Deduction (5) 94
+1 Night Howler Rage (5) 95
+1 You're Welcome (5) 96
+1 You're Welcome (5) 213
+1 Remember Who You Are (5) 97
+1 Prince John's Mirror (5) 98
+1 Obscurosphere (5) 99
+1 Emerald Chromicon (5) 100
+1 Sherwood Forest - Outlaw Hideaway (5) 101
+1 Tropical Rainforest - Jaguar Lair (5) 102
+1 Taffyta Muttonfudge - Ruthless Rival (5) 103
+1 Wreck-It Ralph - Demolition Dude (5) 104
+1 Maximus - Team Champion (5) 105
+1 Turbo - Royal Hack (5) 106
+1 Donald Duck - Pie Slinger (5) 107
+1 Donald Duck - Pie Slinger (5) 214
+1 Rancis Fluggerbutter - Chocolate Charger (5) 108
+1 Scar - Betrayer (5) 109
+1 Snowanna Rainbeau - Cool Competitor (5) 110
+1 Daisy Duck - Spotless Food-Fighter (5) 111
+1 Mickey Mouse - Enthusiastic Dancer (5) 112
+1 Ratigan - Raging Rat (5) 113
+1 Taffyta Muttonfudge - Crowd Favorite (5) 114
+1 Denahi - Avenging Brother (5) 115
+1 Pete - Steamboat Rival (5) 116
+1 Taffyta Muttonfudge - Sour Speedster (5) 117
+1 Robin Hood - Sharpshooter (5) 118
+1 Robin Hood - Sharpshooter (5) 215
+1 Gaston - Pure Paragon (5) 119
+1 Pete - Pastry Chomper (5) 120
+1 Arthur - Novice Sparrow (5) 121
+1 Donald Duck - Daisy's Date (5) 122
+1 Ratigan - Party Crasher (5) 123
+1 Vanellope Von Schweetz - Random Roster Racer (5) 124
+1 Simba - Adventurous Successor (5) 125
+1 Minnie Mouse - Dazzling Dancer (5) 126
+1 Break Free (5) 127
+1 Evil Comes Prepared (5) 128
+1 Don't Let The Frostbite Bite (5) 129
+1 Glimmer vs Glimmer (5) 130
+1 Who's With Me? (5) 131
+1 Potion of Might (5) 132
+1 The Sword Released (5) 133
+1 Ruby Chromicon (5) 134
+1 Sugar Rush Speedway - Starting Line (5) 135
+1 Ratigan's Party - Seedy Back Room (5) 136
+1 Ratigan's Party - Seedy Back Room (5) 216
+1 King Candy - Sovereign of Sugar (5) 137
+1 Chaca - Impressive Daughter (5) 138
+1 The Queen - Cruelest of All (5) 139
+1 Scrooge McDuck - Afficionado of Antiquities (5) 140
+1 Prince John - Opportunistic Briber (5) 141
+1 Merlin - Back from Bermuda (5) 142
+1 Pacha - Emperor's Guide (5) 143
+1 The Queen - Fairest of All (5) 144
+1 Sheriff Of Nottingham - Bushel Britches (5) 145
+1 Chicha - Dedicated Mother (5) 146
+1 Chicha - Dedicated Mother (P2) 5
+1 Prince John - Gold Lover (5) 147
+1 Prince John - Gold Lover (P2) 1
+1 The Queen - Crown of the Council (5) 148
+1 Kuzco - Selfish Emperor (5) 149
+1 Mufasa - Ruler of Pride Rock (5) 150
+1 Mufasa - Ruler of Pride Rock (5) 217
+1 Ludwig Von Drake - Self-Proclaimed Genius (5) 151
+1 Minnie Mouse - Quick-Thinking Inventor (5) 152
+1 Basil - Practiced Detective (5) 153
+1 King Candy - Sweet Abomination (5) 154
+1 King Candy - Sweet Abomination (5) 218
+1 Donald Duck - Focused Flatfoot (5) 155
+1 Tanana - Wise Woman (5) 156
+1 Tipo - Growing Son (5) 157
+1 Belle - Of the Ball (5) 158
+1 Merlin - Intellectual Visionary (5) 159
+1 Vision of the Future (5) 160
+1 Royal Tantrum (5) 161
+1 Royal Tantrum (5) 219
+1 Ever as Before (5) 162
+1 Hide Away (5) 163
+1 All Funned Out (5) 164
+1 Medal of Heroes (5) 165
+1 Basil's Magnifying Glass (5) 166
+1 Merlin's Carpetbag (5) 167
+1 Sapphire Chromicon (5) 168
+1 The Great Illuminary - Radiant Ballroom (5) 169
+1 Merlin's Cottage - The Wizard's Home (5) 170
+1 Stitch - Team Underdog (5) 171
+1 Stitch - Team Underdog (P2) 6
+1 Jafar - Tyrannical Hypnotist (5) 172
+1 Simba - Lost Prince (5) 173
+1 Rudy - Groove Disrupter (5) 174
+1 Royal Guard - Bovine Protector (5) 175
+1 Mickey Mouse - Food Fight Defender (5) 176
+1 Sleepy - Sluggish Knight (5) 177
+1 Kronk - Unlicensed Investigator (5) 178
+1 HeiHei - Protective Rooster (5) 179
+1 Sneezy - Noisy Knight (5) 180
+1 Dopey - Knight Apprentice (5) 181
+1 Namaari - Resolute Daughter (5) 182
+1 Snow White - Fair-Hearted (5) 183
+1 Snow White - Fair-Hearted (5) 220
+1 Yzma - Unjustly Treated (5) 184
+1 Kronk - Head of Security (5) 185
+1 Grumpy - Skeptical Knight (5) 186
+1 Pete - Wrestling Champ (5) 187
+1 Sir Ector - Castle Lord (5) 188
+1 Bashful - Adoring Knight (5) 189
+1 Arthur - Wart (5) 190
+1 Happy - Lively Knight (5) 191
+1 Simba - Son of Mufasa (5) 192
+1 Doc - Bold Knight (5) 193
+1 Arthur - King Victorious (5) 194
+1 Arthur - King Victorious (5) 221
+1 Pete - Games Referee (5) 195
+1 Tug-of-War (5) 196
+1 When Will My Life Begin? (5) 197
+1 Duck for Cover! (5) 198
+1 Food Fight! (5) 199
+1 Shield of Arendelle (5) 200
+1 Plate Armor (5) 201
+1 Steel Chromicon (5) 202
+1 Bad-Anon - Villain Support Center (5) 203
+1 Bad-Anon - Villain Support Center (5) 222
+1 Seven Dwarfs' Mine - Secure Fortress (5) 204
+1 Stitch - Alien Buccaneer (P2) 8
+1 Stitch - Alien Buccaneer (6) 72
+1 Aladdin - Intrepid Commander (P2) 9
+1 Aladdin - Intrepid Commander (6) 119
+1 Rescue Rangers Away! (P2) 10
+1 Rescue Rangers Away! (6) 29
+1 Honey Lemon - Chemical Genius (P2) 11
+1 Honey Lemon - Chemical Genius (6) 74
+1 Minnie Mouse - Pirate Lookout (P2) 12
+1 Minnie Mouse - Pirate Lookout (6) 120
+1 Wasabi - Methodical Engineer (P2) 13
+1 Wasabi - Methodical Engineer (6) 149
+1 Scar - Heartless Hunter (P2) 14
+1 Scar - Heartless Hunter (6) 127
+1 Mickey Mouse - Pirate Captain (P2) 18
+1 Mickey Mouse - Pirate Captain (6) 103
+1 Anna - Ice Breaker (P2) 19
+1 Anna - Ice Breaker (7) 72
+1 Kronk - Laid Back (P2) 20
+1 Kronk - Laid Back (7) 63
+1 Perdita - Playful Mother (P2) 21
+1 Perdita - Playful Mother (7) 2
+1 Li Shang - Newly Promoted (P2) 22
+1 Li Shang - Newly Promoted (7) 133
+1 Snow White - Fairest in the Land (P2) 23
+1 Snow White - Fairest in the Land (7) 33
+1 Hiro Hamada - Armor Designer (P2) 24
+1 Hiro Hamada - Armor Designer (P2) 24B
+1 Hiro Hamada - Armor Designer (7) 96
+1 Hiro Hamada - Armor Designer (7) 214
+1 Lilo - Escape Artist (P2) 25
+1 Lilo - Escape Artist (6) 2
+1 Moana - Adventurer of Land and Sea (P2) 26
+1 Moana - Adventurer of Land and Sea (7) 156
+1 Owl - Pirate Lookout (6) 1
+1 Winnie The Pooh - Hunny Pirate (6) 3
+1 Gopher - Ship's Carpenter (6) 4
+1 Simba - Happy-Go-Lucky (6) 5
+1 Chip - Friend Indeed (6) 6
+1 Dale - Friend in Need (6) 7
+1 David - Impressive Surfer (6) 8
+1 Prince Naveen - Vigilant First Mate (6) 9
+1 Prince Naveen - Carefree Explorer (6) 10
+1 Chief Bogo - Gazelle Fan (6) 11
+1 Chip - Ranger Leader (6) 12
+1 Monterey Jack - Good-hearted Ranger (6) 13
+1 Chip 'n' Dale - Recovery Rangers (6) 14
+1 Chip 'n' Dale - Recovery Rangers (6) 205
+1 Judy Hopps - Resourceful Rabbit (6) 15
+1 Tiana - Restaurant Owner (6) 16
+1 Tiana - Restaurant Owner (6) 206
+1 Grand Councilwoman - Federation Leader (6) 17
+1 Dale - Mischievous Ranger (6) 18
+1 Nani - Caring Sister (6) 19
+1 Simba - Pride Protector (6) 20
+1 Kanga - Nurturing Mother (6) 21
+1 Rabbit - Indignant Pirate (6) 22
+1 Roo - Littlest Pirate (6) 23
+1 Mr. Litwak - Arcade Owner (6) 24
+1 Jim Hawkins - Honorable Pirate (6) 25
+1 Stitch - Little Trickster (6) 26
+1 Good Job! (6) 27
+1 I Won't Give In (6) 28
+1 Safe and Sound (6) 30
+1 Naveen's Ukulele (6) 31
+1 Pooh Pirate Ship (6) 32
+1 Scrump (6) 33
+1 Hundred Acre Island - Pooh's Home (6) 34
+1 Sugar Rush Speedway - Finish Line (6) 35
+1 Sugar Rush Speedway - Finish Line (6) 207
+1 Hades - Lord of the Dead (6) 36
+1 Madam Mim - Tiny Adversary (6) 37
+1 Genie - Excited Shipbuilder (6) 38
+1 Sisu - In Her Element (6) 39
+1 The White Rose - Jewel of the Garden (6) 40
+1 Juju - Mama Odie's Companion (6) 41
+1 Rafiki - Shaman of the Savanna (6) 42
+1 Tinker Bell - Fast Flier (6) 43
+1 The Carpenter - Dinner Companion (6) 44
+1 Iago - Reappearing Parrot (6) 45
+1 The Walrus - Greedy Gourmand (6) 46
+1 Scar - Tempestuous Lion (6) 47
+1 Tinker Bell - Queen of the Azurite Fairies (6) 48
+1 Diablo - Obedient Raven (6) 49
+1 March Hare - Absurd Host (6) 50
+1 Magic Carpet - Amazing Flier (6) 51
+1 Rafiki - Ethereal Guide (6) 52
+1 Rafiki - Ethereal Guide (6) 208
+1 Genie - Wish Fulfilled (6) 53
+1 Sisu - Uniting Dragon (6) 54
+1 Madam Mim - Truly Marvelous (6) 55
+1 Yzma - Conniving Chemist (6) 56
+1 Yzma - Conniving Chemist (6) 209
+1 Mama Odie - Solitary Sage (6) 57
+1 Peter Pan - Shadow Catcher (6) 58
+1 Mad Hatter - Eccentric Host (6) 59
+1 A Very Merry Unbirthday (6) 60
+1 Genie - Wonderful Trickster (6) 61
+1 Making Magic (6) 62
+1 Lose The Way (6) 63
+1 Seeking the Half Crown (6) 64
+1 Maleficent's Staff (6) 65
+1 Maleficent's Staff (6) 210
+1 Mad Hatter's Teapot (6) 66
+1 Pixie Dust (6) 67
+1 Fairy Ship - Royal Vessel (6) 68
+1 Mystical Tree - Mama Odie's Home (6) 69
+1 Jasmine - Royal Seafarer (6) 70
+1 Captain Hook - Underhanded (6) 71
+1 Go Go Tomago - Darting Dynamo (6) 73
+1 Fred - Mascot by Day (6) 75
+1 Tootles - Lost Boy (6) 76
+1 Dawson - Basil's Assistant (6) 77
+1 Heathcliff - Stoic Butler (6) 78
+1 Basil - Hypnotized Mouse (6) 79
+1 Donald Duck - First Mate (6) 80
+1 Daisy Duck - Pirate Captain (6) 81
+1 Daisy Duck - Pirate Captain (6) 211
+1 Mertle Edmonds - Lilo's Rival (6) 82
+1 Prince Phillip - Royal Explorer (6) 83
+1 Jasmine - Royal Commodore (6) 84
+1 Peter Pan - Never Land Prankster (6) 85
+1 Hercules - Baby Demigod (6) 86
+1 Alistair Krei - Ambitious Entrepreneur (6) 87
+1 Gazelle - Angel with Horns (6) 88
+1 Goofy - Expert Shipwright (6) 89
+1 Bellwether - Assistant Mayor (6) 90
+1 Basil - Disguised Detective (6) 91
+1 Basil - Disguised Detective (6) 212
+1 Olivia Flaversham - The Toymaker's Daughter (6) 92
+1 Bend To My Will (6) 93
+1 Prepare To Board! (6) 94
+1 Heffalumps and Woozles (6) 95
+1 Mosquito Bite (6) 96
+1 You Came Back (6) 97
+1 You Came Back (6) 213
+1 Megabot (6) 98
+1 Galactic Communicator (6) 99
+1 Transport Pod (6) 100
+1 Perilous Maze - Watery Labyrinth (6) 101
+1 Owl Island - Secluded Entrance (6) 102
+1 Kakamora - Boarding Party (6) 104
+1 Kakamora - Pirate Pitcher (6) 105
+1 Jasmine - Rebellious Princess (6) 106
+1 Raya - Kumandran Rider (6) 107
+1 Raya - Kumandran Rider (6) 214
+1 Wendy Darling - Courageous Captain (6) 108
+1 John Silver - Ferocious Friend (6) 109
+1 Vanellope von Schweetz - Gutsy Go-Getter (6) 110
+1 Michael Darling - Playful Swordsman (6) 111
+1 Aladdin - Fearless Navigator (6) 112
+1 Markowski - Space Trooper (6) 113
+1 Abu - Bold Helmsman (6) 114
+1 Mickey Mouse - Courageous Sailor (6) 115
+1 Adorabeezle Winterpop - Ice Rocket Racer (6) 116
+1 Moana - Self-Taught Sailor (6) 117
+1 John Darling - Sophisticated Swordsman (6) 118
+1 Moana - Kakamora Leader (6) 121
+1 Pete - Freebooter (6) 122
+1 Goofy - Flying Goof (6) 123
+1 Maui - Half Shark (6) 124
+1 Hades - Strong Arm (6) 125
+1 Tigger - In the Crow's Nest (6) 126
+1 Tigger - In the Crow's Nest (6) 215
+1 Thievery (6) 128
+1 Lead The Way (6) 129
+1 The Islands I Pulled From The Sea (6) 130
+1 The Islands I Pulled From The Sea (6) 216
+1 Energy Blast (6) 131
+1 Longboat (6) 132
+1 Gold Coin (6) 133
+1 Card Soldier's Spear (6) 134
+1 Flotilla - Coconut Armada (6) 135
+1 Skull Rock - Isolated Fortress (6) 136
+1 B.E.N. - Eccentric Robot (6) 137
+1 Aunt Cass - Biggest Fan (6) 138
+1 Gadget Hackwrench - Creative Thinker (6) 139
+1 Gadget Hackwrench - Brilliant Bosun (6) 140
+1 Gadget Hackwrench - Brilliant Bosun (6) 217
+1 Zipper - Astute Decoy (6) 141
+1 Yokai - Enigmatic Inventor (6) 143
+1 Pleakley - Scientific Expert (6) 144
+1 Hiro Hamada - Robotics Prodigy (6) 145
+1 HeiHei - Not-So-Tricky Chicken (6) 146
+1 Sour Bill - Surly Henchman (6) 147
+1 Nick Wilde - Soggy Fox (6) 148
+1 Nick Wilde - Sly Fox (6) 150
+1 Gadget Hackwrench - Perceptive Mouse (6) 151
+1 Dr. Delbert Doppler - Fussy Astronomer (6) 152
+1 Tadashi Hamada - Baymax Inventor (6) 153
+1 Hiro Hamada - Team Leader (6) 154
+1 Tadashi Hamada - Gifted Roboticist (6) 155
+1 Baymax - Personal Healthcare Companion (6) 156
+1 Baymax - Personal Healthcare Companion (6) 218
+1 Baymax - Armored Companion (6) 157
+1 Yokai - Professor Callaghan (6) 158
+1 Hiram Flaversham - Intrigued Inventor (6) 159
+1 Yokai - Scientific Supervillain (6) 160
+1 Alice - Savvy Sailor (6) 161
+1 We Could Be Immortals (6) 162
+1 We Could Be Immortals (6) 219
+1 Sail The Azurite Sea (6) 163
+1 Helping Hand (6) 164
+1 Prepare Your Bot (6) 165
+1 Baymax's Healthcare Chip (6) 166
+1 Microbots (6) 167
+1 Jumbo Pop (6) 168
+1 Rescue Rangers Submarine - Mobile Headquarters (6) 169
+1 Institute of Technology - Prestigious University (6) 170
+1 Kakamora - Long-Range Specialist (6) 171
+1 Kakamora - Pirate Chief (6) 172
+1 Jim Hawkins - Stubborn Cabin Boy (6) 173
+1 Mr. Big - Shrewd Tycoon (6) 174
+1 Mr. Smee - Steadfast Mate (6) 175
+1 Mr. Smee - Captain of the Jolly Roger (6) 176
+1 Mullins - Seasoned Shipmate (6) 177
+1 Kohut - Trusted Marine (6) 178
+1 King Hubert - Phillip's Father (6) 179
+1 Hercules - Unwavering Demigod (6) 180
+1 John Silver - Ship's Cook (6) 181
+1 Mr. Arrow - Legacy's First Mate (6) 182
+1 Jim Hawkins - Rigging Specialist (6) 183
+1 Tuk Tuk - Big Buddy (6) 184
+1 Billy Bones - Space Sailor (6) 185
+1 Pluto - Guard Dog (6) 186
+1 Mickey Mouse - Night Watch (6) 187
+1 Cobra Bubbles - Former CIA (6) 188
+1 Gantu - Captain Crankyhead (6) 189
+1 Wreck-It Ralph - Ham Hands (6) 190
+1 Wreck-It Ralph - Ham Hands (6) 220
+1 Calhoun - Marine Sergeant (6) 191
+1 Captain Amelia - Commander of the Legacy (6) 192
+1 Captain Amelia - Commander of the Legacy (6) 221
+1 Jafar - Power-Hungry Vizier (6) 193
+1 John Silver - Stern Captain (6) 194
+1 Hot Potato (6) 195
+1 I'm Still Here (6) 196
+1 Twin Fire (6) 197
+1 Ambush! (6) 198
+1 Unfortunate Situation (6) 199
+1 King's Sensor Core (6) 200
+1 Training Dummy (6) 201
+1 Sunglasses (6) 202
+1 Treasure Mountain - Azurite Sea Island (6) 203
+1 Treasure Mountain - Azurite Sea Island (6) 222
+1 Galactic Council Chamber - Courtroom (6) 204
+1 Rhino - Motivational Speaker (7) 1
+1 King Stefan - New Father (7) 3
+1 Bolt - Superdog (7) 4
+1 Bolt - Superdog (7) 207
+1 Roger Radcliffe - Dog Lover (7) 5
+1 Trusty - Loyal Bloodhound (7) 6
+1 Peg - Natural Performer (7) 7
+1 Suzy - Master Seamstress (7) 8
+1 Mittens - Sassy Street Cat (7) 9
+1 Tramp - Street-Smart Dog (7) 10
+1 The Troubadour - Musical Narrator (7) 11
+1 Wendy Darling - Pirate Queen (7) 12
+1 Mirabel Madrigal - Hopeful Dreamer (7) 13
+1 Aurora - Waking Beauty (7) 14
+1 Aurora - Waking Beauty (7) 205
+1 Cinderella - The Right One (7) 15
+1 Mariano Guzman - Handsome Suitor (7) 16
+1 Candlehead - Dedicated Racer (7) 17
+1 Bolt - Dependable Friend (7) 18
+1 Pascal - Garden Chameleon (7) 19
+1 King Candy - Royal Racer (7) 20
+1 Penny - Bolt's Person (7) 21
+1 Fix-it Felix, Jr. - Pint-Sized Hero (7) 22
+1 Thunderbolt - Wonder Dog (7) 23
+1 The Prince - Vigilant Suitor (7) 24
+1 Isabela Madrigal - In the Moment (7) 25
+1 Calhoun - Courageous Rescuer (7) 26
+1 Wreck-It Ralph - Hero's Duty (7) 27
+1 Lady - Miss Park Avenue (7) 28
+1 Pongo - Dear Old Dad (7) 29
+1 Kenai - Protective Brother (7) 30
+1 Minnie Mouse - Storyteller (7) 31
+1 Perla - Nimble Seamstress (7) 32
+1 Koda - Smallish Bear (7) 34
+1 Mirabel Madrigal - Musically Talented (7) 35
+1 Mirabel Madrigal - Musically Talented (7) 206
+1 Calhoun - Battle-Tested (7) 36
+1 Pepa Madrigal - Sensitive Sister (7) 37
+1 So Much To Give (7) 38
+1 Restoring the Heart (7) 39
+1 The Family Madrigal (7) 40
+1 Amber Coil (7) 41
+1 Spaghetti Dinner (7) 42
+1 Kanine Krunchies (7) 43
+1 The Glass Slipper (7) 44
+1 The Glass Slipper (7) 208
+1 Kuzco - Temporary Whale (7) 45
+1 Tanana - Tribal Elder (7) 46
+1 Treasure Guardian - Foreboding Sentry (7) 47
+1 Honeymaren - Northuldra Guide (7) 48
+1 Iago - Giant Spectral Parrot (7) 49
+1 Chernabog - Creature of the Night (7) 50
+1 Jafar - Newly Crowned (7) 51
+1 Jafar - Newly Crowned (7) 210
+1 Hades - Fast Talker (7) 52
+1 Madame Medusa - Diamond Lover (7) 53
+1 Te Kā - Elemental Terror (7) 54
+1 Elsa - Trusted Sister (7) 55
+1 Madam Mim - Cheating Spellcaster (7) 56
+1 Giant Cobra - Ghostly Serpent (7) 57
+1 Te Kā - Lava Monster (7) 58
+1 Yzma - Transformed Kitten (7) 59
+1 Bucky - Nutty Rascal (7) 60
+1 Pain - Impudent Imp (7) 61
+1 Rajah - Ghostly Tiger (7) 62
+1 Mother Gothel - Vain Sorceress (7) 64
+1 Sven - Keen-Eyed Reindeer (7) 65
+1 Diablo - Spiteful Raven (7) 66
+1 Merlin - Clever Clairvoyant (7) 67
+1 Yzma - Above It All (7) 68
+1 Elsa - Ice Maker (7) 69
+1 Kenai - Magical Bear (7) 70
+1 Kuzco - Panicked Llama (7) 71
+1 Donald Duck - Flustered Sorcerer (7) 73
+1 Donald Duck - Flustered Sorcerer (7) 209
+1 The Queen - Jealous Beauty (7) 74
+1 Panic - High-Strung Imp (7) 75
+1 Archimedes - Exceptional Owl (7) 76
+1 Kashekim - Ancient Ruler (7) 77
+1 Dolores Madrigal - Within Earshot (7) 78
+1 Mufasa - Among the Stars (7) 79
+1 Magical Maneuvers (7) 80
+1 This Is My Family (7) 81
+1 Show Me More! (7) 82
+1 Show Me More! (7) 211
+1 Restoring the Crown (7) 83
+1 Amethyst Coil (7) 84
+1 Drizella - Spoiled Stepsister (7) 85
+1 Grewnge - Cannon Expert (7) 86
+1 Baymax - Low Battery (7) 87
+1 Thomas O'Malley - Feline Charmer (7) 88
+1 Pete - Pirate Scoundrel (7) 89
+1 Hiro Hamada - Future Champion (7) 90
+1 Cheshire Cat - Perplexing Feline (7) 91
+1 Shere Khan - Infamous Tiger (7) 92
+1 Basil - Secret Informer (7) 93
+1 Mad Hatter - Unruly Eccentric (7) 94
+1 Mad Hatter - Unruly Eccentric (7) 213
+1 Queen of Hearts - Unpredictable Bully (7) 95
+1 Yokai - Intellectual Schemer (7) 97
+1 Donald Duck - Lively Pirate (7) 98
+1 Berlioz - Mischievous Kitten (7) 99
+1 Lady - Elegant Spaniel (7) 100
+1 Yzma - Exasperated Schemer (7) 101
+1 Pacha - Trekmate (7) 102
+1 Tweedle Dee & Tweedle Dum - Strange Storytellers (7) 103
+1 Baymax - Giant Robot (7) 104
+1 Gizmoduck - Suited Up (7) 105
+1 Fidget - Sneaky Bat (7) 106
+1 Mr. Smee - Efficient Captain (7) 107
+1 Daisy Duck - Multitalented Pirate (7) 108
+1 John Silver - Vengeful Pirate (7) 109
+1 Tramp - Enterprising Dog (7) 110
+1 Tramp - Enterprising Dog (7) 212
+1 King of Hearts - Picky Ruler (7) 111
+1 Duchess - Elegant Feline (7) 112
+1 Anastasia - Bossy Stepsister (7) 113
+1 Pete - Space Pirate (7) 114
+1 Lady Tremaine - Bitterly Jealous (7) 115
+1 Wake Up, Alice! (7) 116
+1 He's a Tramp (7) 117
+1 The Return of Hercules (7) 118
+1 The Return of Hercules (7) 215
+1 Ink Geyser (7) 119
+1 Emerald Coil (7) 120
+1 Grandmother Fa - Spirited Elder (7) 121
+1 Queen of Hearts - Losing Her Temper (7) 122
+1 The Matchmaker - Unforgiving Expert (7) 123
+1 Denahi - Impatient Hunter (7) 124
+1 Stabbington Brother - 'Without a Patch (7) 125
+1 Belle - Mechanic Extraordinaire (7) 126
+1 Belle - Mechanic Extraordinaire (7) 217
+1 Cy-bug - Invasive Enemy (7) 127
+1 Stabbington Brother - With a Patch (7) 128
+1 Card Soldiers - Royal Troops (7) 129
+1 Cogsworth - Climbing Clock (7) 130
+1 Toby - Dogged Companion (7) 131
+1 Beagle Boys - Small-Time Crooks (7) 132
+1 Moana - Island Explorer (7) 134
+1 The Phantom Blot - Shadowy Figure (7) 135
+1 Beast - Frustrated Designer (7) 136
+1 Mushu - Majestic Dragon (7) 137
+1 Maurice - Unconventional Inventor (7) 138
+1 Goofy - Extreme Athlete (7) 139
+1 Lyle Tiberius Rourke - Crystallized Mercenary (7) 140
+1 Mulan - Imperial General (7) 141
+1 Baloo - Ol' Iron Paws (7) 142
+1 Ratigan - Nefarious Criminal (7) 143
+1 Ratigan - Nefarious Criminal (7) 216
+1 Sir Kay - Unruly Knight (7) 144
+1 Milo Thatch - Undaunted Scholar (7) 145
+1 Edgar Balthazar - Ambitious Butler (7) 146
+1 We've Got Company! (7) 147
+1 Out Of Order (7) 148
+1 Ruby Coil (7) 149
+1 Unconventional Tool (7) 150
+1 Maurice's Machine (7) 151
+1 Devil's Eye Diamond (7) 152
+1 Devil's Eye Diamond (7) 218
+1 Clarabelle - News Reporter (7) 153
+1 Scrooge McDuck - Resourceful Miser (7) 154
+1 Mattias - Arendelle General (7) 155
+1 Monsieur D'Arque - Despicable Proprietor (7) 157
+1 Gaetan Moliere - The Mole (7) 158
+1 Belle - Apprentice Inventor (7) 159
+1 Lucky - Runt of the Litter (7) 160
+1 Dawson - Puzzling Sleuth (7) 161
+1 Tamatoa - Happy as a Clam (7) 162
+1 Tamatoa - Happy as a Clam (7) 219
+1 HeiHei - Expanded Consciousness (7) 163
+1 Kida - Creative Thinker (7) 164
+1 Toulouse - Artistic Kitten (7) 165
+1 Marie - Favored Kitten (7) 166
+1 Pepper - Quick-Thinking Puppy (7) 167
+1 Freckles - Good Boy (7) 168
+1 Honey Lemon - Chemistry Whiz (7) 169
+1 Robin Hood - Eye for Detail (7) 170
+1 Penny the Orphan - Clever Child (7) 171
+1 Lady Kluck - Protective Confidant (7) 172
+1 Jasmine - Inspired Researcher (7) 173
+1 Jebidiah Farnsworth - Expedition Cook (7) 174
+1 Baymax - Upgraded Robot (7) 175
+1 Maid Marian - Badminton Ace (7) 176
+1 Water Has Memory (7) 177
+1 All is Found (7) 178
+1 All is Found (7) 220
+1 Sapphire Coil (7) 179
+1 Baymax's Charging Station (7) 180
+1 Dr. Calico - Green-Eyed Man (7) 181
+1 Akela - Wolf Pack Elder (7) 182
+1 Helga Sinclair - Tough as Nails (7) 183
+1 Bolt - Headstrong Dog (7) 184
+1 HeiHei - Rambling Rooster (7) 185
+1 Raya - Guidance Seeker (7) 186
+1 Tuk Tuk - Disarmingly Cute (7) 187
+1 Fa Zhou - War Hero (7) 188
+1 Razoul - Menacing Guard (7) 189
+1 Jafar - Aspiring Ruler (7) 190
+1 Tick-Tock - Relentless Crocodile (7) 191
+1 Kakamora - Band of Pirates (7) 192
+1 Mulan - Disguised Soldier (7) 193
+1 Orville - Albatross Air (7) 194
+1 Miss Bianca - Unwavering Agent (7) 195
+1 Mufasa - Respected King (7) 196
+1 Aladdin - Research Assistant (7) 197
+1 Bagheera - Guardian Jaguar (7) 198
+1 Gantu - Experienced Enforcer (7) 199
+1 Mickey Mouse - Inspirational Warrior (7) 200
+1 Mickey Mouse - Inspirational Warrior (7) 221
+1 Restoring Atlantis (7) 201
+1 Restoring Atlantis (7) 222
+1 Double Trouble (7) 202
+1 Steel Coil (7) 203
+1 Training Staff (7) 204
+1 Louie - One Cool Duck (8) 1
+1 Dewey - Lovable Showoff (8) 2
+1 Huey - Reliable Leader (8) 3
+1 Goofy - Groundbreaking Chef (8) 4
+1 Antonio Madrigal - Friend to All (8) 5
+1 Minnie Mouse - Daring Defender (8) 6
+1 Ludwig Von Drake - All-Around Expert (8) 7
+1 Charlotte La Bouff - Mardi Gras Princess (8) 8
+1 Tiana - Natural Talent (8) 9
+1 Mirabel Madrigal - Curious Child (8) 10
+1 Lady - Family Dog (8) 11
+1 Jim Dear - Beloved Husband (8) 12
+1 Gene - Niceland Resident (8) 13
+1 Perdita - On the Lookout (8) 14
+1 Rhino - One-Sixteenth Wolf (8) 15
+1 Darling Dear - Beloved Wife (8) 16
+1 The Colonel - Old Sheepdog (8) 17
+1 Chief Bogo - Commanding Officer (8) 18
+1 Pua - Protective Pig (8) 19
+1 Bruno Madrigal - Singing Seer (8) 20
+1 Kaa - Hypnotizing Python (8) 21
+1 Tramp - Dapper Rascal (8) 22
+1 King Candy - Sugar Rush Nightmare (8) 23
+1 Wreck-It Ralph - Big Lug (8) 24
+1 Wreck-It Ralph - Big Lug (8) 206
+1 Patch - Playful Pup (8) 25
+1 Rolly - Chubby Puppy (8) 26
+1 Perdita - Determined Mother (8) 27
+1 Perdita - Determined Mother (8) 207
+1 Pluto - Tried and True (8) 28
+1 Bolt - Down but Not Out (8) 29
+1 Rhino - Power Hamster (8) 30
+1 Antonio's Jaguar - Faithful Companion (8) 31
+1 Calhoun - Hard-Nosed Leader (8) 32
+1 Lady - Decisive Dog (8) 33
+1 Lady - Decisive Dog (8) 205
+1 Alma Madrigal - Accepting Grandmother (8) 34
+1 Clawhauser - Front Desk Officer (8) 35
+1 Joey - Blue Pigeon (8) 36
+1 Donald Duck - Coin Collector (8) 37
+1 Candy Drift (8) 39
+1 She's Your Person (8) 40
+1 Only So Much Room (8) 41
+1 It Means No Worries (8) 42
+1 It Means No Worries (8) 208
+1 Trials and Tribulations (8) 43
+1 The Nephews' Piggy Bank (8) 44
+1 Palace Guard - Spectral Sentry (8) 45
+1 Druun - Ravenous Plague (8) 46
+1 Madame Medusa - Deceiving Partner (8) 47
+1 Hades - Ruthless Tyrant (8) 48
+1 Lena Sabrewing - Pure Energy (8) 49
+1 Abu - Illusory Pachyderm (8) 50
+1 Bruno Madrigal - Single-Minded (8) 51
+1 Royal Guard - Octopus Soldier (8) 52
+1 Kuzco - Bored Royal (8) 53
+1 Megara - Part of the Plan (8) 54
+1 Yelana - Northuldra Leader (8) 55
+1 Ryder - Fleet-Footed Infiltrator (8) 56
+1 Bambi - Prince of the Forest (8) 57
+1 Poe De Spell - Magica's Brother (8) 58
+1 Madam Mim - Up to No Good (8) 59
+1 Elsa - Fierce Protector (8) 60
+1 Pinocchio - Strings Attached (8) 61
+1 Jiminy Cricket - Level-Headed and Wise (8) 62
+1 Bambi - Little Prince (8) 63
+1 Bambi - Little Prince (8) 209
+1 Monstro - Infamous Whale (8) 64
+1 Nero - Fearsome Crocodile (8) 65
+1 Magica De Spell - Shadow Form (8) 66
+1 Kuzco - Impulsive Llama (8) 67
+1 Kuzco - Impulsive Llama (8) 210
+1 Yzma - On Edge (8) 68
+1 Madam Mim - Rhino (8) 69
+1 Mother Gothel - Knows What's Best (8) 70
+1 Mother Gothel - Knows What's Best (8) 211
+1 Blue Fairy - Guiding Light (8) 71
+1 Anna - Magical Mission (8) 72
+1 The Sultan - Royal Apparition (8) 73
+1 Jafar - High Sultan of Lorcana (8) 74
+1 Camilo Madrigal - Center Stage (8) 75
+1 Flower - Shy Skunk (8) 76
+1 Forest Duel (8) 77
+1 They Never Come Back (8) 78
+1 Fantastical and Magical (8) 79
+1 Fantastical and Magical (8) 212
+1 Pull the Lever! (8) 80
+1 Into the Unknown (8) 81
+1 Into the Unknown (8) 213
+1 Everybody's Got a Weakness (8) 82
+1 Scarab (8) 83
+1 Ice Spikes (8) 84
+1 Wilhelmina Packard - The Radio Operator (8) 85
+1 Basil - Undercover Detective (8) 86
+1 Tramp - Observant Guardian (8) 87
+1 Chaca - Junior Chipmunk (8) 88
+1 Tipo - Junior Chipmunk (8) 89
+1 Bill the Lizard - Chimney Sweep (8) 90
+1 March Hare - Hare-Brained Eccentric (8) 91
+1 Fred - Major Science Enthusiast (8) 92
+1 Mad Dog - Karnage's First Mate (8) 93
+1 Dale - Bumbler (8) 94
+1 Louis - Endearing Alligator (8) 95
+1 Napoleon - Clever Bloodhound (8) 96
+1 Chip - Quick Thinker (8) 97
+1 Fred - Giant-Sized (8) 98
+1 Gadget Hackwrench - Quirky Scientist (8) 99
+1 Raya - Infiltration Expert (8) 100
+1 Rapunzel - High Climber (8) 101
+1 Rapunzel - High Climber (8) 214
+1 Flynn Rider - Breaking and Entering (8) 102
+1 Dormouse - Easily Agitated (8) 103
+1 Alice - Clumsy as Can Be (8) 104
+1 Queen of Hearts - Haughty Monarch (8) 105
+1 Hiro Hamada - Intuitive Thinker (8) 106
+1 Go Go Tomago - Cutting Edge (8) 107
+1 Don Karnage - Air Pirate Leader (8) 108
+1 Captain Hook - The Pirate King (8) 109
+1 Captain Hook - The Pirate King (8) 215
+1 Maui - Stubborn Trickster (8) 110
+1 Honey Lemon - Costumed Catalyst (8) 111
+1 Jock - Attentive Uncle (8) 112
+1 Archimedes - Resourceful Owl (8) 113
+1 He Who Steals and Runs Away (8) 114
+1 Stopped Chaos in Its Tracks (8) 115
+1 Wrong Lever! (8) 116
+1 Wrong Lever! (8) 216
+1 Undermine (8) 117
+1 Walk the Plank! (8) 118
+1 Chem Purse (8) 119
+1 Jeweled Collar (8) 120
+1 Gloyd Orangeboar - Fierce Competitor (8) 121
+1 Honest John - Shameless Schemer (8) 122
+1 Gyro Gearloose - Eccentric Inventor (8) 123
+1 Vanellope Von Schweetz - Spunky Speedster (8) 124
+1 Brutus - Fearsome Crocodile (8) 125
+1 The Dodo - Outlandish Storyteller (8) 126
+1 Alice - Courageous Keyholder (8) 127
+1 Lumiere - Nimble Candelabra (8) 128
+1 Gaston - Arrogant Showoff (8) 129
+1 Mushu - Fast-Talking Dragon (8) 130
+1 Cri-Kee - Part of the Team (8) 131
+1 Lafayette - Sleepy Basset Hound (8) 132
+1 Figaro - Tuxedo Cat (8) 133
+1 Thumper - Young Bunny (8) 134
+1 Wreck-It Ralph - Back Seat Driver (8) 135
+1 Tinker Bell - Insistent Fairy (8) 136
+1 Lilo - Causing an Uproar (8) 137
+1 Lilo - Causing an Uproar (8) 217
+1 LeFou - Cake Thief (8) 138
+1 Lumiere - Fired Up (8) 139
+1 The Coachman - Greedy Deceiver (8) 140
+1 Mulan - Charging Ahead (8) 141
+1 Mushu - Your Worst Nightmare (8) 142
+1 Mushu - Your Worst Nightmare (8) 218
+1 Mr. Snoops - Betrayed Partner (8) 143
+1 Friend Owl - Cantankerous Neighbor (8) 144
+1 Faline - Playful Fawn (8) 145
+1 Prince John - Fraidy-Cat (8) 146
+1 Nothing We Won't Do (8) 147
+1 Get Out! (8) 148
+1 Light the Fuse (8) 149
+1 Twitterpated (8) 150
+1 Most Everyone's Mad Here (8) 151
+1 The Sword of Shan-Yu (8) 152
+1 The Sword of Shan-Yu (8) 219
+1 The Mouse Queen - Ruler of Mousedom (8) 153
+1 Sir Pellinore - Seasoned Knight (8) 154
+1 Anita Radcliffe - Dog Lover (8) 155
+1 Olaf - Recapping the Story (8) 156
+1 Anna - Trusting Sister (8) 157
+1 Wasabi - Always Prepared (8) 158
+1 Go Go Tomago - Mechanical Engineer (8) 159
+1 The Wardrobe - Perceptive Friend (8) 160
+1 Mrs. Potts - Head Housekeeper (8) 161
+1 Jasmine - Resourceful Infiltrator (8) 162
+1 Little Sister - Responsible Rabbit (8) 163
+1 Adelaide Bonfamille - Patron of the Arts (8) 164
+1 Nani - Heist Mastermind (8) 165
+1 Stitch - Experiment 626 (8) 166
+1 Stitch - Experiment 626 (8) 220
+1 Ratigan - Greedy Genius (8) 167
+1 Arthur - Determined Squire (8) 168
+1 Bernard - Over-Prepared (8) 169
+1 Aladdin - Vigilant Guard (8) 170
+1 Jasmine - Steady Strategist (8) 171
+1 Jasmine - Steady Strategist (8) 221
+1 Roquefort - Lock Expert (8) 172
+1 Jumba Jookiba - Critical Scientist (8) 173
+1 Geppetto - Skilled Craftsman (8) 174
+1 Heads Held High (8) 175
+1 Pouncing Practice (8) 176
+1 Down in New Orleans (8) 177
+1 Television Set (8) 178
+1 Belle's Favorite Book (8) 179
+1 Atlantean Crystal (8) 180
+1 Atitaya - Fang General (8) 181
+1 Bobby - Purple Pigeon (8) 182
+1 Magic Carpet - Phantom Rug (8) 183
+1 Prince Achmed - Rival Suitor (8) 184
+1 Dumptruck - Karnage's Second Mate (8) 185
+1 General Li - Head of the Imperial Army (8) 187
+1 Monterey Jack - Defiant Protector (8) 188
+1 Genie - Satisfied Dragon (8) 189
+1 Toby Turtle - Wary Friend (8) 190
+1 Arianna - Queen of Corona (8) 191
+1 Zipper - Flying Ranger (8) 192
+1 Khan - War Horse (8) 193
+1 Vinnie - Green Pigeon (8) 194
+1 Iago - Out of Reach (8) 195
+1 Nathaniel Flint - Notorious Pirate (8) 196
+1 Vincenzo Santorini - The Explosives Expert (8) 197
+1 Namaari - Single-Minded Rival (8) 198
+1 Mickey Mouse - Giant Mouse (8) 199
+1 Stitch - Alien Troublemaker (8) 200
+1 Desperate Plan (8) 201
+1 Desperate Plan (8) 222
+1 Beyond the Horizon (8) 202
+1 Quick Shot (8) 203
+1 Hamster Ball (8) 204
+1 Triton's Daughters - Discordant Chorus (Q1) 16
+1 Prince Eric - Grim Groom (Q1) 13
+1 Bruno Madrigal - Unspeakable Seer (Q1) 2
+1 Gaston - Egotistical Bully (Q1) 5
+1 Mad Hatter - Sinister Host (Q1) 10
+1 Jetsam - Wicked Whisperer (Q1) 9
+1 Magica De Spell - Shadowy Sorceress (Q1) 11
+1 Flotsam - Wicked Defender (Q1) 4
+1 Tamatoa - Grabby Crab (Q1) 15
+1 Shark - Toothy Terror (Q1) 14
+1 Anna - Ensnared Sister (Q1) 1
+1 Minnie Mouse - Wild-Eyed Diver (Q1) 12
+1 Lash Out (Q1) 22
+1 Lightning Storm (Q1) 23
+1 Choppy Waters (Q1) 18
+1 Entangling Magic (Q1) 20
+1 Tentacle Swipe (Q1) 25
+1 Capsize (Q1) 17
+1 Whirlpool (Q1) 28
+1 Crushing Wave (Q1) 19
+1 Typhoon (Q1) 27
+1 Riptide (Q1) 24
+1 Ursula's Stolen Trident (Q1) 31
+1 Ursula's Contract (Q1) 30
+1 The Hexwell Crown (Q1) 29
+1 Tsunami (Q1) 26
+1 Hercules - Manipulated Hero (Q1) 7

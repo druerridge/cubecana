@@ -35,7 +35,7 @@ function populateCubes(cubes) {
     cubes.forEach(cube => {
         if ("content" in document.createElement("template")) {
             const template = document.getElementById("cube-list-element-template");
-            const cubeDraftLink = `${window.location.origin}/cube/${cube.id}/draft`;
+            const viewCubeLink = `${window.location.origin}/cube/${cube.id}`;
 
             let clone = template.content.cloneNode(true);
             clone.getElementById("element-name").textContent = cube.name;
@@ -44,8 +44,8 @@ function populateCubes(cubes) {
             clone.getElementById("element-times-drafted").textContent = cube.timesDrafted;
             clone.getElementById("element-author").textContent = "by: " + cube.author;
             clone.getElementById("copy-link-btn").addEventListener("click", function() {
-                navigator.clipboard.writeText(cubeDraftLink);
-                popToastNotification(`Copied draft link to your clipboard`);
+                navigator.clipboard.writeText(viewCubeLink);
+                popToastNotification(`Copied cube link to your clipboard`);
             });
             clone.getElementById("element-link").href = `${window.location.origin}/cube/${cube.id}/inspect-list`;
             if (!isValidCardlistUrl(cube.link)) {

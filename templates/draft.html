@@ -5,75 +5,249 @@
     {% include 'shared/common_head.html' %}
       
     <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .cube-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #2c2c2c;
+            border-radius: 10px;
+        }
+        .main-content-area {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+        .draft-section {
+            flex: 1;
+            background-color: #333;
+            border: 1px solid #555;
+            border-radius: 12px;
+            padding: 30px;
+            min-width: 0;
+        }
+        .draft-section h1 {
+            color: white;
+            margin: 0 0 20px 0;
+            font-size: 1.8em;
+            text-align: center;
+        }
         textarea {
             width: 100%;
             height: 300px;
+            background-color: #222;
+            color: white;
+            border: 1px solid #555;
+            border-radius: 8px;
+            padding: 15px;
+            font-family: monospace;
+            resize: vertical;
+        }
+        textarea:focus {
+            outline: none;
+            border-color: #2196F3;
+            box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.2);
+        }
+        #dropZone {
+            border: 2px dashed #555;
+            padding: 30px;
+            text-align: center;
+            cursor: pointer;
+            background-color: #222;
+            border-radius: 8px;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+        }
+        #dropZone:hover {
+            color: #2196F3;
+            border-color: #2196F3;
+            background-color: rgba(33, 150, 243, 0.1);
+        }
+        .instructions {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 1px solid #444;
+            text-align: left;
+        }
+        .instructions p {
+            margin: 0 0 10px 0;
+            color: #ccc;
+        }
+        .instructions ol {
+            color: #ccc;
+            padding-left: 20px;
+            text-align: left;
+        }
+        .instructions li {
+            margin: 8px 0;
+            line-height: 1.5;
+            text-align: left;
+        }
+        .instructions a {
+            color: #2196F3;
+            text-decoration: none;
+        }
+        .instructions a:hover {
+            text-decoration: underline;
+        }
+        .action-button {
+            font-size: 16px;
+            padding: 12px 24px;
+            margin: 10px 5px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            min-width: 140px;
+        }
+        .draft-button {
+            background: linear-gradient(45deg, #ff6b35, #ff8c42);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+        .draft-button:hover:not(:disabled) {
+            background: linear-gradient(45deg, #ff5722, #ff7043);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+        .download-button {
+            background: linear-gradient(45deg, #8e24aa, #9c27b0);
+            color: white;
+            box-shadow: 0 4px 15px rgba(142, 36, 170, 0.3);
+        }
+        .download-button:hover:not(:disabled) {
+            background: linear-gradient(45deg, #7b1fa2, #8e24aa);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(142, 36, 170, 0.4);
+        }
+        .action-button:disabled {
+            background: #666;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        .danger-button {
+            background: linear-gradient(45deg, #f44336, #ff5722);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-left: 10px;
+            transition: all 0.3s ease;
+        }
+        .danger-button:hover {
+            background: linear-gradient(45deg, #d32f2f, #f44336);
+            transform: translateY(-1px);
         }
         #errorText {
-            color: red;
+            color: white;
             font-weight: bold;
             display: none;
+            background: linear-gradient(45deg, #f44336, #ff5722);
+            width: calc(100% - 20px);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #d32f2f;
+        }
+        #fileInfo {
+            background-color: #222;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            border: 1px solid #555;
+        }
+        #fileName {
+            color: #2196F3;
+            font-weight: bold;
+        }
+        
+        /* Mobile responsive layout */
+        @media (max-width: 768px) {
+            .main-content-area {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .cube-content {
+                padding: 15px;
+            }
+            .draft-section {
+                padding: 20px;
+            }
+            .action-button {
+                width: 100%;
+                margin: 5px 0;
+            }
         }
     </style>
 </head>
 <body>
     {% include 'shared/content_header.html' %}
-    <div id="errorText" style="color: red; display: none; background-color: lightcoral; width: 100%; padding: 10px;" disabled>An error occurred. Please try again.</div>
-    <div style="display: flex; justify-content: space-between;">
-        <div style="width: 48%;">
-            <h1>TTS Export Converter <br />(recommended)</h1>
-            <div style="width: fit-content; margin: auto; text-align: left;">
-                <div id="tts-instructions" style="list-style-position: inside;">
-                    <p>Convert Instructions:
+    <div class="cube-content">
+        <div id="errorText">An error occurred. Please try again.</div>
+        <div class="main-content-area">
+            <div class="draft-section">
+                <h1>TTS Export Converter<br><small style="font-size: 0.7em; color: #ccc;">(recommended)</small></h1>
+                <div class="instructions">
+                    <p><strong>Convert Instructions:</strong></p>
                     <ol>
-                        <li>On <a href="https://dreamborn.ink">dreamborn.ink</a>: go to your cube's page</li>
+                        <li>On <a href="https://dreamborn.ink" target="_blank">dreamborn.ink</a>: go to your cube's page</li>
                         <li>Export as TTS: menu > export > TTS > Download JSON</li>
                         <li>Drag and Drop: the file from your downloads folder below</li>
                         <li>Click Convert to download</li>
-                    </ol><br />
-                    <p>Note: No-longer supports card versions. Use the advanced card list (right).</p>
-                    <br>
+                    </ol>
+                    <p><strong>Note:</strong> No-longer supports card versions. Use the advanced card list (right).</p>
+                </div>
+                
+                <div>
+                    <h2 style="color: white; margin: 20px 0 10px 0;">Drag and Drop TTS Export</h2>
+                    <div id="dropZone">
+                        Drag and drop a .json file here or click to upload
+                    </div>
+                    <div id="fileInfo" style="display: none;">
+                        <span id="fileName"></span>
+                        <button id="removeFileButton" class="danger-button">Remove file</button>
+                    </div>
+                    <input type="file" id="fileInput" style="display: none;">
+                </div>
+                
+                <div style="text-align: center; margin: 20px 0;">
+                    <button id="ttsSaveButton" class="action-button download-button" disabled>Download</button>
+                    <button id="ttsDraftButton" class="action-button draft-button" disabled>Draft Now</button>
+                </div>
+                
+                <div class="instructions">
+                    <p><strong>Draft Instructions:</strong></p>
+                    <ol>
+                        <li>Press convert above to download</li>
+                        <li><a href="https://draftmancer.com/" target="_blank">draftmancer.com</a> > Settings > Scroll to bottom > <br />Drag-drop the file where it says "Upload a custom card list file by..."</li>
+                        <li>Close Settings Window > Bots: 5 > Timer: 0 > "Start"</li>
+                    </ol>
                 </div>
             </div>
             
-            <div style="margin-bottom: 20px;">
-                <h2>Drag and Drop TTS Export</h2>
-                <div id="dropZone" style="border: 2px dashed #ccc; padding: 20px; text-align: center; cursor: pointer;">
-                    Drag and drop a .json file here or click to upload
-                </div>
-                <div id="fileInfo" style="display: none; margin-top: 10px;">
-                    <span id="fileName"></span>
-                    <button id="removeFileButton" class="danger-button">Remove file</button>
-                </div>
-                <input type="file" id="fileInput" style="display: none;">
-            </div>
-            <style>
-                #dropZone:hover {
-                    color: blue;
-                }
-            </style>
-            <button id="ttsSaveButton" class="action-button" disabled>Download</button>
-            <button id="ttsDraftButton" class="action-button" disabled>Draft Now</button>
-            <div style="width: fit-content; margin: auto; text-align: left;">
-                <div id="draft-instructions" style="list-style-position: inside;">
-                    <p>Draft Instructions:
-                    <ol>
-                        <li>Press convert above to download</li>
-                        <li>https://draftmancer.com/ > Settings > Scroll to bottom > <br />Drag-drop the file where it says "Upload a custom card list file by..."</li>
-                        <li>Close Settings Window > Bots: 5 > Timer: 0 > "Start"</li>
-                    </ol><br />
+            <div class="draft-section">
+                <h1>Card List Converter</h1>
+                {% include 'shared/common_card_list_input.html' %}
+                <div style="text-align: center; margin: 20px 0;">
+                    <button id="cardListSaveButton" class="action-button download-button" disabled>Download</button>
+                    <button id="cardListDraftButton" class="action-button draft-button" disabled>Draft Now</button>
                 </div>
             </div>
         </div>
-        
-        <div style="width: 48%;">
-            <h1>Card List Converter</h1>
-            {% include 'shared/common_card_list_input.html' %}
-            <button id="cardListSaveButton" class="action-button" disabled>Download</button>
-            <button id="cardListDraftButton" class="action-button" disabled>Draft Now</button>
-        </div>
+        {% include 'shared/cube_settings_input.html' %}
     </div>
-    {% include 'shared/cube_settings_input.html' %}
 
     <script type="module" src="{{ url_for('static', filename='js/draft.js') }}"></script>
     {% include 'shared/content_footer.html' %}

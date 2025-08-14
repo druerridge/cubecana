@@ -49,7 +49,10 @@ class CubecanaCube:
         for printing_id, count in self.printing_id_to_count.items():
             api_card = id_to_api_card.get(printing_id.card_id)
             if api_card:
-                full_name_to_card_count[f"{api_card.full_name} ({printing_id.set_code}) {printing_id.collector_id}"] = count
+                if printing_id == api_card.default_printing.printing_id():
+                    full_name_to_card_count[f"{api_card.full_name}"] = count
+                else:
+                    full_name_to_card_count[f"{api_card.full_name} ({printing_id.set_code}) {printing_id.collector_id}"] = count
         return api.Cube(
             name=self.name,
             cardIdToCardCount=printing_id_str_to_count,

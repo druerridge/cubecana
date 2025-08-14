@@ -65,6 +65,14 @@ def serve_loading():
 def serve_draft():
   return render_template('draft.html')
 
+@app.route('/cube/<string:cube_id>/draft', methods=['GET'])
+def serve_view_cube_legacy(cube_id):
+  cube = cube_manager.get_cube(cube_id)
+  if not cube:
+    raise lcc_error.CubeNotFoundError("Cube not found")
+  cube_manager.increment_page_views(cube_id)
+  return render_template('view-cube.html')
+
 @app.route('/cube/<string:cube_id>', methods=['GET'])
 def serve_view_cube(cube_id):
   cube = cube_manager.get_cube(cube_id)

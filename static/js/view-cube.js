@@ -8,7 +8,7 @@ let intervalId = setInterval(() => {
 }, 500);
 
 const currentUrl = window.location.href;
-const cubeId = currentUrl.split('/cube/')[1];
+const cubeId = currentUrl.split('/cube/')[1].split("/draft")[0];
 const draftNowButton = document.getElementById('draft-now-button');
 const viewListButton = document.getElementById('view-list-button');
 const cubeTitle = document.getElementById('cube-title');

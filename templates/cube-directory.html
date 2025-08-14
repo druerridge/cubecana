@@ -5,115 +5,179 @@
     {% include 'shared/common_head.html' %}
 
     <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .cube-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 12px;
+            background-color: #2c2c2c;
+            border-radius: 10px;
+        }
+        .page-header {
+            text-align: center;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #333, #444);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #555;
+            position: relative;
+            overflow: hidden;
+        }
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255, 107, 53, 0.1), rgba(142, 36, 170, 0.1));
+            pointer-events: none;
+        }
+        .page-header h1 {
+            color: white;
+            margin: 0 0 12px 0;
+            font-size: 2.2em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            position: relative;
+            z-index: 1;
+        }
+        .controls-section {
+            background-color: #333;
+            border: 1px solid #555;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .action-button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 6px 4px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            background: linear-gradient(45deg, #ff6b35, #ff8c42);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+            text-decoration: none;
+            display: inline-block;
+        }
+        .action-button:hover {
+            background: linear-gradient(45deg, #ff5722, #ff7043);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
         .container {
-            min-width: 55%;
-            max-width: 55em;
-            height: 80%;
-            overflow-y: hidden;
-            border: 1px solid #ccc;
-            padding: 8px;
-            margin: 15px auto; /* Center the container */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example shadow */
-        }
-        .cube-list-element-template {
-            border-bottom: 1px solid #ddd;
-            padding: 10px 0;
-            text-decoration: none; /* Remove underline from links */
-            color: inherit; /* Inherit text color */
-            display: block; /* Make the entire item clickable */
-        }
-        .item:last-child {
-            border-bottom: none;
-        }
-        .cube-tags {
-            margin-top: 5px;
+            background-color: #333;
+            border: 1px solid #555;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            max-height: 70vh;
+            overflow-y: auto;
         }
         .cube-element {
-            margin-bottom: 10px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #444;
+            border: 1px solid #666;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .cube-element:hover {
+            background-color: #4a4a4a;
+            border-color: #ff6b35;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
         .cube-tag {
             display: inline-block;
-            background-color: gray;
+            background-color: #666;
             color: white;
             border-radius: 3px;
             padding: 2px 5px;
             margin-right: 5px;
-            font-size: 12px;
+            font-size: 11px;
+            border: 1px solid #777;
         }
         .clickable-cube-tag:hover {
             cursor: pointer;
-            background-color: darkgray;
+            background-color: #ff6b35;
+            border-color: #ff8c42;
         }
         .name {
             text-align: left;
             vertical-align: top;
+            color: white;
+            font-weight: bold;
         }
         .cards {
             text-align: left;
             vertical-align: top;
+            color: #ccc;
         }
         .author {
             text-align: right;
-            color: gray;
+            color: #aaa;
             vertical-align: top;
-        }
-        .cube-tags {
-            text-align: left;
-            vertical-align: middle;
-            align-items: start;
         }
         .last-updated {
             text-align: right;
-            color: gray;
+            color: #aaa;
             vertical-align: bottom;
-        }
-        #old-cube-dir {
-            display: inline-block;
-            font-size: 14px;
-            color: blue;
-            padding: 5px 10px;
-            border-radius: 3px;
-            text-decoration: underline;
-            margin-top: 10px;
-        }
-        .cards {
-            color:antiquewhite;
-        }
-        .cube-dir-btn-img {
-            vertical-align: top;
+            font-size: 0.9em;
         }
         .cube-dir-btn {
             text-align: center;
-            padding: 2px;
-            color: #f8f8ffe7; 
-            border-radius: 3px;
-            margin: 1px;
-            padding: 2px 3px;
-            cursor: pointer;    
+            padding: 6px 10px;
+            color: white; 
+            border-radius: 6px;
+            margin: 2px;
+            cursor: pointer;
+            border: none;
+            font-size: 12px;
+            transition: all 0.3s ease;
         }
         #copy-link-btn {
-            background-color: blue;
+            background: linear-gradient(45deg, #2196F3, #42A5F5);
+            box-shadow: 0 2px 8px rgba(33, 150, 243, 0.3);
+        }
+        #copy-link-btn:hover {
+            background: linear-gradient(45deg, #1976D2, #2196F3);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(33, 150, 243, 0.4);
         }
         #inspect-btn {
-            background-color: purple;
+            background: linear-gradient(45deg, #9C27B0, #BA68C8);
+            box-shadow: 0 2px 8px rgba(156, 39, 176, 0.3);
+        }
+        #inspect-btn:hover {
+            background: linear-gradient(45deg, #7B1FA2, #9C27B0);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(156, 39, 176, 0.4);
         }
         #inspect-btn:disabled {
-            background-color: #ccc;
+            background: #666;
             cursor: default;
+            transform: none;
+            box-shadow: none;
         }
         #element-draft {
-            background-color: green;
+            background: linear-gradient(45deg, #4CAF50, #66BB6A);
+            box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
         }
-        #cube-element-div {
-            border: 1px solid #ccc; 
-            border-radius: 5px; 
-            padding: 8px; 
-            margin-bottom: 8px; 
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        #element-draft:hover {
+            background: linear-gradient(45deg, #388E3C, #4CAF50);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
         }
         #element-row-1 {
             text-align: left;
@@ -121,7 +185,7 @@
             align-items: start;
             display: table; 
             width:100%; 
-            margin: 0; 
+            margin: 0 0 8px 0; 
             table-layout: fixed;
         }
         #element-row-2 {
@@ -139,80 +203,129 @@
             width: 55%;
         }
         .active-filter-tag {
-            margin-right: 10px;
-            padding: 5px;
-            border: 1px solid gray;
-            border-radius: 3px;
-            background-color: lightgray;
+            margin-right: 8px;
+            padding: 6px 12px;
+            border: 1px solid #666;
+            border-radius: 6px;
+            background: linear-gradient(45deg, #ff6b35, #ff8c42);
+            color: white;
             cursor: pointer;
-            transition: background 0.2s, color 0.2s, border-color 0.2s;
+            transition: all 0.3s ease;
+            font-weight: bold;
         }
         .active-filter-tag:hover {
-            background-color: #ff4d4d;
+            background: linear-gradient(45deg, #d32f2f, #f44336);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        #loading-text {
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            font-style: italic;
+        }
+        select, label {
+            background-color: #444;
             color: white;
-            border-color: #b30000;
+            border: 1px solid #666;
+            border-radius: 4px;
+            padding: 6px;
+            margin: 4px;
+        }
+        select:focus {
+            border-color: #ff6b35;
+            outline: none;
+        }
+        #pagination button {
+            background: linear-gradient(45deg, #ff6b35, #ff8c42);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 16px;
+            margin: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        #pagination button:hover:not(:disabled) {
+            background: linear-gradient(45deg, #ff5722, #ff7043);
+            transform: translateY(-1px);
+        }
+        #pagination button:disabled {
+            background: #666;
+            cursor: default;
+            transform: none;
+        }
+        #page-numbers {
+            color: #ccc;
+            margin: 0 10px;
         }
     </style>
 </head>
 <body>
     {% include 'shared/content_header.html' %}
 
-    <h1 style="display: inline-block;">Lorcana Cube Directory</h1><br />
+    <div class="cube-content">
+        <div class="page-header">
+            <h1>Lorcana Cube Directory</h1>
+        </div>
 
-    <a href="add-cube"><button id="add-cube-btn" class="action-button">Add Cube</button></a>
+        <div class="controls-section">
+            <a href="add-cube"><button id="add-cube-btn" class="action-button">Add Cube</button></a>
 
-    <div id="active-filters" style="margin-top: 10px;">
-        <span id="active-filters-label" style="font-weight: bold;">Active Filters:</span>
-        <div id="filters-container" style="display: inline-block; margin-left: 10px;"></div>
-    </div>
-
-    <div style="margin-top: 20px;">
-        <label for="sortOptions">Sort by:</label>
-        <select id="sortOptions">
-            <option value="rank">Popularity</option>
-            <option value="date">Date</option>
-        </select>
-        <label for="orderOptions">Order:</label>
-        <select id="orderOptions">
-            <option value="desc">Descending</option>
-            <option value="asc">Ascending</option>
-        </select>
-    </div>
-
-    <template class="cube-element" id="cube-list-element-template">
-        <div id="cube-element-div">
-            <div id="element-row-1" class="element-row-1">
-                <div id="element-row-1-left">
-                    <span id="element-name" class="name">INSERT_NAME</span>
-                    <span class="cards" style="white-space: nowrap;">( <span id="element-cards" >CARD_COUNT</span> <img src="static/img/deck-of-cards.png" alt="Card Count (deck of cards)" height="14px"/> <span hidden="true" id="element-times-viewed" >VIEWED_COUNT</span> <img hidden="true" src="static/img/eye.png" alt="Times Drafted (hand of cards)" height="14px"/> <span hidden="true" id="element-times-drafted" >DRAFTED_COUNT</span> <img hidden="true" src="static/img/hand-of-cards.png" alt="Times Drafted (hand of cards)" height="14px"/> ) </span>
-                </div>
-                <div id="element-row-1-right">
-                    <span><button id="copy-link-btn" class="cube-dir-btn"><img class="cube-dir-btn-img" src="static/img/link.png" height="14px"/> Share</button></span>
-                    <span><a href="LINK" id="element-link"><button id="inspect-btn" class="cube-dir-btn"><img class="cube-dir-btn-img" src="static/img/magnifying.png" height="14px"/> View</button></a></span>
-                    <span><button id="element-draft" class="cube-dir-btn" ><img class="cube-dir-btn-img" src="static/img/hand-of-cards.png" height="14px"/> Draft!</button></span>   
-                </div>
+            <div id="active-filters" style="margin-top: 15px;">
+                <span id="active-filters-label" style="font-weight: bold; color: white;">Active Filters:</span>
+                <div id="filters-container" style="display: inline-block; margin-left: 10px;"></div>
             </div>
-            <div id="element-row-2" class="element-row-2" >
-                <div id="element-left-2" style="text-align: left; display: table-cell;">
-                    <span id="element-author" class="author">AUTHOR</span>
-                    <span id="element-tags" class="cube-tags" style="text-align: left;">
-                        <!-- <span class="cube-tag">Synergy</span> -->
-                    </span>
-                </div>
-                <div id="element-last-updated" class="last-updated" style="text-align: right; display: table-cell;">last updated: 12-04-1991</div>
+
+            <div style="margin-top: 15px;">
+                <label for="sortOptions">Sort by:</label>
+                <select id="sortOptions">
+                    <option value="rank">Popularity</option>
+                    <option value="date">Date</option>
+                </select>
+                <label for="orderOptions">Order:</label>
+                <select id="orderOptions">
+                    <option value="desc">Descending</option>
+                    <option value="asc">Ascending</option>
+                </select>
             </div>
         </div>
-    </template>
 
-    <div class="container" id="cubeContainer">
-        <!-- Items will be populated here by JavaScript -->
-         <div id="loading-text">Loading Cubes...</div>
-    </div>
+        <template class="cube-element" id="cube-list-element-template">
+            <div class="cube-element">
+                <div id="element-row-1" class="element-row-1">
+                    <div id="element-row-1-left">
+                        <span id="element-name" class="name">INSERT_NAME</span>
+                        <span class="cards" style="white-space: nowrap;">( <span id="element-cards" >CARD_COUNT</span> <img src="static/img/deck-of-cards.png" alt="Card Count (deck of cards)" height="14px"/> <span hidden="true" id="element-times-viewed" >VIEWED_COUNT</span> <img hidden="true" src="static/img/eye.png" alt="Times Drafted (hand of cards)" height="14px"/> <span hidden="true" id="element-times-drafted" >DRAFTED_COUNT</span> <img hidden="true" src="static/img/hand-of-cards.png" alt="Times Drafted (hand of cards)" height="14px"/> ) </span>
+                    </div>
+                    <div id="element-row-1-right">
+                        <span><button id="copy-link-btn" class="cube-dir-btn"><img class="cube-dir-btn-img" src="static/img/link.png" height="14px"/> Share</button></span>
+                        <span><a href="LINK" id="element-link"><button id="inspect-btn" class="cube-dir-btn"><img class="cube-dir-btn-img" src="static/img/magnifying.png" height="14px"/> View</button></a></span>
+                        <span><button id="element-draft" class="cube-dir-btn" ><img class="cube-dir-btn-img" src="static/img/hand-of-cards.png" height="14px"/> Draft!</button></span>   
+                    </div>
+                </div>
+                <div id="element-row-2" class="element-row-2" >
+                    <div id="element-left-2" style="text-align: left; display: table-cell;">
+                        <span id="element-author" class="author">AUTHOR</span>
+                        <span id="element-tags" class="cube-tags" style="text-align: left;">
+                            <!-- <span class="cube-tag">Synergy</span> -->
+                        </span>
+                    </div>
+                    <div id="element-last-updated" class="last-updated" style="text-align: right; display: table-cell;">last updated: 12-04-1991</div>
+                </div>
+            </div>
+        </template>
 
-    <div id="pagination" style="text-align: center; margin-top: 20px;">
-        <button id="prev-page" disabled>Previous</button>
-        <span id="page-numbers"></span>
-        <button id="next-page">Next</button>
+        <div class="container" id="cubeContainer">
+            <!-- Items will be populated here by JavaScript -->
+             <div id="loading-text">Loading Cubes...</div>
+        </div>
+
+        <div id="pagination" style="text-align: center; margin-top: 20px;">
+            <button id="prev-page" disabled>Previous</button>
+            <span id="page-numbers"></span>
+            <button id="next-page">Next</button>
+        </div>
     </div>
 
     <script type="module" src="{{ url_for('static', filename='js/cube-directory.js') }}"></script>

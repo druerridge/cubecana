@@ -43,19 +43,16 @@ function populateCubes(cubes) {
             clone.getElementById("element-times-viewed").textContent = cube.timesViewed;
             clone.getElementById("element-times-drafted").textContent = cube.timesDrafted;
             clone.getElementById("element-author").textContent = "by: " + cube.author;
-            clone.getElementById("copy-link-btn").addEventListener("click", function() {
-                navigator.clipboard.writeText(viewCubeLink);
-                popToastNotification(`Copied cube link to your clipboard`);
+            
+            const cubeElement = clone.querySelector('.cube-element');
+            cubeElement.addEventListener("click", function(event) {
+                if (!event.target.closest('button') && !event.target.closest('a')) {
+                    window.location.href = viewCubeLink;
+                }
             });
-            clone.getElementById("element-link").href = `${window.location.origin}/cube/${cube.id}/inspect-list`;
-            if (!isValidCardlistUrl(cube.link)) {
-                clone.getElementById("element-link").href = "/404.html";
-                clone.getElementById("element-link").style.disabled = true;
-                clone.getElementById("inspect-btn").style.disabled = true;
-                clone.getElementById("inspect-btn").disabled = true;
-                clone.getElementById("element-link").disabled = true;
-            }
-            clone.getElementById("element-draft").addEventListener("click", function() {
+            
+            clone.getElementById("element-draft").addEventListener("click", function(event) {
+                event.stopPropagation(); // Prevent the cube element click event
                 let newTab = window.open("/loading");
                 const cubeDraftmancerUrl = `${window.location.origin}/api/cube/${cube.id}/draftmancerFile`;
                 request(cubeDraftmancerUrl, null, (responseText) => {
@@ -76,7 +73,8 @@ function populateCubes(cubes) {
                 if (!tag.startsWith('Power:')) {
                     tagElement.classList.add("clickable-cube-tag");
                 
-                    tagElement.addEventListener('click', () => {
+                    tagElement.addEventListener('click', (event) => {
+                        event.stopPropagation(); // Prevent the cube element click event
                         if (!tagsToFilterBy) {
                             tagsToFilterBy = [];
                         } 

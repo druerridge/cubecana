@@ -91,12 +91,17 @@
             cursor: pointer;
             transition: all 0.3s ease;
             position: relative;
+            text-decoration: none;
+            color: inherit;
         }
         .cube-element:hover {
             background-color: #4a4a4a;
             border-color: #ff6b35;
             transform: translateY(-2px);
             box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .cube-element:hover .name {
+            color: #ff6b35;
         }
         .cube-tag {
             display: inline-block;
@@ -145,30 +150,6 @@
             border: none;
             font-size: 12px;
             transition: all 0.3s ease;
-        }
-        #copy-link-btn {
-            background: linear-gradient(45deg, #2196F3, #42A5F5);
-            box-shadow: 0 2px 8px rgba(33, 150, 243, 0.3);
-        }
-        #copy-link-btn:hover {
-            background: linear-gradient(45deg, #1976D2, #2196F3);
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(33, 150, 243, 0.4);
-        }
-        #inspect-btn {
-            background: linear-gradient(45deg, #9C27B0, #BA68C8);
-            box-shadow: 0 2px 8px rgba(156, 39, 176, 0.3);
-        }
-        #inspect-btn:hover {
-            background: linear-gradient(45deg, #7B1FA2, #9C27B0);
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(156, 39, 176, 0.4);
-        }
-        #inspect-btn:disabled {
-            background: #666;
-            cursor: default;
-            transform: none;
-            box-shadow: none;
         }
         #element-draft {
             background: linear-gradient(45deg, #4CAF50, #66BB6A);
@@ -299,8 +280,6 @@
                         <span class="cards" style="white-space: nowrap;">( <span id="element-cards" >CARD_COUNT</span> <img src="static/img/deck-of-cards.png" alt="Card Count (deck of cards)" height="14px"/> <span hidden="true" id="element-times-viewed" >VIEWED_COUNT</span> <img hidden="true" src="static/img/eye.png" alt="Times Drafted (hand of cards)" height="14px"/> <span hidden="true" id="element-times-drafted" >DRAFTED_COUNT</span> <img hidden="true" src="static/img/hand-of-cards.png" alt="Times Drafted (hand of cards)" height="14px"/> ) </span>
                     </div>
                     <div id="element-row-1-right">
-                        <span><button id="copy-link-btn" class="cube-dir-btn"><img class="cube-dir-btn-img" src="static/img/link.png" height="14px"/> Share</button></span>
-                        <span><a href="LINK" id="element-link"><button id="inspect-btn" class="cube-dir-btn"><img class="cube-dir-btn-img" src="static/img/magnifying.png" height="14px"/> View</button></a></span>
                         <span><button id="element-draft" class="cube-dir-btn" ><img class="cube-dir-btn-img" src="static/img/hand-of-cards.png" height="14px"/> Draft!</button></span>   
                     </div>
                 </div>

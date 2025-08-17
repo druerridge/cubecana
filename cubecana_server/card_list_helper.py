@@ -1,7 +1,7 @@
 from collections import defaultdict
 from . import id_helper
 from .card import CardPrinting, PrintingId, ApiCard
-from .lcc_error import LccError, UnidentifiedCardError
+from .lcc_error import LccError, UnidentifiedCardError, UnidentifiedPrintingError, UnidentifiedPrinting, UnidentifiedPrintingsError, UnidentifiedCardsError
 from .lorcast_api import lorcast_api as lorcana_api
 
 def get_mainboard_lines(all_lines):
@@ -80,8 +80,8 @@ def determine_token_type(token: str) -> str:
 def get_card_name(tokens: list[str], token_types: list[str]):
     if TOKEN_TYPE_SET_CODE in token_types:
         set_code_index = token_types.index(TOKEN_TYPE_SET_CODE)
-        return ' '.join(tokens[1:set_code_index])
-    return ' '.join(tokens[1:])
+        return ' '.join(tokens[0:set_code_index])
+    return ' '.join(tokens[0:])
 
 def matches_input_printing(printing:CardPrinting, input_set_code: str, input_collector_id: str):
     if input_set_code:
@@ -98,7 +98,8 @@ def get_matching_printing(input_set_code: str, input_collector_id: str, api_card
 
 def calculate_token_types(tokens: list[str]) -> list[str]:
     token_types = [TOKEN_TYPE_PARTIAL_CARD_NAME] * len(tokens)
-    token_types[0] = TOKEN_TYPE_COUNT
+    if len(tokens) < 2:
+        return token_types # if there's a single word, it's the card name w/o set code
     token_types[-1] = determine_token_type(tokens[-1])
     token_types[-2] = TOKEN_TYPE_PARTIAL_CARD_NAME
     if token_types[-1] == TOKEN_TYPE_COLLECTOR_ID:  
@@ -112,7 +113,7 @@ def printing_id_to_count_from_id_to_count(id_to_count: dict[str, int]) -> dict[P
     for card_id, count in id_to_count.items():
         api_card = lorcana_api.get_api_card(card_id)
         if api_card is None:
-            raise UnidentifiedCardError(f"Unable to identify card: {card_id}")
+            raise UnidentifiedCardError(card_id)
         printing_id = api_card.default_printing.printing_id()
         printing_id_to_count[printing_id] = count
     return printing_id_to_count
@@ -131,55 +132,70 @@ def id_to_count_from_printing_id_to_count(printing_id_to_count: dict[PrintingId,
             id_to_count[printing_id.card_id] += count
     return id_to_count
 
+def printing_id_from_human_readable_string(human_readable: str) -> PrintingId:
+    tokens = human_readable.rstrip().split(' ')
+    token_types: list[str] = calculate_token_types(tokens)
+
+    card_name = get_card_name(tokens, token_types)
+    card_id = id_helper.to_id(card_name)
+    api_card = lorcana_api.get_api_card(card_id)
+    if api_card is None:
+        raise UnidentifiedCardError(human_readable)
+
+    input_set_code = None
+    input_collector_id = None
+    # only case we find special printings
+    if TOKEN_TYPE_SET_CODE in token_types:
+        input_set_code = determine_input_set_code(tokens, token_types)
+        input_collector_id = determine_input_collector_id(tokens, token_types)
+
+    printing: CardPrinting = get_matching_printing(input_set_code, input_collector_id, api_card)
+    # Strict Mode
+    if printing is None:
+        available_printing_names = []
+        for card_printing in api_card.card_printings:
+            available_printing_names.append(card_printing.printing_id().to_human_readable(api_card.full_name))
+        raise UnidentifiedPrintingError(UnidentifiedPrinting(unidentifiable_input=human_readable, available_printing_names=available_printing_names))
+    # Loose Mode
+    # if printing is None:
+    #     # todo: send warning to users
+    #     printing = api_card.default_printing
+    return printing.printing_id()
+
+def printing_id_and_count_from_card_list_line(line: str) -> tuple[PrintingId, int]:
+    tokens = line.rstrip().split(' ')
+    if len(tokens) < 2:
+        raise LccError("Missing count or name in line:\n " + line + "\nShould look like:\n1 Elsa - Snow Queen", 400)
+    try:
+        count = int(tokens[0])
+        printing_id = printing_id_from_human_readable_string(' '.join(tokens[1:]))
+        return printing_id, count
+    except ValueError:
+        raise LccError("Missing count or name in line:\n " + line + "\nShould look like:\n1 Elsa - Snow Queen", 400)
+
 def printing_id_to_count_from(card_list_lines):
     printing_id_to_count = defaultdict(int)
-    failed_printing_ids = list[PrintingId]()
+    unidentified_card_errors = list[UnidentifiedCardError]()
+    unidentified_printing_errors = list[UnidentifiedPrintingError]()
     for line in card_list_lines:
-        tokens = line.rstrip().split(' ')
-        if len(tokens) < 2:
-            raise LccError("Missing count or name in line:\n " + line + "\nShould look like:\n1 Elsa - Snow Queen", 400)
-        token_types: list[str] = calculate_token_types(tokens)
-
         try:
-            int_count = int(tokens[0])
-            
-            card_name = get_card_name(tokens, token_types)
+            printing_id, count = printing_id_and_count_from_card_list_line(line)
+            printing_id_to_count[printing_id] += count
+        except UnidentifiedCardError as e:
+            unidentified_card_errors.append(e)
+        except UnidentifiedPrintingError as e:
+            unidentified_printing_errors.append(e)
+    
+    error_message = ""
+    unidentified_cards_error:UnidentifiedCardError = None
+    if unidentified_card_errors:
+        unidentified_cards_error = UnidentifiedCardsError(unidentified_card_errors)
+        error_message += f"{unidentified_cards_error.user_facing_message}"
+    unidentified_printings_error: UnidentifiedPrintingsError = None
+    if unidentified_printing_errors:
+        unidentified_printings_error = UnidentifiedPrintingsError(unidentified_printing_errors)
+        error_message += f"\n{unidentified_printings_error.user_facing_message}"
+    if unidentified_printings_error or unidentified_cards_error:
+        raise LccError(error_message, 404)
 
-            card_id = id_helper.to_id(card_name)
-            api_card = lorcana_api.get_api_card(card_id)
-            if api_card is None:
-                failed_printing_ids.append(PrintingId(card_id=card_id, set_code=None, collector_id=None))
-                continue
-
-            input_set_code = None
-            input_collector_id = None
-            # only case we find special printings
-            if TOKEN_TYPE_SET_CODE in token_types:
-                input_set_code = determine_input_set_code(tokens, token_types)
-                input_collector_id = determine_input_collector_id(tokens, token_types)
-
-            printing: CardPrinting = get_matching_printing(input_set_code, input_collector_id, api_card)
-            # Strict Mode
-            if printing is None:
-                failed_printing_ids.append(PrintingId(card_id=card_id, set_code=input_set_code, collector_id=input_collector_id))
-                continue
-            # Loose Mode
-            # if printing is None:
-            #     # todo: send warning to users
-            #     printing = api_card.default_printing
-            printing_id_to_count[printing.printing_id()] += int_count
-        except ValueError:
-            raise LccError("Missing count or name in line:\n " + line + "\nShould look like:\n1 Elsa - Snow Queen", 400)
-
-    if failed_printing_ids:
-        error_message = f"Unable to identify {len(failed_printing_ids)} cards, including:"
-        for failed_printing_id in failed_printing_ids:
-            api_card = lorcana_api.get_api_card(failed_printing_id.card_id)
-            if api_card is None:
-                error_message += f"\n Card: {failed_printing_id.card_id}"
-            else:
-                error_message += f"\n Print: {failed_printing_id}. "
-                error_message += f"\n   Available printings: {', '.join([str(p.printing_id()) for p in api_card.card_printings])}"
-
-        raise UnidentifiedCardError(error_message)
     return printing_id_to_count

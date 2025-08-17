@@ -11,6 +11,7 @@ from .cube_dao import cube_dao, DbCubecanaCube
 from .cubecana_cube import CubecanaCube
 from .card import PrintingId, toPrintingId
 from .lorcast_api import lorcast_api as lorcana_api
+from . import id_helper
 
 class CubeManager:
     def determine_printing_id(self, maybe_printing_id_str:str) -> PrintingId:
@@ -35,6 +36,7 @@ class CubeManager:
     def from_db_cubecana_cube(self, db_cube: DbCubecanaCube) -> CubecanaCube:
         maybe_printing_id_str_to_count = json.loads(db_cube.card_id_to_count)
         printing_id_to_count = self.generate_printing_id_to_count(maybe_printing_id_str_to_count)
+        featured_card_printing_id = toPrintingId(db_cube.featured_card_printing) if db_cube.featured_card_printing else None
         return CubecanaCube(
             name=db_cube.name,
             printing_id_to_count=printing_id_to_count,
@@ -46,7 +48,9 @@ class CubeManager:
             edit_secret=db_cube.edit_secret,
             card_list_views=db_cube.card_list_views,
             page_views=db_cube.page_views,          
-            drafts=db_cube.drafts,                
+            drafts=db_cube.drafts,
+            featured_card_printing_id=featured_card_printing_id,
+            cube_description=db_cube.cube_description,
             settings=Settings(
                 boosters_per_player=db_cube.boosters_per_player,
                 card_list_name=db_cube.name,
@@ -63,6 +67,7 @@ class CubeManager:
         new_uuid = uuid.UUID(cc_cube.id)
         new_id = new_uuid.bytes
         printing_id_str_to_count = {str(printing_id): count for printing_id, count in cc_cube.printing_id_to_count.items()}
+        featured_card_printing_str = str(cc_cube.featured_card_printing_id) if cc_cube.featured_card_printing_id else None
         return DbCubecanaCube(
             id=new_id,
             name=cc_cube.name.encode('utf-8'),
@@ -81,7 +86,9 @@ class CubeManager:
             card_list_views=cc_cube.card_list_views,
             page_views=cc_cube.page_views,          
             drafts=cc_cube.drafts,
-            popularity=0,                   
+            featured_card_printing=featured_card_printing_str,
+            cube_description=cc_cube.cube_description.encode('utf-8'),
+            popularity=0,
         )
 
     def get_cube_count(self):
@@ -97,6 +104,7 @@ class CubeManager:
         new_id = str(uuid.uuid4())
         edit_secret = str(uuid.uuid4())
         printing_id_to_count = card_list_helper.printing_id_to_count_from(api_create_cube.cardListText.split('\n'))
+        featured_card_printing_id: PrintingId = card_list_helper.printing_id_from_human_readable_string(api_create_cube.featuredCardPrintingId)
         new_cube = CubecanaCube(
             name=api_create_cube.name,
             printing_id_to_count=printing_id_to_count,
@@ -106,6 +114,8 @@ class CubeManager:
             last_updated_epoch_seconds=int(time.time()),
             id=new_id,
             edit_secret=edit_secret,
+            featured_card_printing_id=featured_card_printing_id,
+            cube_description=api_create_cube.cubeDescription,
             settings=Settings(
                 card_list_name=api_create_cube.name,
                 boosters_per_player=api_create_cube.cubeSettings.boostersPerPlayer,
@@ -157,6 +167,7 @@ class CubeManager:
     def update_cube(self, api_edit_cube: api.EditCubeRequest):
         old_cube = cube_dao.get_cubecana_cube_by_id(uuid.UUID(api_edit_cube.id).bytes)
         printing_id_to_count = card_list_helper.printing_id_to_count_from(api_edit_cube.cardListText.split('\n'))
+        featured_card_printing_id: PrintingId = card_list_helper.printing_id_from_human_readable_string(api_edit_cube.featuredCardPrintingId)
         updated_cube = CubecanaCube(
             name=api_edit_cube.name,
             printing_id_to_count=printing_id_to_count,
@@ -166,6 +177,8 @@ class CubeManager:
             last_updated_epoch_seconds=int(time.time()),
             id=api_edit_cube.id,
             edit_secret=old_cube.edit_secret,
+            featured_card_printing_id=featured_card_printing_id,
+            cube_description=api_edit_cube.cubeDescription,
             settings=Settings(
                 card_list_name=api_edit_cube.name,
                 boosters_per_player=api_edit_cube.cubeSettings.boostersPerPlayer,

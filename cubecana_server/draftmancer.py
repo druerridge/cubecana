@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 import json
 from pathlib import Path
-from .lcc_error import UnidentifiedCardError
+from .lcc_error import UnidentifiedCardError, LccError
 from .settings import Settings
 from .card import ApiCard, CardPrinting, PrintingId
 from .lorcast_api import lorcast_api as lorcana_api
@@ -153,7 +153,7 @@ def generate_custom_card_list(
                 error_message += f"\n Print: {failed_printing_id}. "
                 error_message += f"\n   Available printings: {', '.join([str(p.printing_id()) for p in api_card.card_printings])}"
 
-        raise UnidentifiedCardError(error_message)
+        raise LccError(error_message, 404)
     return custom_card_list
 
 def write_draftmancer_file(draftmancer_file_string, card_list_name):

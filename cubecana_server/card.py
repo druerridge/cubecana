@@ -8,8 +8,9 @@ class PrintingId:
     set_code: str
     collector_id: str
 
-    def to_human_readable(self) -> str:
-        return f"{self.card_id} ({self.set_code}) {self.collector_id}"
+    def to_human_readable(self, full_name: str = None) -> str:
+        name = self.card_id if not full_name else full_name
+        return f"{name} ({self.set_code}) {self.collector_id}"
 
     def __hash__(self):
         return hash((self.card_id, self.set_code, self.collector_id))

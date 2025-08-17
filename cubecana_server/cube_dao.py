@@ -36,7 +36,9 @@ class DbCubecanaCube(Base):
     power_band = Column(String(255))
     card_list_views = Column(Integer, default=0)
     page_views = Column(Integer, default=0)
-    drafts = Column(Integer, default=0)      
+    drafts = Column(Integer, default=0)
+    featured_card_printing = Column(String(256))      
+    cube_description = Column(String(4096))      
 
 API_SORT_TYPE_TO_COLUMN = {
     api.SortType.RANK: DbCubecanaCube.popularity,
@@ -158,7 +160,9 @@ class CubeDao:
                 cube.power_band = updated_cube.power_band
                 cube.card_list_views = updated_cube.card_list_views
                 cube.page_views = updated_cube.page_views          
-                cube.drafts = updated_cube.drafts 
+                cube.drafts = updated_cube.drafts
+                cube.featured_card_printing = updated_cube.featured_card_printing 
+                cube.cube_description = updated_cube.cube_description
                 session.commit()
 
         self.execute(operation, cube_id=cube_id, updated_cube=updated_cube)

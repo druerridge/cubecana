@@ -13,6 +13,22 @@
         <input type="text" id="cubeAuthor" name="cubeAuthor" class="form-control" placeholder="JoeCool">
     </div>
     
+    <div class="form-group">
+        <label for="cubeFeaturedCard">Featured Card (PrintingId):</label>
+        <input type="text" id="cubeFeaturedCard" name="cubeFeaturedCard" class="form-control" placeholder="Belle - Hidden Archer (TFC) 001">
+        <small style="color: #ccc; font-size: 12px; margin-top: 5px; display: block;">
+            Format: Card Name (Set Code) Collector Number (e.g., "Belle - Hidden Archer (TFC) 001")
+        </small>
+    </div>
+    
+    <div class="form-group">
+        <label for="cubeDescription">Description:</label>
+        <textarea id="cubeDescription" name="cubeDescription" class="form-control" rows="4" placeholder="Describe your cube's theme, strategy, or unique features..." style="resize: vertical; min-height: 80px; max-height: 200px;"></textarea>
+        <small style="color: #ccc; font-size: 12px; margin-top: 5px; display: block;">
+            Optional description to help players understand your cube's concept
+        </small>
+    </div>
+    
     {% include 'shared/cube_settings_input.html' %}
 
     {% include 'shared/tag_input.html' %}

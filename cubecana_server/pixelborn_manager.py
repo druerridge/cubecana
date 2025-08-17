@@ -22,7 +22,7 @@ class PixelbornManager:
             try:
                 pixelborn_deck_decoded += f"{self.id_to_pixelborn_name[id]}${count}|"            
             except KeyError:
-                raise lcc_error.UnidentifiedCardError(f"Unable to identify card with id {id} ")
+                raise lcc_error.UnidentifiedCardError(id)
         pixelborn_deck_encoded = base64.b64encode(pixelborn_deck_decoded.encode('utf-8')).decode('utf-8')
         return pixelborn_deck_encoded
 

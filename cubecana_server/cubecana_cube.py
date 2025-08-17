@@ -1,12 +1,7 @@
-import json
-import uuid
-import time
 from dataclasses import dataclass
 from . import api
 from typing import List
-import uuid
 from .settings import Settings
-from .cube_dao import DbCubecanaCube
 from .card import PrintingId, ApiCard, toPrintingId
 
 @dataclass(frozen=True)
@@ -20,9 +15,11 @@ class CubecanaCube:
     id: str
     edit_secret: str
     settings: Settings
+    featured_card_printing_id: PrintingId = None
     card_list_views: int = 0
     page_views: int = 0     
     drafts: int = 0  
+    cube_description: str = ""
 
     def card_count(self):
         return sum(self.printing_id_to_count.values())
@@ -45,7 +42,6 @@ class CubecanaCube:
 
     def to_api_cube(self, id_to_api_card:dict[str, ApiCard]) -> api.Cube:
         full_name_to_card_count = dict[str, int]()
-        printing_id_str_to_count = {str(printing_id): count for printing_id, count in self.printing_id_to_count.items()}
         for printing_id, count in self.printing_id_to_count.items():
             api_card = id_to_api_card.get(printing_id.card_id)
             if api_card:
@@ -54,10 +50,21 @@ class CubecanaCube:
                 else:
                     full_name_to_card_count[f"{api_card.full_name} ({printing_id.set_code}) {printing_id.collector_id}"] = count
 
-        featured_card_printing = next(iter(self.printing_id_to_count))
+        featured_card_printing = self.featured_card_printing_id if self.featured_card_printing_id else next(iter(self.printing_id_to_count))
+        
+        # Get human-readable format with full card name if possible
+        
+        if self.featured_card_printing_id:
+            api_card = id_to_api_card.get(self.featured_card_printing_id.card_id)
+            if api_card:
+                featured_card_printing_id_str = f"{api_card.full_name} ({self.featured_card_printing_id.set_code}) {self.featured_card_printing_id.collector_id}"
+            else:
+                featured_card_printing_id_str = self.featured_card_printing_id.to_human_readable()
+        else:
+            featured_card_printing_id_str = ""
+        
         return api.Cube(
             name=self.name,
-            cardIdToCardCount=printing_id_str_to_count,
             nameToCardCount=full_name_to_card_count,
             tags=self.tags,
             link=self.link,
@@ -65,8 +72,9 @@ class CubecanaCube:
             lastUpdatedEpochSeconds=self.last_updated_epoch_seconds,
             id=self.id,
             cubeSettings=self.settings.to_api_cube_settings(),
-            description= f"A power cube featuring cards across {len(full_name_to_card_count)} unique card names.",
             featuredCardImageLink = f"https://cdn.dreamborn.ink/images/en/cards/{featured_card_printing.set_code.zfill(3)}-{featured_card_printing.collector_id.zfill(3)}",
+            featuredCardPrintingId=featured_card_printing_id_str,
+            cubeDescription=self.cube_description,
             timesViewed=self.page_views + self.card_list_views,
             timesDrafted=self.drafts
         )

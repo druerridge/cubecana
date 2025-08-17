@@ -260,6 +260,8 @@ def add_cube():
     tags=request.json['tags'],
     link=request.json['link'],
     author=request.json['author'],
+    featuredCardPrintingId=request.json.get('featuredCardPrintingId', ''),
+    cubeDescription=request.json.get('cubeDescription', ''),
     cubeSettings=api.CubeSettings(**request.json['cubeSettings'])
   )
   cubecana_cube = cube_manager.create_cube(api_create_cube)
@@ -305,6 +307,7 @@ def get_cube(cube_id):
   api_cube = cube.to_api_cube(lorcana_api.read_or_fetch_id_to_api_card())
   r = api_cube.__dict__
   r['cubeSettings'] = r['cubeSettings'].__dict__
+  print(f"r.cubeDescription {r['cubeDescription']}")
   return jsonify(r)
 
 @app.route('/api/cube/<string:cube_id>', methods=['PUT'])
@@ -323,6 +326,8 @@ def update_cube(cube_id):
     tags=request.json['tags'],
     link=request.json['link'],
     author=request.json['author'],
+    cubeDescription=request.json['cubeDescription'],
+    featuredCardPrintingId=request.json.get('featuredCardPrintingId', ''),
     cubeSettings=api.CubeSettings(**request.json['cubeSettings'])
   )
   updated_cube: CubecanaCube = cube_manager.update_cube(api_edit_cube)

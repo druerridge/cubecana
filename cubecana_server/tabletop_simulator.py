@@ -3,7 +3,7 @@ from pathlib import Path
 from collections import defaultdict
 from . import id_helper
 from .card import ApiCard, PrintingId
-from .lcc_error import UnidentifiedCardError
+from .lcc_error import LccError
 from .lorcast_api import lorcast_api as lorcana_api
 from .dreamborn_manager import dreamborn_manager
 
@@ -116,7 +116,7 @@ def generate_tts_deck(printing_id_to_count: dict[PrintingId, int]):
         error_message = f"Unable to identify {len(failed_ids)} cards, including:\n"
         for failed_id in failed_ids:
             error_message += f"{failed_id}\n"
-        raise UnidentifiedCardError(error_message) 
+        raise LccError(error_message, 404) 
     return {
         'ObjectStates': [
             {

@@ -23,6 +23,8 @@ class CreateCubeRequest:
   tags: List[str]
   link: str
   author: str
+  featuredCardPrintingId: str
+  cubeDescription: str
   cubeSettings: CubeSettings
   
   def toJSON(self):
@@ -40,6 +42,8 @@ class EditCubeRequest:
   tags: List[str]
   link: str
   author: str
+  featuredCardPrintingId: str
+  cubeDescription: str
   cubeSettings: CubeSettings
   
   def toJSON(self):
@@ -115,7 +119,6 @@ class CubeListEntry:
 @dataclass(frozen=True)
 class Cube:
   name: str
-  cardIdToCardCount: dict[str, int]
   nameToCardCount: dict[str, int]
   tags: List[str]
   link: str
@@ -123,8 +126,9 @@ class Cube:
   lastUpdatedEpochSeconds: int
   id: str
   cubeSettings: CubeSettings
-  description: str
+  cubeDescription: str
   featuredCardImageLink: str
+  featuredCardPrintingId: str
   timesViewed: int
   timesDrafted: int
   

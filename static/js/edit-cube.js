@@ -38,6 +38,8 @@ function populateInputs(responseCube) {
     cubeForm.cubeName.value = responseCube.name;
     cubeForm.cubeLink.value = responseCube.link;
     cubeForm.cubeAuthor.value = responseCube.author;
+    cubeForm.cubeFeaturedCard.value = responseCube.featuredCardPrintingId;
+    cubeForm.cubeDescription.value = responseCube.cubeDescription;
     cardListInput.value = toCardList(responseCube.nameToCardCount);
     cubeForm.cubeBoostersPerPlayer.value = responseCube.cubeSettings.boostersPerPlayer;
     cubeForm.cubeCardsPerBooster.value = responseCube.cubeSettings.cardsPerBooster;
@@ -54,6 +56,8 @@ function clearInputs() {
     cubeForm.cubeName.value = '';
     cubeForm.cubeLink.value = '';
     cubeForm.cubeAuthor.value = '';
+    cubeForm.cubeFeaturedCard.value = '';
+    cubeForm.cubeDescription.value = '';
     cardListInput.value = '';
     cubeForm.cubeBoostersPerPlayer.value = 4;
     cubeForm.cubeCardsPerBooster.value = 12;
@@ -74,6 +78,8 @@ function putUpdateCube() {
         tags: getActiveTags(),
         link: cubeForm.cubeLink.value.trim(),
         author: cubeForm.cubeAuthor.value.trim(),
+        featuredCardPrintingId: cubeForm.cubeFeaturedCard.value.trim(),
+        cubeDescription: cubeForm.cubeDescription.value.trim(),
         cardListText: cardListInput.value.trim(),
         cubeSettings: {
             boostersPerPlayer: cubeForm.cubeBoostersPerPlayer.value,

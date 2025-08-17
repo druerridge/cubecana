@@ -64,8 +64,8 @@ request(apiCubeUrl, null, (responseText) => {
     if (draftsSpan) draftsSpan.style.display = 'inline';
 
     // Show and populate description
-    if (response.description) {
-        descriptionText.textContent = response.description;
+    if (response.cubeDescription) {
+        descriptionText.textContent = response.cubeDescription;
         cubeDescription.style.display = 'block';
     }
 

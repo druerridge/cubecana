@@ -47,11 +47,5 @@ class DreambornManager:
         image_set_code = self.to_image_set_code(printing_id.set_code)
         collector_id = self.to_image_collector_id(printing_id.collector_id)
         return f"https://cdn.dreamborn.ink/images/{language_code}/cards/{image_set_code}-{collector_id}?tts"  
-
-    def to_language_coded_image_uri(self, image_uri, language_code):
-        if language_code == "en":
-            return image_uri
-        else:
-            return image_uri.replace("en", language_code)
         
 dreamborn_manager:DreambornManager = DreambornManager()

@@ -93,6 +93,9 @@
             position: relative;
             text-decoration: none;
             color: inherit;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
         }
         .cube-element:hover {
             background-color: #4a4a4a;
@@ -102,6 +105,75 @@
         }
         .cube-element:hover .name {
             color: #ff6b35;
+        }
+        .featured-card-image {
+            width: clamp(50px, 8vw, 80px);
+            aspect-ratio: 5/3.5;
+            border-radius: 6px;
+            object-fit: cover;
+            object-position: top;
+            border: 2px solid #666;
+            transition: border-color 0.3s ease;
+            flex-shrink: 0;
+            background: linear-gradient(135deg, #555, #666);
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+        .featured-card-image:hover {
+            border-color: #ff6b35;
+        }
+        .featured-card-image[style*="display: none"] {
+            width: 0;
+            margin: 0;
+            border: none;
+        }
+        /* Add a subtle placeholder effect when image is loading */
+        .featured-card-image:not([src]), .featured-card-image[src=""] {
+            background: linear-gradient(135deg, #555, #666);
+        }
+        .featured-card-image::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40%;
+            height: 40%;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23888"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>');
+            background-size: contain;
+            opacity: 0.3;
+            pointer-events: none;
+        }
+        .cube-info {
+            flex: 1;
+            min-width: 0;
+        }
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .cube-element {
+                flex-direction: row;
+                gap: 10px;
+                align-items: flex-start;
+            }
+            .featured-card-image {
+                width: clamp(40px, 6vw, 60px);
+            }
+            .cube-info {
+                flex: 1;
+                min-width: 0;
+            }
+        }
+        
+        /* Extra small screens */
+        @media (max-width: 480px) {
+            .featured-card-image {
+                width: clamp(35px, 5vw, 50px);
+            }
+            .cube-element {
+                padding: 8px;
+                gap: 8px;
+            }
         }
         .cube-tag {
             display: inline-block;
@@ -274,23 +346,26 @@
 
         <template class="cube-element" id="cube-list-element-template">
             <div class="cube-element">
-                <div id="element-row-1" class="element-row-1">
-                    <div id="element-row-1-left">
-                        <span id="element-name" class="name">INSERT_NAME</span>
-                        <span class="cards" style="white-space: nowrap;">( <span id="element-cards" >CARD_COUNT</span> <img src="static/img/deck-of-cards.png" alt="Card Count (deck of cards)" height="14px" title="cards in cube"/> <span hidden="true" id="element-times-viewed" >VIEWED_COUNT</span> <img hidden="true" src="static/img/eye.png" alt="Times Drafted (hand of cards)" height="14px" title="times viewed"/> <span hidden="true" id="element-times-drafted" >DRAFTED_COUNT</span> <img hidden="true" src="static/img/hand-of-cards.png" alt="Times Drafted (hand of cards)" height="14px" title="times drafted"/> ) </span>
+                <img id="element-featured-image" class="featured-card-image" src="" alt="Featured Card" onerror="this.style.display='none';">
+                <div class="cube-info">
+                    <div id="element-row-1" class="element-row-1">
+                        <div id="element-row-1-left">
+                            <span id="element-name" class="name">INSERT_NAME</span>
+                            <span class="cards" style="white-space: nowrap;">( <span id="element-cards" >CARD_COUNT</span> <img src="static/img/deck-of-cards.png" alt="Card Count (deck of cards)" height="14px" title="cards in cube"/> <span hidden="true" id="element-times-viewed" >VIEWED_COUNT</span> <img hidden="true" src="static/img/eye.png" alt="Times Drafted (hand of cards)" height="14px" title="times viewed"/> <span hidden="true" id="element-times-drafted" >DRAFTED_COUNT</span> <img hidden="true" src="static/img/hand-of-cards.png" alt="Times Drafted (hand of cards)" height="14px" title="times drafted"/> ) </span>
+                        </div>
+                        <div id="element-row-1-right">
+                            <span><button id="element-draft" class="cube-dir-btn" ><img class="cube-dir-btn-img" src="static/img/hand-of-cards.png" height="14px"/> Draft!</button></span>   
+                        </div>
                     </div>
-                    <div id="element-row-1-right">
-                        <span><button id="element-draft" class="cube-dir-btn" ><img class="cube-dir-btn-img" src="static/img/hand-of-cards.png" height="14px"/> Draft!</button></span>   
+                    <div id="element-row-2" class="element-row-2" >
+                        <div id="element-left-2" style="text-align: left; display: table-cell;">
+                            <span id="element-author" class="author">AUTHOR</span>
+                            <span id="element-tags" class="cube-tags" style="text-align: left;">
+                                <!-- <span class="cube-tag">Synergy</span> -->
+                            </span>
+                        </div>
+                        <div id="element-last-updated" class="last-updated" style="text-align: right; display: table-cell;">updated: 12-04-1991</div>
                     </div>
-                </div>
-                <div id="element-row-2" class="element-row-2" >
-                    <div id="element-left-2" style="text-align: left; display: table-cell;">
-                        <span id="element-author" class="author">AUTHOR</span>
-                        <span id="element-tags" class="cube-tags" style="text-align: left;">
-                            <!-- <span class="cube-tag">Synergy</span> -->
-                        </span>
-                    </div>
-                    <div id="element-last-updated" class="last-updated" style="text-align: right; display: table-cell;">last updated: 12-04-1991</div>
                 </div>
             </div>
         </template>

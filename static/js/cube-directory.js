@@ -44,6 +44,21 @@ function populateCubes(cubes) {
             clone.getElementById("element-times-drafted").textContent = cube.timesDrafted;
             clone.getElementById("element-author").textContent = "by: " + cube.author;
             
+            // Set the featured card image
+            const featuredImage = clone.getElementById("element-featured-image");
+            if (cube.featuredCardImageLink && 
+                cube.featuredCardImageLink !== 'None' && 
+                cube.featuredCardImageLink !== '' && 
+                cube.featuredCardImageLink !== null) {
+                featuredImage.src = cube.featuredCardImageLink;
+                featuredImage.style.display = 'block';
+                featuredImage.onerror = function() {
+                    this.style.display = 'none';
+                };
+            } else {
+                featuredImage.style.display = 'none';
+            }
+            
             const cubeElement = clone.querySelector('.cube-element');
             cubeElement.addEventListener("click", function(event) {
                 if (!event.target.closest('button') && !event.target.closest('a')) {
@@ -64,7 +79,7 @@ function populateCubes(cubes) {
                 }, 
                 'GET');
             });
-            clone.getElementById("element-last-updated").textContent = "last updated: " + new Date(cube.lastUpdatedEpochSeconds * 1000).toDateString();
+            clone.getElementById("element-last-updated").textContent = "updated: " + new Date(cube.lastUpdatedEpochSeconds * 1000).toDateString();
             let elementTags = clone.getElementById("element-tags");
             cube.tags.forEach(tag => {
                 let tagElement = document.createElement("span");

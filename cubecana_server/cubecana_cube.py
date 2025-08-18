@@ -24,22 +24,6 @@ class CubecanaCube:
     def card_count(self):
         return sum(self.printing_id_to_count.values())
 
-    def to_cube_list_entry(self) -> api.CubeListEntry:
-        expanded_tags = []
-        expanded_tags.extend(self.tags)
-        expanded_tags.append("Power: " + self.settings.power_band.lower())
-        return api.CubeListEntry(
-            name=self.name,
-            cardCount=self.card_count(),
-            tags=expanded_tags,
-            link=self.link,
-            author=self.author,
-            lastUpdatedEpochSeconds=self.last_updated_epoch_seconds,
-            timesDrafted=self.drafts,
-            timesViewed=self.page_views + self.card_list_views,
-            id=self.id
-        )
-
     def to_api_cube(self, id_to_api_card:dict[str, ApiCard]) -> api.Cube:
         full_name_to_card_count = dict[str, int]()
         for printing_id, count in self.printing_id_to_count.items():

@@ -11,7 +11,7 @@ from .cube_dao import cube_dao, DbCubecanaCube
 from .cubecana_cube import CubecanaCube
 from .card import PrintingId, toPrintingId
 from .lorcast_api import lorcast_api as lorcana_api
-from . import id_helper
+from .dreamborn_manager import dreamborn_manager
 
 class CubeManager:
     def determine_printing_id(self, maybe_printing_id_str:str) -> PrintingId:
@@ -93,11 +93,38 @@ class CubeManager:
 
     def get_cube_count(self):
        return cube_dao.get_cubecana_cube_count()
+    
+    def to_cube_list_entry(self, cube:CubecanaCube) -> api.CubeListEntry:
+        expanded_tags = []
+        expanded_tags.extend(cube.tags)
+        expanded_tags.append("Power: " + cube.settings.power_band.lower())
+        
+        # Handle featured card image - use the featured card if available, otherwise use the first card in the cube
+        featured_printing_id = cube.featured_card_printing_id
+        if not featured_printing_id and cube.printing_id_to_count:
+            featured_printing_id = next(iter(cube.printing_id_to_count))
+        
+        featured_image_link = ""
+        if featured_printing_id:
+            featured_image_link = dreamborn_manager.image_uri(featured_printing_id, "en")
+        
+        return api.CubeListEntry(
+            name=cube.name,
+            cardCount=cube.card_count(),
+            tags=expanded_tags,
+            link=cube.link,
+            author=cube.author,
+            lastUpdatedEpochSeconds=cube.last_updated_epoch_seconds,
+            timesDrafted=cube.drafts,
+            timesViewed=cube.page_views + cube.card_list_views,
+            id=cube.id, 
+            featuredCardImageLink=featured_image_link
+        )
 
     def get_cubes(self, page: int = 1, per_page: int = 25, sort = api.SortType.RANK, order = api.OrderType.DESC, tags: List[str] = None) -> List[api.CubeListEntry]:
         paginated_db_cubecana_cubes: List[DbCubecanaCube] = cube_dao.get_cubecana_cubes(page, per_page, sort, order, tags)
         paginated_cubes = [self.from_db_cubecana_cube(dbcube) for dbcube in paginated_db_cubecana_cubes]
-        paginated_cube_list_entries: api.CubeListEntry = [cube.to_cube_list_entry() for cube in paginated_cubes]
+        paginated_cube_list_entries: api.CubeListEntry = [self.to_cube_list_entry(cube) for cube in paginated_cubes]
         return paginated_cube_list_entries
 
     def create_cube(self, api_create_cube: api.CreateCubeRequest):

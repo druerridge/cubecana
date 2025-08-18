@@ -108,6 +108,7 @@ class CubeListEntry:
   id: str
   timesDrafted: int
   timesViewed: int
+  featuredCardImageLink: str
   
   def toJSON(self):
     return json.dumps(

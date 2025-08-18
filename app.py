@@ -16,7 +16,11 @@ from cubecana_server import tabletop_simulator
 from cubecana_server.lorcast_api import lorcast_api as lorcana_api
 import traceback
 from cubecana_server import cubealytics # This is imported so it will init + generate startup report(s)
+
 app = Flask(__name__)
+
+# Configure Flask to handle UTF-8 properly
+app.config['JSON_AS_ASCII'] = False
 
 # USER FACING PAGES
 

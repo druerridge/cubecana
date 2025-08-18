@@ -70,13 +70,13 @@ class CubeManager:
         featured_card_printing_str = str(cc_cube.featured_card_printing_id) if cc_cube.featured_card_printing_id else None
         return DbCubecanaCube(
             id=new_id,
-            name=cc_cube.name.encode('utf-8'),
-            card_id_to_count=json.dumps(printing_id_str_to_count).encode('utf-8'),
+            name=cc_cube.name,
+            card_id_to_count=json.dumps(printing_id_str_to_count),
             tags=cc_cube.tags,
-            link=cc_cube.link.encode('utf-8'),
-            author=cc_cube.author.encode('utf-8'),
+            link=cc_cube.link,
+            author=cc_cube.author,
             last_updated_epoch_seconds=cc_cube.last_updated_epoch_seconds,
-            edit_secret=cc_cube.edit_secret.encode('utf-8'),
+            edit_secret=cc_cube.edit_secret,
             boosters_per_player=cc_cube.settings.boosters_per_player,
             cards_per_booster=cc_cube.settings.cards_per_booster,
             set_card_colors=cc_cube.settings.set_card_colors,
@@ -87,7 +87,7 @@ class CubeManager:
             page_views=cc_cube.page_views,          
             drafts=cc_cube.drafts,
             featured_card_printing=featured_card_printing_str,
-            cube_description=cc_cube.cube_description.encode('utf-8'),
+            cube_description=cc_cube.cube_description,
             popularity=0,
         )
 

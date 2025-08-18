@@ -5,7 +5,7 @@ from typing import List, Optional
 from sqlalchemy import create_engine, Column, String, Integer, Text, JSON, func, exc
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
-from sqlalchemy.dialects.mysql import BINARY
+from sqlalchemy.dialects.mysql import BINARY, VARCHAR, TEXT
 from . import api
 
 Base = declarative_base()
@@ -20,13 +20,13 @@ class DbCubecanaCube(Base):
     __tablename__ = 'cubecana_cubes'
     pk = Column(Integer, primary_key=True)
     id = Column(BINARY(16), default=lambda: uuid.uuid4().bytes, unique=True, nullable=False)
-    name = Column(String(255))
-    card_id_to_count = Column(Text(MAX_CARD_LIST_LENGTH))  # lets see if it accepts the length, doesn't matter as long as it creates the row
+    name = Column(VARCHAR(255, charset='utf8mb4', collation='utf8mb4_unicode_ci'))
+    card_id_to_count = Column(TEXT(MAX_CARD_LIST_LENGTH, charset='utf8mb4', collation='utf8mb4_unicode_ci'))  # lets see if it accepts the length, doesn't matter as long as it creates the row
     tags = Column(JSON)
-    link = Column(String(2048))
-    author = Column(String(255))
+    link = Column(VARCHAR(2048, charset='utf8mb4', collation='utf8mb4_unicode_ci'))
+    author = Column(VARCHAR(255, charset='utf8mb4', collation='utf8mb4_unicode_ci'))
     last_updated_epoch_seconds = Column(Integer)
-    edit_secret = Column(String(255))
+    edit_secret = Column(VARCHAR(255, charset='utf8mb4', collation='utf8mb4_unicode_ci'))
     boosters_per_player = Column(Integer)
     cards_per_booster = Column(Integer)
     set_card_colors = Column(Integer)
@@ -37,8 +37,8 @@ class DbCubecanaCube(Base):
     card_list_views = Column(Integer, default=0)
     page_views = Column(Integer, default=0)
     drafts = Column(Integer, default=0)
-    featured_card_printing = Column(String(256))      
-    cube_description = Column(String(4096))      
+    featured_card_printing = Column(VARCHAR(256, charset='utf8mb4', collation='utf8mb4_unicode_ci'))      
+    cube_description = Column(VARCHAR(4096, charset='utf8mb4', collation='utf8mb4_unicode_ci'))      
 
 API_SORT_TYPE_TO_COLUMN = {
     api.SortType.RANK: DbCubecanaCube.popularity,
@@ -51,7 +51,7 @@ class CubeDao:
         if creds_file.is_file():
             with creds_file.open() as f:
                 creds_json = json.load(f)
-                self.db_url = f"mysql://{creds_json['db_username']}:{creds_json['db_password']}@{creds_json['db_host']}/{creds_json['db_name']}?charset=utf8"
+                self.db_url = f"mysql://{creds_json['db_username']}:{creds_json['db_password']}@{creds_json['db_host']}/{creds_json['db_name']}?charset=utf8mb4"
         else:
             print(f"No creds file found at {creds_file.absolute()}, exiting")
             raise SystemExit(1)

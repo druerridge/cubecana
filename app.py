@@ -311,7 +311,6 @@ def get_cube(cube_id):
   api_cube = cube.to_api_cube(lorcana_api.read_or_fetch_id_to_api_card())
   r = api_cube.__dict__
   r['cubeSettings'] = r['cubeSettings'].__dict__
-  print(f"r.cubeDescription {r['cubeDescription']}")
   return jsonify(r)
 
 @app.route('/api/cube/<string:cube_id>', methods=['PUT'])

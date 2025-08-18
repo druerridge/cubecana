@@ -131,7 +131,9 @@ class CubeManager:
         new_id = str(uuid.uuid4())
         edit_secret = str(uuid.uuid4())
         printing_id_to_count = card_list_helper.printing_id_to_count_from(api_create_cube.cardListText.split('\n'))
-        featured_card_printing_id: PrintingId = card_list_helper.printing_id_from_human_readable_string(api_create_cube.featuredCardPrintingId)
+        featured_card_printing_id = None
+        if api_create_cube.featuredCardPrintingId:
+            featured_card_printing_id: PrintingId = card_list_helper.printing_id_from_human_readable_string(api_create_cube.featuredCardPrintingId)
         new_cube = CubecanaCube(
             name=api_create_cube.name,
             printing_id_to_count=printing_id_to_count,
@@ -194,7 +196,9 @@ class CubeManager:
     def update_cube(self, api_edit_cube: api.EditCubeRequest):
         old_cube = cube_dao.get_cubecana_cube_by_id(uuid.UUID(api_edit_cube.id).bytes)
         printing_id_to_count = card_list_helper.printing_id_to_count_from(api_edit_cube.cardListText.split('\n'))
-        featured_card_printing_id: PrintingId = card_list_helper.printing_id_from_human_readable_string(api_edit_cube.featuredCardPrintingId)
+        featured_card_printing_id: PrintingId = None
+        if api_edit_cube.featuredCardPrintingId:
+            featured_card_printing_id = card_list_helper.printing_id_from_human_readable_string(api_edit_cube.featuredCardPrintingId)
         updated_cube = CubecanaCube(
             name=api_edit_cube.name,
             printing_id_to_count=printing_id_to_count,

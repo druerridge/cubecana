@@ -65,7 +65,7 @@ request(apiCubeUrl, null, (responseText) => {
 
     // Show and populate description
     if (response.cubeDescription) {
-        descriptionText.textContent = response.cubeDescription;
+        descriptionText.innerText = response.cubeDescription;
         cubeDescription.style.display = 'block';
     }
 

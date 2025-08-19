@@ -330,21 +330,25 @@
                 <div id="filters-container" style="display: inline-block; margin-left: 10px;"></div>
             </div>
 
-            <div style="margin-top: 15px;">
-                <label for="sortOptions">Sort by:</label>
-                <select id="sortOptions">
-                    <option value="rank">Popularity</option>
-                    <option value="date">Date</option>
-                </select>
-                <label for="orderOptions">Order:</label>
-                <select id="orderOptions">
-                    <option value="desc">Descending</option>
-                    <option value="asc">Ascending</option>
-                </select>
+            <div style="margin-top: 15px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px;">
+                <span style="white-space: nowrap;">
+                    <label for="sortOptions">Sort by:</label>
+                    <select id="sortOptions" style="margin-left: 4px;">
+                        <option value="rank">Popularity</option>
+                        <option value="date">Date</option>
+                    </select>
+                </span>
+                <span style="white-space: nowrap; margin-left: 12px;">
+                    <label for="orderOptions">Order:</label>
+                    <select id="orderOptions" style="margin-left: 4px;">
+                        <option value="desc">Descending</option>
+                        <option value="asc">Ascending</option>
+                    </select>
+                </span>
             </div>
         </div>
 
-        <template class="cube-element" id="cube-list-element-template">
+        <template id="cube-list-element-template" style="display: none;">
             <div class="cube-element">
                 <img id="element-featured-image" class="featured-card-image" src="" alt="Featured Card" onerror="this.style.display='none';">
                 <div class="cube-info">

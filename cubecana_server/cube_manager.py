@@ -217,6 +217,9 @@ class CubeManager:
                 power_band=api_edit_cube.cubeSettings.powerBand,
                 author=api_edit_cube.author,
             ),
+            page_views=old_cube.page_views,
+            card_list_views=old_cube.card_list_views,
+            drafts=old_cube.drafts,
         )
         db_cubecana_cube = self.to_db_cubecana_cube(updated_cube)
         id_bytes = uuid.UUID(updated_cube.id).bytes

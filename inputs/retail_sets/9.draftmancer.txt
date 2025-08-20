@@ -865,7 +865,7 @@
             "ja": "https://cdn.dreamborn.ink/images/ja/cards/009-143?tts",
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/009-143?tts"
         },
-        "rarity": "common",
+        "rarity": "mythic",
         "set": "9",
         "collector_number": "143",
         "rating": 2
@@ -3500,7 +3500,6 @@
 60 Develop Your Brain
 60 Cruella De Vil - Fashionable Cruiser
 60 Aurora - Tranquil Princess
-60 Cruella De Vil - Style Icon
 60 Louie - Chill Nephew
 60 Maid Marian - Delightful Dreamer
 60 Mufasa - King of the Pride Lands
@@ -3619,6 +3618,7 @@
 13 Max Goof - Rebellious Teen
 5 Ariel - Adventurous Collector
 13 Sisu - Emboldened Warrior
+2 Cruella De Vil - Style Icon
 13 Mama Odie - Mystical Maven
 2 Alice - Growing Girl
 5 Lilo - Best Explorer Ever
@@ -3745,7 +3745,7 @@
 13 Sisu - Emboldened Warrior
 60 Raya - Headstrong
 60 Agrabah - Marketplace
-60 Cruella De Vil - Style Icon
+2 Cruella De Vil - Style Icon
 13 Mama Odie - Mystical Maven
 30 Judy Hopps - Optimistic Officer
 2 Alice - Growing Girl

@@ -58,8 +58,12 @@ def generate_retail_draftmancer_file(id_to_tts_card, card_evaluations_file, set_
     }
 
     printing_ids_to_count: dict[PrintingId, int] = {}
+    failures = []
     for id in id_to_tts_card:
-        api_card = id_to_api_card[id]
+        api_card = id_to_api_card.get(id)
+        if not api_card:
+            failures.append(id)
+            continue
         card_printing = get_printing_from_set(api_card, set_code)
         rarity = card_printing.rarity
         color = api_card.color
@@ -70,5 +74,6 @@ def generate_retail_draftmancer_file(id_to_tts_card, card_evaluations_file, set_
         for slot_name in slots_to_append:
             slot_card = SlotCard(id, frequency)
             slot_name_to_slot[slot_name].slot_cards.append(slot_card)
-
+    if failures:
+        raise ValueError(f"Failed to find API cards for IDs:\n {'\n'.join(failures)}")
     return draftmancer.generate_draftmancer_file(printing_ids_to_count, card_evaluations_file, settings, slot_name_to_slot)

@@ -236,6 +236,94 @@ def increment_retail_drafts_on_start(set_id:str):
   # TODO: keep a table for retail sets and increment it
   return Response(status=200)
 
+@app.route('/api/retail_sets/<string:set_id>/analysis', methods=['GET'])
+def get_retail_set_analysis(set_id:str):
+  set: api.RetailSet = retail_manager.get_set(set_id)
+  if not set:
+    return lcc_error.RetailSetNotFoundError("Retail set not found")
+  
+  # TODO: Implement actual analysis logic
+  # For now, return comprehensive sample data with individual cards
+  sample_analysis = {
+    'setId': set_id,
+    'cardTypes': {
+      'Character': 45,
+      'Action': 25,
+      'Song': 15,
+      'Item': 10,
+      'Location': 5
+    },
+    'traits': ['Action', 'Ally', 'Hero', 'Item', 'Knight', 'Location', 'Princess', 'Queen', 'Song', 'Sorcerer', 'Villain'],
+    'cards': [
+      # Heroes at various ink costs
+      {'name': 'Elsa - Snow Queen', 'type': 'Character', 'traits': ['Hero', 'Queen', 'Sorcerer'], 'strength': 4, 'willpower': 6, 'inkCost': 8, 'rarity': 'Legendary'},
+      {'name': 'Mickey Mouse - Brave Little Tailor', 'type': 'Character', 'traits': ['Hero'], 'strength': 2, 'willpower': 3, 'inkCost': 3, 'rarity': 'Common'},
+      {'name': 'Moana - Of Motunui', 'type': 'Character', 'traits': ['Hero', 'Princess'], 'strength': 3, 'willpower': 4, 'inkCost': 5, 'rarity': 'Uncommon'},
+      {'name': 'Simba - Returned King', 'type': 'Character', 'traits': ['Hero', 'King'], 'strength': 4, 'willpower': 5, 'inkCost': 7, 'rarity': 'Rare'},
+      {'name': 'Ariel - On Human Legs', 'type': 'Character', 'traits': ['Hero', 'Princess'], 'strength': 1, 'willpower': 3, 'inkCost': 2, 'rarity': 'Common'},
+      
+      # Allies at various ink costs  
+      {'name': 'Donald Duck - Boisterous Fowl', 'type': 'Character', 'traits': ['Ally'], 'strength': 2, 'willpower': 2, 'inkCost': 2, 'rarity': 'Common'},
+      {'name': 'Goofy - Knight for a Day', 'type': 'Character', 'traits': ['Ally', 'Knight'], 'strength': 1, 'willpower': 4, 'inkCost': 3, 'rarity': 'Uncommon'},
+      {'name': 'Chip - Acorn Collector', 'type': 'Character', 'traits': ['Ally'], 'strength': 1, 'willpower': 1, 'inkCost': 1, 'rarity': 'Common'},
+      {'name': 'Dale - Chip\'s Partner', 'type': 'Character', 'traits': ['Ally'], 'strength': 1, 'willpower': 1, 'inkCost': 1, 'rarity': 'Common'},
+      {'name': 'Lumiere - Hospitable Host', 'type': 'Character', 'traits': ['Ally'], 'strength': 2, 'willpower': 3, 'inkCost': 4, 'rarity': 'Uncommon'},
+      
+      # Villains
+      {'name': 'Maleficent - Monstrous Dragon', 'type': 'Character', 'traits': ['Villain', 'Dragon'], 'strength': 7, 'willpower': 9, 'inkCost': 8, 'rarity': 'Legendary'},
+      {'name': 'Jafar - Royal Vizier', 'type': 'Character', 'traits': ['Villain', 'Sorcerer'], 'strength': 3, 'willpower': 5, 'inkCost': 6, 'rarity': 'Rare'},
+      {'name': 'Captain Hook - Ruthless Pirate', 'type': 'Character', 'traits': ['Villain', 'Pirate'], 'strength': 3, 'willpower': 4, 'inkCost': 5, 'rarity': 'Uncommon'},
+      
+      # Actions
+      {'name': 'Let It Go', 'type': 'Song', 'traits': ['Song'], 'strength': None, 'willpower': None, 'inkCost': 5, 'rarity': 'Super Rare'},
+      {'name': 'Freeze', 'type': 'Action', 'traits': ['Action'], 'strength': None, 'willpower': None, 'inkCost': 2, 'rarity': 'Common'},
+      {'name': 'Healing Glow', 'type': 'Action', 'traits': ['Action'], 'strength': None, 'willpower': None, 'inkCost': 1, 'rarity': 'Common'},
+      {'name': 'Smash', 'type': 'Action', 'traits': ['Action'], 'strength': None, 'willpower': None, 'inkCost': 3, 'rarity': 'Uncommon'},
+      
+      # Items
+      {'name': 'Lantern', 'type': 'Item', 'traits': ['Item'], 'strength': None, 'willpower': None, 'inkCost': 2, 'rarity': 'Common'},
+      {'name': 'Magic Mirror', 'type': 'Item', 'traits': ['Item'], 'strength': None, 'willpower': None, 'inkCost': 4, 'rarity': 'Rare'},
+      {'name': 'Coconut Basket', 'type': 'Item', 'traits': ['Item'], 'strength': None, 'willpower': None, 'inkCost': 1, 'rarity': 'Common'},
+      
+      # Locations
+      {'name': 'Beast\'s Castle', 'type': 'Location', 'traits': ['Location'], 'strength': None, 'willpower': 5, 'inkCost': 4, 'rarity': 'Uncommon'},
+      {'name': 'Agrabah - City of Wonders', 'type': 'Location', 'traits': ['Location'], 'strength': None, 'willpower': 6, 'inkCost': 6, 'rarity': 'Rare'},
+      
+      # More characters with specific traits
+      {'name': 'Belle - Hidden Depths', 'type': 'Character', 'traits': ['Princess'], 'strength': 2, 'willpower': 4, 'inkCost': 4, 'rarity': 'Uncommon'},
+      {'name': 'Merlin - Goat', 'type': 'Character', 'traits': ['Sorcerer'], 'strength': 1, 'willpower': 3, 'inkCost': 3, 'rarity': 'Common'},
+      {'name': 'Robin Hood - Champion of Sherwood', 'type': 'Character', 'traits': ['Hero'], 'strength': 2, 'willpower': 2, 'inkCost': 2, 'rarity': 'Common'},
+      {'name': 'Prince Eric - Dashing and Brave', 'type': 'Character', 'traits': ['Hero', 'Prince'], 'strength': 3, 'willpower': 3, 'inkCost': 4, 'rarity': 'Uncommon'},
+      
+      # Knights
+      {'name': 'Arthur - Wizard\'s Apprentice', 'type': 'Character', 'traits': ['Knight'], 'strength': 2, 'willpower': 3, 'inkCost': 3, 'rarity': 'Common'},
+      {'name': 'Sir Hiss - Loyal Serpent', 'type': 'Character', 'traits': ['Ally', 'Knight'], 'strength': 1, 'willpower': 2, 'inkCost': 2, 'rarity': 'Common'},
+    ],
+    'strengthDistribution': {
+      '0': {'1': 5, '2': 3, '3': 2},
+      '1': {'1': 8, '2': 5, '3': 3},
+      '2': {'1': 10, '2': 8, '3': 5},
+      '3': {'2': 12, '3': 10, '4': 6},
+      '4': {'3': 8, '4': 12, '5': 8},
+      '5': {'4': 6, '5': 10, '6': 6},
+      '6': {'5': 4, '6': 8, '7': 4},
+      '7': {'6': 3, '7': 6, '8': 3},
+      '8': {'7': 2, '8': 4, '9': 2}
+    },
+    'willpowerDistribution': {
+      '0': {'1': 3, '2': 5, '3': 4},
+      '1': {'2': 6, '3': 8, '4': 5},
+      '2': {'2': 8, '3': 10, '4': 8},
+      '3': {'3': 10, '4': 12, '5': 8},
+      '4': {'4': 8, '5': 12, '6': 10},
+      '5': {'5': 6, '6': 10, '7': 8},
+      '6': {'6': 4, '7': 8, '8': 6},
+      '7': {'7': 3, '8': 6, '9': 4},
+      '8': {'8': 2, '9': 4, '10': 3}
+    }
+  }
+  return jsonify(sample_analysis)
+
 # CUBE API ENDPOINTS
 
 @app.route('/api/cube/count', methods=['GET'])

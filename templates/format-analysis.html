@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Format Analysis - Lorcana Cube @ Cubecana</title>
+    {% include 'shared/common_head.html' %}
+
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .analysis-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #2c2c2c;
+            border-radius: 10px;
+        }
+        .page-header {
+            text-align: center;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, #333, #444);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #555;
+            position: relative;
+            overflow: hidden;
+        }
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255, 107, 53, 0.1), rgba(142, 36, 170, 0.1));
+            pointer-events: none;
+        }
+        .page-header h1 {
+            color: white;
+            margin: 0 0 10px 0;
+            font-size: 2.2em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            position: relative;
+            z-index: 1;
+        }
+        .page-header p {
+            color: #ccc;
+            margin: 5px 0;
+            font-size: 1.1em;
+            position: relative;
+            z-index: 1;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: #555;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 1px solid #777;
+        }
+        .back-link:hover {
+            background-color: #666;
+            color: white;
+            text-decoration: none;
+        }
+        .analysis-placeholder {
+            background-color: #333;
+            border: 1px solid #555;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .analysis-placeholder h2 {
+            color: #aaa;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        .analysis-placeholder p {
+            color: #888;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    {% include 'shared/content_header.html' %}
+
+    <div class="analysis-content">
+        <a href="/retail-directory" class="back-link">← Back to Retail Directory</a>
+        
+        <div class="page-header">
+            <h1>Format Analysis</h1>
+            <p>Set ID: {{ set_id }}</p>
+        </div>
+
+        <div class="analysis-placeholder">
+            <h2>Coming Soon</h2>
+            <p>Format analysis functionality will be implemented here.</p>
+            <p>This page will provide detailed insights about the draft format for this retail set.</p>
+        </div>
+    </div>
+
+    {% include 'shared/content_footer.html' %}
+</body>
+</html>

@@ -35,6 +35,10 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        .retail-set-name {
+            color: #f8f8ffe7;
+            text-decoration: none;
+        }
         .cube-tag {
             display: inline-block;
             background-color: gray;
@@ -121,6 +125,12 @@
             padding: 8px; 
             margin-bottom: 8px; 
             box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: background-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        #cube-element-div:hover {
+            background-color: #3a3a3a;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
         }
         #element-row-1 {
             text-align: left;
@@ -253,7 +263,7 @@
         <div id="cube-element-div">
             <div id="element-row-1" class="cube-element-row-1">
                 <div id="element-row-1-left">
-                    <span id="cube-element-name" class="name">INSERT_NAME</span>
+                    <span id="cube-element-name" class="name retail-set-name">INSERT_NAME</span>
                 </div>
                 <div id="element-row-1-right">
                     <span><button disabled id="cube-element-sealed" class="cube-dir-btn" ><img class="cube-dir-btn-img" src="static/img/hand-of-cards.png" height="14px"/> Sealed!</button></span>   

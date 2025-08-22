@@ -44,6 +44,10 @@ def serve_cubes():
 def serve_retail_sets():
   return render_template('retail-directory.html')
 
+@app.route('/retail-set/<string:set_id>/format-analysis')
+def serve_format_analysis(set_id):
+  return render_template('format-analysis.html', set_id=set_id)
+
 @app.route('/discord')
 def serve_discord():
   return redirect("https://discord.com/invite/DsbeKc2zsP")

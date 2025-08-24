@@ -68,7 +68,8 @@ class CardPrinting:
             indent=4)
 
 class ApiCard:
-    def __init__(self, full_name: str, cost: int, color: str, inks: list[str], types: list[str], card_printings: list[CardPrinting], default_printing: CardPrinting):
+    def __init__(self, full_name: str, cost: int, color: str, inks: list[str], types: list[str], card_printings: list[CardPrinting], default_printing: CardPrinting, 
+                 classifications: list[str] = None, strength: int = None, willpower: int = None):
         self.full_name = full_name
         self.cost = cost
         self.color = color
@@ -76,6 +77,9 @@ class ApiCard:
         self.types = types
         self.card_printings = card_printings
         self.default_printing = default_printing
+        self.classifications = classifications or []
+        self.strength = strength
+        self.willpower = willpower
 
     def toJSON(self):
         return json.dumps(

@@ -72,6 +72,12 @@ class LorcastApi:
     def api_card_from(self, printing_untyped) -> ApiCard:
         printing: CardPrinting = self.printing_from_printing_untyped(printing_untyped)
         full_name = self.get_cannonical_name(printing_untyped)
+        
+        # Extract classifications (traits), strength, and willpower from API data
+        classifications = printing_untyped.get('classifications', []) or []
+        strength = printing_untyped.get('strength')
+        willpower = printing_untyped.get('willpower')
+        
         return ApiCard(
             full_name=full_name,    
             cost=printing_untyped['cost'], 
@@ -79,7 +85,10 @@ class LorcastApi:
             inks=printing_untyped['inks'],
             types=printing_untyped['type'],
             card_printings=[printing],
-            default_printing=printing
+            default_printing=printing,
+            classifications=classifications,
+            strength=strength,
+            willpower=willpower
         )
 
     def printing_from_printing_untyped(self, printing_untyped) -> CardPrinting:

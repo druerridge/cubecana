@@ -147,3 +147,68 @@ class OrderType(str, Enum):
 class SortType(str, Enum):
     RANK = 'rank'
     DATE = 'date'
+
+@dataclass(frozen=True)
+class SlotInfo:
+    name: str
+    weight: int
+    probability: float
+    
+    def toJSON(self):
+        return json.dumps(
+            self,
+            default=lambda o: o.__dict__,
+            sort_keys=True,
+            indent=4)
+
+@dataclass(frozen=True)
+class FormatAnalysisCard:
+    name: str
+    type: str
+    inkCost: int
+    rarity: str
+    expectedAtTable: float
+    copiesPerPack: float
+    slotInfo: SlotInfo
+    traits: List[str]
+    strength: int = None
+    willpower: int = None
+    
+    def toJSON(self):
+        return json.dumps(
+            self,
+            default=lambda o: o.__dict__,
+            sort_keys=True,
+            indent=4)
+
+@dataclass(frozen=True)
+class FormatAnalysisSettings:
+    boostersPerPlayer: int
+    name: str
+    withReplacement: bool
+    playersCount: int
+    totalPacks: int
+    
+    def toJSON(self):
+        return json.dumps(
+            self,
+            default=lambda o: o.__dict__,
+            sort_keys=True,
+            indent=4)
+
+@dataclass(frozen=True)
+class FormatAnalysisResponse:
+    setId: str
+    cards: List[FormatAnalysisCard]
+    cardTypes: dict[str, int]
+    traits: List[str]
+    strengthDistribution: dict[str, dict[str, int]]
+    willpowerDistribution: dict[str, dict[str, int]]
+    settings: FormatAnalysisSettings
+    
+    def toJSON(self):
+        return json.dumps(
+            self,
+            default=lambda o: o.__dict__,
+            sort_keys=True,
+            indent=4)

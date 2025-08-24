@@ -53,6 +53,14 @@ function setupEventListeners() {
     boostersPerPlayerInput.addEventListener('change', updateTraitAnalysis);
     // Note: traitSelect event listener is now handled in updateTraitAnalysis
     // since the dropdown gets recreated when the table updates
+    
+    // Add window resize handler for responsive charts
+    window.addEventListener('resize', handleResize);
+    
+    // Handle orientation changes on mobile
+    window.addEventListener('orientationchange', function() {
+        setTimeout(handleResize, 500); // Delay to allow orientation change to complete
+    });
 }
 
 async function loadSetData() {
@@ -94,8 +102,14 @@ function processAnalysisData(analysisData) {
         strengthDistribution: analysisData.strengthDistribution,
         willpowerDistribution: analysisData.willpowerDistribution,
         // Use the card data from the API
-        cards: analysisData.cards || sampleSetData.cards
+        cards: analysisData.cards || sampleSetData.cards,
+        settings: analysisData.settings
     };
+    
+    if (analysisData.settings) {
+        boostersPerPlayerInput.value = analysisData.settings.boostersPerPlayer;
+        maxPodSizeInput.value = analysisData.settings.playersCount;
+    }
 }
 
 function initializeCharts() {
@@ -116,11 +130,23 @@ function initializeCharts() {
         },
         options: {
             responsive: true,
-            maintainAspectRatio: true,
+            maintainAspectRatio: false,
+            layout: {
+                padding: {
+                    bottom: 20
+                }
+            },
             plugins: {
                 legend: {
+                    position: 'bottom',
                     labels: {
-                        color: 'white'
+                        color: 'white',
+                        padding: 15,
+                        usePointStyle: true,
+                        font: {
+                            size: 12
+                        },
+                        boxWidth: 12
                     }
                 }
             }
@@ -268,6 +294,40 @@ function updateAllCharts() {
     updateWillpowerChart();
 }
 
+// Helper function to determine which ink costs should be shown based on available data
+function getActiveInkCosts() {
+    if (!setData || !setData.cards) {
+        return ['0', '1', '2', '3', '4', '5', '6', '7', '8+']; // Default all costs
+    }
+
+    const activeCosts = new Set();
+    setData.cards.forEach(card => {
+        const inkCost = Math.min(card.inkCost, 8);
+        activeCosts.add(inkCost);
+    });
+
+    const allCosts = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+    const filteredCosts = allCosts.filter(cost => activeCosts.has(cost));
+    
+    return filteredCosts.map(cost => cost === 8 ? '8+' : cost.toString());
+}
+
+// Helper function to filter data arrays based on active ink costs
+function filterDataByActiveCosts(dataArray) {
+    if (!setData || !setData.cards) {
+        return dataArray; // Return original if no data
+    }
+
+    const activeCosts = new Set();
+    setData.cards.forEach(card => {
+        const inkCost = Math.min(card.inkCost, 8);
+        activeCosts.add(inkCost);
+    });
+
+    const allCosts = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+    return dataArray.filter((value, index) => activeCosts.has(allCosts[index]));
+}
+
 function updateCardTypeChart() {
     if (!setData || !cardTypeChart) return;
 
@@ -349,16 +409,12 @@ function updateTraitAnalysis() {
     
     console.log(`Found ${cardsWithTrait.length} cards with trait "${selectedTrait}"`);
 
-    // Calculate expected counts based on rarity and frequency
+    // Calculate expected counts using real data from draftmancer files
     let totalExpectedAtTable = 0;
 
     cardsWithTrait.forEach(card => {
-        // Simple calculation - in a real implementation, this would be more complex
-        // based on actual slot weights and pack generation logic
-        const rarityMultiplier = getRarityMultiplier(card.rarity);
-        const expectedPerBooster = rarityMultiplier;
-        const expectedAtTable = expectedPerBooster * boostersPerPlayer * maxPodSize;
-
+        // Use the real expectedAtTable value calculated from draftmancer weights
+        const expectedAtTable = card.expectedAtTable || 0;
         totalExpectedAtTable += expectedAtTable;
     });
 
@@ -382,14 +438,29 @@ function updateTraitAnalysis() {
 function updateTraitInkCostChart(selectedTrait) {
     if (!selectedTrait || !setData || !traitInkCostChart) {
         // Clear the chart if no trait is selected
-        traitInkCostChart.data.datasets[0].data = new Array(9).fill(0);
+        const activeInkCosts = getActiveInkCosts();
+        traitInkCostChart.data.labels = activeInkCosts;
+        traitInkCostChart.data.datasets[0].data = new Array(activeInkCosts.length).fill(0);
         traitInkCostChart.options.plugins.title.text = 'Cards by Ink Cost (Select a trait above)';
         traitInkCostChart.update();
         return;
     }
 
+    // Get active ink costs and filter data accordingly
+    const activeInkCosts = getActiveInkCosts();
+    const activeCostIndices = [];
+    const allCosts = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+    
+    // Build mapping of which cost indices to include
+    allCosts.forEach((cost, index) => {
+        const costLabel = cost === 8 ? '8+' : cost.toString();
+        if (activeInkCosts.includes(costLabel)) {
+            activeCostIndices.push(cost);
+        }
+    });
+
     // Calculate distribution of cards with the selected trait by ink cost
-    const inkCostCounts = new Array(9).fill(0); // 0-8+ ink costs
+    const inkCostCounts = new Array(activeInkCosts.length).fill(0);
 
     const cardsWithTrait = setData.cards.filter(card => 
         card.traits && card.traits.includes(selectedTrait)
@@ -397,10 +468,14 @@ function updateTraitInkCostChart(selectedTrait) {
 
     cardsWithTrait.forEach(card => {
         const inkCost = Math.min(card.inkCost, 8); // Cap at 8 for 8+ category
-        inkCostCounts[inkCost]++;
+        const costIndex = activeCostIndices.indexOf(inkCost);
+        if (costIndex !== -1) {
+            inkCostCounts[costIndex]++;
+        }
     });
 
-    // Update chart
+    // Update chart labels and data
+    traitInkCostChart.data.labels = activeInkCosts;
     traitInkCostChart.data.datasets[0].data = inkCostCounts;
     traitInkCostChart.data.datasets[0].label = `Cards with "${selectedTrait}" trait`;
     traitInkCostChart.options.plugins.title.text = `"${selectedTrait}" Cards by Ink Cost`;
@@ -449,6 +524,19 @@ function updateStrengthChart() {
         });
     }
 
+    // Get active ink costs and filter data accordingly
+    const activeInkCosts = getActiveInkCosts();
+    const activeCostIndices = [];
+    const allCosts = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+    
+    // Build mapping of which cost indices to include
+    allCosts.forEach((cost, index) => {
+        const costLabel = cost === 8 ? '8+' : cost.toString();
+        if (activeInkCosts.includes(costLabel)) {
+            activeCostIndices.push(cost);
+        }
+    });
+
     // Prepare chart data
     const sortedStrengthValues = Array.from(strengthValues).sort((a, b) => a - b);
     const datasets = sortedStrengthValues.map((strength, index) => {
@@ -473,13 +561,15 @@ function updateStrengthChart() {
         
         return {
             label: `Strength ${strength}`,
-            data: Object.keys(strengthByCost).map(cost => strengthByCost[cost][strength] || 0),
+            data: activeCostIndices.map(cost => strengthByCost[cost][strength] || 0),
             backgroundColor: color,
             borderColor: '#333',
             borderWidth: 1
         };
     });
 
+    // Update chart labels and data
+    strengthChart.data.labels = activeInkCosts;
     strengthChart.data.datasets = datasets;
     strengthChart.update();
 }
@@ -514,6 +604,19 @@ function updateWillpowerChart() {
         });
     }
 
+    // Get active ink costs and filter data accordingly
+    const activeInkCosts = getActiveInkCosts();
+    const activeCostIndices = [];
+    const allCosts = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+    
+    // Build mapping of which cost indices to include
+    allCosts.forEach((cost, index) => {
+        const costLabel = cost === 8 ? '8+' : cost.toString();
+        if (activeInkCosts.includes(costLabel)) {
+            activeCostIndices.push(cost);
+        }
+    });
+
     // Prepare chart data
     const sortedWillpowerValues = Array.from(willpowerValues).sort((a, b) => a - b);
     const datasets = sortedWillpowerValues.map((willpower, index) => {
@@ -538,13 +641,56 @@ function updateWillpowerChart() {
         
         return {
             label: `Willpower ${willpower}`,
-            data: Object.keys(willpowerByCost).map(cost => willpowerByCost[cost][willpower] || 0),
+            data: activeCostIndices.map(cost => willpowerByCost[cost][willpower] || 0),
             backgroundColor: color,
             borderColor: '#333',
             borderWidth: 1
         };
     });
 
+    // Update chart labels and data
+    willpowerChart.data.labels = activeInkCosts;
     willpowerChart.data.datasets = datasets;
     willpowerChart.update();
+}
+
+// Responsive chart handling
+function handleResize() {
+    // Update all charts to handle responsive layout changes
+    if (cardTypeChart) {
+        cardTypeChart.resize();
+    }
+    if (strengthChart) {
+        strengthChart.resize();
+    }
+    if (willpowerChart) {
+        willpowerChart.resize();
+    }
+    if (traitInkCostChart) {
+        traitInkCostChart.resize();
+    }
+    
+    // Update chart configurations for new screen size
+    updateChartConfigsForScreenSize();
+}
+
+// Function to update chart configurations based on screen size
+function updateChartConfigsForScreenSize() {
+    const width = window.innerWidth;
+    
+    // Update pie chart legend configuration
+    if (cardTypeChart) {
+        const legendConfig = cardTypeChart.options.plugins.legend;
+        if (width < 480) {
+            legendConfig.labels.padding = 10;
+            legendConfig.labels.font = { size: 10 };
+        } else if (width < 768) {
+            legendConfig.labels.padding = 15;
+            legendConfig.labels.font = { size: 12 };
+        } else {
+            legendConfig.labels.padding = 20;
+            legendConfig.labels.font = { size: 14 };
+        }
+        cardTypeChart.update();
+    }
 }

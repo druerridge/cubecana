@@ -53,14 +53,6 @@ function setupEventListeners() {
     boostersPerPlayerInput.addEventListener('change', updateTraitAnalysis);
     // Note: traitSelect event listener is now handled in updateTraitAnalysis
     // since the dropdown gets recreated when the table updates
-    
-    // Add window resize handler for responsive charts
-    window.addEventListener('resize', handleResize);
-    
-    // Handle orientation changes on mobile
-    window.addEventListener('orientationchange', function() {
-        setTimeout(handleResize, 500); // Delay to allow orientation change to complete
-    });
 }
 
 async function loadSetData() {
@@ -74,14 +66,20 @@ async function loadSetData() {
             processAnalysisData(analysisData);
             initializeCharts();
             populateTraitDropdown();
-            updateAllCharts();
+            
+            // Add a small delay to ensure charts are fully initialized before updating
+            setTimeout(() => {
+                updateAllCharts();
+            }, 100);
         }, (error) => {
             console.error('Error loading analysis data:', error);
             // Use sample data as fallback
             setData = sampleSetData;
             initializeCharts();
             populateTraitDropdown();
-            updateAllCharts();
+            setTimeout(() => {
+                updateAllCharts();
+            }, 100);
         }, 'GET');
         
     } catch (error) {
@@ -101,8 +99,9 @@ function processAnalysisData(analysisData) {
         traits: analysisData.traits,
         strengthDistribution: analysisData.strengthDistribution,
         willpowerDistribution: analysisData.willpowerDistribution,
-        // Use the card data from the API
-        cards: analysisData.cards || sampleSetData.cards,
+        traitCalculations: analysisData.traitCalculations,
+        traitInkCostDistributions: analysisData.traitInkCostDistributions,
+        chartData: analysisData.chartData,
         settings: analysisData.settings
     };
     
@@ -130,23 +129,11 @@ function initializeCharts() {
         },
         options: {
             responsive: true,
-            maintainAspectRatio: false,
-            layout: {
-                padding: {
-                    bottom: 20
-                }
-            },
+            maintainAspectRatio: true,
             plugins: {
                 legend: {
-                    position: 'bottom',
                     labels: {
-                        color: 'white',
-                        padding: 15,
-                        usePointStyle: true,
-                        font: {
-                            size: 12
-                        },
-                        boxWidth: 12
+                        color: 'white'
                     }
                 }
             }
@@ -294,79 +281,29 @@ function updateAllCharts() {
     updateWillpowerChart();
 }
 
-// Helper function to determine which ink costs should be shown based on available data
+// Helper function to determine which ink costs should be shown based on chart data
 function getActiveInkCosts() {
-    if (!setData || !setData.cards) {
+    if (!setData || !setData.chartData) {
         return ['0', '1', '2', '3', '4', '5', '6', '7', '8+']; // Default all costs
     }
 
-    const activeCosts = new Set();
-    setData.cards.forEach(card => {
-        const inkCost = Math.min(card.inkCost, 8);
-        activeCosts.add(inkCost);
-    });
-
-    const allCosts = [0, 1, 2, 3, 4, 5, 6, 7, 8];
-    const filteredCosts = allCosts.filter(cost => activeCosts.has(cost));
-    
-    return filteredCosts.map(cost => cost === 8 ? '8+' : cost.toString());
-}
-
-// Helper function to filter data arrays based on active ink costs
-function filterDataByActiveCosts(dataArray) {
-    if (!setData || !setData.cards) {
-        return dataArray; // Return original if no data
-    }
-
-    const activeCosts = new Set();
-    setData.cards.forEach(card => {
-        const inkCost = Math.min(card.inkCost, 8);
-        activeCosts.add(inkCost);
-    });
-
-    const allCosts = [0, 1, 2, 3, 4, 5, 6, 7, 8];
-    return dataArray.filter((value, index) => activeCosts.has(allCosts[index]));
+    // Use the strength chart labels as they represent the active ink costs
+    return setData.chartData.strengthChart.labels || ['0', '1', '2', '3', '4', '5', '6', '7', '8+'];
 }
 
 function updateCardTypeChart() {
-    if (!setData || !cardTypeChart) return;
+    if (!setData || !cardTypeChart || !setData.chartData) return;
 
-    let typeCounts;
-    if (setData.cardTypes) {
-        // Use API data
-        typeCounts = setData.cardTypes;
-    } else {
-        // Fall back to calculating from cards array
-        typeCounts = {};
-        setData.cards.forEach(card => {
-            typeCounts[card.type] = (typeCounts[card.type] || 0) + 1;
-        });
-    }
-
-    cardTypeChart.data.labels = Object.keys(typeCounts);
-    cardTypeChart.data.datasets[0].data = Object.values(typeCounts);
+    const chartData = setData.chartData.cardTypeChart;
+    cardTypeChart.data.labels = chartData.labels;
+    cardTypeChart.data.datasets[0].data = chartData.data;
     cardTypeChart.update();
 }
 
 function populateTraitDropdown() {
-    if (!setData) return;
+    if (!setData || !setData.traits) return;
 
-    let traits;
-    if (setData.traits) {
-        // Use API data
-        traits = setData.traits;
-    } else {
-        // Fall back to extracting from cards array
-        const traitSet = new Set();
-        setData.cards.forEach(card => {
-            if (card.traits) {
-                card.traits.forEach(trait => traitSet.add(trait));
-            }
-        });
-        traits = Array.from(traitSet);
-    }
-
-    const sortedTraits = traits.sort();
+    const sortedTraits = setData.traits.sort();
     traitSelect.innerHTML = '';
     
     // Populate dropdown with traits, no empty option
@@ -394,31 +331,22 @@ function updateTraitAnalysis() {
     const selectedTrait = traitSelect.value;
     console.log('updateTraitAnalysis called with trait:', selectedTrait);
     
-    if (!selectedTrait || !setData) {
+    if (!selectedTrait || !setData || !setData.traitCalculations) {
         console.log('No trait selected or no data available');
         return; // Exit early if no data or trait
     }
 
+    const traitStats = setData.traitCalculations[selectedTrait];
+    if (!traitStats) {
+        console.log(`No statistics found for trait "${selectedTrait}"`);
+        return;
+    }
+
     const maxPodSize = parseInt(maxPodSizeInput.value);
-    const boostersPerPlayer = parseInt(boostersPerPlayerInput.value);
-
-    // Calculate trait analysis
-    const cardsWithTrait = setData.cards.filter(card => 
-        card.traits && card.traits.includes(selectedTrait)
-    );
     
-    console.log(`Found ${cardsWithTrait.length} cards with trait "${selectedTrait}"`);
-
-    // Calculate expected counts using real data from draftmancer files
-    let totalExpectedAtTable = 0;
-
-    cardsWithTrait.forEach(card => {
-        // Use the real expectedAtTable value calculated from draftmancer weights
-        const expectedAtTable = card.expectedAtTable || 0;
-        totalExpectedAtTable += expectedAtTable;
-    });
-
-    const totalExpectedPerSeat = totalExpectedAtTable / maxPodSize;
+    // Use pre-computed trait statistics
+    const totalExpectedAtTable = traitStats.expectedAtTable;
+    const totalExpectedPerSeat = traitStats.expectedInSeat;
     
     console.log(`Expected at table: ${totalExpectedAtTable.toFixed(1)}, per seat: ${totalExpectedPerSeat.toFixed(1)}`);
 
@@ -438,40 +366,32 @@ function updateTraitAnalysis() {
 function updateTraitInkCostChart(selectedTrait) {
     if (!selectedTrait || !setData || !traitInkCostChart) {
         // Clear the chart if no trait is selected
-        const activeInkCosts = getActiveInkCosts();
-        traitInkCostChart.data.labels = activeInkCosts;
-        traitInkCostChart.data.datasets[0].data = new Array(activeInkCosts.length).fill(0);
+        traitInkCostChart.data.labels = [];
+        traitInkCostChart.data.datasets[0].data = [];
         traitInkCostChart.options.plugins.title.text = 'Cards by Ink Cost (Select a trait above)';
         traitInkCostChart.update();
         return;
     }
 
-    // Get active ink costs and filter data accordingly
-    const activeInkCosts = getActiveInkCosts();
-    const activeCostIndices = [];
-    const allCosts = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+    // Use pre-computed trait ink cost distribution data
+    const traitDistributions = setData.chartData && setData.chartData.traitInkCostDistributions;
+    if (!traitDistributions || !traitDistributions[selectedTrait]) {
+        // Clear chart if no data for this trait
+        traitInkCostChart.data.labels = [];
+        traitInkCostChart.data.datasets[0].data = [];
+        traitInkCostChart.options.plugins.title.text = `No data for "${selectedTrait}" trait`;
+        traitInkCostChart.update();
+        return;
+    }
+
+    // Use the same active ink costs as the strength/willpower charts for consistency
+    const activeInkCosts = setData.chartData.strengthChart.labels;
+    const traitData = traitDistributions[selectedTrait];
     
-    // Build mapping of which cost indices to include
-    allCosts.forEach((cost, index) => {
-        const costLabel = cost === 8 ? '8+' : cost.toString();
-        if (activeInkCosts.includes(costLabel)) {
-            activeCostIndices.push(cost);
-        }
-    });
-
-    // Calculate distribution of cards with the selected trait by ink cost
-    const inkCostCounts = new Array(activeInkCosts.length).fill(0);
-
-    const cardsWithTrait = setData.cards.filter(card => 
-        card.traits && card.traits.includes(selectedTrait)
-    );
-
-    cardsWithTrait.forEach(card => {
-        const inkCost = Math.min(card.inkCost, 8); // Cap at 8 for 8+ category
-        const costIndex = activeCostIndices.indexOf(inkCost);
-        if (costIndex !== -1) {
-            inkCostCounts[costIndex]++;
-        }
+    const inkCostCounts = activeInkCosts.map(label => {
+        // Convert label back to cost number (handle "8+" case)
+        const cost = label === '8+' ? '8' : label;
+        return traitData[cost] || 0;
     });
 
     // Update chart labels and data
@@ -497,200 +417,45 @@ function getRarityMultiplier(rarity) {
 function updateStrengthChart() {
     if (!setData || !strengthChart) return;
 
-    let strengthByCost;
-    let strengthValues = new Set();
-
-    if (setData.strengthDistribution) {
-        // Use API data
-        strengthByCost = setData.strengthDistribution;
-        Object.values(strengthByCost).forEach(costData => {
-            Object.keys(costData).forEach(strength => strengthValues.add(parseInt(strength)));
-        });
-    } else {
-        // Fall back to calculating from cards array
-        strengthByCost = {};
-        for (let cost = 0; cost <= 8; cost++) {
-            strengthByCost[cost] = {};
-        }
-
-        setData.cards.forEach(card => {
-            if (card.strength !== null && card.strength !== undefined) {
-                const cost = Math.min(card.inkCost, 8);
-                const strength = card.strength;
-                
-                strengthValues.add(strength);
-                strengthByCost[cost][strength] = (strengthByCost[cost][strength] || 0) + 1;
+    // Use pre-computed chart data from backend
+    if (setData.chartData && setData.chartData.strengthChart) {
+        const chartConfig = setData.chartData.strengthChart;
+        
+        // Use the data directly from backend (already filtered to active ink costs)
+        strengthChart.data.labels = chartConfig.labels;
+        strengthChart.data.datasets = chartConfig.datasets;
+        
+        // Apply scaling options from backend if available
+        if (chartConfig.options && chartConfig.options.scales && chartConfig.options.scales.y) {
+            const yScale = chartConfig.options.scales.y;
+            if (yScale.suggestedMax !== null && yScale.suggestedMax !== undefined) {
+                strengthChart.options.scales.y.suggestedMax = yScale.suggestedMax;
             }
-        });
+        }
+        
+        strengthChart.update();
     }
-
-    // Get active ink costs and filter data accordingly
-    const activeInkCosts = getActiveInkCosts();
-    const activeCostIndices = [];
-    const allCosts = [0, 1, 2, 3, 4, 5, 6, 7, 8];
-    
-    // Build mapping of which cost indices to include
-    allCosts.forEach((cost, index) => {
-        const costLabel = cost === 8 ? '8+' : cost.toString();
-        if (activeInkCosts.includes(costLabel)) {
-            activeCostIndices.push(cost);
-        }
-    });
-
-    // Prepare chart data
-    const sortedStrengthValues = Array.from(strengthValues).sort((a, b) => a - b);
-    const datasets = sortedStrengthValues.map((strength, index) => {
-        // Use a red to yellow to green spectrum for strength values
-        const maxStrength = Math.max(...sortedStrengthValues);
-        const ratio = strength / Math.max(maxStrength, 1); // Normalize to 0-1
-        let color;
-        
-        if (ratio <= 0.5) {
-            // Red to yellow (low to medium strength)
-            const r = 255;
-            const g = Math.round(255 * ratio * 2);
-            const b = 0;
-            color = `rgb(${r}, ${g}, ${b})`;
-        } else {
-            // Yellow to green (medium to high strength)
-            const r = Math.round(255 * (1 - (ratio - 0.5) * 2));
-            const g = 255;
-            const b = 0;
-            color = `rgb(${r}, ${g}, ${b})`;
-        }
-        
-        return {
-            label: `Strength ${strength}`,
-            data: activeCostIndices.map(cost => strengthByCost[cost][strength] || 0),
-            backgroundColor: color,
-            borderColor: '#333',
-            borderWidth: 1
-        };
-    });
-
-    // Update chart labels and data
-    strengthChart.data.labels = activeInkCosts;
-    strengthChart.data.datasets = datasets;
-    strengthChart.update();
 }
 
 function updateWillpowerChart() {
     if (!setData || !willpowerChart) return;
 
-    let willpowerByCost;
-    let willpowerValues = new Set();
-
-    if (setData.willpowerDistribution) {
-        // Use API data
-        willpowerByCost = setData.willpowerDistribution;
-        Object.values(willpowerByCost).forEach(costData => {
-            Object.keys(costData).forEach(willpower => willpowerValues.add(parseInt(willpower)));
-        });
-    } else {
-        // Fall back to calculating from cards array
-        willpowerByCost = {};
-        for (let cost = 0; cost <= 8; cost++) {
-            willpowerByCost[cost] = {};
-        }
-
-        setData.cards.forEach(card => {
-            if (card.willpower !== null && card.willpower !== undefined) {
-                const cost = Math.min(card.inkCost, 8);
-                const willpower = card.willpower;
-                
-                willpowerValues.add(willpower);
-                willpowerByCost[cost][willpower] = (willpowerByCost[cost][willpower] || 0) + 1;
+    // Use pre-computed chart data from backend
+    if (setData.chartData && setData.chartData.willpowerChart) {
+        const chartConfig = setData.chartData.willpowerChart;
+        
+        // Use the data directly from backend (already filtered to active ink costs)
+        willpowerChart.data.labels = chartConfig.labels;
+        willpowerChart.data.datasets = chartConfig.datasets;
+        
+        // Apply scaling options from backend if available
+        if (chartConfig.options && chartConfig.options.scales && chartConfig.options.scales.y) {
+            const yScale = chartConfig.options.scales.y;
+            if (yScale.suggestedMax !== null && yScale.suggestedMax !== undefined) {
+                willpowerChart.options.scales.y.suggestedMax = yScale.suggestedMax;
             }
-        });
-    }
-
-    // Get active ink costs and filter data accordingly
-    const activeInkCosts = getActiveInkCosts();
-    const activeCostIndices = [];
-    const allCosts = [0, 1, 2, 3, 4, 5, 6, 7, 8];
-    
-    // Build mapping of which cost indices to include
-    allCosts.forEach((cost, index) => {
-        const costLabel = cost === 8 ? '8+' : cost.toString();
-        if (activeInkCosts.includes(costLabel)) {
-            activeCostIndices.push(cost);
-        }
-    });
-
-    // Prepare chart data
-    const sortedWillpowerValues = Array.from(willpowerValues).sort((a, b) => a - b);
-    const datasets = sortedWillpowerValues.map((willpower, index) => {
-        // Use a blue to purple to pink spectrum for willpower values
-        const maxWillpower = Math.max(...sortedWillpowerValues);
-        const ratio = willpower / Math.max(maxWillpower, 1); // Normalize to 0-1
-        let color;
-        
-        if (ratio <= 0.5) {
-            // Blue to purple (low to medium willpower)
-            const r = Math.round(128 * ratio * 2);
-            const g = 0;
-            const b = 255;
-            color = `rgb(${r}, ${g}, ${b})`;
-        } else {
-            // Purple to pink (medium to high willpower)
-            const r = Math.round(128 + 127 * (ratio - 0.5) * 2);
-            const g = Math.round(64 * (ratio - 0.5) * 2);
-            const b = Math.round(255 - 127 * (ratio - 0.5) * 2);
-            color = `rgb(${r}, ${g}, ${b})`;
         }
         
-        return {
-            label: `Willpower ${willpower}`,
-            data: activeCostIndices.map(cost => willpowerByCost[cost][willpower] || 0),
-            backgroundColor: color,
-            borderColor: '#333',
-            borderWidth: 1
-        };
-    });
-
-    // Update chart labels and data
-    willpowerChart.data.labels = activeInkCosts;
-    willpowerChart.data.datasets = datasets;
-    willpowerChart.update();
-}
-
-// Responsive chart handling
-function handleResize() {
-    // Update all charts to handle responsive layout changes
-    if (cardTypeChart) {
-        cardTypeChart.resize();
-    }
-    if (strengthChart) {
-        strengthChart.resize();
-    }
-    if (willpowerChart) {
-        willpowerChart.resize();
-    }
-    if (traitInkCostChart) {
-        traitInkCostChart.resize();
-    }
-    
-    // Update chart configurations for new screen size
-    updateChartConfigsForScreenSize();
-}
-
-// Function to update chart configurations based on screen size
-function updateChartConfigsForScreenSize() {
-    const width = window.innerWidth;
-    
-    // Update pie chart legend configuration
-    if (cardTypeChart) {
-        const legendConfig = cardTypeChart.options.plugins.legend;
-        if (width < 480) {
-            legendConfig.labels.padding = 10;
-            legendConfig.labels.font = { size: 10 };
-        } else if (width < 768) {
-            legendConfig.labels.padding = 15;
-            legendConfig.labels.font = { size: 12 };
-        } else {
-            legendConfig.labels.padding = 20;
-            legendConfig.labels.font = { size: 14 };
-        }
-        cardTypeChart.update();
+        willpowerChart.update();
     }
 }

@@ -46,7 +46,7 @@ class FormatAnalyzer:
             # Build comprehensive card analysis
             analysis_data = self._build_card_analysis(max_players)
             
-            print(f"Successfully analyzed format with {len(analysis_data['cards'])} cards and {len(analysis_data['traits'])} traits")
+            print(f"Successfully analyzed format with {len(self.custom_cards)} cards and {len(analysis_data['traits'])} traits")
             
             return analysis_data
             
@@ -176,7 +176,8 @@ class FormatAnalyzer:
         card_type_counts = {}
         strength_distribution = {}
         willpower_distribution = {}
-        cards_data = []
+        trait_calculations = {}  # For trait analysis
+        trait_ink_cost_distributions = {}  # For trait by ink cost charts
         
         # Initialize distributions for ink costs 0-8
         for cost in range(9):
@@ -210,25 +211,47 @@ class FormatAnalyzer:
             # Calculate expected copies at table
             total_packs = max_players * boosters_per_player
             expected_at_table = copies_per_pack * total_packs
-            
-            # Build card data using API card properties
-            card_data = self._build_card_data_from_api(
-                card_name, api_card, ink_cost, lorcana_type,
-                copies_per_pack, expected_at_table, slot_data
-            )
-            
-            cards_data.append(card_data)
+            expected_in_seat = copies_per_pack * boosters_per_player
             
             # Update distributions and traits using API data
-            all_traits.update(api_card.classifications or [])
+            traits = api_card.classifications or []
+            all_traits.update(traits)
             self._update_distributions(api_card, ink_cost, strength_distribution, willpower_distribution)
+            
+            # Build trait calculations for each trait this card has
+            for trait in traits:
+                if trait not in trait_calculations:
+                    trait_calculations[trait] = {
+                        'expectedAtTable': 0,
+                        'expectedInSeat': 0
+                    }
+                trait_calculations[trait]['expectedAtTable'] += expected_at_table
+                trait_calculations[trait]['expectedInSeat'] += expected_in_seat
+                
+                # Track trait by ink cost distribution
+                if trait not in trait_ink_cost_distributions:
+                    trait_ink_cost_distributions[trait] = {}
+                if str(ink_cost) not in trait_ink_cost_distributions[trait]:
+                    trait_ink_cost_distributions[trait][str(ink_cost)] = 0
+                trait_ink_cost_distributions[trait][str(ink_cost)] += 1
+        
+        # Generate chart data structures
+        chart_data = self._generate_chart_data(
+            card_type_counts, 
+            strength_distribution, 
+            willpower_distribution,
+            trait_calculations,
+            trait_ink_cost_distributions
+        )
         
         return {
-            'cards': cards_data,
             'cardTypes': card_type_counts,
             'traits': sorted(list(all_traits)),
             'strengthDistribution': strength_distribution,
             'willpowerDistribution': willpower_distribution,
+            'traitCalculations': trait_calculations,
+            'traitInkCostDistributions': trait_ink_cost_distributions,
+            'chartData': chart_data,
             'settings': {
                 'boostersPerPlayer': boosters_per_player,
                 'name': self.settings.get('name', 'Unknown Set'),
@@ -253,6 +276,114 @@ class FormatAnalyzer:
         
         # If none of the standard types found, return the first type
         return api_types[0]
+    
+    def _generate_chart_data(self, card_type_counts: Dict[str, int], 
+                            strength_distribution: Dict[str, Dict[str, int]], 
+                            willpower_distribution: Dict[str, Dict[str, int]],
+                            trait_calculations: Dict[str, Dict[str, float]],
+                            trait_ink_cost_distributions: Dict[str, Dict[str, int]]) -> Dict[str, Any]:
+        """Generate ready-to-use chart data structures for frontend."""
+        
+        # Prepare card type chart data
+        card_type_chart = {
+            'labels': list(card_type_counts.keys()),
+            'data': list(card_type_counts.values())
+        }
+        
+        # Prepare strength chart data (organized by ink cost)
+        ink_costs = ['0', '1', '2', '3', '4', '5', '6', '7', '8']
+        
+        # Filter to only include ink costs that have cards
+        active_ink_costs = []
+        for cost in ink_costs:
+            has_cards = any(strength_distribution[cost].get(strength, 0) > 0 
+                          for strength in strength_distribution[cost])
+            if has_cards:
+                active_ink_costs.append(cost)
+        
+        # If no active costs found, include all (fallback)
+        if not active_ink_costs:
+            active_ink_costs = ink_costs
+            
+        strength_chart = {
+            'labels': [cost if cost != '8' else '8+' for cost in active_ink_costs],
+            'datasets': [],
+            'options': {
+                'scales': {
+                    'y': {
+                        'beginAtZero': True,
+                        'suggestedMax': None  # Will be calculated below
+                    }
+                }
+            }
+        }
+        
+        # Get all unique strength values
+        all_strengths = set()
+        for cost_dist in strength_distribution.values():
+            all_strengths.update(cost_dist.keys())
+        
+        # Calculate max value for scaling
+        max_strength_value = 0
+        
+        # Create datasets for each strength value
+        for strength in sorted(all_strengths, key=lambda x: int(x) if x.isdigit() else 999):
+            dataset = {
+                'label': f'Strength {strength}',
+                'data': [strength_distribution[cost].get(strength, 0) for cost in active_ink_costs],
+                'backgroundColor': self._get_strength_color(strength)
+            }
+            strength_chart['datasets'].append(dataset)
+            max_strength_value = max(max_strength_value, max(dataset['data']))
+        
+        # Add 10% margin to the max value for better visualization
+        if max_strength_value > 0:
+            strength_chart['options']['scales']['y']['suggestedMax'] = int(max_strength_value * 1.1) + 1
+        
+        # Prepare willpower chart data (organized by ink cost) 
+        # Use the same active ink costs as strength chart for consistency
+        willpower_chart = {
+            'labels': [cost if cost != '8' else '8+' for cost in active_ink_costs],
+            'datasets': [],
+            'options': {
+                'scales': {
+                    'y': {
+                        'beginAtZero': True,
+                        'suggestedMax': None  # Will be calculated below
+                    }
+                }
+            }
+        }
+        
+        # Get all unique willpower values
+        all_willpowers = set()
+        for cost_dist in willpower_distribution.values():
+            all_willpowers.update(cost_dist.keys())
+        
+        # Calculate max value for scaling
+        max_willpower_value = 0
+        
+        # Create datasets for each willpower value
+        for willpower in sorted(all_willpowers, key=lambda x: int(x) if x.isdigit() else 999):
+            dataset = {
+                'label': f'Willpower {willpower}',
+                'data': [willpower_distribution[cost].get(willpower, 0) for cost in active_ink_costs],
+                'backgroundColor': self._get_willpower_color(willpower)
+            }
+            willpower_chart['datasets'].append(dataset)
+            max_willpower_value = max(max_willpower_value, max(dataset['data']))
+        
+        # Add 10% margin to the max value for better visualization
+        if max_willpower_value > 0:
+            willpower_chart['options']['scales']['y']['suggestedMax'] = int(max_willpower_value * 1.1) + 1
+        
+        return {
+            'cardTypeChart': card_type_chart,
+            'strengthChart': strength_chart,
+            'willpowerChart': willpower_chart,
+            'traitCalculations': trait_calculations,
+            'traitInkCostDistributions': trait_ink_cost_distributions
+        }
     
     def _build_card_data_from_api(self, card_name: str, api_card, ink_cost: int, 
                                   lorcana_type: str, copies_per_pack: float, 
@@ -337,6 +468,13 @@ class FormatAnalyzer:
             'traits': [],
             'strengthDistribution': {},
             'willpowerDistribution': {},
+            'chartData': {
+                'cardTypeChart': {'labels': [], 'data': []},
+                'strengthChart': {'labels': [], 'datasets': []},
+                'willpowerChart': {'labels': [], 'datasets': []},
+                'traitCalculations': {},
+                'traitInkCostDistributions': {}
+            },
             'settings': {
                 'boostersPerPlayer': 3,
                 'name': 'Unknown Set',
@@ -345,3 +483,35 @@ class FormatAnalyzer:
                 'totalPacks': 24
             }
         }
+    
+    def _get_strength_color(self, strength: str) -> str:
+        """Generate color for strength values."""
+        try:
+            str_val = int(strength)
+            # Use a red gradient for strength (low to high)
+            if str_val <= 0:
+                return 'rgb(100, 0, 0)'
+            elif str_val <= 2:
+                return f'rgb({100 + str_val * 30}, 0, 0)'
+            elif str_val <= 4:
+                return f'rgb({160 + (str_val - 2) * 30}, {(str_val - 2) * 20}, 0)'
+            else:
+                return f'rgb({220 + min(35, (str_val - 4) * 7)}, {40 + min(80, (str_val - 4) * 16)}, 0)'
+        except ValueError:
+            return 'rgb(128, 128, 128)'  # Gray for non-numeric values
+    
+    def _get_willpower_color(self, willpower: str) -> str:
+        """Generate color for willpower values."""
+        try:
+            wp_val = int(willpower)
+            # Use a blue-purple gradient for willpower (low to high)
+            if wp_val <= 0:
+                return 'rgb(0, 0, 100)'
+            elif wp_val <= 2:
+                return f'rgb(0, 0, {100 + wp_val * 30})'
+            elif wp_val <= 4:
+                return f'rgb({(wp_val - 2) * 20}, 0, {160 + (wp_val - 2) * 30})'
+            else:
+                return f'rgb({40 + min(80, (wp_val - 4) * 16)}, 0, {220 + min(35, (wp_val - 4) * 7)})'
+        except ValueError:
+            return 'rgb(128, 128, 128)'  # Gray for non-numeric values

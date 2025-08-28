@@ -1629,3 +1629,207 @@ Palace Guard_Spectral Sentry
 Lady_Decisive Dog
 Rhino_One-Sixteenth Wolf
 Mirabel Madrigal_Curious Child
+The Queen_Regal Monarch
+Atlantica_Concert Hall
+Olaf_Friendly Snowman
+Casa Madrigal_Casita
+Bobby Zimuruski_Spray Cheese Kid
+Improvise
+Mulan_Injured Soldier
+Flounder_Voice of Reason
+Develop Your Brain
+Fire the Cannons!
+Stitch_Alien Dancer
+Bruno's Return
+Lantern
+Kuzco_Wanted Llama
+The Magic Feather
+Rose Lantern
+Megara_Pulling the Strings
+Ursula_Deceiver
+Sudden Chill
+Family Fishing Pole
+LeFou_Instigator
+Powerline_Taking the Stage
+Gaston_Arrogant Hunter
+Queen of Hearts_Impulsive Ruler
+Medallion Weights
+Cruella De Vil_Fashionable Cruiser
+Aurora_Tranquil Princess
+One Jump Ahead
+Coconut Basket
+Nala_Undaunted Lioness
+Jafar_Royal Vizier
+Mickey Mouse_Standard Bearer
+Beast’s Mirror
+The Queen_Conceited Ruler
+Mulan_Free Spirit
+Julieta Madrigal_Excellent Cook
+Heal What Has Been Hurt
+Ursula’s Shell Necklace
+Belle_Untrained Mystic
+Elsa_Snow Queen
+Last-Ditch Effort
+Max Goof_Rebellious Teen
+Donald Duck_Sleepwalker
+Wildcat_Mechanic
+Mother Knows Best
+Ariel_Adventurous Collector
+Max Goof_Rockin' Teen
+Sisu_Emboldened Warrior
+Raya_Headstrong
+Agrabah_Marketplace
+Cruella De Vil_Style Icon
+Mama Odie_Mystical Maven
+Judy Hopps_Optimistic Officer
+Alice_Growing Girl
+Lilo_Best Explorer Ever
+Prince Naveen_Penniless Royal
+Tinker Bell_Tiny Tactician
+John Silver_Greedy Treasure Seeker
+One Last Hope
+Strength of a Raging Fire
+Daisy Duck_Musketeer Spy
+Ariel_Singing Mermaid
+Lost in the Woods
+Peter Pan's Shadow_Not Sewn On
+Elsa_Gloves Off
+Camilo Madrigal_Prankster
+Luisa Madrigal_Magically Strong One
+Genie_Of the Lamp
+Shenzi_Hyena Pack Leader
+Daisy Duck_Secret Agent
+Moana_Undeterred Voyager
+Dinner Bell
+Louie_Chill Nephew
+The Queen_Mirror Seeker
+Philoctetes_No-Nonsense Instructor
+Captain Hook_Captain of the Jolly Roger
+Beast_Gracious Prince
+Nani_Protective Sister
+The Queen_Wicked and Vain
+Winnie the Pooh_Hunny Wizard
+Kuzco_Temperamental Emperor
+Queen of Hearts_Sensing Weakness
+Mulan_Considerate Diplomat
+Maid Marian_Delightful Dreamer
+Robin Hood_Champion of Sherwood
+Eeyore_Overstuffed Donkey
+Stitch_Rock Star
+Sven_Official Ice Deliverer
+Robin Hood_Daydreamer
+John Silver_Alien Pirate
+Rapunzel_Letting Down Her Hair
+A Pirate’s Life
+Robin Hood_Unrivaled Archer
+Tinker Bell_Giant Fairy
+Pluto_Determined Defender
+Look at This Family
+Grand Pabbie_Oldest and Wisest
+Circle of Life
+Under the Sea
+Prince Phillip_Vanquisher of Foes
+I2I
+The Mob Song
+Second Star to the Right
+Maleficent_Monstrous Dragon
+Dig a Little Deeper
+Elsa_Spirit of Winter
+Hades_Infernal Schemer
+Maui_Whale
+Stitch_Carefree Surfer
+Ariel_Sonic Warrior
+Hercules_Beloved Hero
+Mufasa_King of the Pride Lands
+Mulan_Elite Archer
+Powerline_World's Greatest Rock Star
+Max Goof_Chart Topper
+Mama Odie_Voice of Wisdom
+Tick-Tock_Ever-Present Pursuer
+Li Shang_Imperial Captain
+Jasmine_Fearless Princess
+Scar_Finally King
+Aurora_Dreaming Guardian
+Card Soldiers_Full Deck
+Virana_Fang Chief
+Ursula_Voice Stealer
+Belle_Accomplished Mystic
+Moana_Of Motunui
+Pluto_Rescue Dog
+I Find ’Em, I Flatten ’Em
+Mickey Mouse_Trumpeter
+Four Dozen Eggs
+Alice_Accidentally Adrift
+Anna_True-Hearted
+Be King Undisputed
+P.J. Pete_Caught Up in the Music
+Tinker Bell_Most Helpful
+Donald Duck_Perfect Gentleman
+Prince Phillip_Warden of the Woods
+Genie_Supportive Friend
+Dolores Madrigal_Easy Listener
+Dumbo_Ninth Wonder of the Universe
+Jafar_Keeper of Secrets
+Cinderella_Gentle and Kind
+Tinker Bell_Generous Fairy
+Minnie Mouse_Sweetheart Princess
+Smash
+Ariel_Determined Mermaid
+Hercules_True Hero
+Lawrence_Jealous Manservant
+Benja_Guardian of the Dragon Gem
+Heart of Te Fiti
+Winnie the Pooh_Having a Think
+Belle_Inventive Engineer
+Hans_Noble Scoundrel
+Dewey_Showy Nephew
+Tuk Tuk_Lively Partner
+Sisu_Daring Visitor
+Powerline_Musical Superstar
+Mickey Mouse_Brave Little Prince
+Shere Khan_Menacing Predator
+Stand Out
+Heihei_Bumbling Rooster
+Mickey Mouse_Steamboat Pilot
+White Rabbit’s Pocket Watch
+Jafar_Lamp Thief
+Dumbo_The Flying Elephant
+Ursula_Sea Witch
+World's Greatest Criminal Mind
+Queen of Hearts_Wonderland Empress
+Mickey Mouse_True Friend
+Pongo_Determined Father
+Maui's Place of Exile_Hidden Island
+Prince Eric_Dashing and Brave
+Robin Hood_Capable Fighter
+Little John_Sir Reginald
+Motunui_Island Paradise
+Aurelian Gyrosensor
+Aurora_Regal Princess
+Anna_Braving the Storm
+Huey_Savvy Nephew
+You Can Fly!
+Lumiere_Fiery Friend
+Roxanne_Powerline Fan
+Simba_Scrappy Cub
+Signed Contract
+Make the Potion
+Aladdin_Prince Ali
+Enchantress_Unexpected Judge
+Goofy_Set for Adventure
+Magic Mirror
+Poor Unfortunate Souls
+Timothy Q. Mouse_Flight Instructor
+Be Our Guest
+Ursula_Vanessa
+Rapunzel_Sunshine
+Tiana_Diligent Waitress
+Jasmine_Heir of Agrabah
+Sergeant Tibbs_Courageous Cat
+Hidden Cove_Tranquil Haven
+Pegasus_Gift for Hercules
+Cursed Merfolk_Ursula's Handiwork
+I'm Stuck!
+Rafiki_Mystical Fighter
+Pluto_Friendly Pooch
+Aurora_Holding Court

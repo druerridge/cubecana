@@ -168,6 +168,10 @@ def write_draftmancer_file(draftmancer_file_string, card_list_name):
 
 def generate_draftmancer_file(included_printing_ids_to_count:dict[PrintingId, int], card_evaluations_file: str, settings: Settings, slot_name_to_slot=None):
     id_to_rating = card_evaluations_manager.read_id_to_rating(card_evaluations_file)
+    all_printings_from_same_set = all(printing_id.set_code == next(iter(included_printing_ids_to_count)).set_code for printing_id in included_printing_ids_to_count)
+    if all_printings_from_same_set:
+        preferred_set = next(iter(included_printing_ids_to_count)).set_code
+        id_to_rating = card_evaluations_manager.read_id_to_rating(card_evaluations_file, preferred_set=preferred_set)
     custom_card_list = generate_custom_card_list(id_to_rating, list(included_printing_ids_to_count.keys()), settings)
     draftmancer_settings = settings.to_draftmancer_settings()
             

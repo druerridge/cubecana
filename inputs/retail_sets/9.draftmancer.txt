@@ -32,7 +32,7 @@
         "rarity": "common",
         "set": "4",
         "collector_number": "33",
-        "rating": 0,
+        "rating": 1,
         "layout": "split"
     },
     {
@@ -50,7 +50,7 @@
         "rarity": "uncommon",
         "set": "1",
         "collector_number": "52",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Casa Madrigal - Casita",
@@ -85,7 +85,7 @@
         "rarity": "uncommon",
         "set": "9",
         "collector_number": "78",
-        "rating": 5
+        "rating": 3
     },
     {
         "name": "Improvise",
@@ -136,7 +136,7 @@
         "rarity": "common",
         "set": "1",
         "collector_number": "145",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Develop Your Brain",
@@ -170,7 +170,7 @@
         "rarity": "common",
         "set": "1",
         "collector_number": "197",
-        "rating": 0
+        "rating": 4
     },
     {
         "name": "Stitch - Alien Dancer",
@@ -221,7 +221,7 @@
         "rarity": "rare",
         "set": "1",
         "collector_number": "33",
-        "rating": 0
+        "rating": 3
     },
     {
         "name": "Kuzco - Wanted Llama",
@@ -238,7 +238,7 @@
         "rarity": "common",
         "set": "2",
         "collector_number": "45",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "The Magic Feather",
@@ -255,7 +255,7 @@
         "rarity": "rare",
         "set": "9",
         "collector_number": "64",
-        "rating": 1
+        "rating": 3
     },
     {
         "name": "Rose Lantern",
@@ -272,7 +272,7 @@
         "rarity": "common",
         "set": "4",
         "collector_number": "65",
-        "rating": 0
+        "rating": 2
     },
     {
         "name": "Megara - Pulling the Strings",
@@ -289,7 +289,7 @@
         "rarity": "common",
         "set": "1",
         "collector_number": "87",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Ursula - Deceiver",
@@ -306,7 +306,7 @@
         "rarity": "uncommon",
         "set": "3",
         "collector_number": "90",
-        "rating": 4
+        "rating": 3
     },
     {
         "name": "Sudden Chill",
@@ -340,7 +340,7 @@
         "rarity": "rare",
         "set": "9",
         "collector_number": "100",
-        "rating": 0
+        "rating": 3
     },
     {
         "name": "LeFou - Instigator",
@@ -357,7 +357,7 @@
         "rarity": "rare",
         "set": "1",
         "collector_number": "112",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Powerline - Taking the Stage",
@@ -391,7 +391,7 @@
         "rarity": "common",
         "set": "1",
         "collector_number": "110",
-        "rating": 1
+        "rating": 3
     },
     {
         "name": "Queen of Hearts - Impulsive Ruler",
@@ -442,7 +442,7 @@
         "rarity": "common",
         "set": "2",
         "collector_number": "144",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Aurora - Tranquil Princess",
@@ -476,7 +476,7 @@
         "rarity": "uncommon",
         "set": "1",
         "collector_number": "164",
-        "rating": 0
+        "rating": 3
     },
     {
         "name": "Coconut Basket",
@@ -493,7 +493,7 @@
         "rarity": "uncommon",
         "set": "1",
         "collector_number": "166",
-        "rating": 1
+        "rating": 2
     },
     {
         "name": "Nala - Undaunted Lioness",
@@ -510,7 +510,7 @@
         "rarity": "rare",
         "set": "9",
         "collector_number": "173",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Jafar - Royal Vizier",
@@ -544,10 +544,10 @@
         "rarity": "common",
         "set": "4",
         "collector_number": "188",
-        "rating": 2
+        "rating": 3
     },
     {
-        "name": "Beast's Mirror",
+        "name": "Beast\u2019s Mirror",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -561,7 +561,7 @@
         "rarity": "common",
         "set": "1",
         "collector_number": "201",
-        "rating": 2
+        "rating": 4
     },
     {
         "name": "The Queen - Conceited Ruler",
@@ -575,7 +575,7 @@
             "ja": "https://cdn.dreamborn.ink/images/ja/cards/009-001?tts",
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/009-001?tts"
         },
-        "rarity": "mythic",
+        "rarity": "rare",
         "set": "9",
         "collector_number": "1",
         "rating": 4
@@ -595,7 +595,7 @@
         "rarity": "common",
         "set": "2",
         "collector_number": "15",
-        "rating": 4
+        "rating": 3
     },
     {
         "name": "Julieta Madrigal - Excellent Cook",
@@ -612,7 +612,7 @@
         "rarity": "uncommon",
         "set": "4",
         "collector_number": "13",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Heal What Has Been Hurt",
@@ -629,10 +629,10 @@
         "rarity": "common",
         "set": "3",
         "collector_number": "26",
-        "rating": 2
+        "rating": 3
     },
     {
-        "name": "Ursula's Shell Necklace",
+        "name": "Ursula\u2019s Shell Necklace",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -646,7 +646,7 @@
         "rarity": "rare",
         "set": "1",
         "collector_number": "34",
-        "rating": 0
+        "rating": 1
     },
     {
         "name": "Belle - Untrained Mystic",
@@ -663,7 +663,7 @@
         "rarity": "common",
         "set": "4",
         "collector_number": "37",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Elsa - Snow Queen",
@@ -680,7 +680,7 @@
         "rarity": "uncommon",
         "set": "1",
         "collector_number": "41",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Last-Ditch Effort",
@@ -697,7 +697,7 @@
         "rarity": "uncommon",
         "set": "3",
         "collector_number": "62",
-        "rating": 0
+        "rating": 2
     },
     {
         "name": "Max Goof - Rebellious Teen",
@@ -714,7 +714,7 @@
         "rarity": "rare",
         "set": "9",
         "collector_number": "75",
-        "rating": 3
+        "rating": 2
     },
     {
         "name": "Donald Duck - Sleepwalker",
@@ -765,7 +765,7 @@
         "rarity": "uncommon",
         "set": "1",
         "collector_number": "95",
-        "rating": 0
+        "rating": 2
     },
     {
         "name": "Ariel - Adventurous Collector",
@@ -816,7 +816,7 @@
         "rarity": "rare",
         "set": "4",
         "collector_number": "124",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Raya - Headstrong",
@@ -833,7 +833,7 @@
         "rarity": "common",
         "set": "2",
         "collector_number": "122",
-        "rating": 2
+        "rating": 1
     },
     {
         "name": "Agrabah - Marketplace",
@@ -850,7 +850,7 @@
         "rarity": "common",
         "set": "3",
         "collector_number": "134",
-        "rating": 1,
+        "rating": 2,
         "layout": "split"
     },
     {
@@ -868,7 +868,7 @@
         "rarity": "mythic",
         "set": "9",
         "collector_number": "143",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Mama Odie - Mystical Maven",
@@ -885,7 +885,7 @@
         "rarity": "rare",
         "set": "3",
         "collector_number": "151",
-        "rating": 1
+        "rating": 2
     },
     {
         "name": "Judy Hopps - Optimistic Officer",
@@ -902,7 +902,7 @@
         "rarity": "uncommon",
         "set": "2",
         "collector_number": "152",
-        "rating": 3
+        "rating": 2
     },
     {
         "name": "Alice - Growing Girl",
@@ -919,7 +919,7 @@
         "rarity": "mythic",
         "set": "2",
         "collector_number": "137",
-        "rating": 2
+        "rating": 4
     },
     {
         "name": "Lilo - Best Explorer Ever",
@@ -936,7 +936,7 @@
         "rarity": "mythic",
         "set": "9",
         "collector_number": "174",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Prince Naveen - Penniless Royal",
@@ -987,7 +987,7 @@
         "rarity": "rare",
         "set": "3",
         "collector_number": "176",
-        "rating": 4
+        "rating": 3
     },
     {
         "name": "One Last Hope",
@@ -1004,7 +1004,7 @@
         "rarity": "rare",
         "set": "4",
         "collector_number": "197",
-        "rating": 1
+        "rating": 2
     },
     {
         "name": "Strength of a Raging Fire",
@@ -1021,7 +1021,7 @@
         "rarity": "rare",
         "set": "2",
         "collector_number": "201",
-        "rating": 2
+        "rating": 5
     },
     {
         "name": "Daisy Duck - Musketeer Spy",
@@ -1038,7 +1038,7 @@
         "rarity": "common",
         "set": "4",
         "collector_number": "7",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Ariel - Singing Mermaid",
@@ -1055,10 +1055,10 @@
         "rarity": "rare",
         "set": "4",
         "collector_number": "3",
-        "rating": 4
+        "rating": 2
     },
     {
-        "name": "Lost In The Woods",
+        "name": "Lost in the Woods",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
@@ -1072,7 +1072,7 @@
         "rarity": "uncommon",
         "set": "4",
         "collector_number": "29",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Peter Pan's Shadow - Not Sewn On",
@@ -1123,7 +1123,7 @@
         "rarity": "uncommon",
         "set": "4",
         "collector_number": "40",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Luisa Madrigal - Magically Strong One",
@@ -1140,7 +1140,7 @@
         "rarity": "common",
         "set": "4",
         "collector_number": "47",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Genie - Of the Lamp",
@@ -1157,7 +1157,7 @@
         "rarity": "mythic",
         "set": "9",
         "collector_number": "76",
-        "rating": 4
+        "rating": 5
     },
     {
         "name": "Shenzi - Hyena Pack Leader",
@@ -1259,7 +1259,7 @@
         "rarity": "uncommon",
         "set": "3",
         "collector_number": "156",
-        "rating": 3
+        "rating": 2
     },
     {
         "name": "Philoctetes - No-Nonsense Instructor",
@@ -1276,7 +1276,7 @@
         "rarity": "rare",
         "set": "4",
         "collector_number": "190",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Captain Hook - Captain of the Jolly Roger",
@@ -1293,7 +1293,7 @@
         "rarity": "rare",
         "set": "1",
         "collector_number": "173",
-        "rating": 3
+        "rating": 2
     },
     {
         "name": "Beast - Gracious Prince",
@@ -1327,7 +1327,7 @@
         "rarity": "uncommon",
         "set": "3",
         "collector_number": "12",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "The Queen - Wicked and Vain",
@@ -1344,7 +1344,7 @@
         "rarity": "mythic",
         "set": "1",
         "collector_number": "56",
-        "rating": 4
+        "rating": 5
     },
     {
         "name": "Winnie the Pooh - Hunny Wizard",
@@ -1378,7 +1378,7 @@
         "rarity": "rare",
         "set": "1",
         "collector_number": "84",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Queen of Hearts - Sensing Weakness",
@@ -1446,7 +1446,7 @@
         "rarity": "mythic",
         "set": "3",
         "collector_number": "190",
-        "rating": 4
+        "rating": 5
     },
     {
         "name": "Eeyore - Overstuffed Donkey",
@@ -1480,7 +1480,7 @@
         "rarity": "mythic",
         "set": "1",
         "collector_number": "23",
-        "rating": 5
+        "rating": 4
     },
     {
         "name": "Sven - Official Ice Deliverer",
@@ -1497,7 +1497,7 @@
         "rarity": "uncommon",
         "set": "1",
         "collector_number": "55",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Robin Hood - Daydreamer",
@@ -1514,7 +1514,7 @@
         "rarity": "rare",
         "set": "3",
         "collector_number": "84",
-        "rating": 5
+        "rating": 4
     },
     {
         "name": "John Silver - Alien Pirate",
@@ -1531,7 +1531,7 @@
         "rarity": "mythic",
         "set": "1",
         "collector_number": "82",
-        "rating": 4
+        "rating": 5
     },
     {
         "name": "Rapunzel - Letting Down Her Hair",
@@ -1551,7 +1551,7 @@
         "rating": 3
     },
     {
-        "name": "A Pirate's Life",
+        "name": "A Pirate\u2019s Life",
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
@@ -1619,7 +1619,7 @@
         "rating": 4
     },
     {
-        "name": "Look At This Family",
+        "name": "Look at This Family",
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
@@ -1633,7 +1633,7 @@
         "rarity": "rare",
         "set": "4",
         "collector_number": "28",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Grand Pabbie - Oldest and Wisest",
@@ -1650,10 +1650,10 @@
         "rarity": "mythic",
         "set": "2",
         "collector_number": "148",
-        "rating": 4
+        "rating": 3
     },
     {
-        "name": "Circle Of Life",
+        "name": "Circle of Life",
         "mana_cost": "{8}",
         "type": "Instant",
         "image_uris": {
@@ -1667,10 +1667,10 @@
         "rarity": "mythic",
         "set": "9",
         "collector_number": "26",
-        "rating": 4
+        "rating": 3
     },
     {
-        "name": "Under The Sea",
+        "name": "Under the Sea",
         "mana_cost": "{8}",
         "type": "Instant",
         "image_uris": {
@@ -1684,7 +1684,7 @@
         "rarity": "rare",
         "set": "4",
         "collector_number": "95",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Prince Phillip - Vanquisher of Foes",
@@ -1701,7 +1701,7 @@
         "rarity": "mythic",
         "set": "4",
         "collector_number": "87",
-        "rating": 5
+        "rating": 1
     },
     {
         "name": "I2I",
@@ -1718,7 +1718,7 @@
         "rarity": "rare",
         "set": "9",
         "collector_number": "130",
-        "rating": 4
+        "rating": 2
     },
     {
         "name": "The Mob Song",
@@ -1735,10 +1735,10 @@
         "rarity": "uncommon",
         "set": "4",
         "collector_number": "198",
-        "rating": 4
+        "rating": 3
     },
     {
-        "name": "Second Star To The Right",
+        "name": "Second Star to the Right",
         "mana_cost": "{10}",
         "type": "Instant",
         "image_uris": {
@@ -1752,7 +1752,7 @@
         "rarity": "rare",
         "set": "4",
         "collector_number": "61",
-        "rating": 4
+        "rating": 3
     },
     {
         "name": "Maleficent - Monstrous Dragon",
@@ -1769,10 +1769,10 @@
         "rarity": "mythic",
         "set": "1",
         "collector_number": "113",
-        "rating": 5
+        "rating": 2
     },
     {
-        "name": "Dig A Little Deeper",
+        "name": "Dig a Little Deeper",
         "mana_cost": "{8}",
         "type": "Instant",
         "image_uris": {
@@ -1803,7 +1803,7 @@
         "rarity": "mythic",
         "set": "1",
         "collector_number": "42",
-        "rating": 4
+        "rating": 3
     },
     {
         "name": "Hades - Infernal Schemer",
@@ -1820,7 +1820,7 @@
         "rarity": "mythic",
         "set": "1",
         "collector_number": "147",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Maui - Whale",
@@ -1837,7 +1837,7 @@
         "rarity": "rare",
         "set": "3",
         "collector_number": "114",
-        "rating": 4
+        "rating": 3
     },
     {
         "name": "Stitch - Carefree Surfer",
@@ -1871,7 +1871,7 @@
         "rarity": "mythic",
         "set": "4",
         "collector_number": "175",
-        "rating": 5
+        "rating": 4
     },
     {
         "name": "Hercules - Beloved Hero",
@@ -1888,7 +1888,7 @@
         "rarity": "rare",
         "set": "4",
         "collector_number": "180",
-        "rating": 5
+        "rating": 4
     },
     {
         "name": "Mufasa - King of the Pride Lands",
@@ -1922,7 +1922,7 @@
         "rarity": "mythic",
         "set": "4",
         "collector_number": "114",
-        "rating": 4
+        "rating": 5
     },
     {
         "name": "Powerline - World's Greatest Rock Star",
@@ -1939,7 +1939,7 @@
         "rarity": "mythic",
         "set": "9",
         "collector_number": "110",
-        "rating": 5
+        "rating": 3
     },
     {
         "name": "Max Goof - Chart Topper",
@@ -1956,7 +1956,7 @@
         "rarity": "mythic",
         "set": "9",
         "collector_number": "77",
-        "rating": 5
+        "rating": 4
     },
     {
         "name": "Mama Odie - Voice of Wisdom",
@@ -1973,7 +1973,7 @@
         "rarity": "uncommon",
         "set": "3",
         "collector_number": "52",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Tick-Tock - Ever-Present Pursuer",
@@ -2031,16 +2031,16 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/009-239?tts",
-            "fr": "https://cdn.dreamborn.ink/images/fr/cards/009-239?tts",
-            "de": "https://cdn.dreamborn.ink/images/de/cards/009-239?tts",
-            "it": "https://cdn.dreamborn.ink/images/it/cards/009-239?tts",
-            "ja": "https://cdn.dreamborn.ink/images/ja/cards/009-239?tts",
-            "zh": "https://cdn.dreamborn.ink/images/zh/cards/009-239?tts"
+            "en": "https://cdn.dreamborn.ink/images/en/cards/009-175?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/009-175?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/009-175?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/009-175?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/009-175?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/009-175?tts"
         },
         "rarity": "mythic",
         "set": "9",
-        "collector_number": "239",
+        "collector_number": "175",
         "rating": 4
     },
     {
@@ -2058,7 +2058,7 @@
         "rarity": "mythic",
         "set": "1",
         "collector_number": "139",
-        "rating": 5
+        "rating": 3
     },
     {
         "name": "Card Soldiers - Full Deck",
@@ -2109,7 +2109,7 @@
         "rarity": "mythic",
         "set": "9",
         "collector_number": "44",
-        "rating": 4
+        "rating": 3
     },
     {
         "name": "Belle - Accomplished Mystic",
@@ -2143,7 +2143,7 @@
         "rarity": "rare",
         "set": "1",
         "collector_number": "14",
-        "rating": 4
+        "rating": 3
     },
     {
         "name": "Pluto - Rescue Dog",
@@ -2163,7 +2163,7 @@
         "rating": 4
     },
     {
-        "name": "I Find 'Em, I Flatten 'Em",
+        "name": "I Find \u2019Em, I Flatten \u2019Em",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
@@ -2177,7 +2177,7 @@
         "rarity": "uncommon",
         "set": "4",
         "collector_number": "196",
-        "rating": 2
+        "rating": 1
     },
     {
         "name": "Mickey Mouse - Trumpeter",
@@ -2245,7 +2245,7 @@
         "rarity": "mythic",
         "set": "4",
         "collector_number": "138",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Be King Undisputed",
@@ -2262,7 +2262,7 @@
         "rarity": "rare",
         "set": "4",
         "collector_number": "129",
-        "rating": 1
+        "rating": 3
     },
     {
         "name": "P.J. Pete - Caught Up in the Music",
@@ -2296,7 +2296,7 @@
         "rarity": "common",
         "set": "1",
         "collector_number": "93",
-        "rating": 5
+        "rating": 4
     },
     {
         "name": "Donald Duck - Perfect Gentleman",
@@ -2313,7 +2313,7 @@
         "rarity": "uncommon",
         "set": "2",
         "collector_number": "77",
-        "rating": 4
+        "rating": 3
     },
     {
         "name": "Prince Phillip - Warden of the Woods",
@@ -2330,7 +2330,7 @@
         "rarity": "rare",
         "set": "4",
         "collector_number": "88",
-        "rating": 3
+        "rating": 2
     },
     {
         "name": "Genie - Supportive Friend",
@@ -2347,7 +2347,7 @@
         "rarity": "mythic",
         "set": "3",
         "collector_number": "38",
-        "rating": 2
+        "rating": 4
     },
     {
         "name": "Dolores Madrigal - Easy Listener",
@@ -2381,7 +2381,7 @@
         "rarity": "mythic",
         "set": "9",
         "collector_number": "45",
-        "rating": 4
+        "rating": 5
     },
     {
         "name": "Jafar - Keeper of Secrets",
@@ -2415,7 +2415,7 @@
         "rarity": "uncommon",
         "set": "1",
         "collector_number": "3",
-        "rating": 4
+        "rating": 3
     },
     {
         "name": "Tinker Bell - Generous Fairy",
@@ -2432,7 +2432,7 @@
         "rarity": "uncommon",
         "set": "3",
         "collector_number": "22",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Minnie Mouse - Sweetheart Princess",
@@ -2500,7 +2500,7 @@
         "rarity": "common",
         "set": "1",
         "collector_number": "181",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Lawrence - Jealous Manservant",
@@ -2517,7 +2517,7 @@
         "rarity": "uncommon",
         "set": "2",
         "collector_number": "186",
-        "rating": 2
+        "rating": 4
     },
     {
         "name": "Benja - Guardian of the Dragon Gem",
@@ -2585,7 +2585,7 @@
         "rarity": "uncommon",
         "set": "1",
         "collector_number": "141",
-        "rating": 3
+        "rating": 2
     },
     {
         "name": "Hans - Noble Scoundrel",
@@ -2602,7 +2602,7 @@
         "rarity": "common",
         "set": "4",
         "collector_number": "146",
-        "rating": 4
+        "rating": 3
     },
     {
         "name": "Dewey - Showy Nephew",
@@ -2653,7 +2653,7 @@
         "rarity": "uncommon",
         "set": "4",
         "collector_number": "123",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Powerline - Musical Superstar",
@@ -2670,7 +2670,7 @@
         "rarity": "rare",
         "set": "9",
         "collector_number": "117",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Mickey Mouse - Brave Little Prince",
@@ -2704,7 +2704,7 @@
         "rarity": "rare",
         "set": "2",
         "collector_number": "126",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Stand Out",
@@ -2721,10 +2721,10 @@
         "rarity": "uncommon",
         "set": "9",
         "collector_number": "94",
-        "rating": 1
+        "rating": 3
     },
     {
-        "name": "HeiHei - Bumbling Rooster",
+        "name": "Heihei - Bumbling Rooster",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -2755,10 +2755,10 @@
         "rarity": "common",
         "set": "1",
         "collector_number": "89",
-        "rating": 3
+        "rating": 4
     },
     {
-        "name": "White Rabbit's Pocket Watch",
+        "name": "White Rabbit\u2019s Pocket Watch",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
@@ -2789,7 +2789,7 @@
         "rarity": "uncommon",
         "set": "3",
         "collector_number": "41",
-        "rating": 3
+        "rating": 2
     },
     {
         "name": "Dumbo - The Flying Elephant",
@@ -2806,7 +2806,7 @@
         "rarity": "uncommon",
         "set": "9",
         "collector_number": "46",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Ursula - Sea Witch",
@@ -2823,7 +2823,7 @@
         "rarity": "rare",
         "set": "3",
         "collector_number": "59",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "World's Greatest Criminal Mind",
@@ -2840,7 +2840,7 @@
         "rarity": "rare",
         "set": "2",
         "collector_number": "31",
-        "rating": 1
+        "rating": 4
     },
     {
         "name": "Queen of Hearts - Wonderland Empress",
@@ -2891,7 +2891,7 @@
         "rarity": "mythic",
         "set": "3",
         "collector_number": "19",
-        "rating": 4
+        "rating": 5
     },
     {
         "name": "Maui's Place of Exile - Hidden Island",
@@ -2908,7 +2908,7 @@
         "rarity": "rare",
         "set": "3",
         "collector_number": "202",
-        "rating": 4,
+        "rating": 1,
         "layout": "split"
     },
     {
@@ -2926,7 +2926,7 @@
         "rarity": "common",
         "set": "1",
         "collector_number": "187",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Robin Hood - Capable Fighter",
@@ -2977,7 +2977,7 @@
         "rarity": "uncommon",
         "set": "3",
         "collector_number": "170",
-        "rating": 1,
+        "rating": 3,
         "layout": "split"
     },
     {
@@ -2995,7 +2995,7 @@
         "rarity": "rare",
         "set": "3",
         "collector_number": "163",
-        "rating": 0
+        "rating": 1
     },
     {
         "name": "Aurora - Regal Princess",
@@ -3046,7 +3046,7 @@
         "rarity": "rare",
         "set": "3",
         "collector_number": "145",
-        "rating": 4
+        "rating": 3
     },
     {
         "name": "You Can Fly!",
@@ -3080,7 +3080,7 @@
         "rarity": "rare",
         "set": "4",
         "collector_number": "113",
-        "rating": 2
+        "rating": 4
     },
     {
         "name": "Roxanne - Powerline Fan",
@@ -3097,7 +3097,7 @@
         "rarity": "uncommon",
         "set": "9",
         "collector_number": "113",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Simba - Scrappy Cub",
@@ -3131,10 +3131,10 @@
         "rarity": "uncommon",
         "set": "4",
         "collector_number": "99",
-        "rating": 2
+        "rating": 1
     },
     {
-        "name": "Make The Potion",
+        "name": "Make the Potion",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
@@ -3182,7 +3182,7 @@
         "rarity": "common",
         "set": "2",
         "collector_number": "80",
-        "rating": 2
+        "rating": 4
     },
     {
         "name": "Goofy - Set for Adventure",
@@ -3199,7 +3199,7 @@
         "rarity": "rare",
         "set": "9",
         "collector_number": "74",
-        "rating": 4
+        "rating": 2
     },
     {
         "name": "Magic Mirror",
@@ -3216,7 +3216,7 @@
         "rarity": "rare",
         "set": "1",
         "collector_number": "66",
-        "rating": 1
+        "rating": 3
     },
     {
         "name": "Poor Unfortunate Souls",
@@ -3250,7 +3250,7 @@
         "rarity": "common",
         "set": "9",
         "collector_number": "47",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Be Our Guest",
@@ -3267,7 +3267,7 @@
         "rarity": "uncommon",
         "set": "1",
         "collector_number": "25",
-        "rating": 1
+        "rating": 3
     },
     {
         "name": "Ursula - Vanessa",
@@ -3318,7 +3318,7 @@
         "rarity": "common",
         "set": "2",
         "collector_number": "197",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Jasmine - Heir of Agrabah",
@@ -3335,7 +3335,7 @@
         "rarity": "common",
         "set": "2",
         "collector_number": "151",
-        "rating": 3
+        "rating": 1
     },
     {
         "name": "Sergeant Tibbs - Courageous Cat",
@@ -3352,7 +3352,7 @@
         "rarity": "common",
         "set": "1",
         "collector_number": "124",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Hidden Cove - Tranquil Haven",
@@ -3369,7 +3369,7 @@
         "rarity": "common",
         "set": "4",
         "collector_number": "101",
-        "rating": 1,
+        "rating": 3,
         "layout": "split"
     },
     {
@@ -3421,7 +3421,7 @@
         "rarity": "common",
         "set": "2",
         "collector_number": "63",
-        "rating": 0
+        "rating": 1
     },
     {
         "name": "Rafiki - Mystical Fighter",
@@ -3438,7 +3438,7 @@
         "rarity": "rare",
         "set": "3",
         "collector_number": "54",
-        "rating": 2
+        "rating": 4
     },
     {
         "name": "Pluto - Friendly Pooch",
@@ -3455,7 +3455,7 @@
         "rarity": "uncommon",
         "set": "3",
         "collector_number": "18",
-        "rating": 0
+        "rating": 1
     },
     {
         "name": "Aurora - Holding Court",
@@ -3486,7 +3486,7 @@
 60 Fire the Cannons!
 60 Jafar - Royal Vizier
 60 Mickey Mouse - Standard Bearer
-60 Beast's Mirror
+60 Beast’s Mirror
 60 Prince Naveen - Penniless Royal
 60 Tinker Bell - Tiny Tactician
 60 Eeyore - Overstuffed Donkey
@@ -3524,7 +3524,7 @@
 60 Virana - Fang Chief
 60 Tinker Bell - Most Helpful
 60 Mickey Mouse - Steamboat Pilot
-60 Make The Potion
+60 Make the Potion
 60 Aladdin - Prince Ali
 60 Enchantress - Unexpected Judge
 60 Hidden Cove - Tranquil Haven
@@ -3567,7 +3567,7 @@
 30 Wildcat - Mechanic
 30 Mother Knows Best
 30 Judy Hopps - Optimistic Officer
-30 Lost In The Woods
+30 Lost in the Woods
 30 Camilo Madrigal - Prankster
 30 Daisy Duck - Secret Agent
 30 The Queen - Mirror Seeker
@@ -3575,13 +3575,13 @@
 30 Queen of Hearts - Sensing Weakness
 30 Sven - Official Ice Deliverer
 30 Rapunzel - Letting Down Her Hair
-30 A Pirate's Life
+30 A Pirate’s Life
 30 The Mob Song
-30 Dig A Little Deeper
+30 Dig a Little Deeper
 30 Mama Odie - Voice of Wisdom
 30 Li Shang - Imperial Captain
 30 Card Soldiers - Full Deck
-30 I Find 'Em, I Flatten 'Em
+30 I Find ’Em, I Flatten ’Em
 30 Four Dozen Eggs
 30 Donald Duck - Perfect Gentleman
 30 Cinderella - Gentle and Kind
@@ -3592,7 +3592,7 @@
 30 Dewey - Showy Nephew
 30 Sisu - Daring Visitor
 30 Stand Out
-30 HeiHei - Bumbling Rooster
+30 Heihei - Bumbling Rooster
 30 Jafar - Lamp Thief
 30 Dumbo - The Flying Elephant
 30 Queen of Hearts - Wonderland Empress
@@ -3613,8 +3613,8 @@
 13 Family Fishing Pole
 13 LeFou - Instigator
 13 Nala - Undaunted Lioness
-2 The Queen - Conceited Ruler
-13 Ursula's Shell Necklace
+13 The Queen - Conceited Ruler
+13 Ursula’s Shell Necklace
 13 Max Goof - Rebellious Teen
 5 Ariel - Adventurous Collector
 13 Sisu - Emboldened Warrior
@@ -3643,13 +3643,13 @@
 5 Robin Hood - Unrivaled Archer
 5 Tinker Bell - Giant Fairy
 13 Pluto - Determined Defender
-13 Look At This Family
+13 Look at This Family
 5 Grand Pabbie - Oldest and Wisest
-2 Circle Of Life
-13 Under The Sea
+2 Circle of Life
+13 Under the Sea
 5 Prince Phillip - Vanquisher of Foes
 13 I2I
-13 Second Star To The Right
+13 Second Star to the Right
 2 Maleficent - Monstrous Dragon
 2 Elsa - Spirit of Winter
 2 Hades - Infernal Schemer
@@ -3681,7 +3681,7 @@
 13 Powerline - Musical Superstar
 2 Mickey Mouse - Brave Little Prince
 13 Shere Khan - Menacing Predator
-13 White Rabbit's Pocket Watch
+13 White Rabbit’s Pocket Watch
 13 Ursula - Sea Witch
 13 World's Greatest Criminal Mind
 5 Pongo - Determined Father
@@ -3727,12 +3727,12 @@
 13 Nala - Undaunted Lioness
 60 Jafar - Royal Vizier
 60 Mickey Mouse - Standard Bearer
-60 Beast's Mirror
-2 The Queen - Conceited Ruler
+60 Beast’s Mirror
+13 The Queen - Conceited Ruler
 60 Mulan - Free Spirit
 30 Julieta Madrigal - Excellent Cook
 60 Heal What Has Been Hurt
-13 Ursula's Shell Necklace
+13 Ursula’s Shell Necklace
 60 Belle - Untrained Mystic
 30 Elsa - Snow Queen
 30 Last-Ditch Effort
@@ -3757,7 +3757,7 @@
 13 Strength of a Raging Fire
 60 Daisy Duck - Musketeer Spy
 13 Ariel - Singing Mermaid
-30 Lost In The Woods
+30 Lost in the Woods
 5 Peter Pan's Shadow - Not Sewn On
 60 Elsa - Gloves Off
 30 Camilo Madrigal - Prankster
@@ -3786,20 +3786,20 @@
 13 Robin Hood - Daydreamer
 2 John Silver - Alien Pirate
 30 Rapunzel - Letting Down Her Hair
-30 A Pirate's Life
+30 A Pirate’s Life
 5 Robin Hood - Unrivaled Archer
 5 Tinker Bell - Giant Fairy
 13 Pluto - Determined Defender
-13 Look At This Family
+13 Look at This Family
 5 Grand Pabbie - Oldest and Wisest
-2 Circle Of Life
-13 Under The Sea
+2 Circle of Life
+13 Under the Sea
 5 Prince Phillip - Vanquisher of Foes
 13 I2I
 30 The Mob Song
-13 Second Star To The Right
+13 Second Star to the Right
 2 Maleficent - Monstrous Dragon
-30 Dig A Little Deeper
+30 Dig a Little Deeper
 2 Elsa - Spirit of Winter
 2 Hades - Infernal Schemer
 13 Maui - Whale
@@ -3822,7 +3822,7 @@
 5 Belle - Accomplished Mystic
 13 Moana - Of Motunui
 60 Pluto - Rescue Dog
-30 I Find 'Em, I Flatten 'Em
+30 I Find ’Em, I Flatten ’Em
 2 Mickey Mouse - Trumpeter
 30 Four Dozen Eggs
 2 Alice - Accidentally Adrift
@@ -3855,9 +3855,9 @@
 2 Mickey Mouse - Brave Little Prince
 13 Shere Khan - Menacing Predator
 30 Stand Out
-30 HeiHei - Bumbling Rooster
+30 Heihei - Bumbling Rooster
 60 Mickey Mouse - Steamboat Pilot
-13 White Rabbit's Pocket Watch
+13 White Rabbit’s Pocket Watch
 30 Jafar - Lamp Thief
 30 Dumbo - The Flying Elephant
 13 Ursula - Sea Witch
@@ -3879,7 +3879,7 @@
 30 Roxanne - Powerline Fan
 13 Simba - Scrappy Cub
 30 Signed Contract
-60 Make The Potion
+60 Make the Potion
 60 Aladdin - Prince Ali
 60 Enchantress - Unexpected Judge
 13 Goofy - Set for Adventure

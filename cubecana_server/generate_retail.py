@@ -1,4 +1,5 @@
 from . import draftmancer
+from .draftmancer import Slot, SlotCard
 from .lorcast_api import lorcast_api as lorcana_api
 from .settings import Settings
 from .dreamborn_manager import dreamborn_manager
@@ -6,23 +7,15 @@ from .card_evaluations import card_evaluations_manager
 from .card import ApiCard, PrintingId
 
 rarity_to_frequency = {
-    "Common": 60,
-    "Uncommon": 30,
-    "Rare": 13,
-    "Super Rare": 5,
-    "Legendary": 2
+    "Common": 60000,
+    "Uncommon": 30000,
+    "Rare": 13000,
+    "Super Rare": 5000,
+    "Legendary": 2000,
+    "Epic": 200, # revisit w/ more data. ~= 1/50 packs 
+    "Enchanted": 100,
+    "Iconic": 5 # revisit w/ more data. ~= 1/2k packs
 }
-
-class SlotCard:
-    def __init__(self, card_id, num_copies):
-        self.card_id = card_id
-        self.num_copies = num_copies
-
-class Slot:
-    def __init__(self, name, num_cards, slot_cards):
-        self.name = name
-        self.num_cards = num_cards
-        self.slot_cards = slot_cards
 
 def calculate_slots_to_append(rarity, color):
     slots_to_append = []
@@ -72,7 +65,7 @@ def generate_retail_draftmancer_file(id_to_tts_card, card_evaluations_file, set_
         printing_ids_to_count[printing_id] = frequency
         slots_to_append = calculate_slots_to_append(rarity, color)
         for slot_name in slots_to_append:
-            slot_card = SlotCard(id, frequency)
+            slot_card = SlotCard(printing_id, frequency)
             slot_name_to_slot[slot_name].slot_cards.append(slot_card)
     if failures:
         raise ValueError(f"Failed to find API cards for IDs:\n {'\n'.join(failures)}")

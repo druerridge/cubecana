@@ -9,14 +9,17 @@ from .card import ApiCard, CardPrinting, PrintingId, toPrintingId
 CACHED_API_DATA_FILEPATH = 'inputs/lorcast_api_cache/lorcast_api_data_cache.json'
 CACHED_API_DATA_SET_Q1_FILEPATH = 'inputs/lorcast_api_cache/lorcast_api_data_cache_q1.json'
 
-lorcast_to_dtd_rarity =  {
+lorcast_to_cubecana_rarity =  {
     "Common" : "Common",
     "Uncommon" : "Uncommon",
     "Rare" : "Rare",
     "Super_rare" : "Super Rare",
     "Legendary" : "Legendary",
+    "Epic": "Epic",
     "Promo": "Legendary",
-    "Enchanted": "Legendary",
+    "Epic": "Epic",
+    "Enchanted": "Enchanted",
+    "Iconic": "Iconic",
 }
 
 class LorcastApi:
@@ -97,7 +100,7 @@ class LorcastApi:
             full_name=full_name,
             collector_id=printing_untyped['collector_number'],
             set_code=printing_untyped['set']['code'],
-            rarity=lorcast_to_dtd_rarity[printing_untyped['rarity']]
+            rarity=lorcast_to_cubecana_rarity[printing_untyped['rarity']]
         )
 
     def is_alternate_art(self, collector_number: str) -> bool:

@@ -18,6 +18,17 @@ INCOMPLETE_SIMPLE_TEMPLATE_PATH = "inputs/incomplete_simple_template.draftmancer
 ALL_CARDS_CUBE_PATH = 'inputs/all_cards_cube.draftmancer.txt'
 GENERATED_CUBES_DIR = 'generated_cubes'
 
+class SlotCard:
+    def __init__(self, printing_id:PrintingId, num_copies: int):
+        self.printing_id = printing_id
+        self.num_copies = num_copies
+
+class Slot:
+    def __init__(self, name, num_cards, slot_cards):
+        self.name: str = name
+        self.num_cards: int = num_cards
+        self.slot_cards: list[SlotCard] = slot_cards
+
 @dataclass(frozen=True)
 class DraftmancerSettings:
   boostersPerPlayer: int = 4
@@ -166,7 +177,7 @@ def write_draftmancer_file(draftmancer_file_string, card_list_name):
             file.write(line + '\n')
     print(f'Wrote draftmancer file to {file_name}')
 
-def generate_draftmancer_file(included_printing_ids_to_count:dict[PrintingId, int], card_evaluations_file: str, settings: Settings, slot_name_to_slot=None):
+def generate_draftmancer_file(included_printing_ids_to_count:dict[PrintingId, int], card_evaluations_file: str, settings: Settings, slot_name_to_slot:dict[str, Slot]=None):
     id_to_rating = card_evaluations_manager.read_id_to_rating(card_evaluations_file)
     all_printings_from_same_set = all(printing_id.set_code == next(iter(included_printing_ids_to_count)).set_code for printing_id in included_printing_ids_to_count)
     if all_printings_from_same_set:
@@ -187,16 +198,18 @@ def generate_draftmancer_file(included_printing_ids_to_count:dict[PrintingId, in
     if slot_name_to_slot==None:
         lines.append(f'[MainSlot({settings.cards_per_booster})]')
         for printing_id in included_printing_ids_to_count:
-            full_name = lorcana_api.get_api_card(printing_id.card_id).full_name
-            line_str = f"{included_printing_ids_to_count[printing_id]} {full_name} ({printing_id.set_code}) {printing_id.collector_id}"
+            api_card = lorcana_api.get_api_card(printing_id.card_id)
+            human_readable_printing = printing_id.to_human_readable(api_card.full_name)
+            line_str = f"{included_printing_ids_to_count[printing_id]} {human_readable_printing}"
             lines.append(line_str)
     else:
         for slot_name in slot_name_to_slot:
             slot = slot_name_to_slot[slot_name]
             lines.append(f'[{slot_name}({slot.num_cards})]')
             for slot_card in slot.slot_cards:
-                full_name = lorcana_api.get_api_card(slot_card.card_id).full_name
-                line_str = f"{slot_card.num_copies} {full_name}"
+                api_card = lorcana_api.get_api_card(slot_card.printing_id.card_id)
+                human_readable_printing = slot_card.printing_id.to_human_readable(api_card.full_name)
+                line_str = f"{slot_card.num_copies} {human_readable_printing}"
                 lines.append(line_str)
     return '\n'.join(lines)
 
@@ -214,6 +227,7 @@ def read_draftmancer_file(file_path: str):
         read_settings = False
         text_contents = ""
         open_braces = 0
+        # TODO: Read in SlotInfo / SlotCard / SlotPrinting
         draftmancer_settings: DraftmancerSettings = None
         for line in f:
             text_contents += line
@@ -225,6 +239,8 @@ def read_draftmancer_file(file_path: str):
                 read_custom_cards = False
                 read_settings = True
                 continue
+            # if "[" in line and "]" in line:
+
             if read_custom_cards:
                 custom_card_string += line.strip()
             if read_settings:

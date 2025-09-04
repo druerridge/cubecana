@@ -75,7 +75,10 @@ lorcana_rarity_to_draftmancer_rarity =  {
     "Uncommon": "uncommon",
     "Rare": "rare",
     "Super Rare": "mythic",
-    "Legendary": "mythic"
+    "Legendary": "mythic",
+    "Epic": "mythic",
+    "Enchanted": "mythic",
+    "Iconic": "mythic",
 }
 def to_draftmancer_rarity(lorcana_rarity):
     return lorcana_rarity_to_draftmancer_rarity[lorcana_rarity]

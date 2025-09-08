@@ -12,6 +12,7 @@ from . import card_list_helper
 from .card_evaluations import card_evaluations_manager
 from . import tabletop_simulator
 from .dreamborn_manager import dreamborn_manager
+from .lorcana import ALT_ART_RARITIES
 
 ALL_CARDS_DREAMBORN_TTS = "inputs/dreamborn_tts_all_cards"
 INCOMPLETE_SIMPLE_TEMPLATE_PATH = "inputs/incomplete_simple_template.draftmancer.txt"
@@ -47,7 +48,8 @@ class DraftmancerSettings:
 @dataclass(frozen=True)
 class DraftmancerFile:
   draftmancer_settings: DraftmancerSettings
-  id_to_custom_card: dict[str, dict]
+  printing_id_to_custom_card: dict[PrintingId, dict]
+  slots_by_name: dict[str, Slot]
   text_contents: str
 
 lorcana_color_to_draftmancer_color =  {
@@ -148,6 +150,9 @@ def generate_custom_card_list(
         if "Location" in api_card.types:
             custom_card['layout'] = "split" # causes card to be displayed horizontally where possible        
 
+        if printing.rarity in ALT_ART_RARITIES:
+            custom_card['foil'] = True
+
         if (settings.set_card_colors):
                 # FYI this is broken for Illumineer's quest boss cards
                 custom_card['colors'] = to_draftmancer_colors(api_card.color, settings, api_card.inks)
@@ -180,7 +185,7 @@ def write_draftmancer_file(draftmancer_file_string, card_list_name):
             file.write(line + '\n')
     print(f'Wrote draftmancer file to {file_name}')
 
-def generate_draftmancer_file(included_printing_ids_to_count:dict[PrintingId, int], card_evaluations_file: str, settings: Settings, slot_name_to_slot:dict[str, Slot]=None):
+def generate_draftmancer_file(included_printing_ids_to_count:dict[PrintingId, int], card_evaluations_file: str, settings: Settings, slot_name_to_slot:dict[str, Slot]=None) -> str:
     id_to_rating = card_evaluations_manager.read_id_to_rating(card_evaluations_file)
     all_printings_from_same_set = all(printing_id.set_code == next(iter(included_printing_ids_to_count)).set_code for printing_id in included_printing_ids_to_count)
     if all_printings_from_same_set:
@@ -220,33 +225,45 @@ def read_draftmancer_custom_cardlist(file_path=ALL_CARDS_CUBE_PATH):
     draftmancer_file:DraftmancerFile = read_draftmancer_file(file_path)
     if draftmancer_file == None:
         return None
-    return draftmancer_file.id_to_custom_card
+    return draftmancer_file.printing_id_to_custom_card
+
+READING_MODE_SETTINGS = "settings"
+READING_MODE_CUSTOM_CARDS = "custom_cards" 
+READING_MODE_SLOTS = "slots"
 
 def read_draftmancer_file(file_path: str):
     with open(file_path, encoding='utf8') as f:
+        reading_mode = ""
         custom_card_string = ""
-        read_custom_cards = False
         settings_string = ""
-        read_settings = False
         text_contents = ""
+        current_slot_name = ""
+        slots_by_name = dict[str, Slot]()
         open_braces = 0
-        # TODO: Read in SlotInfo / SlotCard / SlotPrinting
         draftmancer_settings: DraftmancerSettings = None
         for line in f:
             text_contents += line
             if "[CustomCards]" in line:
-                read_custom_cards = True
-                read_settings = False
+                reading_mode = READING_MODE_CUSTOM_CARDS
                 continue
             if "[Settings]" in line:
-                read_custom_cards = False
-                read_settings = True
+                reading_mode = READING_MODE_SETTINGS
                 continue
-            # if "[" in line and "]" in line:
+            if line.strip().startswith("[") and line.strip().endswith("]"):
+                slot_innards = line.strip().lstrip("[").rstrip("]")
+                if "(" in slot_innards:
+                    num_cards = int(slot_innards.split("(")[1].split(")")[0])
+                    current_slot_name = slot_innards.split("(")[0]
+                else:
+                    current_slot_name = slot_innards
+                    num_cards = -1
+                slots_by_name[current_slot_name] = Slot(current_slot_name, num_cards, [])
+                reading_mode = READING_MODE_SLOTS
+                continue
 
-            if read_custom_cards:
+            if reading_mode == READING_MODE_CUSTOM_CARDS:
                 custom_card_string += line.strip()
-            if read_settings:
+            if reading_mode == READING_MODE_SETTINGS:
                 settings_string += line.strip()
                 # try to decode, if it's done, it'll decode, otherwise it'll fail and we continue
                 if "{" in line:
@@ -266,20 +283,28 @@ def read_draftmancer_file(file_path: str):
 
                             # Now safely instantiate the dataclass
                             draftmancer_settings = DraftmancerSettings(**filtered_settings)
-                            read_settings = False
+                            reading_mode = ""
                         except json.JSONDecodeError:
                             continue
-        custom_cards_json = json.loads(custom_card_string)
+            if reading_mode == READING_MODE_SLOTS:
+                printing_id, count = card_list_helper.printing_id_and_count_from_card_list_line(line)
+                slots_by_name[current_slot_name].slot_cards.append(SlotCard(printing_id, count))
+                continue
         
-        id_to_custom_card = {}
+        custom_cards_json = json.loads(custom_card_string)
+        printing_id_to_custom_card: dict[PrintingId, dict] = {}
         for custom_card in custom_cards_json:
             try:
                 input_name = custom_card['name']
+                input_set = custom_card['set']
+                input_collector_id = custom_card['collector_number']
                 id = id_helper.to_id(input_name)
-                id_to_custom_card[id] = custom_card
+                printing_id = PrintingId(card_id=id, set_code=input_set, collector_id=input_collector_id)
+                lorcana_api.get_card_printing(printing_id)
+                printing_id_to_custom_card[printing_id] = custom_card
             except KeyError:
-                raise UnidentifiedCardError(f"Unable to identify card with input name {input_name} and id {id} ")
-        draftmancer_file = DraftmancerFile(draftmancer_settings, id_to_custom_card, text_contents)
+                raise UnidentifiedCardError(f"Unable to identify card from custom card entry:\n{json.dumps(custom_card)}")
+        draftmancer_file = DraftmancerFile(draftmancer_settings, printing_id_to_custom_card, slots_by_name, text_contents)
         return draftmancer_file
     return None
 
@@ -301,36 +326,6 @@ def dreamborn_card_list_to_draftmancer(card_list_input, card_evaluations_file, s
     card_list_lines = card_list_input.split('\n')
     printing_id_to_count = card_list_helper.printing_id_to_count_from(card_list_lines)
     return generate_draftmancer_file(printing_id_to_count, card_evaluations_file, settings)
-
-def add_card_list_to_draftmancer_custom_cards(id_to_count_input, draftmancer_custom_card_file, settings: Settings):
-    file_contents = ""
-    with open(draftmancer_custom_card_file, encoding='utf8') as file:
-        file_contents = ''.join(file.readlines())
-    id_to_custom_card = read_draftmancer_custom_cardlist(draftmancer_custom_card_file)
-    draftmancer_settings = settings.to_draftmancer_settings()
-
-    lines = [
-            '\n[Settings]',
-            json.dumps(
-                draftmancer_settings,
-                indent=4
-            ),
-            f'[MainSlot({settings.cards_per_booster})]',
-        ]
-    file_contents += '\n'.join(lines)
-    failed_ids = []
-    for id in id_to_count_input:
-        if not id in id_to_custom_card:
-            failed_ids.append(id)
-            continue
-        canonical_name = id_to_custom_card[id]['name']
-        file_contents += f"\n{id_to_count_input[id]} {canonical_name}"
-    if len(failed_ids) > 0:
-        error_message = f"Unable to identify {len(failed_ids)} cards, including:\n"
-        for failed_id in failed_ids:
-            error_message += f"{failed_id}\n"
-        raise UnidentifiedCardError(error_message)
-    return file_contents
 
 def generate_printing_id_to_count_from_id_to_tts_card(id_to_tts_card) -> dict[PrintingId,int]:
     id_to_api_card: dict[str, ApiCard] = lorcana_api.read_or_fetch_id_to_api_card()

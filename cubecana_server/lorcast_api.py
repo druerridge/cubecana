@@ -5,6 +5,7 @@ from .dreamborn_manager import dreamborn_manager
 from . import id_helper
 import requests
 from .card import ApiCard, CardPrinting, PrintingId, toPrintingId
+from .lorcana import ALT_ART_RARITIES
 
 CACHED_API_DATA_FILEPATH = 'inputs/lorcast_api_cache/lorcast_api_data_cache.json'
 CACHED_API_DATA_SET_Q1_FILEPATH = 'inputs/lorcast_api_cache/lorcast_api_data_cache_q1.json'
@@ -103,8 +104,8 @@ class LorcastApi:
             rarity=lorcast_to_cubecana_rarity[printing_untyped['rarity']]
         )
 
-    def is_alternate_art(self, collector_number: str) -> bool:
-        return self.is_number(collector_number) and int(collector_number) > 204
+    def is_alternate_art(self, printing: CardPrinting) -> bool:
+        return self.is_number(printing.collector_id) and int(printing.collector_id) > 204
 
     def is_number(self, value: str) -> bool:
         try:
@@ -114,7 +115,7 @@ class LorcastApi:
             return False
         
     def is_core_printing(self, printing: CardPrinting) -> bool:
-        return self.is_core_set(printing.set_code) and not self.is_alternate_art(printing.collector_id)
+        return self.is_core_set(printing.set_code) and not self.is_alternate_art(printing)
 
     def is_core_set(self, set_code: str) -> bool:
         # core sets are pure numbers while promos and special sets are not
@@ -157,6 +158,9 @@ class LorcastApi:
     def read_or_fetch_id_to_api_card(self) -> dict[str, ApiCard]:
         return self.id_to_api_card
 
+    def get_cards_from_set(self, set_code: str) -> list[ApiCard]:
+        return [api_card for api_card in self.id_to_api_card.values() if any(printing.set_code == set_code for printing in api_card.card_printings)]
+    
     def init(self):
         cached_api_data_file = Path(CACHED_API_DATA_FILEPATH)
         if not cached_api_data_file.is_file():

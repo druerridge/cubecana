@@ -1,6 +1,76 @@
 [CustomCards]
 [
     {
+        "name": "Invited to the Ball",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/005-029?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-029?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/005-029?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/005-029?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-029?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-029?tts"
+        },
+        "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "29",
+        "rating": 3
+    },
+    {
+        "name": "Elsa's Ice Palace - Place of Solitude",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/005-067?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-067?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/005-067?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/005-067?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-067?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-067?tts"
+        },
+        "rarity": "rare",
+        "set": "5",
+        "collector_number": "67",
+        "rating": 1,
+        "layout": "split"
+    },
+    {
+        "name": "Vanellope von Schweetz - Sugar Rush Princess",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/005-019?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-019?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/005-019?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/005-019?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-019?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-019?tts"
+        },
+        "rarity": "rare",
+        "set": "5",
+        "collector_number": "19",
+        "rating": 3
+    },
+    {
+        "name": "Vanellope von Schweetz - Sugar Rush Princess",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/005-206?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-206?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/005-206?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/005-206?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-206?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-206?tts"
+        },
+        "rarity": "mythic",
+        "set": "5",
+        "collector_number": "206",
+        "rating": 3,
+        "foil": true
+    },
+    {
         "name": "Koda - Talkative Cub",
         "mana_cost": "{2}",
         "type": "Instant",
@@ -13,6 +83,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-001?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "1",
         "rating": 2
     },
     {
@@ -28,6 +100,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-002?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "2",
         "rating": 1
     },
     {
@@ -43,7 +117,27 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-003?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "3",
         "rating": 2
+    },
+    {
+        "name": "Prince Naveen - Ukulele Player",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/005-205?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-205?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/005-205?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/005-205?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-205?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-205?tts"
+        },
+        "rarity": "mythic",
+        "set": "5",
+        "collector_number": "205",
+        "rating": 2,
+        "foil": true
     },
     {
         "name": "Rutt - Northern Moose",
@@ -58,6 +152,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-004?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "4",
         "rating": 4
     },
     {
@@ -73,6 +169,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-005?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "5",
         "rating": 2
     },
     {
@@ -88,6 +186,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-006?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "6",
         "rating": 4
     },
     {
@@ -103,6 +203,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-007?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "7",
         "rating": 3
     },
     {
@@ -118,6 +220,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-008?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "8",
         "rating": 2
     },
     {
@@ -133,6 +237,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-009?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "9",
         "rating": 3
     },
     {
@@ -148,6 +254,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-010?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "10",
         "rating": 4
     },
     {
@@ -163,6 +271,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-011?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "11",
         "rating": 3
     },
     {
@@ -178,6 +288,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-012?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "12",
         "rating": 3
     },
     {
@@ -193,6 +305,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-013?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "13",
         "rating": 1
     },
     {
@@ -208,6 +322,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-014?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "14",
         "rating": 4
     },
     {
@@ -223,6 +339,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-015?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "15",
         "rating": 3
     },
     {
@@ -238,6 +356,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-016?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "16",
         "rating": 1
     },
     {
@@ -253,6 +373,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-017?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "17",
         "rating": 2
     },
     {
@@ -268,22 +390,9 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-018?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "18",
         "rating": 4
-    },
-    {
-        "name": "Vanellope von Schweetz - Sugar Rush Princess",
-        "mana_cost": "{4}",
-        "type": "Instant",
-        "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/005-019?tts",
-            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-019?tts",
-            "de": "https://cdn.dreamborn.ink/images/de/cards/005-019?tts",
-            "it": "https://cdn.dreamborn.ink/images/it/cards/005-019?tts",
-            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-019?tts",
-            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-019?tts"
-        },
-        "rarity": "rare",
-        "rating": 3
     },
     {
         "name": "Alan-a-Dale - Rockin' Rooster",
@@ -298,6 +407,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-020?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "20",
         "rating": 2
     },
     {
@@ -313,6 +424,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-021?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "21",
         "rating": 4
     },
     {
@@ -328,6 +441,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-022?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "22",
         "rating": 4
     },
     {
@@ -343,6 +458,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-023?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "23",
         "rating": 4
     },
     {
@@ -358,6 +475,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-024?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "24",
         "rating": 3
     },
     {
@@ -373,6 +492,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-025?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "25",
         "rating": 1
     },
     {
@@ -388,6 +509,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-026?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "26",
         "rating": 3
     },
     {
@@ -403,7 +526,27 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-027?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "27",
         "rating": 0
+    },
+    {
+        "name": "Revive",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/005-207?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-207?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/005-207?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/005-207?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-207?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-207?tts"
+        },
+        "rarity": "mythic",
+        "set": "5",
+        "collector_number": "207",
+        "rating": 0,
+        "foil": true
     },
     {
         "name": "Blast From Your Past",
@@ -418,22 +561,9 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-028?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "28",
         "rating": 0
-    },
-    {
-        "name": "Invited to the Ball",
-        "mana_cost": "{2}",
-        "type": "Instant",
-        "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/005-029?tts",
-            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-029?tts",
-            "de": "https://cdn.dreamborn.ink/images/de/cards/005-029?tts",
-            "it": "https://cdn.dreamborn.ink/images/it/cards/005-029?tts",
-            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-029?tts",
-            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-029?tts"
-        },
-        "rarity": "uncommon",
-        "rating": 3
     },
     {
         "name": "Healing Decanter",
@@ -448,6 +578,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-030?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "30",
         "rating": 2
     },
     {
@@ -463,6 +595,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-031?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "31",
         "rating": 1
     },
     {
@@ -478,6 +612,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-032?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "32",
         "rating": 3
     },
     {
@@ -493,6 +629,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-033?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "33",
         "rating": 3,
         "layout": "split"
     },
@@ -509,6 +647,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-034?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "34",
         "rating": 3,
         "layout": "split"
     },
@@ -525,6 +665,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-035?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "35",
         "rating": 2
     },
     {
@@ -540,6 +682,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-036?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "36",
         "rating": 4
     },
     {
@@ -555,6 +699,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-037?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "37",
         "rating": 3
     },
     {
@@ -570,6 +716,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-038?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "38",
         "rating": 4
     },
     {
@@ -585,6 +733,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-039?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "39",
         "rating": 4
     },
     {
@@ -600,6 +750,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-040?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "40",
         "rating": 4
     },
     {
@@ -615,6 +767,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-041?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "41",
         "rating": 4
     },
     {
@@ -630,6 +784,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-042?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "42",
         "rating": 4
     },
     {
@@ -645,6 +801,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-043?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "43",
         "rating": 4
     },
     {
@@ -660,6 +818,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-044?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "44",
         "rating": 5
     },
     {
@@ -675,6 +835,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-045?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "45",
         "rating": 5
     },
     {
@@ -690,6 +852,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-046?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "46",
         "rating": 4
     },
     {
@@ -705,7 +869,27 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-047?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "47",
         "rating": 4
+    },
+    {
+        "name": "Archimedes - Electrified Owl",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/005-208?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-208?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/005-208?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/005-208?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-208?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-208?tts"
+        },
+        "rarity": "mythic",
+        "set": "5",
+        "collector_number": "208",
+        "rating": 4,
+        "foil": true
     },
     {
         "name": "Elsa - The Fifth Spirit",
@@ -720,6 +904,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-048?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "48",
         "rating": 5
     },
     {
@@ -735,6 +921,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-049?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "49",
         "rating": 4
     },
     {
@@ -750,7 +938,27 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-050?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "50",
         "rating": 4
+    },
+    {
+        "name": "Olaf - Happy Passenger",
+        "mana_cost": "{9}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/005-209?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-209?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/005-209?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/005-209?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-209?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-209?tts"
+        },
+        "rarity": "mythic",
+        "set": "5",
+        "collector_number": "209",
+        "rating": 4,
+        "foil": true
     },
     {
         "name": "Maleficent - Vexed Partygoer",
@@ -765,6 +973,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-051?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "51",
         "rating": 1
     },
     {
@@ -780,6 +990,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-052?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "52",
         "rating": 4
     },
     {
@@ -795,6 +1007,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-053?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "53",
         "rating": 2
     },
     {
@@ -810,6 +1024,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-054?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "54",
         "rating": 3
     },
     {
@@ -825,6 +1041,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-055?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "55",
         "rating": 4
     },
     {
@@ -840,6 +1058,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-056?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "56",
         "rating": 2
     },
     {
@@ -855,6 +1075,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-057?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "57",
         "rating": 3
     },
     {
@@ -870,6 +1092,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-058?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "58",
         "rating": 5
     },
     {
@@ -885,6 +1109,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-059?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "59",
         "rating": 3
     },
     {
@@ -900,7 +1126,27 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-060?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "60",
         "rating": 4
+    },
+    {
+        "name": "Finders Keepers",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/005-210?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-210?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/005-210?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/005-210?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-210?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-210?tts"
+        },
+        "rarity": "mythic",
+        "set": "5",
+        "collector_number": "210",
+        "rating": 4,
+        "foil": true
     },
     {
         "name": "We Know The Way",
@@ -915,6 +1161,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-061?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "61",
         "rating": 0
     },
     {
@@ -930,6 +1178,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-062?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "62",
         "rating": 0
     },
     {
@@ -945,6 +1195,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-063?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "63",
         "rating": 3
     },
     {
@@ -960,6 +1212,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-064?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "64",
         "rating": 2
     },
     {
@@ -975,6 +1229,25 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-065?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "65",
+        "rating": 3
+    },
+    {
+        "name": "Half Hexwell Crown",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/005-223?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-223?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/005-223?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/005-223?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-223?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-223?tts"
+        },
+        "rarity": "rare",
+        "set": "5",
+        "collector_number": "223",
         "rating": 3
     },
     {
@@ -990,23 +1263,9 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-066?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "66",
         "rating": 2
-    },
-    {
-        "name": "Elsa's Ice Palace - Place of Solitude",
-        "mana_cost": "{3}",
-        "type": "Instant",
-        "image_uris": {
-            "en": "https://cdn.dreamborn.ink/images/en/cards/005-067?tts",
-            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-067?tts",
-            "de": "https://cdn.dreamborn.ink/images/de/cards/005-067?tts",
-            "it": "https://cdn.dreamborn.ink/images/it/cards/005-067?tts",
-            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-067?tts",
-            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-067?tts"
-        },
-        "rarity": "rare",
-        "rating": 1,
-        "layout": "split"
     },
     {
         "name": "The Library - A Gift for Belle",
@@ -1021,6 +1280,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-068?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "68",
         "rating": 4,
         "layout": "split"
     },
@@ -1037,6 +1298,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-069?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "69",
         "rating": 5
     },
     {
@@ -1052,6 +1315,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-070?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "70",
         "rating": 4
     },
     {
@@ -1067,6 +1332,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-071?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "71",
         "rating": 1
     },
     {
@@ -1082,6 +1349,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-072?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "72",
         "rating": 4
     },
     {
@@ -1097,6 +1366,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-073?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "73",
         "rating": 3
     },
     {
@@ -1112,6 +1383,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-074?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "74",
         "rating": 3
     },
     {
@@ -1127,6 +1400,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-075?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "75",
         "rating": 4
     },
     {
@@ -1142,6 +1417,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-076?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "76",
         "rating": 3
     },
     {
@@ -1157,6 +1434,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-077?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "77",
         "rating": 3
     },
     {
@@ -1172,6 +1451,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-078?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "78",
         "rating": 4
     },
     {
@@ -1187,6 +1468,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-079?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "79",
         "rating": 3
     },
     {
@@ -1202,6 +1485,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-080?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "80",
         "rating": 3
     },
     {
@@ -1217,6 +1502,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-081?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "81",
         "rating": 3
     },
     {
@@ -1232,6 +1519,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-082?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "82",
         "rating": 4
     },
     {
@@ -1247,6 +1536,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-083?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "83",
         "rating": 4
     },
     {
@@ -1262,7 +1553,27 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-084?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "84",
         "rating": 4
+    },
+    {
+        "name": "Clarabelle - Light on Her Hooves",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/005-211?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-211?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/005-211?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/005-211?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-211?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-211?tts"
+        },
+        "rarity": "mythic",
+        "set": "5",
+        "collector_number": "211",
+        "rating": 4,
+        "foil": true
     },
     {
         "name": "Anna - Diplomatic Queen",
@@ -1277,6 +1588,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-085?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "85",
         "rating": 5
     },
     {
@@ -1292,6 +1605,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-086?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "86",
         "rating": 3
     },
     {
@@ -1307,6 +1622,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-087?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "87",
         "rating": 2
     },
     {
@@ -1322,6 +1639,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-088?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "88",
         "rating": 3
     },
     {
@@ -1337,6 +1656,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-089?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "89",
         "rating": 4
     },
     {
@@ -1352,6 +1673,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-090?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "90",
         "rating": 4
     },
     {
@@ -1367,6 +1690,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-091?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "91",
         "rating": 4
     },
     {
@@ -1382,6 +1707,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-092?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "92",
         "rating": 5
     },
     {
@@ -1397,7 +1724,27 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-093?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "93",
         "rating": 4
+    },
+    {
+        "name": "Scar - Vengeful Lion",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/005-212?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-212?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/005-212?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/005-212?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-212?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-212?tts"
+        },
+        "rarity": "mythic",
+        "set": "5",
+        "collector_number": "212",
+        "rating": 4,
+        "foil": true
     },
     {
         "name": "Hypnotic Deduction",
@@ -1412,6 +1759,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-094?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "94",
         "rating": 2
     },
     {
@@ -1427,6 +1776,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-095?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "95",
         "rating": 2
     },
     {
@@ -1442,7 +1793,27 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-096?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "96",
         "rating": 3
+    },
+    {
+        "name": "You're Welcome",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/005-213?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-213?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/005-213?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/005-213?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-213?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-213?tts"
+        },
+        "rarity": "mythic",
+        "set": "5",
+        "collector_number": "213",
+        "rating": 3,
+        "foil": true
     },
     {
         "name": "Remember Who You Are",
@@ -1457,6 +1828,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-097?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "97",
         "rating": 0
     },
     {
@@ -1472,6 +1845,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-098?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "98",
         "rating": 2
     },
     {
@@ -1487,6 +1862,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-099?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "99",
         "rating": 0
     },
     {
@@ -1502,6 +1879,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-100?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "100",
         "rating": 3
     },
     {
@@ -1517,6 +1896,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-101?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "101",
         "rating": 1,
         "layout": "split"
     },
@@ -1533,6 +1914,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-102?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "102",
         "rating": 2,
         "layout": "split"
     },
@@ -1549,6 +1932,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-103?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "103",
         "rating": 3
     },
     {
@@ -1564,6 +1949,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-104?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "104",
         "rating": 2
     },
     {
@@ -1579,6 +1966,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-105?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "105",
         "rating": 4
     },
     {
@@ -1594,6 +1983,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-106?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "106",
         "rating": 3
     },
     {
@@ -1609,7 +2000,27 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-107?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "107",
         "rating": 4
+    },
+    {
+        "name": "Donald Duck - Pie Slinger",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/005-214?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-214?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/005-214?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/005-214?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-214?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-214?tts"
+        },
+        "rarity": "mythic",
+        "set": "5",
+        "collector_number": "214",
+        "rating": 4,
+        "foil": true
     },
     {
         "name": "Rancis Fluggerbutter - Chocolate Charger",
@@ -1624,6 +2035,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-108?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "108",
         "rating": 3
     },
     {
@@ -1639,6 +2052,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-109?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "109",
         "rating": 3
     },
     {
@@ -1654,6 +2069,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-110?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "110",
         "rating": 3
     },
     {
@@ -1669,6 +2086,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-111?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "111",
         "rating": 4
     },
     {
@@ -1684,6 +2103,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-112?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "112",
         "rating": 3
     },
     {
@@ -1699,6 +2120,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-113?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "113",
         "rating": 3
     },
     {
@@ -1714,6 +2137,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-114?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "114",
         "rating": 1
     },
     {
@@ -1729,6 +2154,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-115?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "115",
         "rating": 4
     },
     {
@@ -1744,6 +2171,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-116?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "116",
         "rating": 3
     },
     {
@@ -1759,6 +2188,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-117?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "117",
         "rating": 2
     },
     {
@@ -1774,7 +2205,27 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-118?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "118",
         "rating": 1
+    },
+    {
+        "name": "Robin Hood - Sharpshooter",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/005-215?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-215?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/005-215?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/005-215?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-215?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-215?tts"
+        },
+        "rarity": "mythic",
+        "set": "5",
+        "collector_number": "215",
+        "rating": 1,
+        "foil": true
     },
     {
         "name": "Gaston - Pure Paragon",
@@ -1789,6 +2240,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-119?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "119",
         "rating": 4
     },
     {
@@ -1804,6 +2257,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-120?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "120",
         "rating": 3
     },
     {
@@ -1819,6 +2274,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-121?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "121",
         "rating": 1
     },
     {
@@ -1834,6 +2291,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-122?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "122",
         "rating": 2
     },
     {
@@ -1849,6 +2308,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-123?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "123",
         "rating": 4
     },
     {
@@ -1864,6 +2325,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-124?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "124",
         "rating": 4
     },
     {
@@ -1879,6 +2342,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-125?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "125",
         "rating": 3
     },
     {
@@ -1894,6 +2359,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-126?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "126",
         "rating": 3
     },
     {
@@ -1909,6 +2376,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-127?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "127",
         "rating": 1
     },
     {
@@ -1924,6 +2393,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-128?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "128",
         "rating": 1
     },
     {
@@ -1939,6 +2410,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-129?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "129",
         "rating": 1
     },
     {
@@ -1954,6 +2427,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-130?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "130",
         "rating": 3
     },
     {
@@ -1969,6 +2444,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-131?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "131",
         "rating": 1
     },
     {
@@ -1984,6 +2461,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-132?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "132",
         "rating": 1
     },
     {
@@ -1999,6 +2478,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-133?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "133",
         "rating": 0
     },
     {
@@ -2014,6 +2495,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-134?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "134",
         "rating": 3
     },
     {
@@ -2029,6 +2512,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-135?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "135",
         "rating": 0,
         "layout": "split"
     },
@@ -2045,8 +2530,29 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-136?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "136",
         "rating": 2,
         "layout": "split"
+    },
+    {
+        "name": "Ratigan's Party - Seedy Back Room",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/005-216?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-216?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/005-216?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/005-216?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-216?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-216?tts"
+        },
+        "rarity": "mythic",
+        "set": "5",
+        "collector_number": "216",
+        "rating": 2,
+        "layout": "split",
+        "foil": true
     },
     {
         "name": "King Candy - Sovereign of Sugar",
@@ -2061,6 +2567,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-137?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "137",
         "rating": 4
     },
     {
@@ -2076,6 +2584,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-138?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "138",
         "rating": 3
     },
     {
@@ -2091,6 +2601,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-139?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "139",
         "rating": 1
     },
     {
@@ -2106,6 +2618,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-140?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "140",
         "rating": 5
     },
     {
@@ -2121,6 +2635,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-141?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "141",
         "rating": 2
     },
     {
@@ -2136,6 +2652,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-142?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "142",
         "rating": 2
     },
     {
@@ -2151,6 +2669,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-143?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "143",
         "rating": 2
     },
     {
@@ -2166,6 +2686,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-144?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "144",
         "rating": 2
     },
     {
@@ -2181,6 +2703,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-145?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "145",
         "rating": 1
     },
     {
@@ -2196,6 +2720,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-146?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "146",
         "rating": 1
     },
     {
@@ -2211,6 +2737,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-147?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "147",
         "rating": 3
     },
     {
@@ -2226,6 +2754,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-148?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "148",
         "rating": 1
     },
     {
@@ -2241,6 +2771,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-149?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "149",
         "rating": 4
     },
     {
@@ -2256,7 +2788,27 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-150?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "150",
         "rating": 4
+    },
+    {
+        "name": "Mufasa - Ruler of Pride Rock",
+        "mana_cost": "{8}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/005-217?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-217?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/005-217?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/005-217?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-217?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-217?tts"
+        },
+        "rarity": "mythic",
+        "set": "5",
+        "collector_number": "217",
+        "rating": 4,
+        "foil": true
     },
     {
         "name": "Ludwig Von Drake - Self-Proclaimed Genius",
@@ -2271,6 +2823,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-151?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "151",
         "rating": 4
     },
     {
@@ -2286,6 +2840,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-152?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "152",
         "rating": 3
     },
     {
@@ -2301,6 +2857,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-153?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "153",
         "rating": 4
     },
     {
@@ -2316,7 +2874,27 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-154?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "154",
         "rating": 4
+    },
+    {
+        "name": "King Candy - Sweet Abomination",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/005-218?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-218?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/005-218?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/005-218?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-218?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-218?tts"
+        },
+        "rarity": "mythic",
+        "set": "5",
+        "collector_number": "218",
+        "rating": 4,
+        "foil": true
     },
     {
         "name": "Donald Duck - Focused Flatfoot",
@@ -2331,6 +2909,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-155?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "155",
         "rating": 4
     },
     {
@@ -2346,6 +2926,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-156?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "156",
         "rating": 2
     },
     {
@@ -2361,6 +2943,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-157?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "157",
         "rating": 3
     },
     {
@@ -2376,6 +2960,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-158?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "158",
         "rating": 1
     },
     {
@@ -2391,6 +2977,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-159?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "159",
         "rating": 3
     },
     {
@@ -2406,6 +2994,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-160?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "160",
         "rating": 2
     },
     {
@@ -2421,7 +3011,27 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-161?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "161",
         "rating": 0
+    },
+    {
+        "name": "Royal Tantrum",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/005-219?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-219?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/005-219?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/005-219?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-219?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-219?tts"
+        },
+        "rarity": "mythic",
+        "set": "5",
+        "collector_number": "219",
+        "rating": 0,
+        "foil": true
     },
     {
         "name": "Ever as Before",
@@ -2436,6 +3046,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-162?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "162",
         "rating": 2
     },
     {
@@ -2451,6 +3063,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-163?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "163",
         "rating": 0
     },
     {
@@ -2466,6 +3080,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-164?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "164",
         "rating": 0
     },
     {
@@ -2481,6 +3097,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-165?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "165",
         "rating": 1
     },
     {
@@ -2496,6 +3114,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-166?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "166",
         "rating": 0
     },
     {
@@ -2511,6 +3131,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-167?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "167",
         "rating": 0
     },
     {
@@ -2526,6 +3148,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-168?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "168",
         "rating": 0
     },
     {
@@ -2541,6 +3165,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-169?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "169",
         "rating": 0,
         "layout": "split"
     },
@@ -2557,6 +3183,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-170?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "170",
         "rating": 0,
         "layout": "split"
     },
@@ -2573,6 +3201,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-171?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "171",
         "rating": 4
     },
     {
@@ -2588,6 +3218,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-172?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "172",
         "rating": 5
     },
     {
@@ -2603,6 +3235,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-173?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "173",
         "rating": 4
     },
     {
@@ -2618,6 +3252,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-174?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "174",
         "rating": 4
     },
     {
@@ -2633,6 +3269,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-175?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "175",
         "rating": 2
     },
     {
@@ -2648,6 +3286,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-176?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "176",
         "rating": 3
     },
     {
@@ -2663,6 +3303,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-177?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "177",
         "rating": 1
     },
     {
@@ -2678,6 +3320,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-178?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "178",
         "rating": 3
     },
     {
@@ -2693,6 +3337,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-179?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "179",
         "rating": 4
     },
     {
@@ -2708,6 +3354,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-180?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "180",
         "rating": 2
     },
     {
@@ -2723,6 +3371,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-181?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "181",
         "rating": 2
     },
     {
@@ -2738,6 +3388,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-182?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "182",
         "rating": 4
     },
     {
@@ -2753,7 +3405,27 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-183?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "183",
         "rating": 3
+    },
+    {
+        "name": "Snow White - Fair-Hearted",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/005-220?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-220?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/005-220?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/005-220?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-220?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-220?tts"
+        },
+        "rarity": "mythic",
+        "set": "5",
+        "collector_number": "220",
+        "rating": 3,
+        "foil": true
     },
     {
         "name": "Yzma - Unjustly Treated",
@@ -2768,6 +3440,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-184?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "184",
         "rating": 3
     },
     {
@@ -2783,6 +3457,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-185?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "185",
         "rating": 3
     },
     {
@@ -2798,6 +3474,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-186?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "186",
         "rating": 1
     },
     {
@@ -2813,6 +3491,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-187?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "187",
         "rating": 0
     },
     {
@@ -2828,6 +3508,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-188?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "188",
         "rating": 4
     },
     {
@@ -2843,6 +3525,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-189?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "189",
         "rating": 2
     },
     {
@@ -2858,6 +3542,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-190?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "190",
         "rating": 3
     },
     {
@@ -2873,6 +3559,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-191?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "191",
         "rating": 4
     },
     {
@@ -2888,6 +3576,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-192?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "192",
         "rating": 3
     },
     {
@@ -2903,6 +3593,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-193?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "193",
         "rating": 4
     },
     {
@@ -2918,7 +3610,27 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-194?tts"
         },
         "rarity": "mythic",
+        "set": "5",
+        "collector_number": "194",
         "rating": 4
+    },
+    {
+        "name": "Arthur - King Victorious",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/005-221?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-221?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/005-221?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/005-221?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-221?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-221?tts"
+        },
+        "rarity": "mythic",
+        "set": "5",
+        "collector_number": "221",
+        "rating": 4,
+        "foil": true
     },
     {
         "name": "Pete - Games Referee",
@@ -2933,6 +3645,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-195?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "195",
         "rating": 3
     },
     {
@@ -2948,6 +3662,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-196?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "196",
         "rating": 3
     },
     {
@@ -2963,6 +3679,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-197?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "197",
         "rating": 2
     },
     {
@@ -2978,6 +3696,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-198?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "198",
         "rating": 2
     },
     {
@@ -2993,6 +3713,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-199?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "199",
         "rating": 1
     },
     {
@@ -3008,6 +3730,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-200?tts"
         },
         "rarity": "common",
+        "set": "5",
+        "collector_number": "200",
         "rating": 1
     },
     {
@@ -3023,6 +3747,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-201?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "201",
         "rating": 4
     },
     {
@@ -3038,6 +3764,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-202?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "202",
         "rating": 3
     },
     {
@@ -3053,8 +3781,29 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-203?tts"
         },
         "rarity": "rare",
+        "set": "5",
+        "collector_number": "203",
         "rating": 2,
         "layout": "split"
+    },
+    {
+        "name": "Bad-Anon - Villain Support Center",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cdn.dreamborn.ink/images/en/cards/005-222?tts",
+            "fr": "https://cdn.dreamborn.ink/images/fr/cards/005-222?tts",
+            "de": "https://cdn.dreamborn.ink/images/de/cards/005-222?tts",
+            "it": "https://cdn.dreamborn.ink/images/it/cards/005-222?tts",
+            "ja": "https://cdn.dreamborn.ink/images/ja/cards/005-222?tts",
+            "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-222?tts"
+        },
+        "rarity": "mythic",
+        "set": "5",
+        "collector_number": "222",
+        "rating": 2,
+        "layout": "split",
+        "foil": true
     },
     {
         "name": "Seven Dwarfs' Mine - Secure Fortress",
@@ -3069,6 +3818,8 @@
             "zh": "https://cdn.dreamborn.ink/images/zh/cards/005-204?tts"
         },
         "rarity": "uncommon",
+        "set": "5",
+        "collector_number": "204",
         "rating": 3,
         "layout": "split"
     }
@@ -3081,419 +3832,439 @@
     "withReplacement": true
 }
 [CommonSlotSteel(1)]
-60 Simba - Lost Prince
-60 Rudy - Groove Disrupter
-60 Royal Guard - Bovine Protector
-60 Mickey Mouse - Food Fight Defender
-60 Kronk - Unlicensed Investigator
-60 HeiHei - Protective Rooster
-60 Sneezy - Noisy Knight
-60 Dopey - Knight Apprentice
-60 Happy - Lively Knight
-60 When Will My Life Begin?
-60 Duck for Cover!
-60 Shield of Arendelle
+60000 Simba - Lost Prince (5) 173
+60000 Rudy - Groove Disrupter (5) 174
+60000 Royal Guard - Bovine Protector (5) 175
+60000 Mickey Mouse - Food Fight Defender (5) 176
+60000 Kronk - Unlicensed Investigator (5) 178
+60000 HeiHei - Protective Rooster (5) 179
+60000 Sneezy - Noisy Knight (5) 180
+60000 Dopey - Knight Apprentice (5) 181
+60000 Happy - Lively Knight (5) 191
+60000 When Will My Life Begin? (5) 197
+60000 Duck for Cover! (5) 198
+60000 Shield of Arendelle (5) 200
 [CommonSlotSapphire(1)]
-60 King Candy - Sovereign of Sugar
-60 Chaca - Impressive Daughter
-60 The Queen - Cruelest of All
-60 Prince John - Opportunistic Briber
-60 Merlin - Back from Bermuda
-60 Minnie Mouse - Quick-Thinking Inventor
-60 Basil - Practiced Detective
-60 Donald Duck - Focused Flatfoot
-60 Tanana - Wise Woman
-60 Vision of the Future
-60 Ever as Before
-60 Medal of Heroes
+60000 King Candy - Sovereign of Sugar (5) 137
+60000 Chaca - Impressive Daughter (5) 138
+60000 The Queen - Cruelest of All (5) 139
+60000 Prince John - Opportunistic Briber (5) 141
+60000 Merlin - Back from Bermuda (5) 142
+60000 Minnie Mouse - Quick-Thinking Inventor (5) 152
+60000 Basil - Practiced Detective (5) 153
+60000 Donald Duck - Focused Flatfoot (5) 155
+60000 Tanana - Wise Woman (5) 156
+60000 Vision of the Future (5) 160
+60000 Ever as Before (5) 162
+60000 Medal of Heroes (5) 165
 [CommonSlotRuby(1)]
-60 Rancis Fluggerbutter - Chocolate Charger
-60 Snowanna Rainbeau - Cool Competitor
-60 Daisy Duck - Spotless Food-Fighter
-60 Mickey Mouse - Enthusiastic Dancer
-60 Ratigan - Raging Rat
-60 Taffyta Muttonfudge - Crowd Favorite
-60 Pete - Pastry Chomper
-60 Donald Duck - Daisy's Date
-60 Simba - Adventurous Successor
-60 Break Free
-60 Evil Comes Prepared
-60 Potion of Might
+60000 Rancis Fluggerbutter - Chocolate Charger (5) 108
+60000 Snowanna Rainbeau - Cool Competitor (5) 110
+60000 Daisy Duck - Spotless Food-Fighter (5) 111
+60000 Mickey Mouse - Enthusiastic Dancer (5) 112
+60000 Ratigan - Raging Rat (5) 113
+60000 Taffyta Muttonfudge - Crowd Favorite (5) 114
+60000 Pete - Pastry Chomper (5) 120
+60000 Donald Duck - Daisy's Date (5) 122
+60000 Simba - Adventurous Successor (5) 125
+60000 Break Free (5) 127
+60000 Evil Comes Prepared (5) 128
+60000 Potion of Might (5) 132
 [CommonSlotEmerald(1)]
-60 Zazu - Advisor to Mufasa
-60 Ulf - Mime
-60 Ed - Laughing Hyena
-60 Flora - Good Fairy
-60 Merryweather - Good Fairy
-60 Robin Hood - Archery Contestant
-60 Fauna - Good Fairy
-60 Clarabelle - Clumsy Guest
-60 Banzai - Taunting Hyena
-60 Hypnotic Deduction
-60 Night Howler Rage
-60 Obscurosphere
+60000 Zazu - Advisor to Mufasa (5) 72
+60000 Ulf - Mime (5) 73
+60000 Ed - Laughing Hyena (5) 74
+60000 Flora - Good Fairy (5) 75
+60000 Merryweather - Good Fairy (5) 76
+60000 Robin Hood - Archery Contestant (5) 77
+60000 Fauna - Good Fairy (5) 78
+60000 Clarabelle - Clumsy Guest (5) 86
+60000 Banzai - Taunting Hyena (5) 87
+60000 Hypnotic Deduction (5) 94
+60000 Night Howler Rage (5) 95
+60000 Obscurosphere (5) 99
 [CommonSlotAmethyst(1)]
-60 The Nokk - Mythical Spirit
-60 Cogsworth - Illuminary Watchman
-60 Merlin - Turtle
-60 Archimedes - Exasperated Owl
-60 Earth Giant - Living Mountain
-60 Gale - Wind Spirit
-60 White Rabbit - Royal Herald
-60 Maleficent - Vengeful Sorceress
-60 Anna - Eager Acolyte
-60 Hypnotic Strength
-60 Gathering Knowledge And Wisdom
-60 Retrosphere
+60000 The Nokk - Mythical Spirit (5) 36
+60000 Cogsworth - Illuminary Watchman (5) 37
+60000 Merlin - Turtle (5) 38
+60000 Archimedes - Exasperated Owl (5) 39
+60000 Earth Giant - Living Mountain (5) 41
+60000 Gale - Wind Spirit (5) 42
+60000 White Rabbit - Royal Herald (5) 43
+60000 Maleficent - Vengeful Sorceress (5) 54
+60000 Anna - Eager Acolyte (5) 56
+60000 Hypnotic Strength (5) 59
+60000 Gathering Knowledge And Wisdom (5) 62
+60000 Retrosphere (5) 64
 [CommonSlotAmber(1)]
-60 Rutt - Northern Moose
-60 Kenai - Big Brother
-60 Vanellope von Schweetz - Sugar Rush Champ
-60 Tuke - Northern Moose
-60 Lilo - Junior Cake Decorator
-60 Vanellope von Schweetz - Candy Mechanic
-60 Fix-It Felix, Jr. - Trusty Builder
-60 Gazelle - Pop Star
-60 Fix-It Felix, Jr. - Delighted Sightseer
-60 Minnie Mouse - Compassionate Friend
-60 Healing Touch
-60 Healing Decanter
+60000 Rutt - Northern Moose (5) 4
+60000 Kenai - Big Brother (5) 5
+60000 Vanellope von Schweetz - Sugar Rush Champ (5) 6
+60000 Tuke - Northern Moose (5) 7
+60000 Lilo - Junior Cake Decorator (5) 8
+60000 Vanellope von Schweetz - Candy Mechanic (5) 9
+60000 Fix-It Felix, Jr. - Trusty Builder (5) 10
+60000 Gazelle - Pop Star (5) 11
+60000 Fix-It Felix, Jr. - Delighted Sightseer (5) 17
+60000 Minnie Mouse - Compassionate Friend (5) 24
+60000 Healing Touch (5) 26
+60000 Healing Decanter (5) 30
 [UncommonSlot(3)]
-30 Nala - Mischievous Cub
-30 Fix-It Felix, Jr. - Niceland Steward
-30 Alan-a-Dale - Rockin' Rooster
-30 Maid Marian - Lady of the Lists
-30 Sven - Reindeer Steed
-30 Try Everything
-30 Invited to the Ball
-30 Amber Chromicon
-30 Rapunzel's Tower - Secluded Prison
-30 Bruni - Fire Salamander
-30 Archimedes - Electrified Owl
-30 Maleficent - Vexed Partygoer
-30 Monstro - Whale of a Whale
-30 King of Hearts - Monarch of Wonderland
-30 Finders Keepers
-30 Magical Aid
-30 Amethyst Chromicon
-30 The Library - A Gift for Belle
-30 Shenzi - Scar's Accomplice
-30 Little John - Camp Cook
-30 Ed - Hysterical Partygoer
-30 Robin Hood - Sneaky Sleuth
-30 Mother Gothel - Conceited Manipulator
-30 Clarabelle - Contented Wallflower
-30 You're Welcome
-30 Emerald Chromicon
-30 Tropical Rainforest - Jaguar Lair
-30 Taffyta Muttonfudge - Ruthless Rival
-30 Turbo - Royal Hack
-30 Scar - Betrayer
-30 Taffyta Muttonfudge - Sour Speedster
-30 Arthur - Novice Sparrow
-30 Minnie Mouse - Dazzling Dancer
-30 Glimmer vs Glimmer
-30 Ruby Chromicon
-30 Ratigan's Party - Seedy Back Room
-30 Pacha - Emperor's Guide
-30 Ludwig Von Drake - Self-Proclaimed Genius
-30 King Candy - Sweet Abomination
-30 Tipo - Growing Son
-30 Hide Away
-30 All Funned Out
-30 Merlin's Carpetbag
-30 Sapphire Chromicon
-30 Merlin's Cottage - The Wizard's Home
-30 Stitch - Team Underdog
-30 Sleepy - Sluggish Knight
-30 Bashful - Adoring Knight
-30 Arthur - Wart
-30 Simba - Son of Mufasa
-30 Pete - Games Referee
-30 Food Fight!
-30 Steel Chromicon
-30 Seven Dwarfs' Mine - Secure Fortress
+30000 Invited to the Ball (5) 29
+30000 Nala - Mischievous Cub (5) 2
+30000 Fix-It Felix, Jr. - Niceland Steward (5) 12
+30000 Alan-a-Dale - Rockin' Rooster (5) 20
+30000 Maid Marian - Lady of the Lists (5) 22
+30000 Sven - Reindeer Steed (5) 23
+30000 Try Everything (5) 25
+30000 Amber Chromicon (5) 32
+30000 Rapunzel's Tower - Secluded Prison (5) 33
+30000 Bruni - Fire Salamander (5) 40
+30000 Archimedes - Electrified Owl (5) 47
+30000 Maleficent - Vexed Partygoer (5) 51
+30000 Monstro - Whale of a Whale (5) 52
+30000 King of Hearts - Monarch of Wonderland (5) 57
+30000 Finders Keepers (5) 60
+30000 Magical Aid (5) 63
+30000 Amethyst Chromicon (5) 66
+30000 The Library - A Gift for Belle (5) 68
+30000 Shenzi - Scar's Accomplice (5) 70
+30000 Little John - Camp Cook (5) 71
+30000 Ed - Hysterical Partygoer (5) 81
+30000 Robin Hood - Sneaky Sleuth (5) 88
+30000 Mother Gothel - Conceited Manipulator (5) 89
+30000 Clarabelle - Contented Wallflower (5) 90
+30000 You're Welcome (5) 96
+30000 Emerald Chromicon (5) 100
+30000 Tropical Rainforest - Jaguar Lair (5) 102
+30000 Taffyta Muttonfudge - Ruthless Rival (5) 103
+30000 Turbo - Royal Hack (5) 106
+30000 Scar - Betrayer (5) 109
+30000 Taffyta Muttonfudge - Sour Speedster (5) 117
+30000 Arthur - Novice Sparrow (5) 121
+30000 Minnie Mouse - Dazzling Dancer (5) 126
+30000 Glimmer vs Glimmer (5) 130
+30000 Ruby Chromicon (5) 134
+30000 Ratigan's Party - Seedy Back Room (5) 136
+30000 Pacha - Emperor's Guide (5) 143
+30000 Ludwig Von Drake - Self-Proclaimed Genius (5) 151
+30000 King Candy - Sweet Abomination (5) 154
+30000 Tipo - Growing Son (5) 157
+30000 Hide Away (5) 163
+30000 All Funned Out (5) 164
+30000 Merlin's Carpetbag (5) 167
+30000 Sapphire Chromicon (5) 168
+30000 Merlin's Cottage - The Wizard's Home (5) 170
+30000 Stitch - Team Underdog (5) 171
+30000 Sleepy - Sluggish Knight (5) 177
+30000 Bashful - Adoring Knight (5) 189
+30000 Arthur - Wart (5) 190
+30000 Simba - Son of Mufasa (5) 192
+30000 Pete - Games Referee (5) 195
+30000 Food Fight! (5) 199
+30000 Steel Chromicon (5) 202
+30000 Seven Dwarfs' Mine - Secure Fortress (5) 204
 [RareOrHigherSlot(2)]
-13 Koda - Talkative Cub
-2 Prince Naveen - Ukulele Player
-13 Kristoff - Reindeer Keeper
-2 Mirabel Madrigal - Family Gatherer
-5 Minnie Mouse - Drum Major
-5 Daisy Duck - Donald's Date
-13 Moana - Determined Explorer
-13 Vanellope von Schweetz - Sugar Rush Princess
-13 Wreck-It Ralph - Admiral Underpants
-13 Revive
-5 Blast From Your Past
-13 Queen's Sensor Core
-13 Pride Lands - Jungle Oasis
-5 Maleficent - Formidable Queen
-5 Madam Mim - Elephant
-13 Luisa Madrigal - Entertaining Muscle
-13 Anna - Mystical Majesty
-5 Elsa - The Fifth Spirit
-2 Genie - Main Attraction
-13 Olaf - Happy Passenger
-13 Magica De Spell - Cruel Sorceress
-13 Rafiki - Shaman Duelist
-2 Camilo Madrigal - Family Copycat
-13 We Know The Way
-13 Half Hexwell Crown
-13 Elsa's Ice Palace - Place of Solitude
-13 Robin Hood - Timely Contestant
-13 Iago - Fake Flamingo
-13 Banzai - Gluttonous Predator
-5 Scroop - Odious Mutineer
-5 Prince Phillip - Swordsman of the Realm
-2 Clarabelle - Light on Her Hooves
-2 Anna - Diplomatic Queen
-13 Shenzi - Head Hyena
-5 Mother Gothel - Unwavering Schemer
-13 Scar - Vengeful Lion
-13 Remember Who You Are
-13 Prince John's Mirror
-13 Sherwood Forest - Outlaw Hideaway
-13 Wreck-It Ralph - Demolition Dude
-5 Maximus - Team Champion
-2 Donald Duck - Pie Slinger
-13 Denahi - Avenging Brother
-5 Pete - Steamboat Rival
-2 Robin Hood - Sharpshooter
-13 Gaston - Pure Paragon
-13 Ratigan - Party Crasher
-13 Vanellope Von Schweetz - Random Roster Racer
-13 Don't Let The Frostbite Bite
-5 Who's With Me?
-13 The Sword Released
-13 Sugar Rush Speedway - Starting Line
-13 Scrooge McDuck - Afficionado of Antiquities
-5 The Queen - Fairest of All
-13 Sheriff Of Nottingham - Bushel Britches
-13 Chicha - Dedicated Mother
-5 Prince John - Gold Lover
-13 The Queen - Crown of the Council
-5 Kuzco - Selfish Emperor
-2 Mufasa - Ruler of Pride Rock
-13 Belle - Of the Ball
-2 Merlin - Intellectual Visionary
-13 Royal Tantrum
-13 Basil's Magnifying Glass
-13 The Great Illuminary - Radiant Ballroom
-2 Jafar - Tyrannical Hypnotist
-13 Namaari - Resolute Daughter
-5 Snow White - Fair-Hearted
-13 Yzma - Unjustly Treated
-5 Kronk - Head of Security
-5 Grumpy - Skeptical Knight
-13 Pete - Wrestling Champ
-13 Sir Ector - Castle Lord
-13 Doc - Bold Knight
-2 Arthur - King Victorious
-13 Tug-of-War
-13 Plate Armor
-13 Bad-Anon - Villain Support Center
+13000 Elsa's Ice Palace - Place of Solitude (5) 67
+13000 Vanellope von Schweetz - Sugar Rush Princess (5) 19
+13000 Koda - Talkative Cub (5) 1
+2000 Prince Naveen - Ukulele Player (5) 3
+13000 Kristoff - Reindeer Keeper (5) 13
+2000 Mirabel Madrigal - Family Gatherer (5) 14
+5000 Minnie Mouse - Drum Major (5) 15
+5000 Daisy Duck - Donald's Date (5) 16
+13000 Moana - Determined Explorer (5) 18
+13000 Wreck-It Ralph - Admiral Underpants (5) 21
+13000 Revive (5) 27
+5000 Blast From Your Past (5) 28
+13000 Queen's Sensor Core (5) 31
+13000 Pride Lands - Jungle Oasis (5) 34
+5000 Maleficent - Formidable Queen (5) 35
+5000 Madam Mim - Elephant (5) 44
+13000 Luisa Madrigal - Entertaining Muscle (5) 45
+13000 Anna - Mystical Majesty (5) 46
+5000 Elsa - The Fifth Spirit (5) 48
+2000 Genie - Main Attraction (5) 49
+13000 Olaf - Happy Passenger (5) 50
+13000 Magica De Spell - Cruel Sorceress (5) 53
+13000 Rafiki - Shaman Duelist (5) 55
+2000 Camilo Madrigal - Family Copycat (5) 58
+13000 We Know The Way (5) 61
+13000 Half Hexwell Crown (5) 65
+13000 Half Hexwell Crown (5) 223
+13000 Robin Hood - Timely Contestant (5) 69
+13000 Iago - Fake Flamingo (5) 79
+13000 Banzai - Gluttonous Predator (5) 80
+5000 Scroop - Odious Mutineer (5) 82
+5000 Prince Phillip - Swordsman of the Realm (5) 83
+2000 Clarabelle - Light on Her Hooves (5) 84
+2000 Anna - Diplomatic Queen (5) 85
+13000 Shenzi - Head Hyena (5) 91
+5000 Mother Gothel - Unwavering Schemer (5) 92
+13000 Scar - Vengeful Lion (5) 93
+13000 Remember Who You Are (5) 97
+13000 Prince John's Mirror (5) 98
+13000 Sherwood Forest - Outlaw Hideaway (5) 101
+13000 Wreck-It Ralph - Demolition Dude (5) 104
+5000 Maximus - Team Champion (5) 105
+2000 Donald Duck - Pie Slinger (5) 107
+13000 Denahi - Avenging Brother (5) 115
+5000 Pete - Steamboat Rival (5) 116
+2000 Robin Hood - Sharpshooter (5) 118
+13000 Gaston - Pure Paragon (5) 119
+13000 Ratigan - Party Crasher (5) 123
+13000 Vanellope Von Schweetz - Random Roster Racer (5) 124
+13000 Don't Let The Frostbite Bite (5) 129
+5000 Who's With Me? (5) 131
+13000 The Sword Released (5) 133
+13000 Sugar Rush Speedway - Starting Line (5) 135
+13000 Scrooge McDuck - Afficionado of Antiquities (5) 140
+5000 The Queen - Fairest of All (5) 144
+13000 Sheriff Of Nottingham - Bushel Britches (5) 145
+13000 Chicha - Dedicated Mother (5) 146
+5000 Prince John - Gold Lover (5) 147
+13000 The Queen - Crown of the Council (5) 148
+5000 Kuzco - Selfish Emperor (5) 149
+2000 Mufasa - Ruler of Pride Rock (5) 150
+13000 Belle - Of the Ball (5) 158
+2000 Merlin - Intellectual Visionary (5) 159
+13000 Royal Tantrum (5) 161
+13000 Basil's Magnifying Glass (5) 166
+13000 The Great Illuminary - Radiant Ballroom (5) 169
+2000 Jafar - Tyrannical Hypnotist (5) 172
+13000 Namaari - Resolute Daughter (5) 182
+5000 Snow White - Fair-Hearted (5) 183
+13000 Yzma - Unjustly Treated (5) 184
+5000 Kronk - Head of Security (5) 185
+5000 Grumpy - Skeptical Knight (5) 186
+13000 Pete - Wrestling Champ (5) 187
+13000 Sir Ector - Castle Lord (5) 188
+13000 Doc - Bold Knight (5) 193
+2000 Arthur - King Victorious (5) 194
+13000 Tug-of-War (5) 196
+13000 Plate Armor (5) 201
+13000 Bad-Anon - Villain Support Center (5) 203
 [FoilSlot(1)]
-13 Koda - Talkative Cub
-30 Nala - Mischievous Cub
-2 Prince Naveen - Ukulele Player
-60 Rutt - Northern Moose
-60 Kenai - Big Brother
-60 Vanellope von Schweetz - Sugar Rush Champ
-60 Tuke - Northern Moose
-60 Lilo - Junior Cake Decorator
-60 Vanellope von Schweetz - Candy Mechanic
-60 Fix-It Felix, Jr. - Trusty Builder
-60 Gazelle - Pop Star
-30 Fix-It Felix, Jr. - Niceland Steward
-13 Kristoff - Reindeer Keeper
-2 Mirabel Madrigal - Family Gatherer
-5 Minnie Mouse - Drum Major
-5 Daisy Duck - Donald's Date
-60 Fix-It Felix, Jr. - Delighted Sightseer
-13 Moana - Determined Explorer
-13 Vanellope von Schweetz - Sugar Rush Princess
-30 Alan-a-Dale - Rockin' Rooster
-13 Wreck-It Ralph - Admiral Underpants
-30 Maid Marian - Lady of the Lists
-30 Sven - Reindeer Steed
-60 Minnie Mouse - Compassionate Friend
-30 Try Everything
-60 Healing Touch
-13 Revive
-5 Blast From Your Past
-30 Invited to the Ball
-60 Healing Decanter
-13 Queen's Sensor Core
-30 Amber Chromicon
-30 Rapunzel's Tower - Secluded Prison
-13 Pride Lands - Jungle Oasis
-5 Maleficent - Formidable Queen
-60 The Nokk - Mythical Spirit
-60 Cogsworth - Illuminary Watchman
-60 Merlin - Turtle
-60 Archimedes - Exasperated Owl
-30 Bruni - Fire Salamander
-60 Earth Giant - Living Mountain
-60 Gale - Wind Spirit
-60 White Rabbit - Royal Herald
-5 Madam Mim - Elephant
-13 Luisa Madrigal - Entertaining Muscle
-13 Anna - Mystical Majesty
-30 Archimedes - Electrified Owl
-5 Elsa - The Fifth Spirit
-2 Genie - Main Attraction
-13 Olaf - Happy Passenger
-30 Maleficent - Vexed Partygoer
-30 Monstro - Whale of a Whale
-13 Magica De Spell - Cruel Sorceress
-60 Maleficent - Vengeful Sorceress
-13 Rafiki - Shaman Duelist
-60 Anna - Eager Acolyte
-30 King of Hearts - Monarch of Wonderland
-2 Camilo Madrigal - Family Copycat
-60 Hypnotic Strength
-30 Finders Keepers
-13 We Know The Way
-60 Gathering Knowledge And Wisdom
-30 Magical Aid
-60 Retrosphere
-13 Half Hexwell Crown
-30 Amethyst Chromicon
-13 Elsa's Ice Palace - Place of Solitude
-30 The Library - A Gift for Belle
-13 Robin Hood - Timely Contestant
-30 Shenzi - Scar's Accomplice
-30 Little John - Camp Cook
-60 Zazu - Advisor to Mufasa
-60 Ulf - Mime
-60 Ed - Laughing Hyena
-60 Flora - Good Fairy
-60 Merryweather - Good Fairy
-60 Robin Hood - Archery Contestant
-60 Fauna - Good Fairy
-13 Iago - Fake Flamingo
-13 Banzai - Gluttonous Predator
-30 Ed - Hysterical Partygoer
-5 Scroop - Odious Mutineer
-5 Prince Phillip - Swordsman of the Realm
-2 Clarabelle - Light on Her Hooves
-2 Anna - Diplomatic Queen
-60 Clarabelle - Clumsy Guest
-60 Banzai - Taunting Hyena
-30 Robin Hood - Sneaky Sleuth
-30 Mother Gothel - Conceited Manipulator
-30 Clarabelle - Contented Wallflower
-13 Shenzi - Head Hyena
-5 Mother Gothel - Unwavering Schemer
-13 Scar - Vengeful Lion
-60 Hypnotic Deduction
-60 Night Howler Rage
-30 You're Welcome
-13 Remember Who You Are
-13 Prince John's Mirror
-60 Obscurosphere
-30 Emerald Chromicon
-13 Sherwood Forest - Outlaw Hideaway
-30 Tropical Rainforest - Jaguar Lair
-30 Taffyta Muttonfudge - Ruthless Rival
-13 Wreck-It Ralph - Demolition Dude
-5 Maximus - Team Champion
-30 Turbo - Royal Hack
-2 Donald Duck - Pie Slinger
-60 Rancis Fluggerbutter - Chocolate Charger
-30 Scar - Betrayer
-60 Snowanna Rainbeau - Cool Competitor
-60 Daisy Duck - Spotless Food-Fighter
-60 Mickey Mouse - Enthusiastic Dancer
-60 Ratigan - Raging Rat
-60 Taffyta Muttonfudge - Crowd Favorite
-13 Denahi - Avenging Brother
-5 Pete - Steamboat Rival
-30 Taffyta Muttonfudge - Sour Speedster
-2 Robin Hood - Sharpshooter
-13 Gaston - Pure Paragon
-60 Pete - Pastry Chomper
-30 Arthur - Novice Sparrow
-60 Donald Duck - Daisy's Date
-13 Ratigan - Party Crasher
-13 Vanellope Von Schweetz - Random Roster Racer
-60 Simba - Adventurous Successor
-30 Minnie Mouse - Dazzling Dancer
-60 Break Free
-60 Evil Comes Prepared
-13 Don't Let The Frostbite Bite
-30 Glimmer vs Glimmer
-5 Who's With Me?
-60 Potion of Might
-13 The Sword Released
-30 Ruby Chromicon
-13 Sugar Rush Speedway - Starting Line
-30 Ratigan's Party - Seedy Back Room
-60 King Candy - Sovereign of Sugar
-60 Chaca - Impressive Daughter
-60 The Queen - Cruelest of All
-13 Scrooge McDuck - Afficionado of Antiquities
-60 Prince John - Opportunistic Briber
-60 Merlin - Back from Bermuda
-30 Pacha - Emperor's Guide
-5 The Queen - Fairest of All
-13 Sheriff Of Nottingham - Bushel Britches
-13 Chicha - Dedicated Mother
-5 Prince John - Gold Lover
-13 The Queen - Crown of the Council
-5 Kuzco - Selfish Emperor
-2 Mufasa - Ruler of Pride Rock
-30 Ludwig Von Drake - Self-Proclaimed Genius
-60 Minnie Mouse - Quick-Thinking Inventor
-60 Basil - Practiced Detective
-30 King Candy - Sweet Abomination
-60 Donald Duck - Focused Flatfoot
-60 Tanana - Wise Woman
-30 Tipo - Growing Son
-13 Belle - Of the Ball
-2 Merlin - Intellectual Visionary
-60 Vision of the Future
-13 Royal Tantrum
-60 Ever as Before
-30 Hide Away
-30 All Funned Out
-60 Medal of Heroes
-13 Basil's Magnifying Glass
-30 Merlin's Carpetbag
-30 Sapphire Chromicon
-13 The Great Illuminary - Radiant Ballroom
-30 Merlin's Cottage - The Wizard's Home
-30 Stitch - Team Underdog
-2 Jafar - Tyrannical Hypnotist
-60 Simba - Lost Prince
-60 Rudy - Groove Disrupter
-60 Royal Guard - Bovine Protector
-60 Mickey Mouse - Food Fight Defender
-30 Sleepy - Sluggish Knight
-60 Kronk - Unlicensed Investigator
-60 HeiHei - Protective Rooster
-60 Sneezy - Noisy Knight
-60 Dopey - Knight Apprentice
-13 Namaari - Resolute Daughter
-5 Snow White - Fair-Hearted
-13 Yzma - Unjustly Treated
-5 Kronk - Head of Security
-5 Grumpy - Skeptical Knight
-13 Pete - Wrestling Champ
-13 Sir Ector - Castle Lord
-30 Bashful - Adoring Knight
-30 Arthur - Wart
-60 Happy - Lively Knight
-30 Simba - Son of Mufasa
-13 Doc - Bold Knight
-2 Arthur - King Victorious
-30 Pete - Games Referee
-13 Tug-of-War
-60 When Will My Life Begin?
-60 Duck for Cover!
-30 Food Fight!
-60 Shield of Arendelle
-13 Plate Armor
-30 Steel Chromicon
-13 Bad-Anon - Villain Support Center
-30 Seven Dwarfs' Mine - Secure Fortress
+30000 Invited to the Ball (5) 29
+13000 Elsa's Ice Palace - Place of Solitude (5) 67
+13000 Vanellope von Schweetz - Sugar Rush Princess (5) 19
+100 Vanellope von Schweetz - Sugar Rush Princess (5) 206
+13000 Koda - Talkative Cub (5) 1
+30000 Nala - Mischievous Cub (5) 2
+2000 Prince Naveen - Ukulele Player (5) 3
+100 Prince Naveen - Ukulele Player (5) 205
+60000 Rutt - Northern Moose (5) 4
+60000 Kenai - Big Brother (5) 5
+60000 Vanellope von Schweetz - Sugar Rush Champ (5) 6
+60000 Tuke - Northern Moose (5) 7
+60000 Lilo - Junior Cake Decorator (5) 8
+60000 Vanellope von Schweetz - Candy Mechanic (5) 9
+60000 Fix-It Felix, Jr. - Trusty Builder (5) 10
+60000 Gazelle - Pop Star (5) 11
+30000 Fix-It Felix, Jr. - Niceland Steward (5) 12
+13000 Kristoff - Reindeer Keeper (5) 13
+2000 Mirabel Madrigal - Family Gatherer (5) 14
+5000 Minnie Mouse - Drum Major (5) 15
+5000 Daisy Duck - Donald's Date (5) 16
+60000 Fix-It Felix, Jr. - Delighted Sightseer (5) 17
+13000 Moana - Determined Explorer (5) 18
+30000 Alan-a-Dale - Rockin' Rooster (5) 20
+13000 Wreck-It Ralph - Admiral Underpants (5) 21
+30000 Maid Marian - Lady of the Lists (5) 22
+30000 Sven - Reindeer Steed (5) 23
+60000 Minnie Mouse - Compassionate Friend (5) 24
+30000 Try Everything (5) 25
+60000 Healing Touch (5) 26
+13000 Revive (5) 27
+100 Revive (5) 207
+5000 Blast From Your Past (5) 28
+60000 Healing Decanter (5) 30
+13000 Queen's Sensor Core (5) 31
+30000 Amber Chromicon (5) 32
+30000 Rapunzel's Tower - Secluded Prison (5) 33
+13000 Pride Lands - Jungle Oasis (5) 34
+5000 Maleficent - Formidable Queen (5) 35
+60000 The Nokk - Mythical Spirit (5) 36
+60000 Cogsworth - Illuminary Watchman (5) 37
+60000 Merlin - Turtle (5) 38
+60000 Archimedes - Exasperated Owl (5) 39
+30000 Bruni - Fire Salamander (5) 40
+60000 Earth Giant - Living Mountain (5) 41
+60000 Gale - Wind Spirit (5) 42
+60000 White Rabbit - Royal Herald (5) 43
+5000 Madam Mim - Elephant (5) 44
+13000 Luisa Madrigal - Entertaining Muscle (5) 45
+13000 Anna - Mystical Majesty (5) 46
+30000 Archimedes - Electrified Owl (5) 47
+100 Archimedes - Electrified Owl (5) 208
+5000 Elsa - The Fifth Spirit (5) 48
+2000 Genie - Main Attraction (5) 49
+13000 Olaf - Happy Passenger (5) 50
+100 Olaf - Happy Passenger (5) 209
+30000 Maleficent - Vexed Partygoer (5) 51
+30000 Monstro - Whale of a Whale (5) 52
+13000 Magica De Spell - Cruel Sorceress (5) 53
+60000 Maleficent - Vengeful Sorceress (5) 54
+13000 Rafiki - Shaman Duelist (5) 55
+60000 Anna - Eager Acolyte (5) 56
+30000 King of Hearts - Monarch of Wonderland (5) 57
+2000 Camilo Madrigal - Family Copycat (5) 58
+60000 Hypnotic Strength (5) 59
+30000 Finders Keepers (5) 60
+100 Finders Keepers (5) 210
+13000 We Know The Way (5) 61
+60000 Gathering Knowledge And Wisdom (5) 62
+30000 Magical Aid (5) 63
+60000 Retrosphere (5) 64
+13000 Half Hexwell Crown (5) 65
+13000 Half Hexwell Crown (5) 223
+30000 Amethyst Chromicon (5) 66
+30000 The Library - A Gift for Belle (5) 68
+13000 Robin Hood - Timely Contestant (5) 69
+30000 Shenzi - Scar's Accomplice (5) 70
+30000 Little John - Camp Cook (5) 71
+60000 Zazu - Advisor to Mufasa (5) 72
+60000 Ulf - Mime (5) 73
+60000 Ed - Laughing Hyena (5) 74
+60000 Flora - Good Fairy (5) 75
+60000 Merryweather - Good Fairy (5) 76
+60000 Robin Hood - Archery Contestant (5) 77
+60000 Fauna - Good Fairy (5) 78
+13000 Iago - Fake Flamingo (5) 79
+13000 Banzai - Gluttonous Predator (5) 80
+30000 Ed - Hysterical Partygoer (5) 81
+5000 Scroop - Odious Mutineer (5) 82
+5000 Prince Phillip - Swordsman of the Realm (5) 83
+2000 Clarabelle - Light on Her Hooves (5) 84
+100 Clarabelle - Light on Her Hooves (5) 211
+2000 Anna - Diplomatic Queen (5) 85
+60000 Clarabelle - Clumsy Guest (5) 86
+60000 Banzai - Taunting Hyena (5) 87
+30000 Robin Hood - Sneaky Sleuth (5) 88
+30000 Mother Gothel - Conceited Manipulator (5) 89
+30000 Clarabelle - Contented Wallflower (5) 90
+13000 Shenzi - Head Hyena (5) 91
+5000 Mother Gothel - Unwavering Schemer (5) 92
+13000 Scar - Vengeful Lion (5) 93
+100 Scar - Vengeful Lion (5) 212
+60000 Hypnotic Deduction (5) 94
+60000 Night Howler Rage (5) 95
+30000 You're Welcome (5) 96
+100 You're Welcome (5) 213
+13000 Remember Who You Are (5) 97
+13000 Prince John's Mirror (5) 98
+60000 Obscurosphere (5) 99
+30000 Emerald Chromicon (5) 100
+13000 Sherwood Forest - Outlaw Hideaway (5) 101
+30000 Tropical Rainforest - Jaguar Lair (5) 102
+30000 Taffyta Muttonfudge - Ruthless Rival (5) 103
+13000 Wreck-It Ralph - Demolition Dude (5) 104
+5000 Maximus - Team Champion (5) 105
+30000 Turbo - Royal Hack (5) 106
+2000 Donald Duck - Pie Slinger (5) 107
+100 Donald Duck - Pie Slinger (5) 214
+60000 Rancis Fluggerbutter - Chocolate Charger (5) 108
+30000 Scar - Betrayer (5) 109
+60000 Snowanna Rainbeau - Cool Competitor (5) 110
+60000 Daisy Duck - Spotless Food-Fighter (5) 111
+60000 Mickey Mouse - Enthusiastic Dancer (5) 112
+60000 Ratigan - Raging Rat (5) 113
+60000 Taffyta Muttonfudge - Crowd Favorite (5) 114
+13000 Denahi - Avenging Brother (5) 115
+5000 Pete - Steamboat Rival (5) 116
+30000 Taffyta Muttonfudge - Sour Speedster (5) 117
+2000 Robin Hood - Sharpshooter (5) 118
+100 Robin Hood - Sharpshooter (5) 215
+13000 Gaston - Pure Paragon (5) 119
+60000 Pete - Pastry Chomper (5) 120
+30000 Arthur - Novice Sparrow (5) 121
+60000 Donald Duck - Daisy's Date (5) 122
+13000 Ratigan - Party Crasher (5) 123
+13000 Vanellope Von Schweetz - Random Roster Racer (5) 124
+60000 Simba - Adventurous Successor (5) 125
+30000 Minnie Mouse - Dazzling Dancer (5) 126
+60000 Break Free (5) 127
+60000 Evil Comes Prepared (5) 128
+13000 Don't Let The Frostbite Bite (5) 129
+30000 Glimmer vs Glimmer (5) 130
+5000 Who's With Me? (5) 131
+60000 Potion of Might (5) 132
+13000 The Sword Released (5) 133
+30000 Ruby Chromicon (5) 134
+13000 Sugar Rush Speedway - Starting Line (5) 135
+30000 Ratigan's Party - Seedy Back Room (5) 136
+100 Ratigan's Party - Seedy Back Room (5) 216
+60000 King Candy - Sovereign of Sugar (5) 137
+60000 Chaca - Impressive Daughter (5) 138
+60000 The Queen - Cruelest of All (5) 139
+13000 Scrooge McDuck - Afficionado of Antiquities (5) 140
+60000 Prince John - Opportunistic Briber (5) 141
+60000 Merlin - Back from Bermuda (5) 142
+30000 Pacha - Emperor's Guide (5) 143
+5000 The Queen - Fairest of All (5) 144
+13000 Sheriff Of Nottingham - Bushel Britches (5) 145
+13000 Chicha - Dedicated Mother (5) 146
+5000 Prince John - Gold Lover (5) 147
+13000 The Queen - Crown of the Council (5) 148
+5000 Kuzco - Selfish Emperor (5) 149
+2000 Mufasa - Ruler of Pride Rock (5) 150
+100 Mufasa - Ruler of Pride Rock (5) 217
+30000 Ludwig Von Drake - Self-Proclaimed Genius (5) 151
+60000 Minnie Mouse - Quick-Thinking Inventor (5) 152
+60000 Basil - Practiced Detective (5) 153
+30000 King Candy - Sweet Abomination (5) 154
+100 King Candy - Sweet Abomination (5) 218
+60000 Donald Duck - Focused Flatfoot (5) 155
+60000 Tanana - Wise Woman (5) 156
+30000 Tipo - Growing Son (5) 157
+13000 Belle - Of the Ball (5) 158
+2000 Merlin - Intellectual Visionary (5) 159
+60000 Vision of the Future (5) 160
+13000 Royal Tantrum (5) 161
+100 Royal Tantrum (5) 219
+60000 Ever as Before (5) 162
+30000 Hide Away (5) 163
+30000 All Funned Out (5) 164
+60000 Medal of Heroes (5) 165
+13000 Basil's Magnifying Glass (5) 166
+30000 Merlin's Carpetbag (5) 167
+30000 Sapphire Chromicon (5) 168
+13000 The Great Illuminary - Radiant Ballroom (5) 169
+30000 Merlin's Cottage - The Wizard's Home (5) 170
+30000 Stitch - Team Underdog (5) 171
+2000 Jafar - Tyrannical Hypnotist (5) 172
+60000 Simba - Lost Prince (5) 173
+60000 Rudy - Groove Disrupter (5) 174
+60000 Royal Guard - Bovine Protector (5) 175
+60000 Mickey Mouse - Food Fight Defender (5) 176
+30000 Sleepy - Sluggish Knight (5) 177
+60000 Kronk - Unlicensed Investigator (5) 178
+60000 HeiHei - Protective Rooster (5) 179
+60000 Sneezy - Noisy Knight (5) 180
+60000 Dopey - Knight Apprentice (5) 181
+13000 Namaari - Resolute Daughter (5) 182
+5000 Snow White - Fair-Hearted (5) 183
+100 Snow White - Fair-Hearted (5) 220
+13000 Yzma - Unjustly Treated (5) 184
+5000 Kronk - Head of Security (5) 185
+5000 Grumpy - Skeptical Knight (5) 186
+13000 Pete - Wrestling Champ (5) 187
+13000 Sir Ector - Castle Lord (5) 188
+30000 Bashful - Adoring Knight (5) 189
+30000 Arthur - Wart (5) 190
+60000 Happy - Lively Knight (5) 191
+30000 Simba - Son of Mufasa (5) 192
+13000 Doc - Bold Knight (5) 193
+2000 Arthur - King Victorious (5) 194
+100 Arthur - King Victorious (5) 221
+30000 Pete - Games Referee (5) 195
+13000 Tug-of-War (5) 196
+60000 When Will My Life Begin? (5) 197
+60000 Duck for Cover! (5) 198
+30000 Food Fight! (5) 199
+60000 Shield of Arendelle (5) 200
+13000 Plate Armor (5) 201
+30000 Steel Chromicon (5) 202
+13000 Bad-Anon - Villain Support Center (5) 203
+100 Bad-Anon - Villain Support Center (5) 222
+30000 Seven Dwarfs' Mine - Secure Fortress (5) 204

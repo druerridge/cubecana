@@ -63,7 +63,7 @@ class RetailManager:
         start = (page - 1) * per_page
         end = start + per_page
         retail_sets_list = list(self.retail_sets.values())
-        paginated_retail_sets: List[RetailSet] = sorted(retail_sets_list[start:end], key=lambda x: x.id, reverse=(order == api.OrderType.DESC))
+        paginated_retail_sets: List[RetailSet] = sorted(retail_sets_list[start:end], key=lambda x: int(x.id), reverse=(order == api.OrderType.DESC))
         paginated_retail_set_entries:List[api.RetailSetEntry] = [retail_set.to_retail_set_entry() for retail_set in paginated_retail_sets]
         return paginated_retail_set_entries
 

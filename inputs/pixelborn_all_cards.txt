@@ -1833,3 +1833,207 @@ I'm Stuck!
 Rafiki_Mystical Fighter
 Pluto_Friendly Pooch
 Aurora_Holding Court
+Eilonwy_Princess of Llyr
+Olaf_Helping Hand
+Big Nose_Lovesick Poet
+Finnick_Tiny Terror
+Chomp!
+Mother Gothel_Underhanded Schemer
+Mushu's Rocket
+Hen Wen's Visions
+Castle of the Horned King_Bastion of Evil
+But I'm Much Faster
+Zootopia_Police Headquarters
+Rapunzel_Ready for Adventure
+Sebastian_Loyal Crab
+Della's Moon Lullaby
+Munchings and Crunchings
+Iago_Stompin' Mad
+The Horned King_Triumphant Ghoul
+Performance Review
+The Great Illuminary_Abandoned Laboratory
+Emily Quackfaster_Level-Headed Librarian
+So Be It!
+Blessed Bagpipes
+Diablo_Watchful Raven
+Shere Khan_Keen-Eyed Hunter
+Brooklyn_Second in Command
+Hen Wen_Prophetic Pig
+Cri-Kee_Good Luck Charm
+Pluto_Clever Cluefinder
+Fairy Godmother's Wand
+Inspector Tezuka_Resolute Officer
+Minnie Mouse_Ghost Hunter
+Putting It All Together
+The Sword of Hercules
+Rajah_Devoted Protector
+Webby Vanderquack_Knowledge Seeker
+Shanti_Village Girl
+Or Rewrite History!
+Webby's Diary
+Magica De Spell_Shadowy and Sinister
+Duckworth_Ghost Butler
+Cheshire Cat_Inexplicable
+Fragile as a Flower
+Flotsam_Slippery as an Eel
+Megara_Secret Keeper
+Akela_Forest Runner
+Potion of Malice
+Peter Pan_High Flyer
+Hermes_Harried Messenger
+Elisa Maza_Intrepid Investigator
+Mulan_Standing Her Ground
+Sleepy Hollow_The Bridge
+Fergus McDuck_Scrooge's Father
+Kristoff_Mining the Ruins
+Ink Amplifier
+Basil_Tenacious Mouse
+David Xanatos_Steel Clan Leader
+Ingenious Device
+Mrs. Beakley_Former S.H.U.S.H. Agent
+Mickey Mouse_Amber Champion
+Goofy_Ghost Hunter
+Minnie Mouse_Amethyst Champion
+Demona_Betrayer of the Clan
+Mushu_Braggin' Dragon
+Can't Hold It Back Anymore
+Bellwether_Master Manipulator
+Webby Vanderquack_Junior Prospector
+Hercules_Mighty Leader
+Donald Duck_Ruby Champion
+Ghostly Tale
+Anna_Making Snow Plans
+Jasmine_Soothing Princess
+Judy Hopps_Uncovering Clues
+Sudden Scare
+Donald Duck_Ghost Hunter
+Mayor Winddancer_Actor-Turned-Politician
+The Headless Horseman_Relentless Spirit
+Taran_Pig Keeper
+Gwythaint_Savage Hunter
+Coldstone_Reincarnated Cyborg
+Hades_Looking for a Deal
+Hook Hand_Unexpectedly Friendly
+Baloo_Carefree Bear
+Tinker Bell_Temperamental Fairy
+The Headless Horseman_Terror of Sleepy Hollow
+Rapunzel_Creative Captor
+Scuttle_Birdbrained
+Daisy Duck_Sapphire Champion
+Broadway_Sturdy and Strong
+Baloo_Friend and Guardian
+Scrooge McDuck_Cavern Prospector
+Demona_Scourge of the Wyvern Clan
+Shere Khan_Fearsome Tiger
+Trust In Me
+David Xanatos_Charismatic Leader
+Judy Hopps_Lead Detective
+Spooky Sight
+Clawhauser_Donut Detective
+Simba_King in the Making
+Jetsam_Opportunistic Eel
+Chef Louis_In Over His Head
+Goofy_Galumphing Gumshoe
+The Headless Horseman_Cursed Rider
+Shere Khan_Fierce and Furious
+Prince Charming_Protector of the Realm
+Kaa_Secretive Snake
+Magica De Spell_Conniving Sorceress
+The Twins_Lost Boys
+Goliath_Clan Leader
+Daisy Duck_Paranormal Investigator
+Hans_Brazen Manipulator
+Rama_Vigilant Father
+Little John_Impermanent Outlaw
+Vladimir_Ceramic Unicorn Fan
+Creeper_Loyal Lackey
+Headless Manhorse_Manny
+Pluto_Steel Champion
+Nick Wilde_Persistent Investigator
+Scar_Eerily Prepared
+Genie_Investigative Mind
+Dragon Fire
+Lady Tremaine_Sinister Socialite
+Goofy_Emerald Champion
+Penumbra_Moon Alien
+Ursula_Whisper of Vanessa
+Magica De Spell_Spiteful Sorceress
+Cauldron Born_Mindless Horde
+Gazelle_Ballad Singer
+He Hurled His Thunderbolt
+Fairy Godmother_Magical Benefactor
+Chief Bogo_Calling the Shots
+Robin Hood_Ephemeral Archer
+Might Solve a Mystery
+Cinderella_Dream Come True
+Ichabod Crane_Bookish Schoolmaster
+The Bitterwood_Underground Forest
+Brom Bones_Burly Bully
+Goliath_Guardian of Castle Wyvern
+Katrina Van Tassel_Rosy-Cheeked Lass
+Launchpad_Exceptional Pilot
+Flintheart Glomgold_Scheming Billionaire
+Nibs_Lost Boy
+Lena Sabrewing_Mysterious Duck
+The Horned King_Wicked Ruler
+Search for Clues
+Della Duck_Returning Mother
+Ariel_Ethereal Voice
+Illuminary Tunnels_Linked Caverns
+Zeus_Missing His Spark
+Lexington_Small in Stature
+Francine_Eyeing the Evidence
+Mickey Mouse_Detective
+Li Shang_Seasoned Strategist
+Judy Hopps_On the Case
+Time to Go!
+Aladdin_Barreling Through
+Bronx_Ferocious Beast
+Raksha_Fearless Mother
+Inscrutable Map
+Malicious, Mean, and Scary
+Goldie O'Gilt_Cunning Prospector
+Kaa_Suspicious Serpent
+Grimorum Arcanorum
+Begone!
+Nana_Canine Caregiver
+Elsa_Exploring the Unknown
+The Black Cauldron
+The Horseman Strikes!
+Flash_Records Specialist
+Bagheera_Cautious Explorer
+Scrooge McDuck_On the Right Track
+Castle Wyvern_Above the Clouds
+The Game's Afoot!
+Black Heron_Real Bad Egg
+Hudson_Determined Reader
+Inkrunner
+Promising Lead
+Ichabod Crane_Scared Out of His Mind
+Daisy Duck_Ghost Finder
+Next Stop, Olympus
+Beast_Aggressive Lord
+Ares_God of War
+White Agony Plains_Golden Lagoon
+Enigmatic Inkcaster
+Scrooge McDuck_S.H.U.S.H. Agent
+Baloo_Laid-Back Bear
+Junior Woodchuck Guidebook
+Merlin_Completing His Research
+Violet Sabrewing_Senior Junior Woodchuck
+Duckburg_Funso’s Funzone
+Recovered Page
+Mowgli_Man Cub
+Gurgi_Apple Lover
+Gaston_Frightful Bully
+The Robot Queen
+Nick Wilde_Sly Fox Sleuth
+Detective's Badge
+The Sultan_Playful Monarch
+Get to Safety!
+Tinker Bell_Fancy Footwork
+Flynn Rider_Spectral Scoundrel
+Webby Vanderquack_Mystery Enthusiast
+Swooping Strike
+The Horned King_Heartless Devil
+Higgins_Undercover Officer

@@ -52,6 +52,7 @@ class CardPrinting:
     collector_id: str
     set_code: str
     rarity: str
+    image_uris: dict[str, str]
 
     def printing_id(self) -> PrintingId:
         return PrintingId(

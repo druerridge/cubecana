@@ -106,7 +106,8 @@ class CubeManager:
         
         featured_image_link = ""
         if featured_printing_id:
-            featured_image_link = dreamborn_manager.image_uri(featured_printing_id, "en")
+            featured_printing = lorcana_api.get_card_printing(featured_printing_id)
+            featured_image_link = featured_printing.image_uris.get("en", "")
         
         return api.CubeListEntry(
             name=cube.name,

@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from . import api
 from typing import List
 from .settings import Settings
-from .card import PrintingId, ApiCard, toPrintingId
+from .card import PrintingId, ApiCard
 
 @dataclass(frozen=True)
 class CubecanaCube:
@@ -34,18 +34,25 @@ class CubecanaCube:
                 else:
                     full_name_to_card_count[f"{api_card.full_name} ({printing_id.set_code}) {printing_id.collector_id}"] = count
 
-        featured_card_printing = self.featured_card_printing_id if self.featured_card_printing_id else next(iter(self.printing_id_to_count))
         
         # Get human-readable format with full card name if possible
-        
+
+        featured_card_printing_id = self.featured_card_printing_id if self.featured_card_printing_id else next(iter(self.printing_id_to_count))
+        featured_card_image_link = ""
         if self.featured_card_printing_id:
-            api_card = id_to_api_card.get(self.featured_card_printing_id.card_id)
-            if api_card:
-                featured_card_printing_id_str = f"{api_card.full_name} ({self.featured_card_printing_id.set_code}) {self.featured_card_printing_id.collector_id}"
-            else:
-                featured_card_printing_id_str = self.featured_card_printing_id.to_human_readable()
+            featured_card_printing_id = self.featured_card_printing_id
+            
+        api_card = id_to_api_card.get(featured_card_printing_id.card_id)
+        if api_card:
+            featured_card_printing_id_str = f"{api_card.full_name} ({featured_card_printing_id.set_code}) {featured_card_printing_id.collector_id}"
+            
+            featured_card_printing = next((printing for printing in api_card.card_printings if printing.printing_id() == featured_card_printing_id), None)
+            if featured_card_printing == None:
+                featured_card_printing = api_card.default_printing
+
+            featured_card_image_link = featured_card_printing.image_uris.get("en", "")
         else:
-            featured_card_printing_id_str = ""
+            featured_card_printing_id_str = featured_card_printing_id.to_human_readable()
         
         return api.Cube(
             name=self.name,
@@ -56,7 +63,7 @@ class CubecanaCube:
             lastUpdatedEpochSeconds=self.last_updated_epoch_seconds,
             id=self.id,
             cubeSettings=self.settings.to_api_cube_settings(),
-            featuredCardImageLink = f"https://cdn.dreamborn.ink/images/en/cards/{featured_card_printing.set_code.zfill(3)}-{featured_card_printing.collector_id.zfill(3)}",
+            featuredCardImageLink=featured_card_image_link,
             featuredCardPrintingId=featured_card_printing_id_str,
             cubeDescription=self.cube_description,
             timesViewed=self.page_views + self.card_list_views,

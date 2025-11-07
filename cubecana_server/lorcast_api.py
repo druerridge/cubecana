@@ -101,7 +101,10 @@ class LorcastApi:
             full_name=full_name,
             collector_id=printing_untyped['collector_number'],
             set_code=printing_untyped['set']['code'],
-            rarity=lorcast_to_cubecana_rarity[printing_untyped['rarity']]
+            rarity=lorcast_to_cubecana_rarity[printing_untyped['rarity']],
+            image_uris={
+                'en':printing_untyped['image_uris']['digital']['normal']
+            }
         )
 
     def is_alternate_art(self, printing: CardPrinting) -> bool:

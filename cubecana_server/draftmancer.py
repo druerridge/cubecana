@@ -15,7 +15,6 @@ from .dreamborn_manager import dreamborn_manager
 from .lorcana import ALT_ART_RARITIES
 
 ALL_CARDS_DREAMBORN_TTS = "inputs/dreamborn_tts_all_cards"
-INCOMPLETE_SIMPLE_TEMPLATE_PATH = "inputs/incomplete_simple_template.draftmancer.txt"
 ALL_CARDS_CUBE_PATH = 'inputs/all_cards_cube.draftmancer.txt'
 GENERATED_CUBES_DIR = 'generated_cubes'
 
@@ -129,14 +128,15 @@ def generate_custom_card_list(
             'name': full_name, 
             'mana_cost': f'{{{ink_cost}}}',
             'type': to_draftmancer_card_type(api_card, settings),
-            'image_uris': {
-                'en': dreamborn_manager.image_uri(printing_id, 'en'),
-                'fr': dreamborn_manager.image_uri(printing_id, 'fr'),
-                'de': dreamborn_manager.image_uri(printing_id, 'de'),
-                'it': dreamborn_manager.image_uri(printing_id, 'it'),
-                'ja': dreamborn_manager.image_uri(printing_id, 'ja'),
-                'zh': dreamborn_manager.image_uri(printing_id, 'zh'),
-            },
+            # 'image_uris': {
+            #     'en': dreamborn_manager.image_uri(printing_id, 'en'),
+            #     'fr': dreamborn_manager.image_uri(printing_id, 'fr'),
+            #     'de': dreamborn_manager.image_uri(printing_id, 'de'),
+            #     'it': dreamborn_manager.image_uri(printing_id, 'it'),
+            #     'ja': dreamborn_manager.image_uri(printing_id, 'ja'),
+            #     'zh': dreamborn_manager.image_uri(printing_id, 'zh'),
+            # },
+            'image_uris': printing.image_uris,
             'rarity': to_draftmancer_rarity(printing.rarity),
             'set': f"{printing.set_code}",
             'collector_number': printing.collector_id,

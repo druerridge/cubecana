@@ -46,6 +46,6 @@ class DreambornManager:
     def image_uri(self, printing_id: PrintingId, language_code:str):
         image_set_code = self.to_image_set_code(printing_id.set_code)
         collector_id = self.to_image_collector_id(printing_id.collector_id)
-        return f"https://cdn.dreamborn.ink/images/{language_code}/cards/{image_set_code}-{collector_id}?tts"  
+        return 
         
 dreamborn_manager:DreambornManager = DreambornManager()

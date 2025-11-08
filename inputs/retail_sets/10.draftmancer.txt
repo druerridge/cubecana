@@ -33,7 +33,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "1"
+        "collector_number": "1",
+        "rating": 5
     },
     {
         "name": "Gaston - Frightful Bully",
@@ -44,7 +45,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "2"
+        "collector_number": "2",
+        "rating": 3
     },
     {
         "name": "Gaston - Frightful Bully",
@@ -56,6 +58,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "206",
+        "rating": 3,
         "foil": true
     },
     {
@@ -67,7 +70,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "3"
+        "collector_number": "3",
+        "rating": 4
     },
     {
         "name": "Headless Manhorse - Manny",
@@ -78,7 +82,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "4"
+        "collector_number": "4",
+        "rating": 4
     },
     {
         "name": "Higgins - Undercover Officer",
@@ -89,7 +94,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "5"
+        "collector_number": "5",
+        "rating": 3
     },
     {
         "name": "Rajah - Devoted Protector",
@@ -100,7 +106,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "6"
+        "collector_number": "6",
+        "rating": 4
     },
     {
         "name": "Eilonwy - Princess of Llyr",
@@ -111,7 +118,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "7"
+        "collector_number": "7",
+        "rating": 4
     },
     {
         "name": "Scrooge McDuck - On the Right Track",
@@ -122,7 +130,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "8"
+        "collector_number": "8",
+        "rating": 3
     },
     {
         "name": "Webby Vanderquack - Knowledge Seeker",
@@ -133,7 +142,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "9"
+        "collector_number": "9",
+        "rating": 2
     },
     {
         "name": "Gurgi - Apple Lover",
@@ -144,7 +154,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "10"
+        "collector_number": "10",
+        "rating": 3
     },
     {
         "name": "Mrs. Beakley - Former S.H.U.S.H. Agent",
@@ -155,7 +166,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "11"
+        "collector_number": "11",
+        "rating": 3
     },
     {
         "name": "Bagheera - Cautious Explorer",
@@ -166,7 +178,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "12"
+        "collector_number": "12",
+        "rating": 4
     },
     {
         "name": "Shanti - Village Girl",
@@ -177,7 +190,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "13"
+        "collector_number": "13",
+        "rating": 2
     },
     {
         "name": "Flash - Records Specialist",
@@ -188,7 +202,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "14"
+        "collector_number": "14",
+        "rating": 4
     },
     {
         "name": "Taran - Pig Keeper",
@@ -199,7 +214,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "15"
+        "collector_number": "15",
+        "rating": 4
     },
     {
         "name": "Sebastian - Loyal Crab",
@@ -210,7 +226,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "16"
+        "collector_number": "16",
+        "rating": 2
     },
     {
         "name": "Ariel - Ethereal Voice",
@@ -221,7 +238,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "17"
+        "collector_number": "17",
+        "rating": 3
     },
     {
         "name": "Ariel - Ethereal Voice",
@@ -233,6 +251,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "241",
+        "rating": 3,
         "foil": true
     },
     {
@@ -244,7 +263,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "18"
+        "collector_number": "18",
+        "rating": 4
     },
     {
         "name": "Mowgli - Man Cub",
@@ -255,7 +275,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "19"
+        "collector_number": "19",
+        "rating": 3
     },
     {
         "name": "Simba - King in the Making",
@@ -266,7 +287,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "20"
+        "collector_number": "20",
+        "rating": 3
     },
     {
         "name": "Simba - King in the Making",
@@ -278,6 +300,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "224",
+        "rating": 3,
         "foil": true
     },
     {
@@ -289,7 +312,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "21"
+        "collector_number": "21",
+        "rating": 4
     },
     {
         "name": "Goofy - Ghost Hunter",
@@ -301,6 +325,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "205",
+        "rating": 4,
         "foil": true
     },
     {
@@ -312,7 +337,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "22"
+        "collector_number": "22",
+        "rating": 3
     },
     {
         "name": "Mickey Mouse - Amber Champion",
@@ -323,7 +349,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "23"
+        "collector_number": "23",
+        "rating": 2
     },
     {
         "name": "Goofy - Galumphing Gumshoe",
@@ -334,7 +361,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "24"
+        "collector_number": "24",
+        "rating": 3
     },
     {
         "name": "Goofy - Galumphing Gumshoe",
@@ -346,6 +374,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "223",
+        "rating": 3,
         "foil": true
     },
     {
@@ -357,7 +386,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "25"
+        "collector_number": "25",
+        "rating": 1
     },
     {
         "name": "Search for Clues",
@@ -368,7 +398,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "26"
+        "collector_number": "26",
+        "rating": 1
     },
     {
         "name": "Or Rewrite History!",
@@ -379,7 +410,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "27"
+        "collector_number": "27",
+        "rating": 1
     },
     {
         "name": "Della's Moon Lullaby",
@@ -390,7 +422,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "28"
+        "collector_number": "28",
+        "rating": 4
     },
     {
         "name": "The Horseman Strikes!",
@@ -401,7 +434,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "29"
+        "collector_number": "29",
+        "rating": 4
     },
     {
         "name": "The Horseman Strikes!",
@@ -413,6 +447,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "207",
+        "rating": 4,
         "foil": true
     },
     {
@@ -424,7 +459,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "30"
+        "collector_number": "30",
+        "rating": 2
     },
     {
         "name": "Webby's Diary",
@@ -435,7 +471,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "31"
+        "collector_number": "31",
+        "rating": 1
     },
     {
         "name": "The Black Cauldron",
@@ -446,7 +483,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "32"
+        "collector_number": "32",
+        "rating": 1
     },
     {
         "name": "The Black Cauldron",
@@ -458,6 +496,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "225",
+        "rating": 1,
         "foil": true
     },
     {
@@ -469,7 +508,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "33"
+        "collector_number": "33",
+        "rating": 1
     },
     {
         "name": "Duckburg - Funso\u2019s Funzone",
@@ -481,6 +521,7 @@
         "rarity": "rare",
         "set": "10",
         "collector_number": "34",
+        "rating": 1,
         "layout": "split"
     },
     {
@@ -492,7 +533,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "35"
+        "collector_number": "35",
+        "rating": 3
     },
     {
         "name": "The Horned King - Wicked Ruler",
@@ -503,7 +545,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "36"
+        "collector_number": "36",
+        "rating": 3
     },
     {
         "name": "The Horned King - Wicked Ruler",
@@ -515,6 +558,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "226",
+        "rating": 3,
         "foil": true
     },
     {
@@ -526,7 +570,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "37"
+        "collector_number": "37",
+        "rating": 4
     },
     {
         "name": "The Horned King - Heartless Devil",
@@ -537,7 +582,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "38"
+        "collector_number": "38",
+        "rating": 3
     },
     {
         "name": "Cauldron Born - Mindless Horde",
@@ -548,7 +594,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "39"
+        "collector_number": "39",
+        "rating": 4
     },
     {
         "name": "Demona - Betrayer of the Clan",
@@ -559,7 +606,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "40"
+        "collector_number": "40",
+        "rating": 4
     },
     {
         "name": "Magica De Spell - Shadowy and Sinister",
@@ -570,7 +618,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "41"
+        "collector_number": "41",
+        "rating": 3
     },
     {
         "name": "Lena Sabrewing - Mysterious Duck",
@@ -581,7 +630,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "42"
+        "collector_number": "42",
+        "rating": 2
     },
     {
         "name": "Iago - Stompin' Mad",
@@ -592,7 +642,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "43"
+        "collector_number": "43",
+        "rating": 4
     },
     {
         "name": "Violet Sabrewing - Senior Junior Woodchuck",
@@ -603,7 +654,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "44"
+        "collector_number": "44",
+        "rating": 4
     },
     {
         "name": "Elsa - Exploring the Unknown",
@@ -614,7 +666,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "45"
+        "collector_number": "45",
+        "rating": 4
     },
     {
         "name": "Elsa - Exploring the Unknown",
@@ -626,6 +679,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "208",
+        "rating": 4,
         "foil": true
     },
     {
@@ -637,7 +691,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "46"
+        "collector_number": "46",
+        "rating": 4
     },
     {
         "name": "Duckworth - Ghost Butler",
@@ -648,7 +703,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "47"
+        "collector_number": "47",
+        "rating": 2
     },
     {
         "name": "Nibs - Lost Boy",
@@ -659,7 +715,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "48"
+        "collector_number": "48",
+        "rating": 4
     },
     {
         "name": "The Horned King - Triumphant Ghoul",
@@ -670,7 +727,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "49"
+        "collector_number": "49",
+        "rating": 1
     },
     {
         "name": "The Horned King - Triumphant Ghoul",
@@ -682,6 +740,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "210",
+        "rating": 1,
         "foil": true
     },
     {
@@ -693,7 +752,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "50"
+        "collector_number": "50",
+        "rating": 4
     },
     {
         "name": "Coldstone - Reincarnated Cyborg",
@@ -704,7 +764,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "51"
+        "collector_number": "51",
+        "rating": 2
     },
     {
         "name": "Magica De Spell - Spiteful Sorceress",
@@ -715,7 +776,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "52"
+        "collector_number": "52",
+        "rating": 3
     },
     {
         "name": "Nana - Canine Caregiver",
@@ -726,7 +788,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "53"
+        "collector_number": "53",
+        "rating": 1
     },
     {
         "name": "Magica De Spell - Conniving Sorceress",
@@ -737,7 +800,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "54"
+        "collector_number": "54",
+        "rating": 2
     },
     {
         "name": "Demona - Scourge of the Wyvern Clan",
@@ -748,7 +812,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "55"
+        "collector_number": "55",
+        "rating": 5
     },
     {
         "name": "Demona - Scourge of the Wyvern Clan",
@@ -760,6 +825,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "227",
+        "rating": 5,
         "foil": true
     },
     {
@@ -771,7 +837,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "56"
+        "collector_number": "56",
+        "rating": 5
     },
     {
         "name": "Hades - Looking for a Deal",
@@ -783,6 +850,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "242",
+        "rating": 5,
         "foil": true
     },
     {
@@ -794,7 +862,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "57"
+        "collector_number": "57",
+        "rating": 3
     },
     {
         "name": "Merlin - Completing His Research",
@@ -805,7 +874,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "58"
+        "collector_number": "58",
+        "rating": 4
     },
     {
         "name": "Merlin - Completing His Research",
@@ -817,6 +887,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "209",
+        "rating": 4,
         "foil": true
     },
     {
@@ -828,7 +899,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "59"
+        "collector_number": "59",
+        "rating": 5
     },
     {
         "name": "Cheshire Cat - Inexplicable",
@@ -839,7 +911,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "60"
+        "collector_number": "60",
+        "rating": 5
     },
     {
         "name": "Begone!",
@@ -850,7 +923,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "61"
+        "collector_number": "61",
+        "rating": 1
     },
     {
         "name": "Can't Hold It Back Anymore",
@@ -861,7 +935,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "62"
+        "collector_number": "62",
+        "rating": 4
     },
     {
         "name": "Can't Hold It Back Anymore",
@@ -873,6 +948,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "228",
+        "rating": 4,
         "foil": true
     },
     {
@@ -884,7 +960,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "63"
+        "collector_number": "63",
+        "rating": 1
     },
     {
         "name": "Performance Review",
@@ -895,7 +972,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "64"
+        "collector_number": "64",
+        "rating": 2
     },
     {
         "name": "Fragile as a Flower",
@@ -906,7 +984,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "65"
+        "collector_number": "65",
+        "rating": 3
     },
     {
         "name": "Junior Woodchuck Guidebook",
@@ -917,7 +996,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "66"
+        "collector_number": "66",
+        "rating": 4
     },
     {
         "name": "Grimorum Arcanorum",
@@ -928,7 +1008,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "67"
+        "collector_number": "67",
+        "rating": 1
     },
     {
         "name": "The Great Illuminary - Abandoned Laboratory",
@@ -940,6 +1021,7 @@
         "rarity": "uncommon",
         "set": "10",
         "collector_number": "68",
+        "rating": 3,
         "layout": "split"
     },
     {
@@ -951,7 +1033,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "69"
+        "collector_number": "69",
+        "rating": 3
     },
     {
         "name": "Big Nose - Lovesick Poet",
@@ -962,7 +1045,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "70"
+        "collector_number": "70",
+        "rating": 2
     },
     {
         "name": "Flotsam - Slippery as an Eel",
@@ -973,7 +1057,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "71"
+        "collector_number": "71",
+        "rating": 4
     },
     {
         "name": "Kaa - Suspicious Serpent",
@@ -984,7 +1069,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "72"
+        "collector_number": "72",
+        "rating": 2
     },
     {
         "name": "Webby Vanderquack - Mystery Enthusiast",
@@ -995,7 +1081,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "73"
+        "collector_number": "73",
+        "rating": 2
     },
     {
         "name": "Webby Vanderquack - Mystery Enthusiast",
@@ -1007,6 +1094,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "211",
+        "rating": 2,
         "foil": true
     },
     {
@@ -1018,7 +1106,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "74"
+        "collector_number": "74",
+        "rating": 2
     },
     {
         "name": "Vladimir - Ceramic Unicorn Fan",
@@ -1029,7 +1118,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "75"
+        "collector_number": "75",
+        "rating": 3
     },
     {
         "name": "Flintheart Glomgold - Scheming Billionaire",
@@ -1040,7 +1130,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "76"
+        "collector_number": "76",
+        "rating": 3
     },
     {
         "name": "Jetsam - Opportunistic Eel",
@@ -1051,7 +1142,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "77"
+        "collector_number": "77",
+        "rating": 3
     },
     {
         "name": "Hook Hand - Unexpectedly Friendly",
@@ -1062,7 +1154,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "78"
+        "collector_number": "78",
+        "rating": 4
     },
     {
         "name": "Kaa - Secretive Snake",
@@ -1073,7 +1166,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "79"
+        "collector_number": "79",
+        "rating": 4
     },
     {
         "name": "Kaa - Secretive Snake",
@@ -1085,6 +1179,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "212",
+        "rating": 4,
         "foil": true
     },
     {
@@ -1096,7 +1191,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "80"
+        "collector_number": "80",
+        "rating": 2
     },
     {
         "name": "Flynn Rider - Spectral Scoundrel",
@@ -1107,7 +1203,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "81"
+        "collector_number": "81",
+        "rating": 4
     },
     {
         "name": "Bellwether - Master Manipulator",
@@ -1118,7 +1215,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "82"
+        "collector_number": "82",
+        "rating": 4
     },
     {
         "name": "Launchpad - Exceptional Pilot",
@@ -1129,7 +1227,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "83"
+        "collector_number": "83",
+        "rating": 3
     },
     {
         "name": "Penumbra - Moon Alien",
@@ -1140,7 +1239,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "84"
+        "collector_number": "84",
+        "rating": 4
     },
     {
         "name": "Baloo - Carefree Bear",
@@ -1151,7 +1251,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "85"
+        "collector_number": "85",
+        "rating": 3
     },
     {
         "name": "Baloo - Carefree Bear",
@@ -1163,6 +1264,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "230",
+        "rating": 3,
         "foil": true
     },
     {
@@ -1174,7 +1276,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "86"
+        "collector_number": "86",
+        "rating": 4
     },
     {
         "name": "Megara - Secret Keeper",
@@ -1186,6 +1289,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "213",
+        "rating": 4,
         "foil": true
     },
     {
@@ -1197,7 +1301,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "87"
+        "collector_number": "87",
+        "rating": 3
     },
     {
         "name": "Shere Khan - Fearsome Tiger",
@@ -1208,7 +1313,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "88"
+        "collector_number": "88",
+        "rating": 5
     },
     {
         "name": "Scrooge McDuck - S.H.U.S.H. Agent",
@@ -1219,7 +1325,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "89"
+        "collector_number": "89",
+        "rating": 4
     },
     {
         "name": "Akela - Forest Runner",
@@ -1230,7 +1337,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "90"
+        "collector_number": "90",
+        "rating": 3
     },
     {
         "name": "Goofy - Emerald Champion",
@@ -1241,7 +1349,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "91"
+        "collector_number": "91",
+        "rating": 3
     },
     {
         "name": "Little John - Impermanent Outlaw",
@@ -1252,7 +1361,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "92"
+        "collector_number": "92",
+        "rating": 4
     },
     {
         "name": "Webby Vanderquack - Junior Prospector",
@@ -1263,7 +1373,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "93"
+        "collector_number": "93",
+        "rating": 3
     },
     {
         "name": "Webby Vanderquack - Junior Prospector",
@@ -1275,6 +1386,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "229",
+        "rating": 3,
         "foil": true
     },
     {
@@ -1286,7 +1398,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "94"
+        "collector_number": "94",
+        "rating": 3
     },
     {
         "name": "Trust In Me",
@@ -1297,7 +1410,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "95"
+        "collector_number": "95",
+        "rating": 1
     },
     {
         "name": "Chomp!",
@@ -1308,7 +1422,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "96"
+        "collector_number": "96",
+        "rating": 3
     },
     {
         "name": "Malicious, Mean, and Scary",
@@ -1319,7 +1434,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "97"
+        "collector_number": "97",
+        "rating": 4
     },
     {
         "name": "Malicious, Mean, and Scary",
@@ -1331,6 +1447,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "231",
+        "rating": 4,
         "foil": true
     },
     {
@@ -1342,7 +1459,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "98"
+        "collector_number": "98",
+        "rating": 1
     },
     {
         "name": "Inscrutable Map",
@@ -1353,7 +1471,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "99"
+        "collector_number": "99",
+        "rating": 1
     },
     {
         "name": "Enigmatic Inkcaster",
@@ -1364,7 +1483,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "100"
+        "collector_number": "100",
+        "rating": 1
     },
     {
         "name": "Blessed Bagpipes",
@@ -1375,7 +1495,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "101"
+        "collector_number": "101",
+        "rating": 1
     },
     {
         "name": "White Agony Plains - Golden Lagoon",
@@ -1387,6 +1508,7 @@
         "rarity": "rare",
         "set": "10",
         "collector_number": "102",
+        "rating": 2,
         "layout": "split"
     },
     {
@@ -1398,7 +1520,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "103"
+        "collector_number": "103",
+        "rating": 4
     },
     {
         "name": "Ares - God of War",
@@ -1409,7 +1532,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "104"
+        "collector_number": "104",
+        "rating": 3
     },
     {
         "name": "Peter Pan - High Flyer",
@@ -1420,7 +1544,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "105"
+        "collector_number": "105",
+        "rating": 4
     },
     {
         "name": "Tinker Bell - Fancy Footwork",
@@ -1431,7 +1556,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "106"
+        "collector_number": "106",
+        "rating": 4
     },
     {
         "name": "Tinker Bell - Fancy Footwork",
@@ -1443,6 +1569,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "214",
+        "rating": 4,
         "foil": true
     },
     {
@@ -1454,7 +1581,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "107"
+        "collector_number": "107",
+        "rating": 2
     },
     {
         "name": "Shere Khan - Keen-Eyed Hunter",
@@ -1465,7 +1593,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "108"
+        "collector_number": "108",
+        "rating": 4
     },
     {
         "name": "Rama - Vigilant Father",
@@ -1476,7 +1605,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "109"
+        "collector_number": "109",
+        "rating": 4
     },
     {
         "name": "Mother Gothel - Underhanded Schemer",
@@ -1487,7 +1617,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "110"
+        "collector_number": "110",
+        "rating": 4
     },
     {
         "name": "Katrina Van Tassel - Rosy-Cheeked Lass",
@@ -1498,7 +1629,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "111"
+        "collector_number": "111",
+        "rating": 3
     },
     {
         "name": "Hermes - Harried Messenger",
@@ -1509,7 +1641,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "112"
+        "collector_number": "112",
+        "rating": 4
     },
     {
         "name": "Beast - Aggressive Lord",
@@ -1520,7 +1653,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "113"
+        "collector_number": "113",
+        "rating": 3
     },
     {
         "name": "Bronx - Ferocious Beast",
@@ -1531,7 +1665,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "114"
+        "collector_number": "114",
+        "rating": 3
     },
     {
         "name": "Tinker Bell - Temperamental Fairy",
@@ -1542,7 +1677,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "115"
+        "collector_number": "115",
+        "rating": 3
     },
     {
         "name": "David Xanatos - Charismatic Leader",
@@ -1553,7 +1689,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "116"
+        "collector_number": "116",
+        "rating": 5
     },
     {
         "name": "Hans - Brazen Manipulator",
@@ -1564,7 +1701,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "117"
+        "collector_number": "117",
+        "rating": 4
     },
     {
         "name": "Hercules - Mighty Leader",
@@ -1575,7 +1713,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "118"
+        "collector_number": "118",
+        "rating": 4
     },
     {
         "name": "Goliath - Guardian of Castle Wyvern",
@@ -1586,7 +1725,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "119"
+        "collector_number": "119",
+        "rating": 4
     },
     {
         "name": "Brooklyn - Second in Command",
@@ -1597,7 +1737,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "120"
+        "collector_number": "120",
+        "rating": 4
     },
     {
         "name": "Donald Duck - Ruby Champion",
@@ -1608,7 +1749,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "121"
+        "collector_number": "121",
+        "rating": 3
     },
     {
         "name": "Elisa Maza - Intrepid Investigator",
@@ -1619,7 +1761,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "122"
+        "collector_number": "122",
+        "rating": 2
     },
     {
         "name": "Aladdin - Barreling Through",
@@ -1630,7 +1773,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "123"
+        "collector_number": "123",
+        "rating": 3
     },
     {
         "name": "Aladdin - Barreling Through",
@@ -1642,6 +1786,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "216",
+        "rating": 3,
         "foil": true
     },
     {
@@ -1653,7 +1798,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "124"
+        "collector_number": "124",
+        "rating": 3
     },
     {
         "name": "Lady Tremaine - Sinister Socialite",
@@ -1665,6 +1811,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "233",
+        "rating": 3,
         "foil": true
     },
     {
@@ -1676,7 +1823,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "125"
+        "collector_number": "125",
+        "rating": 4
     },
     {
         "name": "The Headless Horseman - Terror of Sleepy Hollow",
@@ -1688,6 +1836,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "232",
+        "rating": 4,
         "foil": true
     },
     {
@@ -1699,7 +1848,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "126"
+        "collector_number": "126",
+        "rating": 3
     },
     {
         "name": "Mulan - Standing Her Ground",
@@ -1711,6 +1861,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "215",
+        "rating": 3,
         "foil": true
     },
     {
@@ -1722,7 +1873,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "127"
+        "collector_number": "127",
+        "rating": 3
     },
     {
         "name": "Shere Khan - Fierce and Furious",
@@ -1733,7 +1885,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "128"
+        "collector_number": "128",
+        "rating": 2
     },
     {
         "name": "Next Stop, Olympus",
@@ -1744,7 +1897,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "129"
+        "collector_number": "129",
+        "rating": 1
     },
     {
         "name": "Next Stop, Olympus",
@@ -1756,6 +1910,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "234",
+        "rating": 1,
         "foil": true
     },
     {
@@ -1767,7 +1922,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "130"
+        "collector_number": "130",
+        "rating": 1
     },
     {
         "name": "Time to Go!",
@@ -1778,7 +1934,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "131"
+        "collector_number": "131",
+        "rating": 1
     },
     {
         "name": "Ghostly Tale",
@@ -1789,7 +1946,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "132"
+        "collector_number": "132",
+        "rating": 1
     },
     {
         "name": "Mushu's Rocket",
@@ -1800,7 +1958,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "134"
+        "collector_number": "134",
+        "rating": 2
     },
     {
         "name": "The Bitterwood - Underground Forest",
@@ -1812,6 +1971,7 @@
         "rarity": "rare",
         "set": "10",
         "collector_number": "135",
+        "rating": 2,
         "layout": "split"
     },
     {
@@ -1824,6 +1984,7 @@
         "rarity": "uncommon",
         "set": "10",
         "collector_number": "136",
+        "rating": 1,
         "layout": "split"
     },
     {
@@ -1835,7 +1996,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "137"
+        "collector_number": "137",
+        "rating": 2
     },
     {
         "name": "Hen Wen - Prophetic Pig",
@@ -1846,7 +2008,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "138"
+        "collector_number": "138",
+        "rating": 2
     },
     {
         "name": "Anna - Making Snow Plans",
@@ -1857,7 +2020,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "139"
+        "collector_number": "139",
+        "rating": 4
     },
     {
         "name": "Chef Louis - In Over His Head",
@@ -1868,7 +2032,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "140"
+        "collector_number": "140",
+        "rating": 3
     },
     {
         "name": "Daisy Duck - Ghost Finder",
@@ -1879,7 +2044,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "141"
+        "collector_number": "141",
+        "rating": 4
     },
     {
         "name": "Daisy Duck - Ghost Finder",
@@ -1891,6 +2057,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "217",
+        "rating": 4,
         "foil": true
     },
     {
@@ -1902,7 +2069,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "142"
+        "collector_number": "142",
+        "rating": 4
     },
     {
         "name": "Rapunzel - Creative Captor",
@@ -1913,7 +2081,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "143"
+        "collector_number": "143",
+        "rating": 4
     },
     {
         "name": "Fergus McDuck - Scrooge's Father",
@@ -1924,7 +2093,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "144"
+        "collector_number": "144",
+        "rating": 2
     },
     {
         "name": "Li Shang - Seasoned Strategist",
@@ -1935,7 +2105,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "145"
+        "collector_number": "145",
+        "rating": 3
     },
     {
         "name": "Genie - Investigative Mind",
@@ -1946,7 +2117,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "146"
+        "collector_number": "146",
+        "rating": 4
     },
     {
         "name": "Scuttle - Birdbrained",
@@ -1957,7 +2129,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "147"
+        "collector_number": "147",
+        "rating": 3
     },
     {
         "name": "Ichabod Crane - Bookish Schoolmaster",
@@ -1968,7 +2141,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "148"
+        "collector_number": "148",
+        "rating": 3
     },
     {
         "name": "Jasmine - Soothing Princess",
@@ -1979,7 +2153,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "149"
+        "collector_number": "149",
+        "rating": 3
     },
     {
         "name": "Judy Hopps - Lead Detective",
@@ -1990,7 +2165,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "150"
+        "collector_number": "150",
+        "rating": 4
     },
     {
         "name": "Judy Hopps - Lead Detective",
@@ -2002,6 +2178,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "235",
+        "rating": 4,
         "foil": true
     },
     {
@@ -2013,7 +2190,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "151"
+        "collector_number": "151",
+        "rating": 2
     },
     {
         "name": "Ichabod Crane - Scared Out of His Mind",
@@ -2024,7 +2202,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "152"
+        "collector_number": "152",
+        "rating": 3
     },
     {
         "name": "Scar - Eerily Prepared",
@@ -2035,7 +2214,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "153"
+        "collector_number": "153",
+        "rating": 5
     },
     {
         "name": "Daisy Duck - Paranormal Investigator",
@@ -2046,7 +2226,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "154"
+        "collector_number": "154",
+        "rating": 4
     },
     {
         "name": "Cinderella - Dream Come True",
@@ -2057,7 +2238,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "155"
+        "collector_number": "155",
+        "rating": 3
     },
     {
         "name": "Cinderella - Dream Come True",
@@ -2069,6 +2251,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "236",
+        "rating": 3,
         "foil": true
     },
     {
@@ -2080,7 +2263,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "156"
+        "collector_number": "156",
+        "rating": 3
     },
     {
         "name": "Pluto - Clever Cluefinder",
@@ -2091,7 +2275,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "157"
+        "collector_number": "157",
+        "rating": 2
     },
     {
         "name": "Daisy Duck - Sapphire Champion",
@@ -2102,7 +2287,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "158"
+        "collector_number": "158",
+        "rating": 3
     },
     {
         "name": "Kristoff - Mining the Ruins",
@@ -2113,7 +2299,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "159"
+        "collector_number": "159",
+        "rating": 4
     },
     {
         "name": "Kristoff - Mining the Ruins",
@@ -2125,6 +2312,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "218",
+        "rating": 4,
         "foil": true
     },
     {
@@ -2136,7 +2324,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "161"
+        "collector_number": "161",
+        "rating": 1
     },
     {
         "name": "Promising Lead",
@@ -2147,7 +2336,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "162"
+        "collector_number": "162",
+        "rating": 1
     },
     {
         "name": "Might Solve a Mystery",
@@ -2158,7 +2348,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "163"
+        "collector_number": "163",
+        "rating": 1
     },
     {
         "name": "Sudden Scare",
@@ -2169,7 +2360,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "164"
+        "collector_number": "164",
+        "rating": 4
     },
     {
         "name": "Sudden Scare",
@@ -2181,6 +2373,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "219",
+        "rating": 4,
         "foil": true
     },
     {
@@ -2192,7 +2385,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "165"
+        "collector_number": "165",
+        "rating": 1
     },
     {
         "name": "Spooky Sight",
@@ -2204,6 +2398,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "237",
+        "rating": 1,
         "foil": true
     },
     {
@@ -2215,7 +2410,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "166"
+        "collector_number": "166",
+        "rating": 3
     },
     {
         "name": "Ink Amplifier",
@@ -2226,7 +2422,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "167"
+        "collector_number": "167",
+        "rating": 1
     },
     {
         "name": "Fairy Godmother's Wand",
@@ -2237,7 +2434,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "168"
+        "collector_number": "168",
+        "rating": 1
     },
     {
         "name": "Inkrunner",
@@ -2248,7 +2446,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "169"
+        "collector_number": "169",
+        "rating": 3
     },
     {
         "name": "Castle of the Horned King - Bastion of Evil",
@@ -2260,6 +2459,7 @@
         "rarity": "rare",
         "set": "10",
         "collector_number": "170",
+        "rating": 1,
         "layout": "split"
     },
     {
@@ -2271,7 +2471,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "171"
+        "collector_number": "171",
+        "rating": 4
     },
     {
         "name": "Robin Hood - Ephemeral Archer",
@@ -2283,6 +2484,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "221",
+        "rating": 4,
         "foil": true
     },
     {
@@ -2294,7 +2496,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "172"
+        "collector_number": "172",
+        "rating": 3
     },
     {
         "name": "Goliath - Clan Leader",
@@ -2305,7 +2508,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "173"
+        "collector_number": "173",
+        "rating": 5
     },
     {
         "name": "Goliath - Clan Leader",
@@ -2317,6 +2521,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "238",
+        "rating": 5,
         "foil": true
     },
     {
@@ -2328,7 +2533,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "174"
+        "collector_number": "174",
+        "rating": 1
     },
     {
         "name": "Clawhauser - Donut Detective",
@@ -2339,7 +2545,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "175"
+        "collector_number": "175",
+        "rating": 4
     },
     {
         "name": "Francine - Eyeing the Evidence",
@@ -2350,7 +2557,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "176"
+        "collector_number": "176",
+        "rating": 4
     },
     {
         "name": "Inspector Tezuka - Resolute Officer",
@@ -2361,7 +2569,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "177"
+        "collector_number": "177",
+        "rating": 4
     },
     {
         "name": "Nick Wilde - Sly Fox Sleuth",
@@ -2372,7 +2581,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "178"
+        "collector_number": "178",
+        "rating": 3
     },
     {
         "name": "Basil - Tenacious Mouse",
@@ -2383,7 +2593,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "179"
+        "collector_number": "179",
+        "rating": 2
     },
     {
         "name": "Hudson - Determined Reader",
@@ -2394,7 +2605,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "180"
+        "collector_number": "180",
+        "rating": 3
     },
     {
         "name": "Minnie Mouse - Ghost Hunter",
@@ -2405,7 +2617,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "181"
+        "collector_number": "181",
+        "rating": 3
     },
     {
         "name": "Minnie Mouse - Ghost Hunter",
@@ -2417,6 +2630,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "220",
+        "rating": 3,
         "foil": true
     },
     {
@@ -2428,7 +2642,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "182"
+        "collector_number": "182",
+        "rating": 4
     },
     {
         "name": "Lexington - Small in Stature",
@@ -2439,7 +2654,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "183"
+        "collector_number": "183",
+        "rating": 4
     },
     {
         "name": "David Xanatos - Steel Clan Leader",
@@ -2450,7 +2666,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "184"
+        "collector_number": "184",
+        "rating": 3
     },
     {
         "name": "Chief Bogo - Calling the Shots",
@@ -2461,7 +2678,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "185"
+        "collector_number": "185",
+        "rating": 3
     },
     {
         "name": "The Twins - Lost Boys",
@@ -2472,7 +2690,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "186"
+        "collector_number": "186",
+        "rating": 2
     },
     {
         "name": "Nick Wilde - Persistent Investigator",
@@ -2483,7 +2702,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "187"
+        "collector_number": "187",
+        "rating": 4
     },
     {
         "name": "Nick Wilde - Persistent Investigator",
@@ -2495,6 +2715,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "239",
+        "rating": 4,
         "foil": true
     },
     {
@@ -2506,7 +2727,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "188"
+        "collector_number": "188",
+        "rating": 4
     },
     {
         "name": "Prince Charming - Protector of the Realm",
@@ -2517,7 +2739,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "189"
+        "collector_number": "189",
+        "rating": 4
     },
     {
         "name": "Broadway - Sturdy and Strong",
@@ -2528,7 +2751,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "190"
+        "collector_number": "190",
+        "rating": 4
     },
     {
         "name": "Pluto - Steel Champion",
@@ -2539,7 +2763,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "191"
+        "collector_number": "191",
+        "rating": 4
     },
     {
         "name": "Fairy Godmother - Magical Benefactor",
@@ -2550,7 +2775,8 @@
         },
         "rarity": "mythic",
         "set": "10",
-        "collector_number": "192"
+        "collector_number": "192",
+        "rating": 4
     },
     {
         "name": "Zeus - Missing His Spark",
@@ -2561,7 +2787,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "193"
+        "collector_number": "193",
+        "rating": 3
     },
     {
         "name": "The Headless Horseman - Relentless Spirit",
@@ -2572,7 +2799,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "194"
+        "collector_number": "194",
+        "rating": 3
     },
     {
         "name": "But I'm Much Faster",
@@ -2583,7 +2811,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "195"
+        "collector_number": "195",
+        "rating": 3
     },
     {
         "name": "Putting It All Together",
@@ -2594,7 +2823,8 @@
         },
         "rarity": "common",
         "set": "10",
-        "collector_number": "196"
+        "collector_number": "196",
+        "rating": 3
     },
     {
         "name": "He Hurled His Thunderbolt",
@@ -2605,7 +2835,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "197"
+        "collector_number": "197",
+        "rating": 4
     },
     {
         "name": "He Hurled His Thunderbolt",
@@ -2617,6 +2848,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "222",
+        "rating": 4,
         "foil": true
     },
     {
@@ -2628,7 +2860,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "198"
+        "collector_number": "198",
+        "rating": 1
     },
     {
         "name": "The Robot Queen",
@@ -2639,7 +2872,8 @@
         },
         "rarity": "uncommon",
         "set": "10",
-        "collector_number": "199"
+        "collector_number": "199",
+        "rating": 3
     },
     {
         "name": "The Sword of Hercules",
@@ -2650,7 +2884,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "200"
+        "collector_number": "200",
+        "rating": 2
     },
     {
         "name": "The Sword of Hercules",
@@ -2662,6 +2897,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "240",
+        "rating": 2,
         "foil": true
     },
     {
@@ -2673,7 +2909,8 @@
         },
         "rarity": "rare",
         "set": "10",
-        "collector_number": "201"
+        "collector_number": "201",
+        "rating": 3
     },
     {
         "name": "Illuminary Tunnels - Linked Caverns",
@@ -2685,6 +2922,7 @@
         "rarity": "mythic",
         "set": "10",
         "collector_number": "202",
+        "rating": 1,
         "layout": "split"
     },
     {
@@ -2697,6 +2935,7 @@
         "rarity": "uncommon",
         "set": "10",
         "collector_number": "203",
+        "rating": 2,
         "layout": "split"
     },
     {
@@ -2709,6 +2948,7 @@
         "rarity": "rare",
         "set": "10",
         "collector_number": "204",
+        "rating": 3,
         "layout": "split"
     }
 ]

@@ -97,14 +97,30 @@ class LorcastApi:
 
     def printing_from_printing_untyped(self, printing_untyped) -> CardPrinting:
         full_name = self.get_cannonical_name(printing_untyped)
+        card_id = self.id_from_printing_untyped(printing_untyped)
+        printing_id = PrintingId(card_id=card_id,
+                                 set_code=printing_untyped['set']['code'],
+                                 collector_id=printing_untyped['collector_number'])
+        if printing_untyped['set']['code'] in dreamborn_manager.LEGACY_IMAGE_SET_CODES:
+            image_uris = {
+                'en': dreamborn_manager.image_uri(printing_id, 'en'),
+                'fr': dreamborn_manager.image_uri(printing_id, 'fr'),
+                'de': dreamborn_manager.image_uri(printing_id, 'de'),
+                'it': dreamborn_manager.image_uri(printing_id, 'it'),
+                'ja': dreamborn_manager.image_uri(printing_id, 'ja'),
+                'zh': dreamborn_manager.image_uri(printing_id, 'zh'),
+            }
+        else:
+            image_uris = {
+                'en':printing_untyped['image_uris']['digital']['normal']
+            }
+            
         return CardPrinting(
             full_name=full_name,
             collector_id=printing_untyped['collector_number'],
             set_code=printing_untyped['set']['code'],
             rarity=lorcast_to_cubecana_rarity[printing_untyped['rarity']],
-            image_uris={
-                'en':printing_untyped['image_uris']['digital']['normal']
-            }
+            image_uris=image_uris
         )
 
     def is_alternate_art(self, printing: CardPrinting) -> bool:

@@ -37,15 +37,23 @@ class DreambornManager:
     def to_image_collector_id(self, collector_id:str) -> str:
         if self.is_number(collector_id):
             return f"{int(collector_id):03d}"
+        elif collector_id in ['25ja','25zh']:  # special cases
+            return collector_id
         elif collector_id[-1:].isalpha(): # dalmation puppy - tail wagger 4a-4e/1
             # 4a -> 004a
             letter_part = collector_id[-1:]
             number_part = collector_id[0:-1]
             return f"{int(number_part):03d}{letter_part}"
 
+    LEGACY_IMAGE_SET_CODES:list[str] = ['1','2','3','4','5','6','7','8','9','P1','P2','Q1','cp'] 
+
     def image_uri(self, printing_id: PrintingId, language_code:str):
-        image_set_code = self.to_image_set_code(printing_id.set_code)
-        collector_id = self.to_image_collector_id(printing_id.collector_id)
-        return 
+        image_set_code: str = self.to_image_set_code(printing_id.set_code)
+        collector_id: str = self.to_image_collector_id(printing_id.collector_id)
+        if printing_id.set_code in self.LEGACY_IMAGE_SET_CODES:
+            return f"https://cdn.dreamborn.ink/images/{language_code}/cards/{image_set_code}-{collector_id}?tts"  
+        else:
+            print(f"Image URIs for non-legacy set code on dreamborn not avail. for image uri: {printing_id.set_code}")
+            return ""
         
 dreamborn_manager:DreambornManager = DreambornManager()

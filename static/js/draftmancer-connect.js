@@ -8,7 +8,8 @@ export const GAME_MODE = {
 
 export function generateDraftmancerSession(CubeFile, tabToOpen, metadata, gameMode = GAME_MODE.DRAFT) {
     
-    const Domain = "https://draftmancer.com";
+    // const Domain = "https://draftmancer.com";
+    const Domain = "https://beta.draftmancer.com/";
 
     // Generate unique user ID and session ID
     const BotID = "CubecanaBot_" + crypto.randomUUID();
@@ -46,6 +47,17 @@ export function generateDraftmancerSession(CubeFile, tabToOpen, metadata, gameMo
             } else {
                 function startDraftOnCompletion(responseData) {
                     // Automatically disconnect bot once the human user has joined the session
+
+                    let draftId = JSON.parse(responseData).draftId;
+                    let draftLogHandlingUrl = `${window.location.origin}/api/draft/${draftId}/draftmancer-log`;
+                    console.log("Setting draft log hook to: " + draftLogHandlingUrl);
+                    socket.emit("setHooks", { "draftLog": draftLogHandlingUrl }, (res) => {
+                        if (res.code < 0) {
+                            console.error(res);
+                        } else {
+                            console.log("Draft log hook set successfully." + JSON.stringify(res));
+                        }
+                    });
                     socket.once("sessionUsers", () => {
                         if (gameMode == GAME_MODE.SUPER_SEALED) {
                             socket.emit("distributeSealed", 16, null, (res) => {

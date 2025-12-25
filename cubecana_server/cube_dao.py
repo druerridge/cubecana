@@ -2,13 +2,10 @@ import uuid
 import json
 from pathlib import Path
 from typing import List, Optional
-from sqlalchemy import create_engine, Column, String, Integer, Text, JSON, func, exc
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker, scoped_session
+from sqlalchemy import Column, String, Integer, Text, JSON, func, exc
 from sqlalchemy.dialects.mysql import BINARY, VARCHAR, TEXT
 from . import api
-
-Base = declarative_base()
+from .database import Base, db_connection
 
 MAX_CARD_LIST_LENGTH = 80000  # MIGHT have to update the DB if you change this... but maybe not
 PAGE_VIEW_COEFFICIENT = 1
@@ -47,28 +44,11 @@ API_SORT_TYPE_TO_COLUMN = {
 
 class CubeDao:
     def __init__(self):
-        creds_file = Path('creds/creds.json')
-        if creds_file.is_file():
-            with creds_file.open() as f:
-                creds_json = json.load(f)
-                self.db_url = f"mysql://{creds_json['db_username']}:{creds_json['db_password']}@{creds_json['db_host']}/{creds_json['db_name']}?charset=utf8mb4"
-        else:
-            print(f"No creds file found at {creds_file.absolute()}, exiting")
-            raise SystemExit(1)
-
-        # Create a connection pool
-        self.engine = create_engine(
-            self.db_url,
-            pool_size=1,
-            max_overflow=4,
-            pool_timeout=30,
-            pool_recycle=900,
-            pool_pre_ping=True
-        )
-        self.Session = scoped_session(sessionmaker(bind=self.engine))
+        # Use the shared database connection
+        pass
 
     def get_session(self):
-        return self.Session()
+        return db_connection.get_session()
 
     def execute(self, operation, retries_attempted=0, *args, **kwargs):
         session = None
@@ -178,7 +158,7 @@ class CubeDao:
 
 
     def get_cubecana_cube_by_id(self, cube_id: bytes) -> Optional[DbCubecanaCube]:
-        def operation(session, cube_id):
+        def operation(session, cube_id) -> Optional[DbCubecanaCube]:
             return session.query(DbCubecanaCube).filter(DbCubecanaCube.id == cube_id).first()
 
         return self.execute(operation, cube_id=cube_id)

@@ -9,12 +9,13 @@ from cubecana_server import card_list_helper
 from cubecana_server.settings import Settings
 from cubecana_server.cube_manager import CubecanaCube
 from cubecana_server.cube_manager import cube_manager
-from cubecana_server.retail_manager import retail_manager
+from cubecana_server.retail_manager import GAME_MODE_DRAFT, retail_manager
 from cubecana_server import api
 from cubecana_server.format_analyzer import FormatAnalyzer
 from cubecana_server.cube_dao import MAX_CARD_LIST_LENGTH
 from cubecana_server import tabletop_simulator
 from cubecana_server.lorcast_api import lorcast_api as lorcana_api
+from cubecana_server.draft_manager import draft_manager
 import traceback
 from cubecana_server import cubealytics # This is imported so it will init + generate startup report(s)
 
@@ -184,6 +185,13 @@ def handle_dreamborn_to_draftmancer():
   response = {'draftmancerFile': draftmancer_file, 'metadata': {'cardCount': card_count, 'cardsPerBooster': settings.cards_per_booster, 'boostersPerPlayer': settings.boosters_per_player}}
   return jsonify(response)
 
+@app.route('/api/draft/<string:draft_id>/draftmancer-log', methods=['POST'])
+def handle_dratmancer_draft_log(draft_id:str):
+  print(f"Received draftmancer log for draft {draft_id}:")
+  print(request.data)
+  json_data = json.loads(request.data)
+  return Response(status=200)
+
 # RETAIL API ENDPOINTS
 
 @app.route('/api/retail_sets', methods=['POST'])
@@ -230,12 +238,12 @@ def get_retail_set_draftmancer_file(set_id:str):
   return jsonify(response)
 
 @app.route('/api/retail_sets/<string:set_id>/startDraft', methods=['POST'])
-def increment_retail_drafts_on_start(set_id:str):
+def retail_draft_started(set_id:str):
   set: api.RetailSet = retail_manager.get_set(set_id)
   if not set:
     return lcc_error.RetailSetNotFoundError("Retail set not found")
-  # TODO: keep a table for retail sets and increment it
-  return Response(status=200)
+  draft = draft_manager.create_retail_draft(set_id, GAME_MODE_DRAFT)
+  return jsonify({'draftId': draft.draft_id})
 
 @app.route('/api/retail_sets/<string:set_id>/analysis', methods=['GET'])
 def get_retail_set_analysis(set_id:str):
@@ -381,12 +389,13 @@ def get_cube_draftmancer_file(cube_id):
   return jsonify(response)
 
 @app.route('/api/cube/<string:cube_id>/startDraft', methods=['POST'])
-def increment_cube_drafts_on_start(cube_id):
+def cube_draft_started(cube_id):
   cube: CubecanaCube = cube_manager.get_cube(cube_id)
   if not cube:
     return lcc_error.CubeNotFoundError("Cube not found")
   cube_manager.increment_drafts(cube_id)
-  return Response(status=200)
+  draft = draft_manager.create_cube_draft(cube_id, GAME_MODE_DRAFT, cube.settings)
+  return jsonify({'draftId': draft.draft_id})
 
 @app.route('/api/cube/<string:cube_id>', methods=['GET'])
 def get_cube(cube_id):

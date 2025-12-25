@@ -8,8 +8,8 @@ export const GAME_MODE = {
 
 export function generateDraftmancerSession(CubeFile, tabToOpen, metadata, gameMode = GAME_MODE.DRAFT) {
     
-    // const Domain = "https://draftmancer.com";
-    const Domain = "https://beta.draftmancer.com/";
+    const Domain = "https://draftmancer.com";
+    // const Domain = "https://beta.draftmancer.com/";
 
     // Generate unique user ID and session ID
     const BotID = "CubecanaBot_" + crypto.randomUUID();

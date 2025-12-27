@@ -76,7 +76,6 @@ class DraftManager:
         draft_source_id_str = str(uuid.UUID(bytes=db_draft.draft_source_id))
         
         return Draft(
-            pk=db_draft.pk,
             draft_id=draft_id_str,
             start_time_epoch_seconds=db_draft.start_time_epoch_seconds,
             game_mode=db_draft.game_mode,
@@ -84,6 +83,22 @@ class DraftManager:
             draft_source_id=draft_source_id_str,
             end_time_epoch_seconds=db_draft.end_time_epoch_seconds,
             draft_status=DraftStatus(db_draft.draft_status)
-            )
+        )
+    
+    def end_draft(self, draft_id: str, draft_log_dict: dict) -> bool:
+        draft: Optional[Draft] = self.get_draft(draft_id)
+        if not draft:
+            return False
+        
+        draft.end_time_epoch_seconds = int(time.time())
+        draft.draft_status = DraftStatus.COMPLETED
+
+        db_draft = self.draft_to_db_draft(draft)
+        success = draft_dao.update(db_draft)
+
+        if not success:
+            return None
+        
+        return draft
         
 draft_manager: DraftManager = DraftManager()

@@ -74,35 +74,36 @@ class DraftDao:
 
         return self.execute(operation, draft_id=draft_id)
 
-    def ended_at(self, draft_id: str, draft_status: DraftStatus) -> bool:
+    def update(self, updated_draft: DbCubecanaDraft) -> bool:
         """
-        Mark a draft as ended with the specified status and set the end time.
+        Update a draft record with the provided draft data.
         
         Args:
-            draft_id: The UUID string of the draft to update
-            draft_status: The final status (COMPLETED)
+            updated_draft: DbCubecanaDraft object containing the updated values
             
         Returns:
-            bool: True if the update was successful, False if draft not found
+            bool: True if the draft was found and updated, False if not found
         """
-        def operation(session, draft_id, draft_status):
-            draft_id_binary = uuid.UUID(draft_id).bytes
-            end_time = int(time.time())
-            
+        def operation(session, updated_draft):
             db_draft = session.query(DbCubecanaDraft).filter(
-                DbCubecanaDraft.draft_id == draft_id_binary
+                DbCubecanaDraft.draft_id == updated_draft.draft_id
             ).first()
             
             if not db_draft:
                 return False
             
-            db_draft.draft_status = draft_status.value
-            db_draft.end_time_epoch_seconds = end_time
-            session.commit()
+            # Update all fields from the provided draft object
+            db_draft.start_time_epoch_seconds = updated_draft.start_time_epoch_seconds
+            db_draft.game_mode = updated_draft.game_mode
+            db_draft.draft_source_type = updated_draft.draft_source_type
+            db_draft.draft_source_id = updated_draft.draft_source_id
+            db_draft.end_time_epoch_seconds = updated_draft.end_time_epoch_seconds
+            db_draft.draft_status = updated_draft.draft_status
             
+            session.commit()
             return True
-
-        return self.execute(operation, draft_id=draft_id, draft_status=draft_status)
+        
+        return self.execute(operation, updated_draft=updated_draft)
 
 # Convenience instance for easy importing
-draft_dao = DraftDao()
+draft_dao:DraftDao = DraftDao()

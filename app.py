@@ -189,7 +189,10 @@ def handle_dreamborn_to_draftmancer():
 def handle_dratmancer_draft_log(draft_id:str):
   print(f"Received draftmancer log for draft {draft_id}:")
   print(request.data)
-  json_data = json.loads(request.data)
+  draftmancer_log_dict = json.loads(request.data)
+  draft = draft_manager.end_draft(draft_id, draftmancer_log_dict)
+  if not draft:
+    raise lcc_error.LccError("Failed to end draft", 500)
   return Response(status=200)
 
 # RETAIL API ENDPOINTS

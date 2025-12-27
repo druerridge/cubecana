@@ -49,6 +49,7 @@ export function generateDraftmancerSession(CubeFile, tabToOpen, metadata, gameMo
                     // Automatically disconnect bot once the human user has joined the session
 
                     let draftId = JSON.parse(responseData).draftId;
+                    // let draftLogHandlingUrl = `https://31e00ec9b39b.ngrok-free.app/api/draft/${draftId}/draftmancer-log`;
                     let draftLogHandlingUrl = `${window.location.origin}/api/draft/${draftId}/draftmancer-log`;
                     console.log("Setting draft log hook to: " + draftLogHandlingUrl);
                     socket.emit("setHooks", { "draftLog": draftLogHandlingUrl }, (res) => {

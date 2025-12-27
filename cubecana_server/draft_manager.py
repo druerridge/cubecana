@@ -95,7 +95,7 @@ class DraftManager:
 
         db_draft = self.draft_to_db_draft(draft)
         success = draft_dao.update(db_draft)
-
+        
         if not success:
             return None
         

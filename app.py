@@ -186,7 +186,7 @@ def handle_dreamborn_to_draftmancer():
   return jsonify(response)
 
 @app.route('/api/draft/<string:draft_id>/draftmancer-log', methods=['POST'])
-def handle_dratmancer_draft_log(draft_id:str):
+def handle_draftmancer_draft_log(draft_id:str):
   print(f"Received draftmancer log for draft {draft_id}:")
   # print(request.data)
   draftmancer_log_dict = json.loads(request.data)

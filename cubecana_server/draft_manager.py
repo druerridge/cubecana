@@ -5,10 +5,64 @@ import uuid
 from cubecana_server.cubecana_draft import Draft, DraftSourceType
 from cubecana_server.draft_dao import DbCubecanaDraft, draft_dao, DraftDao, DraftStatus
 from cubecana_server.retail_manager import GAME_MODE_DRAFT
+from cubecana_server.cube_manager import CubeManager, cube_manager
+from cubecana_server.cubecana_cube import CubecanaCube
 
 class DraftSourceType(str, Enum):
     CUBE = "CUBE"
     RETAIL = "RETAIL"
+
+class PodCompositionType(str, Enum):
+    HUMANS_ONLY = "HUMANS_ONLY"
+    MIXED_HUMANS_AND_BOTS = "MIXED_HUMANS_AND_BOTS"
+    SOLO_WITH_BOTS = "SOLO_WITH_BOTS"
+    UNKNOWN = "UNKNOWN"
+
+def calculate_pod_composition_type(draft_log_dict: dict, num_human_players: int) -> PodCompositionType:
+    if is_all_human_draft(draft_log_dict, num_human_players):
+        return PodCompositionType.HUMANS_ONLY
+    elif is_mixed_draft(draft_log_dict, num_human_players):
+        return PodCompositionType.MIXED_HUMANS_AND_BOTS  
+    elif is_solo_draft(num_human_players):
+        return PodCompositionType.SOLO_WITH_BOTS
+    else:
+        return PodCompositionType.UNKNOWN
+
+def is_real_draft(draft_log_dict: dict, draft: Draft) -> bool:
+    if draft.game_mode != GAME_MODE_DRAFT:
+        return False # not sure what to do for sealed yet
+    
+    num_human_players = sum(1 for human in filter(lambda user: not user["isBot"], draft_log_dict["users"].values()))
+    print(f"Number of human players: {num_human_players}")
+
+    pod_composition_type: PodCompositionType = calculate_pod_composition_type(draft_log_dict, num_human_players)
+    print(f"Pod composition type: {pod_composition_type}")
+
+    picks_per_human = [len(human["picks"]) for human in filter(lambda user: not user["isBot"], draft_log_dict["users"].values())]
+    print(f"Picks per human: {picks_per_human}")
+
+    picks_to_finish = 48 # retail is 12 * 4 = 48
+    if draft.draft_source_type == DraftSourceType.CUBE: 
+        cube: CubecanaCube = cube_manager.get_cube(draft.draft_source_id)
+        picks_to_finish = cube.settings.boosters_per_player * cube.settings.cards_per_booster
+    num_humans_finished_picking = sum(1 for picks in picks_per_human if picks >= picks_to_finish)
+    print(f"Number of humans finished picking: {num_humans_finished_picking}")
+
+    num_human_decklists = sum(1 for player in filter(lambda user: not user["isBot"], draft_log_dict["users"].values()) if player.get("decklist"))
+    print(f"Number of human decklists: {num_human_decklists}")
+
+    return num_humans_finished_picking >= 1
+
+def is_solo_draft(num_human_players):
+    return num_human_players == 1
+
+def is_mixed_draft(draft_log_dict, num_human_players):
+    return num_human_players > 1 and num_human_players < len(draft_log_dict["users"].values())
+
+def is_all_human_draft(draft_log_dict, num_human_players):
+    is_all_humans = num_human_players >= len(draft_log_dict["users"].values())
+    return is_all_humans
+    
 
 class DraftManager:
 
@@ -90,6 +144,8 @@ class DraftManager:
         if not draft:
             return False
         
+        is_real_draft(draft_log_dict, draft)
+
         draft.end_time_epoch_seconds = int(time.time())
         draft.draft_status = DraftStatus.COMPLETED
 

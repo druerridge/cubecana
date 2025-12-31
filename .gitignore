@@ -1,6 +1,7 @@
 # cubecana stuff
 creds/
 creds.json
+draft_logs/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

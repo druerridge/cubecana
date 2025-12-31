@@ -1,7 +1,10 @@
 from enum import Enum
+import json
 import time
 from typing import Optional
 import uuid
+
+from pathlib import Path
 from cubecana_server.cubecana_draft import Draft, DraftSourceType
 from cubecana_server.draft_dao import DbCubecanaDraft, draft_dao, DraftDao, DraftStatus
 from cubecana_server.retail_manager import GAME_MODE_DRAFT
@@ -62,7 +65,17 @@ def is_mixed_draft(draft_log_dict, num_human_players):
 def is_all_human_draft(draft_log_dict, num_human_players):
     is_all_humans = num_human_players >= len(draft_log_dict["users"].values())
     return is_all_humans
-    
+
+def write_draft_to_disk(draft_log_dict: dict, draft: Draft):
+    try:
+        draft_id = draft.draft_id
+        filename = f"draft_logs/draft_{draft_id}.json"
+        Path(filename).parent.mkdir(parents=True, exist_ok=True)
+        with open(filename, "w") as f:
+            json.dump(draft_log_dict, f, separators=(',', ':'))
+        print(f"Draft log written to {filename}")
+    except Exception as e:
+        print(f"Error writing draft log to disk: {e}")
 
 class DraftManager:
 
@@ -145,6 +158,8 @@ class DraftManager:
             return False
         
         is_real_draft(draft_log_dict, draft)
+
+        write_draft_to_disk(draft_log_dict, draft)
 
         draft.end_time_epoch_seconds = int(time.time())
         draft.draft_status = DraftStatus.COMPLETED

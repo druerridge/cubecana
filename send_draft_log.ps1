@@ -4,7 +4,7 @@ param(
 )
 
 # Read the JSON file content
-$jsonContent = Get-Content -Path ".\test_data\test_draft_log.json" -Raw
+$jsonContent = Get-Content -Path ".\test_data\solo_test_draft_log.json" -Raw
 
 # Set headers for JSON content
 $headers = @{

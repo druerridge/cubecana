@@ -159,10 +159,20 @@ function generateStackedChartData(distributionByCost, label) {
             return costData[statValue.toString()] || 0;
         });
         
+        // Use gradient colors for strength and willpower charts, regular colors for others
+        let backgroundColor;
+        if (label === 'Strength') {
+            backgroundColor = generateStrengthGradientColor(index, sortedStatValues.length);
+        } else if (label === 'Willpower') {
+            backgroundColor = generateWillpowerGradientColor(index, sortedStatValues.length);
+        } else {
+            backgroundColor = generateColor(index);
+        }
+        
         return {
             label: `${label} ${statValue}`,
             data: data,
-            backgroundColor: generateColor(index),
+            backgroundColor: backgroundColor,
             borderColor: '#333',
             borderWidth: 1
         };
@@ -180,6 +190,34 @@ function generateColor(index) {
         '#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF', '#FF9F40'
     ];
     return colors[index % colors.length];
+}
+
+function generateStrengthGradientColor(index, total) {
+    // Create gradient from yellow (lowest strength) to red (highest strength)
+    if (total <= 1) return '#FFFF00'; // Pure yellow for single value
+    
+    const ratio = index / (total - 1); // 0 to 1
+    
+    // Interpolate from yellow (255,255,0) to red (255,0,0)
+    const red = 255;
+    const green = Math.round(255 * (1 - ratio));
+    const blue = 0;
+    
+    return `rgb(${red}, ${green}, ${blue})`;
+}
+
+function generateWillpowerGradientColor(index, total) {
+    // Create gradient from yellow (lowest willpower) to green (highest willpower)
+    if (total <= 1) return '#FFFF00'; // Pure yellow for single value
+    
+    const ratio = index / (total - 1); // 0 to 1
+    
+    // Interpolate from yellow (255,255,0) to green (0,255,0)
+    const red = Math.round(255 * (1 - ratio));
+    const green = 255;
+    const blue = 0;
+    
+    return `rgb(${red}, ${green}, ${blue})`;
 }
 
 function initializeCharts() {

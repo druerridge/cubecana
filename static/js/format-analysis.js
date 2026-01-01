@@ -449,19 +449,18 @@ function updateTraitAnalysis() {
         return;
     }
 
-    // Calculate total expected at table and per seat from cost distribution
-    const totalExpectedAtTable = Object.values(traitCostData).reduce((sum, count) => sum + count, 0);
-    const maxPodSize = maxPodSizeInput ? parseInt(maxPodSizeInput.value) || 8 : 8;
-    const totalExpectedPerSeat = totalExpectedAtTable / maxPodSize;
+    // Calculate total seen at table and per seat from cost distribution
+    const totalSeenAtTable = Object.values(traitCostData).reduce((sum, count) => sum + count, 0);
+    const totalSeenPerSeat = totalSeenAtTable * 0.71; // 71% of seen at table
     
-    console.log(`Expected at table: ${totalExpectedAtTable.toFixed(1)}, per seat: ${totalExpectedPerSeat.toFixed(1)}`);
+    console.log(`Seen at table: ${totalSeenAtTable.toFixed(1)}, per seat: ${totalSeenPerSeat.toFixed(1)}`);
 
     const tbody = traitTable.querySelector('tbody');
     const existingRow = tbody.querySelector('tr');
     const cells = existingRow.querySelectorAll('td');
     
-    cells[1].textContent = totalExpectedAtTable.toFixed(1);
-    cells[2].textContent = totalExpectedPerSeat.toFixed(1);
+    cells[1].textContent = totalSeenAtTable.toFixed(1);
+    cells[2].textContent = totalSeenPerSeat.toFixed(1);
     
     updateTraitInkCostChart(selectedTrait);
 }

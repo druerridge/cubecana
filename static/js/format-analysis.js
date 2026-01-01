@@ -126,7 +126,7 @@ function generateChartDataFromResponse(analysisData) {
         chartData.willpowerChart = generateStackedChartData(analysisData.willpowerDistributionByCost, 'Willpower');
     }
     
-    // Generate trait ink cost distributions for trait analysis
+    // Generate trait ink cost distributions for classification analysis
     chartData.traitInkCostDistributions = {};
     if (analysisData.costDistributionByClassification) {
         Object.keys(analysisData.costDistributionByClassification).forEach(trait => {

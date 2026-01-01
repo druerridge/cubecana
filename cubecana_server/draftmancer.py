@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from io import TextIOWrapper
 import json
 from pathlib import Path
 from .lcc_error import UnidentifiedCardError, LccError
@@ -231,81 +232,90 @@ READING_MODE_SETTINGS = "settings"
 READING_MODE_CUSTOM_CARDS = "custom_cards" 
 READING_MODE_SLOTS = "slots"
 
-def read_draftmancer_file(file_path: str):
+def read_draftmancer_file_as_string(draftmancer_file_as_string: str) -> DraftmancerFile:
+    lines = draftmancer_file_as_string.split('\n')
+    return read_draftmancer_file_as_lines(lines)
+
+def read_draftmancer_file_as_lines(lines: TextIOWrapper|list[str]) -> DraftmancerFile:
+    reading_mode = ""
+    custom_card_string = ""
+    settings_string = ""
+    text_contents = ""
+    current_slot_name = ""
+    slots_by_name = dict[str, Slot]()
+    open_braces = 0
+    draftmancer_settings: DraftmancerSettings = None
+    for line in lines:
+        text_contents += line
+        if "[CustomCards]" in line:
+            reading_mode = READING_MODE_CUSTOM_CARDS
+            continue
+        if "[Settings]" in line:
+            reading_mode = READING_MODE_SETTINGS
+            continue
+        if line.strip().startswith("[") and line.strip().endswith("]"):
+            slot_innards = line.strip().lstrip("[").rstrip("]")
+            if "(" in slot_innards:
+                num_cards = int(slot_innards.split("(")[1].split(")")[0])
+                current_slot_name = slot_innards.split("(")[0]
+            else:
+                current_slot_name = slot_innards
+                num_cards = -1
+            slots_by_name[current_slot_name] = Slot(current_slot_name, num_cards, [])
+            reading_mode = READING_MODE_SLOTS
+            continue
+
+        if reading_mode == READING_MODE_CUSTOM_CARDS:
+            custom_card_string += line.strip()
+        if reading_mode == READING_MODE_SETTINGS:
+            settings_string += line.strip()
+            # try to decode, if it's done, it'll decode, otherwise it'll fail and we continue
+            if "{" in line:
+                open_braces += 1
+            if "}" in line:
+                open_braces -= 1
+                if open_braces <= 0:
+                    try:
+                        # Get the set of allowed keys from the dataclass fields
+                        allowed_keys = set(DraftmancerSettings.__dataclass_fields__.keys())
+
+                        # Parse the JSON string into a dictionary
+                        settings_dict = json.loads(settings_string)
+
+                        # Filter the dictionary to only include allowed keys
+                        filtered_settings = {k: v for k, v in settings_dict.items() if k in allowed_keys}
+
+                        # Now safely instantiate the dataclass
+                        draftmancer_settings = DraftmancerSettings(**filtered_settings)
+                        reading_mode = ""
+                    except json.JSONDecodeError:
+                        continue
+        if reading_mode == READING_MODE_SLOTS:
+            if line.strip() == "":
+                continue
+            printing_id, count = card_list_helper.printing_id_and_count_from_card_list_line(line)
+            slots_by_name[current_slot_name].slot_cards.append(SlotCard(printing_id, count))
+            continue
+    
+    custom_cards_json = json.loads(custom_card_string)
+    printing_id_to_custom_card: dict[PrintingId, dict] = {}
+    for custom_card in custom_cards_json:
+        try:
+            input_name = custom_card['name']
+            input_set = custom_card['set']
+            input_collector_id = custom_card['collector_number']
+            id = id_helper.to_id(input_name)
+            printing_id = PrintingId(card_id=id, set_code=input_set, collector_id=input_collector_id)
+            lorcana_api.get_card_printing(printing_id)
+            printing_id_to_custom_card[printing_id] = custom_card
+        except KeyError:
+            raise UnidentifiedCardError(f"Unable to identify card from custom card entry:\n{json.dumps(custom_card)}")
+    draftmancer_file = DraftmancerFile(draftmancer_settings, printing_id_to_custom_card, slots_by_name, text_contents)
+    return draftmancer_file
+
+def read_draftmancer_file(file_path: str) -> DraftmancerFile:
     with open(file_path, encoding='utf8') as f:
-        reading_mode = ""
-        custom_card_string = ""
-        settings_string = ""
-        text_contents = ""
-        current_slot_name = ""
-        slots_by_name = dict[str, Slot]()
-        open_braces = 0
-        draftmancer_settings: DraftmancerSettings = None
-        for line in f:
-            text_contents += line
-            if "[CustomCards]" in line:
-                reading_mode = READING_MODE_CUSTOM_CARDS
-                continue
-            if "[Settings]" in line:
-                reading_mode = READING_MODE_SETTINGS
-                continue
-            if line.strip().startswith("[") and line.strip().endswith("]"):
-                slot_innards = line.strip().lstrip("[").rstrip("]")
-                if "(" in slot_innards:
-                    num_cards = int(slot_innards.split("(")[1].split(")")[0])
-                    current_slot_name = slot_innards.split("(")[0]
-                else:
-                    current_slot_name = slot_innards
-                    num_cards = -1
-                slots_by_name[current_slot_name] = Slot(current_slot_name, num_cards, [])
-                reading_mode = READING_MODE_SLOTS
-                continue
-
-            if reading_mode == READING_MODE_CUSTOM_CARDS:
-                custom_card_string += line.strip()
-            if reading_mode == READING_MODE_SETTINGS:
-                settings_string += line.strip()
-                # try to decode, if it's done, it'll decode, otherwise it'll fail and we continue
-                if "{" in line:
-                    open_braces += 1
-                if "}" in line:
-                    open_braces -= 1
-                    if open_braces <= 0:
-                        try:
-                            # Get the set of allowed keys from the dataclass fields
-                            allowed_keys = set(DraftmancerSettings.__dataclass_fields__.keys())
-
-                            # Parse the JSON string into a dictionary
-                            settings_dict = json.loads(settings_string)
-
-                            # Filter the dictionary to only include allowed keys
-                            filtered_settings = {k: v for k, v in settings_dict.items() if k in allowed_keys}
-
-                            # Now safely instantiate the dataclass
-                            draftmancer_settings = DraftmancerSettings(**filtered_settings)
-                            reading_mode = ""
-                        except json.JSONDecodeError:
-                            continue
-            if reading_mode == READING_MODE_SLOTS:
-                printing_id, count = card_list_helper.printing_id_and_count_from_card_list_line(line)
-                slots_by_name[current_slot_name].slot_cards.append(SlotCard(printing_id, count))
-                continue
-        
-        custom_cards_json = json.loads(custom_card_string)
-        printing_id_to_custom_card: dict[PrintingId, dict] = {}
-        for custom_card in custom_cards_json:
-            try:
-                input_name = custom_card['name']
-                input_set = custom_card['set']
-                input_collector_id = custom_card['collector_number']
-                id = id_helper.to_id(input_name)
-                printing_id = PrintingId(card_id=id, set_code=input_set, collector_id=input_collector_id)
-                lorcana_api.get_card_printing(printing_id)
-                printing_id_to_custom_card[printing_id] = custom_card
-            except KeyError:
-                raise UnidentifiedCardError(f"Unable to identify card from custom card entry:\n{json.dumps(custom_card)}")
-        draftmancer_file = DraftmancerFile(draftmancer_settings, printing_id_to_custom_card, slots_by_name, text_contents)
-        return draftmancer_file
+        return read_draftmancer_file_as_lines(f)
     return None
 
 def read_draftmancer_export(draftmancer_deck_export_file):

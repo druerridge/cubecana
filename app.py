@@ -11,7 +11,7 @@ from cubecana_server.cube_manager import CubecanaCube
 from cubecana_server.cube_manager import cube_manager
 from cubecana_server.retail_manager import GAME_MODE_DRAFT, retail_manager
 from cubecana_server import api
-from cubecana_server.format_analyzer import FormatAnalyzer
+from cubecana_server.format_analysis_manager import format_analysis_manager, FormatAnalysisManager
 from cubecana_server.cube_dao import MAX_CARD_LIST_LENGTH
 from cubecana_server import tabletop_simulator
 from cubecana_server.lorcast_api import lorcast_api as lorcana_api
@@ -256,12 +256,9 @@ def get_retail_set_analysis(set_id:str):
   
   # Parse the draftmancer file to get real data
   try:
-    analyzer = FormatAnalyzer()
-    analysis_data = analyzer.analyze_format(set.draftmancerFile)
-    
-    # Convert to proper API response structure but return flat format for frontend compatibility
-    response_data = create_flat_format_analysis_response(set_id, analysis_data)
-    return jsonify(response_data)
+    draftmancer_file: draftmancer.DraftmancerFile = draftmancer.read_draftmancer_file_as_string(set.draftmancerFile)
+    format_analysis = format_analysis_manager.analyze(retail_set_code=set_id, draftmancer_file=draftmancer_file, boosters_per_player=4, num_players=8)
+    return jsonify(format_analysis)
     
   except Exception as e:
     raise lcc_error.LccError(f"Failed to analyze set: {str(e)}", 500)

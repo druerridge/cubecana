@@ -43,7 +43,11 @@ class FormatAnalysisManager:
         for card_id, count_at_table in count_at_table_by_card_id.items():
             api_card = lorcana_api.get_api_card(card_id)
             for classification in api_card.classifications:
-                count_at_table_by_classification[classification][api_card.cost] = count_at_table_by_classification.setdefault(classification, {}).setdefault(api_card.cost, 0) + count_at_table
+                if classification not in count_at_table_by_classification:
+                    count_at_table_by_classification[classification] = {}
+                if api_card.cost not in count_at_table_by_classification[classification]:
+                    count_at_table_by_classification[classification][api_card.cost] = 0
+                count_at_table_by_classification[classification][api_card.cost] += count_at_table
         return count_at_table_by_classification
 
     def generate_willpower_distribution_by_cost(self, count_at_table_by_card_id) -> dict[int, dict[int, float]]:
@@ -51,7 +55,11 @@ class FormatAnalysisManager:
         for card_id, count_at_table in count_at_table_by_card_id.items():
             api_card = lorcana_api.get_api_card(card_id)
             if 'Character' in api_card.types:
-                count_at_table_by_willpower[api_card.cost][api_card.willpower] = count_at_table_by_willpower.setdefault(api_card.cost, {}).setdefault(api_card.willpower, 0) + count_at_table
+                if api_card.cost not in count_at_table_by_willpower:
+                    count_at_table_by_willpower[api_card.cost] = {}
+                if api_card.willpower not in count_at_table_by_willpower[api_card.cost]:
+                    count_at_table_by_willpower[api_card.cost][api_card.willpower] = 0
+                count_at_table_by_willpower[api_card.cost][api_card.willpower] += count_at_table
         return count_at_table_by_willpower
 
     def generate_strength_distribution_by_cost(self, count_at_table_by_card_id) -> dict[int, dict[int, float]]:
@@ -59,7 +67,11 @@ class FormatAnalysisManager:
         for card_id, count_at_table in count_at_table_by_card_id.items():
             api_card = lorcana_api.get_api_card(card_id)
             if 'Character' in api_card.types:
-                count_at_table_by_strength[api_card.cost][api_card.strength] = count_at_table_by_strength.setdefault(api_card.cost, {}).setdefault(api_card.strength, 0) + count_at_table
+                if api_card.cost not in count_at_table_by_strength:
+                    count_at_table_by_strength[api_card.cost] = {}
+                if api_card.strength not in count_at_table_by_strength[api_card.cost]:
+                    count_at_table_by_strength[api_card.cost][api_card.strength] = 0
+                count_at_table_by_strength[api_card.cost][api_card.strength] += count_at_table
         return count_at_table_by_strength
 
     def generate_cost_distribution(self, count_at_table_by_card_id):

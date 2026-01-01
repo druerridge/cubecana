@@ -20,8 +20,6 @@ function populateRetailSets(retailSets) {
             
             // Make the entire retail set item clickable
             const itemDiv = clone.getElementById("cube-element-div");
-            // TEMPORARILY DISABLED: Analysis functionality
-            /*
             itemDiv.addEventListener("click", function(event) {
                 // Don't navigate if user clicked on a button
                 if (event.target.tagName === 'BUTTON' || event.target.closest('button')) {
@@ -29,11 +27,10 @@ function populateRetailSets(retailSets) {
                 }
                 window.location.href = `/retail-set/${retailSet.id}/format-analysis`;
             });
-            */
             
-            // Add visual indication that analysis is temporarily disabled
-            itemDiv.style.cursor = 'default';
-            itemDiv.style.opacity = '0.7';
+            // Add visual indication that analysis is clickable
+            itemDiv.style.cursor = 'pointer';
+            itemDiv.style.opacity = '1.0';
 
             if (retailSet.availableGameModes.includes(GAME_MODE.DRAFT)) {
                 const draftButton = clone.getElementById("cube-element-draft")

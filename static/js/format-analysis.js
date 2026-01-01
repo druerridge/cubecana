@@ -76,21 +76,110 @@ async function loadSetData() {
 }
 
 function processAnalysisData(analysisData) {
+    // Convert new API response format to expected frontend format
     setData = {
-        cardTypes: analysisData.cardTypes,
-        traits: analysisData.traits,
-        strengthDistribution: analysisData.strengthDistribution,
-        willpowerDistribution: analysisData.willpowerDistribution,
-        traitCalculations: analysisData.traitCalculations,
-        traitInkCostDistributions: analysisData.traitInkCostDistributions,
-        chartData: analysisData.chartData,
-        settings: analysisData.settings
+        cardTypes: analysisData.countAtTableByCardType || {},
+        strengthDistribution: analysisData.strengthDistributionByCost || {},
+        willpowerDistribution: analysisData.willpowerDistributionByCost || {},
+        costDistribution: analysisData.costDistributionByClassification || {},
+        setId: analysisData.setId
     };
     
-    if (analysisData.settings) {
-        boostersPerPlayerInput.value = analysisData.settings.boostersPerPlayer;
-        maxPodSizeInput.value = analysisData.settings.playersCount;
+    // Extract traits from costDistributionByClassification keys
+    if (analysisData.costDistributionByClassification) {
+        setData.traits = Object.keys(analysisData.costDistributionByClassification);
+    } else {
+        setData.traits = [];
     }
+    
+    // Generate chart data from the API response
+    setData.chartData = generateChartDataFromResponse(analysisData);
+    
+    // Set default settings if not provided
+    setData.settings = {
+        boostersPerPlayer: 4,
+        playersCount: 8
+    };
+    
+    boostersPerPlayerInput.value = setData.settings.boostersPerPlayer;
+    maxPodSizeInput.value = setData.settings.playersCount;
+}
+
+function generateChartDataFromResponse(analysisData) {
+    const chartData = {};
+    
+    // Generate card type chart data
+    if (analysisData.countAtTableByCardType) {
+        chartData.cardTypeChart = {
+            labels: Object.keys(analysisData.countAtTableByCardType),
+            data: Object.values(analysisData.countAtTableByCardType)
+        };
+    }
+    
+    // Generate strength chart data
+    if (analysisData.strengthDistributionByCost) {
+        chartData.strengthChart = generateStackedChartData(analysisData.strengthDistributionByCost, 'Strength');
+    }
+    
+    // Generate willpower chart data
+    if (analysisData.willpowerDistributionByCost) {
+        chartData.willpowerChart = generateStackedChartData(analysisData.willpowerDistributionByCost, 'Willpower');
+    }
+    
+    // Generate trait ink cost distributions for trait analysis
+    chartData.traitInkCostDistributions = {};
+    if (analysisData.costDistributionByClassification) {
+        Object.keys(analysisData.costDistributionByClassification).forEach(trait => {
+            chartData.traitInkCostDistributions[trait] = analysisData.costDistributionByClassification[trait];
+        });
+    }
+    
+    return chartData;
+}
+
+function generateStackedChartData(distributionByCost, label) {
+    // Get all ink costs (0-8+)
+    const inkCosts = ['0', '1', '2', '3', '4', '5', '6', '7', '8+'];
+    
+    // Get all unique stat values
+    const allStatValues = new Set();
+    Object.values(distributionByCost).forEach(costData => {
+        Object.keys(costData).forEach(statValue => {
+            allStatValues.add(parseInt(statValue));
+        });
+    });
+    
+    const sortedStatValues = Array.from(allStatValues).sort((a, b) => a - b);
+    
+    // Generate datasets for each stat value
+    const datasets = sortedStatValues.map((statValue, index) => {
+        const data = inkCosts.map(cost => {
+            const costKey = cost === '8+' ? '8' : cost;
+            const costData = distributionByCost[costKey] || {};
+            return costData[statValue.toString()] || 0;
+        });
+        
+        return {
+            label: `${label} ${statValue}`,
+            data: data,
+            backgroundColor: generateColor(index),
+            borderColor: '#333',
+            borderWidth: 1
+        };
+    });
+    
+    return {
+        labels: inkCosts,
+        datasets: datasets
+    };
+}
+
+function generateColor(index) {
+    const colors = [
+        '#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF', '#FF9F40',
+        '#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF', '#FF9F40'
+    ];
+    return colors[index % colors.length];
 }
 
 function initializeCharts() {
@@ -303,21 +392,21 @@ function updateTraitAnalysis() {
     const selectedTrait = traitSelect.value;
     console.log('updateTraitAnalysis called with trait:', selectedTrait);
     
-    if (!selectedTrait || !setData || !setData.traitCalculations) {
+    if (!selectedTrait || !setData || !setData.costDistribution) {
         console.log('No trait selected or no data available');
         return;
     }
 
-    const traitStats = setData.traitCalculations[selectedTrait];
-    if (!traitStats) {
+    const traitCostData = setData.costDistribution[selectedTrait];
+    if (!traitCostData) {
         console.log(`No statistics found for trait "${selectedTrait}"`);
         return;
     }
 
-    const maxPodSize = parseInt(maxPodSizeInput.value);
-    
-    const totalExpectedAtTable = traitStats.expectedAtTable;
-    const totalExpectedPerSeat = traitStats.expectedInSeat;
+    // Calculate total expected at table and per seat from cost distribution
+    const totalExpectedAtTable = Object.values(traitCostData).reduce((sum, count) => sum + count, 0);
+    const maxPodSize = parseInt(maxPodSizeInput.value) || 8;
+    const totalExpectedPerSeat = totalExpectedAtTable / maxPodSize;
     
     console.log(`Expected at table: ${totalExpectedAtTable.toFixed(1)}, per seat: ${totalExpectedPerSeat.toFixed(1)}`);
 
@@ -349,15 +438,15 @@ function updateTraitInkCostChart(selectedTrait) {
         return;
     }
 
-    const activeInkCosts = setData.chartData.strengthChart.labels;
+    const inkCosts = ['0', '1', '2', '3', '4', '5', '6', '7', '8+'];
     const traitData = traitDistributions[selectedTrait];
     
-    const inkCostCounts = activeInkCosts.map(label => {
+    const inkCostCounts = inkCosts.map(label => {
         const cost = label === '8+' ? '8' : label;
         return traitData[cost] || 0;
     });
 
-    traitInkCostChart.data.labels = activeInkCosts;
+    traitInkCostChart.data.labels = inkCosts;
     traitInkCostChart.data.datasets[0].data = inkCostCounts;
     traitInkCostChart.data.datasets[0].label = `Cards with "${selectedTrait}" trait`;
     traitInkCostChart.options.plugins.title.text = `"${selectedTrait}" Cards by Ink Cost`;

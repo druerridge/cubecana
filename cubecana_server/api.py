@@ -199,12 +199,10 @@ class FormatAnalysisSettings:
 @dataclass(frozen=True)
 class FormatAnalysisResponse:
     setId: str
-    cards: List[FormatAnalysisCard]
-    cardTypes: dict[str, int]
-    traits: List[str]
-    strengthDistribution: dict[str, dict[str, int]]
-    willpowerDistribution: dict[str, dict[str, int]]
-    settings: FormatAnalysisSettings
+    countAtTableByCardType: dict[str, float]
+    strengthDistributionByCost: dict[int, dict[str, float]]
+    willpowerDistributionByCost: dict[int, dict[str, float]]
+    costDistributionByClassification: dict[str, dict[int, float]]
     
     def toJSON(self):
         return json.dumps(

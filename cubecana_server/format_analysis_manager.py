@@ -20,48 +20,49 @@ class FormatAnalysisManager:
         total_cards_by_slot_name = self.generate_total_cards_by_slot_name(draftmancer_file)
         count_at_table_by_card_id = self.generate_count_at_table_by_card_id(draftmancer_file, boosters_at_table, total_cards_by_slot_name)
         count_at_table_by_card_type = self.generate_count_at_table_by_card_type(count_at_table_by_card_id)
-        count_at_table_by_ink_cost = self.generate_count_at_table_by_ink_cost(count_at_table_by_card_id)
-        count_at_table_by_strength = self.generate_count_at_table_by_strength(count_at_table_by_card_id)
-        count_at_table_by_willpower = self.generate_count_at_table_by_willpower(count_at_table_by_card_id)
-        count_at_table_by_classification = self.generate_count_at_table_by_classification(count_at_table_by_card_id)
+        count_at_table_by_ink_cost = self.generate_cost_distribution(count_at_table_by_card_id)
+        strength_distribution_by_cost = self.generate_strength_distribution_by_cost(count_at_table_by_card_id)
+        willpower_distribution_by_cost = self.generate_willpower_distribution_by_cost(count_at_table_by_card_id)
+        cost_distribution_by_classification = self.generate_cost_distribution_by_classification(count_at_table_by_card_id)
 
-        format_analysis_response = {
-            'setId': retail_set_code,
-            'countAtTableByCardId': count_at_table_by_card_id,
-            'countAtTableByCardType': count_at_table_by_card_type,
-            'countAtTableByInkCost': count_at_table_by_ink_cost,
-            'countAtTableByStrength': count_at_table_by_strength,
-            'countAtTableByWillpower': count_at_table_by_willpower,
-            'countAtTableByClassification': count_at_table_by_classification,
-        }
-        self.cache[retail_set_code] = format_analysis_response
+        format_analysis_response: FormatAnalysisResponse = FormatAnalysisResponse(
+            setId = retail_set_code,
+            # countAtTableByCardId = count_at_table_by_card_id, # for debugging purposes
+            # countAtTableByInkCost = count_at_table_by_ink_cost, # for debugging purposes
+            countAtTableByCardType = count_at_table_by_card_type,
+            strengthDistributionByCost = strength_distribution_by_cost,
+            willpowerDistributionByCost = willpower_distribution_by_cost,
+            costDistributionByClassification = cost_distribution_by_classification,
+            # countAtTableByRatingByInkCost = count_at_table_by_rating_by_ink_cost,
+        )
+        # self.cache[retail_set_code] = format_analysis_response
         return format_analysis_response
 
-    def generate_count_at_table_by_classification(self, count_at_table_by_card_id):
-        count_at_table_by_classification:dict[str, float] = {}
+    def generate_cost_distribution_by_classification(self, count_at_table_by_card_id) -> dict[str, dict[int, float]]:
+        count_at_table_by_classification:dict[str, dict[int, float]] = {}
         for card_id, count_at_table in count_at_table_by_card_id.items():
             api_card = lorcana_api.get_api_card(card_id)
             for classification in api_card.classifications:
-                count_at_table_by_classification[classification] = count_at_table_by_classification.get(classification, 0) + count_at_table
+                count_at_table_by_classification[classification][api_card.cost] = count_at_table_by_classification.setdefault(classification, {}).setdefault(api_card.cost, 0) + count_at_table
         return count_at_table_by_classification
 
-    def generate_count_at_table_by_willpower(self, count_at_table_by_card_id):
-        count_at_table_by_willpower:dict[int, float] = {}
+    def generate_willpower_distribution_by_cost(self, count_at_table_by_card_id) -> dict[int, dict[int, float]]:
+        count_at_table_by_willpower:dict[int, dict[int, float]] = {}
         for card_id, count_at_table in count_at_table_by_card_id.items():
             api_card = lorcana_api.get_api_card(card_id)
             if 'Character' in api_card.types:
-                count_at_table_by_willpower[api_card.willpower] = count_at_table_by_willpower.get(api_card.willpower, 0) + count_at_table
+                count_at_table_by_willpower[api_card.cost][api_card.willpower] = count_at_table_by_willpower.setdefault(api_card.cost, {}).setdefault(api_card.willpower, 0) + count_at_table
         return count_at_table_by_willpower
 
-    def generate_count_at_table_by_strength(self, count_at_table_by_card_id):
-        count_at_table_by_strength:dict[int, float] = {}
+    def generate_strength_distribution_by_cost(self, count_at_table_by_card_id) -> dict[int, dict[int, float]]:
+        count_at_table_by_strength:dict[int, dict[int, float]] = {}
         for card_id, count_at_table in count_at_table_by_card_id.items():
             api_card = lorcana_api.get_api_card(card_id)
             if 'Character' in api_card.types:
-                count_at_table_by_strength[api_card.strength] = count_at_table_by_strength.get(api_card.strength, 0) + count_at_table
+                count_at_table_by_strength[api_card.cost][api_card.strength] = count_at_table_by_strength.setdefault(api_card.cost, {}).setdefault(api_card.strength, 0) + count_at_table
         return count_at_table_by_strength
 
-    def generate_count_at_table_by_ink_cost(self, count_at_table_by_card_id):
+    def generate_cost_distribution(self, count_at_table_by_card_id):
         count_at_table_by_ink_cost:dict[int, float] = {}
         for card_id, count_at_table in count_at_table_by_card_id.items():
             api_card = lorcana_api.get_api_card(card_id)

@@ -39,8 +39,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function setupEventListeners() {
-    maxPodSizeInput.addEventListener('change', updateTraitAnalysis);
-    boostersPerPlayerInput.addEventListener('change', updateTraitAnalysis);
+    if (maxPodSizeInput) {
+        maxPodSizeInput.addEventListener('change', updateTraitAnalysis);
+    }
+    if (boostersPerPlayerInput) {
+        boostersPerPlayerInput.addEventListener('change', updateTraitAnalysis);
+    }
 }
 
 async function loadSetData() {
@@ -101,8 +105,12 @@ function processAnalysisData(analysisData) {
         playersCount: 8
     };
     
-    boostersPerPlayerInput.value = setData.settings.boostersPerPlayer;
-    maxPodSizeInput.value = setData.settings.playersCount;
+    if (boostersPerPlayerInput) {
+        boostersPerPlayerInput.value = setData.settings.boostersPerPlayer;
+    }
+    if (maxPodSizeInput) {
+        maxPodSizeInput.value = setData.settings.playersCount;
+    }
 }
 
 function generateChartDataFromResponse(analysisData) {
@@ -443,7 +451,7 @@ function updateTraitAnalysis() {
 
     // Calculate total expected at table and per seat from cost distribution
     const totalExpectedAtTable = Object.values(traitCostData).reduce((sum, count) => sum + count, 0);
-    const maxPodSize = parseInt(maxPodSizeInput.value) || 8;
+    const maxPodSize = maxPodSizeInput ? parseInt(maxPodSizeInput.value) || 8 : 8;
     const totalExpectedPerSeat = totalExpectedAtTable / maxPodSize;
     
     console.log(`Expected at table: ${totalExpectedAtTable.toFixed(1)}, per seat: ${totalExpectedPerSeat.toFixed(1)}`);

@@ -257,7 +257,7 @@ def get_retail_set_analysis(set_id:str):
   # Parse the draftmancer file to get real data
   try:
     draftmancer_file: draftmancer.DraftmancerFile = draftmancer.read_draftmancer_file_as_string(set.draftmancerFile)
-    format_analysis = format_analysis_manager.analyze(retail_set_code=set_id, draftmancer_file=draftmancer_file, boosters_per_player=4, num_players=8)
+    format_analysis = format_analysis_manager.analyze(retail_set_code=set_id, draftmancer_file=draftmancer_file, boosters_per_player=request.args.get('boostersPerPlayer', 4, type=int), num_players=request.args.get('numPlayers', 8, type=int))
     return jsonify(format_analysis)
     
   except Exception as e:

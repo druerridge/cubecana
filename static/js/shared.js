@@ -1,5 +1,5 @@
-// https://stackoverflow.com/questions/5717093/check-if-a-javascript-string-is-a-url
 function isValidHttpUrl(string) {
+    // https://stackoverflow.com/questions/5717093/check-if-a-javascript-string-is-a-url
     let url;
     
     try {
@@ -11,14 +11,14 @@ function isValidHttpUrl(string) {
     return url.protocol === "http:" || url.protocol === "https:";
 }
 
-let validHosts = ["dreamborn.ink", "lorcana.gg"];
 function isValidCardlistUrl(urlString) {
+    let validCubeHosts = ["dreamborn.ink", "lorcana.gg"];
     if (!isValidHttpUrl(urlString)) {
         return false;
     } 
 
     let url = new URL(urlString);
-    if (!validHosts.includes(url.host)) {
+    if (!validCubeHosts.includes(url.host)) {
         return false;
     }
     

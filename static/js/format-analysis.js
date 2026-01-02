@@ -10,6 +10,7 @@ let draftmancerData = null;
 
 const maxPodSizeInput = document.getElementById('maxPodSize');
 const boostersPerPlayerInput = document.getElementById('boostersPerPlayer');
+const cardsPerPackInput = document.getElementById('cardsPerPack');
 const traitSelect = document.getElementById('traitSelect');
 const traitTable = document.getElementById('traitTable');
 
@@ -48,6 +49,7 @@ function getUrlParam(name, defaultValue) {
 function setInputValuesFromUrlParams() {
     const boostersPerPlayer = getUrlParam('boostersPerPlayer', 4);
     const numPlayers = getUrlParam('numPlayers', 8);
+    const cardsPerPack = getUrlParam('cardsPerPack', 12);
     
     if (boostersPerPlayerInput) {
         boostersPerPlayerInput.value = boostersPerPlayer;
@@ -55,15 +57,20 @@ function setInputValuesFromUrlParams() {
     if (maxPodSizeInput) {
         maxPodSizeInput.value = numPlayers;
     }
+    if (cardsPerPackInput) {
+        cardsPerPackInput.value = cardsPerPack;
+    }
 }
 
 function reloadPageWithNewParams() {
     const boostersPerPlayer = boostersPerPlayerInput ? parseInt(boostersPerPlayerInput.value) || 4 : 4;
     const numPlayers = maxPodSizeInput ? parseInt(maxPodSizeInput.value) || 8 : 8;
+    const cardsPerPack = cardsPerPackInput ? parseInt(cardsPerPackInput.value) || 12 : 12;
     
     const url = new URL(window.location);
     url.searchParams.set('boostersPerPlayer', boostersPerPlayer);
     url.searchParams.set('numPlayers', numPlayers);
+    url.searchParams.set('cardsPerPack', cardsPerPack);
     
     window.location.href = url.toString();
 }
@@ -75,13 +82,17 @@ function setupEventListeners() {
     if (boostersPerPlayerInput) {
         boostersPerPlayerInput.addEventListener('change', reloadPageWithNewParams);
     }
+    if (cardsPerPackInput && !cardsPerPackInput.disabled) {
+        cardsPerPackInput.addEventListener('change', reloadPageWithNewParams);
+    }
 }
 
 async function loadSetData() {
     try {
         const boostersPerPlayer = getUrlParam('boostersPerPlayer', 4);
         const numPlayers = getUrlParam('numPlayers', 8);
-        const analysisUrl = `${window.location.origin}/api/retail_sets/${setId}/analysis?boostersPerPlayer=${boostersPerPlayer}&numPlayers=${numPlayers}`;
+        const cardsPerPack = getUrlParam('cardsPerPack', 12);
+        const analysisUrl = `${window.location.origin}/api/retail_sets/${setId}/analysis?boostersPerPlayer=${boostersPerPlayer}&numPlayers=${numPlayers}&cardsPerPack=${cardsPerPack}`;
         
         request(analysisUrl, null, (responseText) => {
             const analysisData = JSON.parse(responseText);
@@ -134,7 +145,8 @@ function processAnalysisData(analysisData) {
     // Set default settings if not provided  
     setData.settings = {
         boostersPerPlayer: getUrlParam('boostersPerPlayer', 4),
-        playersCount: getUrlParam('numPlayers', 8)
+        playersCount: getUrlParam('numPlayers', 8),
+        cardsPerPack: getUrlParam('cardsPerPack', 12)
     };
 }
 

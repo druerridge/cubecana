@@ -474,18 +474,33 @@ function updateTraitAnalysis() {
         return;
     }
 
-    // Calculate total seen at table and per seat from cost distribution
-    const totalSeenAtTable = Object.values(traitCostData).reduce((sum, count) => sum + count, 0);
-    const totalSeenPerSeat = totalSeenAtTable * 0.71; // 71% of seen at table
+    const boostersPerPlayer = getUrlParam('boostersPerPlayer', 4);
+    const numPlayers = getUrlParam('numPlayers', 8);
+    const cardsPerBooster = getUrlParam('cardsPerBooster', 12);
+
+    const allCardsWithTraitSeenAtTable = Object.values(traitCostData).reduce((sum, count) => sum + count, 0);
+    console.log(`allCardsWithTraitSeenAtTable  "${allCardsWithTraitSeenAtTable}"`);
+
+    const allCardsSeenAtTable = boostersPerPlayer * numPlayers * cardsPerBooster;
+    console.log(`allCardsSeenAtTable  "${allCardsSeenAtTable}"`);
+    const numCardsNotSeenPerPackInSeat = (numPlayers-1)*(numPlayers)/2;
+    console.log(`numCardsNotSeenPerPackInSeat  "${numCardsNotSeenPerPackInSeat}"`);
+    const numCardsNotSeenInSeatPerDraft = numCardsNotSeenPerPackInSeat * boostersPerPlayer;
+    console.log(`numCardsNotSeenInSeatPerDraft  "${numCardsNotSeenInSeatPerDraft}"`);
+    const numCardsSeenPerSeat = allCardsSeenAtTable - numCardsNotSeenInSeatPerDraft;
+    console.log(`numCardsSeenPerSeat: ${numCardsSeenPerSeat.toFixed(1)}`);
+    const seenInSeatToAllCardsRatio = numCardsSeenPerSeat / allCardsSeenAtTable;
+    console.log(`seenToAllCardsRatio: ${seenInSeatToAllCardsRatio.toFixed(3)}`);
+    const numCardsWithTraitSeenPerSeat = allCardsWithTraitSeenAtTable * seenInSeatToAllCardsRatio;
     
-    console.log(`Seen at table: ${totalSeenAtTable.toFixed(1)}, per seat: ${totalSeenPerSeat.toFixed(1)}`);
+    console.log(`Seen at table: ${allCardsWithTraitSeenAtTable.toFixed(1)}, per seat: ${numCardsWithTraitSeenPerSeat.toFixed(1)}`);
 
     const tbody = traitTable.querySelector('tbody');
     const existingRow = tbody.querySelector('tr');
     const cells = existingRow.querySelectorAll('td');
     
-    cells[1].textContent = totalSeenAtTable.toFixed(1);
-    cells[2].textContent = totalSeenPerSeat.toFixed(1);
+    cells[1].textContent = allCardsWithTraitSeenAtTable.toFixed(1);
+    cells[2].textContent = numCardsWithTraitSeenPerSeat.toFixed(1);
     
     updateTraitInkCostChart(selectedTrait);
 }

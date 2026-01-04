@@ -6,6 +6,7 @@ const setId = !isCubeAnalysis && urlParts.includes('retail-set') ? urlParts[urlP
 let cardTypeChart = null;
 let strengthChart = null;
 let willpowerChart = null;
+let loreChart = null;
 let traitInkCostChart = null;
 let setData = null;
 let draftmancerData = null;
@@ -193,6 +194,11 @@ function generateChartDataFromResponse(analysisData) {
         chartData.willpowerChart = generateStackedChartData(analysisData.willpowerDistributionByCost, 'Willpower');
     }
     
+    // Generate lore chart data
+    if (analysisData.loreDistributionByCost) {
+        chartData.loreChart = generateStackedChartData(analysisData.loreDistributionByCost, 'Lore');
+    }
+    
     // Generate trait ink cost distributions for classification analysis
     chartData.traitInkCostDistributions = {};
     if (analysisData.costDistributionByClassification) {
@@ -232,6 +238,8 @@ function generateStackedChartData(distributionByCost, label) {
             backgroundColor = generateStrengthGradientColor(index, sortedStatValues.length);
         } else if (label === 'Willpower') {
             backgroundColor = generateWillpowerGradientColor(index, sortedStatValues.length);
+        } else if (label === 'Lore') {
+            backgroundColor = generateLoreGradientColor(index, sortedStatValues.length);
         } else {
             backgroundColor = generateColor(index);
         }
@@ -283,6 +291,20 @@ function generateWillpowerGradientColor(index, total) {
     const red = Math.round(255 * (1 - ratio));
     const green = 255;
     const blue = 0;
+    
+    return `rgb(${red}, ${green}, ${blue})`;
+}
+
+function generateLoreGradientColor(index, total) {
+    // Create gradient from blue (lowest lore) to pink (highest lore)
+    if (total <= 1) return '#0080FF'; // Pure blue for single value
+    
+    const ratio = index / (total - 1); // 0 to 1
+    
+    // Interpolate from blue (0,128,255) to pink (255,192,203)
+    const red = Math.round(0 + (255 - 0) * ratio);
+    const green = Math.round(128 + (192 - 128) * ratio);
+    const blue = Math.round(255 + (203 - 255) * ratio);
     
     return `rgb(${red}, ${green}, ${blue})`;
 }
@@ -395,6 +417,46 @@ function initializeCharts() {
         }
     });
 
+    const loreCtx = document.getElementById('loreChart').getContext('2d');
+    loreChart = new Chart(loreCtx, {
+        type: 'bar',
+        data: {
+            labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8+'],
+            datasets: []
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                x: {
+                    stacked: true,
+                    title: {
+                        display: true,
+                        text: 'Ink Cost',
+                        color: 'white'
+                    },
+                    ticks: { color: 'white' },
+                    grid: { color: '#555' }
+                },
+                y: {
+                    stacked: true,
+                    title: {
+                        display: true,
+                        text: 'Number of Cards',
+                        color: 'white'
+                    },
+                    ticks: { color: 'white' },
+                    grid: { color: '#555' }
+                }
+            },
+            plugins: {
+                legend: {
+                    labels: { color: 'white' }
+                }
+            }
+        }
+    });
+
     const traitInkCostCtx = document.getElementById('traitInkCostChart').getContext('2d');
     traitInkCostChart = new Chart(traitInkCostCtx, {
         type: 'bar',
@@ -451,6 +513,7 @@ function updateAllCharts() {
     updateCardTypeChart();
     updateStrengthChart();
     updateWillpowerChart();
+    updateLoreChart();
 }
 
 function getActiveInkCosts() {
@@ -620,5 +683,25 @@ function updateWillpowerChart() {
         }
         
         willpowerChart.update();
+    }
+}
+
+function updateLoreChart() {
+    if (!setData || !loreChart) return;
+
+    if (setData.chartData && setData.chartData.loreChart) {
+        const chartConfig = setData.chartData.loreChart;
+        
+        loreChart.data.labels = chartConfig.labels;
+        loreChart.data.datasets = chartConfig.datasets;
+        
+        if (chartConfig.options && chartConfig.options.scales && chartConfig.options.scales.y) {
+            const yScale = chartConfig.options.scales.y;
+            if (yScale.suggestedMax !== null && yScale.suggestedMax !== undefined) {
+                loreChart.options.scales.y.suggestedMax = yScale.suggestedMax;
+            }
+        }
+        
+        loreChart.update();
     }
 }

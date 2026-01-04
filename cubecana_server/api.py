@@ -198,7 +198,6 @@ class FormatAnalysisSettings:
 
 @dataclass(frozen=True)
 class FormatAnalysisResponse:
-    setId: str
     countAtTableByCardType: dict[str, float]
     strengthDistributionByCost: dict[int, dict[str, float]]
     willpowerDistributionByCost: dict[int, dict[str, float]]

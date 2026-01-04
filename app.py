@@ -1,4 +1,5 @@
 import json
+import math
 from flask import Flask, render_template, request, Response, send_from_directory, redirect
 from flask import jsonify
 from cubecana_server import draftmancer
@@ -90,6 +91,13 @@ def serve_view_cube(cube_id):
     raise lcc_error.CubeNotFoundError("Cube not found")
   cube_manager.increment_page_views(cube_id)
   return render_template('view-cube.html')
+
+@app.route('/cube/<string:cube_id>/analysis', methods=['GET'])
+def serve_view_cube_analysis(cube_id):
+  cube = cube_manager.get_cube(cube_id)
+  if not cube:
+    raise lcc_error.CubeNotFoundError("Cube not found")
+  return render_template('format-analysis.html')
 
 @app.route('/cube/<string:cube_id>/inspect-list', methods=['GET'])
 def serve_inspect_list(cube_id):
@@ -257,7 +265,7 @@ def get_retail_set_analysis(set_id:str):
   # Parse the draftmancer file to get real data
   try:
     draftmancer_file: draftmancer.DraftmancerFile = draftmancer.read_draftmancer_file_as_string(set.draftmancerFile)
-    format_analysis = format_analysis_manager.analyze(retail_set_code=set_id, draftmancer_file=draftmancer_file, boosters_per_player=request.args.get('boostersPerPlayer', 4, type=int), num_players=request.args.get('numPlayers', 8, type=int))
+    format_analysis = format_analysis_manager.analyze(draftmancer_file=draftmancer_file, boosters_per_player=request.args.get('boostersPerPlayer', 4, type=int), num_players=request.args.get('numPlayers', 8, type=int))
     return jsonify(format_analysis)
     
   except Exception as e:
@@ -442,6 +450,17 @@ def delete_cube(cube_id):
   if not cube_manager.delete_cube(cube_id, edit_secret):
     return Response(401)
   return Response(status=200)
+
+@app.route('/api/cube/<string:cube_id>/analysis', methods=['GET'])
+def handle_cube_analysis(cube_id:str):
+  cube = cube_manager.get_cube(cube_id)
+  if not cube:
+    return Response(status=404)
+  draftmancer_file_str = draftmancer.generate_draftmancer_file_from_cube(cube)
+  draftmancer_file = draftmancer.read_draftmancer_file_as_string(draftmancer_file_str)
+  max_players = math.floor( cube.card_count() / (cube.settings.boosters_per_player * cube.settings.cards_per_booster) )
+  format_analysis = format_analysis_manager.analyze(draftmancer_file, cube.settings.boosters_per_player, max_players)
+  return jsonify(format_analysis)
 
 @app.errorhandler(lcc_error.UnauthorizedError)
 def handle_401_exception(error):

@@ -12,6 +12,7 @@ const currentUrl = window.location.href;
 const cubeId = currentUrl.split('/cube/')[1].split("/draft")[0];
 const draftNowButton = document.getElementById('draft-now-button');
 const viewListButton = document.getElementById('view-list-button');
+const analysisButton = document.getElementById('analysis-button');
 const cubeTitle = document.getElementById('cube-title');
 const authorText = document.getElementById('author-text');
 const cardCount = document.getElementById("element-cards")
@@ -30,10 +31,12 @@ const instructionsSection = document.getElementById("instructions")
 const apiCubeUrl = `/api/cube/${cubeId}`
 const draftmancerFileUrl = `/api/cube/${cubeId}/draftmancerFile`
 const cubeInspectListUrl = `/cube/${cubeId}/inspect-list`
+const cubeAnalysisUrl = `/cube/${cubeId}/analysis`
 
 request(apiCubeUrl, null, (responseText) => {
     let response = JSON.parse(responseText);
     draftNowButton.disabled = false;
+    analysisButton.disabled = false;
     if (isValidCardlistUrl(response.link)) {
         viewListButton.disabled = false
     }
@@ -100,6 +103,10 @@ request(apiCubeUrl, null, (responseText) => {
 
     viewListButton.addEventListener('click', () => {
         window.open(cubeInspectListUrl);
+    });
+
+    analysisButton.addEventListener('click', () => {
+        window.location.href = cubeAnalysisUrl;
     });
 
     // Add copy list functionality

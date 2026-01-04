@@ -378,6 +378,22 @@
             transform: none;
             box-shadow: none;
         }
+        #analysis-button {
+            background: linear-gradient(45deg, #43A047, #66BB6A);
+            color: white;
+            box-shadow: 0 4px 15px rgba(67, 160, 71, 0.3);
+        }
+        #analysis-button:hover {
+            background: linear-gradient(45deg, #388E3C, #4CAF50);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(67, 160, 71, 0.4);
+        }
+        #analysis-button:disabled {
+            background: #666;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
         .copy-button {
             font-size: 16px;
             padding: 12px 24px;
@@ -469,6 +485,7 @@
             <div class="button-row">
                 <button id="draft-now-button" class="action-button" disabled>Draft Now</button>
                 <button id="view-list-button" class="action-button" disabled>View Dreamborn</button>
+                <button id="analysis-button" class="action-button" disabled>Analysis</button>
             </div>
             <div class="language-info">
                 <p>

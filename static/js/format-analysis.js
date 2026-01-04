@@ -1,5 +1,7 @@
 const urlParts = window.location.pathname.split('/');
-const setId = urlParts[urlParts.indexOf('retail-set') + 1];
+const isCubeAnalysis = urlParts.includes('cube') && urlParts.includes('analysis');
+const cubeId = isCubeAnalysis ? urlParts[urlParts.indexOf('cube') + 1] : null;
+const setId = !isCubeAnalysis && urlParts.includes('retail-set') ? urlParts[urlParts.indexOf('retail-set') + 1] : null;
 
 let cardTypeChart = null;
 let strengthChart = null;
@@ -35,10 +37,28 @@ const sampleSetData = {
 };
 
 document.addEventListener('DOMContentLoaded', function() {
+    setupDynamicBackButton();
     setInputValuesFromUrlParams();
-    loadSetData();
+    loadFormatData();
     setupEventListeners();
 });
+
+function setupDynamicBackButton() {
+    const backLink = document.getElementById('back-link');
+    const analysisTitle = document.getElementById('analysis-title');
+    
+    // Check if this is a cube analysis page
+    if (isCubeAnalysis && cubeId) {
+        backLink.href = `/cube/${cubeId}`;
+        backLink.textContent = '← Back to Cube';
+        analysisTitle.textContent = `Cube ID: ${cubeId}`;
+    } else {
+        backLink.href = "/retail-directory";
+        backLink.textContent = '← Back to Retail Directory';
+        analysisTitle.textContent = 'Retail Set: ' + (setId ? setId : 'Unknown');
+    }
+    // For retail sets, keep the default values (already set in HTML)
+}
 
 function getUrlParam(name, defaultValue) {
     const urlParams = new URLSearchParams(window.location.search);
@@ -87,13 +107,16 @@ function setupEventListeners() {
     }
 }
 
-async function loadSetData() {
+async function loadFormatData() {
     try {
         const boostersPerPlayer = getUrlParam('boostersPerPlayer', 4);
         const numPlayers = getUrlParam('numPlayers', 8);
         const cardsPerPack = getUrlParam('cardsPerPack', 12);
-        const analysisUrl = `${window.location.origin}/api/retail_sets/${setId}/analysis?boostersPerPlayer=${boostersPerPlayer}&numPlayers=${numPlayers}&cardsPerPack=${cardsPerPack}`;
-        
+        let analysisUrl = `${window.location.origin}/api/retail_sets/${setId}/analysis?boostersPerPlayer=${boostersPerPlayer}&numPlayers=${numPlayers}&cardsPerPack=${cardsPerPack}`;
+        if (isCubeAnalysis && cubeId) {
+            analysisUrl = `/api/cube/${cubeId}/analysis?boostersPerPlayer=${boostersPerPlayer}&numPlayers=${numPlayers}&cardsPerPack=${cardsPerPack}`;
+        }
+
         request(analysisUrl, null, (responseText) => {
             const analysisData = JSON.parse(responseText);
             processAnalysisData(analysisData);
@@ -129,7 +152,6 @@ function processAnalysisData(analysisData) {
         strengthDistribution: analysisData.strengthDistributionByCost || {},
         willpowerDistribution: analysisData.willpowerDistributionByCost || {},
         costDistribution: analysisData.costDistributionByClassification || {},
-        setId: analysisData.setId
     };
     
     // Extract traits from costDistributionByClassification keys

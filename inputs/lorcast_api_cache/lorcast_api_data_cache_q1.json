@@ -24,9 +24,9 @@
         "text": "",
         "keywords": [],
         "move_cost": null,
-        "strength": null,
-        "willpower": null,
-        "lore": null,
+        "strength": 2,
+        "willpower": 3,
+        "lore": 1,
         "rarity": "Common",
         "illustrators": [
             ""
@@ -70,9 +70,9 @@
         "text": "",
         "keywords": [],
         "move_cost": null,
-        "strength": null,
-        "willpower": null,
-        "lore": null,
+        "strength": 2,
+        "willpower": 5,
+        "lore": 1,
         "rarity": "Common",
         "illustrators": [
             ""
@@ -116,9 +116,9 @@
         "text": "",
         "keywords": [],
         "move_cost": null,
-        "strength": null,
-        "willpower": null,
-        "lore": null,
+        "strength": 4,
+        "willpower": 4,
+        "lore": 1,
         "rarity": "Common",
         "illustrators": [
             ""
@@ -162,9 +162,9 @@
         "text": "",
         "keywords": [],
         "move_cost": null,
-        "strength": null,
-        "willpower": null,
-        "lore": null,
+        "strength": 2,
+        "willpower": 4,
+        "lore": 1,
         "rarity": "Common",
         "illustrators": [
             ""
@@ -208,9 +208,9 @@
         "text": "",
         "keywords": [],
         "move_cost": null,
-        "strength": null,
-        "willpower": null,
-        "lore": null,
+        "strength": 3,
+        "willpower": 5,
+        "lore": 1,
         "rarity": "Common",
         "illustrators": [
             ""
@@ -254,9 +254,9 @@
         "text": "",
         "keywords": [],
         "move_cost": null,
-        "strength": null,
-        "willpower": null,
-        "lore": null,
+        "strength": 5,
+        "willpower": 3,
+        "lore": 1,
         "rarity": "Common",
         "illustrators": [
             ""
@@ -300,9 +300,9 @@
         "text": "",
         "keywords": [],
         "move_cost": null,
-        "strength": null,
-        "willpower": null,
-        "lore": null,
+        "strength": 4,
+        "willpower": 4,
+        "lore": 2,
         "rarity": "Common",
         "illustrators": [
             ""
@@ -346,9 +346,9 @@
         "text": "",
         "keywords": [],
         "move_cost": null,
-        "strength": null,
-        "willpower": null,
-        "lore": null,
+        "strength": 5,
+        "willpower": 5,
+        "lore": 2,
         "rarity": "Common",
         "illustrators": [
             ""
@@ -392,9 +392,9 @@
         "text": "",
         "keywords": [],
         "move_cost": null,
-        "strength": null,
-        "willpower": null,
-        "lore": null,
+        "strength": 3,
+        "willpower": 6,
+        "lore": 2,
         "rarity": "Common",
         "illustrators": [
             ""
@@ -438,9 +438,9 @@
         "text": "",
         "keywords": [],
         "move_cost": null,
-        "strength": null,
-        "willpower": null,
-        "lore": null,
+        "strength": 4,
+        "willpower": 7,
+        "lore": 1,
         "rarity": "Common",
         "illustrators": [
             ""
@@ -484,9 +484,9 @@
         "text": "",
         "keywords": [],
         "move_cost": null,
-        "strength": null,
-        "willpower": null,
-        "lore": null,
+        "strength": 5,
+        "willpower": 6,
+        "lore": 2,
         "rarity": "Common",
         "illustrators": [
             ""
@@ -530,9 +530,9 @@
         "text": "",
         "keywords": [],
         "move_cost": null,
-        "strength": null,
-        "willpower": null,
-        "lore": null,
+        "strength": 6,
+        "willpower": 7,
+        "lore": 2,
         "rarity": "Common",
         "illustrators": [
             ""
@@ -1220,9 +1220,9 @@
         "text": "",
         "keywords": [],
         "move_cost": null,
-        "strength": null,
-        "willpower": null,
-        "lore": null,
+        "strength": 3,
+        "willpower": 7,
+        "lore": 2,
         "rarity": "Common",
         "illustrators": [
             ""

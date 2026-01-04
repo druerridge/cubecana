@@ -10,7 +10,7 @@ class FormatAnalysisManager:
     def __init__(self):
         self.cache: dict[str, FormatAnalysisResponse] = {}
 
-    def analyze(self, retail_set_code: str, draftmancer_file:DraftmancerFile, boosters_per_player:int, num_players:int) -> FormatAnalysisResponse:
+    def analyze(self, draftmancer_file:DraftmancerFile, boosters_per_player:int, num_players:int) -> FormatAnalysisResponse:
         boosters_at_table = boosters_per_player * num_players
         
         # think about this and how/if we need to deal with boosters / player etc.
@@ -26,7 +26,6 @@ class FormatAnalysisManager:
         cost_distribution_by_classification = self.generate_cost_distribution_by_classification(count_at_table_by_card_id)
 
         format_analysis_response: FormatAnalysisResponse = FormatAnalysisResponse(
-            setId = retail_set_code,
             # countAtTableByCardId = count_at_table_by_card_id, # for debugging purposes
             # countAtTableByInkCost = count_at_table_by_ink_cost, # for debugging purposes
             countAtTableByCardType = count_at_table_by_card_type,
@@ -57,9 +56,12 @@ class FormatAnalysisManager:
             if 'Character' in api_card.types:
                 if api_card.cost not in count_at_table_by_willpower:
                     count_at_table_by_willpower[api_card.cost] = {}
-                if api_card.willpower not in count_at_table_by_willpower[api_card.cost]:
-                    count_at_table_by_willpower[api_card.cost][api_card.willpower] = 0
-                count_at_table_by_willpower[api_card.cost][api_card.willpower] += count_at_table
+                willpower = api_card.willpower
+                if willpower == None:
+                    print(f"Warning: Card {api_card.full_name} is a Character but has no willpower value.")
+                if willpower not in count_at_table_by_willpower[api_card.cost]:
+                    count_at_table_by_willpower[api_card.cost][willpower] = 0
+                count_at_table_by_willpower[api_card.cost][willpower] += count_at_table
         return count_at_table_by_willpower
 
     def generate_strength_distribution_by_cost(self, count_at_table_by_card_id) -> dict[int, dict[int, float]]:
@@ -69,9 +71,16 @@ class FormatAnalysisManager:
             if 'Character' in api_card.types:
                 if api_card.cost not in count_at_table_by_strength:
                     count_at_table_by_strength[api_card.cost] = {}
-                if api_card.strength not in count_at_table_by_strength[api_card.cost]:
-                    count_at_table_by_strength[api_card.cost][api_card.strength] = 0
-                count_at_table_by_strength[api_card.cost][api_card.strength] += count_at_table
+                strength = api_card.strength
+                if strength == None:
+                    if card_id == 'rapunzelgiftedartist':
+                        strength = 0 # Rapunzel, Gifted Artist has null strength in the API but actually 0
+                    else:
+                        print(f"Warning: Card {api_card.full_name} is a Character but has no strength value.")
+                        print(api_card.toJSON())
+                if strength not in count_at_table_by_strength[api_card.cost]:
+                    count_at_table_by_strength[api_card.cost][strength] = 0
+                count_at_table_by_strength[api_card.cost][strength] += count_at_table
         return count_at_table_by_strength
 
     def generate_cost_distribution(self, count_at_table_by_card_id):

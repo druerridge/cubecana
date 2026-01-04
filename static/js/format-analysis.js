@@ -282,15 +282,15 @@ function generateStrengthGradientColor(index, total) {
 }
 
 function generateWillpowerGradientColor(index, total) {
-    // Create gradient from yellow (lowest willpower) to green (highest willpower)
-    if (total <= 1) return '#FFFF00'; // Pure yellow for single value
+    // Create gradient from purple (lowest willpower) to green (highest willpower)
+    if (total <= 1) return '#800080'; // Pure purple for single value
     
     const ratio = index / (total - 1); // 0 to 1
     
-    // Interpolate from yellow (255,255,0) to green (0,255,0)
-    const red = Math.round(255 * (1 - ratio));
-    const green = 255;
-    const blue = 0;
+    // Interpolate from purple (128,0,128) to green (0,255,0)
+    const red = Math.round(128 + (0 - 128) * ratio);
+    const green = Math.round(0 + (255 - 0) * ratio);
+    const blue = Math.round(128 + (0 - 128) * ratio);
     
     return `rgb(${red}, ${green}, ${blue})`;
 }

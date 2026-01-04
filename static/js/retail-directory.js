@@ -18,19 +18,11 @@ function populateRetailSets(retailSets) {
             const nameElement = clone.getElementById("cube-element-name");
             nameElement.textContent = retailSet.name;
             
-            // Make the entire retail set item clickable
-            const itemDiv = clone.getElementById("cube-element-div");
-            itemDiv.addEventListener("click", function(event) {
-                // Don't navigate if user clicked on a button
-                if (event.target.tagName === 'BUTTON' || event.target.closest('button')) {
-                    return;
-                }
+            // Add analysis button functionality
+            const analysisButton = clone.getElementById("cube-element-analysis");
+            analysisButton.addEventListener("click", function() {
                 window.location.href = `/retail-set/${retailSet.id}/format-analysis`;
             });
-            
-            // Add visual indication that analysis is clickable
-            itemDiv.style.cursor = 'pointer';
-            itemDiv.style.opacity = '1.0';
 
             if (retailSet.availableGameModes.includes(GAME_MODE.DRAFT)) {
                 const draftButton = clone.getElementById("cube-element-draft")

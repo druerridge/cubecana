@@ -201,6 +201,7 @@ class FormatAnalysisResponse:
     countAtTableByCardType: dict[str, float]
     strengthDistributionByCost: dict[int, dict[str, float]]
     willpowerDistributionByCost: dict[int, dict[str, float]]
+    loreDistributionByCost: dict[int, dict[str, float]]
     costDistributionByClassification: dict[str, dict[int, float]]
     
     def toJSON(self):

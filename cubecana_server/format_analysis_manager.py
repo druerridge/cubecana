@@ -23,6 +23,7 @@ class FormatAnalysisManager:
         count_at_table_by_ink_cost = self.generate_cost_distribution(count_at_table_by_card_id)
         strength_distribution_by_cost = self.generate_strength_distribution_by_cost(count_at_table_by_card_id)
         willpower_distribution_by_cost = self.generate_willpower_distribution_by_cost(count_at_table_by_card_id)
+        lore_distribution_by_cost = self.generate_lore_distribution_by_cost(count_at_table_by_card_id)
         cost_distribution_by_classification = self.generate_cost_distribution_by_classification(count_at_table_by_card_id)
 
         format_analysis_response: FormatAnalysisResponse = FormatAnalysisResponse(
@@ -31,6 +32,7 @@ class FormatAnalysisManager:
             countAtTableByCardType = count_at_table_by_card_type,
             strengthDistributionByCost = strength_distribution_by_cost,
             willpowerDistributionByCost = willpower_distribution_by_cost,
+            loreDistributionByCost = lore_distribution_by_cost,
             costDistributionByClassification = cost_distribution_by_classification,
             # countAtTableByRatingByInkCost = count_at_table_by_rating_by_ink_cost,
         )
@@ -63,6 +65,21 @@ class FormatAnalysisManager:
                     count_at_table_by_willpower[api_card.cost][willpower] = 0
                 count_at_table_by_willpower[api_card.cost][willpower] += count_at_table
         return count_at_table_by_willpower
+    
+    def generate_lore_distribution_by_cost(self, count_at_table_by_card_id) -> dict[int, dict[int, float]]:
+        count_at_table_by_lore:dict[int, dict[int, float]] = {}
+        for card_id, count_at_table in count_at_table_by_card_id.items():
+            api_card = lorcana_api.get_api_card(card_id)
+            if 'Character' in api_card.types:
+                if api_card.cost not in count_at_table_by_lore:
+                    count_at_table_by_lore[api_card.cost] = {}
+                lore = api_card.lore
+                if lore == None:
+                    print(f"Warning: Card {api_card.full_name} is a Character but has no lore value.")
+                if lore not in count_at_table_by_lore[api_card.cost]:
+                    count_at_table_by_lore[api_card.cost][lore] = 0
+                count_at_table_by_lore[api_card.cost][lore] += count_at_table
+        return count_at_table_by_lore
 
     def generate_strength_distribution_by_cost(self, count_at_table_by_card_id) -> dict[int, dict[int, float]]:
         count_at_table_by_strength:dict[int, dict[int, float]] = {}

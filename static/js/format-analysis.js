@@ -576,28 +576,27 @@ function updateTraitAnalysis() {
     const cardsPerBooster = getUrlParam('cardsPerBooster', 12);
 
     const allCardsWithTraitSeenAtTable = Object.values(traitCostData).reduce((sum, count) => sum + count, 0);
-    console.log(`allCardsWithTraitSeenAtTable  "${allCardsWithTraitSeenAtTable}"`);
 
     const allCardsSeenAtTable = boostersPerPlayer * numPlayers * cardsPerBooster;
-    console.log(`allCardsSeenAtTable  "${allCardsSeenAtTable}"`);
     const numCardsNotSeenPerPackInSeat = (numPlayers-1)*(numPlayers)/2;
-    console.log(`numCardsNotSeenPerPackInSeat  "${numCardsNotSeenPerPackInSeat}"`);
     const numCardsNotSeenInSeatPerDraft = numCardsNotSeenPerPackInSeat * boostersPerPlayer;
-    console.log(`numCardsNotSeenInSeatPerDraft  "${numCardsNotSeenInSeatPerDraft}"`);
     const numCardsSeenPerSeat = allCardsSeenAtTable - numCardsNotSeenInSeatPerDraft;
-    console.log(`numCardsSeenPerSeat: ${numCardsSeenPerSeat.toFixed(1)}`);
     const seenInSeatToAllCardsRatio = numCardsSeenPerSeat / allCardsSeenAtTable;
-    console.log(`seenToAllCardsRatio: ${seenInSeatToAllCardsRatio.toFixed(3)}`);
     const numCardsWithTraitSeenPerSeat = allCardsWithTraitSeenAtTable * seenInSeatToAllCardsRatio;
     
-    console.log(`Seen at table: ${allCardsWithTraitSeenAtTable.toFixed(1)}, per seat: ${numCardsWithTraitSeenPerSeat.toFixed(1)}`);
-
     const tbody = traitTable.querySelector('tbody');
     const existingRow = tbody.querySelector('tr');
     const cells = existingRow.querySelectorAll('td');
+
+    const thead = traitTable.querySelector('thead');
+    const headerRow = thead.querySelector('tr');
+    const headerCells = headerRow.querySelectorAll('th');
     
-    cells[1].textContent = allCardsWithTraitSeenAtTable.toFixed(1);
-    cells[2].textContent = numCardsWithTraitSeenPerSeat.toFixed(1);
+    headerCells[1].innerHTML = `Seen at Table <span style="color:gray">(of ${allCardsSeenAtTable} cards)</span>`;
+    headerCells[2].innerHTML = `Seen per Seat <span style="color:gray">(of ${numCardsSeenPerSeat} cards)</span>`;
+
+    cells[1].innerHTML = `${Math.round(allCardsWithTraitSeenAtTable)} cards <span style="color:gray">(${(allCardsWithTraitSeenAtTable/allCardsSeenAtTable*100).toFixed(1)}%)</span>`;
+    cells[2].innerHTML = `${Math.round(numCardsWithTraitSeenPerSeat)} cards <span style="color:gray">(${(numCardsWithTraitSeenPerSeat/numCardsSeenPerSeat*100).toFixed(1)}%)</span>`;
     
     updateTraitInkCostChart(selectedTrait);
 }

@@ -8,6 +8,7 @@ let strengthChart = null;
 let willpowerChart = null;
 let loreChart = null;
 let traitInkCostChart = null;
+let inkabilityChart = null;
 let setData = null;
 let draftmancerData = null;
 
@@ -207,6 +208,11 @@ function generateChartDataFromResponse(analysisData) {
         });
     }
     
+    // Generate inkability by cost chart data
+    if (analysisData.inkabilityByCost) {
+        chartData.inkabilityChart = generateInkabilityChartData(analysisData.inkabilityByCost);
+    }
+    
     return chartData;
 }
 
@@ -307,6 +313,31 @@ function generateLoreGradientColor(index, total) {
     const blue = Math.round(255 + (203 - 255) * ratio);
     
     return `rgb(${red}, ${green}, ${blue})`;
+}
+
+function generateInkabilityChartData(inkabilityByCost) {
+    // Get all ink costs (0-8+)
+    const inkCosts = ['0', '1', '2', '3', '4', '5', '6', '7', '8+'];
+    
+    const inkableData = [];
+    const nonInkableData = [];
+    
+    inkCosts.forEach(costStr => {
+        const cost = costStr === '8+' ? '8+' : parseInt(costStr);
+        const costData = inkabilityByCost[cost] || {};
+        
+        const inkableCount = costData[true] || 0;
+        const nonInkableCount = costData[false] || 0;
+        
+        inkableData.push(inkableCount);
+        nonInkableData.push(nonInkableCount);
+    });
+    
+    return {
+        labels: inkCosts,
+        inkableData: inkableData,
+        nonInkableData: nonInkableData
+    };
 }
 
 function initializeCharts() {
@@ -507,6 +538,67 @@ function initializeCharts() {
             }
         }
     });
+    
+    // Initialize Inkability Chart
+    const inkabilityCtx = document.getElementById('inkabilityChart').getContext('2d');
+    inkabilityChart = new Chart(inkabilityCtx, {
+        type: 'bar',
+        data: {
+            labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8+'],
+            datasets: [{
+                label: 'Inkable Cards',
+                data: [],
+                backgroundColor: '#d4b889',
+                borderColor: '#333',
+                borderWidth: 1,
+                stack: 'inkability'
+            }, {
+                label: 'Non-Inkable Cards',
+                data: [],
+                backgroundColor: '#42392a',
+                borderColor: '#333',
+                borderWidth: 1,
+                stack: 'inkability'
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Ink Cost',
+                        color: 'white'
+                    },
+                    ticks: { color: 'white' },
+                    grid: { color: '#555' }
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Number of Cards',
+                        color: 'white'
+                    },
+                    ticks: { color: 'white' },
+                    grid: { color: '#555' },
+                    beginAtZero: true,
+                    stacked: true
+                }
+            },
+            plugins: {
+                legend: {
+                    labels: { color: 'white' }
+                },
+                title: {
+                    display: true,
+                    text: 'Inkable vs Non-Inkable Cards by Cost',
+                    color: 'white',
+                    font: { size: 16 }
+                }
+            }
+        }
+    });
 }
 
 function updateAllCharts() {
@@ -514,6 +606,7 @@ function updateAllCharts() {
     updateStrengthChart();
     updateWillpowerChart();
     updateLoreChart();
+    updateInkabilityChart();
 }
 
 function getActiveInkCosts() {
@@ -702,5 +795,19 @@ function updateLoreChart() {
         }
         
         loreChart.update();
+    }
+}
+
+function updateInkabilityChart() {
+    if (!setData || !inkabilityChart) return;
+
+    if (setData.chartData && setData.chartData.inkabilityChart) {
+        const chartData = setData.chartData.inkabilityChart;
+        
+        inkabilityChart.data.labels = chartData.labels;
+        inkabilityChart.data.datasets[0].data = chartData.inkableData;
+        inkabilityChart.data.datasets[1].data = chartData.nonInkableData;
+        
+        inkabilityChart.update();
     }
 }

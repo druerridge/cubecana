@@ -828,5 +828,31 @@ function updateInkabilityChart() {
         inkabilityChart.data.datasets[1].data = chartData.nonInkableData;
         
         inkabilityChart.update();
+        
+        updateInkabilitySummary(chartData);
     }
+}
+
+function updateInkabilitySummary(chartData) {
+    if (!chartData) return;
+    
+    // Calculate totals
+    const totalInkable = chartData.inkableData.reduce((sum, count) => sum + count, 0);
+    const totalNonInkable = chartData.nonInkableData.reduce((sum, count) => sum + count, 0);
+    const totalCards = totalInkable + totalNonInkable;
+    
+    // Calculate percentages
+    const inkablePercent = totalCards > 0 ? ((totalInkable / totalCards) * 100).toFixed(1) : 0;
+    const nonInkablePercent = totalCards > 0 ? ((totalNonInkable / totalCards) * 100).toFixed(1) : 0;
+    
+    // Update visual bar
+    const inkableBar = document.getElementById('inkableBar');
+    const nonInkableBar = document.getElementById('nonInkableBar');
+    const inkableText = document.getElementById('inkableText');
+    const nonInkableText = document.getElementById('nonInkableText');
+    
+    if (inkableBar) inkableBar.style.width = `${inkablePercent}%`;
+    if (nonInkableBar) nonInkableBar.style.width = `${nonInkablePercent}%`;
+    if (inkableText) inkableText.textContent = `${totalInkable} (${inkablePercent}%)`;
+    if (nonInkableText) nonInkableText.textContent = `${totalNonInkable} (${nonInkablePercent}%)`;
 }

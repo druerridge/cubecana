@@ -407,6 +407,18 @@
 
             <div class="analysis-section">
                 <h2>Inkability Analysis</h2>
+                <div class="inkability-summary" id="inkabilitySummary" style="margin-bottom: 15px; padding: 10px; background-color: #333; border-radius: 5px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 5px;">
+                        <div style="flex: 1; height: 24px; background-color: #555; border-radius: 12px; overflow: hidden; position: relative;">
+                            <div id="inkableBar" style="height: 100%; background-color: #d4b889; width: 0%; float: left;"></div>
+                            <div id="nonInkableBar" style="height: 100%; background-color: #42392a; width: 0%; float: right;"></div>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; font-size: 12px;">
+                        <span style="color: #d4b889;">Inkable: <span id="inkableText">- (-%)</span></span>
+                        <span style="color: #c4a373;">Non-Inkable: <span id="nonInkableText">- (-%)</span></span>
+                    </div>
+                </div>
                 <div class="chart-container">
                     <canvas id="inkabilityChart"></canvas>
                 </div>

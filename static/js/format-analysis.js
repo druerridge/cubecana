@@ -611,7 +611,7 @@ function initializeCharts() {
                             
                             const percentage = total > 0 ? ((value / total) * 100).toFixed(1) : 0;
                             
-                            return `${datasetLabel}: ${value} (${percentage}%)`;
+                            return `${datasetLabel}: ${value.toFixed(1)} (${percentage}%)`;
                         }
                     }
                 }
@@ -853,6 +853,6 @@ function updateInkabilitySummary(chartData) {
     
     if (inkableBar) inkableBar.style.width = `${inkablePercent}%`;
     if (nonInkableBar) nonInkableBar.style.width = `${nonInkablePercent}%`;
-    if (inkableText) inkableText.textContent = `${totalInkable} (${inkablePercent}%)`;
-    if (nonInkableText) nonInkableText.textContent = `${totalNonInkable} (${nonInkablePercent}%)`;
+    if (inkableText) inkableText.textContent = `${totalInkable.toFixed(1)} (${inkablePercent}%)`;
+    if (nonInkableText) nonInkableText.textContent = `${totalNonInkable.toFixed(1)} (${nonInkablePercent}%)`;
 }

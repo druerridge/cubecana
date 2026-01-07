@@ -233,9 +233,21 @@ function generateStackedChartData(distributionByCost, label) {
     // Generate datasets for each stat value
     const datasets = sortedStatValues.map((statValue, index) => {
         const data = inkCosts.map(cost => {
-            const costKey = cost === '8+' ? '8' : cost;
-            const costData = distributionByCost[costKey] || {};
-            return costData[statValue.toString()] || 0;
+            if (cost === '8+') {
+                // Sum all costs 8 and higher
+                let total = 0;
+                Object.keys(distributionByCost).forEach(costKey => {
+                    const costNum = parseInt(costKey);
+                    if (costNum >= 8) {
+                        const costData = distributionByCost[costKey] || {};
+                        total += costData[statValue.toString()] || 0;
+                    }
+                });
+                return total;
+            } else {
+                const costData = distributionByCost[cost] || {};
+                return costData[statValue.toString()] || 0;
+            }
         });
         
         // Use gradient colors for strength and willpower charts, regular colors for others
@@ -751,8 +763,19 @@ function updateTraitInkCostChart(selectedTrait) {
     const traitData = traitDistributions[selectedTrait];
     
     const inkCostCounts = inkCosts.map(label => {
-        const cost = label === '8+' ? '8' : label;
-        return traitData[cost] || 0;
+        if (label === '8+') {
+            // Sum all costs 8 and higher
+            let total = 0;
+            Object.keys(traitData).forEach(cost => {
+                const costNum = parseInt(cost);
+                if (costNum >= 8) {
+                    total += traitData[cost] || 0;
+                }
+            });
+            return total;
+        } else {
+            return traitData[label] || 0;
+        }
     });
 
     traitInkCostChart.data.labels = inkCosts;

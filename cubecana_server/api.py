@@ -203,6 +203,7 @@ class FormatAnalysisResponse:
     willpowerDistributionByCost: dict[int, dict[str, float]]
     loreDistributionByCost: dict[int, dict[str, float]]
     costDistributionByClassification: dict[str, dict[int, float]]
+    inkabilityByCost: dict[int, dict[bool, float]]
     
     def toJSON(self):
         return json.dumps(

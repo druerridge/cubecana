@@ -25,6 +25,7 @@ class FormatAnalysisManager:
         willpower_distribution_by_cost = self.generate_willpower_distribution_by_cost(count_at_table_by_card_id)
         lore_distribution_by_cost = self.generate_lore_distribution_by_cost(count_at_table_by_card_id)
         cost_distribution_by_classification = self.generate_cost_distribution_by_classification(count_at_table_by_card_id)
+        inkability_by_cost = self.generate_inkability_by_cost(count_at_table_by_card_id)
 
         format_analysis_response: FormatAnalysisResponse = FormatAnalysisResponse(
             # countAtTableByCardId = count_at_table_by_card_id, # for debugging purposes
@@ -34,10 +35,22 @@ class FormatAnalysisManager:
             willpowerDistributionByCost = willpower_distribution_by_cost,
             loreDistributionByCost = lore_distribution_by_cost,
             costDistributionByClassification = cost_distribution_by_classification,
+            inkabilityByCost = inkability_by_cost,
             # countAtTableByRatingByInkCost = count_at_table_by_rating_by_ink_cost,
         )
         # self.cache[retail_set_code] = format_analysis_response
         return format_analysis_response
+
+    def generate_inkability_by_cost(self, count_at_table_by_card_id) -> dict[int, dict[bool, float]]:
+        count_at_table_by_inkability:dict[int, dict[bool, float]] = {}
+        for card_id, count_at_table in count_at_table_by_card_id.items():
+            api_card = lorcana_api.get_api_card(card_id)
+            if api_card.cost not in count_at_table_by_inkability:
+                count_at_table_by_inkability[api_card.cost] = {}
+            if api_card.inkable not in count_at_table_by_inkability[api_card.cost]:
+                count_at_table_by_inkability[api_card.cost][api_card.inkable] = 0
+            count_at_table_by_inkability[api_card.cost][api_card.inkable] += count_at_table
+        return count_at_table_by_inkability
 
     def generate_cost_distribution_by_classification(self, count_at_table_by_card_id) -> dict[str, dict[int, float]]:
         count_at_table_by_classification:dict[str, dict[int, float]] = {}

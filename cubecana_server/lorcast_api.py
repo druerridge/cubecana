@@ -93,7 +93,8 @@ class LorcastApi:
             classifications=classifications,
             strength=strength,
             willpower=willpower,
-            lore=printing_untyped.get('lore')
+            lore=printing_untyped.get('lore'),
+            inkable=printing_untyped.get('inkwell')
         )
 
     def printing_from_printing_untyped(self, printing_untyped) -> CardPrinting:

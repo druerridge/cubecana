@@ -323,14 +323,30 @@ function generateInkabilityChartData(inkabilityByCost) {
     const nonInkableData = [];
     
     inkCosts.forEach(costStr => {
-        const cost = costStr === '8+' ? '8+' : parseInt(costStr);
-        const costData = inkabilityByCost[cost] || {};
-        
-        const inkableCount = costData[true] || 0;
-        const nonInkableCount = costData[false] || 0;
-        
-        inkableData.push(inkableCount);
-        nonInkableData.push(nonInkableCount);
+        if (costStr === '8+') {
+            // Sum all costs 8 and higher
+            let inkableCount = 0;
+            let nonInkableCount = 0;
+            
+            Object.keys(inkabilityByCost).forEach(cost => {
+                const costNum = parseInt(cost);
+                if (costNum >= 8) {
+                    const costData = inkabilityByCost[cost] || {};
+                    inkableCount += costData[true] || 0;
+                    nonInkableCount += costData[false] || 0;
+                }
+            });
+            
+            inkableData.push(inkableCount);
+            nonInkableData.push(nonInkableCount);
+        } else {
+            const costData = inkabilityByCost[costStr] || {};
+            const inkableCount = costData[true] || 0;
+            const nonInkableCount = costData[false] || 0;
+            
+            inkableData.push(inkableCount);
+            nonInkableData.push(nonInkableCount);
+        }
     });
     
     return {

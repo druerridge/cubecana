@@ -595,6 +595,25 @@ function initializeCharts() {
                     text: 'Inkable vs Non-Inkable Cards by Cost',
                     color: 'white',
                     font: { size: 16 }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            const datasetLabel = context.dataset.label;
+                            const value = context.raw;
+                            
+                            // Calculate total for this ink cost (sum of inkable + non-inkable)
+                            const datasetIndex = context.datasetIndex;
+                            const chartData = context.chart.data.datasets;
+                            const inkableValue = chartData[0].data[context.dataIndex];
+                            const nonInkableValue = chartData[1].data[context.dataIndex];
+                            const total = inkableValue + nonInkableValue;
+                            
+                            const percentage = total > 0 ? ((value / total) * 100).toFixed(1) : 0;
+                            
+                            return `${datasetLabel}: ${value} (${percentage}%)`;
+                        }
+                    }
                 }
             }
         }

@@ -31,28 +31,52 @@ def calculate_pod_composition_type(draft_log_dict: dict, num_human_players: int)
     else:
         return PodCompositionType.UNKNOWN
 
+def cli_is_real_draft(draft_log_dict: dict) -> bool:
+    num_human_players = sum(1 for human in filter(lambda user: not user["isBot"], draft_log_dict["users"].values()))
+    print(f"humans: {num_human_players}", end=" ")
+
+    pod_composition_type: PodCompositionType = calculate_pod_composition_type(draft_log_dict, num_human_players)
+    print(f"{pod_composition_type}", end=" ")
+
+    picks_per_human = [len(human["picks"]) for human in filter(lambda user: not user["isBot"], draft_log_dict["users"].values())]
+    print(f"Picks / human: {picks_per_human}", end=" ")
+
+    picks_to_finish = 48 # retail is 12 * 4 = 48
+    num_humans_finished_picking = sum(1 for picks in picks_per_human if picks >= picks_to_finish)
+    print(f"humans finished picking: {num_humans_finished_picking}", end=" ")
+
+    num_human_decklists = sum(1 for player in filter(lambda user: not user["isBot"], draft_log_dict["users"].values()) if player.get("decklist"))
+    print(f"human decklists: {num_human_decklists}")
+
+    return num_humans_finished_picking >= 1
+
 def is_real_draft(draft_log_dict: dict, draft: Draft) -> bool:
     if draft.game_mode != GAME_MODE_DRAFT:
         return False # not sure what to do for sealed yet
     
     num_human_players = sum(1 for human in filter(lambda user: not user["isBot"], draft_log_dict["users"].values()))
-    print(f"Number of human players: {num_human_players}")
+    print(f"human players: {num_human_players}", end=" ")
 
     pod_composition_type: PodCompositionType = calculate_pod_composition_type(draft_log_dict, num_human_players)
-    print(f"Pod composition type: {pod_composition_type}")
+    print(f"Pod composition type: {pod_composition_type}", end=" ")
 
     picks_per_human = [len(human["picks"]) for human in filter(lambda user: not user["isBot"], draft_log_dict["users"].values())]
-    print(f"Picks per human: {picks_per_human}")
+    print(f"Picks / human: {picks_per_human}", end=" ")
 
     picks_to_finish = 48 # retail is 12 * 4 = 48
     if draft.draft_source_type == DraftSourceType.CUBE: 
         cube: CubecanaCube = cube_manager.get_cube(draft.draft_source_id)
         picks_to_finish = cube.settings.boosters_per_player * cube.settings.cards_per_booster
     num_humans_finished_picking = sum(1 for picks in picks_per_human if picks >= picks_to_finish)
-    print(f"Number of humans finished picking: {num_humans_finished_picking}")
+    print(f"humans finished picking: {num_humans_finished_picking}", end=" ")
+
+    if num_humans_finished_picking >= 1:
+        draft_duration_seconds = draft.end_time_epoch_seconds - draft.start_time_epoch_seconds
+        longest_average_pick_time_seconds = picks_to_finish / draft_duration_seconds
+        print(f"longest avg pick time (seconds): {longest_average_pick_time_seconds}", end=" ")
 
     num_human_decklists = sum(1 for player in filter(lambda user: not user["isBot"], draft_log_dict["users"].values()) if player.get("decklist"))
-    print(f"Number of human decklists: {num_human_decklists}")
+    print(f"human decklists: {num_human_decklists}")
 
     return num_humans_finished_picking >= 1
 
@@ -156,13 +180,14 @@ class DraftManager:
         draft: Optional[Draft] = self.get_draft(draft_id)
         if not draft:
             return False
+
+        draft.end_time_epoch_seconds = int(time.time())
+        draft.draft_status = DraftStatus.COMPLETED
+
         
         is_real_draft(draft_log_dict, draft)
 
         write_draft_to_disk(draft_log_dict, draft)
-
-        draft.end_time_epoch_seconds = int(time.time())
-        draft.draft_status = DraftStatus.COMPLETED
 
         db_draft = self.draft_to_db_draft(draft)
         success = draft_dao.update(db_draft)

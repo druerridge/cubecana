@@ -1,9 +1,12 @@
 import argparse
+import json
+from pathlib import Path
 from cubecana_server import draftmancer
 from cubecana_server import tabletop_simulator
 from cubecana_server import generate_retail
 from cubecana_server import card_evaluations
 from cubecana_server.settings import Settings, POWER_BAND_RETAIL
+from cubecana_server.draft_manager import draft_manager, DraftManager, cli_is_real_draft
 
 
 parser = argparse.ArgumentParser(
@@ -11,7 +14,7 @@ parser = argparse.ArgumentParser(
                     description='given a dreamborn \"deck\" of a cube / set / card list, exported in Tabletop Simulator format, create a draftmancer custom card list that can be uploaded and drafted on draftmancer.com',
                     epilog='Text at the bottom of help')
 
-parser.add_argument('verb', help="verb is one of: ( generate_retail_draftmancer | tts_to_draftmancer | draftmancer_to_tts )")
+parser.add_argument('verb', help="verb is one of: ( generate_retail_draftmancer | tts_to_draftmancer | draftmancer_to_tts | analyze_draft_logs )")
 parser.add_argument('--dreamborn_export_for_tabletop_sim', help="file path to a .deck export in Tabletop Sim format from dreamborn.ink deck of the cube e.g. example-cube.json or C:\\Users\\dru\\Desktop\\deck.json")
 parser.add_argument('--card_evaluations_file', default=card_evaluations.DEFAULT_CARD_EVALUATIONS_FILE, help="relative path to a .csv file containing card name -> 0-5 card rating (power in a vacuum). default: \"DraftBots\\\\FrankKarstenEvaluations-HighPower.csv\"")
 parser.add_argument('--boosters_per_player', default=4)
@@ -22,6 +25,7 @@ parser.add_argument('--color_balance_packs', default=False, help="WARNING** this
 parser.add_argument('--franchise_to_color', default=False, help="sets colors based on franchise to enable a double-feature cube")
 parser.add_argument('--set_card_types', default=False, help="WARNING** This sets card types... it may affect bots... but I don't know")
 parser.add_argument('--set_code', default=None, help="This is required to generate a true retail draft set, but could be left blank to generate retail-like sets")
+parser.add_argument('--draft_log', help="file path to a .json draft_log from draftmancer or a folder of same e.g. draft_log.json or C:\\Users\\dru\\Desktop\\draft_logs\\")
 
 def generate_retail_draftmancer(card_evaluations_file, set_code:str, settings:Settings):
     settings.with_replacement = True
@@ -32,6 +36,35 @@ def generate_retail_draftmancer(card_evaluations_file, set_code:str, settings:Se
 def tts_to_draftmancer(dreamborn_export_for_tabletop_sim, card_evaluations_file, settings:Settings):
     draftmancer_file_contents = draftmancer.dreamborn_tts_to_draftmancer_from_file(dreamborn_export_for_tabletop_sim, card_evaluations_file, settings)
     draftmancer.write_draftmancer_file(draftmancer_file_contents, settings.card_list_name)
+
+def analyze_draft_logs(draft_log_file_path: str):
+    path = Path(draft_log_file_path)
+    
+    if path.is_file() and path.suffix == '.json':
+        # Handle single JSON file
+        json_files = [path]
+    elif path.is_dir():
+        # Handle folder containing JSON files
+        json_files = list(path.glob('*.json'))
+    else:
+        print(f"Error: {draft_log_file_path} is not a valid JSON file or directory")
+        return
+    
+    if not json_files:
+        print(f"No JSON files found in {draft_log_file_path}")
+        return
+    
+    for json_file in json_files:
+        try:
+            with open(json_file, 'r', encoding='utf-8') as f:
+                draft_dict = json.load(f)
+            print(f"{json_file.name}: ", end="")
+            cli_is_real_draft(draft_dict)
+        except json.JSONDecodeError as e:
+            print(f"Error reading JSON from {json_file}: {e}")
+        except Exception as e:
+            print(f"Error processing {json_file}: {e}")
+
 
 if __name__ == '__main__':
     args = parser.parse_args()
@@ -52,5 +85,7 @@ if __name__ == '__main__':
             generate_retail_draftmancer(args.card_evaluations_file, args.set_code, settings)
         case "tts_to_draftmancer":
             tts_to_draftmancer(args.dreamborn_export_for_tabletop_sim, args.card_evaluations_file, settings)
+        case "analyze_draft_logs":
+            analyze_draft_logs(args.draft_log)
         case _:
             raise SystemExit(1, f"no verb '{args.verb}' found, exiting")

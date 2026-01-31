@@ -5,6 +5,12 @@ from .api import FormatAnalysisResponse
 from . import id_helper
 from .lorcast_api import lorcast_api as lorcana_api
 
+def expects_no_lore(api_card):
+    if 'Reckless' in api_card.keywords:
+        return True
+    if api_card.full_name == "Mulan - Resourceful Recruit":
+        return True
+    return False
 
 class FormatAnalysisManager:
     def __init__(self):
@@ -87,7 +93,9 @@ class FormatAnalysisManager:
                 if api_card.cost not in count_at_table_by_lore:
                     count_at_table_by_lore[api_card.cost] = {}
                 lore = api_card.lore
-                if lore == None:
+                if lore == None and expects_no_lore(api_card):
+                    lore = 0
+                elif lore == None:
                     print(f"Warning: Card {api_card.full_name} is a Character but has no lore value.")
                 if lore not in count_at_table_by_lore[api_card.cost]:
                     count_at_table_by_lore[api_card.cost][lore] = 0
@@ -103,11 +111,18 @@ class FormatAnalysisManager:
                     count_at_table_by_strength[api_card.cost] = {}
                 strength = api_card.strength
                 if strength == None:
-                    if card_id == 'rapunzelgiftedartist':
+                    if card_id in [
+                        "herculesspectraldemigod",
+                        "squeakscozycaterpillar",
+                        "thomaswide-eyedrecruit",
+                        "flitreflectivehummingbird",
+                        'rapunzelgiftedartist'
+                    ]:
                         strength = 0 # Rapunzel, Gifted Artist has null strength in the API but actually 0
                     else:
                         print(f"Warning: Card {api_card.full_name} is a Character but has no strength value.")
                         print(api_card.toJSON())
+                        strength = 0
                 if strength not in count_at_table_by_strength[api_card.cost]:
                     count_at_table_by_strength[api_card.cost][strength] = 0
                 count_at_table_by_strength[api_card.cost][strength] += count_at_table

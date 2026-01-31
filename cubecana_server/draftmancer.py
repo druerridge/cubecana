@@ -15,7 +15,6 @@ from . import tabletop_simulator
 from .dreamborn_manager import dreamborn_manager
 from .lorcana import ALT_ART_RARITIES
 
-ALL_CARDS_DREAMBORN_TTS = "inputs/dreamborn_tts_all_cards"
 ALL_CARDS_CUBE_PATH = 'inputs/all_cards_cube.draftmancer.txt'
 GENERATED_CUBES_DIR = 'generated_cubes'
 

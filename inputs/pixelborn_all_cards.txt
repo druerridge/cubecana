@@ -2047,7 +2047,7 @@ Stitch_Carefree Snowboarder
 Stitch_Carefree Snowboarder
 Pocahontas_Finding the Way
 David_Protective Snowboarder
-Fangmeyr_Icy Officer
+Fangmeyer_Icy Officer
 Chief Powhatan_Protective Leader
 Sarabi_Protecting the Pride
 Grandmother Willow_Ancient Advisor

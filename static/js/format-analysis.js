@@ -7,6 +7,7 @@ let cardTypeChart = null;
 let strengthChart = null;
 let willpowerChart = null;
 let loreChart = null;
+let ratingChart = null;
 let traitInkCostChart = null;
 let inkabilityChart = null;
 let setData = null;
@@ -200,6 +201,11 @@ function generateChartDataFromResponse(analysisData) {
         chartData.loreChart = generateStackedChartData(analysisData.loreDistributionByCost, 'Lore');
     }
     
+    // Generate rating chart data
+    if (analysisData.ratingDistributionByCost) {
+        chartData.ratingChart = generateRatingChartData(analysisData.ratingDistributionByCost);
+    }
+    
     // Generate trait ink cost distributions for classification analysis
     chartData.traitInkCostDistributions = {};
     if (analysisData.costDistributionByClassification) {
@@ -258,6 +264,8 @@ function generateStackedChartData(distributionByCost, label) {
             backgroundColor = generateWillpowerGradientColor(index, sortedStatValues.length);
         } else if (label === 'Lore') {
             backgroundColor = generateLoreGradientColor(index, sortedStatValues.length);
+        } else if (label === 'Rating') {
+            backgroundColor = generateRatingGradientColor(index, sortedStatValues.length);
         } else {
             backgroundColor = generateColor(index);
         }
@@ -325,6 +333,76 @@ function generateLoreGradientColor(index, total) {
     const blue = Math.round(255 + (203 - 255) * ratio);
     
     return `rgb(${red}, ${green}, ${blue})`;
+}
+
+function generateRatingGradientColor(index, total) {
+    // Create gradient from dark red (lowest rating) to bright green (highest rating)
+    if (total <= 1) return '#800000'; // Dark red for single value
+    
+    const ratio = index / (total - 1); // 0 to 1
+    
+    // Interpolate from dark red (128,0,0) to bright green (0,255,0)
+    const red = Math.round(128 + (0 - 128) * ratio);
+    const green = Math.round(0 + (255 - 0) * ratio);
+    const blue = 0;
+    
+    return `rgb(${red}, ${green}, ${blue})`;
+}
+
+function generateRatingChartData(distributionByCost) {
+    // Get all ink costs (0-8+)
+    const inkCosts = ['0', '1', '2', '3', '4', '5', '6', '7', '8+'];
+    
+    // Define the proper order for letter grades
+    const ratingOrder = ['F-', 'F', 'F+', 'D-', 'D', 'D+', 'C-', 'C', 'C+', 'B-', 'B', 'B+', 'A-', 'A', 'A+'];
+    
+    // Get all unique rating values from the data
+    const allRatingValues = new Set();
+    Object.values(distributionByCost).forEach(costData => {
+        Object.keys(costData).forEach(rating => {
+            allRatingValues.add(rating);
+        });
+    });
+    
+    // Sort ratings according to our defined order
+    const sortedRatings = ratingOrder.filter(rating => allRatingValues.has(rating));
+    
+    // Generate datasets for each rating
+    const datasets = sortedRatings.map((rating, index) => {
+        const data = inkCosts.map(cost => {
+            if (cost === '8+') {
+                // Sum all costs 8 and higher
+                let total = 0;
+                Object.keys(distributionByCost).forEach(costKey => {
+                    const costNum = parseInt(costKey);
+                    if (costNum >= 8) {
+                        const costData = distributionByCost[costKey] || {};
+                        total += costData[rating] || 0;
+                    }
+                });
+                return total;
+            } else {
+                const costData = distributionByCost[cost] || {};
+                return costData[rating] || 0;
+            }
+        });
+        
+        // Generate color based on position in rating order
+        const backgroundColor = generateRatingGradientColor(index, sortedRatings.length);
+        
+        return {
+            label: `Rating ${rating}`,
+            data: data,
+            backgroundColor: backgroundColor,
+            borderColor: '#333',
+            borderWidth: 1
+        };
+    });
+    
+    return {
+        labels: inkCosts,
+        datasets: datasets
+    };
 }
 
 function generateInkabilityChartData(inkabilityByCost) {
@@ -516,6 +594,46 @@ function initializeCharts() {
         }
     });
 
+    const ratingCtx = document.getElementById('ratingChart').getContext('2d');
+    ratingChart = new Chart(ratingCtx, {
+        type: 'bar',
+        data: {
+            labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8+'],
+            datasets: []
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                x: {
+                    stacked: true,
+                    title: {
+                        display: true,
+                        text: 'Ink Cost',
+                        color: 'white'
+                    },
+                    ticks: { color: 'white' },
+                    grid: { color: '#555' }
+                },
+                y: {
+                    stacked: true,
+                    title: {
+                        display: true,
+                        text: 'Number of Cards',
+                        color: 'white'
+                    },
+                    ticks: { color: 'white' },
+                    grid: { color: '#555' }
+                }
+            },
+            plugins: {
+                legend: {
+                    labels: { color: 'white' }
+                }
+            }
+        }
+    });
+
     const traitInkCostCtx = document.getElementById('traitInkCostChart').getContext('2d');
     traitInkCostChart = new Chart(traitInkCostCtx, {
         type: 'bar',
@@ -653,6 +771,7 @@ function updateAllCharts() {
     updateStrengthChart();
     updateWillpowerChart();
     updateLoreChart();
+    updateRatingChart();
     updateInkabilityChart();
 }
 
@@ -853,6 +972,26 @@ function updateLoreChart() {
         }
         
         loreChart.update();
+    }
+}
+
+function updateRatingChart() {
+    if (!setData || !ratingChart) return;
+
+    if (setData.chartData && setData.chartData.ratingChart) {
+        const chartConfig = setData.chartData.ratingChart;
+        
+        ratingChart.data.labels = chartConfig.labels;
+        ratingChart.data.datasets = chartConfig.datasets;
+        
+        if (chartConfig.options && chartConfig.options.scales && chartConfig.options.scales.y) {
+            const yScale = chartConfig.options.scales.y;
+            if (yScale.suggestedMax !== null && yScale.suggestedMax !== undefined) {
+                ratingChart.options.scales.y.suggestedMax = yScale.suggestedMax;
+            }
+        }
+        
+        ratingChart.update();
     }
 }
 

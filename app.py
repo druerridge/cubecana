@@ -17,6 +17,7 @@ from cubecana_server.cube_dao import MAX_CARD_LIST_LENGTH
 from cubecana_server import tabletop_simulator
 from cubecana_server.lorcast_api import lorcast_api as lorcana_api
 from cubecana_server.draft_manager import draft_manager
+from cubecana_server.card_evaluations import card_evaluations_manager, CardEvaluationsManager
 import traceback
 from cubecana_server import cubealytics # This is imported so it will init + generate startup report(s)
 
@@ -162,7 +163,7 @@ def card_list_to_draftmancer():
         set_card_colors=False,
         color_balance_packs=False
     )
-  draftmancer_file = draftmancer.dreamborn_card_list_to_draftmancer(card_list, card_evaluations.DEFAULT_CARD_EVALUATIONS_FILE, settings)
+  draftmancer_file = draftmancer.dreamborn_card_list_to_draftmancer(card_list, card_evaluations.DEFAULT_CUBE_CARD_EVALUATIONS_FILE, settings)
   response = {
     'draftmancerFile': draftmancer_file, 
     'metadata': {
@@ -189,7 +190,7 @@ def handle_dreamborn_to_draftmancer():
         set_card_colors=False,
         color_balance_packs=False
     )
-  draftmancer_file = draftmancer.dreamborn_tts_to_draftmancer(id_to_tts_card, card_evaluations.DEFAULT_CARD_EVALUATIONS_FILE, settings)
+  draftmancer_file = draftmancer.dreamborn_tts_to_draftmancer(id_to_tts_card, card_evaluations.DEFAULT_CUBE_CARD_EVALUATIONS_FILE, settings)
   response = {'draftmancerFile': draftmancer_file, 'metadata': {'cardCount': card_count, 'cardsPerBooster': settings.cards_per_booster, 'boostersPerPlayer': settings.boosters_per_player}}
   return jsonify(response)
 
@@ -264,7 +265,15 @@ def get_retail_set_analysis(set_id:str):
   # Parse the draftmancer file to get real data
   try:
     draftmancer_file: draftmancer.DraftmancerFile = draftmancer.read_draftmancer_file_as_string(set.draftmancerFile)
-    format_analysis = format_analysis_manager.analyze(draftmancer_file=draftmancer_file, boosters_per_player=request.args.get('boostersPerPlayer', 4, type=int), num_players=request.args.get('numPlayers', 8, type=int))
+    format_analysis = format_analysis_manager.analyze(draftmancer_file=draftmancer_file, 
+                                                      boosters_per_player=request.args.get('boostersPerPlayer', 
+                                                                                           4, 
+                                                                                           type=int), 
+                                                      num_players=request.args.get('numPlayers', 
+                                                                                   8, 
+                                                                                   type=int),
+                                                      card_evaluations_file=card_evaluations.DEFAULT_RETAIL_CARD_EVALUATIONS_FILE,
+                                                      retail_set_code=set_id)
     return jsonify(format_analysis)
     
   except Exception as e:
@@ -458,7 +467,8 @@ def handle_cube_analysis(cube_id:str):
   draftmancer_file_str = draftmancer.generate_draftmancer_file_from_cube(cube)
   draftmancer_file = draftmancer.read_draftmancer_file_as_string(draftmancer_file_str)
   max_players = math.floor( cube.card_count() / (cube.settings.boosters_per_player * cube.settings.cards_per_booster) )
-  format_analysis = format_analysis_manager.analyze(draftmancer_file, cube.settings.boosters_per_player, max_players)
+  card_evaluations_file = card_evaluations_manager.determine_card_evaluations_file(cube)
+  format_analysis = format_analysis_manager.analyze(draftmancer_file, cube.settings.boosters_per_player, max_players, card_evaluations_file)
   return jsonify(format_analysis)
 
 @app.errorhandler(lcc_error.UnauthorizedError)

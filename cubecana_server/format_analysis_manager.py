@@ -4,6 +4,7 @@ from .draftmancer import DraftmancerFile
 from .api import FormatAnalysisResponse
 from . import id_helper
 from .lorcast_api import lorcast_api as lorcana_api
+from .card_evaluations import card_evaluations_manager, CardEvaluationsManager, DEFAULT_CUBE_CARD_EVALUATIONS_FILE
 
 def expects_no_lore(api_card):
     if 'Reckless' in api_card.keywords:
@@ -16,9 +17,9 @@ class FormatAnalysisManager:
     def __init__(self):
         self.cache: dict[str, FormatAnalysisResponse] = {}
 
-    def analyze(self, draftmancer_file:DraftmancerFile, boosters_per_player:int, num_players:int) -> FormatAnalysisResponse:
+    def analyze(self, draftmancer_file:DraftmancerFile, boosters_per_player:int, num_players:int, card_evaluations_file: str, retail_set_code: str = None) -> FormatAnalysisResponse:
         boosters_at_table = boosters_per_player * num_players
-        
+
         # think about this and how/if we need to deal with boosters / player etc.
         # if retail_set_code in self.cache:
         #     return self.cache[retail_set_code]
@@ -30,6 +31,7 @@ class FormatAnalysisManager:
         strength_distribution_by_cost = self.generate_strength_distribution_by_cost(count_at_table_by_card_id)
         willpower_distribution_by_cost = self.generate_willpower_distribution_by_cost(count_at_table_by_card_id)
         lore_distribution_by_cost = self.generate_lore_distribution_by_cost(count_at_table_by_card_id)
+        rating_distribution_by_cost = self.generate_rating_distribution_by_cost(count_at_table_by_card_id, card_evaluations_file, retail_set_code)
         cost_distribution_by_classification = self.generate_cost_distribution_by_classification(count_at_table_by_card_id)
         inkability_by_cost = self.generate_inkability_by_cost(count_at_table_by_card_id)
 
@@ -40,9 +42,9 @@ class FormatAnalysisManager:
             strengthDistributionByCost = strength_distribution_by_cost,
             willpowerDistributionByCost = willpower_distribution_by_cost,
             loreDistributionByCost = lore_distribution_by_cost,
+            ratingDistributionByCost = rating_distribution_by_cost,
             costDistributionByClassification = cost_distribution_by_classification,
             inkabilityByCost = inkability_by_cost,
-            # countAtTableByRatingByInkCost = count_at_table_by_rating_by_ink_cost,
         )
         # self.cache[retail_set_code] = format_analysis_response
         return format_analysis_response
@@ -127,6 +129,22 @@ class FormatAnalysisManager:
                     count_at_table_by_strength[api_card.cost][strength] = 0
                 count_at_table_by_strength[api_card.cost][strength] += count_at_table
         return count_at_table_by_strength
+
+    def generate_rating_distribution_by_cost(self, count_at_table_by_card_id, card_evaluations_file=str, retail_set_code: str = None) -> dict[int, dict[str, float]]:
+        count_at_table_by_rating:dict[int, dict[str, float]] = {}
+        id_to_letter_rating: dict[str, str] = card_evaluations_manager.read_id_to_letter_rating(card_evaluations_file, preferred_set_num=retail_set_code)
+        for card_id, count_at_table in count_at_table_by_card_id.items():
+            api_card = lorcana_api.get_api_card(card_id)
+            if api_card.cost not in count_at_table_by_rating:
+                count_at_table_by_rating[api_card.cost] = {}
+            try:
+                letter_rating = id_to_letter_rating[card_id]
+                if letter_rating not in count_at_table_by_rating[api_card.cost]:
+                    count_at_table_by_rating[api_card.cost][letter_rating] = 0
+                count_at_table_by_rating[api_card.cost][letter_rating] += count_at_table
+            except Exception as e:
+                print(e)
+        return count_at_table_by_rating
 
     def generate_cost_distribution(self, count_at_table_by_card_id):
         count_at_table_by_ink_cost:dict[int, float] = {}

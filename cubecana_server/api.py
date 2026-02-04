@@ -204,6 +204,7 @@ class FormatAnalysisResponse:
     loreDistributionByCost: dict[int, dict[str, float]]
     costDistributionByClassification: dict[str, dict[int, float]]
     inkabilityByCost: dict[int, dict[bool, float]]
+    ratingDistributionByCost: dict[int, dict[str, float]]
     
     def toJSON(self):
         return json.dumps(

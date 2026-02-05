@@ -509,6 +509,13 @@ function initializeCharts() {
             plugins: {
                 legend: {
                     labels: { color: 'white' }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return context.dataset.label + ': ' + context.raw.toFixed(1);
+                        }
+                    }
                 }
             }
         }
@@ -549,6 +556,13 @@ function initializeCharts() {
             plugins: {
                 legend: {
                     labels: { color: 'white' }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return context.dataset.label + ': ' + context.raw.toFixed(1);
+                        }
+                    }
                 }
             }
         }
@@ -589,6 +603,13 @@ function initializeCharts() {
             plugins: {
                 legend: {
                     labels: { color: 'white' }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return context.dataset.label + ': ' + context.raw.toFixed(1);
+                        }
+                    }
                 }
             }
         }
@@ -629,6 +650,13 @@ function initializeCharts() {
             plugins: {
                 legend: {
                     labels: { color: 'white' }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return context.dataset.label + ': ' + context.raw.toFixed(1);
+                        }
+                    }
                 }
             }
         }
@@ -680,6 +708,13 @@ function initializeCharts() {
                     text: 'Cards by Ink Cost (Select a trait above)',
                     color: 'white',
                     font: { size: 16 }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return context.dataset.label + ': ' + context.raw.toFixed(1);
+                        }
+                    }
                 }
             }
         }

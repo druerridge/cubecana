@@ -216,6 +216,33 @@
     const InktableButton = document.getElementById('inktable-btn');
     const LorcanitoButton = document.getElementById('lorcanito-btn');
 
+    // Check for deck parameter in URL and populate if present
+    function populateFromUrlParameter() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const deckParam = urlParams.get('deck');
+        
+        if (deckParam) {
+            try {
+                // Decode base64 string
+                const decodedDeckList = atob(deckParam);
+                draftmancerInputArea.value = decodedDeckList;
+                
+                // Enable buttons if deck list is not empty
+                const hasContent = decodedDeckList.trim().length > 0;
+                ttsButton.disabled = !hasContent;
+                InktableButton.disabled = !hasContent;
+                LorcanitoButton.disabled = !hasContent;
+                
+            } catch (error) {
+                console.error('Failed to decode deck parameter:', error);
+                // Could optionally show an error message to the user
+            }
+        }
+    }
+
+    // Initialize from URL parameter on page load
+    populateFromUrlParameter();
+
     draftmancerInputArea.addEventListener('input', () => {
         ttsButton.disabled = draftmancerInputArea.value.trim().length === 0;
         InktableButton.disabled = draftmancerInputArea.value.trim().length === 0;

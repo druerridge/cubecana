@@ -236,21 +236,19 @@
                 
                 // Auto-trigger export if export parameter is present and deck has content
                 if (exportParam && hasContent) {
-                    setTimeout(() => {
-                        switch (exportParam.toLowerCase()) {
-                            case 'tts':
-                                ttsButton.click();
-                                break;
-                            case 'inktable':
-                                InktableButton.click();
-                                break;
-                            case 'lorcanito':
-                                LorcanitoButton.click();
-                                break;
-                            default:
-                                console.warn('Unknown export type:', exportParam);
-                        }
-                    }, 100); // Small delay to ensure DOM is ready
+                    switch (exportParam.toLowerCase()) {
+                        case 'tts':
+                            ttsButton.click();
+                            break;
+                        case 'inktable':
+                            InktableButton.click();
+                            break;
+                        case 'lorcanito':
+                            LorcanitoButton.click();
+                            break;
+                        default:
+                            console.warn('Unknown export type:', exportParam);
+                    }
                 }
                 
             } catch (error) {
@@ -260,8 +258,8 @@
         }
     }
 
-    // Initialize from URL parameter on page load
-    populateFromUrlParameter();
+    // Initialize from URL parameter when DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', populateFromUrlParameter);
 
     draftmancerInputArea.addEventListener('input', () => {
         ttsButton.disabled = draftmancerInputArea.value.trim().length === 0;

@@ -236,15 +236,17 @@
                 
                 // Auto-trigger export if export parameter is present and deck has content
                 if (exportParam && hasContent) {
+                    const deckContent = decodedDeckList.trim();
+                    
                     switch (exportParam.toLowerCase()) {
                         case 'tts':
-                            ttsButton.click();
+                            exportToTTS(deckContent);
                             break;
                         case 'inktable':
-                            InktableButton.click();
+                            exportToInktable(deckContent);
                             break;
                         case 'lorcanito':
-                            LorcanitoButton.click();
+                            exportToLorcanito(deckContent);
                             break;
                         default:
                             console.warn('Unknown export type:', exportParam);
@@ -261,6 +263,54 @@
     // Initialize from URL parameter when DOM is fully loaded
     document.addEventListener('DOMContentLoaded', populateFromUrlParameter);
 
+    // Export functions
+    function exportToTTS(deckContent, openInNewTab = false) {
+        hideError();
+        var url = "/api/draftmancer-to-tts/";
+        var data = JSON.stringify({ "draftmancer_export": deckContent });
+        request(url, data, (responseText) => {
+            download(responseText, "tts-cube-deck.json", "json");
+        });
+    }
+
+    function exportToInktable(deckContent, openInNewTab = false) {
+        hideError();
+        var url = "/api/draftmancer-to-inktable/";
+        var data = JSON.stringify({ "draftmancer_export": deckContent });
+        
+        if (openInNewTab) {
+            let newTab = window.open("/loading");
+            request(url, data, (responseText) => {
+                newTab.location.href = responseText;
+            }, (xhr) => {
+                newTab.close();
+            });
+        } else {
+            request(url, data, (responseText) => {
+                window.location.href = responseText;
+            });
+        }
+    }
+
+    function exportToLorcanito(deckContent, openInNewTab = false) {
+        hideError();
+        var url = "/api/draftmancer-to-lorcanito/";
+        var data = JSON.stringify({ "draftmancer_export": deckContent });
+        
+        if (openInNewTab) {
+            let newTab = window.open("/loading");
+            request(url, data, (responseText) => {
+                newTab.location.href = responseText;
+            }, (xhr) => {
+                newTab.close();
+            });
+        } else {
+            request(url, data, (responseText) => {
+                window.location.href = responseText;
+            });
+        }
+    }
+
     draftmancerInputArea.addEventListener('input', () => {
         ttsButton.disabled = draftmancerInputArea.value.trim().length === 0;
         InktableButton.disabled = draftmancerInputArea.value.trim().length === 0;
@@ -268,36 +318,15 @@
     });
 
     InktableButton.addEventListener('click', async _ => { 
-        hideError();
-        var url = "/api/draftmancer-to-inktable/";
-        var data = JSON.stringify({ "draftmancer_export": draftmancerInputArea.value.trim() });
-        let newTab = window.open("/loading");
-        request(url, data, (responseText) => {
-            newTab.location.href = responseText;
-        }, (xhr) => {
-            newTab.close();
-        });
+        exportToInktable(draftmancerInputArea.value.trim(), true);
     });
 
     LorcanitoButton.addEventListener('click', async _ => { 
-        hideError();
-        var url = "/api/draftmancer-to-lorcanito/";
-        var data = JSON.stringify({ "draftmancer_export": draftmancerInputArea.value.trim() });
-        let newTab = window.open("/loading");
-        request(url, data, (responseText) => {
-            newTab.location.href = responseText;
-        }, (xhr) => {
-            newTab.close();
-        });
+        exportToLorcanito(draftmancerInputArea.value.trim(), true);
     });
 
     ttsButton.addEventListener('click', async _ => {
-        hideError();
-        var url = "/api/draftmancer-to-tts/";
-        var data = JSON.stringify({ "draftmancer_export": draftmancerInputArea.value.trim() });
-        request(url, data, (responseText) => {
-            download(responseText, "tts-cube-deck.json", "json");
-        });
+        exportToTTS(draftmancerInputArea.value.trim());
     });
 </script>
 

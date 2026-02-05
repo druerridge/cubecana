@@ -499,7 +499,7 @@ function initializeCharts() {
                     stacked: true,
                     title: {
                         display: true,
-                        text: 'Number of Cards',
+                        text: 'estimated cards at table',
                         color: 'white'
                     },
                     ticks: { color: 'white' },
@@ -539,7 +539,7 @@ function initializeCharts() {
                     stacked: true,
                     title: {
                         display: true,
-                        text: 'Number of Cards',
+                        text: 'estimated cards at table',
                         color: 'white'
                     },
                     ticks: { color: 'white' },
@@ -579,7 +579,7 @@ function initializeCharts() {
                     stacked: true,
                     title: {
                         display: true,
-                        text: 'Number of Cards',
+                        text: 'estimated cards at table',
                         color: 'white'
                     },
                     ticks: { color: 'white' },
@@ -619,7 +619,7 @@ function initializeCharts() {
                     stacked: true,
                     title: {
                         display: true,
-                        text: 'Number of Cards',
+                        text: 'estimated cards at table',
                         color: 'white'
                     },
                     ticks: { color: 'white' },
@@ -663,7 +663,7 @@ function initializeCharts() {
                 y: {
                     title: {
                         display: true,
-                        text: 'Number of Cards',
+                        text: 'estimated cards at table',
                         color: 'white'
                     },
                     ticks: { color: 'white' },
@@ -723,7 +723,7 @@ function initializeCharts() {
                 y: {
                     title: {
                         display: true,
-                        text: 'Number of Cards',
+                        text: 'estimated cards at table',
                         color: 'white'
                     },
                     ticks: { color: 'white' },

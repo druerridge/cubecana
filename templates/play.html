@@ -220,6 +220,7 @@
     function populateFromUrlParameter() {
         const urlParams = new URLSearchParams(window.location.search);
         const deckParam = urlParams.get('deck');
+        const exportParam = urlParams.get('export');
         
         if (deckParam) {
             try {
@@ -232,6 +233,25 @@
                 ttsButton.disabled = !hasContent;
                 InktableButton.disabled = !hasContent;
                 LorcanitoButton.disabled = !hasContent;
+                
+                // Auto-trigger export if export parameter is present and deck has content
+                if (exportParam && hasContent) {
+                    setTimeout(() => {
+                        switch (exportParam.toLowerCase()) {
+                            case 'tts':
+                                ttsButton.click();
+                                break;
+                            case 'inktable':
+                                InktableButton.click();
+                                break;
+                            case 'lorcanito':
+                                LorcanitoButton.click();
+                                break;
+                            default:
+                                console.warn('Unknown export type:', exportParam);
+                        }
+                    }, 100); // Small delay to ensure DOM is ready
+                }
                 
             } catch (error) {
                 console.error('Failed to decode deck parameter:', error);

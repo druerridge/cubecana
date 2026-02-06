@@ -224,8 +224,7 @@
         
         if (deckParam) {
             try {
-                // Decode base64 string
-                const decodedDeckList = atob(deckParam);
+                const decodedDeckList = decodeURIComponent(deckParam);
                 draftmancerInputArea.value = decodedDeckList;
                 
                 // Enable buttons if deck list is not empty

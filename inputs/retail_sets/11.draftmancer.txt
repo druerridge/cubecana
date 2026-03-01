@@ -1,11 +1,16 @@
 [CustomCards]
 [
     {
-        "name": "Let it Go",
+        "name": "Let It Go",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_7e294ae586f24eddae3b7d1263c73ee7.avif?1769392943"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
@@ -13,23 +18,33 @@
         "rating": 5
     },
     {
-        "name": "HeiHei - Persistent Presence",
+        "name": "Heihei - Persistent Presence",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_122d3f9ccb034f7d9e59245d311a7004.avif?1769392201"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "58",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Strike A Good Match",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_5423fd35369b41ebbfff99eeb1928fc4.avif?1769392287"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
@@ -41,43 +56,63 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_8ca0325f7667410d8b83628e02028294.avif?1769392965"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "164",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Thomas - Wide-Eyed Recruit",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_4baf2f3e2b1a4c8da121d3a0473684c5.avif?1769571258"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "1",
-        "rating": 1
+        "rating": 2
     },
     {
         "name": "Lilo - Snow Artist",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_df49511658c9468b9a5353f1561cc9cc.avif?1769571266"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "2",
-        "rating": 1
+        "rating": 2
     },
     {
         "name": "Pudge - Controls the Weather",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_a862524392a1444389f95109d49ddd31.avif?1769218589"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
@@ -89,31 +124,64 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_3538927a26154cb78ef3e9cfd6899035.avif?1769218597"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "4",
-        "rating": 0
+        "rating": 4
     },
     {
         "name": "Tiana - Warm and Happy",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_0c1fa4bfab94474da9e4a8396bbed19f.avif?1769571274"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "5",
-        "rating": 3
+        "rating": 4
+    },
+    {
+        "name": "Tiana - Warm and Happy",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "205",
+        "rating": 4,
+        "foil": true
     },
     {
         "name": "Nakoma - Waiting Out the Storm",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_1bd5bf1817684e57a918f2fdc04b4e3a.avif?1769218604"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
@@ -125,7 +193,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_26dc8e8705a240689f8af906cb3c600a.avif?1769050692"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
@@ -137,7 +210,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_adca393d2367497aac99f2c4dd29b8ce.avif?1769571908"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
@@ -150,7 +228,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_aa9b3ea05aa64ee9aa09783eb6ca425c.avif?1769571281"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
@@ -162,7 +245,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_b5db84fe81624162968c99d1ca9ee5af.avif?1769571289"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
@@ -174,19 +262,29 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_f3392db6475445bbb5ad6f608dc86c4b.avif?1769571297"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "10",
-        "rating": 0
+        "rating": 3
     },
     {
         "name": "Chief Powhatan - Protective Leader",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_4b12af84da2444928667b6d356a70766.avif?1769825955"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
@@ -198,7 +296,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_7820a5ea1cc44b97b4b5aeb89fc1882a.avif?1769825963"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
@@ -210,19 +313,47 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_a3822d68287f451baa20438d5a31e307.avif?1769825971"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "13",
-        "rating": 3
+        "rating": 4
+    },
+    {
+        "name": "Grandmother Willow - Ancient Advisor",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "206",
+        "rating": 4,
+        "foil": true
     },
     {
         "name": "Cobra Bubbles - Dedicated Official",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_f3b02d0a1478421da5b8ad2dac40d1b0.avif?1769571304"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
@@ -234,7 +365,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_b1c578429eb547b3b5908a637c491c3e.avif?1769218611"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
@@ -246,43 +382,81 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_4b2cd621705743f38c49fee9f610bdec.avif?1769050721"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "16",
-        "rating": 0
+        "rating": 2
     },
     {
         "name": "Lilo - Rock Star",
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_85108b76785246e98f3f0b462684ff0b.avif?1769825979"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
         "collector_number": "17",
-        "rating": 1
+        "rating": 4
+    },
+    {
+        "name": "Lilo - Rock Star",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "223",
+        "rating": 4,
+        "foil": true
     },
     {
         "name": "Pleakley - Arctic Naturalist",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_d2e66bee41214f2f9b1e38f4e1ccdbc3.avif?1769050750"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "18",
-        "rating": 1
+        "rating": 3
     },
     {
         "name": "Jumba Jookiba - Prolific Inventor",
         "mana_cost": "{8}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_aa9fd9e677e946f0ab5f0148b0874568.avif?1769050783"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
@@ -294,48 +468,68 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_20232422b3314d02b054a923d610d81d.avif?1769392010"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "20",
-        "rating": 1
+        "rating": 4
     },
     {
         "name": "Reuben - Sandwich Expert",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_47d6da02d19a4b82a6d7aaf593ca151e.avif?1769050820"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "21",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Pocahontas - Peacekeeper",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_7d2a989b37854bd5ac05ab0ee4bf086e.avif?1769050867"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
         "collector_number": "22",
-        "rating": 1
+        "rating": 3
     },
     {
         "name": "Pocahontas - Peacekeeper",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_40a3f6d8de604ff085fa5629597780a3.avif?1769572109"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
         "collector_number": "241",
-        "rating": 1,
+        "rating": 3,
         "foil": true
     },
     {
@@ -343,43 +537,63 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_9a221a16584b472c8bdec14c1b4ae5b8.avif?1769218618"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "23",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Bambi - Ethereal Fawn",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_33a165a8153e4ba587d52961bca86f79.avif?1769571313"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
         "collector_number": "24",
-        "rating": 4
+        "rating": 5
     },
     {
         "name": "Angel - Siren Singer",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_ce082b2459af4c0a94a900a468bd9096.avif?1769050898"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "25",
-        "rating": 1
+        "rating": 2
     },
     {
         "name": "Widow Tweed - Kindly Soul",
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_5d8b927e8f92419c93dd42424d44f562.avif?1769571320"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
@@ -391,7 +605,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_1a61d954f0524416a6c0f46814520495.avif?1769392017"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
@@ -403,31 +622,81 @@
         "mana_cost": "{8}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_46ccfcbf96124424a2467f7f13a2f0c5.avif?1769825987"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
         "collector_number": "28",
-        "rating": 0
+        "rating": 1
     },
     {
-        "name": "Akood Et Emuti",
+        "name": "Raging Storm",
+        "mana_cost": "{8}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "225",
+        "rating": 1,
+        "foil": true
+    },
+    {
+        "name": "Akood et Emuti",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_ff15d454e2f84f89a64bf17216e0b5f4.avif?1769392035"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "29",
-        "rating": 3
+        "rating": 4
     },
     {
-        "name": "Wisdom Of The Willow",
+        "name": "Mother Will Protect You",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "common",
+        "set": "11",
+        "collector_number": "30",
+        "rating": 1
+    },
+    {
+        "name": "Wisdom of the Willow",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_9efb436da763484ba54c2b75e1e0fcd9.avif?1769571328"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
@@ -439,7 +708,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_b1aa36e48c8e4041b07e30efb7837fa3.avif?1769050934"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
@@ -447,35 +721,86 @@
         "rating": 5
     },
     {
+        "name": "Ohana Means Family",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "224",
+        "rating": 5,
+        "foil": true
+    },
+    {
         "name": "John Smith's Compass",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_09f9741601234011a2ea8ad45c845099.avif?1769392104"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "33",
-        "rating": 0
+        "rating": 1
+    },
+    {
+        "name": "Zootopia - Tundratown",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "common",
+        "set": "11",
+        "collector_number": "34",
+        "rating": 2,
+        "layout": "split"
     },
     {
         "name": "Nala - Romping in the Snow",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_c86496abfa1c4cc9a138143a845e15ce.avif?1769392111"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "35",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Alice - Well-Read Whisper",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_4328715a70224a1fae6ee75034f305fa.avif?1769571358"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
@@ -487,19 +812,47 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_e690df88c3ab46c1ace417ff7f2681c9.avif?1769392118"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "37",
-        "rating": 1
+        "rating": 4
+    },
+    {
+        "name": "Tigger - Bouncing All the Way",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "208",
+        "rating": 4,
+        "foil": true
     },
     {
         "name": "Isis Vanderchill - Ice Queen of St. Canard",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_48084ac3a18c452cadbabd4675f9672b.avif?1769050954"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
@@ -511,7 +864,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_fcdeeb8639c74831b6c234d81ad2f476.avif?1769392125"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
@@ -523,7 +881,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_08e7171f69da4091b9e8691356768b86.avif?1769392132"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
@@ -535,7 +898,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_260df0802696480898a5d7f6634c5a43.avif?1769050996"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
@@ -547,7 +915,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_044b499eebfa487ea9fb1a43e8d5fcdb.avif?1769392141"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
@@ -559,19 +932,29 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_72e6b0eee1f1425ea52d9be4a2984843.avif?1769392149"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "43",
-        "rating": 1
+        "rating": 3
     },
     {
         "name": "Taran - Magically Armed",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_b0231e5ba8c34691ac5bf29e6fc96c46.avif?1769051038"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
@@ -583,7 +966,12 @@
         "mana_cost": "{9}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_2dd93d7bd66a4ce78cba02bbfdbcafef.avif?1769392157"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
@@ -595,7 +983,12 @@
         "mana_cost": "{9}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_758bab20496f4673991e53ac59f1bcaa.avif?1769572079"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
@@ -608,43 +1001,63 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_5be7a45f5453485dbebcd37b436210d9.avif?1769392164"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "46",
-        "rating": 0
+        "rating": 1
     },
     {
         "name": "Morgana Macawber - Reformed Spellcaster",
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_1d1f7c6cafbd497292467de4c883cf0c.avif?1769571366"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "47",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Tinker Bell - Snowflake Collector",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_52cd7cdc36254654b13e484e2dbc989e.avif?1769051076"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
         "collector_number": "48",
-        "rating": 1
+        "rating": 2
     },
     {
         "name": "Genie - Magical Researcher",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_0f1e171e26c9423aa264732a2e38dd7f.avif?1769051129"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
@@ -656,7 +1069,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_13f9925099454b7a8fd6225381d11061.avif?1769393120"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
@@ -669,43 +1087,99 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_be89cf4d06b54426801f296b3cbf751d.avif?1769051161"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
         "collector_number": "50",
-        "rating": 3
+        "rating": 4
+    },
+    {
+        "name": "Anna - Soothing Sister",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "227",
+        "rating": 4,
+        "foil": true
     },
     {
         "name": "Kristoff - Icy Explorer",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_094f62fcb6094af1922921881eddf3f6.avif?1769571375"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "51",
-        "rating": 0
+        "rating": 1
     },
     {
         "name": "Anna - Little Sister",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_1ea627edc2aa4a099e53afb91a2bdbf1.avif?1769392170"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "52",
-        "rating": 2
+        "rating": 3
+    },
+    {
+        "name": "Anna - Little Sister",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "209",
+        "rating": 3,
+        "foil": true
     },
     {
         "name": "Marshmallow - Cranky Climber",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_f000a1651ff54227806f5da0c5d89c42.avif?1769392178"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
@@ -717,43 +1191,63 @@
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_9ac4f4fb26084e66aae3bc5a7beea167.avif?1769826816"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "54",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Christopher Robin - Joining the Fun",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_6ef0db16a9b944d29c9a18fb37a8916d.avif?1769571383"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "55",
-        "rating": 2
+        "rating": 4
     },
     {
         "name": "Lumpy - Playful Heffalump",
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_89bb9007e02e4003911ada97cfbe4009.avif?1769392185"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "56",
-        "rating": 5
+        "rating": 4
     },
     {
-        "name": "Witches Of Morva - Orddu, Orwen, and Orgoch",
+        "name": "Witches of Morva - Orddu, Orwen, and Orgoch",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_5c24d2a781524b8fa28b72a0dddd91c5.avif?1769392193"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
@@ -765,19 +1259,29 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_e7d84a4948de49e49e717671d44fbb4c.avif?1769392207"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "59",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Sven - Leaping Reindeer",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_ad33da4d6a2e44569e0bb8f16810ba1a.avif?1769826823"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
@@ -785,47 +1289,67 @@
         "rating": 4
     },
     {
-        "name": "Do You Want To Build A Snowman?",
+        "name": "Do You Want to Build A Snowman?",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_adb608b3667f4c769a3bab709840dad1.avif?1769051201"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "61",
-        "rating": 0
+        "rating": 1
     },
     {
-        "name": "Come Out And Fight!",
+        "name": "Come Out and Fight!",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_9d9eb44aa6324c2ebce958cbf92a2d31.avif?1769392214"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "62",
-        "rating": 1
+        "rating": 2
     },
     {
         "name": "Swordplay",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_79bedff3158647f791e28faa270773b5.avif?1769392222"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "63",
-        "rating": 1
+        "rating": 2
     },
     {
-        "name": "Colors Of The Wind",
+        "name": "Colors of the Wind",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_0e8280a06c6a482caa3cb51b207fe284.avif?1769392229"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
@@ -833,35 +1357,68 @@
         "rating": 4
     },
     {
+        "name": "Colors of the Wind",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "228",
+        "rating": 4,
+        "foil": true
+    },
+    {
         "name": "Mother's Necklace",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_f91b39cb2d4a47f984e9e5114216e75b.avif?1769392237"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "65",
-        "rating": 0
+        "rating": 2
     },
     {
         "name": "Mystical Inkcaster",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_3d8ed3e3edf846c7b5dc9cc034436b8e.avif?1769392244"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "66",
-        "rating": 0
+        "rating": 1
     },
     {
-        "name": "Pot Of Honey",
+        "name": "Pot of Honey",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_9ab9a1951014457b824c8f11a3d0fdbc.avif?1769051255"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
@@ -869,11 +1426,16 @@
         "rating": 1
     },
     {
-        "name": "The Frost Vine - Monstrous Plant",
+        "name": "The Frozen Vine - Monstrous Plant",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_27d46247102c480c8b2ce98be8bb15f5.avif?1769392252"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
@@ -886,45 +1448,83 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_3825929341ca42099c98d099ed40d2ac.avif?1769571392"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
         "collector_number": "69",
-        "rating": 1
+        "rating": 3
+    },
+    {
+        "name": "Mulan - Resourceful Recruit",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "229",
+        "rating": 3,
+        "foil": true
     },
     {
         "name": "Stitch - Naughty Experiment",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_38185e538f0e444bbffd676c96efd9c9.avif?1769392258"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "70",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Big Mama - Clever and Calming",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_692e18212e974f8e808f8a8dc45169a8.avif?1769826830"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "71",
-        "rating": 1
+        "rating": 3
     },
     {
         "name": "Minnie Mouse - Spinning Skater",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_8db0f3b74ec145c39cb0ec2413c48c75.avif?1769051676"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
-        "rarity": "uncommon",
+        "rarity": "common",
         "set": "11",
         "collector_number": "72",
         "rating": 4
@@ -934,7 +1534,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_85ee925c4b1c4c1bbf2d6320a9aeaf7d.avif?1769392265"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
@@ -942,23 +1547,33 @@
         "rating": 3
     },
     {
-        "name": "Chien-po - Snow Warrior",
+        "name": "Chien-Po - Snow Warrior",
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_9ea59b497df74d759d70cf087e044b16.avif?1769571399"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "74",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Ling - Snow Warrior",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_00eb4b66a7f945adaa15ca341179bbf7.avif?1769392272"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
@@ -970,91 +1585,167 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_db6ccc6d3dde4e4890ff8a1fd391e905.avif?1769826837"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "76",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Chernabog - Unnatural Force",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_10d405a5074a498592c40bed3888538a.avif?1769826845"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
         "collector_number": "77",
-        "rating": 4
+        "rating": 5
     },
     {
         "name": "Dinky - Has the Brains",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_0fc3d71d5b8e4fb08b5c9108cbd3e28a.avif?1769826851"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "78",
-        "rating": 1
+        "rating": 2
     },
     {
         "name": "Stegmutt - Clumsy Dinosaur",
         "mana_cost": "{8}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_5864156730e6408181fd43e5a59dbe05.avif?1769392280"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "79",
-        "rating": 0
+        "rating": 1
     },
     {
         "name": "Squeaks - Cozy Caterpillar",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_c583ec314a73469d890da787bcb08426.avif?1769826859"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "80",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Aladdin - On the Edge of Adventure",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_1088d26ccab942568c740c3ebaccb2c7.avif?1769571407"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "81",
-        "rating": 1
+        "rating": 2
+    },
+    {
+        "name": "Aladdin - On the Edge of Adventure",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "211",
+        "rating": 2,
+        "foil": true
     },
     {
         "name": "Mushu - Sneaky Dragon",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_5830e796ad074e8c83d2757dfa318992.avif?1769571414"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "82",
-        "rating": 2
+        "rating": 3
+    },
+    {
+        "name": "Mushu - Sneaky Dragon",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "212",
+        "rating": 3,
+        "foil": true
     },
     {
         "name": "Goofy - Ghost of Jacob Marley",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_6a38f391cffc44ce8c818845eec37f01.avif?1769051713"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
@@ -1066,31 +1757,46 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_1828e2a9c3c547abbcd95f8c4fdc211f.avif?1769571423"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "84",
-        "rating": 1
+        "rating": 3
     },
     {
         "name": "Copper - Hound Pup",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_47915154ee494451b714c3ec1084331a.avif?1769826866"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "85",
-        "rating": 1
+        "rating": 2
     },
     {
         "name": "Vixey - Forest Friend",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_6edf9f351f6d4d8ea588fbbdbf8ed253.avif?1769571430"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
@@ -1102,43 +1808,81 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_fdbc7b03d5194e2cb2c407273f96e01a.avif?1769826873"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "87",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Minnie Mouse - Mrs. Cratchit",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_192bf6789d194f1c8f7985dee2353891.avif?1769826881"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "88",
-        "rating": 2
+        "rating": 4
+    },
+    {
+        "name": "Minnie Mouse - Mrs. Cratchit",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "213",
+        "rating": 4,
+        "foil": true
     },
     {
         "name": "White Rabbit - Late Again",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_a8878d5ac3ea4ff7bfacb512552943cc.avif?1769051741"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "89",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Tod - Playful Kit",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_da2a2175ec4d44f0b624880a24548506.avif?1769051793"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
@@ -1150,36 +1894,51 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_23f005944c784e158b9709de1c587d1e.avif?1769051800"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "91",
-        "rating": 0
+        "rating": 4
     },
     {
         "name": "Tod - Knows All the Tricks",
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_3d891c7945f04b6d9095dda6a9a81a4f.avif?1769571438"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
         "collector_number": "92",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Tod - Knows All the Tricks",
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_2319774247e242a19dfa6a0fe584fff0.avif?1769572087"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
         "collector_number": "230",
-        "rating": 3,
+        "rating": 4,
         "foil": true
     },
     {
@@ -1187,31 +1946,46 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_0ad5cc52cd5f49bb9594afa82796f42e.avif?1769051807"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
         "collector_number": "93",
-        "rating": 2
+        "rating": 4
     },
     {
         "name": "Snowball Fight",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_8bd23953f8744c588a3f122476f67c3c.avif?1769051933"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "95",
-        "rating": 1
+        "rating": 2
     },
     {
-        "name": "Freeze The Vine",
+        "name": "Freeze the Vine",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_d8867ccffeba46a5b16ab0f876653f4b.avif?1769051940"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
@@ -1219,11 +1993,16 @@
         "rating": 1
     },
     {
-        "name": "Freeze The Vine",
+        "name": "Freeze the Vine",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_d0659baf8fad4748ae9abf7260279d8c.avif?1769572093"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
@@ -1232,11 +2011,16 @@
         "foil": true
     },
     {
-        "name": "Education Or Elimination",
+        "name": "Education or Elimination",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_69c74f5a7fcb431290622e2321e786fe.avif?1769571447"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
@@ -1248,43 +2032,63 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_626e78520f89461d8982834bdc9ac172.avif?1769392478"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "98",
-        "rating": 0
+        "rating": 4
     },
     {
         "name": "Rafiki's Bakora Staff",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_b33671b3938940708ac2a4f7d00d942b.avif?1769392485"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "99",
-        "rating": 0
+        "rating": 1
     },
     {
         "name": "Retro Evolution Device",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_a7afac820f8249d9896e3cc693fe0094.avif?1769392492"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "100",
-        "rating": 0
+        "rating": 1
     },
     {
         "name": "Battering Ram",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_c49a2f008f0048d4951384b30880eba6.avif?1769392500"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
@@ -1292,23 +2096,51 @@
         "rating": 1
     },
     {
+        "name": "Game Preserve - Protected Land",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "common",
+        "set": "11",
+        "collector_number": "102",
+        "rating": 3,
+        "layout": "split"
+    },
+    {
         "name": "Wreck-it Ralph - Raging Wrecker",
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_cb5f4cea3a664d12952b12a0a30fbbf3.avif?1769571456"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
         "collector_number": "103",
-        "rating": 0
+        "rating": 2
     },
     {
-        "name": "Scrooge Mcduck - Ghostly Ebenezer",
+        "name": "Scrooge McDuck - Ghostly Ebenezer",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_4209198480ed495d9d5ed7608ece035f.avif?1769826900"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
@@ -1320,19 +2152,29 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_39f53f01a4b948a886a82a0c6bf742a3.avif?1769392543"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "105",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Taurus Bulba - Steerminator",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_85d6bd70dfe74990af90d215e5010a8d.avif?1769826907"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
@@ -1344,7 +2186,12 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_f5ec9aa34cb2438fb19806535e9ffcc5.avif?1769392550"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
@@ -1356,7 +2203,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_96a789fd5e1943adbb12361ff791aec9.avif?1769571464"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
@@ -1368,7 +2220,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_d6b606b2691f493bb74f2faf13339c28.avif?1769392557"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
@@ -1380,103 +2237,184 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_e10790e2f76f46f4aeb38d35164934b1.avif?1769826913"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "110",
-        "rating": 1
+        "rating": 2
     },
     {
         "name": "Liquidator - Iced Over",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_109b0bfb7a374953b896f3d6d051c099.avif?1769571471"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "111",
-        "rating": 2
+        "rating": 4
     },
     {
         "name": "Elisa Maza - Transformed Gargoyle",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_8d6d9d233b644d8d88baf2a34751328b.avif?1769051947"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "112",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Iduna - Alarmed Queen",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_d79f18fa0da949079077eb5ecaad8426.avif?1769571478"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "113",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Agnarr - King of Arendelle",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_9315eb79ba14485fa0ecc0b6dcabd054.avif?1769571485"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "114",
-        "rating": 1
+        "rating": 4
     },
     {
         "name": "Negaduck - Evil Doppelganger",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_c7e5c7bde26548919587cb50662ebef3.avif?1769571492"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "115",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Negaduck - Public Enemy Number One",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_6f9057fdce974222a39f3a84c51114ec.avif?1769051954"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "116",
-        "rating": 3
+        "rating": 4
+    },
+    {
+        "name": "Negaduck - Public Enemy Number One",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "232",
+        "rating": 4,
+        "foil": true
     },
     {
         "name": "Hercules - Spectral Demigod",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_993a0b8e1985452d8ea6f90459a6e294.avif?1769571501"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "117",
-        "rating": 1
+        "rating": 4
+    },
+    {
+        "name": "Hercules - Spectral Demigod",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "214",
+        "rating": 4,
+        "foil": true
     },
     {
         "name": "Beast - Snowfield Troublemaker",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_cde01953c3aa414290991fddcffe4651.avif?1769051961"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
@@ -1488,7 +2426,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_bf26fddf7a2741a48dbe56961de6a5cb.avif?1769571508"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
@@ -1500,47 +2443,68 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_aeb75ac2ab524eb690b3b96aeddc80cc.avif?1769392564"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "120",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Goofy - Klutzy Skier",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_9ec4271d84b44a8f8ac40e0d1ea0bf0a.avif?1769392571"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "121",
-        "rating": 3
+        "rating": 4
+    },
+    {
+        "name": "Goofy - Klutzy Skier",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "216",
+        "rating": 4,
+        "foil": true
     },
     {
         "name": "Olaf - Snowman of Action",
         "mana_cost": "{9}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_22e26220f81745b394485c0cb6ef2c2d.avif?1769826921"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "122",
-        "rating": 0
-    },
-    {
-        "name": "Elsa - Ice Artisan",
-        "mana_cost": "{6}",
-        "type": "Instant",
-        "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_e9a1997821d647d5b13378a801921bf6.avif?1769051968"
-        },
-        "rarity": "mythic",
-        "set": "11",
-        "collector_number": "123",
         "rating": 1
     },
     {
@@ -1548,20 +2512,47 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_b35b509f95d441c1bd11ec67d755db5d.avif?1769572101"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "123",
+        "rating": 4
+    },
+    {
+        "name": "Elsa - Ice Artisan",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
         "collector_number": "233",
-        "rating": 1,
+        "rating": 4,
         "foil": true
     },
     {
-        "name": "Scrooge Mcduck - Ebenezer Scrooge",
+        "name": "Scrooge McDuck - Ebenezer Scrooge",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_a06d887649d146a89f4c56939b02ad13.avif?1769826929"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
@@ -1573,31 +2564,64 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_a6f3c215973844fc8ae5cbc2a4ea388f.avif?1769051974"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "125",
-        "rating": 1
+        "rating": 2
     },
     {
-        "name": "Willie The Giant - Ghost of Christmas Present",
+        "name": "Elsa - Concerned Sister",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "215",
+        "rating": 2,
+        "foil": true
+    },
+    {
+        "name": "Willie the Giant - Ghost of Christmas Present",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_f472ec7c6a294a6498f3788b189472c4.avif?1769051982"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "126",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Nani's Payback",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_ade83b5dd75144a4b901097e22b7b8b1.avif?1769826936"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
@@ -1605,15 +2629,54 @@
         "rating": 3
     },
     {
-        "name": "Force Of A Great Typhoon",
+        "name": "Force of a Great Typhoon",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_dbff3559ccd647889b1fb934994a2d02.avif?1769392578"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "128",
+        "rating": 2
+    },
+    {
+        "name": "Marching Off to Battle",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "common",
+        "set": "11",
+        "collector_number": "129",
+        "rating": 4
+    },
+    {
+        "name": "The Cold Never Bothered Me",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "rare",
+        "set": "11",
+        "collector_number": "130",
         "rating": 1
     },
     {
@@ -1621,60 +2684,104 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_a3e135574f3142caabee6f51a9171a40.avif?1769051991"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
-        "rarity": "rare",
+        "rarity": "mythic",
         "set": "11",
-        "collector_number": "130",
-        "rating": 0
+        "collector_number": "234",
+        "rating": 1,
+        "foil": true
     },
     {
         "name": "Grab Your Bow",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_4bf208bd16b043ac8eb27209b522c3c6.avif?1769571597"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "131",
-        "rating": 0
+        "rating": 3
     },
     {
         "name": "Lonely Grave",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_0fb558452ff949e1ad997108b6f0ad06.avif?1769392624"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "132",
-        "rating": 0
+        "rating": 1
     },
     {
         "name": "Kristoff's Lute",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_ec94f5c4a31b40c99f5b421ac7dd3acf.avif?1769392631"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "133",
-        "rating": 0
+        "rating": 2
+    },
+    {
+        "name": "Scrooge's Counting House - Ebenezer's Office",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "uncommon",
+        "set": "11",
+        "collector_number": "134",
+        "rating": 1,
+        "layout": "split"
     },
     {
         "name": "Graveyard of Christmas Future - Lonely Resting Place",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_648f06059c3b4f8680bc932c085d6182.avif?1769392638"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "135",
-        "rating": 1,
+        "rating": 2,
         "layout": "split"
     },
     {
@@ -1682,12 +2789,17 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_5f6b06befa5143649062b5ac4414d7ba.avif?1769392645"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "136",
-        "rating": 0,
+        "rating": 1,
         "layout": "split"
     },
     {
@@ -1695,31 +2807,46 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_e2a1ea3f5b0d48db8e7197056581c11d.avif?1769571658"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "137",
-        "rating": 1
+        "rating": 2
     },
     {
         "name": "Kanga - Peaceful Gatherer",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_9f1b0784cd5e4536bad1c85dabbd1943.avif?1769571666"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "138",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Piglet - Entranced by Snow",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_39ccc87a07884c2789a33b03738f2bb3.avif?1769392652"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
@@ -1727,35 +2854,50 @@
         "rating": 3
     },
     {
-        "name": "Mickey Mouse - Tiny Tim\u2019s Father",
+        "name": "Mickey Mouse - Tiny Tim's Father",
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_9280b9713ade4c7fb2fb651ff5a2e815.avif?1769571673"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "140",
-        "rating": 3
+        "rating": 4
     },
     {
-        "name": "Minnie Mouse - Tiny Tim\u2019s Mother",
+        "name": "Minnie Mouse - Tiny Tim's Mother",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_33f12c74df68498cb444d6a493be67ef.avif?1769571679"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "141",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Sina - Vigilant Parent",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_6f3a637fc61e4ad084fc878c55ff543c.avif?1769052019"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
@@ -1767,7 +2909,12 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_864fbdcc6f91431db5a365dd2aa4dba1.avif?1769826979"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
@@ -1779,7 +2926,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_44777bc0e3f44e018e9fad2f10644de8.avif?1769571686"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
@@ -1791,7 +2943,12 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_39abc3bfefc14489beca55a40a48153c.avif?1769392659"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
@@ -1803,24 +2960,34 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_7d28f2a0002d4255a41bd0f03d6d8ea5.avif?1769052026"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "146",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Jiminy Cricket - Ghost of Christmas Past",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_ea1ae83b3c414a2a838398390473ebc6.avif?1769052136"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
         "collector_number": "218",
-        "rating": 3,
+        "rating": 4,
         "foil": true
     },
     {
@@ -1828,55 +2995,80 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_be96288326484fd880acd268246cc300.avif?1769392666"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "147",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Gramma Tala - Connected to Nature",
         "mana_cost": "{12}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_600ad28b57694ad2b078261118277ad2.avif?1769052032"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "148",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Gosalyn Mallard - Curious Child",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_dc802d9673ac4bd3ae7f6976a4faae09.avif?1769826988"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "149",
-        "rating": 1
+        "rating": 2
     },
     {
         "name": "Darkwing Duck - Dashing Gadgeteer",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_79e8c2e58ef1439ba301da0ec23f1f08.avif?1769052039"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
         "collector_number": "150",
-        "rating": 0
+        "rating": 1
     },
     {
-        "name": "Winnie The Pooh - Hungry Bear",
+        "name": "Winnie the Pooh - Hungry Bear",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_bdaa50ed73874775b00eead51a5c83de.avif?1769392674"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
@@ -1884,47 +3076,103 @@
         "rating": 1
     },
     {
-        "name": "Scrooge Mcduck - Reformed Ebenezer",
+        "name": "Winnie the Pooh - Hungry Bear",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "217",
+        "rating": 1,
+        "foil": true
+    },
+    {
+        "name": "Scrooge McDuck - Reformed Ebenezer",
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_8ce2b4cc2aff4ed9b3bc3fe2b1d78b18.avif?1769052047"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
         "collector_number": "152",
-        "rating": 1
+        "rating": 4
+    },
+    {
+        "name": "Scrooge McDuck - Reformed Ebenezer",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "235",
+        "rating": 4,
+        "foil": true
     },
     {
         "name": "Splatter Phoenix - Rejected Artist",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_dd7610ea1502422199f68ea86fce5b19.avif?1769571693"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "153",
-        "rating": 1
+        "rating": 2
     },
     {
         "name": "Pete - Ghost of Christmas Future",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_cc4685ee359648a9b100d7a20c00ee5f.avif?1769052054"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "154",
-        "rating": 4
+        "rating": 5
     },
     {
         "name": "Moana - Curious Explorer",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_d598d22b1dbf4566bede003c3af9e0a8.avif?1769052060"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
@@ -1936,7 +3184,12 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_b73d08030c9646ab8a227158b8e453d4.avif?1769572117"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
@@ -1949,31 +3202,64 @@
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_1ec6bad52ccc4a4facc7bbe7e7aa6c53.avif?1769392682"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
         "collector_number": "156",
-        "rating": 1
+        "rating": 3
+    },
+    {
+        "name": "Tamatoa - Seeker of Shine",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "237",
+        "rating": 3,
+        "foil": true
     },
     {
         "name": "Morty Fieldmouse - Tiny Tim",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_5c9d96ae2b6248f19d3a431a93576adb.avif?1769392690"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "157",
-        "rating": 1
+        "rating": 2
     },
     {
         "name": "Belle - Snowfield Strategist",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_c38c857e2cbd433699e354e085a4625c.avif?1769052066"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
@@ -1981,11 +3267,34 @@
         "rating": 4
     },
     {
+        "name": "Belle - Snowfield Strategist",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "236",
+        "rating": 4,
+        "foil": true
+    },
+    {
         "name": "Mickey Mouse - Bob Cratchit",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_df33ab22a6b1429781e4be47ec28e350.avif?1769826997"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
@@ -1993,119 +3302,187 @@
         "rating": 3
     },
     {
-        "name": "Scrooge Mcduck - Miserly Ebenezer",
+        "name": "Mickey Mouse - Bob Cratchit",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "219",
+        "rating": 3,
+        "foil": true
+    },
+    {
+        "name": "Scrooge McDuck - Miserly Ebenezer",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_d5104ffcc4cc4473b8f4ffba12447855.avif?1769052073"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "160",
-        "rating": 0
+        "rating": 2
     },
     {
         "name": "Chief Tui - Weaving a Tale",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_1bd99dad44d341dda6d1f73ffb2bc529.avif?1769392698"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "161",
-        "rating": 1
+        "rating": 3
     },
     {
         "name": "Visiting Christmas Past",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_8c8dd7b9235e4b778aeff7b8b4da14ce.avif?1769392936"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "162",
-        "rating": 0
+        "rating": 1
     },
     {
         "name": "Wipe Out!",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_0d28e0cfc9ea44d4a568fa034fc67dbd.avif?1769827003"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "165",
-        "rating": 0
+        "rating": 2
     },
     {
         "name": "Blue Smoke",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_9d937b1e551d47c18d97a54494378368.avif?1769571733"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "166",
-        "rating": 0
+        "rating": 1
     },
     {
         "name": "Tiny Tim's Crutch",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_f87c783d2fe2456687533d4b5f641131.avif?1769392971"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "167",
-        "rating": 1
+        "rating": 2
     },
     {
         "name": "Darkwing's Chair Set",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_2663ccb2084547c0a55220f63f46a36c.avif?1769392979"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "168",
-        "rating": 0
+        "rating": 1
     },
     {
         "name": "Darkwing's Gas Device",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_51455b45e452420caabc777bd7bd1ee5.avif?1769392986"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "169",
-        "rating": 0
+        "rating": 2
     },
     {
         "name": "Hidden Trap",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_7e0852ee050446dd96742b3986444917.avif?1769393035"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "170",
-        "rating": 0
+        "rating": 1
     },
     {
         "name": "Rapunzel - Ethereal Protector",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_1416db548e594c8baff2fab420ae3c59.avif?1769393043"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
@@ -2117,7 +3494,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_b3924beae9a04927adc0e542f5656aa0.avif?1769393127"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
@@ -2130,43 +3512,63 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_31c0320e66744254b1a8a70f108427aa.avif?1769827010"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "172",
-        "rating": 1
+        "rating": 2
     },
     {
         "name": "Prince Naveen - Bundled Up",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_6c7e5e05d9ad44ceb4f84c5a82ee8c6b.avif?1769393050"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "173",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Darkwing Duck - Crime Fighter",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_b776bea5bc784d669be7db1efd244ef3.avif?1769827018"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "174",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Li Shang - Solemn Son",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_b63df19a6a2e47edb0325ce080a7ac04.avif?1769393057"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
@@ -2174,47 +3576,85 @@
         "rating": 3
     },
     {
-        "name": "Gantu - Hamsterviel\u2019s Accomplice",
+        "name": "Gantu - Hamsterviel's Accomplice",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_e58426a12e4840d1a58c49c2a147f6b4.avif?1769052080"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "176",
-        "rating": 0
+        "rating": 1
     },
     {
         "name": "Launchpad - Trusty Sidekick",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_5dd9c7a6d0ca4d4e9b0891adf35e1a99.avif?1769052087"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "177",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Donald Duck - Along for the Ride",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_d7b4bc07ebf4418eab82165a82343d18.avif?1769571742"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "178",
-        "rating": 1
+        "rating": 4
+    },
+    {
+        "name": "Donald Duck - Along for the Ride",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "220",
+        "rating": 4,
+        "foil": true
     },
     {
         "name": "Chief - Seasoned Tracker",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_a26bf7d81173483589a2df5446ab1ec0.avif?1769393064"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
@@ -2226,7 +3666,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_da80d9da41e84566969a1c1585dfc75c.avif?1769393070"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
@@ -2234,11 +3679,16 @@
         "rating": 3
     },
     {
-        "name": "Mchorn - Ice-Cold Officer",
+        "name": "McHorn - Ice-Cold Officer",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_a878e31ab9a94c4ba48079ebff6b155e.avif?1769052093"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
@@ -2250,7 +3700,12 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_d7aa2aa9bd12495096d00d33c6f09821.avif?1769571749"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
@@ -2262,91 +3717,131 @@
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_cf304010edfd42ddb7e2a2ee5702f7ab.avif?1769827026"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "183",
-        "rating": 1
+        "rating": 3
     },
     {
         "name": "Nani - No Worries",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_b10b1d80d4a94ec5b2ed59c1318bb046.avif?1769393078"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "184",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Stitch - High Badness Level",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_7e2cac54dd5d4e0ea2db87cf752df00a.avif?1769052099"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "185",
-        "rating": 2
+        "rating": 3
     },
     {
         "name": "Dr. Hamsterviel - Infamous Scientist",
         "mana_cost": "{8}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_fa25fc0098884a649dc40a9e0551cff2.avif?1769052105"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "186",
-        "rating": 1
+        "rating": 2
     },
     {
         "name": "Angela - Night Warrior",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_d0248ffc9fe545b68653691286a005c6.avif?1769827033"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
         "collector_number": "187",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Darkwing Duck - Darkwarrior",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_a74daac05bd643ce8913eec4fcbf2bdc.avif?1769827041"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "188",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Gigi - Best in Snow",
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_a1e3f0b6249140fcbab13e33ef76fba8.avif?1769393084"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "189",
-        "rating": 3
+        "rating": 4
     },
     {
         "name": "Grand Councilwoman - Galactic Authority",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_a0d09a062bc54cceb56ecef2636860c3.avif?1769571756"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
@@ -2358,7 +3853,12 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_e4d3bcc244e44eefae088a4970acffc5.avif?1769052112"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
@@ -2366,23 +3866,69 @@
         "rating": 4
     },
     {
+        "name": "Angel - Experiment 624",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "238",
+        "rating": 4,
+        "foil": true
+    },
+    {
         "name": "Darkwing Duck - Cool Under Pressure",
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_5215a54a63fe44f38f2e56f30d6847e6.avif?1769052119"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
         "collector_number": "192",
-        "rating": 1
+        "rating": 3
+    },
+    {
+        "name": "Darkwing Duck - Cool Under Pressure",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "239",
+        "rating": 3,
+        "foil": true
     },
     {
         "name": "John Smith - Undaunted Protector",
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_26b1e9d58acf429aa2d77f89f6534c16.avif?1769393092"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
@@ -2394,84 +3940,224 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_bc75672185f940fc88f84192ceff4973.avif?1769571764"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "194",
-        "rating": 1
+        "rating": 4
+    },
+    {
+        "name": "Judy Hopps - Snowball Patrol",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "221",
+        "rating": 4,
+        "foil": true
     },
     {
         "name": "Lilo - Bundled Up",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_f86297c4c6f940cc8135cd806d96105a.avif?1769571771"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "mythic",
         "set": "11",
         "collector_number": "195",
-        "rating": 2
+        "rating": 4
     },
     {
-        "name": "Keep The Ancient Ways",
+        "name": "Keep the Ancient Ways",
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_491b1cb4aadf4bf999230048abf2cf0b.avif?1769052124"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "196",
-        "rating": 0
+        "rating": 1
+    },
+    {
+        "name": "The Terror That Flaps in the Night",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "common",
+        "set": "11",
+        "collector_number": "197",
+        "rating": 4
     },
     {
         "name": "Let's Get Dangerous",
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_bdf35f1859df44e19594261c5bcede11.avif?1769393098"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "rare",
         "set": "11",
         "collector_number": "198",
-        "rating": 0
+        "rating": 1
+    },
+    {
+        "name": "Let's Get Dangerous",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "mythic",
+        "set": "11",
+        "collector_number": "240",
+        "rating": 1,
+        "foil": true
     },
     {
         "name": "Winterspell",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_6e3ec107e64e498ca64d1a4de4e6abb9.avif?1769052130"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "uncommon",
         "set": "11",
         "collector_number": "199",
-        "rating": 1
+        "rating": 2
     },
     {
         "name": "Nearly Indestructible",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_60d34f2b1b38499e8f7a5915a0a7e59c.avif?1769393106"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "200",
-        "rating": 1
+        "rating": 2
     },
     {
-        "name": "Infra-pink Ultra Scan Specs",
+        "name": "Infra-Pink Ultra Scan Specs",
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": "https://cards.lorcast.io/card/digital/normal/crd_472838feca334c31913db3f2fc0b39db.avif?1769393113"
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
         },
         "rarity": "common",
         "set": "11",
         "collector_number": "201",
         "rating": 1
+    },
+    {
+        "name": "The Thunderquack",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "rare",
+        "set": "11",
+        "collector_number": "202",
+        "rating": 2
+    },
+    {
+        "name": "Containment Unit",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "rare",
+        "set": "11",
+        "collector_number": "203",
+        "rating": 1
+    },
+    {
+        "name": "Darkwing Tower - Icy Headquarters",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": null,
+            "fr": null,
+            "de": null,
+            "it": null,
+            "ja": null,
+            "zh": null
+        },
+        "rarity": "uncommon",
+        "set": "11",
+        "collector_number": "204",
+        "rating": 2,
+        "layout": "split"
     }
 ]
 [Settings]
@@ -2488,21 +4174,22 @@
 60000 Launchpad - Trusty Sidekick (11) 177
 60000 Donald Duck - Along for the Ride (11) 178
 60000 Amos Slade - Tenacious Tracker (11) 180
-60000 Mchorn - Ice-Cold Officer (11) 181
+60000 McHorn - Ice-Cold Officer (11) 181
 60000 Nani - No Worries (11) 184
 60000 Stitch - High Badness Level (11) 185
+60000 The Terror That Flaps in the Night (11) 197
 60000 Nearly Indestructible (11) 200
-60000 Infra-pink Ultra Scan Specs (11) 201
+60000 Infra-Pink Ultra Scan Specs (11) 201
 [CommonSlotSapphire(1)]
 60000 Distract (11) 164
 60000 Kanga - Peaceful Gatherer (11) 138
 60000 Piglet - Entranced by Snow (11) 139
-60000 Mickey Mouse - Tiny Tim’s Father (11) 140
-60000 Minnie Mouse - Tiny Tim’s Mother (11) 141
+60000 Mickey Mouse - Tiny Tim's Father (11) 140
+60000 Minnie Mouse - Tiny Tim's Mother (11) 141
 60000 Sina - Vigilant Parent (11) 142
 60000 Honker Muddlefoot - Timid Genius (11) 143
-60000 Winnie The Pooh - Hungry Bear (11) 151
-60000 Scrooge Mcduck - Miserly Ebenezer (11) 160
+60000 Winnie the Pooh - Hungry Bear (11) 151
+60000 Scrooge McDuck - Miserly Ebenezer (11) 160
 60000 Chief Tui - Weaving a Tale (11) 161
 60000 Blue Smoke (11) 166
 60000 Tiny Tim's Crutch (11) 167
@@ -2516,11 +4203,13 @@
 60000 Negaduck - Evil Doppelganger (11) 115
 60000 Hercules - Spectral Demigod (11) 117
 60000 Goofy - Marley's Clumsy Spirit (11) 120
-60000 Force Of A Great Typhoon (11) 128
+60000 Force of a Great Typhoon (11) 128
+60000 Marching Off to Battle (11) 129
 60000 Beast's Castle - Winter Gardens (11) 136
 [CommonSlotEmerald(1)]
 60000 Strike A Good Match (11) 94
 60000 Stitch - Naughty Experiment (11) 70
+60000 Minnie Mouse - Spinning Skater (11) 72
 60000 Yao - Snow Warrior (11) 73
 60000 Boomer - Has the Beak (11) 76
 60000 Dinky - Has the Brains (11) 78
@@ -2529,8 +4218,9 @@
 60000 Copper - Hound Pup (11) 85
 60000 Tod - All Alone (11) 87
 60000 Snowball Fight (11) 95
+60000 Game Preserve - Protected Land (11) 102
 [CommonSlotAmethyst(1)]
-60000 HeiHei - Persistent Presence (11) 58
+60000 Heihei - Persistent Presence (11) 58
 60000 Nala - Romping in the Snow (11) 35
 60000 Tigger - Bouncing All the Way (11) 37
 60000 Isis Vanderchill - Ice Queen of St. Canard (11) 38
@@ -2539,9 +4229,9 @@
 60000 Space Cows - Unexpected Allies (11) 54
 60000 Lumpy - Playful Heffalump (11) 56
 60000 Pua - Disgruntled Pig (11) 59
-60000 Come Out And Fight! (11) 62
+60000 Come Out and Fight! (11) 62
 60000 Swordplay (11) 63
-60000 Pot Of Honey (11) 67
+60000 Pot of Honey (11) 67
 [CommonSlotAmber(1)]
 60000 Thomas - Wide-Eyed Recruit (11) 1
 60000 Lilo - Snow Artist (11) 2
@@ -2553,6 +4243,8 @@
 60000 Fangmeyer - Icy Officer (11) 10
 60000 Sarabi - Protecting the Pride (11) 12
 60000 Percy - Pupsicle (11) 27
+60000 Mother Will Protect You (11) 30
+60000 Zootopia - Tundratown (11) 34
 [UncommonSlot(3)]
 30000 Pudge - Controls the Weather (11) 3
 30000 Chief Powhatan - Protective Leader (11) 11
@@ -2562,7 +4254,7 @@
 30000 Nani - Stage Manager (11) 20
 30000 Simba - Playful Pouncer (11) 23
 30000 Angel - Siren Singer (11) 25
-30000 Wisdom Of The Willow (11) 31
+30000 Wisdom of the Willow (11) 31
 30000 Alice - Well-Read Whisper (11) 36
 30000 Flit - Reflective Hummingbird (11) 39
 30000 Rabbit - Fed Up (11) 41
@@ -2571,18 +4263,17 @@
 30000 Anna - Little Sister (11) 52
 30000 Christopher Robin - Joining the Fun (11) 55
 30000 Mother's Necklace (11) 65
-30000 The Frost Vine - Monstrous Plant (11) 68
+30000 The Frozen Vine - Monstrous Plant (11) 68
 30000 Big Mama - Clever and Calming (11) 71
-30000 Minnie Mouse - Spinning Skater (11) 72
-30000 Chien-po - Snow Warrior (11) 74
+30000 Chien-Po - Snow Warrior (11) 74
 30000 Mushu - Sneaky Dragon (11) 82
 30000 Vixey - Forest Friend (11) 86
 30000 White Rabbit - Late Again (11) 89
 30000 Mickey Mouse - Snowboard Ace (11) 91
-30000 Education Or Elimination (11) 97
+30000 Education or Elimination (11) 97
 30000 Snow Fort (11) 98
 30000 Rafiki's Bakora Staff (11) 99
-30000 Scrooge Mcduck - Ghostly Ebenezer (11) 104
+30000 Scrooge McDuck - Ghostly Ebenezer (11) 104
 30000 Copper - On the Scent (11) 107
 30000 Mulan - Ready for Battle (11) 108
 30000 Liquidator - Iced Over (11) 111
@@ -2590,6 +4281,7 @@
 30000 Elsa - Concerned Sister (11) 125
 30000 Grab Your Bow (11) 131
 30000 Lonely Grave (11) 132
+30000 Scrooge's Counting House - Ebenezer's Office (11) 134
 30000 Roo - Little Helper (11) 137
 30000 Daisy Duck - Isabel (11) 144
 30000 Darkwing Duck - Drake Mallard (11) 145
@@ -2600,15 +4292,16 @@
 30000 Darkwing's Gas Device (11) 169
 30000 Hidden Trap (11) 170
 30000 Launchpad - Hideout Defender (11) 172
-30000 Gantu - Hamsterviel’s Accomplice (11) 176
+30000 Gantu - Hamsterviel's Accomplice (11) 176
 30000 Chief - Seasoned Tracker (11) 179
 30000 Li Shang - Valiant Leader (11) 183
 30000 Gigi - Best in Snow (11) 189
 30000 Judy Hopps - Snowball Patrol (11) 194
-30000 Keep The Ancient Ways (11) 196
+30000 Keep the Ancient Ways (11) 196
 30000 Winterspell (11) 199
+30000 Darkwing Tower - Icy Headquarters (11) 204
 [RareOrHigherSlot(2)]
-13000 Let it Go (11) 163
+13000 Let It Go (11) 163
 13000 Stitch - Carefree Snowboarder (11) 7
 13000 Cobra Bubbles - Dedicated Official (11) 14
 13000 Timon - Snowball Swiper (11) 16
@@ -2619,7 +4312,7 @@
 5000 Bambi - Ethereal Fawn (11) 24
 13000 Widow Tweed - Kindly Soul (11) 26
 5000 Raging Storm (11) 28
-13000 Akood Et Emuti (11) 29
+13000 Akood et Emuti (11) 29
 2000 Ohana Means Family (11) 32
 13000 John Smith's Compass (11) 33
 5000 Pocahontas - Following the Wind (11) 42
@@ -2630,10 +4323,10 @@
 2000 Anna - Soothing Sister (11) 50
 13000 Kristoff - Icy Explorer (11) 51
 13000 Marshmallow - Cranky Climber (11) 53
-13000 Witches Of Morva - Orddu, Orwen, and Orgoch (11) 57
+13000 Witches of Morva - Orddu, Orwen, and Orgoch (11) 57
 5000 Sven - Leaping Reindeer (11) 60
-13000 Do You Want To Build A Snowman? (11) 61
-5000 Colors Of The Wind (11) 64
+13000 Do You Want to Build A Snowman? (11) 61
+5000 Colors of the Wind (11) 64
 13000 Mystical Inkcaster (11) 66
 5000 Mulan - Resourceful Recruit (11) 69
 13000 Ling - Snow Warrior (11) 75
@@ -2645,7 +4338,7 @@
 13000 Tod - Playful Kit (11) 90
 2000 Tod - Knows All the Tricks (11) 92
 2000 Donald Duck - Fred Honeywell (11) 93
-13000 Freeze The Vine (11) 96
+13000 Freeze the Vine (11) 96
 13000 Retro Evolution Device (11) 100
 13000 Battering Ram (11) 101
 2000 Wreck-it Ralph - Raging Wrecker (11) 103
@@ -2655,8 +4348,8 @@
 13000 Goofy - Klutzy Skier (11) 121
 13000 Olaf - Snowman of Action (11) 122
 2000 Elsa - Ice Artisan (11) 123
-5000 Scrooge Mcduck - Ebenezer Scrooge (11) 124
-13000 Willie The Giant - Ghost of Christmas Present (11) 126
+5000 Scrooge McDuck - Ebenezer Scrooge (11) 124
+13000 Willie the Giant - Ghost of Christmas Present (11) 126
 5000 Nani's Payback (11) 127
 13000 The Cold Never Bothered Me (11) 130
 13000 Kristoff's Lute (11) 133
@@ -2664,7 +4357,7 @@
 13000 Piglet - Cocoa Maker (11) 147
 13000 Gramma Tala - Connected to Nature (11) 148
 5000 Darkwing Duck - Dashing Gadgeteer (11) 150
-2000 Scrooge Mcduck - Reformed Ebenezer (11) 152
+2000 Scrooge McDuck - Reformed Ebenezer (11) 152
 13000 Pete - Ghost of Christmas Future (11) 154
 2000 Moana - Curious Explorer (11) 155
 5000 Tamatoa - Seeker of Shine (11) 156
@@ -2684,9 +4377,11 @@
 5000 John Smith - Undaunted Protector (11) 193
 5000 Lilo - Bundled Up (11) 195
 13000 Let's Get Dangerous (11) 198
+13000 The Thunderquack (11) 202
+13000 Containment Unit (11) 203
 [FoilSlot(1)]
-13000 Let it Go (11) 163
-60000 HeiHei - Persistent Presence (11) 58
+13000 Let It Go (11) 163
+60000 Heihei - Persistent Presence (11) 58
 60000 Strike A Good Match (11) 94
 60000 Distract (11) 164
 60000 Thomas - Wide-Eyed Recruit (11) 1
@@ -2694,38 +4389,46 @@
 30000 Pudge - Controls the Weather (11) 3
 60000 Pumbaa - Winter Warthog (11) 4
 60000 Tiana - Warm and Happy (11) 5
+200 Tiana - Warm and Happy (11) 205
 60000 Nakoma - Waiting Out the Storm (11) 6
 13000 Stitch - Carefree Snowboarder (11) 7
-100 Stitch - Carefree Snowboarder (11) 207
+200 Stitch - Carefree Snowboarder (11) 207
 60000 Pocahontas - Finding the Way (11) 8
 60000 David - Protective Snowboarder (11) 9
 60000 Fangmeyer - Icy Officer (11) 10
 30000 Chief Powhatan - Protective Leader (11) 11
 60000 Sarabi - Protecting the Pride (11) 12
 30000 Grandmother Willow - Ancient Advisor (11) 13
+200 Grandmother Willow - Ancient Advisor (11) 206
 13000 Cobra Bubbles - Dedicated Official (11) 14
 30000 John Smith - Snow Tracker (11) 15
 13000 Timon - Snowball Swiper (11) 16
 5000 Lilo - Rock Star (11) 17
+100 Lilo - Rock Star (11) 223
 30000 Pleakley - Arctic Naturalist (11) 18
 13000 Jumba Jookiba - Prolific Inventor (11) 19
 30000 Nani - Stage Manager (11) 20
 13000 Reuben - Sandwich Expert (11) 21
 2000 Pocahontas - Peacekeeper (11) 22
-100 Pocahontas - Peacekeeper (11) 241
+5 Pocahontas - Peacekeeper (11) 241
 30000 Simba - Playful Pouncer (11) 23
 5000 Bambi - Ethereal Fawn (11) 24
 30000 Angel - Siren Singer (11) 25
 13000 Widow Tweed - Kindly Soul (11) 26
 60000 Percy - Pupsicle (11) 27
 5000 Raging Storm (11) 28
-13000 Akood Et Emuti (11) 29
-30000 Wisdom Of The Willow (11) 31
+100 Raging Storm (11) 225
+13000 Akood et Emuti (11) 29
+60000 Mother Will Protect You (11) 30
+30000 Wisdom of the Willow (11) 31
 2000 Ohana Means Family (11) 32
+100 Ohana Means Family (11) 224
 13000 John Smith's Compass (11) 33
+60000 Zootopia - Tundratown (11) 34
 60000 Nala - Romping in the Snow (11) 35
 30000 Alice - Well-Read Whisper (11) 36
 60000 Tigger - Bouncing All the Way (11) 37
+200 Tigger - Bouncing All the Way (11) 208
 60000 Isis Vanderchill - Ice Queen of St. Canard (11) 38
 30000 Flit - Reflective Hummingbird (11) 39
 60000 Morgana Macawber - Self-Centered Spellcaster (11) 40
@@ -2741,29 +4444,33 @@
 13000 Genie - Magical Researcher (11) 49
 200 Genie - Magical Researcher (11) 210
 2000 Anna - Soothing Sister (11) 50
+100 Anna - Soothing Sister (11) 227
 13000 Kristoff - Icy Explorer (11) 51
 30000 Anna - Little Sister (11) 52
+200 Anna - Little Sister (11) 209
 13000 Marshmallow - Cranky Climber (11) 53
 60000 Space Cows - Unexpected Allies (11) 54
 30000 Christopher Robin - Joining the Fun (11) 55
 60000 Lumpy - Playful Heffalump (11) 56
-13000 Witches Of Morva - Orddu, Orwen, and Orgoch (11) 57
+13000 Witches of Morva - Orddu, Orwen, and Orgoch (11) 57
 60000 Pua - Disgruntled Pig (11) 59
 5000 Sven - Leaping Reindeer (11) 60
-13000 Do You Want To Build A Snowman? (11) 61
-60000 Come Out And Fight! (11) 62
+13000 Do You Want to Build A Snowman? (11) 61
+60000 Come Out and Fight! (11) 62
 60000 Swordplay (11) 63
-5000 Colors Of The Wind (11) 64
+5000 Colors of the Wind (11) 64
+100 Colors of the Wind (11) 228
 30000 Mother's Necklace (11) 65
 13000 Mystical Inkcaster (11) 66
-60000 Pot Of Honey (11) 67
-30000 The Frost Vine - Monstrous Plant (11) 68
+60000 Pot of Honey (11) 67
+30000 The Frozen Vine - Monstrous Plant (11) 68
 5000 Mulan - Resourceful Recruit (11) 69
+100 Mulan - Resourceful Recruit (11) 229
 60000 Stitch - Naughty Experiment (11) 70
 30000 Big Mama - Clever and Calming (11) 71
-30000 Minnie Mouse - Spinning Skater (11) 72
+60000 Minnie Mouse - Spinning Skater (11) 72
 60000 Yao - Snow Warrior (11) 73
-30000 Chien-po - Snow Warrior (11) 74
+30000 Chien-Po - Snow Warrior (11) 74
 13000 Ling - Snow Warrior (11) 75
 60000 Boomer - Has the Beak (11) 76
 5000 Chernabog - Unnatural Force (11) 77
@@ -2771,13 +4478,16 @@
 13000 Stegmutt - Clumsy Dinosaur (11) 79
 60000 Squeaks - Cozy Caterpillar (11) 80
 60000 Aladdin - On the Edge of Adventure (11) 81
+200 Aladdin - On the Edge of Adventure (11) 211
 30000 Mushu - Sneaky Dragon (11) 82
+200 Mushu - Sneaky Dragon (11) 212
 5000 Goofy - Ghost of Jacob Marley (11) 83
 13000 Copper - Champion of the Forest (11) 84
 60000 Copper - Hound Pup (11) 85
 30000 Vixey - Forest Friend (11) 86
 60000 Tod - All Alone (11) 87
 13000 Minnie Mouse - Mrs. Cratchit (11) 88
+200 Minnie Mouse - Mrs. Cratchit (11) 213
 30000 White Rabbit - Late Again (11) 89
 13000 Tod - Playful Kit (11) 90
 30000 Mickey Mouse - Snowboard Ace (11) 91
@@ -2785,15 +4495,16 @@
 100 Tod - Knows All the Tricks (11) 230
 2000 Donald Duck - Fred Honeywell (11) 93
 60000 Snowball Fight (11) 95
-13000 Freeze The Vine (11) 96
-100 Freeze The Vine (11) 231
-30000 Education Or Elimination (11) 97
+13000 Freeze the Vine (11) 96
+100 Freeze the Vine (11) 231
+30000 Education or Elimination (11) 97
 30000 Snow Fort (11) 98
 30000 Rafiki's Bakora Staff (11) 99
 13000 Retro Evolution Device (11) 100
 13000 Battering Ram (11) 101
+60000 Game Preserve - Protected Land (11) 102
 2000 Wreck-it Ralph - Raging Wrecker (11) 103
-30000 Scrooge Mcduck - Ghostly Ebenezer (11) 104
+30000 Scrooge McDuck - Ghostly Ebenezer (11) 104
 60000 Donald Duck - Nephew Fred (11) 105
 60000 Taurus Bulba - Steerminator (11) 106
 30000 Copper - On the Scent (11) 107
@@ -2806,30 +4517,37 @@
 60000 Agnarr - King of Arendelle (11) 114
 60000 Negaduck - Evil Doppelganger (11) 115
 13000 Negaduck - Public Enemy Number One (11) 116
+100 Negaduck - Public Enemy Number One (11) 232
 60000 Hercules - Spectral Demigod (11) 117
+200 Hercules - Spectral Demigod (11) 214
 5000 Beast - Snowfield Troublemaker (11) 118
 30000 Slushy - Glacial Guster (11) 119
 60000 Goofy - Marley's Clumsy Spirit (11) 120
 13000 Goofy - Klutzy Skier (11) 121
+200 Goofy - Klutzy Skier (11) 216
 13000 Olaf - Snowman of Action (11) 122
 2000 Elsa - Ice Artisan (11) 123
 100 Elsa - Ice Artisan (11) 233
-5000 Scrooge Mcduck - Ebenezer Scrooge (11) 124
+5000 Scrooge McDuck - Ebenezer Scrooge (11) 124
 30000 Elsa - Concerned Sister (11) 125
-13000 Willie The Giant - Ghost of Christmas Present (11) 126
+200 Elsa - Concerned Sister (11) 215
+13000 Willie the Giant - Ghost of Christmas Present (11) 126
 5000 Nani's Payback (11) 127
-60000 Force Of A Great Typhoon (11) 128
+60000 Force of a Great Typhoon (11) 128
+60000 Marching Off to Battle (11) 129
 13000 The Cold Never Bothered Me (11) 130
+100 The Cold Never Bothered Me (11) 234
 30000 Grab Your Bow (11) 131
 30000 Lonely Grave (11) 132
 13000 Kristoff's Lute (11) 133
+30000 Scrooge's Counting House - Ebenezer's Office (11) 134
 13000 Graveyard of Christmas Future - Lonely Resting Place (11) 135
 60000 Beast's Castle - Winter Gardens (11) 136
 30000 Roo - Little Helper (11) 137
 60000 Kanga - Peaceful Gatherer (11) 138
 60000 Piglet - Entranced by Snow (11) 139
-60000 Mickey Mouse - Tiny Tim’s Father (11) 140
-60000 Minnie Mouse - Tiny Tim’s Mother (11) 141
+60000 Mickey Mouse - Tiny Tim's Father (11) 140
+60000 Minnie Mouse - Tiny Tim's Mother (11) 141
 60000 Sina - Vigilant Parent (11) 142
 60000 Honker Muddlefoot - Timid Genius (11) 143
 30000 Daisy Duck - Isabel (11) 144
@@ -2840,17 +4558,22 @@
 13000 Gramma Tala - Connected to Nature (11) 148
 30000 Gosalyn Mallard - Curious Child (11) 149
 5000 Darkwing Duck - Dashing Gadgeteer (11) 150
-60000 Winnie The Pooh - Hungry Bear (11) 151
-2000 Scrooge Mcduck - Reformed Ebenezer (11) 152
+60000 Winnie the Pooh - Hungry Bear (11) 151
+200 Winnie the Pooh - Hungry Bear (11) 217
+2000 Scrooge McDuck - Reformed Ebenezer (11) 152
+100 Scrooge McDuck - Reformed Ebenezer (11) 235
 30000 Splatter Phoenix - Rejected Artist (11) 153
 13000 Pete - Ghost of Christmas Future (11) 154
 2000 Moana - Curious Explorer (11) 155
 5 Moana - Curious Explorer (11) 242
 5000 Tamatoa - Seeker of Shine (11) 156
+100 Tamatoa - Seeker of Shine (11) 237
 13000 Morty Fieldmouse - Tiny Tim (11) 157
 5000 Belle - Snowfield Strategist (11) 158
+100 Belle - Snowfield Strategist (11) 236
 13000 Mickey Mouse - Bob Cratchit (11) 159
-60000 Scrooge Mcduck - Miserly Ebenezer (11) 160
+200 Mickey Mouse - Bob Cratchit (11) 219
+60000 Scrooge McDuck - Miserly Ebenezer (11) 160
 60000 Chief Tui - Weaving a Tale (11) 161
 13000 Visiting Christmas Past (11) 162
 30000 Wipe Out! (11) 165
@@ -2865,12 +4588,13 @@
 60000 Prince Naveen - Bundled Up (11) 173
 60000 Darkwing Duck - Crime Fighter (11) 174
 60000 Li Shang - Solemn Son (11) 175
-30000 Gantu - Hamsterviel’s Accomplice (11) 176
+30000 Gantu - Hamsterviel's Accomplice (11) 176
 60000 Launchpad - Trusty Sidekick (11) 177
 60000 Donald Duck - Along for the Ride (11) 178
+200 Donald Duck - Along for the Ride (11) 220
 30000 Chief - Seasoned Tracker (11) 179
 60000 Amos Slade - Tenacious Tracker (11) 180
-60000 Mchorn - Ice-Cold Officer (11) 181
+60000 McHorn - Ice-Cold Officer (11) 181
 13000 Duke Weaselton - Surly Crook (11) 182
 30000 Li Shang - Valiant Leader (11) 183
 60000 Nani - No Worries (11) 184
@@ -2881,12 +4605,20 @@
 30000 Gigi - Best in Snow (11) 189
 13000 Grand Councilwoman - Galactic Authority (11) 190
 2000 Angel - Experiment 624 (11) 191
+100 Angel - Experiment 624 (11) 238
 2000 Darkwing Duck - Cool Under Pressure (11) 192
+100 Darkwing Duck - Cool Under Pressure (11) 239
 5000 John Smith - Undaunted Protector (11) 193
 30000 Judy Hopps - Snowball Patrol (11) 194
+200 Judy Hopps - Snowball Patrol (11) 221
 5000 Lilo - Bundled Up (11) 195
-30000 Keep The Ancient Ways (11) 196
+30000 Keep the Ancient Ways (11) 196
+60000 The Terror That Flaps in the Night (11) 197
 13000 Let's Get Dangerous (11) 198
+100 Let's Get Dangerous (11) 240
 30000 Winterspell (11) 199
 60000 Nearly Indestructible (11) 200
-60000 Infra-pink Ultra Scan Specs (11) 201
+60000 Infra-Pink Ultra Scan Specs (11) 201
+13000 The Thunderquack (11) 202
+13000 Containment Unit (11) 203
+30000 Darkwing Tower - Icy Headquarters (11) 204

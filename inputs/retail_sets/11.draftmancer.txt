@@ -5,12 +5,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_7e294ae586f24eddae3b7d1263c73ee7.avif?1770259936"
         },
         "rarity": "rare",
         "set": "11",
@@ -22,12 +17,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_122d3f9ccb034f7d9e59245d311a7004.avif?1770259460"
         },
         "rarity": "common",
         "set": "11",
@@ -39,12 +29,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_5423fd35369b41ebbfff99eeb1928fc4.avif?1770259622"
         },
         "rarity": "common",
         "set": "11",
@@ -56,12 +41,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_8ca0325f7667410d8b83628e02028294.avif?1770259940"
         },
         "rarity": "common",
         "set": "11",
@@ -73,12 +53,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_4baf2f3e2b1a4c8da121d3a0473684c5.avif?1770259202"
         },
         "rarity": "common",
         "set": "11",
@@ -90,12 +65,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_df49511658c9468b9a5353f1561cc9cc.avif?1770259206"
         },
         "rarity": "common",
         "set": "11",
@@ -107,12 +77,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_a862524392a1444389f95109d49ddd31.avif?1770259210"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -124,12 +89,7 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_3538927a26154cb78ef3e9cfd6899035.avif?1770259215"
         },
         "rarity": "common",
         "set": "11",
@@ -141,12 +101,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_0c1fa4bfab94474da9e4a8396bbed19f.avif?1770259220"
         },
         "rarity": "common",
         "set": "11",
@@ -158,12 +113,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_801cd6ba9a3048499af41d6186fa4100.avif?1770260117"
         },
         "rarity": "mythic",
         "set": "11",
@@ -176,12 +126,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_1bd5bf1817684e57a918f2fdc04b4e3a.avif?1770259224"
         },
         "rarity": "common",
         "set": "11",
@@ -193,12 +138,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_26dc8e8705a240689f8af906cb3c600a.avif?1770259228"
         },
         "rarity": "rare",
         "set": "11",
@@ -210,12 +150,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_adca393d2367497aac99f2c4dd29b8ce.avif?1770260127"
         },
         "rarity": "mythic",
         "set": "11",
@@ -228,12 +163,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_aa9b3ea05aa64ee9aa09783eb6ca425c.avif?1770259233"
         },
         "rarity": "common",
         "set": "11",
@@ -245,12 +175,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b5db84fe81624162968c99d1ca9ee5af.avif?1770259238"
         },
         "rarity": "common",
         "set": "11",
@@ -262,12 +187,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_f3392db6475445bbb5ad6f608dc86c4b.avif?1770259243"
         },
         "rarity": "common",
         "set": "11",
@@ -279,12 +199,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_4b12af84da2444928667b6d356a70766.avif?1770259248"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -296,12 +211,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_7820a5ea1cc44b97b4b5aeb89fc1882a.avif?1770259252"
         },
         "rarity": "common",
         "set": "11",
@@ -313,12 +223,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_a3822d68287f451baa20438d5a31e307.avif?1770259256"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -330,12 +235,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_d8dddac12b0749ba9c6510af447895bd.avif?1770260121"
         },
         "rarity": "mythic",
         "set": "11",
@@ -348,12 +248,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_f3b02d0a1478421da5b8ad2dac40d1b0.avif?1770259261"
         },
         "rarity": "rare",
         "set": "11",
@@ -365,12 +260,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b1c578429eb547b3b5908a637c491c3e.avif?1770259265"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -382,12 +272,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_4b2cd621705743f38c49fee9f610bdec.avif?1770259269"
         },
         "rarity": "rare",
         "set": "11",
@@ -399,12 +284,7 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_85108b76785246e98f3f0b462684ff0b.avif?1770259274"
         },
         "rarity": "mythic",
         "set": "11",
@@ -416,12 +296,7 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_41acb92e0c494214949c72c409593b50.avif?1770260210"
         },
         "rarity": "mythic",
         "set": "11",
@@ -434,12 +309,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_d2e66bee41214f2f9b1e38f4e1ccdbc3.avif?1770259278"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -451,12 +321,7 @@
         "mana_cost": "{8}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_aa9fd9e677e946f0ab5f0148b0874568.avif?1770259283"
         },
         "rarity": "rare",
         "set": "11",
@@ -468,12 +333,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_20232422b3314d02b054a923d610d81d.avif?1770259288"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -485,12 +345,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_47d6da02d19a4b82a6d7aaf593ca151e.avif?1770259292"
         },
         "rarity": "rare",
         "set": "11",
@@ -502,12 +357,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_7d2a989b37854bd5ac05ab0ee4bf086e.avif?1770259296"
         },
         "rarity": "mythic",
         "set": "11",
@@ -519,12 +369,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_40a3f6d8de604ff085fa5629597780a3.avif?1770260304"
         },
         "rarity": "mythic",
         "set": "11",
@@ -537,12 +382,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_9a221a16584b472c8bdec14c1b4ae5b8.avif?1770259302"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -554,12 +394,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_33a165a8153e4ba587d52961bca86f79.avif?1770259306"
         },
         "rarity": "mythic",
         "set": "11",
@@ -571,12 +406,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_ce082b2459af4c0a94a900a468bd9096.avif?1770259311"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -588,12 +418,7 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_5d8b927e8f92419c93dd42424d44f562.avif?1770259316"
         },
         "rarity": "rare",
         "set": "11",
@@ -605,12 +430,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_1a61d954f0524416a6c0f46814520495.avif?1770259321"
         },
         "rarity": "common",
         "set": "11",
@@ -622,12 +442,7 @@
         "mana_cost": "{8}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_46ccfcbf96124424a2467f7f13a2f0c5.avif?1770259325"
         },
         "rarity": "mythic",
         "set": "11",
@@ -639,12 +454,7 @@
         "mana_cost": "{8}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b3c4b83755bd417bb09f35ffea57cb68.avif?1770260221"
         },
         "rarity": "mythic",
         "set": "11",
@@ -657,12 +467,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_ff15d454e2f84f89a64bf17216e0b5f4.avif?1770259330"
         },
         "rarity": "rare",
         "set": "11",
@@ -674,12 +479,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_026951e834c74886a9c05341b713b3fa.avif?1770259334"
         },
         "rarity": "common",
         "set": "11",
@@ -691,12 +491,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_9efb436da763484ba54c2b75e1e0fcd9.avif?1770259339"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -708,12 +503,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b1aa36e48c8e4041b07e30efb7837fa3.avif?1770259344"
         },
         "rarity": "mythic",
         "set": "11",
@@ -725,12 +515,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_87abaabc59344ef1bfed548f0b6753bf.avif?1770260216"
         },
         "rarity": "mythic",
         "set": "11",
@@ -743,12 +528,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_09f9741601234011a2ea8ad45c845099.avif?1770259348"
         },
         "rarity": "rare",
         "set": "11",
@@ -760,12 +540,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_7a26dcac46ba4e0291bf8bedaec4923d.avif?1770259353"
         },
         "rarity": "common",
         "set": "11",
@@ -778,12 +553,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_c86496abfa1c4cc9a138143a845e15ce.avif?1770259357"
         },
         "rarity": "common",
         "set": "11",
@@ -795,12 +565,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_4328715a70224a1fae6ee75034f305fa.avif?1770259362"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -812,12 +577,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_e690df88c3ab46c1ace417ff7f2681c9.avif?1770259367"
         },
         "rarity": "common",
         "set": "11",
@@ -829,12 +589,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_899fe35731aa4f609bb72a19d7e831c8.avif?1770260138"
         },
         "rarity": "mythic",
         "set": "11",
@@ -847,12 +602,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_48084ac3a18c452cadbabd4675f9672b.avif?1770259371"
         },
         "rarity": "common",
         "set": "11",
@@ -864,12 +614,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_fcdeeb8639c74831b6c234d81ad2f476.avif?1770259375"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -881,12 +626,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_08e7171f69da4091b9e8691356768b86.avif?1770259379"
         },
         "rarity": "common",
         "set": "11",
@@ -898,12 +638,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_260df0802696480898a5d7f6634c5a43.avif?1770259384"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -915,12 +650,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_044b499eebfa487ea9fb1a43e8d5fcdb.avif?1770259389"
         },
         "rarity": "mythic",
         "set": "11",
@@ -932,12 +662,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_72e6b0eee1f1425ea52d9be4a2984843.avif?1770259394"
         },
         "rarity": "common",
         "set": "11",
@@ -949,12 +674,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b0231e5ba8c34691ac5bf29e6fc96c46.avif?1770259399"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -966,12 +686,7 @@
         "mana_cost": "{9}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_2dd93d7bd66a4ce78cba02bbfdbcafef.avif?1770259403"
         },
         "rarity": "rare",
         "set": "11",
@@ -983,12 +698,7 @@
         "mana_cost": "{9}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_758bab20496f4673991e53ac59f1bcaa.avif?1770260226"
         },
         "rarity": "mythic",
         "set": "11",
@@ -1001,12 +711,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_5be7a45f5453485dbebcd37b436210d9.avif?1770259407"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -1018,12 +723,7 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_1d1f7c6cafbd497292467de4c883cf0c.avif?1770259412"
         },
         "rarity": "rare",
         "set": "11",
@@ -1035,12 +735,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_52cd7cdc36254654b13e484e2dbc989e.avif?1770259416"
         },
         "rarity": "mythic",
         "set": "11",
@@ -1052,12 +747,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_0f1e171e26c9423aa264732a2e38dd7f.avif?1770259420"
         },
         "rarity": "rare",
         "set": "11",
@@ -1069,12 +759,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_13f9925099454b7a8fd6225381d11061.avif?1770260144"
         },
         "rarity": "mythic",
         "set": "11",
@@ -1087,12 +772,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_be89cf4d06b54426801f296b3cbf751d.avif?1770259425"
         },
         "rarity": "mythic",
         "set": "11",
@@ -1104,12 +784,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_862f8b58a6e247cd865509856286449e.avif?1770260231"
         },
         "rarity": "mythic",
         "set": "11",
@@ -1122,12 +797,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_094f62fcb6094af1922921881eddf3f6.avif?1770259429"
         },
         "rarity": "rare",
         "set": "11",
@@ -1139,12 +809,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_1ea627edc2aa4a099e53afb91a2bdbf1.avif?1770259434"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -1156,12 +821,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_9702c37c04864acd9912592d55d9dce0.avif?1770260139"
         },
         "rarity": "mythic",
         "set": "11",
@@ -1174,12 +834,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_f000a1651ff54227806f5da0c5d89c42.avif?1770259438"
         },
         "rarity": "rare",
         "set": "11",
@@ -1191,12 +846,7 @@
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_9ac4f4fb26084e66aae3bc5a7beea167.avif?1770259443"
         },
         "rarity": "common",
         "set": "11",
@@ -1208,12 +858,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_6ef0db16a9b944d29c9a18fb37a8916d.avif?1770259447"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -1225,12 +870,7 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_89bb9007e02e4003911ada97cfbe4009.avif?1770259452"
         },
         "rarity": "common",
         "set": "11",
@@ -1242,12 +882,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_5c24d2a781524b8fa28b72a0dddd91c5.avif?1770259456"
         },
         "rarity": "rare",
         "set": "11",
@@ -1259,12 +894,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_e7d84a4948de49e49e717671d44fbb4c.avif?1770259465"
         },
         "rarity": "common",
         "set": "11",
@@ -1276,12 +906,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_ad33da4d6a2e44569e0bb8f16810ba1a.avif?1770259469"
         },
         "rarity": "mythic",
         "set": "11",
@@ -1293,12 +918,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_adb608b3667f4c769a3bab709840dad1.avif?1770259473"
         },
         "rarity": "rare",
         "set": "11",
@@ -1310,12 +930,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_9d9eb44aa6324c2ebce958cbf92a2d31.avif?1770259478"
         },
         "rarity": "common",
         "set": "11",
@@ -1327,12 +942,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_79bedff3158647f791e28faa270773b5.avif?1770259482"
         },
         "rarity": "common",
         "set": "11",
@@ -1344,12 +954,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_0e8280a06c6a482caa3cb51b207fe284.avif?1770259487"
         },
         "rarity": "mythic",
         "set": "11",
@@ -1361,12 +966,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_8ef1d474eb68402e8d35e2aa3bce689a.avif?1770260236"
         },
         "rarity": "mythic",
         "set": "11",
@@ -1379,12 +979,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_f91b39cb2d4a47f984e9e5114216e75b.avif?1770259491"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -1396,12 +991,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_3d8ed3e3edf846c7b5dc9cc034436b8e.avif?1770259496"
         },
         "rarity": "rare",
         "set": "11",
@@ -1413,12 +1003,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_9ab9a1951014457b824c8f11a3d0fdbc.avif?1770259500"
         },
         "rarity": "common",
         "set": "11",
@@ -1430,12 +1015,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_27d46247102c480c8b2ce98be8bb15f5.avif?1770259505"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -1448,12 +1028,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_3825929341ca42099c98d099ed40d2ac.avif?1770259509"
         },
         "rarity": "mythic",
         "set": "11",
@@ -1465,12 +1040,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_5eb205c36e0b4038a8a46aa47dd50b0f.avif?1770260241"
         },
         "rarity": "mythic",
         "set": "11",
@@ -1483,12 +1053,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_38185e538f0e444bbffd676c96efd9c9.avif?1770259514"
         },
         "rarity": "common",
         "set": "11",
@@ -1500,12 +1065,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_692e18212e974f8e808f8a8dc45169a8.avif?1770259519"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -1517,12 +1077,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_8db0f3b74ec145c39cb0ec2413c48c75.avif?1770259523"
         },
         "rarity": "common",
         "set": "11",
@@ -1534,12 +1089,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_85ee925c4b1c4c1bbf2d6320a9aeaf7d.avif?1770259527"
         },
         "rarity": "common",
         "set": "11",
@@ -1551,12 +1101,7 @@
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_9ea59b497df74d759d70cf087e044b16.avif?1770259532"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -1568,12 +1113,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_00eb4b66a7f945adaa15ca341179bbf7.avif?1770259536"
         },
         "rarity": "rare",
         "set": "11",
@@ -1585,12 +1125,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_db6ccc6d3dde4e4890ff8a1fd391e905.avif?1770259541"
         },
         "rarity": "common",
         "set": "11",
@@ -1602,12 +1137,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_10d405a5074a498592c40bed3888538a.avif?1770259545"
         },
         "rarity": "mythic",
         "set": "11",
@@ -1619,12 +1149,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_0fc3d71d5b8e4fb08b5c9108cbd3e28a.avif?1770259550"
         },
         "rarity": "common",
         "set": "11",
@@ -1636,12 +1161,7 @@
         "mana_cost": "{8}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_5864156730e6408181fd43e5a59dbe05.avif?1770259554"
         },
         "rarity": "rare",
         "set": "11",
@@ -1653,12 +1173,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_c583ec314a73469d890da787bcb08426.avif?1770259559"
         },
         "rarity": "common",
         "set": "11",
@@ -1670,12 +1185,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_1088d26ccab942568c740c3ebaccb2c7.avif?1770259563"
         },
         "rarity": "common",
         "set": "11",
@@ -1687,12 +1197,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_629d577b144c424286035635ec968b4a.avif?1770260148"
         },
         "rarity": "mythic",
         "set": "11",
@@ -1705,12 +1210,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_5830e796ad074e8c83d2757dfa318992.avif?1770259568"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -1722,12 +1222,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_239773eb4b194139916d4c31bba66356.avif?1770260159"
         },
         "rarity": "mythic",
         "set": "11",
@@ -1740,12 +1235,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_6a38f391cffc44ce8c818845eec37f01.avif?1770259573"
         },
         "rarity": "mythic",
         "set": "11",
@@ -1757,12 +1247,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_1828e2a9c3c547abbcd95f8c4fdc211f.avif?1770259577"
         },
         "rarity": "rare",
         "set": "11",
@@ -1774,12 +1259,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_47915154ee494451b714c3ec1084331a.avif?1770259582"
         },
         "rarity": "common",
         "set": "11",
@@ -1791,12 +1271,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_6edf9f351f6d4d8ea588fbbdbf8ed253.avif?1770259586"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -1808,12 +1283,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_fdbc7b03d5194e2cb2c407273f96e01a.avif?1770259590"
         },
         "rarity": "common",
         "set": "11",
@@ -1825,12 +1295,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_192bf6789d194f1c8f7985dee2353891.avif?1770259594"
         },
         "rarity": "rare",
         "set": "11",
@@ -1842,12 +1307,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_84aa488aa433406493abed00a9d99611.avif?1770260166"
         },
         "rarity": "mythic",
         "set": "11",
@@ -1860,12 +1320,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_a8878d5ac3ea4ff7bfacb512552943cc.avif?1770259599"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -1877,12 +1332,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_da2a2175ec4d44f0b624880a24548506.avif?1770259604"
         },
         "rarity": "rare",
         "set": "11",
@@ -1894,12 +1344,7 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_23f005944c784e158b9709de1c587d1e.avif?1770259608"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -1911,12 +1356,7 @@
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_3d891c7945f04b6d9095dda6a9a81a4f.avif?1770259612"
         },
         "rarity": "mythic",
         "set": "11",
@@ -1928,12 +1368,7 @@
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_2319774247e242a19dfa6a0fe584fff0.avif?1770260247"
         },
         "rarity": "mythic",
         "set": "11",
@@ -1946,12 +1381,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_0ad5cc52cd5f49bb9594afa82796f42e.avif?1770259617"
         },
         "rarity": "mythic",
         "set": "11",
@@ -1963,12 +1393,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_8bd23953f8744c588a3f122476f67c3c.avif?1770259626"
         },
         "rarity": "common",
         "set": "11",
@@ -1980,12 +1405,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_d8867ccffeba46a5b16ab0f876653f4b.avif?1770259631"
         },
         "rarity": "rare",
         "set": "11",
@@ -1997,12 +1417,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_d0659baf8fad4748ae9abf7260279d8c.avif?1770260252"
         },
         "rarity": "mythic",
         "set": "11",
@@ -2015,12 +1430,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_69c74f5a7fcb431290622e2321e786fe.avif?1770259636"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -2032,12 +1442,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_626e78520f89461d8982834bdc9ac172.avif?1770259640"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -2049,12 +1454,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b33671b3938940708ac2a4f7d00d942b.avif?1770259645"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -2066,12 +1466,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_a7afac820f8249d9896e3cc693fe0094.avif?1770259649"
         },
         "rarity": "rare",
         "set": "11",
@@ -2083,12 +1478,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_c49a2f008f0048d4951384b30880eba6.avif?1770259654"
         },
         "rarity": "rare",
         "set": "11",
@@ -2100,12 +1490,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_f25d2634d58b4a00ab2ac2f2753b8116.avif?1770259658"
         },
         "rarity": "common",
         "set": "11",
@@ -2118,12 +1503,7 @@
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_cb5f4cea3a664d12952b12a0a30fbbf3.avif?1770259662"
         },
         "rarity": "mythic",
         "set": "11",
@@ -2135,12 +1515,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_4209198480ed495d9d5ed7608ece035f.avif?1770259667"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -2152,12 +1527,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_39f53f01a4b948a886a82a0c6bf742a3.avif?1770259671"
         },
         "rarity": "common",
         "set": "11",
@@ -2169,12 +1539,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_85d6bd70dfe74990af90d215e5010a8d.avif?1770259676"
         },
         "rarity": "common",
         "set": "11",
@@ -2186,12 +1551,7 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_f5ec9aa34cb2438fb19806535e9ffcc5.avif?1770259680"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -2203,12 +1563,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_96a789fd5e1943adbb12361ff791aec9.avif?1770259685"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -2220,12 +1575,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_d6b606b2691f493bb74f2faf13339c28.avif?1770259689"
         },
         "rarity": "common",
         "set": "11",
@@ -2237,12 +1587,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_e10790e2f76f46f4aeb38d35164934b1.avif?1770259694"
         },
         "rarity": "common",
         "set": "11",
@@ -2254,12 +1599,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_109b0bfb7a374953b896f3d6d051c099.avif?1770259698"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -2271,12 +1611,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_8d6d9d233b644d8d88baf2a34751328b.avif?1770259703"
         },
         "rarity": "rare",
         "set": "11",
@@ -2288,12 +1623,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_d79f18fa0da949079077eb5ecaad8426.avif?1770259707"
         },
         "rarity": "common",
         "set": "11",
@@ -2305,12 +1635,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_9315eb79ba14485fa0ecc0b6dcabd054.avif?1770259712"
         },
         "rarity": "common",
         "set": "11",
@@ -2322,12 +1647,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_c7e5c7bde26548919587cb50662ebef3.avif?1770259716"
         },
         "rarity": "common",
         "set": "11",
@@ -2339,12 +1659,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_6f9057fdce974222a39f3a84c51114ec.avif?1770259721"
         },
         "rarity": "rare",
         "set": "11",
@@ -2356,12 +1671,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_580ca4f029554dd68409aac983fdae69.avif?1770260258"
         },
         "rarity": "mythic",
         "set": "11",
@@ -2374,12 +1684,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_993a0b8e1985452d8ea6f90459a6e294.avif?1770259726"
         },
         "rarity": "common",
         "set": "11",
@@ -2391,12 +1696,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_366f46e2c0bc4366832935158a49cdb4.avif?1770260174"
         },
         "rarity": "mythic",
         "set": "11",
@@ -2409,12 +1709,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_cde01953c3aa414290991fddcffe4651.avif?1770259730"
         },
         "rarity": "mythic",
         "set": "11",
@@ -2426,12 +1721,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_bf26fddf7a2741a48dbe56961de6a5cb.avif?1770259735"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -2443,12 +1733,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_aeb75ac2ab524eb690b3b96aeddc80cc.avif?1770259739"
         },
         "rarity": "common",
         "set": "11",
@@ -2460,12 +1745,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_9ec4271d84b44a8f8ac40e0d1ea0bf0a.avif?1770259743"
         },
         "rarity": "rare",
         "set": "11",
@@ -2477,12 +1757,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_05285db16a3b4cb28941b7a24913d33f.avif?1770260180"
         },
         "rarity": "mythic",
         "set": "11",
@@ -2495,12 +1770,7 @@
         "mana_cost": "{9}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_22e26220f81745b394485c0cb6ef2c2d.avif?1770259748"
         },
         "rarity": "rare",
         "set": "11",
@@ -2512,12 +1782,7 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_e9a1997821d647d5b13378a801921bf6.avif?1770259752"
         },
         "rarity": "mythic",
         "set": "11",
@@ -2529,12 +1794,7 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b35b509f95d441c1bd11ec67d755db5d.avif?1770260263"
         },
         "rarity": "mythic",
         "set": "11",
@@ -2547,12 +1807,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_a06d887649d146a89f4c56939b02ad13.avif?1770259757"
         },
         "rarity": "mythic",
         "set": "11",
@@ -2564,12 +1819,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_a6f3c215973844fc8ae5cbc2a4ea388f.avif?1770259762"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -2581,12 +1831,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_d66016477d454f19abf12684a50221ef.avif?1770260175"
         },
         "rarity": "mythic",
         "set": "11",
@@ -2599,12 +1844,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_f472ec7c6a294a6498f3788b189472c4.avif?1770259766"
         },
         "rarity": "rare",
         "set": "11",
@@ -2616,12 +1856,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_ade83b5dd75144a4b901097e22b7b8b1.avif?1770259771"
         },
         "rarity": "mythic",
         "set": "11",
@@ -2633,12 +1868,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_dbff3559ccd647889b1fb934994a2d02.avif?1770259776"
         },
         "rarity": "common",
         "set": "11",
@@ -2650,12 +1880,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_ec2f9a5da94841b68ac5f69bfed3c1bd.avif?1770259780"
         },
         "rarity": "common",
         "set": "11",
@@ -2667,12 +1892,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_a3e135574f3142caabee6f51a9171a40.avif?1770259785"
         },
         "rarity": "rare",
         "set": "11",
@@ -2684,12 +1904,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_e3dbc3e8ae3543059ee67af1d144c576.avif?1770260267"
         },
         "rarity": "mythic",
         "set": "11",
@@ -2702,12 +1917,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_4bf208bd16b043ac8eb27209b522c3c6.avif?1770259790"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -2719,12 +1929,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_0fb558452ff949e1ad997108b6f0ad06.avif?1770259794"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -2736,12 +1941,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_ec94f5c4a31b40c99f5b421ac7dd3acf.avif?1770259798"
         },
         "rarity": "rare",
         "set": "11",
@@ -2753,12 +1953,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_889f6b26a5a746d6a6cbe4139412855a.avif?1770259803"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -2771,12 +1966,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_648f06059c3b4f8680bc932c085d6182.avif?1770259807"
         },
         "rarity": "rare",
         "set": "11",
@@ -2789,12 +1979,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_5f6b06befa5143649062b5ac4414d7ba.avif?1770259812"
         },
         "rarity": "common",
         "set": "11",
@@ -2807,12 +1992,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_e2a1ea3f5b0d48db8e7197056581c11d.avif?1770259817"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -2824,12 +2004,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_9f1b0784cd5e4536bad1c85dabbd1943.avif?1770259822"
         },
         "rarity": "common",
         "set": "11",
@@ -2841,12 +2016,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_39ccc87a07884c2789a33b03738f2bb3.avif?1770259826"
         },
         "rarity": "common",
         "set": "11",
@@ -2858,12 +2028,7 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_9280b9713ade4c7fb2fb651ff5a2e815.avif?1770259831"
         },
         "rarity": "common",
         "set": "11",
@@ -2875,12 +2040,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_33f12c74df68498cb444d6a493be67ef.avif?1770259835"
         },
         "rarity": "common",
         "set": "11",
@@ -2892,12 +2052,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_6f3a637fc61e4ad084fc878c55ff543c.avif?1770259839"
         },
         "rarity": "common",
         "set": "11",
@@ -2909,12 +2064,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_864fbdcc6f91431db5a365dd2aa4dba1.avif?1770259844"
         },
         "rarity": "common",
         "set": "11",
@@ -2926,12 +2076,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_44777bc0e3f44e018e9fad2f10644de8.avif?1770259849"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -2943,12 +2088,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_39abc3bfefc14489beca55a40a48153c.avif?1770259853"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -2960,12 +2100,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_7d28f2a0002d4255a41bd0f03d6d8ea5.avif?1770259857"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -2977,12 +2112,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_ea1ae83b3c414a2a838398390473ebc6.avif?1770260189"
         },
         "rarity": "mythic",
         "set": "11",
@@ -2995,12 +2125,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_be96288326484fd880acd268246cc300.avif?1770259862"
         },
         "rarity": "rare",
         "set": "11",
@@ -3012,12 +2137,7 @@
         "mana_cost": "{12}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_600ad28b57694ad2b078261118277ad2.avif?1770259867"
         },
         "rarity": "rare",
         "set": "11",
@@ -3029,12 +2149,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_dc802d9673ac4bd3ae7f6976a4faae09.avif?1770259871"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -3046,12 +2161,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_79e8c2e58ef1439ba301da0ec23f1f08.avif?1770259876"
         },
         "rarity": "mythic",
         "set": "11",
@@ -3063,12 +2173,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_bdaa50ed73874775b00eead51a5c83de.avif?1770259881"
         },
         "rarity": "common",
         "set": "11",
@@ -3080,12 +2185,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_5da5944a7e9240aab2d30466337643c3.avif?1770260185"
         },
         "rarity": "mythic",
         "set": "11",
@@ -3098,12 +2198,7 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_8ce2b4cc2aff4ed9b3bc3fe2b1d78b18.avif?1770259885"
         },
         "rarity": "mythic",
         "set": "11",
@@ -3115,12 +2210,7 @@
         "mana_cost": "{6}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b30562a95420404b911886bcfc9e7a9c.avif?1770260273"
         },
         "rarity": "mythic",
         "set": "11",
@@ -3133,12 +2223,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_dd7610ea1502422199f68ea86fce5b19.avif?1770259890"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -3150,12 +2235,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_cc4685ee359648a9b100d7a20c00ee5f.avif?1770259895"
         },
         "rarity": "rare",
         "set": "11",
@@ -3167,12 +2247,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_d598d22b1dbf4566bede003c3af9e0a8.avif?1770259899"
         },
         "rarity": "mythic",
         "set": "11",
@@ -3184,12 +2259,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b73d08030c9646ab8a227158b8e453d4.avif?1770260310"
         },
         "rarity": "mythic",
         "set": "11",
@@ -3202,12 +2272,7 @@
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_1ec6bad52ccc4a4facc7bbe7e7aa6c53.avif?1770259904"
         },
         "rarity": "mythic",
         "set": "11",
@@ -3219,12 +2284,7 @@
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_82807328c2514c0d8f22366b4720a583.avif?1770260283"
         },
         "rarity": "mythic",
         "set": "11",
@@ -3237,12 +2297,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_5c9d96ae2b6248f19d3a431a93576adb.avif?1770259909"
         },
         "rarity": "rare",
         "set": "11",
@@ -3254,12 +2309,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_c38c857e2cbd433699e354e085a4625c.avif?1770259913"
         },
         "rarity": "mythic",
         "set": "11",
@@ -3271,12 +2321,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_9652fdf2822645ee91302352c74c9d6a.avif?1770260278"
         },
         "rarity": "mythic",
         "set": "11",
@@ -3289,12 +2334,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_df33ab22a6b1429781e4be47ec28e350.avif?1770259917"
         },
         "rarity": "rare",
         "set": "11",
@@ -3306,12 +2346,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_7379a15083914913b21c37d59e503c0c.avif?1770260193"
         },
         "rarity": "mythic",
         "set": "11",
@@ -3324,12 +2359,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_d5104ffcc4cc4473b8f4ffba12447855.avif?1770259922"
         },
         "rarity": "common",
         "set": "11",
@@ -3341,12 +2371,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_1bd99dad44d341dda6d1f73ffb2bc529.avif?1770259927"
         },
         "rarity": "common",
         "set": "11",
@@ -3358,12 +2383,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_8c8dd7b9235e4b778aeff7b8b4da14ce.avif?1770259931"
         },
         "rarity": "rare",
         "set": "11",
@@ -3375,12 +2395,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_0d28e0cfc9ea44d4a568fa034fc67dbd.avif?1770259944"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -3392,12 +2407,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_9d937b1e551d47c18d97a54494378368.avif?1770259948"
         },
         "rarity": "common",
         "set": "11",
@@ -3409,12 +2419,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_f87c783d2fe2456687533d4b5f641131.avif?1770259952"
         },
         "rarity": "common",
         "set": "11",
@@ -3426,12 +2431,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_2663ccb2084547c0a55220f63f46a36c.avif?1770259956"
         },
         "rarity": "rare",
         "set": "11",
@@ -3443,12 +2443,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_51455b45e452420caabc777bd7bd1ee5.avif?1770259961"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -3460,12 +2455,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_7e0852ee050446dd96742b3986444917.avif?1770259965"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -3477,12 +2467,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_1416db548e594c8baff2fab420ae3c59.avif?1770259969"
         },
         "rarity": "rare",
         "set": "11",
@@ -3494,12 +2479,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b3924beae9a04927adc0e542f5656aa0.avif?1770260206"
         },
         "rarity": "mythic",
         "set": "11",
@@ -3512,12 +2492,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_31c0320e66744254b1a8a70f108427aa.avif?1770259973"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -3529,12 +2504,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_6c7e5e05d9ad44ceb4f84c5a82ee8c6b.avif?1770259978"
         },
         "rarity": "common",
         "set": "11",
@@ -3546,12 +2516,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b776bea5bc784d669be7db1efd244ef3.avif?1770259982"
         },
         "rarity": "common",
         "set": "11",
@@ -3563,12 +2528,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b63df19a6a2e47edb0325ce080a7ac04.avif?1770259987"
         },
         "rarity": "common",
         "set": "11",
@@ -3580,12 +2540,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_e58426a12e4840d1a58c49c2a147f6b4.avif?1770259992"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -3597,12 +2552,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_5dd9c7a6d0ca4d4e9b0891adf35e1a99.avif?1770259996"
         },
         "rarity": "common",
         "set": "11",
@@ -3614,12 +2564,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_d7b4bc07ebf4418eab82165a82343d18.avif?1770260000"
         },
         "rarity": "common",
         "set": "11",
@@ -3631,12 +2576,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_197bd1d5d07843d49d892ea9536fcbed.avif?1770260197"
         },
         "rarity": "mythic",
         "set": "11",
@@ -3649,12 +2589,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_a26bf7d81173483589a2df5446ab1ec0.avif?1770260005"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -3666,12 +2601,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_da80d9da41e84566969a1c1585dfc75c.avif?1770260009"
         },
         "rarity": "common",
         "set": "11",
@@ -3683,12 +2613,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_a878e31ab9a94c4ba48079ebff6b155e.avif?1770260013"
         },
         "rarity": "common",
         "set": "11",
@@ -3700,12 +2625,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_d7aa2aa9bd12495096d00d33c6f09821.avif?1770260017"
         },
         "rarity": "rare",
         "set": "11",
@@ -3717,12 +2637,7 @@
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_cf304010edfd42ddb7e2a2ee5702f7ab.avif?1770260021"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -3734,12 +2649,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b10b1d80d4a94ec5b2ed59c1318bb046.avif?1770260025"
         },
         "rarity": "common",
         "set": "11",
@@ -3751,12 +2661,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_7e2cac54dd5d4e0ea2db87cf752df00a.avif?1770260029"
         },
         "rarity": "common",
         "set": "11",
@@ -3768,12 +2673,7 @@
         "mana_cost": "{8}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_fa25fc0098884a649dc40a9e0551cff2.avif?1770260033"
         },
         "rarity": "rare",
         "set": "11",
@@ -3785,12 +2685,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_d0248ffc9fe545b68653691286a005c6.avif?1770260037"
         },
         "rarity": "mythic",
         "set": "11",
@@ -3802,12 +2697,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_a74daac05bd643ce8913eec4fcbf2bdc.avif?1770260042"
         },
         "rarity": "rare",
         "set": "11",
@@ -3819,12 +2709,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_a1e3f0b6249140fcbab13e33ef76fba8.avif?1770260046"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -3836,12 +2721,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_a0d09a062bc54cceb56ecef2636860c3.avif?1770260051"
         },
         "rarity": "rare",
         "set": "11",
@@ -3853,12 +2733,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_e4d3bcc244e44eefae088a4970acffc5.avif?1770260055"
         },
         "rarity": "mythic",
         "set": "11",
@@ -3870,12 +2745,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_fbad358f2f804554838545c738341380.avif?1770260289"
         },
         "rarity": "mythic",
         "set": "11",
@@ -3888,12 +2758,7 @@
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_5215a54a63fe44f38f2e56f30d6847e6.avif?1770260059"
         },
         "rarity": "mythic",
         "set": "11",
@@ -3905,12 +2770,7 @@
         "mana_cost": "{7}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_789d5871174e4da293165a39bdfece14.avif?1770260294"
         },
         "rarity": "mythic",
         "set": "11",
@@ -3923,12 +2783,7 @@
         "mana_cost": "{5}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_26b1e9d58acf429aa2d77f89f6534c16.avif?1770260064"
         },
         "rarity": "mythic",
         "set": "11",
@@ -3940,12 +2795,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_bc75672185f940fc88f84192ceff4973.avif?1770260069"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -3957,12 +2807,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b7a2a60eb9d34fd986cf0bd44e2a1f1a.avif?1770260202"
         },
         "rarity": "mythic",
         "set": "11",
@@ -3975,12 +2820,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_f86297c4c6f940cc8135cd806d96105a.avif?1770260073"
         },
         "rarity": "mythic",
         "set": "11",
@@ -3992,12 +2832,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_491b1cb4aadf4bf999230048abf2cf0b.avif?1770260077"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -4009,12 +2844,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_e615766ea0d647aba10803d596d3adb7.avif?1770260081"
         },
         "rarity": "common",
         "set": "11",
@@ -4026,12 +2856,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_bdf35f1859df44e19594261c5bcede11.avif?1770260086"
         },
         "rarity": "rare",
         "set": "11",
@@ -4043,12 +2868,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_656cd1bfb0084f92bfd003ca69b3b3c9.avif?1770260299"
         },
         "rarity": "mythic",
         "set": "11",
@@ -4061,12 +2881,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_6e3ec107e64e498ca64d1a4de4e6abb9.avif?1770260090"
         },
         "rarity": "uncommon",
         "set": "11",
@@ -4078,12 +2893,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_60d34f2b1b38499e8f7a5915a0a7e59c.avif?1770260094"
         },
         "rarity": "common",
         "set": "11",
@@ -4095,12 +2905,7 @@
         "mana_cost": "{1}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_472838feca334c31913db3f2fc0b39db.avif?1770260099"
         },
         "rarity": "common",
         "set": "11",
@@ -4112,12 +2917,7 @@
         "mana_cost": "{3}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_997f90baa0e94ea6bf9babc7ded3bc8a.avif?1770260104"
         },
         "rarity": "rare",
         "set": "11",
@@ -4129,12 +2929,7 @@
         "mana_cost": "{2}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_1d63cf69c7e24c3dabc4475484568e70.avif?1770260108"
         },
         "rarity": "rare",
         "set": "11",
@@ -4146,12 +2941,7 @@
         "mana_cost": "{4}",
         "type": "Instant",
         "image_uris": {
-            "en": null,
-            "fr": null,
-            "de": null,
-            "it": null,
-            "ja": null,
-            "zh": null
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_22e1f1dc8f434e0a87d5335d7a6b2984.avif?1770260113"
         },
         "rarity": "uncommon",
         "set": "11",

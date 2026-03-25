@@ -48,7 +48,21 @@ export function generateDraftmancerSession(CubeFile, tabToOpen, metadata, gameMo
                 function startDraftOnCompletion(responseData) {
                     // Automatically disconnect bot once the human user has joined the session
 
-                    let draftId = JSON.parse(responseData).draftId;
+                    if (!responseData) {
+                        console.error("Problem starting draft: No response data");
+                        // tabToOpen.close();
+                        // socket.disconnect();
+                        // return;
+                    }
+
+                    let parsedResponse = JSON.parse(responseData);
+                    if (!parsedResponse) {
+                        console.error("Problem starting draft:Unable to parse response data");
+                        // tabToOpen.close();
+                        // socket.disconnect();
+                        // return;
+                    }
+                    let draftId = parsedResponse.draftId;
                     // let draftLogHandlingUrl = `https://793ed2f1adba.ngrok-free.app/api/draft/${draftId}/draftmancer-log`;
                     let draftLogHandlingUrl = `${window.location.origin}/api/draft/${draftId}/draftmancer-log`;
                     console.log("Setting draft log hook to: " + draftLogHandlingUrl);
@@ -59,6 +73,7 @@ export function generateDraftmancerSession(CubeFile, tabToOpen, metadata, gameMo
                             console.log("Draft log hook set successfully." + JSON.stringify(res));
                         }
                     });
+
                     socket.once("sessionUsers", () => {
                         if (gameMode == GAME_MODE.SUPER_SEALED) {
                             socket.emit("distributeSealed", 16, null, (res) => {
@@ -86,12 +101,14 @@ export function generateDraftmancerSession(CubeFile, tabToOpen, metadata, gameMo
                     // Open Draftmancer in specified tab
                     tabToOpen.location.href = `${Domain}/?session=${SessionID}`;
                 }
+       
                 if (metadata.cubeId) {
                     request(`/api/cube/${metadata.cubeId}/startDraft`,null,startDraftOnCompletion,startDraftOnCompletion,'POST');
                 } else if (metadata.setId) {
                     request(`/api/retail_sets/${metadata.setId}/startDraft`,null,startDraftOnCompletion,startDraftOnCompletion,'POST');
                 } else {
-                    startDraftOnCompletion(null);
+                    let draftData = {"draftId": "manualCubeExport-" + crypto.randomUUID()};
+                    startDraftOnCompletion(JSON.stringify(draftData));
                 }
             }
         });

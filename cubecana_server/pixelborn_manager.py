@@ -25,13 +25,5 @@ class PixelbornManager:
                 raise lcc_error.UnidentifiedCardError(id)
         pixelborn_deck_encoded = base64.b64encode(pixelborn_deck_decoded.encode('utf-8')).decode('utf-8')
         return pixelborn_deck_encoded
-
-    def inktable_import_link(self, pixelborn_deck_encoded):
-        current_time = datetime.now().isoformat()
-        return f"https://www.inktable.net/lor/import?svc=dreamborn&name={current_time}&id={pixelborn_deck_encoded}"
-
-    def lorcanito_import_link(self, pixelborn_deck_encoded):
-        current_time = datetime.now().isoformat()
-        return f"https://db.lorcanito.com/decks/import?source=cubecana&name={current_time}&list={pixelborn_deck_encoded}"
     
 pixelborn_manager:PixelbornManager = PixelbornManager()

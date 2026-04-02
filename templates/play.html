@@ -261,7 +261,7 @@
                             exportToLorcanito(deckContent);
                             break;
                         case 'duelsink':
-                            exportToDuelsink(deckContent);
+                            exportToDuelsink(deckContent, false);
                             break;
                         default:
                             console.warn('Unknown export type:', exportParam);
@@ -326,17 +326,22 @@
         }
     }
 
-    function exportToDuelsink(deckContent) {
+    function exportToDuelsink(deckContent, openInNewTab = false) {
         hideError();
-        try {
-            // Base64 encode the deck list
-            const base64DeckList = btoa(deckContent);
-            // Open duels.ink with the encoded deck list
-            const duelsinkUrl = `https://duels.ink/decks/new?import=${encodeURIComponent(base64DeckList)}`;
-            window.open(duelsinkUrl, '_blank');
-        } catch (error) {
-            console.error('Error encoding deck list for duels.ink:', error);
-            showError('Failed to export deck to duels.ink. Please try again.');
+        var url = "/api/draftmancer-to-duelsink/";
+        var data = JSON.stringify({ "draftmancer_export": deckContent });
+        
+        if (openInNewTab) {
+            let newTab = window.open("/loading");
+            request(url, data, (responseText) => {
+                newTab.location.href = responseText;
+            }, (xhr) => {
+                newTab.close();
+            });
+        } else {
+            request(url, data, (responseText) => {
+                window.location.href = responseText;
+            });
         }
     }
 
@@ -360,7 +365,7 @@
     });
 
     DuelsinkButton.addEventListener('click', async _ => { 
-        exportToDuelsink(draftmancerInputArea.value.trim());
+        exportToDuelsink(draftmancerInputArea.value.trim(), true);
     });
 </script>
 

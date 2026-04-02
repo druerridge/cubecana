@@ -1,5 +1,7 @@
+import base64
 import json
 import math
+from datetime import datetime
 from flask import Flask, render_template, request, Response, send_from_directory, redirect
 from flask import jsonify
 from cubecana_server import draftmancer
@@ -122,7 +124,9 @@ def draftmancer_to_inktable():
   printing_id_to_count = card_list_helper.printing_id_to_count_from(mainboard_lines)
   id_to_count = card_list_helper.id_to_count_from_printing_id_to_count(printing_id_to_count)
   pixelborn_deck = pixelborn_manager.generate_pixelborn_deck(id_to_count)
-  return pixelborn_manager.inktable_import_link(pixelborn_deck)
+  current_time = datetime.now().isoformat()
+  return f"https://www.inktable.net/lor/import?svc=dreamborn&name={current_time}&id={pixelborn_deck}"
+
 
 @app.route('/api/draftmancer-to-lorcanito/', methods=['POST'])
 def draftmancer_to_lorcanito():
@@ -133,7 +137,19 @@ def draftmancer_to_lorcanito():
   printing_id_to_count = card_list_helper.printing_id_to_count_from(mainboard_lines)
   id_to_count = card_list_helper.id_to_count_from_printing_id_to_count(printing_id_to_count)
   pixelborn_deck = pixelborn_manager.generate_pixelborn_deck(id_to_count)
-  return pixelborn_manager.lorcanito_import_link(pixelborn_deck)
+  current_time = datetime.now().isoformat()
+  return f"https://db.lorcanito.com/decks/import?source=cubecana&name={current_time}&list={pixelborn_deck}"
+  return f"https://db.lorcanito.com/decks/import?source=cubecana&name={current_time}&list={pixelborn_deck_encoded}"
+
+@app.route('/api/draftmancer-to-duelsink/', methods=['POST'])
+def draftmancer_to_duelsink():
+  json_data = json.loads(request.data)
+  all_lines = json_data['draftmancer_export'].split('\n')
+  mainboard_lines = card_list_helper.get_mainboard_lines(all_lines)
+  # Encode the raw deck list for duels.ink
+  deck_list = '\n'.join(mainboard_lines)
+  deck_list_encoded = base64.b64encode(deck_list.encode('utf-8')).decode('utf-8')
+  return f"https://duels.ink/decks/new?import={deck_list_encoded}"
 
 @app.route('/api/draftmancer-to-tts/', methods=['POST'])
 def process_json():

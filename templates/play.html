@@ -123,6 +123,16 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(142, 36, 170, 0.4);
         }
+        #duelsink-btn {
+            background: linear-gradient(45deg, #4caf50, #5cbf60);
+            color: white;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+        }
+        #duelsink-btn:hover:not(:disabled) {
+            background: linear-gradient(45deg, #388e3c, #4caf50);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+        }
         .action-button:disabled {
             background: #666;
             cursor: not-allowed;
@@ -203,6 +213,7 @@
                     <button id="post-btn" class="action-button" disabled>To Tabletop Simulator</button>
                     <button id="inktable-btn" class="action-button" disabled>To Inktable</button>
                     <button id="lorcanito-btn" class="action-button" disabled>To Lorcanito</button>
+                    <button id="duelsink-btn" class="action-button" disabled>To Duels.ink</button>
                 </div>
             </div>
         </div> 
@@ -215,6 +226,7 @@
     const draftmancerInputArea = document.getElementById('draftmancer-input-area');
     const InktableButton = document.getElementById('inktable-btn');
     const LorcanitoButton = document.getElementById('lorcanito-btn');
+    const DuelsinkButton = document.getElementById('duelsink-btn');
 
     // Check for deck parameter in URL and populate if present
     function populateFromUrlParameter() {
@@ -232,6 +244,7 @@
                 ttsButton.disabled = !hasContent;
                 InktableButton.disabled = !hasContent;
                 LorcanitoButton.disabled = !hasContent;
+                DuelsinkButton.disabled = !hasContent;
                 
                 // Auto-trigger export if export parameter is present and deck has content
                 if (exportParam && hasContent) {
@@ -246,6 +259,9 @@
                             break;
                         case 'lorcanito':
                             exportToLorcanito(deckContent);
+                            break;
+                        case 'duelsink':
+                            exportToDuelsink(deckContent);
                             break;
                         default:
                             console.warn('Unknown export type:', exportParam);
@@ -310,10 +326,25 @@
         }
     }
 
+    function exportToDuelsink(deckContent) {
+        hideError();
+        try {
+            // Base64 encode the deck list
+            const base64DeckList = btoa(deckContent);
+            // Open duels.ink with the encoded deck list
+            const duelsinkUrl = `https://duels.ink/decks/new?import=${encodeURIComponent(base64DeckList)}`;
+            window.open(duelsinkUrl, '_blank');
+        } catch (error) {
+            console.error('Error encoding deck list for duels.ink:', error);
+            showError('Failed to export deck to duels.ink. Please try again.');
+        }
+    }
+
     draftmancerInputArea.addEventListener('input', () => {
         ttsButton.disabled = draftmancerInputArea.value.trim().length === 0;
         InktableButton.disabled = draftmancerInputArea.value.trim().length === 0;
         LorcanitoButton.disabled = draftmancerInputArea.value.trim().length === 0;
+        DuelsinkButton.disabled = draftmancerInputArea.value.trim().length === 0;
     });
 
     InktableButton.addEventListener('click', async _ => { 
@@ -326,6 +357,10 @@
 
     ttsButton.addEventListener('click', async _ => {
         exportToTTS(draftmancerInputArea.value.trim());
+    });
+
+    DuelsinkButton.addEventListener('click', async _ => { 
+        exportToDuelsink(draftmancerInputArea.value.trim());
     });
 </script>
 

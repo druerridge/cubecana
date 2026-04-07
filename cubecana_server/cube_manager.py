@@ -122,7 +122,7 @@ class CubeManager:
             featuredCardImageLink=featured_image_link
         )
 
-    def get_cubes(self, page: int = 1, per_page: int = 25, sort = api.SortType.RANK, order = api.OrderType.DESC, tags: List[str] = None) -> List[api.CubeListEntry]:
+    def get_cubes(self, page: int = 1, per_page: int = 25, sort = api.SortType.TRENDING, order = api.OrderType.DESC, tags: List[str] = None) -> List[api.CubeListEntry]:
         paginated_db_cubecana_cubes: List[DbCubecanaCube] = cube_dao.get_cubecana_cubes(page, per_page, sort, order, tags)
         paginated_cubes = [self.from_db_cubecana_cube(dbcube) for dbcube in paginated_db_cubecana_cubes]
         paginated_cube_list_entries: api.CubeListEntry = [self.to_cube_list_entry(cube) for cube in paginated_cubes]
@@ -230,7 +230,7 @@ class CubeManager:
     # big perf hit, do only on startup or when not under load
     def get_all_cube_lists(self, tags: list[str] = None, power_bands: list[str] = None) -> List[dict[PrintingId, int]]:
         count = self.get_cube_count()
-        db_cubes: list[DbCubecanaCube] = cube_dao.get_cubecana_cubes(page=1, per_page=count, sort=api.SortType.RANK, order=api.OrderType.DESC, tags=tags, power_bands=power_bands)
+        db_cubes: list[DbCubecanaCube] = cube_dao.get_cubecana_cubes(page=1, per_page=count, sort=api.SortType.TRENDING, order=api.OrderType.DESC, tags=tags, power_bands=power_bands)
         cube_lists = [self.from_db_cubecana_cube(db_cube).printing_id_to_count for db_cube in db_cubes]
         return cube_lists
         

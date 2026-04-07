@@ -147,6 +147,7 @@ class OrderType(str, Enum):
 class SortType(str, Enum):
     RANK = 'rank'
     DATE = 'date'
+    TRENDING = 'trending'
 
 @dataclass(frozen=True)
 class SlotInfo:

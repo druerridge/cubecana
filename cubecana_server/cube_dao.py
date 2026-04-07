@@ -2,7 +2,8 @@ import uuid
 import json
 from pathlib import Path
 from typing import List, Optional
-from sqlalchemy import Column, String, Integer, Text, JSON, func, exc
+from sqlalchemy.orm import column_property
+from sqlalchemy import Column, String, Integer, JSON, func, exc
 from sqlalchemy.dialects.mysql import BINARY, VARCHAR, TEXT
 from . import api
 from .database import Base, db_connection
@@ -36,10 +37,12 @@ class DbCubecanaCube(Base):
     drafts = Column(Integer, default=0)
     featured_card_printing = Column(VARCHAR(256, charset='utf8mb4', collation='utf8mb4_unicode_ci'))      
     cube_description = Column(VARCHAR(4096, charset='utf8mb4', collation='utf8mb4_unicode_ci'))      
+    trendiness = column_property(popularity / (func.datediff(func.now(), func.from_unixtime(last_updated_epoch_seconds)) + 1)) # popularity / num days since last update 
 
 API_SORT_TYPE_TO_COLUMN = {
     api.SortType.RANK: DbCubecanaCube.popularity,
     api.SortType.DATE: DbCubecanaCube.last_updated_epoch_seconds,
+    api.SortType.TRENDING: DbCubecanaCube.trendiness,
 }
 
 class CubeDao:

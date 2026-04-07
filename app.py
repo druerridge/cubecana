@@ -367,7 +367,7 @@ def get_cube_count():
 def get_cubes():
   page = int(request.args.get('page', 1))
   per_page = min(int(request.args.get('per_page', 10)), 100)
-  sort = request.args.get('sort', api.SortType.RANK)
+  sort = request.args.get('sort', api.SortType.TRENDING)
   order = request.args.get('order', api.OrderType.DESC)
   tags = None
   if 'tags' in request.args and len(request.args.getlist('tags')) > 0 and request.args.getlist('tags')[0] != "":

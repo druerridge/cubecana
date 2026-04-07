@@ -122,7 +122,7 @@ if (perPageParam) {
     perPage = parseInt(perPageParam);
 }
 
-let sort = 'rank';
+let sort = 'trending';
 const sortTypeParam = new URLSearchParams(window.location.search).get('sort');
 if (sortTypeParam) {
     sort = sortTypeParam;

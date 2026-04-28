@@ -38,6 +38,8 @@ class RetailSet:
 class RetailManager:
     def __init__(self):
         self.retail_sets: dict[str, RetailSet] = {}
+
+    def init(self):
         self.load_retail_sets(RETAIL_SETS_DIR_PATH)
 
     def generate_retail_set(self, file: Path) -> RetailSet:
@@ -74,3 +76,4 @@ class RetailManager:
         return api.RetailSet(id=retail_set.id, name=retail_set.name, draftmancerFile=retail_set.draftmancer_file_contents)
 
 retail_manager: RetailManager = RetailManager()
+retail_manager.init()

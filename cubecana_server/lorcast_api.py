@@ -1,5 +1,7 @@
+from datetime import datetime, timedelta
 from pathlib import Path
 import json
+import threading
 
 from .dreamborn_manager import dreamborn_manager
 from . import id_helper
@@ -9,6 +11,8 @@ from .lorcana import ALT_ART_RARITIES
 
 CACHED_API_DATA_FILEPATH = 'inputs/lorcast_api_cache/lorcast_api_data_cache.json'
 CACHED_API_DATA_SET_Q1_FILEPATH = 'inputs/lorcast_api_cache/lorcast_api_data_cache_q1.json'
+MAX_CACHE_AGE = timedelta(days=7)
+# MAX_CACHE_AGE = timedelta(minutes=2)
 
 lorcast_to_cubecana_rarity =  {
     "Common" : "Common",
@@ -26,6 +30,8 @@ lorcast_to_cubecana_rarity =  {
 class LorcastApi:
     def __init__(self):
         self.id_to_api_card: dict[str, ApiCard] = {}
+        self.is_updating_api_cache = False
+        self.timer = None
     
     def get_lorcast_full_name(self, printing_untyped: dict) -> str:
         if 'version' in printing_untyped:
@@ -36,7 +42,8 @@ class LorcastApi:
         lorcast_full_name = self.get_lorcast_full_name(printing_untyped)
         return id_helper.to_id(lorcast_full_name)
 
-    def fetch_api_data(self) -> dict[str, dict]:
+    def download_api_data(self) -> dict[str, dict]:
+        print("Downloading API cards from API...")
         printing_id_str_to_printing_untyped: dict[str, dict] = {}
         # get sets
         url = f'https://api.lorcast.com/v0/sets'
@@ -158,7 +165,8 @@ class LorcastApi:
                 id_to_api_card[printing_id.card_id] = self.api_card_from(printing_untyped)
         return id_to_api_card
 
-    def fetch_set_q1_data(self) -> dict[PrintingId, dict]:
+    def load_set_q1_data_from_disk(self) -> dict[PrintingId, dict]:
+        print("Fetching set Q1 cards from local file...")
         printing_id_str_to_printing_untyped = {}
         cached_set_q1_api_data_file = Path(CACHED_API_DATA_SET_Q1_FILEPATH)
         with cached_set_q1_api_data_file.open(mode='r') as file_to_read:
@@ -183,23 +191,62 @@ class LorcastApi:
     def get_cards_from_set(self, set_code: str) -> list[ApiCard]:
         return [api_card for api_card in self.id_to_api_card.values() if any(printing.set_code == set_code for printing in api_card.card_printings)]
     
-    def init(self):
+    def refresh_api_data_cache_if_needed(self):
         cached_api_data_file = Path(CACHED_API_DATA_FILEPATH)
-        if not cached_api_data_file.is_file():
-            printing_id_to_printing_untyped = self.fetch_api_data()
-            print("Fetching set Q1 cards from local file...")
-            printing_id_to_printing_untyped_q1 = self.fetch_set_q1_data()
-            printing_id_to_printing_untyped.update(printing_id_to_printing_untyped_q1) # merge the two dicts
-            # self.fix_card_names(name_to_printing_untyped)
-            Path(cached_api_data_file).parent.mkdir(parents=True, exist_ok=True)
-            with cached_api_data_file.open(mode='w') as file_to_write:
-                json.dump(printing_id_to_printing_untyped, file_to_write)
 
+        if self.is_updating_api_cache:
+            return
+
+        if not cached_api_data_file.is_file():
+            print(f"API data cache not present on disk. Updating...")
+            self.fetch_persist_load_api_cache(cached_api_data_file)
+        elif cached_api_data_file.is_file() and (datetime.now() - datetime.fromtimestamp(cached_api_data_file.stat().st_mtime) > MAX_CACHE_AGE):
+            print(f"API data cache is older than {MAX_CACHE_AGE}. Last updated at {datetime.fromtimestamp(cached_api_data_file.stat().st_mtime)}. Updating...")
+            self.fetch_persist_load_api_cache(cached_api_data_file)
+        elif len(self.id_to_api_card) == 0:
+            self.load_api_cache_from_disk(cached_api_data_file)
+
+    def fetch_persist_load_api_cache(self, cached_api_data_file):
+        self.is_updating_api_cache = True
+        if cached_api_data_file.is_file():
+            cached_api_data_file.unlink() 
+        self.fetch_api_and_persist_to_disk(cached_api_data_file)
+        self.load_api_cache_from_disk(cached_api_data_file)
+        self.is_updating_api_cache = False
+
+    def fetch_api_and_persist_to_disk(self, cached_api_data_file):
+        printing_id_to_printing_untyped = self.fetch_all_api_data()
+        self.cache_api_data_to_disk(cached_api_data_file, printing_id_to_printing_untyped)
+        print(f"Data cache written to disk.")
+
+    def cache_api_data_to_disk(self, cached_api_data_file, printing_id_to_printing_untyped):
+        Path(cached_api_data_file).parent.mkdir(parents=True, exist_ok=True)
+        with cached_api_data_file.open(mode='w') as file_to_write:
+            json.dump(printing_id_to_printing_untyped, file_to_write)
+
+    def fetch_all_api_data(self) -> dict[str, dict]:
+        printing_id_to_printing_untyped = self.download_api_data()
+        printing_id_to_printing_untyped_q1 = self.load_set_q1_data_from_disk()
+        printing_id_to_printing_untyped.update(printing_id_to_printing_untyped_q1) # merge the two dicts
+        # self.fix_card_names(name_to_printing_untyped)
+        return printing_id_to_printing_untyped
+
+    def load_api_cache_from_disk(self, cached_api_data_file):
         with cached_api_data_file.open(mode='r') as file_to_read:
             printing_id_str_to_printing_untyped = json.load(file_to_read)
             id_to_api_card = self.generate_id_to_api_card(printing_id_str_to_printing_untyped)
-        self.id_to_api_card = id_to_api_card
+            self.id_to_api_card = id_to_api_card
+            print(f"API data cache loaded from disk with {len(self.id_to_api_card)} cards.")
 
+    def _handle_timer(self):
+        self.refresh_api_data_cache_if_needed()
+
+        self.timer = threading.Timer(60.0, self._handle_timer)
+        self.timer.daemon = True  # Dies when main thread dies
+        self.timer.start()
+
+    def init(self):
+        self._handle_timer()
         # self.print_all_printing_ids_to_file()
 
     # def print_all_printing_ids_to_file(self, output_filepath: str = 'test_data/all_printing_ids.txt'):

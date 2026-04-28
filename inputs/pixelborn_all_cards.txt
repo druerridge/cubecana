@@ -2241,3 +2241,207 @@ Swordplay
 Meeko_Skittish Scrounger
 Zootopia_Tundratown
 Thomas_Wide-Eyed Recruit
+Alan-a-Dale_Loyal Bard
+Woody_Jungle Guide
+Safety Rope
+Will o' the Wisp_Forest Spirit
+Gaetan Moliere_Clever Burrower
+Elinor_Renowned Diplomat
+Zeus_Defiant God
+Lyle Tiberius Rourke_Looking for His Moment
+Robin Hood_Desert Wanderer
+Escape Plan
+Lord Dingwall_Bullheaded
+Chip_Team Player
+Edna Mode_Fashion Designer
+Mor'du_Savage Cursed Prince
+Lord MacGuffin_Clever Swordsman
+Hero Work
+Fauna_Good-Natured Fairy
+Kida_Discovering the Unknown
+Kashekim_Wise King
+Violet Parr_At Wits' End
+Diablo_Stone Servant
+The Prince_Searching for His Love
+Happy_Joyful Adventurer
+Frozone_Super Slick
+Alma Madrigal_Heart of the Family
+Cruella De Vil_Judgmental Traveler
+Audrey Ramirez_Gutsy Mechanic
+Hand-in-the-Box_Sid's Toy
+Queen of Hearts_Impatient Traveler
+Flora_Strong-Willed Fairy
+Kida_Guardian of the Path
+Salvage Operation
+Someone Will Lose His Head
+Card Advantage
+Gizmoduck_Duckburg Defender
+RC_Remote-Controlled Car
+Dolores Madrigal_Hears Everything
+Hamm_Piggy Bank
+Casa Madrigal_Courtyard
+Dale_Ready for His Shot
+When You Need Help, Just Call
+Doc_Taking Notes
+Maleficent_Imperious Traveler
+Dash Parr_Lava Runner
+Helga Sinclair_No Backup Needed
+Buzz's Arm
+Merida's Bow
+Daisy Duck_Trendy Traveler
+Babyhead_Leader of Sid's Toys
+Norton Nimnul_Misanthropic Genius
+Ursula_Deal Maker
+Julieta's Arepas
+Angus_Mighty Horse
+Rat Capone_Rodent Gangster
+Omnidroid_V.9
+Fat Cat's Club_Seedy Headquarters
+Prince Eric_Noble Swordsman
+Monterey Jack_Hypnotized by Cheese
+Julieta Madrigal_Caring Baker
+Alma Madrigal_Leading the Way
+Agustin Madrigal_Exceptionally Kind
+Luisa Madrigal_Pushing Through
+Super Relocation Program
+Young MacGuffin_Soft-Spoken Son
+Buzz Lightyear_Space Ranger
+Merida_Gifted Archer
+Remote Inklands_Desert Ruins
+Helga Sinclair_Prepared for Anything
+Sabotage
+The Family Scattered
+Mr. Incredible_Bob Parr
+Wind-Up Frog_Sid's Toy
+Copper_Big Dog
+Bouncing Ducky_Sid's Toy
+Hercules_Young Rescuer
+Firefly Swarm
+Dangerous Plan
+Leviathan's Lair_Dangerous Ground
+Mor'du_Wicked with Pride
+Prince Charming_Searching for Answers
+Mirabel Madrigal_Resourceful Daughter
+Mirage_Super Recruiter
+Syndrome_Evil Inventor
+Gadget Hackwrench_Resourceful Mechanic
+Gadget Hackwrench_Finder of Lost Parts
+Edna Mode_Super Suit Designer
+Luisa Madrigal_No Pressure
+Dr. Sara Bellum_Head of Research
+Bruno Madrigal_Oasis Oracle
+Kida_Crystal Scion
+Ranger Plane
+Young Macintosh_Proud Son
+Lenny_Toy Binoculars
+Fat Cat_Criminal Businessman
+Andy's Room_Home Base
+Goofy_Determined Traveler
+Omnidroid_V.10
+Merida_Formidable Archer
+Touch the Sky
+Plunger Crossbow
+The Island of Nomanisan_Syndrome's Headquarters
+Mickey Mouse_Expedition Leader
+Metamorphosis
+Bullseye_Loyal Horse
+Ariel_Curious Traveler
+Super Suit
+Hamish, Hubert & Harris_Troublemaking Triplets
+Tod_Nimble Fox
+Don't Be Nervous
+Ring of Stones_Place of Legends
+Mr. Incredible_Super Strong
+Cinderella_Resourceful Traveler
+Pocahontas_Steadfast Traveler
+Incrediboy_Buddy Pine
+Mr. Incredible_Taking Out the Trash
+Zipper_Tiny Helper
+Mrs. Incredible_Determined Rescuer
+Three Arrows
+Syndrome's Remote
+John Smith_Skillful Explorer
+Chip_Retrieval Expert
+Isabela Madrigal_Such a Lovely Voice
+Pluto_Vigilant Traveler
+Ranger Team-Up
+Jessie_Lively Cowgirl
+Woody_Leader of the Toys
+Bashful_Riding the Rails
+Grumpy_Soreheaded Miner
+Sneezy_Startlingly Loud
+Sleepy_Deep Sleeper
+Dopey_Drawn to Music
+Elinor_Bespelled Queen
+Mrs. Incredible_Super Stretchy
+Mickey Mouse_Experienced Traveler
+Alma Madrigal_Keeper of the Flame
+Luisa Madrigal_Confident Climber
+Lyle Tiberius Rourke_Adventurer for Hire
+Joshua Sweet_Field Surgeon
+The Huntsman_On the Queen's Orders
+Strange Things
+The Claw
+Gyro-Evac
+Buzz Lightyear_Jungle Ranger
+Jingle Joe_Sid's Toy
+Roller Bob_Sid's Toy
+The Leviathan_Guardian of Atlantis
+Sid Phillips_Toy Surgeon
+Inner Strength
+Like A Bird In the Sky
+Vincenzo Santorini_On the Run
+Gadget's Goggles
+Shepherd's Journal
+Bruno Madrigal_Seeing the Future
+What Else Can I Do?
+Fergus_King of DunBroch
+Wee Dingwall_Scrappy Lad
+Mrs. Incredible_Helen Parr
+Lord Macintosh_Wiry and High-Strung
+Omnidroid_V.8
+Club Door
+Monterey Jack_Watchful Ranger
+Dale_Excited Friend
+Bo Peep_Caring Shepherd
+This Growing Pressure
+You've Got a Friend in Me
+Snow White_Merry as the Morning
+Pepa Madrigal_Calm Before the Storm
+Frozone_Super Cool
+Right Behind You
+DunBroch Family Tapestry
+Merida_Defiant Daughter
+Peter Pan_Searching Far and Wide
+Alien_True Believer
+Buzz Lightyear_On the Way
+Pizza Planet_Spaceport
+Preston Whitmore_Expedition Financier
+Jebidiah Farnsworth_Cookie
+The Witch_Wily Woodcarver
+Pterodactyl Janie Doll_Sid's Toy
+Amazu's Inkcaster
+Merryweather_Feisty Fairy
+Zipper_Big Helper
+Minnie Mouse_Practical Traveler
+Fat Cat_Felonious Feline
+Maudie_Exasperated Nursemaid
+Gosalyn Mallard_The Quiverwing Quack
+Woody_Waiting for a Friend
+The Queen_Evil Ruler
+Pedro Madrigal_Family Patriarch
+Rex_Protective Dinosaur
+Isabela Madrigal_Caring Cultivator
+Violet Parr_Learning New Powers
+Hamish, Hubert & Harris_Making Mischief
+Milo Thatch_Getting His Hands Dirty
+Donald Duck_Distracted Traveler
+The Queen_Devious Disguise
+Lyle Tiberius Rourke_Crystallized Commander
+Pegasus_Searching High and Low
+Milo Thatch_Courageous Explorer
+Dash Parr_Super Speedy
+Jack-Jack Parr_Incredible Potential
+Isabela Madrigal_Perfectly in Control
+Syndrome_Out for Revenge
+Fergus_Outpost Builder

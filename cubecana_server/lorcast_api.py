@@ -11,7 +11,7 @@ from .lorcana import ALT_ART_RARITIES
 
 CACHED_API_DATA_FILEPATH = 'inputs/lorcast_api_cache/lorcast_api_data_cache.json'
 CACHED_API_DATA_SET_Q1_FILEPATH = 'inputs/lorcast_api_cache/lorcast_api_data_cache_q1.json'
-MAX_CACHE_AGE = timedelta(days=7)
+MAX_CACHE_AGE = timedelta(days=1)
 # MAX_CACHE_AGE = timedelta(minutes=2)
 
 lorcast_to_cubecana_rarity =  {

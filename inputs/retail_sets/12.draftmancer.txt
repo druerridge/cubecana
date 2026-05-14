@@ -1,0 +1,3415 @@
+[CustomCards]
+[
+    {
+        "name": "Ariel - Curious Traveler",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_1a1e041109e6448c889803fb5be588d9.avif?1777687186"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "18",
+        "rating": 3
+    },
+    {
+        "name": "Maleficent - Imperious Traveler",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_586e5a2d7baa4cefb96e5f65a68e0cc2.avif?1777687376"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "55",
+        "rating": 4
+    },
+    {
+        "name": "Cruella De Vil - Judgmental Traveler",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_f8c2be32fbd44519b24aba773718210a.avif?1777687522"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "92",
+        "rating": 5
+    },
+    {
+        "name": "Queen of Hearts - Impatient Traveler",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_d0e471f08f1e48f9ac4103827e910ce4.avif?1777687637"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "122",
+        "rating": 3
+    },
+    {
+        "name": "Cinderella - Resourceful Traveler",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_f4e355fa31614d7885933e92a5d0c821.avif?1777687765"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "155",
+        "rating": 2
+    },
+    {
+        "name": "Pocahontas - Steadfast Traveler",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_65471535e336408d9a1f465798307df2.avif?1777687829"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "171",
+        "rating": 3
+    },
+    {
+        "name": "Pocahontas - Steadfast Traveler",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_5b512fbc3a31425eb70175752010d69c.avif?1777688012"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "220",
+        "rating": 3,
+        "foil": true
+    },
+    {
+        "name": "Lenny - Toy Binoculars",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_58a1ca8c3c3c4dfa9deebc214c49e4b1.avif?1777687469"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "79",
+        "rating": 1
+    },
+    {
+        "name": "Zipper - Tiny Helper",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_a761922905824d819675a01a357e187f.avif?1777687737"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "148",
+        "rating": 2
+    },
+    {
+        "name": "Will o' the Wisp - Forest Spirit",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_4d61ccc401a942719bfcafde3a132578.avif?1777687337"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "47",
+        "rating": 3
+    },
+    {
+        "name": "Gosalyn Mallard - The Quiverwing Quack",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_1755646d14394fc69c64fcae17bf5f44.avif?1777687107"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "1",
+        "rating": 2
+    },
+    {
+        "name": "Monterey Jack - Watchful Ranger",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_a277ec572a7c4e2b8a351bfd233c139c.avif?1777687111"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "2",
+        "rating": 3
+    },
+    {
+        "name": "Woody - Waiting for a Friend",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_ff8566269f8e44b2ae13abb3a79a27dd.avif?1777687116"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "3",
+        "rating": 3
+    },
+    {
+        "name": "Woody - Waiting for a Friend",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_2eb1fa4c7ab0498b8d4cfcd28f56a8cf.avif?1777687951"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "205",
+        "rating": 3,
+        "foil": true
+    },
+    {
+        "name": "Dale - Excited Friend",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_06e1e4bd136e4a5b8cd9c93e478f2c4f.avif?1777687121"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "4",
+        "rating": 2
+    },
+    {
+        "name": "Pedro Madrigal - Family Patriarch",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_91ca0b124f3a401faaf0926a24588af5.avif?1777687125"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "5",
+        "rating": 3
+    },
+    {
+        "name": "Agustin Madrigal - Exceptionally Kind",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_06b56190f0d84ae58f902fdf86cea771.avif?1777687130"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "6",
+        "rating": 4
+    },
+    {
+        "name": "Alan-a-Dale - Loyal Bard",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_9b3e23958e8c439db9998f14adeba943.avif?1777687135"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "7",
+        "rating": 2
+    },
+    {
+        "name": "Prince Eric - Noble Swordsman",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_fec8fc6f1b9745078b63c897c32c95c5.avif?1777687140"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "8",
+        "rating": 4
+    },
+    {
+        "name": "Dolores Madrigal - Hears Everything",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_01acad281686403cabf7d98f5026bc7a.avif?1777687145"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "9",
+        "rating": 3
+    },
+    {
+        "name": "Rex - Protective Dinosaur",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_39de8b639e424da9b739e523f4a661d2.avif?1777687149"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "10",
+        "rating": 4
+    },
+    {
+        "name": "Rex - Protective Dinosaur",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_70e7c418c5034714b2eb7889c89e3c86.avif?1777687955"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "206",
+        "rating": 4,
+        "foil": true
+    },
+    {
+        "name": "Hamm - Piggy Bank",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_44d3ef4753ac4e039c91e30ecfe1dcaf.avif?1777687153"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "11",
+        "rating": 4
+    },
+    {
+        "name": "Monterey Jack - Hypnotized by Cheese",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_490b647e01e44f77b1413fa6fc30b023.avif?1777687157"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "12",
+        "rating": 2
+    },
+    {
+        "name": "Bo Peep - Caring Shepherd",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_e63fe9e08c924f4b973fa0f6d4f9a00b.avif?1777687161"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "13",
+        "rating": 2
+    },
+    {
+        "name": "Chip - Retrieval Expert",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_af3e6cbd8d7b41be9f4e9a476358ab6a.avif?1777687165"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "14",
+        "rating": 2
+    },
+    {
+        "name": "Woody - Jungle Guide",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_23f90c492e514c569e969d30089ba8cf.avif?1777687169"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "15",
+        "rating": 3
+    },
+    {
+        "name": "Isabela Madrigal - Such a Lovely Voice",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_80d82e7c2bda4d8da137d7a85a19d78f.avif?1777687173"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "16",
+        "rating": 2
+    },
+    {
+        "name": "Isabela Madrigal - Such a Lovely Voice",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_1747f940605e4b6eb87f5df5ee96d9d8.avif?1777687959"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "207",
+        "rating": 2,
+        "foil": true
+    },
+    {
+        "name": "Bullseye - Loyal Horse",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_029d768f40084d1ca1f66a01a5e6981e.avif?1777687180"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "17",
+        "rating": 3
+    },
+    {
+        "name": "Isabela Madrigal - Caring Cultivator",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_36cd916ef6924852970d3b63c2666f74.avif?1777687193"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "19",
+        "rating": 3
+    },
+    {
+        "name": "Isabela Madrigal - Caring Cultivator",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_68c6733378304dca8d2adb4b1c993433.avif?1777688028"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "224",
+        "rating": 3,
+        "foil": true
+    },
+    {
+        "name": "Jessie - Lively Cowgirl",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_c7f3b3cbe19c44f7943c510392ea88db.avif?1777687200"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "20",
+        "rating": 3
+    },
+    {
+        "name": "Jessie - Lively Cowgirl",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_c0337343682c4e9e9bac90b90fb4f24a.avif?1777688023"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "223",
+        "rating": 3,
+        "foil": true
+    },
+    {
+        "name": "Woody - Leader of the Toys",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_752b3ac3ef5a4ce6833d0dbe46f1f671.avif?1777687209"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "21",
+        "rating": 3
+    },
+    {
+        "name": "Dale - Ready for His Shot",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_66a5c1d3ac3e4e2c894c5a8604c10cc2.avif?1777687217"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "22",
+        "rating": 4
+    },
+    {
+        "name": "The Prince - Searching for His Love",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_25eee8741de44224946fe827a0debb09.avif?1777687222"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "23",
+        "rating": 2
+    },
+    {
+        "name": "Julieta Madrigal - Caring Baker",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_0dffc260d1554199bc1b2ccf50fc1831.avif?1777687226"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "24",
+        "rating": 2
+    },
+    {
+        "name": "Pluto - Vigilant Traveler",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_49511c0b9e594c4ca7a0e38fa31ede19.avif?1777687230"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "25",
+        "rating": 3
+    },
+    {
+        "name": "Mickey Mouse - Expedition Leader",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_c1295a70475b44d392fa06adbbc74b6b.avif?1777687234"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "26",
+        "rating": 3
+    },
+    {
+        "name": "Chip - Team Player",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_81be5ee0001a4e908712f662cccff814.avif?1777687239"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "27",
+        "rating": 4
+    },
+    {
+        "name": "Ranger Team-Up",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_ebf33c2b155d45cbbbcf8ecb24ebea14.avif?1777687244"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "28",
+        "rating": 2
+    },
+    {
+        "name": "This Growing Pressure",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_aef0af5d54a84b1dadfd6351fbec3a01.avif?1777687249"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "29",
+        "rating": 3
+    },
+    {
+        "name": "You've Got a Friend in Me",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_27629d2527714727a23db4e81da1a520.avif?1777687254"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "30",
+        "rating": 2
+    },
+    {
+        "name": "You've Got a Friend in Me",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_611ab7622d0b4aa7a9aa98ab736f329c.avif?1777688033"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "225",
+        "rating": 2,
+        "foil": true
+    },
+    {
+        "name": "Metamorphosis",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_bd6859c3955c47818b6c6df4df09bc69.avif?1777687259"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "31",
+        "rating": 1
+    },
+    {
+        "name": "When You Need Help, Just Call",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b12d63a99baa4fa1b94f257cb6530acc.avif?1777687265"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "32",
+        "rating": 1
+    },
+    {
+        "name": "Safety Rope",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_4405683c633a4d20843d6dc55a9a04d9.avif?1777687270"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "33",
+        "rating": 2
+    },
+    {
+        "name": "Andy's Room - Home Base",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_ce7d516d02e247edb80360f39baa9dcb.avif?1777687273"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "34",
+        "rating": 3,
+        "layout": "split"
+    },
+    {
+        "name": "Mor'du - Wicked with Pride",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_6ed671e897624e01b14ca2e5db565d06.avif?1777687278"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "35",
+        "rating": 3
+    },
+    {
+        "name": "Alma Madrigal - Leading the Way",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_a4eb09772d744fb6ace3010ef6f15745.avif?1777687281"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "36",
+        "rating": 2
+    },
+    {
+        "name": "Snow White - Merry as the Morning",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_6253282cb5e14ec384482907b1b1aaa3.avif?1777687285"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "37",
+        "rating": 3
+    },
+    {
+        "name": "Dopey - Drawn to Music",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_a0369f5ac4404d72aeebd384f99c92fe.avif?1777687289"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "38",
+        "rating": 3
+    },
+    {
+        "name": "Bashful - Riding the Rails",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_31942dd851fe4b9cb0ac05388e346987.avif?1777687293"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "39",
+        "rating": 4
+    },
+    {
+        "name": "Doc - Taking Notes",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_abfe55d7cdb441b7b03deed6aec8bc1d.avif?1777687298"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "40",
+        "rating": 3
+    },
+    {
+        "name": "Doc - Taking Notes",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_fd529e637c964866821ab9f2946451cb.avif?1777687971"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "210",
+        "rating": 3,
+        "foil": true
+    },
+    {
+        "name": "Grumpy - Soreheaded Miner",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_a9a5823df9c842cc91a3cc8ea1d9b4dd.avif?1777687303"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "41",
+        "rating": 3
+    },
+    {
+        "name": "Sneezy - Startlingly Loud",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_157e8d9b9f8745f2addc02e485dd2050.avif?1777687309"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "42",
+        "rating": 3
+    },
+    {
+        "name": "Happy - Joyful Adventurer",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_19f9cb6d8ec14727aecb704c3d5c1c14.avif?1777687314"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "43",
+        "rating": 4
+    },
+    {
+        "name": "Sleepy - Deep Sleeper",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_74d958eba8d84933bb8d416153a757d0.avif?1777687320"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "44",
+        "rating": 3
+    },
+    {
+        "name": "Alma Madrigal - Heart of the Family",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_938c76c3d0fd41f8b0a1a4dac95f04bc.avif?1777687325"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "45",
+        "rating": 3
+    },
+    {
+        "name": "Frozone - Super Slick",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_176292aded014342b14e66e92f47427b.avif?1777687331"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "46",
+        "rating": 4
+    },
+    {
+        "name": "Violet Parr - Learning New Powers",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_20da43997f8642f6b33d1fa04865209d.avif?1777687342"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "48",
+        "rating": 4
+    },
+    {
+        "name": "Mrs. Incredible - Super Stretchy",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_a7974610679d43d190ee370d23d6e0b3.avif?1777687347"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "49",
+        "rating": 4
+    },
+    {
+        "name": "Hamish, Hubert & Harris - Making Mischief",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_f97b251adbeb4697b06c2cdaa80bc6e5.avif?1777687351"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "50",
+        "rating": 2
+    },
+    {
+        "name": "Elinor - Bespelled Queen",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_0a71c3e50580448eabd6ee24d079ecad.avif?1777687355"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "51",
+        "rating": 3
+    },
+    {
+        "name": "Mickey Mouse - Experienced Traveler",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_8bcdf654443a405caac520c31100c7da.avif?1777687359"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "52",
+        "rating": 3
+    },
+    {
+        "name": "Mirage - Super Recruiter",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_fd90534b079e4fec8d12822fedc90c9a.avif?1777687365"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "53",
+        "rating": 4
+    },
+    {
+        "name": "Mirage - Super Recruiter",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_31ae4e3c265448b894f74dcaf1914a3a.avif?1777687963"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "208",
+        "rating": 4,
+        "foil": true
+    },
+    {
+        "name": "Edna Mode - Fashion Designer",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_6b3d567e31d54df2aeafb8f6c13d9273.avif?1777687371"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "54",
+        "rating": 2
+    },
+    {
+        "name": "Edna Mode - Fashion Designer",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_fb68c593a65344d5ad1585cb7a67777f.avif?1777687967"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "209",
+        "rating": 2,
+        "foil": true
+    },
+    {
+        "name": "Pepa Madrigal - Calm Before the Storm",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_c86ece1b256b431cbc0591173b5fe042.avif?1777687380"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "56",
+        "rating": 3
+    },
+    {
+        "name": "Mor'du - Savage Cursed Prince",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_05dcb2ebcf1340c4a16fab77145a1fec.avif?1777687384"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "57",
+        "rating": 3
+    },
+    {
+        "name": "Alma Madrigal - Keeper of the Flame",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_c464c4847629458e811da161a49a3aaf.avif?1777687388"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "58",
+        "rating": 3
+    },
+    {
+        "name": "Frozone - Super Cool",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_c36df8a0b082402b95a4545e874435f0.avif?1777687392"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "59",
+        "rating": 4
+    },
+    {
+        "name": "Frozone - Super Cool",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_aa4a880f25814ec58358ea3ad771fbb3.avif?1777688037"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "226",
+        "rating": 4,
+        "foil": true
+    },
+    {
+        "name": "Luisa Madrigal - Confident Climber",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_46ca002a8945440398b20c8e4ad6b6eb.avif?1777687396"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "60",
+        "rating": 5
+    },
+    {
+        "name": "Luisa Madrigal - Confident Climber",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_ea1ebbf0332f4cb78f6b7a6a90d826a7.avif?1777688042"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "227",
+        "rating": 5,
+        "foil": true
+    },
+    {
+        "name": "Dash Parr - Lava Runner",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_cdc217218de441d8b92b3ea9c8041cab.avif?1777687399"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "61",
+        "rating": 3
+    },
+    {
+        "name": "Luisa Madrigal - Pushing Through",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_e3a969791b0146e9af4d258746a3289f.avif?1777687403"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "62",
+        "rating": 3
+    },
+    {
+        "name": "Super Relocation Program",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_e2aa8e208e934f27a81fb6cb5ce26d6b.avif?1777687407"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "63",
+        "rating": 2
+    },
+    {
+        "name": "Right Behind You",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_ff9b8c01070340d5ba17656c5ef0c2bf.avif?1777687410"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "64",
+        "rating": 2
+    },
+    {
+        "name": "Don't Be Nervous",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_2718faa7b40f4af8b29f6d467dbc81bc.avif?1777687414"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "65",
+        "rating": 2
+    },
+    {
+        "name": "Super Suit",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_65e90409854c4f69bd072e5eb971af8b.avif?1777687418"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "66",
+        "rating": 1
+    },
+    {
+        "name": "DunBroch Family Tapestry",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_0ae670e678624f89bb7b32b275ab04cb.avif?1777687422"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "67",
+        "rating": 1
+    },
+    {
+        "name": "DunBroch Family Tapestry",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_a8ae68af26f84535869ce0dac1f4a3de.avif?1777688046"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "228",
+        "rating": 1,
+        "foil": true
+    },
+    {
+        "name": "Ring of Stones - Place of Legends",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_7a5bbd2bed1b4b109511ea5bcd384252.avif?1777687426"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "68",
+        "rating": 3,
+        "layout": "split"
+    },
+    {
+        "name": "Merida - Defiant Daughter",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_63708f32e69544309aa60156ce8603fa.avif?1777687430"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "69",
+        "rating": 2
+    },
+    {
+        "name": "Hamish, Hubert & Harris - Troublemaking Triplets",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_0035be6616d844e58e6b42d1d804ac0b.avif?1777687433"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "70",
+        "rating": 4
+    },
+    {
+        "name": "Young MacGuffin - Soft-Spoken Son",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_0e3b42aaf42e4bc9bdc7b2814a825893.avif?1777687437"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "71",
+        "rating": 2
+    },
+    {
+        "name": "Tod - Nimble Fox",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b328d3d5de43456ba31bd637c44a24a8.avif?1777687442"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "72",
+        "rating": 4
+    },
+    {
+        "name": "Helga Sinclair - No Backup Needed",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_e740021277ed4be3848dadea5db10bb6.avif?1777687445"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "73",
+        "rating": 3
+    },
+    {
+        "name": "The Witch - Wily Woodcarver",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_897e8937b42e46a5b0a3710a1d7617d5.avif?1777687449"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "74",
+        "rating": 4
+    },
+    {
+        "name": "The Queen - Evil Ruler",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_5f3231b198754189915b51adbdda3f7c.avif?1777687453"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "75",
+        "rating": 3
+    },
+    {
+        "name": "Buzz Lightyear - Space Ranger",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_7a1dc3b9b23041a78c7e1b46ff4a2f2c.avif?1777687457"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "76",
+        "rating": 4
+    },
+    {
+        "name": "Buzz Lightyear - Space Ranger",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_dc61d69860c541f6bca41a4a9b8c17f1.avif?1777687975"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "211",
+        "rating": 4,
+        "foil": true
+    },
+    {
+        "name": "RC - Remote-Controlled Car",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_82226e6a95b54a879f3428c272b34108.avif?1777687461"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "77",
+        "rating": 3
+    },
+    {
+        "name": "Lord MacGuffin - Clever Swordsman",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_71d961ae91de4bd1970b32e561d1f3af.avif?1777687465"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "78",
+        "rating": 3
+    },
+    {
+        "name": "Gaetan Moliere - Clever Burrower",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_29ffb2df930744e7ba00db79014e59be.avif?1777687473"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "80",
+        "rating": 4
+    },
+    {
+        "name": "Peter Pan - Searching Far and Wide",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_d6cd900ff0684586bbcb200553e6cd9a.avif?1777687477"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "81",
+        "rating": 3
+    },
+    {
+        "name": "Milo Thatch - Getting His Hands Dirty",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_9e585ec03c314f3b9a6299163eb1c9a9.avif?1777687480"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "82",
+        "rating": 3
+    },
+    {
+        "name": "Milo Thatch - Getting His Hands Dirty",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_2ec97929d9ee45578f91dea1a62048b8.avif?1777688057"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "230",
+        "rating": 3,
+        "foil": true
+    },
+    {
+        "name": "Alien - True Believer",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_60542d49d8af40b1ada4fae11343fe06.avif?1777687484"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "83",
+        "rating": 2
+    },
+    {
+        "name": "Alien - True Believer",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_c671f23fc8e74ee3a7925ad650577008.avif?1777688051"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "229",
+        "rating": 2,
+        "foil": true
+    },
+    {
+        "name": "Donald Duck - Distracted Traveler",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_8ca111f27f65418b8cc535a74f90d921.avif?1777687488"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "84",
+        "rating": 4
+    },
+    {
+        "name": "Donald Duck - Distracted Traveler",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_5186a8ffa2ac448c9108a110b747e4e5.avif?1777687979"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "212",
+        "rating": 4,
+        "foil": true
+    },
+    {
+        "name": "Buzz Lightyear - On the Way",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_e2c38bf30c48489f914581f55acd67fb.avif?1777687492"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "85",
+        "rating": 2
+    },
+    {
+        "name": "Elinor - Renowned Diplomat",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_5d81f75d900f4ec4b6868519fc9c557e.avif?1777687496"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "86",
+        "rating": 3
+    },
+    {
+        "name": "Lyle Tiberius Rourke - Adventurer for Hire",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_9008a5fe3cdb46d9861b2b4477b81280.avif?1777687500"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "87",
+        "rating": 2
+    },
+    {
+        "name": "Joshua Sweet - Field Surgeon",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_fd42305369ea44619d7dc7af6eb418a9.avif?1777687504"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "88",
+        "rating": 4
+    },
+    {
+        "name": "Merida - Gifted Archer",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_2ba24a02308b4a9196bbe2cef9546e6b.avif?1777687508"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "89",
+        "rating": 4
+    },
+    {
+        "name": "Merida - Gifted Archer",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_52404c741d6e424e8a8f901408ccb11a.avif?1777687983"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "213",
+        "rating": 4,
+        "foil": true
+    },
+    {
+        "name": "The Queen - Devious Disguise",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_676cc0d5efcc4e34ae01d912295510eb.avif?1777687512"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "90",
+        "rating": 4
+    },
+    {
+        "name": "Buzz Lightyear - Jungle Ranger",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_3aa82fb3fcf848a2aaefcce88f0383db.avif?1777687517"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "91",
+        "rating": 2
+    },
+    {
+        "name": "Buzz Lightyear - Jungle Ranger",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_0b928f0cd5d2473482e07a609205c26b.avif?1777688111"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "241",
+        "rating": 2,
+        "foil": true
+    },
+    {
+        "name": "Helga Sinclair - Prepared for Anything",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_ad9b6e3372a140178662bc5ffd0db287.avif?1777687526"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "93",
+        "rating": 3
+    },
+    {
+        "name": "The Huntsman - On the Queen's Orders",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b3558cc6e55c47c6823f2324e28b0397.avif?1777687530"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "94",
+        "rating": 3
+    },
+    {
+        "name": "Strange Things",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_ae857d482ec44b298970ad55a6431753.avif?1777687533"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "95",
+        "rating": 3
+    },
+    {
+        "name": "Sabotage",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_07d93727337b490faacc8c389b60e22d.avif?1777687538"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "96",
+        "rating": 1
+    },
+    {
+        "name": "The Family Scattered",
+        "mana_cost": "{8}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_dfd21b18ff8e4b118d94ee09db759671.avif?1777687541"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "97",
+        "rating": 1
+    },
+    {
+        "name": "The Family Scattered",
+        "mana_cost": "{8}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_c4e66047e01c49f4bedb6c185d0af90a.avif?1777688061"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "231",
+        "rating": 1,
+        "foil": true
+    },
+    {
+        "name": "Buzz's Arm",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_eb78022ded274a99bea1f50570755b37.avif?1777687546"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "98",
+        "rating": 1
+    },
+    {
+        "name": "The Claw",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_559113fd213144ec805c27797d7376ef.avif?1777687550"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "99",
+        "rating": 1
+    },
+    {
+        "name": "Gyro-Evac",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_50ad67bd180c4d4a95abcf5ab4eb42bc.avif?1777687553"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "100",
+        "rating": 2
+    },
+    {
+        "name": "Merida's Bow",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_46e904b0b1d54c4f89dff2256895bf26.avif?1777687557"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "101",
+        "rating": 2
+    },
+    {
+        "name": "Pizza Planet - Spaceport",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b5d8124396864ca4a60ab2e5482185a8.avif?1777687561"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "102",
+        "rating": 3,
+        "layout": "split"
+    },
+    {
+        "name": "Lyle Tiberius Rourke - Crystallized Commander",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_0ef77c24cba04a80a65695223affebdc.avif?1777687564"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "103",
+        "rating": 3
+    },
+    {
+        "name": "Lyle Tiberius Rourke - Crystallized Commander",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_ab041a63b5204af49dbe1cbc49cbabe2.avif?1777687988"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "214",
+        "rating": 3,
+        "foil": true
+    },
+    {
+        "name": "Mr. Incredible - Bob Parr",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_89a70d23433346ac879702a68882a0e4.avif?1777687569"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "104",
+        "rating": 3
+    },
+    {
+        "name": "Mr. Incredible - Bob Parr",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_04e84b2e5eca458da5e3ce89ac7b19cb.avif?1777687992"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "215",
+        "rating": 3,
+        "foil": true
+    },
+    {
+        "name": "Lyle Tiberius Rourke - Looking for His Moment",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_e5e0a6407d4a4d948c19bcc79209857c.avif?1777687572"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "105",
+        "rating": 4
+    },
+    {
+        "name": "Pegasus - Searching High and Low",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_0a746213099d4c5eaf9ea5bf5926a411.avif?1777687576"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "106",
+        "rating": 4
+    },
+    {
+        "name": "Audrey Ramirez - Gutsy Mechanic",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b2d382e40e5642e0bd54eb50f0b0dc5c.avif?1777687580"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "107",
+        "rating": 2
+    },
+    {
+        "name": "Milo Thatch - Courageous Explorer",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_81621f1cf94c4b109b89dfdba4289025.avif?1777687584"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "108",
+        "rating": 3
+    },
+    {
+        "name": "Zeus - Defiant God",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_f573b1954fec4594b089d2897386dc69.avif?1777687587"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "109",
+        "rating": 2
+    },
+    {
+        "name": "Preston Whitmore - Expedition Financier",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_1e431099236d41a1ac9a34d9923f76eb.avif?1777687591"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "110",
+        "rating": 3
+    },
+    {
+        "name": "Jingle Joe - Sid's Toy",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b55a67a84a954c57933ff1d7218f1093.avif?1777687595"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "111",
+        "rating": 3
+    },
+    {
+        "name": "Wind-Up Frog - Sid's Toy",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_3e84541a769645c7a2689b9f165e73e5.avif?1777687599"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "112",
+        "rating": 2
+    },
+    {
+        "name": "Roller Bob - Sid's Toy",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_c9ceb70d89834fafb495e0b0da01e406.avif?1777687603"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "113",
+        "rating": 3
+    },
+    {
+        "name": "Hand-in-the-Box - Sid's Toy",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_309b96e0cc0f4a40a3a7b381b2823e0d.avif?1777687607"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "114",
+        "rating": 1
+    },
+    {
+        "name": "Daisy Duck - Trendy Traveler",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_9bfc8968eb2b449182568b2336c6aa01.avif?1777687611"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "115",
+        "rating": 3
+    },
+    {
+        "name": "Daisy Duck - Trendy Traveler",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_995abfb15ba34115bbf2283bd853c2c2.avif?1777687996"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "216",
+        "rating": 3,
+        "foil": true
+    },
+    {
+        "name": "Copper - Big Dog",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_8cf7165e05a24faea856e32135166b05.avif?1777687614"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "116",
+        "rating": 3
+    },
+    {
+        "name": "Jebidiah Farnsworth - Cookie",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_3a23919b34154ff4b95eed8eb15dbfa4.avif?1777687618"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "117",
+        "rating": 3
+    },
+    {
+        "name": "Dash Parr - Super Speedy",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_160175c3b760464390790a1a4b6f206f.avif?1777687622"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "118",
+        "rating": 4
+    },
+    {
+        "name": "Babyhead - Leader of Sid's Toys",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_e8e7a7e2380f456887bb6b8f01f991b1.avif?1777687625"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "119",
+        "rating": 4
+    },
+    {
+        "name": "Bouncing Ducky - Sid's Toy",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_53304492277b499dbe09d52c0708c9ea.avif?1777687629"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "120",
+        "rating": 3
+    },
+    {
+        "name": "Jack-Jack Parr - Incredible Potential",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_7f47cc5a26eb4220a9622e8ee83c528d.avif?1777687633"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "121",
+        "rating": 3
+    },
+    {
+        "name": "Jack-Jack Parr - Incredible Potential",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_519eea38258c49ca9b1eab9981d74544.avif?1777688066"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "232",
+        "rating": 3,
+        "foil": true
+    },
+    {
+        "name": "Hercules - Young Rescuer",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_f3c83bbcb8b9497d84c5a04aa767c0fb.avif?1777687641"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "123",
+        "rating": 3
+    },
+    {
+        "name": "Vincenzo Santorini - On the Run",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_acfc5c2bdabb45ebbc852642fb30bab7.avif?1777687645"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "124",
+        "rating": 4
+    },
+    {
+        "name": "The Leviathan - Guardian of Atlantis",
+        "mana_cost": "{10}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_0a72279b05f0453399584e40b7caaa1d.avif?1777687648"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "125",
+        "rating": 1
+    },
+    {
+        "name": "The Leviathan - Guardian of Atlantis",
+        "mana_cost": "{10}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_acf86cd5ee4e434fac91134e9ecf07c5.avif?1777688071"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "233",
+        "rating": 1,
+        "foil": true
+    },
+    {
+        "name": "Sid Phillips - Toy Surgeon",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_332a65ff58c44154824ef79683a29116.avif?1777687653"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "126",
+        "rating": 4
+    },
+    {
+        "name": "Mr. Incredible - Super Strong",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_22adb1813838413ab42f071c073d4a04.avif?1777687656"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "127",
+        "rating": 5
+    },
+    {
+        "name": "Mr. Incredible - Super Strong",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_549170e882a24974be95e3cbaf53f34e.avif?1777688077"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "234",
+        "rating": 5,
+        "foil": true
+    },
+    {
+        "name": "Pterodactyl Janie Doll - Sid's Toy",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_97451c08fce84aa7a3685f87f9b40438.avif?1777687660"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "128",
+        "rating": 2
+    },
+    {
+        "name": "Inner Strength",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_d664fec9b6454d22b3ab0ffd04634295.avif?1777687664"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "129",
+        "rating": 4
+    },
+    {
+        "name": "Firefly Swarm",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_cf31223643444ceab69c0a9fddd46f22.avif?1777687668"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "130",
+        "rating": 4
+    },
+    {
+        "name": "Like A Bird In the Sky",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_2a4015409c2d48788a2885b200a080e4.avif?1777687672"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "131",
+        "rating": 1
+    },
+    {
+        "name": "Hero Work",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_0e38efe0ee78447b8966de3f57656c86.avif?1777687675"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "132",
+        "rating": 2
+    },
+    {
+        "name": "Dangerous Plan",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_6627e7f006944e7a80d5e0ac3dfa3506.avif?1777687679"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "133",
+        "rating": 1
+    },
+    {
+        "name": "Amazu's Inkcaster",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_30c8fa2e8ce74eda9ca073a92c353b43.avif?1777687683"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "134",
+        "rating": 1
+    },
+    {
+        "name": "Remote Inklands - Desert Ruins",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_89c1af2f0ec443728e91c461511190f1.avif?1777687687"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "135",
+        "rating": 3,
+        "layout": "split"
+    },
+    {
+        "name": "Leviathan's Lair - Dangerous Ground",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_6390182da0394996b7ea68dee5b0de54.avif?1777687691"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "136",
+        "rating": 1,
+        "layout": "split"
+    },
+    {
+        "name": "Robin Hood - Desert Wanderer",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_493b48e5adba46f1aeff1ddb9eaffd47.avif?1777687695"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "137",
+        "rating": 2
+    },
+    {
+        "name": "Prince Charming - Searching for Answers",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_4129dadfa88448b5bda96c8b85320ffc.avif?1777687698"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "138",
+        "rating": 3
+    },
+    {
+        "name": "Merryweather - Feisty Fairy",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_31821d032ad0412f9bcc5868d002aa2a.avif?1777687702"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "139",
+        "rating": 4
+    },
+    {
+        "name": "Fauna - Good-Natured Fairy",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_1b2280c5875e45cbb27ced6f0116c762.avif?1777687706"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "140",
+        "rating": 4
+    },
+    {
+        "name": "Flora - Strong-Willed Fairy",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_aaea685bf107411087af5025359f986f.avif?1777687710"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "141",
+        "rating": 4
+    },
+    {
+        "name": "Mirabel Madrigal - Resourceful Daughter",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_f939abcb55234e9b9507d5d34cac867c.avif?1777687714"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "142",
+        "rating": 4
+    },
+    {
+        "name": "Syndrome - Evil Inventor",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_6a4abcb645cf41f282d3e6466283ea8d.avif?1777687718"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "143",
+        "rating": 3
+    },
+    {
+        "name": "Kida - Guardian of the Path",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_36826a0cb54b4f06b8e5de879e20d926.avif?1777687722"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "144",
+        "rating": 3
+    },
+    {
+        "name": "Kida - Guardian of the Path",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_4f772bcbcd244314a99264fb106166dd.avif?1777687999"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "217",
+        "rating": 3,
+        "foil": true
+    },
+    {
+        "name": "Gadget Hackwrench - Resourceful Mechanic",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_ddc2c44f61984a82b0020763c4e4a5e8.avif?1777687726"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "145",
+        "rating": 1
+    },
+    {
+        "name": "Norton Nimnul - Misanthropic Genius",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_740fc865fdcd40ab8b5391cfdc96509d.avif?1777687730"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "146",
+        "rating": 2
+    },
+    {
+        "name": "Gadget Hackwrench - Finder of Lost Parts",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_bf923e0701574d3b954ea18e6ea2baf5.avif?1777687733"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "147",
+        "rating": 1
+    },
+    {
+        "name": "Edna Mode - Super Suit Designer",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_911059054d6c417eac48594ab4b94e7c.avif?1777687741"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "149",
+        "rating": 1
+    },
+    {
+        "name": "Zipper - Big Helper",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_a7f1e4a1087a438a98d149bb5c4e508b.avif?1777687745"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "150",
+        "rating": 3
+    },
+    {
+        "name": "Zipper - Big Helper",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_d515c85e0daa4cfd8c3a84154d328cd4.avif?1777688081"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "235",
+        "rating": 3,
+        "foil": true
+    },
+    {
+        "name": "Luisa Madrigal - No Pressure",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_bf1a00bfa25345b8abe1f0d008935e39.avif?1777687749"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "151",
+        "rating": 2
+    },
+    {
+        "name": "Dr. Sara Bellum - Head of Research",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_51c67ec5aa334b43a036c79e0bceb3b7.avif?1777687753"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "152",
+        "rating": 3
+    },
+    {
+        "name": "Isabela Madrigal - Perfectly in Control",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_fc677f7c6b3b4781b5772602b566a1df.avif?1777687757"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "153",
+        "rating": 4
+    },
+    {
+        "name": "Bruno Madrigal - Oasis Oracle",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_da0f9560eccf4967bb614cd049667f83.avif?1777687761"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "154",
+        "rating": 5
+    },
+    {
+        "name": "Bruno Madrigal - Oasis Oracle",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_60e4bcd50631400eac4cf9544951e4ad.avif?1777688003"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "218",
+        "rating": 5,
+        "foil": true
+    },
+    {
+        "name": "Bruno Madrigal - Seeing the Future",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_8a69b362d8e44f9abee64c1d4800420f.avif?1777687769"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "156",
+        "rating": 3
+    },
+    {
+        "name": "Kida - Discovering the Unknown",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_37f859395b1f4878a5826f20394fe58e.avif?1777687774"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "157",
+        "rating": 3
+    },
+    {
+        "name": "Kashekim - Wise King",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_8950c4a97e2f4ccc8c5008b82356aec4.avif?1777687778"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "158",
+        "rating": 4
+    },
+    {
+        "name": "Minnie Mouse - Practical Traveler",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b760305650e54e7b84dcbeb7c014b0f5.avif?1777687781"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "159",
+        "rating": 3
+    },
+    {
+        "name": "Minnie Mouse - Practical Traveler",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_c3586bda90744abf8eb5c15db3b0b766.avif?1777688008"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "219",
+        "rating": 3,
+        "foil": true
+    },
+    {
+        "name": "Kida - Crystal Scion",
+        "mana_cost": "{8}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_9e3dda7a33de4861a5f81b5bea034db3.avif?1777687785"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "160",
+        "rating": 2
+    },
+    {
+        "name": "Kida - Crystal Scion",
+        "mana_cost": "{8}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_8197b190acad44c7a28b50a83fb573f1.avif?1777688087"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "236",
+        "rating": 2,
+        "foil": true
+    },
+    {
+        "name": "Ursula - Deal Maker",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_1a2311c3639d464d9eb638a08d535276.avif?1777687789"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "161",
+        "rating": 3
+    },
+    {
+        "name": "Someone Will Lose His Head",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b6e75e30d325452bba95859c5d667442.avif?1777687793"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "162",
+        "rating": 2
+    },
+    {
+        "name": "What Else Can I Do?",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_f9f28e3aab6e4218b4dd23ccd7fc758e.avif?1777687797"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "163",
+        "rating": 3
+    },
+    {
+        "name": "What Else Can I Do?",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_a2a3a343dac1408092294ea226dcd028.avif?1777688092"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "237",
+        "rating": 3,
+        "foil": true
+    },
+    {
+        "name": "Escape Plan",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_85de0815b3344000a8f380b6ceefc07e.avif?1777687801"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "164",
+        "rating": 2
+    },
+    {
+        "name": "Salvage Operation",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_63707e5a57c94a458792bd9ae218a839.avif?1777687805"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "165",
+        "rating": 1
+    },
+    {
+        "name": "Julieta's Arepas",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_800457a096c74a15b1ac1d9aece16efb.avif?1777687809"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "166",
+        "rating": 1
+    },
+    {
+        "name": "Ranger Plane",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_f9616f640bae49f5811aa5ecff83d6a8.avif?1777687813"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "167",
+        "rating": 3
+    },
+    {
+        "name": "Gadget's Goggles",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_c73f177d87004136ab148a91b23a1308.avif?1777687817"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "168",
+        "rating": 1
+    },
+    {
+        "name": "Shepherd's Journal",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_5459a4d694d44a97bf71319a8ab35a32.avif?1777687821"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "169",
+        "rating": 1
+    },
+    {
+        "name": "Casa Madrigal - Courtyard",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_69c16dd8004b4fbf8051c91ac50bc6cb.avif?1777687825"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "170",
+        "rating": 3,
+        "layout": "split"
+    },
+    {
+        "name": "Syndrome - Out for Revenge",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_551b17ff6ce94d239237332a2c902086.avif?1777687832"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "172",
+        "rating": 3
+    },
+    {
+        "name": "Syndrome - Out for Revenge",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_4ca85bb2c2274683bb7f2015997479c5.avif?1777688097"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "238",
+        "rating": 3,
+        "foil": true
+    },
+    {
+        "name": "Omnidroid - V.8",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_533ffe972f704ee58ab086b350627fe7.avif?1777687836"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "173",
+        "rating": 3
+    },
+    {
+        "name": "Angus - Mighty Horse",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_4b01090937874d888d3f0f475bc1b671.avif?1777687840"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "174",
+        "rating": 3
+    },
+    {
+        "name": "Fergus - King of DunBroch",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_69abd1ffb3804061a4f46555ad029609.avif?1777687843"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "175",
+        "rating": 3
+    },
+    {
+        "name": "Wee Dingwall - Scrappy Lad",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_1fe95db14cce4c10b58cd4293dce1bb9.avif?1777687847"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "176",
+        "rating": 4
+    },
+    {
+        "name": "Incrediboy - Buddy Pine",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_6a9d1a4cd8c74378a3e6081adf6c0797.avif?1777687851"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "177",
+        "rating": 3
+    },
+    {
+        "name": "Incrediboy - Buddy Pine",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_705137b1ace0487ba1f71ee39019989a.avif?1777688015"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "221",
+        "rating": 3,
+        "foil": true
+    },
+    {
+        "name": "Violet Parr - At Wits' End",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_92fe9e279ebd46b5922826303ea92d27.avif?1777687854"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "178",
+        "rating": 3
+    },
+    {
+        "name": "Mrs. Incredible - Helen Parr",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_0aa8e64527f24ea78b59afcd62f71a4b.avif?1777687858"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "179",
+        "rating": 3
+    },
+    {
+        "name": "Young Macintosh - Proud Son",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_35c7f5fe2959472a8f4abc38de41a8af.avif?1777687861"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "180",
+        "rating": 2
+    },
+    {
+        "name": "Lord Macintosh - Wiry and High-Strung",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_3f2b0324654a4a32a35a775ab667b55a.avif?1777687865"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "181",
+        "rating": 3
+    },
+    {
+        "name": "Fat Cat - Felonious Feline",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_9ce6a1417e4049989dae66845d3aeb70.avif?1777687868"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "182",
+        "rating": 4
+    },
+    {
+        "name": "Rat Capone - Rodent Gangster",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_dc7439b895b342b99a0c373767318f64.avif?1777687872"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "183",
+        "rating": 4
+    },
+    {
+        "name": "Omnidroid - V.9",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_d7153226a02845a4a71dbc705def5172.avif?1777687875"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "184",
+        "rating": 2
+    },
+    {
+        "name": "Mr. Incredible - Taking Out the Trash",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_78bb9b0a1716482995a63d5cd9a0d042.avif?1777687879"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "185",
+        "rating": 3
+    },
+    {
+        "name": "Lord Dingwall - Bullheaded",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_9ef9a2258e3e4f7686f71bd39f88d777.avif?1777687882"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "186",
+        "rating": 4
+    },
+    {
+        "name": "Fat Cat - Criminal Businessman",
+        "mana_cost": "{4}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_c013142af45943e4b43314298fc1a043.avif?1777687885"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "187",
+        "rating": 2
+    },
+    {
+        "name": "Maudie - Exasperated Nursemaid",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_a70c450d25964e54b6aa7d03e0c08618.avif?1777687889"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "188",
+        "rating": 4
+    },
+    {
+        "name": "Goofy - Determined Traveler",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_72faf592ef64418b856f80140e0ac6be.avif?1777687892"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "189",
+        "rating": 3
+    },
+    {
+        "name": "Omnidroid - V.10",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_c894240fefa847e6aec7d10546131a7a.avif?1777687896"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "190",
+        "rating": 4
+    },
+    {
+        "name": "Merida - Formidable Archer",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_9a930ad30367469f8e497f561beee663.avif?1777687900"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "191",
+        "rating": 3
+    },
+    {
+        "name": "Merida - Formidable Archer",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_4811e7317e3149db966bab69151147cc.avif?1777688117"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "242",
+        "rating": 3,
+        "foil": true
+    },
+    {
+        "name": "John Smith - Skillful Explorer",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_78ac2c6c97844444a40bdfebc124745c.avif?1777687904"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "192",
+        "rating": 2
+    },
+    {
+        "name": "Gizmoduck - Duckburg Defender",
+        "mana_cost": "{5}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_3828962996af456097d02272026b2b06.avif?1777687907"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "193",
+        "rating": 4
+    },
+    {
+        "name": "Fergus - Outpost Builder",
+        "mana_cost": "{6}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_e9a024091f294cfab0aebe2882414fdc.avif?1777687910"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "194",
+        "rating": 3
+    },
+    {
+        "name": "Mrs. Incredible - Determined Rescuer",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b50f7fa4b213465981b1b4cd05d54ee2.avif?1777687915"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "195",
+        "rating": 3
+    },
+    {
+        "name": "Mrs. Incredible - Determined Rescuer",
+        "mana_cost": "{7}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_fcfb9ad84f3a4c2db462a9ec4d3a63d1.avif?1777688102"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "239",
+        "rating": 3,
+        "foil": true
+    },
+    {
+        "name": "Diablo - Stone Servant",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_3b6a0713a14849bd9a660f147308111d.avif?1777687918"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "196",
+        "rating": 3
+    },
+    {
+        "name": "Three Arrows",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_73a90e236ed74b42b304d4f2342467ca.avif?1777687922"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "197",
+        "rating": 4
+    },
+    {
+        "name": "Three Arrows",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_8bc3e60c6a77434ca8ba598742c86362.avif?1777688019"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "222",
+        "rating": 4,
+        "foil": true
+    },
+    {
+        "name": "Card Advantage",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_5a10ae29a3de4850af0cc678162ed6d7.avif?1777687926"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "198",
+        "rating": 4
+    },
+    {
+        "name": "Touch the Sky",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_0b20b27507194e779b1e9d043d19e5de.avif?1777687930"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "199",
+        "rating": 1
+    },
+    {
+        "name": "Touch the Sky",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_baeb30c2d1dd4756b259daeb2833fad4.avif?1777688107"
+        },
+        "rarity": "mythic",
+        "set": "12",
+        "collector_number": "240",
+        "rating": 1,
+        "foil": true
+    },
+    {
+        "name": "Plunger Crossbow",
+        "mana_cost": "{1}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_3d1982b9cb5d4ed0bae53c2db2c92fd8.avif?1777687933"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "200",
+        "rating": 1
+    },
+    {
+        "name": "Syndrome's Remote",
+        "mana_cost": "{2}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_735ae286d20644cdb01c377869987e29.avif?1777687937"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "201",
+        "rating": 1
+    },
+    {
+        "name": "Club Door",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_b0a88627594c4886893325e28443db63.avif?1777687941"
+        },
+        "rarity": "uncommon",
+        "set": "12",
+        "collector_number": "202",
+        "rating": 1
+    },
+    {
+        "name": "Fat Cat's Club - Seedy Headquarters",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_f395ea0a746947c69e82b851035edec7.avif?1777687944"
+        },
+        "rarity": "common",
+        "set": "12",
+        "collector_number": "203",
+        "rating": 2,
+        "layout": "split"
+    },
+    {
+        "name": "The Island of Nomanisan - Syndrome's Headquarters",
+        "mana_cost": "{3}",
+        "type": "Instant",
+        "image_uris": {
+            "en": "https://cards.lorcast.io/card/digital/normal/crd_0970bfa5f6e24f108baff292de83fcb5.avif?1777687948"
+        },
+        "rarity": "rare",
+        "set": "12",
+        "collector_number": "204",
+        "rating": 3,
+        "layout": "split"
+    }
+]
+[Settings]
+{
+    "boostersPerPlayer": 4,
+    "name": "Wilds Unknown",
+    "cardBack": "https://wiki.mushureport.com/images/thumb/d/d7/Card_Back_official.png/450px-Card_Back_official.png",
+    "withReplacement": true
+}
+[CommonSlotSteel(1)]
+60000 Omnidroid - V.8 (12) 173
+60000 Angus - Mighty Horse (12) 174
+60000 Fergus - King of DunBroch (12) 175
+60000 Wee Dingwall - Scrappy Lad (12) 176
+60000 Incrediboy - Buddy Pine (12) 177
+60000 Violet Parr - At Wits' End (12) 178
+60000 Mrs. Incredible - Helen Parr (12) 179
+60000 Young Macintosh - Proud Son (12) 180
+60000 Fat Cat - Felonious Feline (12) 182
+60000 Rat Capone - Rodent Gangster (12) 183
+60000 Plunger Crossbow (12) 200
+60000 Fat Cat's Club - Seedy Headquarters (12) 203
+[CommonSlotSapphire(1)]
+60000 Robin Hood - Desert Wanderer (12) 137
+60000 Prince Charming - Searching for Answers (12) 138
+60000 Fauna - Good-Natured Fairy (12) 140
+60000 Mirabel Madrigal - Resourceful Daughter (12) 142
+60000 Syndrome - Evil Inventor (12) 143
+60000 Kida - Guardian of the Path (12) 144
+60000 Gadget Hackwrench - Finder of Lost Parts (12) 147
+60000 Dr. Sara Bellum - Head of Research (12) 152
+60000 Bruno Madrigal - Seeing the Future (12) 156
+60000 Someone Will Lose His Head (12) 162
+60000 Julieta's Arepas (12) 166
+60000 Casa Madrigal - Courtyard (12) 170
+[CommonSlotRuby(1)]
+60000 Mr. Incredible - Bob Parr (12) 104
+60000 Lyle Tiberius Rourke - Looking for His Moment (12) 105
+60000 Pegasus - Searching High and Low (12) 106
+60000 Audrey Ramirez - Gutsy Mechanic (12) 107
+60000 Milo Thatch - Courageous Explorer (12) 108
+60000 Preston Whitmore - Expedition Financier (12) 110
+60000 Jingle Joe - Sid's Toy (12) 111
+60000 Wind-Up Frog - Sid's Toy (12) 112
+60000 Pterodactyl Janie Doll - Sid's Toy (12) 128
+60000 Inner Strength (12) 129
+60000 Like A Bird In the Sky (12) 131
+60000 Dangerous Plan (12) 133
+[CommonSlotEmerald(1)]
+60000 Merida - Defiant Daughter (12) 69
+60000 Hamish, Hubert & Harris - Troublemaking Triplets (12) 70
+60000 Young MacGuffin - Soft-Spoken Son (12) 71
+60000 Tod - Nimble Fox (12) 72
+60000 Helga Sinclair - No Backup Needed (12) 73
+60000 The Witch - Wily Woodcarver (12) 74
+60000 The Queen - Evil Ruler (12) 75
+60000 Buzz Lightyear - Space Ranger (12) 76
+60000 RC - Remote-Controlled Car (12) 77
+60000 Joshua Sweet - Field Surgeon (12) 88
+60000 Sabotage (12) 96
+60000 Merida's Bow (12) 101
+[CommonSlotAmethyst(1)]
+60000 Will o' the Wisp - Forest Spirit (12) 47
+60000 Mor'du - Wicked with Pride (12) 35
+60000 Bashful - Riding the Rails (12) 39
+60000 Grumpy - Soreheaded Miner (12) 41
+60000 Sneezy - Startlingly Loud (12) 42
+60000 Happy - Joyful Adventurer (12) 43
+60000 Sleepy - Deep Sleeper (12) 44
+60000 Alma Madrigal - Heart of the Family (12) 45
+60000 Frozone - Super Slick (12) 46
+60000 Mirage - Super Recruiter (12) 53
+60000 Luisa Madrigal - Pushing Through (12) 62
+60000 Super Relocation Program (12) 63
+[CommonSlotAmber(1)]
+60000 Gosalyn Mallard - The Quiverwing Quack (12) 1
+60000 Monterey Jack - Watchful Ranger (12) 2
+60000 Woody - Waiting for a Friend (12) 3
+60000 Dale - Excited Friend (12) 4
+60000 Agustin Madrigal - Exceptionally Kind (12) 6
+60000 Alan-a-Dale - Loyal Bard (12) 7
+60000 Prince Eric - Noble Swordsman (12) 8
+60000 Dolores Madrigal - Hears Everything (12) 9
+60000 Bullseye - Loyal Horse (12) 17
+60000 Julieta Madrigal - Caring Baker (12) 24
+60000 Chip - Team Player (12) 27
+60000 This Growing Pressure (12) 29
+[UncommonSlot(3)]
+30000 Zipper - Tiny Helper (12) 148
+30000 Pedro Madrigal - Family Patriarch (12) 5
+30000 Hamm - Piggy Bank (12) 11
+30000 Bo Peep - Caring Shepherd (12) 13
+30000 Chip - Retrieval Expert (12) 14
+30000 Isabela Madrigal - Such a Lovely Voice (12) 16
+30000 Woody - Leader of the Toys (12) 21
+30000 Pluto - Vigilant Traveler (12) 25
+30000 Ranger Team-Up (12) 28
+30000 Safety Rope (12) 33
+30000 Alma Madrigal - Leading the Way (12) 36
+30000 Dopey - Drawn to Music (12) 38
+30000 Doc - Taking Notes (12) 40
+30000 Violet Parr - Learning New Powers (12) 48
+30000 Hamish, Hubert & Harris - Making Mischief (12) 50
+30000 Elinor - Bespelled Queen (12) 51
+30000 Mickey Mouse - Experienced Traveler (12) 52
+30000 Right Behind You (12) 64
+30000 Super Suit (12) 66
+30000 Lord MacGuffin - Clever Swordsman (12) 78
+30000 Gaetan Moliere - Clever Burrower (12) 80
+30000 Peter Pan - Searching Far and Wide (12) 81
+30000 Donald Duck - Distracted Traveler (12) 84
+30000 Lyle Tiberius Rourke - Adventurer for Hire (12) 87
+30000 The Huntsman - On the Queen's Orders (12) 94
+30000 Strange Things (12) 95
+30000 Buzz's Arm (12) 98
+30000 Gyro-Evac (12) 100
+30000 Zeus - Defiant God (12) 109
+30000 Roller Bob - Sid's Toy (12) 113
+30000 Hand-in-the-Box - Sid's Toy (12) 114
+30000 Daisy Duck - Trendy Traveler (12) 115
+30000 Copper - Big Dog (12) 116
+30000 Jebidiah Farnsworth - Cookie (12) 117
+30000 Dash Parr - Super Speedy (12) 118
+30000 Firefly Swarm (12) 130
+30000 Amazu's Inkcaster (12) 134
+30000 Merryweather - Feisty Fairy (12) 139
+30000 Norton Nimnul - Misanthropic Genius (12) 146
+30000 Luisa Madrigal - No Pressure (12) 151
+30000 Kashekim - Wise King (12) 158
+30000 Minnie Mouse - Practical Traveler (12) 159
+30000 Salvage Operation (12) 165
+30000 Gadget's Goggles (12) 168
+30000 Shepherd's Journal (12) 169
+30000 Lord Macintosh - Wiry and High-Strung (12) 181
+30000 Omnidroid - V.9 (12) 184
+30000 Mr. Incredible - Taking Out the Trash (12) 185
+30000 Lord Dingwall - Bullheaded (12) 186
+30000 Maudie - Exasperated Nursemaid (12) 188
+30000 Goofy - Determined Traveler (12) 189
+30000 Three Arrows (12) 197
+30000 Card Advantage (12) 198
+30000 Club Door (12) 202
+[RareOrHigherSlot(2)]
+13000 Ariel - Curious Traveler (12) 18
+13000 Maleficent - Imperious Traveler (12) 55
+13000 Cruella De Vil - Judgmental Traveler (12) 92
+13000 Queen of Hearts - Impatient Traveler (12) 122
+13000 Cinderella - Resourceful Traveler (12) 155
+13000 Pocahontas - Steadfast Traveler (12) 171
+13000 Lenny - Toy Binoculars (12) 79
+13000 Rex - Protective Dinosaur (12) 10
+13000 Monterey Jack - Hypnotized by Cheese (12) 12
+2000 Woody - Jungle Guide (12) 15
+13000 Isabela Madrigal - Caring Cultivator (12) 19
+5000 Jessie - Lively Cowgirl (12) 20
+2000 Dale - Ready for His Shot (12) 22
+13000 The Prince - Searching for His Love (12) 23
+5000 Mickey Mouse - Expedition Leader (12) 26
+5000 You've Got a Friend in Me (12) 30
+13000 Metamorphosis (12) 31
+13000 When You Need Help, Just Call (12) 32
+13000 Andy's Room - Home Base (12) 34
+2000 Snow White - Merry as the Morning (12) 37
+13000 Mrs. Incredible - Super Stretchy (12) 49
+13000 Edna Mode - Fashion Designer (12) 54
+5000 Pepa Madrigal - Calm Before the Storm (12) 56
+5000 Mor'du - Savage Cursed Prince (12) 57
+13000 Alma Madrigal - Keeper of the Flame (12) 58
+13000 Frozone - Super Cool (12) 59
+2000 Luisa Madrigal - Confident Climber (12) 60
+5000 Dash Parr - Lava Runner (12) 61
+13000 Don't Be Nervous (12) 65
+13000 DunBroch Family Tapestry (12) 67
+13000 Ring of Stones - Place of Legends (12) 68
+5000 Milo Thatch - Getting His Hands Dirty (12) 82
+13000 Alien - True Believer (12) 83
+13000 Buzz Lightyear - On the Way (12) 85
+5000 Elinor - Renowned Diplomat (12) 86
+13000 Merida - Gifted Archer (12) 89
+2000 The Queen - Devious Disguise (12) 90
+2000 Buzz Lightyear - Jungle Ranger (12) 91
+13000 Helga Sinclair - Prepared for Anything (12) 93
+5000 The Family Scattered (12) 97
+13000 The Claw (12) 99
+13000 Pizza Planet - Spaceport (12) 102
+13000 Lyle Tiberius Rourke - Crystallized Commander (12) 103
+13000 Babyhead - Leader of Sid's Toys (12) 119
+13000 Bouncing Ducky - Sid's Toy (12) 120
+5000 Jack-Jack Parr - Incredible Potential (12) 121
+5000 Hercules - Young Rescuer (12) 123
+13000 Vincenzo Santorini - On the Run (12) 124
+5000 The Leviathan - Guardian of Atlantis (12) 125
+2000 Sid Phillips - Toy Surgeon (12) 126
+2000 Mr. Incredible - Super Strong (12) 127
+13000 Hero Work (12) 132
+13000 Remote Inklands - Desert Ruins (12) 135
+13000 Leviathan's Lair - Dangerous Ground (12) 136
+13000 Flora - Strong-Willed Fairy (12) 141
+5000 Gadget Hackwrench - Resourceful Mechanic (12) 145
+13000 Edna Mode - Super Suit Designer (12) 149
+5000 Zipper - Big Helper (12) 150
+5000 Isabela Madrigal - Perfectly in Control (12) 153
+13000 Bruno Madrigal - Oasis Oracle (12) 154
+13000 Kida - Discovering the Unknown (12) 157
+2000 Kida - Crystal Scion (12) 160
+2000 Ursula - Deal Maker (12) 161
+13000 What Else Can I Do? (12) 163
+13000 Escape Plan (12) 164
+13000 Ranger Plane (12) 167
+5000 Syndrome - Out for Revenge (12) 172
+13000 Fat Cat - Criminal Businessman (12) 187
+13000 Omnidroid - V.10 (12) 190
+2000 Merida - Formidable Archer (12) 191
+13000 John Smith - Skillful Explorer (12) 192
+13000 Gizmoduck - Duckburg Defender (12) 193
+5000 Fergus - Outpost Builder (12) 194
+2000 Mrs. Incredible - Determined Rescuer (12) 195
+5000 Diablo - Stone Servant (12) 196
+13000 Touch the Sky (12) 199
+13000 Syndrome's Remote (12) 201
+13000 The Island of Nomanisan - Syndrome's Headquarters (12) 204
+[FoilSlot(1)]
+13000 Ariel - Curious Traveler (12) 18
+13000 Maleficent - Imperious Traveler (12) 55
+13000 Cruella De Vil - Judgmental Traveler (12) 92
+13000 Queen of Hearts - Impatient Traveler (12) 122
+13000 Cinderella - Resourceful Traveler (12) 155
+13000 Pocahontas - Steadfast Traveler (12) 171
+200 Pocahontas - Steadfast Traveler (12) 220
+13000 Lenny - Toy Binoculars (12) 79
+30000 Zipper - Tiny Helper (12) 148
+60000 Will o' the Wisp - Forest Spirit (12) 47
+60000 Gosalyn Mallard - The Quiverwing Quack (12) 1
+60000 Monterey Jack - Watchful Ranger (12) 2
+60000 Woody - Waiting for a Friend (12) 3
+200 Woody - Waiting for a Friend (12) 205
+60000 Dale - Excited Friend (12) 4
+30000 Pedro Madrigal - Family Patriarch (12) 5
+60000 Agustin Madrigal - Exceptionally Kind (12) 6
+60000 Alan-a-Dale - Loyal Bard (12) 7
+60000 Prince Eric - Noble Swordsman (12) 8
+60000 Dolores Madrigal - Hears Everything (12) 9
+13000 Rex - Protective Dinosaur (12) 10
+200 Rex - Protective Dinosaur (12) 206
+30000 Hamm - Piggy Bank (12) 11
+13000 Monterey Jack - Hypnotized by Cheese (12) 12
+30000 Bo Peep - Caring Shepherd (12) 13
+30000 Chip - Retrieval Expert (12) 14
+2000 Woody - Jungle Guide (12) 15
+30000 Isabela Madrigal - Such a Lovely Voice (12) 16
+200 Isabela Madrigal - Such a Lovely Voice (12) 207
+60000 Bullseye - Loyal Horse (12) 17
+13000 Isabela Madrigal - Caring Cultivator (12) 19
+100 Isabela Madrigal - Caring Cultivator (12) 224
+5000 Jessie - Lively Cowgirl (12) 20
+100 Jessie - Lively Cowgirl (12) 223
+30000 Woody - Leader of the Toys (12) 21
+2000 Dale - Ready for His Shot (12) 22
+13000 The Prince - Searching for His Love (12) 23
+60000 Julieta Madrigal - Caring Baker (12) 24
+30000 Pluto - Vigilant Traveler (12) 25
+5000 Mickey Mouse - Expedition Leader (12) 26
+60000 Chip - Team Player (12) 27
+30000 Ranger Team-Up (12) 28
+60000 This Growing Pressure (12) 29
+5000 You've Got a Friend in Me (12) 30
+100 You've Got a Friend in Me (12) 225
+13000 Metamorphosis (12) 31
+13000 When You Need Help, Just Call (12) 32
+30000 Safety Rope (12) 33
+13000 Andy's Room - Home Base (12) 34
+60000 Mor'du - Wicked with Pride (12) 35
+30000 Alma Madrigal - Leading the Way (12) 36
+2000 Snow White - Merry as the Morning (12) 37
+30000 Dopey - Drawn to Music (12) 38
+60000 Bashful - Riding the Rails (12) 39
+30000 Doc - Taking Notes (12) 40
+200 Doc - Taking Notes (12) 210
+60000 Grumpy - Soreheaded Miner (12) 41
+60000 Sneezy - Startlingly Loud (12) 42
+60000 Happy - Joyful Adventurer (12) 43
+60000 Sleepy - Deep Sleeper (12) 44
+60000 Alma Madrigal - Heart of the Family (12) 45
+60000 Frozone - Super Slick (12) 46
+30000 Violet Parr - Learning New Powers (12) 48
+13000 Mrs. Incredible - Super Stretchy (12) 49
+30000 Hamish, Hubert & Harris - Making Mischief (12) 50
+30000 Elinor - Bespelled Queen (12) 51
+30000 Mickey Mouse - Experienced Traveler (12) 52
+60000 Mirage - Super Recruiter (12) 53
+200 Mirage - Super Recruiter (12) 208
+13000 Edna Mode - Fashion Designer (12) 54
+200 Edna Mode - Fashion Designer (12) 209
+5000 Pepa Madrigal - Calm Before the Storm (12) 56
+5000 Mor'du - Savage Cursed Prince (12) 57
+13000 Alma Madrigal - Keeper of the Flame (12) 58
+13000 Frozone - Super Cool (12) 59
+100 Frozone - Super Cool (12) 226
+2000 Luisa Madrigal - Confident Climber (12) 60
+100 Luisa Madrigal - Confident Climber (12) 227
+5000 Dash Parr - Lava Runner (12) 61
+60000 Luisa Madrigal - Pushing Through (12) 62
+60000 Super Relocation Program (12) 63
+30000 Right Behind You (12) 64
+13000 Don't Be Nervous (12) 65
+30000 Super Suit (12) 66
+13000 DunBroch Family Tapestry (12) 67
+100 DunBroch Family Tapestry (12) 228
+13000 Ring of Stones - Place of Legends (12) 68
+60000 Merida - Defiant Daughter (12) 69
+60000 Hamish, Hubert & Harris - Troublemaking Triplets (12) 70
+60000 Young MacGuffin - Soft-Spoken Son (12) 71
+60000 Tod - Nimble Fox (12) 72
+60000 Helga Sinclair - No Backup Needed (12) 73
+60000 The Witch - Wily Woodcarver (12) 74
+60000 The Queen - Evil Ruler (12) 75
+60000 Buzz Lightyear - Space Ranger (12) 76
+200 Buzz Lightyear - Space Ranger (12) 211
+60000 RC - Remote-Controlled Car (12) 77
+30000 Lord MacGuffin - Clever Swordsman (12) 78
+30000 Gaetan Moliere - Clever Burrower (12) 80
+30000 Peter Pan - Searching Far and Wide (12) 81
+5000 Milo Thatch - Getting His Hands Dirty (12) 82
+100 Milo Thatch - Getting His Hands Dirty (12) 230
+13000 Alien - True Believer (12) 83
+100 Alien - True Believer (12) 229
+30000 Donald Duck - Distracted Traveler (12) 84
+200 Donald Duck - Distracted Traveler (12) 212
+13000 Buzz Lightyear - On the Way (12) 85
+5000 Elinor - Renowned Diplomat (12) 86
+30000 Lyle Tiberius Rourke - Adventurer for Hire (12) 87
+60000 Joshua Sweet - Field Surgeon (12) 88
+13000 Merida - Gifted Archer (12) 89
+200 Merida - Gifted Archer (12) 213
+2000 The Queen - Devious Disguise (12) 90
+2000 Buzz Lightyear - Jungle Ranger (12) 91
+5 Buzz Lightyear - Jungle Ranger (12) 241
+13000 Helga Sinclair - Prepared for Anything (12) 93
+30000 The Huntsman - On the Queen's Orders (12) 94
+30000 Strange Things (12) 95
+60000 Sabotage (12) 96
+5000 The Family Scattered (12) 97
+100 The Family Scattered (12) 231
+30000 Buzz's Arm (12) 98
+13000 The Claw (12) 99
+30000 Gyro-Evac (12) 100
+60000 Merida's Bow (12) 101
+13000 Pizza Planet - Spaceport (12) 102
+13000 Lyle Tiberius Rourke - Crystallized Commander (12) 103
+200 Lyle Tiberius Rourke - Crystallized Commander (12) 214
+60000 Mr. Incredible - Bob Parr (12) 104
+200 Mr. Incredible - Bob Parr (12) 215
+60000 Lyle Tiberius Rourke - Looking for His Moment (12) 105
+60000 Pegasus - Searching High and Low (12) 106
+60000 Audrey Ramirez - Gutsy Mechanic (12) 107
+60000 Milo Thatch - Courageous Explorer (12) 108
+30000 Zeus - Defiant God (12) 109
+60000 Preston Whitmore - Expedition Financier (12) 110
+60000 Jingle Joe - Sid's Toy (12) 111
+60000 Wind-Up Frog - Sid's Toy (12) 112
+30000 Roller Bob - Sid's Toy (12) 113
+30000 Hand-in-the-Box - Sid's Toy (12) 114
+30000 Daisy Duck - Trendy Traveler (12) 115
+200 Daisy Duck - Trendy Traveler (12) 216
+30000 Copper - Big Dog (12) 116
+30000 Jebidiah Farnsworth - Cookie (12) 117
+30000 Dash Parr - Super Speedy (12) 118
+13000 Babyhead - Leader of Sid's Toys (12) 119
+13000 Bouncing Ducky - Sid's Toy (12) 120
+5000 Jack-Jack Parr - Incredible Potential (12) 121
+100 Jack-Jack Parr - Incredible Potential (12) 232
+5000 Hercules - Young Rescuer (12) 123
+13000 Vincenzo Santorini - On the Run (12) 124
+5000 The Leviathan - Guardian of Atlantis (12) 125
+100 The Leviathan - Guardian of Atlantis (12) 233
+2000 Sid Phillips - Toy Surgeon (12) 126
+2000 Mr. Incredible - Super Strong (12) 127
+100 Mr. Incredible - Super Strong (12) 234
+60000 Pterodactyl Janie Doll - Sid's Toy (12) 128
+60000 Inner Strength (12) 129
+30000 Firefly Swarm (12) 130
+60000 Like A Bird In the Sky (12) 131
+13000 Hero Work (12) 132
+60000 Dangerous Plan (12) 133
+30000 Amazu's Inkcaster (12) 134
+13000 Remote Inklands - Desert Ruins (12) 135
+13000 Leviathan's Lair - Dangerous Ground (12) 136
+60000 Robin Hood - Desert Wanderer (12) 137
+60000 Prince Charming - Searching for Answers (12) 138
+30000 Merryweather - Feisty Fairy (12) 139
+60000 Fauna - Good-Natured Fairy (12) 140
+13000 Flora - Strong-Willed Fairy (12) 141
+60000 Mirabel Madrigal - Resourceful Daughter (12) 142
+60000 Syndrome - Evil Inventor (12) 143
+60000 Kida - Guardian of the Path (12) 144
+200 Kida - Guardian of the Path (12) 217
+5000 Gadget Hackwrench - Resourceful Mechanic (12) 145
+30000 Norton Nimnul - Misanthropic Genius (12) 146
+60000 Gadget Hackwrench - Finder of Lost Parts (12) 147
+13000 Edna Mode - Super Suit Designer (12) 149
+5000 Zipper - Big Helper (12) 150
+100 Zipper - Big Helper (12) 235
+30000 Luisa Madrigal - No Pressure (12) 151
+60000 Dr. Sara Bellum - Head of Research (12) 152
+5000 Isabela Madrigal - Perfectly in Control (12) 153
+13000 Bruno Madrigal - Oasis Oracle (12) 154
+200 Bruno Madrigal - Oasis Oracle (12) 218
+60000 Bruno Madrigal - Seeing the Future (12) 156
+13000 Kida - Discovering the Unknown (12) 157
+30000 Kashekim - Wise King (12) 158
+30000 Minnie Mouse - Practical Traveler (12) 159
+200 Minnie Mouse - Practical Traveler (12) 219
+2000 Kida - Crystal Scion (12) 160
+100 Kida - Crystal Scion (12) 236
+2000 Ursula - Deal Maker (12) 161
+60000 Someone Will Lose His Head (12) 162
+13000 What Else Can I Do? (12) 163
+100 What Else Can I Do? (12) 237
+13000 Escape Plan (12) 164
+30000 Salvage Operation (12) 165
+60000 Julieta's Arepas (12) 166
+13000 Ranger Plane (12) 167
+30000 Gadget's Goggles (12) 168
+30000 Shepherd's Journal (12) 169
+60000 Casa Madrigal - Courtyard (12) 170
+5000 Syndrome - Out for Revenge (12) 172
+100 Syndrome - Out for Revenge (12) 238
+60000 Omnidroid - V.8 (12) 173
+60000 Angus - Mighty Horse (12) 174
+60000 Fergus - King of DunBroch (12) 175
+60000 Wee Dingwall - Scrappy Lad (12) 176
+60000 Incrediboy - Buddy Pine (12) 177
+200 Incrediboy - Buddy Pine (12) 221
+60000 Violet Parr - At Wits' End (12) 178
+60000 Mrs. Incredible - Helen Parr (12) 179
+60000 Young Macintosh - Proud Son (12) 180
+30000 Lord Macintosh - Wiry and High-Strung (12) 181
+60000 Fat Cat - Felonious Feline (12) 182
+60000 Rat Capone - Rodent Gangster (12) 183
+30000 Omnidroid - V.9 (12) 184
+30000 Mr. Incredible - Taking Out the Trash (12) 185
+30000 Lord Dingwall - Bullheaded (12) 186
+13000 Fat Cat - Criminal Businessman (12) 187
+30000 Maudie - Exasperated Nursemaid (12) 188
+30000 Goofy - Determined Traveler (12) 189
+13000 Omnidroid - V.10 (12) 190
+2000 Merida - Formidable Archer (12) 191
+5 Merida - Formidable Archer (12) 242
+13000 John Smith - Skillful Explorer (12) 192
+13000 Gizmoduck - Duckburg Defender (12) 193
+5000 Fergus - Outpost Builder (12) 194
+2000 Mrs. Incredible - Determined Rescuer (12) 195
+100 Mrs. Incredible - Determined Rescuer (12) 239
+5000 Diablo - Stone Servant (12) 196
+30000 Three Arrows (12) 197
+200 Three Arrows (12) 222
+30000 Card Advantage (12) 198
+13000 Touch the Sky (12) 199
+100 Touch the Sky (12) 240
+60000 Plunger Crossbow (12) 200
+13000 Syndrome's Remote (12) 201
+30000 Club Door (12) 202
+60000 Fat Cat's Club - Seedy Headquarters (12) 203
+13000 The Island of Nomanisan - Syndrome's Headquarters (12) 204

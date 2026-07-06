@@ -75,6 +75,8 @@ def generate_retail_draftmancer_file(card_evaluations_file, set_code:str, settin
                 continue
             rarity = card_printing.rarity
             color = api_card.color
+            if color is None or color == "None":
+                raise ValueError(f"Failed to find color for card '{api_card.full_name}'")
             printing_id: PrintingId = card_printing.printing_id()
             frequency = rarity_to_frequency[rarity]
             printing_ids_to_count[printing_id] = frequency

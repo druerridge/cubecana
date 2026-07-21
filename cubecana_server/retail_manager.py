@@ -22,18 +22,20 @@ def get_available_game_modes(retail_set_name) -> str:
 
 @dataclass(frozen=True)
 class RetailSet:
-  id: str
-  name: str
-  draftmancer_file_contents: str
-  # release_date: # some day - maybe use the APIs?
-  
-  def to_retail_set_entry(self) -> api.RetailSetEntry:
-    return api.RetailSetEntry(
-      name=self.name,
-      id=self.id, 
-      defaultGameMode=get_default_game_mode(self.name),
-      availableGameModes=get_available_game_modes(self.name)
-    )
+        id: str
+        name: str
+        draftmancer_file_contents: str
+        ratings_missing: bool = False
+        # release_date: # some day - maybe use the APIs?
+
+        def to_retail_set_entry(self) -> api.RetailSetEntry:
+                return api.RetailSetEntry(
+                        name=self.name,
+                        id=self.id,
+                        defaultGameMode=get_default_game_mode(self.name),
+                        availableGameModes=get_available_game_modes(self.name),
+                        ratingsMissing=self.ratings_missing,
+                )
 
 class RetailManager:
     def __init__(self):
@@ -45,7 +47,8 @@ class RetailManager:
     def generate_retail_set(self, file: Path) -> RetailSet:
         draftmancer_file:draftmancer.DraftmancerFile = draftmancer.read_draftmancer_file(file)
         set_id = file.stem.rstrip('.draftmancer')
-        return RetailSet(set_id, draftmancer_file.draftmancer_settings.name, draftmancer_file.text_contents)
+        ratings_missing = bool(getattr(draftmancer_file.draftmancer_settings, 'ratingsMissing', False))
+        return RetailSet(set_id, draftmancer_file.draftmancer_settings.name, draftmancer_file.text_contents, ratings_missing)
 
     def load_retail_sets(self, retail_sets_filepath: str):
         retail_sets_path = Path(retail_sets_filepath)

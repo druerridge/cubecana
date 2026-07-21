@@ -17,6 +17,11 @@ function populateRetailSets(retailSets) {
 
             const nameElement = clone.getElementById("cube-element-name");
             nameElement.textContent = retailSet.name;
+
+            const ratingsMissingTag = clone.getElementById("cube-element-ratings-missing-tag");
+            if (retailSet.ratingsMissing) {
+                ratingsMissingTag.style.display = 'inline-block';
+            }
             
             // Add analysis button functionality
             const analysisButton = clone.getElementById("cube-element-analysis");

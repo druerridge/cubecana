@@ -2956,7 +2956,7 @@
 {
     "boostersPerPlayer": 4,
     "name": "Whispers in the Well",
-    "cardBack": "https://wiki.mushureport.com/images/thumb/d/d7/Card_Back_official.png/450px-Card_Back_official.png",
+    "cardBack": "https://www.cubecana.com/static/img/450px-Card_Back_official.png",
     "withReplacement": true
 }
 [CommonSlotSteel(1)]

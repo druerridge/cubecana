@@ -59,6 +59,7 @@ class RetailSetEntry:
   id: str
   defaultGameMode: str
   availableGameModes: List[str]
+  ratingsMissing: bool = False
   
   def toJSON(self):
     return json.dumps(

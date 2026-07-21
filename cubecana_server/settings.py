@@ -26,7 +26,7 @@ class Settings:
         draftmancer_settings = {
             'boostersPerPlayer': self.boosters_per_player,
             'name': name,
-            'cardBack': 'https://wiki.mushureport.com/images/thumb/d/d7/Card_Back_official.png/450px-Card_Back_official.png',
+            'cardBack': 'https://www.cubecana.com/static/img/450px-Card_Back_official.png',
             'withReplacement': self.with_replacement
         }
 

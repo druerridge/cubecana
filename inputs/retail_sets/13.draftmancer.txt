@@ -2746,8 +2746,9 @@
 {
     "boostersPerPlayer": 4,
     "name": "Attack of the Vine!",
-    "cardBack": "https://wiki.mushureport.com/images/thumb/d/d7/Card_Back_official.png/450px-Card_Back_official.png",
-    "withReplacement": true
+    "cardBack": "https://www.cubecana.com/static/img/450px-Card_Back_official.png",
+    "withReplacement": true,
+    "ratingsMissing": true
 }
 [CommonSlotSteel(1)]
 60000 Stitch - Protector of Frogs (13) 180

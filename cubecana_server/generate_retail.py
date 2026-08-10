@@ -7,7 +7,21 @@ from .card_evaluations import card_evaluations_manager
 from .card import ApiCard, PrintingId, CardPrinting
 from .lorcana import ALT_ART_RARITIES
 
-rarity_to_frequency = {
+
+# source: https://www.reddit.com/r/Lorcana/comments/1tmo95b/wilds_unknown_pull_rate_analysis/#lightbox
+default_rarity_to_frequency = {
+    "Common": 60_000,
+    "Uncommon": 30_000,
+    "Rare": 12_341, # guess: whatever is left after higher rarities are accounted for
+    "Super Rare": 5_000, # guess: keep it same as pre-12
+    "Legendary": 2_659, # 26.59%
+    "Epic": 956, # 9.56%
+    "Enchanted": 175, # 1.75%
+    "Iconic": 19 # 0.19%
+}
+
+# old, similar source
+rarity_to_frequency_pre_12 = {
     "Common": 60000,
     "Uncommon": 30000,
     "Rare": 13000,
@@ -17,6 +31,26 @@ rarity_to_frequency = {
     "Enchanted": 100,
     "Iconic": 5 # revisit w/ more data. ~= 1/2k packs
 }
+
+set_to_rarity_to_frequency_mapping = {
+    "1": rarity_to_frequency_pre_12,
+    "2": rarity_to_frequency_pre_12,
+    "3": rarity_to_frequency_pre_12,
+    "4": rarity_to_frequency_pre_12,
+    "5": rarity_to_frequency_pre_12,
+    "6": rarity_to_frequency_pre_12,
+    "7": rarity_to_frequency_pre_12,
+    "8": rarity_to_frequency_pre_12,
+    "9": rarity_to_frequency_pre_12,
+    "10": rarity_to_frequency_pre_12,
+    "11": rarity_to_frequency_pre_12,
+}
+
+def get_rarity_to_frequency(set_code: str):
+    if set_code in set_to_rarity_to_frequency_mapping:
+        return set_to_rarity_to_frequency_mapping[set_code]
+    else:
+        return default_rarity_to_frequency
 
 def calculate_slots_to_append(rarity, color):
     slots_to_append = []
@@ -78,6 +112,8 @@ def generate_retail_draftmancer_file(card_evaluations_file, set_code:str, settin
             if color is None or color == "None":
                 raise ValueError(f"Failed to find color for card '{api_card.full_name}'")
             printing_id: PrintingId = card_printing.printing_id()
+
+            rarity_to_frequency = get_rarity_to_frequency(set_code)
             frequency = rarity_to_frequency[rarity]
             printing_ids_to_count[printing_id] = frequency
             slots_to_append = calculate_slots_to_append(rarity, color)

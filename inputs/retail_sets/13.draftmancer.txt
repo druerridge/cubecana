@@ -2884,90 +2884,90 @@
 30000 The Weedwhacker (13) 205
 30000 Absorbing Bloom (13) 206
 [RareOrHigherSlot(2)]
-13000 Woody - Helping a Friend (13) 1
-13000 Ming Lee - Proud Parent (13) 2
-13000 Pocahontas - Guiding the Tribe (13) 12
-13000 Meilin Lee - Losing Control (13) 16
-13000 4*Town - Hottest Band of the Year (13) 17
+12341 Woody - Helping a Friend (13) 1
+12341 Ming Lee - Proud Parent (13) 2
+12341 Pocahontas - Guiding the Tribe (13) 12
+12341 Meilin Lee - Losing Control (13) 16
+12341 4*Town - Hottest Band of the Year (13) 17
 5000 Mike Wazowski - Heroic Climber (13) 18
-2000 The Horned King - Merciless Master (13) 22
+2659 The Horned King - Merciless Master (13) 22
 5000 Sulley - The New Boss (13) 24
-13000 Mirabel Madrigal - Family Guardian (13) 25
-13000 Ursula - Created by the Vine (13) 26
-2000 Pocahontas & Meeko - Adventurous Friends (13) 27
-2000 Woody & Buzz Lightyear - Best Buddies (13) 28
+12341 Mirabel Madrigal - Family Guardian (13) 25
+12341 Ursula - Created by the Vine (13) 26
+2659 Pocahontas & Meeko - Adventurous Friends (13) 27
+2659 Woody & Buzz Lightyear - Best Buddies (13) 28
 5000 Sulley & Boo - Scare Buddies (13) 29
-13000 The Madrigal Family - Every Generation (13) 30
+12341 The Madrigal Family - Every Generation (13) 30
 5000 Lilo & Stitch - Fun-Loving Friends (13) 31
-13000 Nobody Like U (13) 35
-13000 Vixey - Expert Fisher (13) 46
-13000 Ming Lee - Overprotective Parent (13) 49
-2000 Merida - Wisp Conjurer (13) 50
-13000 Mrs. Incredible - Created by the Vine (13) 51
-13000 Grandma Wu - Wise Grandmother (13) 53
-13000 Heihei - Created by the Vine (13) 54
+12341 Nobody Like U (13) 35
+12341 Vixey - Expert Fisher (13) 46
+12341 Ming Lee - Overprotective Parent (13) 49
+2659 Merida - Wisp Conjurer (13) 50
+12341 Mrs. Incredible - Created by the Vine (13) 51
+12341 Grandma Wu - Wise Grandmother (13) 53
+12341 Heihei - Created by the Vine (13) 54
 5000 Aladdin & Genie - Mischievous Pals (13) 59
 5000 Peter Pan & Tinker Bell - Fast Friends (13) 60
-2000 Christopher Robin - Hunny Sage (13) 61
+2659 Christopher Robin - Hunny Sage (13) 61
 5000 Winnie the Pooh & Piglet - Hunny Mages (13) 62
-13000 Maleficent & Diablo - Evil Incarnate (13) 63
-13000 With a Few Good Friends (13) 65
-13000 Magical Hunny Staff (13) 71
+12341 Maleficent & Diablo - Evil Incarnate (13) 63
+12341 With a Few Good Friends (13) 65
+12341 Magical Hunny Staff (13) 71
 5000 Source of the Vine (13) 72
-13000 Ring of Stones - Taken by the Vine (13) 73
-13000 Buzz Lightyear - Providing Cover (13) 77
-13000 Gopher - Hunny Cook (13) 78
+12341 Ring of Stones - Taken by the Vine (13) 73
+12341 Buzz Lightyear - Providing Cover (13) 77
+12341 Gopher - Hunny Cook (13) 78
 5000 Russell - Senior Wilderness Explorer (13) 79
-13000 Peter Pan - Created by the Vine (13) 89
-13000 Dr. Bushroot - Evil Botanist (13) 92
-13000 Tod & Copper - Best of Friends (13) 94
+12341 Peter Pan - Created by the Vine (13) 89
+12341 Dr. Bushroot - Evil Botanist (13) 92
+12341 Tod & Copper - Best of Friends (13) 94
 5000 Rapunzel - Escaping the Tower (13) 95
-2000 Mushu - Stealthy Dragon (13) 97
-13000 Carl Fredricksen & Russell - Intrepid Explorers (13) 98
-2000 Mickey Mouse & Minnie Mouse - Adventuring Duo (13) 99
-2000 Rapunzel & Flynn Rider - Unlikely Pair (13) 100
-13000 To Wither a Flower (13) 101
-13000 Vine Pod (13) 107
-13000 Paradise Falls - Exotic Destination (13) 108
-13000 Dash Parr - Super Fast (13) 109
+2659 Mushu - Stealthy Dragon (13) 97
+12341 Carl Fredricksen & Russell - Intrepid Explorers (13) 98
+2659 Mickey Mouse & Minnie Mouse - Adventuring Duo (13) 99
+2659 Rapunzel & Flynn Rider - Unlikely Pair (13) 100
+12341 To Wither a Flower (13) 101
+12341 Vine Pod (13) 107
+12341 Paradise Falls - Exotic Destination (13) 108
+12341 Dash Parr - Super Fast (13) 109
 5000 Carl Fredricksen - On the Move (13) 113
-13000 Grandma Wu - Fierce Red Panda (13) 120
-13000 Randall Boggs - Envious Coworker (13) 123
-2000 Meilin Lee - Popular Red Panda (13) 125
-13000 Tigger - Hunny Barbarian (13) 126
-13000 Boo - Energetic Child (13) 127
+12341 Grandma Wu - Fierce Red Panda (13) 120
+12341 Randall Boggs - Envious Coworker (13) 123
+2659 Meilin Lee - Popular Red Panda (13) 125
+12341 Tigger - Hunny Barbarian (13) 126
+12341 Boo - Energetic Child (13) 127
 5000 Ming Lee - Giant Red Panda (13) 129
 5000 Belle & Beast - Certain as the Sun (13) 132
-2000 Dash Parr & Violet Parr - Super Siblings (13) 133
-13000 Bunch of Balloons (13) 140
-13000 Beast's Castle - Overrun by the Vine (13) 141
-13000 Carl's House - Flying High (13) 142
-13000 Merlin - Envisioning the Future (13) 146
-2000 Quackerjack - Loony Toymaker (13) 147
-13000 Alpha - Pack Leader (13) 151
-13000 Randall Boggs - Scary Smart (13) 153
-13000 Maid Marian - Created by the Vine (13) 158
-13000 Boo - Human Child (13) 160
+2659 Dash Parr & Violet Parr - Super Siblings (13) 133
+12341 Bunch of Balloons (13) 140
+12341 Beast's Castle - Overrun by the Vine (13) 141
+12341 Carl's House - Flying High (13) 142
+12341 Merlin - Envisioning the Future (13) 146
+2659 Quackerjack - Loony Toymaker (13) 147
+12341 Alpha - Pack Leader (13) 151
+12341 Randall Boggs - Scary Smart (13) 153
+12341 Maid Marian - Created by the Vine (13) 158
+12341 Boo - Human Child (13) 160
 5000 Charles Muntz - Obsessive Explorer (13) 162
-13000 Henry J. Waternoose III - Chief Executive Officer (13) 163
+12341 Henry J. Waternoose III - Chief Executive Officer (13) 163
 5000 Darkwing Duck & Launchpad - St. Canard's Finest (13) 165
 5000 Closet Door Portal (13) 170
-13000 Laugh Canister (13) 172
-13000 Translation Collar (13) 173
+12341 Laugh Canister (13) 172
+12341 Translation Collar (13) 173
 5000 Violet Parr - Super Resilient (13) 176
-13000 Aladdin - Created by the Vine (13) 177
-13000 Sprout - Experiment 509 (13) 179
-13000 Kronk - Meat Hut Cook (13) 191
-2000 Scar - Created by the Vine (13) 194
-13000 Maximus - Relentless Stallion (13) 195
-13000 Omnidroid - Ultimate Iteration (13) 196
+12341 Aladdin - Created by the Vine (13) 177
+12341 Sprout - Experiment 509 (13) 179
+12341 Kronk - Meat Hut Cook (13) 191
+2659 Scar - Created by the Vine (13) 194
+12341 Maximus - Relentless Stallion (13) 195
+12341 Omnidroid - Ultimate Iteration (13) 196
 5000 The Vine - Towering Stalk (13) 197
-13000 Attack of the Vine! (13) 202
-13000 Windstorm (13) 203
-13000 Vine Entrance - Ominous Passageway (13) 207
+12341 Attack of the Vine! (13) 202
+12341 Windstorm (13) 203
+12341 Vine Entrance - Ominous Passageway (13) 207
 [FoilSlot(1)]
-13000 Woody - Helping a Friend (13) 1
-13000 Ming Lee - Proud Parent (13) 2
+12341 Woody - Helping a Friend (13) 1
+12341 Ming Lee - Proud Parent (13) 2
 60000 Isabela Madrigal - Kind Cultivator (13) 3
 60000 Tyler Nguyen-Baker - 4*Town Fan (13) 4
 30000 Rabbit - Hunny Paladin (13) 5
@@ -2977,90 +2977,90 @@
 60000 Miriam Mendelsohn - Ticket Holder (13) 9
 60000 Lilo - Patient Weaver (13) 10
 60000 Kocoum - Defender of the Tribe (13) 11
-13000 Pocahontas - Guiding the Tribe (13) 12
+12341 Pocahontas - Guiding the Tribe (13) 12
 60000 Woody - Town Sheriff (13) 13
 30000 Abby Park - Over the Top (13) 14
 30000 Gaston - Superior Archer (13) 15
-13000 Meilin Lee - Losing Control (13) 16
-200 Meilin Lee - Losing Control (13) 210
-13000 4*Town - Hottest Band of the Year (13) 17
+12341 Meilin Lee - Losing Control (13) 16
+956 Meilin Lee - Losing Control (13) 210
+12341 4*Town - Hottest Band of the Year (13) 17
 5000 Mike Wazowski - Heroic Climber (13) 18
-100 Mike Wazowski - Heroic Climber (13) 226
+175 Mike Wazowski - Heroic Climber (13) 226
 30000 Boo - In Disguise (13) 19
-200 Boo - In Disguise (13) 209
+956 Boo - In Disguise (13) 209
 60000 Jasmine - Vine Expert (13) 20
-200 Jasmine - Vine Expert (13) 208
+956 Jasmine - Vine Expert (13) 208
 60000 Mike Wazowski - Well-Rounded Entertainer (13) 21
-2000 The Horned King - Merciless Master (13) 22
+2659 The Horned King - Merciless Master (13) 22
 60000 Kanga - Hunny Bard (13) 23
 5000 Sulley - The New Boss (13) 24
-13000 Mirabel Madrigal - Family Guardian (13) 25
-13000 Ursula - Created by the Vine (13) 26
-2000 Pocahontas & Meeko - Adventurous Friends (13) 27
-100 Pocahontas & Meeko - Adventurous Friends (13) 227
-2000 Woody & Buzz Lightyear - Best Buddies (13) 28
-100 Woody & Buzz Lightyear - Best Buddies (13) 228
+12341 Mirabel Madrigal - Family Guardian (13) 25
+12341 Ursula - Created by the Vine (13) 26
+2659 Pocahontas & Meeko - Adventurous Friends (13) 27
+175 Pocahontas & Meeko - Adventurous Friends (13) 227
+2659 Woody & Buzz Lightyear - Best Buddies (13) 28
+175 Woody & Buzz Lightyear - Best Buddies (13) 228
 5000 Sulley & Boo - Scare Buddies (13) 29
-100 Sulley & Boo - Scare Buddies (13) 229
-13000 The Madrigal Family - Every Generation (13) 30
-100 The Madrigal Family - Every Generation (13) 230
+175 Sulley & Boo - Scare Buddies (13) 229
+12341 The Madrigal Family - Every Generation (13) 30
+175 The Madrigal Family - Every Generation (13) 230
 5000 Lilo & Stitch - Fun-Loving Friends (13) 31
-5 Lilo & Stitch - Fun-Loving Friends (13) 244
+19 Lilo & Stitch - Fun-Loving Friends (13) 244
 60000 If I Didn't Have You (13) 32
 30000 I'm Never Not by Your Side (13) 33
 60000 Besties, Assemble! (13) 34
-13000 Nobody Like U (13) 35
+12341 Nobody Like U (13) 35
 30000 Powhatan's Staff (13) 36
 30000 Rapunzel's Tower - Taken by the Vine (13) 37
 60000 Fflewddur Fflam - Luckless Bard (13) 38
 60000 Maleficent - Exultant Spellcaster (13) 39
 60000 Winnie the Pooh - Hunny Archmage (13) 40
-200 Winnie the Pooh - Hunny Archmage (13) 212
+956 Winnie the Pooh - Hunny Archmage (13) 212
 60000 Panic - Hammer Enthusiast (13) 41
 30000 Lumpy - Hunny Druid (13) 42
 30000 Abu - Wise Sultan (13) 43
 60000 Meilin Lee - Superficially Obedient (13) 44
 30000 Genie - Hard to Grasp (13) 45
-13000 Vixey - Expert Fisher (13) 46
+12341 Vixey - Expert Fisher (13) 46
 60000 Meeko - Lucky Raccoon (13) 47
 60000 Pain - Running with Scissors (13) 48
-13000 Ming Lee - Overprotective Parent (13) 49
-2000 Merida - Wisp Conjurer (13) 50
-100 Merida - Wisp Conjurer (13) 231
-13000 Mrs. Incredible - Created by the Vine (13) 51
-200 Mrs. Incredible - Created by the Vine (13) 213
+12341 Ming Lee - Overprotective Parent (13) 49
+2659 Merida - Wisp Conjurer (13) 50
+175 Merida - Wisp Conjurer (13) 231
+12341 Mrs. Incredible - Created by the Vine (13) 51
+956 Mrs. Incredible - Created by the Vine (13) 213
 60000 Pete - Created by the Vine (13) 52
-13000 Grandma Wu - Wise Grandmother (13) 53
-13000 Heihei - Created by the Vine (13) 54
-200 Heihei - Created by the Vine (13) 211
+12341 Grandma Wu - Wise Grandmother (13) 53
+12341 Heihei - Created by the Vine (13) 54
+956 Heihei - Created by the Vine (13) 211
 30000 Hera - Created by the Vine (13) 55
 30000 Tinker Bell - Finding a Way (13) 56
 30000 Morph - Little Imitator (13) 57
 60000 Peter Pan - Playful Prankster (13) 58
 5000 Aladdin & Genie - Mischievous Pals (13) 59
-100 Aladdin & Genie - Mischievous Pals (13) 232
+175 Aladdin & Genie - Mischievous Pals (13) 232
 5000 Peter Pan & Tinker Bell - Fast Friends (13) 60
-100 Peter Pan & Tinker Bell - Fast Friends (13) 233
-2000 Christopher Robin - Hunny Sage (13) 61
+175 Peter Pan & Tinker Bell - Fast Friends (13) 233
+2659 Christopher Robin - Hunny Sage (13) 61
 5000 Winnie the Pooh & Piglet - Hunny Mages (13) 62
-100 Winnie the Pooh & Piglet - Hunny Mages (13) 234
-13000 Maleficent & Diablo - Evil Incarnate (13) 63
-100 Maleficent & Diablo - Evil Incarnate (13) 235
+175 Winnie the Pooh & Piglet - Hunny Mages (13) 234
+12341 Maleficent & Diablo - Evil Incarnate (13) 63
+175 Maleficent & Diablo - Evil Incarnate (13) 235
 60000 You've Got Some Punch (13) 64
-13000 With a Few Good Friends (13) 65
+12341 With a Few Good Friends (13) 65
 60000 Petrify (13) 66
 30000 One and Only (13) 67
 30000 Protective Aura (13) 68
 60000 Narrow Escape (13) 69
 30000 Broken Pod (13) 70
-13000 Magical Hunny Staff (13) 71
+12341 Magical Hunny Staff (13) 71
 5000 Source of the Vine (13) 72
-13000 Ring of Stones - Taken by the Vine (13) 73
+12341 Ring of Stones - Taken by the Vine (13) 73
 30000 Carl Fredricksen - Loving Husband (13) 74
 60000 Ellie Fredricksen - Loving Wife (13) 75
 60000 Buzz Lightyear - Grounded (13) 76
-13000 Buzz Lightyear - Providing Cover (13) 77
-13000 Gopher - Hunny Cook (13) 78
+12341 Buzz Lightyear - Providing Cover (13) 77
+12341 Gopher - Hunny Cook (13) 78
 5000 Russell - Senior Wilderness Explorer (13) 79
 60000 Rapunzel - Tower Defender (13) 80
 30000 Tod - Clever Fox (13) 81
@@ -3071,114 +3071,114 @@
 30000 Madam Mim - Hummingbird (13) 86
 60000 Minnie Mouse - Curious Adventurer (13) 87
 30000 Kevin - Flightless Bird (13) 88
-200 Kevin - Flightless Bird (13) 215
-13000 Peter Pan - Created by the Vine (13) 89
-200 Peter Pan - Created by the Vine (13) 216
+956 Kevin - Flightless Bird (13) 215
+12341 Peter Pan - Created by the Vine (13) 89
+956 Peter Pan - Created by the Vine (13) 216
 30000 Copper - Creative Storyteller (13) 90
 30000 Posey - Vampire Potato (13) 91
-13000 Dr. Bushroot - Evil Botanist (13) 92
+12341 Dr. Bushroot - Evil Botanist (13) 92
 60000 Mother Gothel - Evil as Ever (13) 93
-200 Mother Gothel - Evil as Ever (13) 214
-13000 Tod & Copper - Best of Friends (13) 94
-100 Tod & Copper - Best of Friends (13) 236
+956 Mother Gothel - Evil as Ever (13) 214
+12341 Tod & Copper - Best of Friends (13) 94
+175 Tod & Copper - Best of Friends (13) 236
 5000 Rapunzel - Escaping the Tower (13) 95
 60000 Cetus - Mighty Serpent (13) 96
-2000 Mushu - Stealthy Dragon (13) 97
-13000 Carl Fredricksen & Russell - Intrepid Explorers (13) 98
-100 Carl Fredricksen & Russell - Intrepid Explorers (13) 237
-2000 Mickey Mouse & Minnie Mouse - Adventuring Duo (13) 99
-100 Mickey Mouse & Minnie Mouse - Adventuring Duo (13) 238
-2000 Rapunzel & Flynn Rider - Unlikely Pair (13) 100
-100 Rapunzel & Flynn Rider - Unlikely Pair (13) 239
-13000 To Wither a Flower (13) 101
+2659 Mushu - Stealthy Dragon (13) 97
+12341 Carl Fredricksen & Russell - Intrepid Explorers (13) 98
+175 Carl Fredricksen & Russell - Intrepid Explorers (13) 237
+2659 Mickey Mouse & Minnie Mouse - Adventuring Duo (13) 99
+175 Mickey Mouse & Minnie Mouse - Adventuring Duo (13) 238
+2659 Rapunzel & Flynn Rider - Unlikely Pair (13) 100
+175 Rapunzel & Flynn Rider - Unlikely Pair (13) 239
+12341 To Wither a Flower (13) 101
 60000 Piercing Attack (13) 102
 30000 Put That Thing Back (13) 103
 60000 Scout Ahead (13) 104
 60000 Potato (13) 105
 30000 My Adventure Book (13) 106
-13000 Vine Pod (13) 107
-13000 Paradise Falls - Exotic Destination (13) 108
-13000 Dash Parr - Super Fast (13) 109
+12341 Vine Pod (13) 107
+12341 Paradise Falls - Exotic Destination (13) 108
+12341 Dash Parr - Super Fast (13) 109
 60000 Yzma - Choosy Customer (13) 110
 30000 Kuzco - Picky Customer (13) 111
 60000 The Bear - Territorial Animal (13) 112
 5000 Carl Fredricksen - On the Move (13) 113
 60000 Dash Parr - Dodgeball Dynamo (13) 114
-200 Dash Parr - Dodgeball Dynamo (13) 219
+956 Dash Parr - Dodgeball Dynamo (13) 219
 60000 Gaston - Created by the Vine (13) 115
 60000 Colonel Hathi - On the March (13) 116
 60000 Splodyhead - Experiment 619 (13) 117
 30000 Pacha - Panicked Customer (13) 118
 30000 Sun Yee - Red Panda Spirit (13) 119
-200 Sun Yee - Red Panda Spirit (13) 218
-13000 Grandma Wu - Fierce Red Panda (13) 120
+956 Sun Yee - Red Panda Spirit (13) 218
+12341 Grandma Wu - Fierce Red Panda (13) 120
 60000 King Louie - King of Swing (13) 121
 60000 Beast - Fierce Defender (13) 122
-13000 Randall Boggs - Envious Coworker (13) 123
-200 Randall Boggs - Envious Coworker (13) 217
+12341 Randall Boggs - Envious Coworker (13) 123
+956 Randall Boggs - Envious Coworker (13) 217
 60000 Donald Duck - Vineling Rider (13) 124
-2000 Meilin Lee - Popular Red Panda (13) 125
-100 Meilin Lee - Popular Red Panda (13) 240
-13000 Tigger - Hunny Barbarian (13) 126
-13000 Boo - Energetic Child (13) 127
+2659 Meilin Lee - Popular Red Panda (13) 125
+175 Meilin Lee - Popular Red Panda (13) 240
+12341 Tigger - Hunny Barbarian (13) 126
+12341 Boo - Energetic Child (13) 127
 30000 Sulley - Protective Monster (13) 128
 5000 Ming Lee - Giant Red Panda (13) 129
 30000 Captain Hook - Conniving Pirate (13) 130
 60000 Peter Pan - Vine Duelist (13) 131
 5000 Belle & Beast - Certain as the Sun (13) 132
-5 Belle & Beast - Certain as the Sun (13) 245
-2000 Dash Parr & Violet Parr - Super Siblings (13) 133
-100 Dash Parr & Violet Parr - Super Siblings (13) 241
+19 Belle & Beast - Certain as the Sun (13) 245
+2659 Dash Parr & Violet Parr - Super Siblings (13) 133
+175 Dash Parr & Violet Parr - Super Siblings (13) 241
 30000 Red Moon Ritual (13) 134
 30000 Red Alert (13) 135
 60000 RAHR! (13) 136
 30000 Prophetic Vision (13) 137
 60000 It's Gonna Be Great! (13) 138
 30000 Scream Canister (13) 139
-13000 Bunch of Balloons (13) 140
-13000 Beast's Castle - Overrun by the Vine (13) 141
-13000 Carl's House - Flying High (13) 142
+12341 Bunch of Balloons (13) 140
+12341 Beast's Castle - Overrun by the Vine (13) 141
+12341 Carl's House - Flying High (13) 142
 60000 Launchpad - Sky Patrol (13) 143
 30000 Dug - Good Boy (13) 144
 60000 Roz - Always Watching (13) 145
-200 Roz - Always Watching (13) 221
-13000 Merlin - Envisioning the Future (13) 146
-2000 Quackerjack - Loony Toymaker (13) 147
+956 Roz - Always Watching (13) 221
+12341 Merlin - Envisioning the Future (13) 146
+2659 Quackerjack - Loony Toymaker (13) 147
 60000 Belle - Always Reading (13) 148
 60000 Ellie Fredricksen - Adventure Partner (13) 149
 30000 Mrs. Hasagawa - Fruit Vendor (13) 150
-13000 Alpha - Pack Leader (13) 151
+12341 Alpha - Pack Leader (13) 151
 60000 Sulley - Strategic Scarer (13) 152
-13000 Randall Boggs - Scary Smart (13) 153
+12341 Randall Boggs - Scary Smart (13) 153
 60000 Piglet - Hunny Mage Apprentice (13) 154
 60000 Mickey Mouse - Inquisitive Explorer (13) 155
 30000 Hades - Meticulous Schemer (13) 156
 30000 Antonio Madrigal - Animal Doctor (13) 157
-13000 Maid Marian - Created by the Vine (13) 158
+12341 Maid Marian - Created by the Vine (13) 158
 60000 Robin Hood - Created by the Vine (13) 159
-13000 Boo - Human Child (13) 160
+12341 Boo - Human Child (13) 160
 60000 Pluto - Suspicious Sentry (13) 161
 5000 Charles Muntz - Obsessive Explorer (13) 162
-13000 Henry J. Waternoose III - Chief Executive Officer (13) 163
-200 Henry J. Waternoose III - Chief Executive Officer (13) 220
+12341 Henry J. Waternoose III - Chief Executive Officer (13) 163
+956 Henry J. Waternoose III - Chief Executive Officer (13) 220
 30000 Eeyore - Hunny Scholar (13) 164
 5000 Darkwing Duck & Launchpad - St. Canard's Finest (13) 165
-100 Darkwing Duck & Launchpad - St. Canard's Finest (13) 242
+175 Darkwing Duck & Launchpad - St. Canard's Finest (13) 242
 30000 Power Surge (13) 166
 60000 Focused Search (13) 167
 60000 We've Got a Lot to Do! (13) 168
 60000 Startle (13) 169
 5000 Closet Door Portal (13) 170
 30000 Hana's Inkcaster (13) 171
-13000 Laugh Canister (13) 172
-13000 Translation Collar (13) 173
+12341 Laugh Canister (13) 172
+12341 Translation Collar (13) 173
 30000 Big Book of Hunny (13) 174
 30000 Hundred Acre Wood - Hunny Campsite (13) 175
-200 Hundred Acre Wood - Hunny Campsite (13) 222
+956 Hundred Acre Wood - Hunny Campsite (13) 222
 5000 Violet Parr - Super Resilient (13) 176
-13000 Aladdin - Created by the Vine (13) 177
+12341 Aladdin - Created by the Vine (13) 177
 30000 Willie the Giant - Created by the Vine (13) 178
-13000 Sprout - Experiment 509 (13) 179
+12341 Sprout - Experiment 509 (13) 179
 60000 Stitch - Protector of Frogs (13) 180
 60000 Sheriff of Nottingham - Vine Slayer (13) 181
 60000 Mata - Meat Hut Waitress (13) 182
@@ -3186,28 +3186,28 @@
 30000 Dr. Hamsterviel - Evil Observer (13) 184
 60000 Owl - Hunny Ranger (13) 185
 30000 Megavolt - Electrical Menace (13) 186
-200 Megavolt - Electrical Menace (13) 225
+956 Megavolt - Electrical Menace (13) 225
 60000 Darkwing Duck - Shadowy Superhero (13) 187
 60000 Omnidroid - Scanning for Threats (13) 188
 60000 Flynn Rider - High-Climbing Rogue (13) 189
 30000 The Irate Chef - Meat Hut Cook (13) 190
-13000 Kronk - Meat Hut Cook (13) 191
-200 Kronk - Meat Hut Cook (13) 223
+12341 Kronk - Meat Hut Cook (13) 191
+956 Kronk - Meat Hut Cook (13) 223
 60000 Mulan - Created by the Vine (13) 192
-200 Mulan - Created by the Vine (13) 224
+956 Mulan - Created by the Vine (13) 224
 60000 Diablo - Protecting His Mistress (13) 193
-2000 Scar - Created by the Vine (13) 194
-100 Scar - Created by the Vine (13) 243
-13000 Maximus - Relentless Stallion (13) 195
-13000 Omnidroid - Ultimate Iteration (13) 196
+2659 Scar - Created by the Vine (13) 194
+175 Scar - Created by the Vine (13) 243
+12341 Maximus - Relentless Stallion (13) 195
+12341 Omnidroid - Ultimate Iteration (13) 196
 5000 The Vine - Towering Stalk (13) 197
 60000 Cower Before Me! (13) 198
 60000 We'll Save Our Village (13) 199
 30000 Look What You've Done (13) 200
 30000 You Broke My Smolder (13) 201
-13000 Attack of the Vine! (13) 202
-13000 Windstorm (13) 203
+12341 Attack of the Vine! (13) 202
+12341 Windstorm (13) 203
 30000 Discarded Armor (13) 204
 30000 The Weedwhacker (13) 205
 30000 Absorbing Bloom (13) 206
-13000 Vine Entrance - Ominous Passageway (13) 207
+12341 Vine Entrance - Ominous Passageway (13) 207

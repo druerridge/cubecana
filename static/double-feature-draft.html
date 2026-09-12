@@ -92,6 +92,19 @@
             color: #ccc;
             font-weight: bold;
         }
+        .clear-selection-button {
+            margin-bottom: 14px;
+            padding: 8px 12px;
+            color: white;
+            background-color: #555;
+            border: 1px solid #777;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .clear-selection-button:hover {
+            background-color: #666;
+        }
         .franchise-list {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -243,6 +256,8 @@
         <div class="page-header">
             <h1>Double Feature Draft</h1>
             <p>Choose up to five featured franchises and one wild franchise.</p>
+            <button id="draft-button" class="draft-button" type="button">Draft</button>
+            <p id="draft-status" class="draft-status" aria-live="polite"></p>
         </div>
 
         <section class="selection-section" aria-labelledby="wild-franchise-heading">
@@ -261,6 +276,7 @@
             <label for="franchise-search">Search franchises</label>
             <input id="franchise-search" class="franchise-search" type="search" placeholder="Start typing a franchise name" autocomplete="off">
             <div id="selection-status" class="selection-status" aria-live="polite">0 of 5 franchises selected</div>
+            <button id="clear-franchise-selection" class="clear-selection-button" type="button">Clear Selection</button>
             <div id="franchise-list" class="franchise-list" aria-label="Available franchises"></div>
         </section>
 
@@ -282,8 +298,6 @@
                 <p class="set-loading">Loading retail sets...</p>
             </div>
         </section>
-        <button id="draft-button" class="draft-button" type="button">Draft</button>
-        <p id="draft-status" class="draft-status" aria-live="polite"></p>
     </main>
 
     <script type="module" src="/static/js/double-feature-draft.js"></script>

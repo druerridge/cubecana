@@ -4,6 +4,7 @@ const maximumFeaturedFranchises = 5;
 const franchiseList = document.getElementById("franchise-list");
 const franchiseSearch = document.getElementById("franchise-search");
 const selectionStatus = document.getElementById("selection-status");
+const clearFranchiseSelectionButton = document.getElementById("clear-franchise-selection");
 const wildFranchise = document.getElementById("wild-franchise");
 const wildFranchiseOptions = document.getElementById("wild-franchise-options");
 const legality = document.getElementById("legality");
@@ -11,7 +12,13 @@ const removeUnplayables = document.getElementById("remove-unplayables");
 const setYears = document.getElementById("set-years");
 const draftButton = document.getElementById("draft-button");
 const draftStatus = document.getElementById("draft-status");
-const selectedFranchises = new Set();
+const selectedFranchises = new Set([
+    "Peter Pan",
+    "Beauty and the Beast",
+    "Aladdin",
+    "Moana",
+    "The Little Mermaid"
+]);
 const selectedSetIds = new Set();
 
 function populateWildFranchiseOptions() {
@@ -77,6 +84,11 @@ function renderFranchiseList() {
 }
 
 franchiseSearch.addEventListener("input", renderFranchiseList);
+clearFranchiseSelectionButton.addEventListener("click", () => {
+    selectedFranchises.clear();
+    updateSelectionStatus();
+    renderFranchiseList();
+});
 draftButton.addEventListener("click", submitDraftConfiguration);
 
 function updateYearSelection(yearCheckbox, sets) {
@@ -164,6 +176,7 @@ async function loadRetailSets() {
             throw new Error(`Retail set request failed with status ${response.status}`);
         }
         const { sets } = await response.json();
+        sets.forEach((retailSet) => selectedSetIds.add(retailSet.id));
         renderRetailSets(sets);
     } catch (error) {
         console.error("Unable to load retail sets.", error);

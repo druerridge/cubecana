@@ -5,6 +5,7 @@ from datetime import datetime
 from flask import Flask, render_template, request, Response, send_from_directory, redirect
 from flask import jsonify
 from cubecana_server import draftmancer
+from cubecana_server import franchise
 from cubecana_server.pixelborn_manager import pixelborn_manager
 from cubecana_server import lcc_error
 from cubecana_server import card_evaluations
@@ -115,6 +116,10 @@ def serve_sitemap():
     return send_from_directory('static', 'sitemap.xml')
 
 # API Endpoints
+
+@app.route('/api/franchises', methods=['GET'])
+def get_franchises():
+  return jsonify({'franchises': franchise.load_franchises()})
 
 @app.route('/api/draftmancer-to-inktable/', methods=['POST'])
 def draftmancer_to_inktable():

@@ -1,48 +1,4 @@
-const franchises = [
-    "101 Dalmations",
-    "Aladdin",
-    "Alice in Wonderland",
-    "Atlantis",
-    "Bambi",
-    "Beauty and the Beast",
-    "Big Hero 6",
-    "Bolt",
-    "Brother Bear",
-    "Chip 'n Dale Rescue Rangers",
-    "Cinderella",
-    "Disney Lorcana",
-    "Duck Tales",
-    "Encanto",
-    "Fantasia",
-    "Frozen",
-    "Hercules",
-    "Jungle Book",
-    "Lady and the Tramp",
-    "Lilo & Stitch",
-    "Mickey & Friends",
-    "Moana",
-    "Mulan",
-    "Peter Pan",
-    "Pinocchio",
-    "Raya and the Last Dragon",
-    "Robin Hood",
-    "Sleeping Beauty",
-    "Snow White and the Seven Dwarfs",
-    "TaleSpin",
-    "Tangled",
-    "The Aristocats",
-    "The Emperor's New Groove",
-    "The Great Mouse Detective",
-    "The Lion King",
-    "The Little Mermaid",
-    "The Princess and the Frog",
-    "The Rescuers",
-    "The Sword in the Stone",
-    "Treasure Planet",
-    "Winnie the Pooh",
-    "Wreck-It Ralph",
-    "Zootopia"
-];
+let franchises = [];
 
 const maximumFeaturedFranchises = 5;
 const franchiseList = document.getElementById("franchise-list");
@@ -59,6 +15,7 @@ const selectedFranchises = new Set();
 const selectedSetIds = new Set();
 
 function populateWildFranchiseOptions() {
+    wildFranchiseOptions.replaceChildren();
     franchises.forEach((franchise) => {
         const option = document.createElement("option");
         option.value = franchise;
@@ -217,6 +174,25 @@ async function loadRetailSets() {
     }
 }
 
+async function loadFranchises() {
+    try {
+        const response = await fetch("/api/franchises");
+        if (!response.ok) {
+            throw new Error(`Franchise request failed with status ${response.status}`);
+        }
+        const data = await response.json();
+        franchises = data.franchises;
+        populateWildFranchiseOptions();
+        renderFranchiseList();
+    } catch (error) {
+        console.error("Unable to load franchises.", error);
+        const message = document.createElement("p");
+        message.className = "no-results";
+        message.textContent = "Franchises could not be loaded. Please try again later.";
+        franchiseList.replaceChildren(message);
+    }
+}
+
 function getDraftConfiguration() {
     return {
         wildFranchise: wildFranchise.value,
@@ -249,7 +225,6 @@ async function submitDraftConfiguration() {
     }
 }
 
-populateWildFranchiseOptions();
 updateSelectionStatus();
-renderFranchiseList();
+loadFranchises();
 loadRetailSets();

@@ -210,6 +210,12 @@ def handle_dreamborn_to_draftmancer():
   response = {'draftmancerFile': draftmancer_file, 'metadata': {'cardCount': card_count, 'cardsPerBooster': settings.cards_per_booster, 'boostersPerPlayer': settings.boosters_per_player}}
   return jsonify(response)
 
+@app.route('/api/double-feature-draft', methods=['POST'])
+def handle_double_feature_draft():
+  draft_configuration = request.get_json()
+  print(f"Received Double Feature Draft configuration: {draft_configuration}")
+  return jsonify({'status': 'received'})
+
 @app.route('/api/draft/<string:draft_id>/draftmancer-log', methods=['POST'])
 def handle_draftmancer_draft_log(draft_id:str):
   print(f"Received draftmancer log for draft {draft_id}:")

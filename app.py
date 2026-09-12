@@ -6,6 +6,7 @@ from flask import Flask, render_template, request, Response, send_from_directory
 from flask import jsonify
 from cubecana_server import draftmancer
 from cubecana_server import franchise
+from cubecana_server.double_feature_manager import double_feature_manager
 from cubecana_server.pixelborn_manager import pixelborn_manager
 from cubecana_server import lcc_error
 from cubecana_server import card_evaluations
@@ -217,8 +218,17 @@ def handle_dreamborn_to_draftmancer():
 
 @app.route('/api/double-feature-draft', methods=['POST'])
 def handle_double_feature_draft():
-  draft_configuration = request.get_json()
-  print(f"Received Double Feature Draft configuration: {draft_configuration}")
+  draft_configuration_data = request.get_json()
+  if not isinstance(draft_configuration_data, dict):
+    raise lcc_error.LccError("Draft configuration must be a JSON object.", 400)
+  draft_configuration = api.DoubleFeatureDraftRequest(
+    wildFranchise=draft_configuration_data.get('wildFranchise'),
+    featuredFranchises=draft_configuration_data.get('featuredFranchises'),
+    legality=draft_configuration_data.get('legality'),
+    removeUnplayables=draft_configuration_data.get('removeUnplayables'),
+    setIds=draft_configuration_data.get('setIds')
+  )
+  double_feature_manager.validate_draft_configuration(draft_configuration)
   return jsonify({'status': 'received'})
 
 @app.route('/api/draft/<string:draft_id>/draftmancer-log', methods=['POST'])

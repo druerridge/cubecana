@@ -54,6 +54,14 @@ class EditCubeRequest:
         indent=4)
 
 @dataclass(frozen=True)
+class DoubleFeatureDraftRequest:
+  wildFranchise: str
+  featuredFranchises: List[str]
+  legality: str
+  removeUnplayables: bool
+  setIds: List[str]
+
+@dataclass(frozen=True)
 class RetailSetEntry:
   name: str
   id: str

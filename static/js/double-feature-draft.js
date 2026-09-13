@@ -229,7 +229,13 @@ async function submitDraftConfiguration() {
         if (!response.ok) {
             throw new Error(`Draft request failed with status ${response.status}`);
         }
-        draftStatus.textContent = "Draft configuration received.";
+        const { draftmancerFile } = await response.json();
+        download(
+            draftmancerFile,
+            "double-feature-draft.draftmancer.txt",
+            "text/plain"
+        );
+        draftStatus.textContent = "Draftmancer file downloaded.";
     } catch (error) {
         console.error("Unable to submit the draft configuration.", error);
         draftStatus.textContent = "Draft configuration could not be submitted. Please try again.";

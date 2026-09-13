@@ -228,8 +228,10 @@ def handle_double_feature_draft():
     removeUnplayables=draft_configuration_data.get('removeUnplayables'),
     setIds=draft_configuration_data.get('setIds')
   )
-  double_feature_manager.validate_draft_configuration(draft_configuration)
-  return jsonify({'status': 'received'})
+  draftmancer_file = double_feature_manager.generate_draftmancer_file(
+    draft_configuration
+  )
+  return jsonify({'draftmancerFile': draftmancer_file})
 
 @app.route('/api/draft/<string:draft_id>/draftmancer-log', methods=['POST'])
 def handle_draftmancer_draft_log(draft_id:str):

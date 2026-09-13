@@ -1,10 +1,17 @@
+import random
+
 from . import api
+from . import card_evaluations
+from . import draftmancer
 from . import franchise
 from . import lcc_error
+from .lorcast_api import lorcast_api as lorcana_api
+from .settings import Settings
 
 
 class DoubleFeatureManager:
     featured_franchise_count = 5
+    featured_colors = ("W", "U", "B", "R", "G")
 
     def validate_draft_configuration(
         self, draft_configuration: api.DoubleFeatureDraftRequest
@@ -39,6 +46,57 @@ class DoubleFeatureManager:
             )
         if draft_configuration.wildFranchise not in valid_franchises:
             raise lcc_error.LccError("A valid wild franchise must be selected.", 400)
+        if draft_configuration.wildFranchise in featured_franchises:
+            raise lcc_error.LccError(
+                "The wild franchise must differ from the featured franchises.", 400
+            )
+
+    def generate_draftmancer_file(
+        self, draft_configuration: api.DoubleFeatureDraftRequest
+    ) -> str:
+        self.validate_draft_configuration(draft_configuration)
+
+        featured_franchise_to_color = dict(
+            zip(
+                draft_configuration.featuredFranchises,
+                random.sample(self.featured_colors, self.featured_franchise_count),
+            )
+        )
+        selected_franchises = set(featured_franchise_to_color)
+        selected_franchises.add(draft_configuration.wildFranchise)
+        id_to_franchise = franchise.load_id_to_franchise()
+        printing_id_to_count = {}
+        card_id_to_colors = {}
+
+        for card_id, api_card in lorcana_api.read_or_fetch_id_to_api_card().items():
+            card_franchise = id_to_franchise.get(card_id)
+            if card_franchise not in selected_franchises:
+                continue
+
+            printing_id_to_count[api_card.default_printing.printing_id()] = 1
+            if card_franchise == draft_configuration.wildFranchise:
+                card_id_to_colors[card_id] = []
+            else:
+                card_id_to_colors[card_id] = [
+                    featured_franchise_to_color[card_franchise]
+                ]
+
+        if not printing_id_to_count:
+            raise lcc_error.LccError(
+                "No cards are available for the selected franchises.", 400
+            )
+
+        settings = Settings(
+            card_list_name="Double Feature Draft",
+            set_card_colors=True,
+            color_balance_packs=True,
+        )
+        return draftmancer.generate_draftmancer_file(
+            printing_id_to_count,
+            card_evaluations.DEFAULT_RETAIL_CARD_EVALUATIONS_FILE,
+            settings,
+            card_id_to_colors=card_id_to_colors,
+        )
 
 
 double_feature_manager = DoubleFeatureManager()

@@ -104,7 +104,8 @@ def to_draftmancer_card_type(api_card: ApiCard, settings: Settings):
 def generate_custom_card_list(
         id_to_rating: dict[str, int],
         printing_ids_to_include: list[PrintingId],
-        settings: Settings
+        settings: Settings,
+        card_id_to_colors: dict[str, list[str]] = None
     ) -> list[dict]:
     custom_card_list:list[dict] = []
     failed_printing_ids = list[PrintingId]()
@@ -154,10 +155,12 @@ def generate_custom_card_list(
         if printing.rarity in ALT_ART_RARITIES:
             custom_card['foil'] = True
 
-        if (settings.set_card_colors):
-                # FYI this is broken for Illumineer's quest boss cards
-                custom_card['colors'] = to_draftmancer_colors(api_card.color, settings, api_card.inks)
-        if (settings.franchise_to_color): # TODO: This needs additional Testing outside double feature cube
+        if card_id_to_colors is not None:
+            custom_card['colors'] = card_id_to_colors[card_id]
+        elif settings.set_card_colors:
+            # FYI this is broken for Illumineer's quest boss cards
+            custom_card['colors'] = to_draftmancer_colors(api_card.color, settings, api_card.inks)
+        elif settings.franchise_to_color:
             color = franchise.retrieve_franchise_to_draftmancer_color(card_id)
             if color:
                 custom_card['colors'] = [color]
@@ -186,13 +189,18 @@ def write_draftmancer_file(draftmancer_file_string, card_list_name):
             file.write(line + '\n')
     print(f'Wrote draftmancer file to {file_name}')
 
-def generate_draftmancer_file(included_printing_ids_to_count:dict[PrintingId, int], card_evaluations_file: str, settings: Settings, slot_name_to_slot:dict[str, Slot]=None) -> str:
+def generate_draftmancer_file(included_printing_ids_to_count:dict[PrintingId, int], card_evaluations_file: str, settings: Settings, slot_name_to_slot:dict[str, Slot]=None, card_id_to_colors:dict[str, list[str]]=None) -> str:
     id_to_rating = card_evaluations_manager.read_id_to_draftmancer_rating(card_evaluations_file)
     all_printings_from_same_set = all(printing_id.set_code == next(iter(included_printing_ids_to_count)).set_code for printing_id in included_printing_ids_to_count)
     if all_printings_from_same_set:
         preferred_set = next(iter(included_printing_ids_to_count)).set_code
         id_to_rating = card_evaluations_manager.read_id_to_draftmancer_rating(card_evaluations_file, preferred_set_num=preferred_set)
-    custom_card_list = generate_custom_card_list(id_to_rating, list(included_printing_ids_to_count.keys()), settings)
+    custom_card_list = generate_custom_card_list(
+        id_to_rating,
+        list(included_printing_ids_to_count.keys()),
+        settings,
+        card_id_to_colors
+    )
     draftmancer_settings = settings.to_draftmancer_settings()
             
     lines = [

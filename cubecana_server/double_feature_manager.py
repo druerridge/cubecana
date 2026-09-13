@@ -6,6 +6,7 @@ from . import draftmancer
 from . import franchise
 from . import lcc_error
 from .lorcast_api import lorcast_api as lorcana_api
+from .retail_manager import retail_manager
 from .settings import Settings
 
 
@@ -50,6 +51,20 @@ class DoubleFeatureManager:
             raise lcc_error.LccError(
                 "The wild franchise must differ from the featured franchises.", 400
             )
+        if not isinstance(draft_configuration.setIds, list):
+            raise lcc_error.LccError("Selected sets must be a list.", 400)
+        if not draft_configuration.setIds:
+            raise lcc_error.LccError("At least one set must be selected.", 400)
+        if not all(isinstance(set_id, str) for set_id in draft_configuration.setIds):
+            raise lcc_error.LccError("Selected sets must have valid IDs.", 400)
+
+        invalid_set_ids = sorted(
+            set(draft_configuration.setIds).difference(retail_manager.retail_sets)
+        )
+        if invalid_set_ids:
+            raise lcc_error.LccError(
+                "Invalid selected sets: " + ", ".join(invalid_set_ids), 400
+            )
 
     def generate_draftmancer_file(
         self, draft_configuration: api.DoubleFeatureDraftRequest
@@ -64,6 +79,7 @@ class DoubleFeatureManager:
         )
         selected_franchises = set(featured_franchise_to_color)
         selected_franchises.add(draft_configuration.wildFranchise)
+        selected_set_ids = set(draft_configuration.setIds)
         id_to_franchise = franchise.load_id_to_franchise()
         printing_id_to_count = {}
         card_id_to_colors = {}
@@ -73,7 +89,20 @@ class DoubleFeatureManager:
             if card_franchise not in selected_franchises:
                 continue
 
-            printing_id_to_count[api_card.default_printing.printing_id()] = 1
+            printing = api_card.default_printing
+            if printing.set_code not in selected_set_ids:
+                printing = next(
+                    (
+                        card_printing
+                        for card_printing in api_card.card_printings
+                        if card_printing.set_code in selected_set_ids
+                    ),
+                    None,
+                )
+            if printing is None:
+                continue
+
+            printing_id_to_count[printing.printing_id()] = 1
             if card_franchise == draft_configuration.wildFranchise:
                 card_id_to_colors[card_id] = []
             else:

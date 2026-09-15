@@ -130,7 +130,8 @@ class LorcastApi:
             collector_id=printing_untyped['collector_number'],
             set_code=printing_untyped['set']['code'],
             rarity=lorcast_to_cubecana_rarity[printing_untyped['rarity']],
-            image_uris=image_uris
+            image_uris=image_uris,
+            legalities=printing_untyped.get('legalities', {})
         )
 
     def is_alternate_art(self, printing: CardPrinting) -> bool:
@@ -144,7 +145,7 @@ class LorcastApi:
             return False
         
     def is_core_printing(self, printing: CardPrinting) -> bool:
-        return self.is_core_set(printing.set_code) and not self.is_alternate_art(printing)
+        return printing.legalities.get('core') == 'legal'
 
     def is_core_set(self, set_code: str) -> bool:
         # core sets are pure numbers while promos and special sets are not

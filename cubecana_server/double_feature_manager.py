@@ -2,6 +2,7 @@ import random
 
 from . import api
 from . import card_evaluations
+from .card_evaluations import card_evaluations_manager
 from . import draftmancer
 from . import franchise
 from . import lcc_error
@@ -81,12 +82,25 @@ class DoubleFeatureManager:
         selected_franchises.add(draft_configuration.wildFranchise)
         selected_set_ids = set(draft_configuration.setIds)
         id_to_franchise = franchise.load_id_to_franchise()
+        unplayable_card_ids = set()
+        if draft_configuration.removeUnplayables:
+            id_to_letter_rating = card_evaluations_manager.read_id_to_letter_rating(
+                card_evaluations.DEFAULT_RETAIL_CARD_EVALUATIONS_FILE
+            )
+            unplayable_card_ids = {
+                card_id
+                for card_id, letter_rating in id_to_letter_rating.items()
+                if letter_rating in {"D-", "F"}
+            }
         printing_id_to_count = {}
         card_id_to_colors = {}
 
         for card_id, api_card in lorcana_api.read_or_fetch_id_to_api_card().items():
             card_franchise = id_to_franchise.get(card_id)
-            if card_franchise not in selected_franchises:
+            if (
+                card_franchise not in selected_franchises
+                or card_id in unplayable_card_ids
+            ):
                 continue
 
             printing = api_card.default_printing

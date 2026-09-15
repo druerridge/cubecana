@@ -53,6 +53,7 @@ class CardPrinting:
     set_code: str
     rarity: str
     image_uris: dict[str, str]
+    legalities: dict[str, str] = None
 
     def printing_id(self) -> PrintingId:
         return PrintingId(

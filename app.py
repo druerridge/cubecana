@@ -224,7 +224,6 @@ def handle_double_feature_draft():
   draft_configuration = api.DoubleFeatureDraftRequest(
     wildFranchise=draft_configuration_data.get('wildFranchise'),
     featuredFranchises=draft_configuration_data.get('featuredFranchises'),
-    legality=draft_configuration_data.get('legality'),
     removeUnplayables=draft_configuration_data.get('removeUnplayables'),
     setIds=draft_configuration_data.get('setIds')
   )

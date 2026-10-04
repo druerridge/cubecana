@@ -57,7 +57,6 @@ class EditCubeRequest:
 class DoubleFeatureDraftRequest:
   wildFranchise: str
   featuredFranchises: List[str]
-  legality: str
   removeUnplayables: bool
   setIds: List[str]
 

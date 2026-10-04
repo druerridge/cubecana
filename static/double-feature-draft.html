@@ -69,7 +69,6 @@
             color: #ccc;
         }
         .franchise-search,
-        .legality-select,
         .wild-franchise-search {
             width: 100%;
             box-sizing: border-box;
@@ -81,7 +80,6 @@
             font-size: 16px;
         }
         .franchise-search:focus,
-        .legality-select:focus,
         .wild-franchise-search:focus {
             outline: none;
             border-color: #2196F3;
@@ -282,12 +280,6 @@
 
         <section class="selection-section" aria-labelledby="options-heading">
             <h2 id="options-heading">Options</h2>
-            <label for="legality">Legality</label>
-            <select id="legality" class="legality-select">
-                <option value="infinity" selected>Infinity</option>
-                <option value="core">Core</option>
-                <option value="anything">Anything</option>
-            </select>
             <label class="option-control" for="remove-unplayables">
                 <input id="remove-unplayables" type="checkbox" checked>
                 Remove unplayables

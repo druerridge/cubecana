@@ -7,7 +7,6 @@ const selectionStatus = document.getElementById("selection-status");
 const clearFranchiseSelectionButton = document.getElementById("clear-franchise-selection");
 const wildFranchise = document.getElementById("wild-franchise");
 const wildFranchiseOptions = document.getElementById("wild-franchise-options");
-const legality = document.getElementById("legality");
 const removeUnplayables = document.getElementById("remove-unplayables");
 const setYears = document.getElementById("set-years");
 const draftButton = document.getElementById("draft-button");
@@ -210,7 +209,6 @@ function getDraftConfiguration() {
     return {
         wildFranchise: wildFranchise.value,
         featuredFranchises: Array.from(selectedFranchises),
-        legality: legality.value,
         removeUnplayables: removeUnplayables.checked,
         setIds: Array.from(selectedSetIds)
     };

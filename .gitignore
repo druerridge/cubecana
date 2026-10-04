@@ -2,6 +2,7 @@
 creds/
 creds.json
 draft_logs/
+lorcast_api_data_cache.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -1,11 +1,27 @@
+import re
 from . import draftmancer
 from .draftmancer import Slot, SlotCard
 from .lorcast_api import lorcast_api as lorcana_api
-from .settings import Settings
-from .dreamborn_manager import dreamborn_manager
-from .card_evaluations import card_evaluations_manager
-from .card import ApiCard, PrintingId, CardPrinting
-from .lorcana import ALT_ART_RARITIES
+from .settings import Settings, POWER_BAND_RETAIL
+from .card_evaluations import DEFAULT_RETAIL_CARD_EVALUATIONS_FILE
+from .card import CardPrinting, PrintingId
+
+# set code -> display name. Only sets listed here are offered as retail drafts.
+RETAIL_SETS = {
+    "1": "The First Chapter",
+    "2": "Rise of the Floodborn",
+    "3": "Into the Inklands",
+    "4": "Ursula's Return",
+    "5": "Shimmering Skies",
+    "6": "Azurite Seas",
+    "7": "Archazia's Island",
+    "8": "Reign of Jafar",
+    "9": "Fabled",
+    "10": "Whispers in the Well",
+    "11": "Winterspell",
+    "12": "Wilds Unknown",
+    "13": "Attack of the Vine!",
+}
 
 
 # source: https://www.reddit.com/r/Lorcana/comments/1tmo95b/wilds_unknown_pull_rate_analysis/#lightbox
@@ -63,15 +79,6 @@ def calculate_slots_to_append(rarity, color):
     slots_to_append.append("FoilSlot")
     return slots_to_append
 
-def get_printing_from_set(api_card: ApiCard, set_code: str):
-    if set_code:
-        printings_from_set = list(filter(lambda printing: printing.set_code == set_code, api_card.card_printings))
-        if not printings_from_set:
-            raise ValueError(f"Failed to find printing for card '{api_card.full_name}' in set '{set_code}'")
-        return next(filter(lambda printing: printing.rarity not in ALT_ART_RARITIES, api_card.card_printings), printings_from_set[0])
-    else:
-        return api_card.default_printing
-
 RETAIL_SET_EXCLUDED_PRINTING_IDS = [
     PrintingId(card_id="pigletpoohpiratecaptain", set_code="3", collector_id="223"), # alt art
     PrintingId(card_id="yensidpowerfulsorcerer", set_code="4", collector_id="223"), # alt art
@@ -84,10 +91,31 @@ RETAIL_SET_EXCLUDED_PRINTING_IDS = [
     PrintingId(card_id="hueyreliableleader", set_code="8", collector_id="3f"), # alt art
 ]
 
-def generate_retail_draftmancer_file(card_evaluations_file, set_code:str, settings: Settings):
-    print("card_evaluations_file")
-    print(card_evaluations_file)
+def base_collector_id(card_printing: CardPrinting) -> str:
+    match = re.match(r'\d+', card_printing.collector_id)
+    return match.group(0) if match else card_printing.collector_id
 
+def count_variants_by_base_collector_id(card_printings: list[CardPrinting]) -> dict[str, int]:
+    counts: dict[str, int] = {}
+    for card_printing in card_printings:
+        base = base_collector_id(card_printing)
+        counts[base] = counts.get(base, 0) + 1
+    return counts
+
+def remove_alt_art_printings(card_printings: list[CardPrinting]) -> list[CardPrinting]:
+    # an alt art reprints a card at the same rarity under a higher collector number (e.g. Mr. Incredible - Super Strong 12-127 and 12-243).
+    # keep only the lowest-numbered printing per rarity, plus its lettered variants (e.g. 4a-4e).
+    rarity_to_lowest_base: dict[str, int] = {}
+    for card_printing in card_printings:
+        base = int(base_collector_id(card_printing))
+        rarity_to_lowest_base[card_printing.rarity] = min(base, rarity_to_lowest_base.get(card_printing.rarity, base))
+    return [p for p in card_printings if int(base_collector_id(p)) == rarity_to_lowest_base[p.rarity]]
+
+def generate_retail_set_file(set_code: str) -> str:
+    settings = Settings(card_list_name=RETAIL_SETS[set_code], with_replacement=True, power_band=POWER_BAND_RETAIL)
+    return generate_retail_draftmancer_file(DEFAULT_RETAIL_CARD_EVALUATIONS_FILE, set_code, settings)
+
+def generate_retail_draftmancer_file(card_evaluations_file, set_code:str, settings: Settings):
     # might have to map set # to this slot distribution situation or a strategy therein even 
     slot_name_to_slot = {
         'CommonSlotSteel': Slot("CommonSlotSteel", 1, []),
@@ -104,17 +132,19 @@ def generate_retail_draftmancer_file(card_evaluations_file, set_code:str, settin
     printing_ids_to_count: dict[PrintingId, int] = {}
     api_cards_from_set = lorcana_api.get_cards_from_set(set_code)
     for api_card in api_cards_from_set:
-        for card_printing in list(filter(lambda p: p.set_code == set_code, api_card.card_printings)):
-            if card_printing.printing_id() in RETAIL_SET_EXCLUDED_PRINTING_IDS:
-                continue
+        card_printings = remove_alt_art_printings([p for p in api_card.card_printings if p.set_code == set_code and p.printing_id() not in RETAIL_SET_EXCLUDED_PRINTING_IDS])
+        base_collector_id_to_variant_count = count_variants_by_base_collector_id(card_printings)
+        for card_printing in card_printings:
             rarity = card_printing.rarity
             color = api_card.color
-            if color is None or color == "None":
-                raise ValueError(f"Failed to find color for card '{api_card.full_name}'")
+            # only commons are slotted by color. dual-ink cards have no single color.
+            if rarity == "Common" and (color is None or color == "None"):
+                raise ValueError(f"Failed to find color for common card '{api_card.full_name}'")
             printing_id: PrintingId = card_printing.printing_id()
 
             rarity_to_frequency = get_rarity_to_frequency(set_code)
-            frequency = rarity_to_frequency[rarity]
+            # variants (e.g. 4a-4e) share one card's worth of frequency
+            frequency = rarity_to_frequency[rarity] // base_collector_id_to_variant_count[base_collector_id(card_printing)]
             printing_ids_to_count[printing_id] = frequency
             slots_to_append = calculate_slots_to_append(rarity, color)
             for slot_name in slots_to_append:

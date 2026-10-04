@@ -2,6 +2,8 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import json
 import threading
+import traceback
+from typing import Callable
 
 from .dreamborn_manager import dreamborn_manager
 from . import id_helper
@@ -32,6 +34,18 @@ class LorcastApi:
         self.id_to_api_card: dict[str, ApiCard] = {}
         self.is_updating_api_cache = False
         self.timer = None
+        self.cache_loaded_listeners: list[Callable[[], None]] = []
+
+    def add_cache_loaded_listener(self, listener: Callable[[], None]):
+        self.cache_loaded_listeners.append(listener)
+
+    def notify_cache_loaded_listeners(self):
+        for listener in self.cache_loaded_listeners:
+            try:
+                listener()
+            except Exception:
+                print(f"Cache loaded listener {listener} failed:")
+                traceback.print_exc()
     
     def get_lorcast_full_name(self, printing_untyped: dict) -> str:
         if 'version' in printing_untyped:
@@ -238,6 +252,7 @@ class LorcastApi:
             id_to_api_card = self.generate_id_to_api_card(printing_id_str_to_printing_untyped)
             self.id_to_api_card = id_to_api_card
             print(f"API data cache loaded from disk with {len(self.id_to_api_card)} cards.")
+        self.notify_cache_loaded_listeners()
 
     def _handle_timer(self):
         self.refresh_api_data_cache_if_needed()

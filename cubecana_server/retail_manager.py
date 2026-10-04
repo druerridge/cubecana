@@ -1,11 +1,12 @@
 from dataclasses import dataclass
-from pathlib import Path
+import traceback
 from . import api
 from typing import List
 from . import lcc_error
 from . import draftmancer
+from . import generate_retail
+from .lorcast_api import lorcast_api
 
-RETAIL_SETS_DIR_PATH = "inputs/retail_sets"
 GAME_MODE_SUPER_SEALED = "SUPER_SEALED"
 GAME_MODE_SEALED = "SEALED"
 GAME_MODE_DRAFT = "DRAFT"
@@ -42,24 +43,29 @@ class RetailManager:
         self.retail_sets: dict[str, RetailSet] = {}
 
     def init(self):
-        self.load_retail_sets(RETAIL_SETS_DIR_PATH)
+        self.regenerate_retail_sets()
+        lorcast_api.add_cache_loaded_listener(self.regenerate_retail_sets)
 
-    def generate_retail_set(self, file: Path) -> RetailSet:
-        draftmancer_file:draftmancer.DraftmancerFile = draftmancer.read_draftmancer_file(file)
-        set_id = file.stem.rstrip('.draftmancer')
+    def generate_retail_set(self, set_code: str) -> RetailSet:
+        draftmancer_file_contents = generate_retail.generate_retail_set_file(set_code)
+        # parse to validate the generated file before serving it
+        draftmancer_file: draftmancer.DraftmancerFile = draftmancer.read_draftmancer_file_as_string(draftmancer_file_contents)
         ratings_missing = bool(getattr(draftmancer_file.draftmancer_settings, 'ratingsMissing', False))
-        return RetailSet(set_id, draftmancer_file.draftmancer_settings.name, draftmancer_file.text_contents, ratings_missing)
+        return RetailSet(set_code, draftmancer_file.draftmancer_settings.name, draftmancer_file_contents, ratings_missing)
 
-    def load_retail_sets(self, retail_sets_filepath: str):
-        retail_sets_path = Path(retail_sets_filepath)
-        if not retail_sets_path.is_dir():
-            raise Exception(f"retail_sets_filepath at {retail_sets_filepath} is not a directory")
-        files = retail_sets_path.glob('*')
-        for file in files:
-            if file.is_file():
-                print("loading: " + str(file))
-                retail_set = self.generate_retail_set(file)
-                self.retail_sets[retail_set.id] = retail_set
+    def regenerate_retail_sets(self):
+        retail_sets: dict[str, RetailSet] = {}
+        for set_code in generate_retail.RETAIL_SETS:
+            try:
+                retail_sets[set_code] = self.generate_retail_set(set_code)
+            except Exception:
+                print(f"Failed to generate retail set {set_code}:")
+                traceback.print_exc()
+                if set_code in self.retail_sets:
+                    print(f"Keeping previously generated retail set {set_code}")
+                    retail_sets[set_code] = self.retail_sets[set_code]
+        self.retail_sets = retail_sets
+        print(f"Generated {len(retail_sets)} retail sets.")
 
     def get_set_count(self) -> int:
        return self.retail_sets.__len__()
@@ -67,8 +73,8 @@ class RetailManager:
     def get_sets(self, page: int = 1, per_page: int = 25, order = api.OrderType.DESC) -> List[api.RetailSetEntry]:
         start = (page - 1) * per_page
         end = start + per_page
-        retail_sets_list = list(self.retail_sets.values())
-        paginated_retail_sets: List[RetailSet] = sorted(retail_sets_list[start:end], key=lambda x: int(x.id), reverse=(order == api.OrderType.DESC))
+        retail_sets_list = sorted(self.retail_sets.values(), key=lambda x: int(x.id), reverse=(order == api.OrderType.DESC))
+        paginated_retail_sets: List[RetailSet] = retail_sets_list[start:end]
         paginated_retail_set_entries:List[api.RetailSetEntry] = [retail_set.to_retail_set_entry() for retail_set in paginated_retail_sets]
         return paginated_retail_set_entries
 

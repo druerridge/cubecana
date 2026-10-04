@@ -16,10 +16,10 @@ parser = argparse.ArgumentParser(
 
 parser.add_argument('verb', help="verb is one of: ( generate_retail_draftmancer | tts_to_draftmancer | draftmancer_to_tts | analyze_draft_logs )")
 parser.add_argument('--dreamborn_export_for_tabletop_sim', help="file path to a .deck export in Tabletop Sim format from dreamborn.ink deck of the cube e.g. example-cube.json or C:\\Users\\dru\\Desktop\\deck.json")
-parser.add_argument('--card_evaluations_file', default=card_evaluations.DEFAULT_CUBE_CARD_EVALUATIONS_FILE, help="relative path to a .csv file containing card name -> 0-5 card rating (power in a vacuum). default: \"DraftBots\\\\FrankKarstenEvaluations-HighPower.csv\"")
+parser.add_argument('--card_evaluations_file', default=None, help="relative path to a .csv file containing card name -> 0-5 card rating (power in a vacuum). default: the retail evaluations file for generate_retail_draftmancer, otherwise the max power cube evaluations file")
 parser.add_argument('--boosters_per_player', default=4)
 parser.add_argument('--cards_per_booster', default=12)
-parser.add_argument('--name', default="custom_card_list", help="Sets name of both the output file and the set/cube list as it appears in draftmancer")
+parser.add_argument('--name', default=None, help="Sets name of both the output file and the set/cube list as it appears in draftmancer. default: the retail set name for a known --set_code, otherwise \"custom_card_list\"")
 parser.add_argument('--set_card_colors', default=False, help="WARNING** This sets card colors, allowing draftmancer to do color-balancing for you, but it will also encourage bots to draft 1-2 color decks")
 parser.add_argument('--color_balance_packs', default=False, help="WARNING** this color-balances ONLY your largest slot, IF it contains enough cards, AND steel may be wonky (treated as colorless). This will ONLY work if card_colors is true, which will encourage bots to draft 1-2 color decks")
 parser.add_argument('--franchise_to_color', default=False, help="sets colors based on franchise to enable a double-feature cube")
@@ -68,6 +68,12 @@ def analyze_draft_logs(draft_log_file_path: str):
 
 if __name__ == '__main__':
     args = parser.parse_args()
+
+    is_retail = args.verb == "generate_retail_draftmancer"
+    if args.name is None:
+        args.name = generate_retail.RETAIL_SETS.get(args.set_code, "custom_card_list") if is_retail else "custom_card_list"
+    if args.card_evaluations_file is None:
+        args.card_evaluations_file = card_evaluations.DEFAULT_RETAIL_CARD_EVALUATIONS_FILE if is_retail else card_evaluations.DEFAULT_CUBE_CARD_EVALUATIONS_FILE
 
     settings = Settings(
         boosters_per_player=args.boosters_per_player,

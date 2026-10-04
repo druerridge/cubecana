@@ -21,6 +21,7 @@ RETAIL_SETS = {
     "11": "Winterspell",
     "12": "Wilds Unknown",
     "13": "Attack of the Vine!",
+    "14": "Hyperia City",
 }
 
 

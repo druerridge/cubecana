@@ -969,6 +969,16 @@ function getRarityMultiplier(rarity) {
     return rarityWeights[rarity] || 0.1;
 }
 
+// Default Y-axis max ("estimated cards at table") at 8 players x 4 boosters, so charts share a scale across sets.
+// suggestedMax still lets the axis grow when a set has a taller bar.
+const CHARACTER_CHART_Y_MAX = 100; // Strength/Willpower/Lore: tallest bar across sets is ~85
+const ALL_CARDS_CHART_Y_MAX = 120; // Rating/Inkability: tallest bar across sets is ~120
+
+function defaultYAxisMax(baseMax) {
+    const boostersAtTable = getUrlParam('numPlayers', 8) * getUrlParam('boostersPerPlayer', 4);
+    return Math.ceil(baseMax * boostersAtTable / 32);
+}
+
 function updateStrengthChart() {
     if (!setData || !strengthChart) return;
 
@@ -978,12 +988,7 @@ function updateStrengthChart() {
         strengthChart.data.labels = chartConfig.labels;
         strengthChart.data.datasets = chartConfig.datasets;
         
-        if (chartConfig.options && chartConfig.options.scales && chartConfig.options.scales.y) {
-            const yScale = chartConfig.options.scales.y;
-            if (yScale.suggestedMax !== null && yScale.suggestedMax !== undefined) {
-                strengthChart.options.scales.y.suggestedMax = yScale.suggestedMax;
-            }
-        }
+        strengthChart.options.scales.y.suggestedMax = defaultYAxisMax(CHARACTER_CHART_Y_MAX);
         
         strengthChart.update();
     }
@@ -998,12 +1003,7 @@ function updateWillpowerChart() {
         willpowerChart.data.labels = chartConfig.labels;
         willpowerChart.data.datasets = chartConfig.datasets;
         
-        if (chartConfig.options && chartConfig.options.scales && chartConfig.options.scales.y) {
-            const yScale = chartConfig.options.scales.y;
-            if (yScale.suggestedMax !== null && yScale.suggestedMax !== undefined) {
-                willpowerChart.options.scales.y.suggestedMax = yScale.suggestedMax;
-            }
-        }
+        willpowerChart.options.scales.y.suggestedMax = defaultYAxisMax(CHARACTER_CHART_Y_MAX);
         
         willpowerChart.update();
     }
@@ -1018,12 +1018,7 @@ function updateLoreChart() {
         loreChart.data.labels = chartConfig.labels;
         loreChart.data.datasets = chartConfig.datasets;
         
-        if (chartConfig.options && chartConfig.options.scales && chartConfig.options.scales.y) {
-            const yScale = chartConfig.options.scales.y;
-            if (yScale.suggestedMax !== null && yScale.suggestedMax !== undefined) {
-                loreChart.options.scales.y.suggestedMax = yScale.suggestedMax;
-            }
-        }
+        loreChart.options.scales.y.suggestedMax = defaultYAxisMax(CHARACTER_CHART_Y_MAX);
         
         loreChart.update();
     }
@@ -1038,12 +1033,7 @@ function updateRatingChart() {
         ratingChart.data.labels = chartConfig.labels;
         ratingChart.data.datasets = chartConfig.datasets;
         
-        if (chartConfig.options && chartConfig.options.scales && chartConfig.options.scales.y) {
-            const yScale = chartConfig.options.scales.y;
-            if (yScale.suggestedMax !== null && yScale.suggestedMax !== undefined) {
-                ratingChart.options.scales.y.suggestedMax = yScale.suggestedMax;
-            }
-        }
+        ratingChart.options.scales.y.suggestedMax = defaultYAxisMax(ALL_CARDS_CHART_Y_MAX);
         
         ratingChart.update();
     }
@@ -1058,6 +1048,7 @@ function updateInkabilityChart() {
         inkabilityChart.data.labels = chartData.labels;
         inkabilityChart.data.datasets[0].data = chartData.inkableData;
         inkabilityChart.data.datasets[1].data = chartData.nonInkableData;
+        inkabilityChart.options.scales.y.suggestedMax = defaultYAxisMax(ALL_CARDS_CHART_Y_MAX);
         
         inkabilityChart.update();
         

@@ -64,7 +64,9 @@ class FormatAnalysisManager:
         count_at_table_by_classification:dict[str, dict[int, float]] = {}
         for card_id, count_at_table in count_at_table_by_card_id.items():
             api_card = lorcana_api.get_api_card(card_id)
-            for classification in api_card.classifications:
+            # keywords (e.g. Singer, Bodyguard) are grouped with classifications; API has some lowercase keywords (e.g. 'shift')
+            keywords = [keyword[:1].upper() + keyword[1:] for keyword in api_card.keywords]
+            for classification in set(api_card.classifications + keywords):
                 if classification not in count_at_table_by_classification:
                     count_at_table_by_classification[classification] = {}
                 if api_card.cost not in count_at_table_by_classification[classification]:

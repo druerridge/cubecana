@@ -63,16 +63,19 @@ export function generateDraftmancerSession(CubeFile, tabToOpen, metadata, gameMo
                         // return;
                     }
                     let draftId = parsedResponse.draftId;
-                    // let draftLogHandlingUrl = `https://793ed2f1adba.ngrok-free.app/api/draft/${draftId}/draftmancer-log`;
-                    let draftLogHandlingUrl = `${window.location.origin}/api/draft/${draftId}/draftmancer-log`;
-                    console.log("Setting draft log hook to: " + draftLogHandlingUrl);
-                    socket.emit("setHooks", { "draftLog": draftLogHandlingUrl }, (res) => {
-                        if (res.code < 0) {
-                            console.error(res);
-                        } else {
-                            console.log("Draft log hook set successfully." + JSON.stringify(res));
-                        }
-                    });
+                    // Manual cube exports have no server-side draft record, so there's nowhere to send the log
+                    if (draftId) {
+                        // let draftLogHandlingUrl = `https://793ed2f1adba.ngrok-free.app/api/draft/${draftId}/draftmancer-log`;
+                        let draftLogHandlingUrl = `${window.location.origin}/api/draft/${draftId}/draftmancer-log`;
+                        console.log("Setting draft log hook to: " + draftLogHandlingUrl);
+                        socket.emit("setHooks", { "draftLog": draftLogHandlingUrl }, (res) => {
+                            if (res.code < 0) {
+                                console.error(res);
+                            } else {
+                                console.log("Draft log hook set successfully." + JSON.stringify(res));
+                            }
+                        });
+                    }
 
                     socket.once("sessionUsers", () => {
                         if (gameMode == GAME_MODE.SUPER_SEALED) {
@@ -107,8 +110,7 @@ export function generateDraftmancerSession(CubeFile, tabToOpen, metadata, gameMo
                 } else if (metadata.setId) {
                     request(`/api/retail_sets/${metadata.setId}/startDraft`,null,startDraftOnCompletion,startDraftOnCompletion,'POST');
                 } else {
-                    let draftData = {"draftId": "manualCubeExport-" + crypto.randomUUID()};
-                    startDraftOnCompletion(JSON.stringify(draftData));
+                    startDraftOnCompletion(JSON.stringify({}));
                 }
             }
         });

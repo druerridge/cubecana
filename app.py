@@ -1,6 +1,7 @@
 import base64
 import json
 import math
+import uuid
 from datetime import datetime
 from flask import Flask, render_template, request, Response, send_from_directory, redirect
 from flask import jsonify
@@ -235,6 +236,10 @@ def handle_double_feature_draft():
 @app.route('/api/draft/<string:draft_id>/draftmancer-log', methods=['POST'])
 def handle_draftmancer_draft_log(draft_id:str):
   print(f"Received draftmancer log for draft {draft_id}:")
+  try:
+    uuid.UUID(draft_id)
+  except ValueError:
+    raise lcc_error.LccError(f"Draft {draft_id} not found", 404)
   draftmancer_log_dict = json.loads(request.data)
   draft = draft_manager.end_draft(draft_id, draftmancer_log_dict)
   if not draft:

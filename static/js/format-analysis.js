@@ -226,18 +226,24 @@ function generateStackedChartData(distributionByCost, label) {
     // Get all ink costs (0-8+)
     const inkCosts = ['0', '1', '2', '3', '4', '5', '6', '7', '8+'];
     
-    // Get all unique stat values
-    const allStatValues = new Set();
+    // Get all unique stat keys, kept as the raw strings so non-numeric keys (e.g. "null" for a missing stat) still match the data
+    const allStatKeys = new Set();
     Object.values(distributionByCost).forEach(costData => {
-        Object.keys(costData).forEach(statValue => {
-            allStatValues.add(parseInt(statValue));
+        Object.keys(costData).forEach(statKey => {
+            allStatKeys.add(statKey);
         });
     });
-    
-    const sortedStatValues = Array.from(allStatValues).sort((a, b) => a - b);
-    
+
+    // Numeric values ascending, non-numeric values last
+    const sortedStatKeys = Array.from(allStatKeys).sort((a, b) => {
+        const aNum = parseInt(a), bNum = parseInt(b);
+        if (isNaN(aNum) || isNaN(bNum)) return isNaN(aNum) - isNaN(bNum);
+        return aNum - bNum;
+    });
+
     // Generate datasets for each stat value
-    const datasets = sortedStatValues.map((statValue, index) => {
+    const datasets = sortedStatKeys.map((statKey, index) => {
+        const statValue = parseInt(statKey);
         const data = inkCosts.map(cost => {
             if (cost === '8+') {
                 // Sum all costs 8 and higher
@@ -246,32 +252,32 @@ function generateStackedChartData(distributionByCost, label) {
                     const costNum = parseInt(costKey);
                     if (costNum >= 8) {
                         const costData = distributionByCost[costKey] || {};
-                        total += costData[statValue.toString()] || 0;
+                        total += costData[statKey] || 0;
                     }
                 });
                 return total;
             } else {
                 const costData = distributionByCost[cost] || {};
-                return costData[statValue.toString()] || 0;
+                return costData[statKey] || 0;
             }
         });
-        
-        // Use gradient colors for strength and willpower charts, regular colors for others
+
+        // Color by the stat value itself (not its position among the values present) so colors match across sets
         let backgroundColor;
-        if (label === 'Strength') {
-            backgroundColor = generateStrengthGradientColor(index, sortedStatValues.length);
+        if (isNaN(statValue)) {
+            backgroundColor = UNKNOWN_VALUE_COLOR;
+        } else if (label === 'Strength') {
+            backgroundColor = generateStrengthGradientColor(statValueRatio(statValue, label));
         } else if (label === 'Willpower') {
-            backgroundColor = generateWillpowerGradientColor(index, sortedStatValues.length);
+            backgroundColor = generateWillpowerGradientColor(statValueRatio(statValue, label));
         } else if (label === 'Lore') {
-            backgroundColor = generateLoreGradientColor(index, sortedStatValues.length);
-        } else if (label === 'Rating') {
-            backgroundColor = generateRatingGradientColor(index, sortedStatValues.length);
+            backgroundColor = generateLoreGradientColor(statValueRatio(statValue, label));
         } else {
             backgroundColor = generateColor(index);
         }
         
         return {
-            label: `${label} ${statValue}`,
+            label: `${label} ${isNaN(statValue) ? 'Unknown' : statValue}`,
             data: data,
             backgroundColor: backgroundColor,
             borderColor: '#333',
@@ -293,13 +299,23 @@ function generateColor(index) {
     return colors[index % colors.length];
 }
 
-function generateStrengthGradientColor(index, total) {
-    // Create gradient from yellow (lowest strength) to red (highest strength)
-    if (total <= 1) return '#FFFF00'; // Pure yellow for single value
-    
-    const ratio = index / (total - 1); // 0 to 1
-    
-    // Interpolate from yellow (255,255,0) to red (255,0,0)
+// Color for values with no place on a fixed scale (missing stats, unrecognized ratings)
+const UNKNOWN_VALUE_COLOR = '#888888';
+
+// Fixed color scale per stat, covering the range seen across all sets. Values outside the range are clamped.
+const STAT_COLOR_RANGES = {
+    'Strength': { min: 0, max: 10 },
+    'Willpower': { min: 1, max: 10 },
+    'Lore': { min: 0, max: 5 }
+};
+
+function statValueRatio(statValue, label) {
+    const { min, max } = STAT_COLOR_RANGES[label];
+    return Math.min(1, Math.max(0, (statValue - min) / (max - min)));
+}
+
+function generateStrengthGradientColor(ratio) {
+    // Interpolate from yellow (255,255,0) (lowest strength) to red (255,0,0) (highest strength)
     const red = 255;
     const green = Math.round(255 * (1 - ratio));
     const blue = 0;
@@ -307,13 +323,8 @@ function generateStrengthGradientColor(index, total) {
     return `rgb(${red}, ${green}, ${blue})`;
 }
 
-function generateWillpowerGradientColor(index, total) {
-    // Create gradient from purple (lowest willpower) to green (highest willpower)
-    if (total <= 1) return '#800080'; // Pure purple for single value
-    
-    const ratio = index / (total - 1); // 0 to 1
-    
-    // Interpolate from purple (128,0,128) to green (0,255,0)
+function generateWillpowerGradientColor(ratio) {
+    // Interpolate from purple (128,0,128) (lowest willpower) to green (0,255,0) (highest willpower)
     const red = Math.round(128 + (0 - 128) * ratio);
     const green = Math.round(0 + (255 - 0) * ratio);
     const blue = Math.round(128 + (0 - 128) * ratio);
@@ -321,13 +332,8 @@ function generateWillpowerGradientColor(index, total) {
     return `rgb(${red}, ${green}, ${blue})`;
 }
 
-function generateLoreGradientColor(index, total) {
-    // Create gradient from blue (lowest lore) to pink (highest lore)
-    if (total <= 1) return '#0080FF'; // Pure blue for single value
-    
-    const ratio = index / (total - 1); // 0 to 1
-    
-    // Interpolate from blue (0,128,255) to pink (255,192,203)
+function generateLoreGradientColor(ratio) {
+    // Interpolate from blue (0,128,255) (lowest lore) to pink (255,192,203) (highest lore)
     const red = Math.round(0 + (255 - 0) * ratio);
     const green = Math.round(128 + (192 - 128) * ratio);
     const blue = Math.round(255 + (203 - 255) * ratio);
@@ -335,13 +341,8 @@ function generateLoreGradientColor(index, total) {
     return `rgb(${red}, ${green}, ${blue})`;
 }
 
-function generateRatingGradientColor(index, total) {
-    // Create gradient from dark red (lowest rating) to bright green (highest rating)
-    if (total <= 1) return '#800000'; // Dark red for single value
-    
-    const ratio = index / (total - 1); // 0 to 1
-    
-    // Interpolate from dark red (128,0,0) to bright green (0,255,0)
+function generateRatingGradientColor(ratio) {
+    // Interpolate from dark red (128,0,0) (lowest rating) to bright green (0,255,0) (highest rating)
     const red = Math.round(128 + (0 - 128) * ratio);
     const green = Math.round(0 + (255 - 0) * ratio);
     const blue = 0;
@@ -364,8 +365,9 @@ function generateRatingChartData(distributionByCost) {
         });
     });
     
-    // Sort ratings according to our defined order
-    const sortedRatings = ratingOrder.filter(rating => allRatingValues.has(rating));
+    // Sort ratings according to our defined order, with any unrecognized ratings last so their cards still show
+    const sortedRatings = ratingOrder.filter(rating => allRatingValues.has(rating))
+        .concat(Array.from(allRatingValues).filter(rating => !ratingOrder.includes(rating)).sort());
     
     // Generate datasets for each rating
     const datasets = sortedRatings.map((rating, index) => {
@@ -387,8 +389,11 @@ function generateRatingChartData(distributionByCost) {
             }
         });
         
-        // Generate color based on position in rating order
-        const backgroundColor = generateRatingGradientColor(index, sortedRatings.length);
+        // Color by position in the full rating order (not just the ratings present) so colors match across sets
+        const ratingIndex = ratingOrder.indexOf(rating);
+        const backgroundColor = ratingIndex === -1
+            ? UNKNOWN_VALUE_COLOR
+            : generateRatingGradientColor(ratingIndex / (ratingOrder.length - 1));
         
         return {
             label: `Rating ${rating}`,
@@ -818,12 +823,26 @@ function getActiveInkCosts() {
     return setData.chartData.strengthChart.labels || ['0', '1', '2', '3', '4', '5', '6', '7', '8+'];
 }
 
+// Fixed color per card type so colors match across sets regardless of which types are present
+const CARD_TYPE_COLORS = {
+    'Character': '#FF6384',
+    'Action': '#36A2EB',
+    'Item': '#FFCE56',
+    'Location': '#4BC0C0',
+    'Song': '#9966FF'
+};
+
+function cardTypeColor(cardType) {
+    return CARD_TYPE_COLORS[cardType] || '#FF9F40';
+}
+
 function updateCardTypeChart() {
     if (!setData || !cardTypeChart || !setData.chartData) return;
 
     const chartData = setData.chartData.cardTypeChart;
     cardTypeChart.data.labels = chartData.labels;
     cardTypeChart.data.datasets[0].data = chartData.data;
+    cardTypeChart.data.datasets[0].backgroundColor = chartData.labels.map(cardTypeColor);
     cardTypeChart.update();
 }
 

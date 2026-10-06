@@ -223,6 +223,9 @@
             font-size: 12px;
             transition: all 0.3s ease;
         }
+        .cube-dir-btn-img {
+            vertical-align: middle;
+        }
         #element-draft {
             background: linear-gradient(45deg, #4CAF50, #66BB6A);
             box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
@@ -232,16 +235,60 @@
             transform: translateY(-1px);
             box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
         }
-        #element-duels {
-            display: inline-block;
-            text-decoration: none;
-            background: linear-gradient(45deg, #5c6bc0, #7986cb);
-            box-shadow: 0 2px 8px rgba(92, 107, 192, 0.3);
+        .draft-split {
+            position: relative;
+            display: inline-flex;
         }
-        #element-duels:hover {
-            background: linear-gradient(45deg, #3f51b5, #5c6bc0);
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(92, 107, 192, 0.4);
+        .draft-split #element-draft {
+            margin-right: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        #element-draft-arrow {
+            margin-left: 0;
+            padding: 6px 7px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-left: 1px solid rgba(255, 255, 255, 0.35);
+            background: linear-gradient(45deg, #43A047, #4CAF50);
+        }
+        #element-draft-arrow:hover {
+            background: linear-gradient(45deg, #2E7D32, #388E3C);
+        }
+        .draft-menu {
+            position: absolute;
+            top: 100%;
+            right: 2px;
+            z-index: 10;
+            margin-top: 2px;
+            min-width: 140px;
+            background-color: #333;
+            border: 1px solid #666;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            overflow: hidden;
+        }
+        .draft-menu[hidden] {
+            display: none;
+        }
+        .draft-menu-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+            padding: 8px 12px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 12px;
+            text-align: left;
+            cursor: pointer;
+        }
+        .draft-menu-option:hover {
+            background-color: #ff6b35;
+        }
+        .cube-element.draft-menu-open {
+            z-index: 10;
         }
         #element-row-1 {
             text-align: left;
@@ -370,8 +417,13 @@
                             <span class="cards" style="white-space: nowrap;">( <span id="element-cards" >CARD_COUNT</span> <img src="static/img/deck-of-cards.png" alt="Card Count (deck of cards)" height="14px" title="cards in cube"/> <span hidden="true" id="element-times-viewed" >VIEWED_COUNT</span> <img hidden="true" src="static/img/eye.png" alt="Times Drafted (hand of cards)" height="14px" title="times viewed"/> <span hidden="true" id="element-times-drafted" >DRAFTED_COUNT</span> <img hidden="true" src="static/img/hand-of-cards.png" alt="Times Drafted (hand of cards)" height="14px" title="times drafted"/> ) </span>
                         </div>
                         <div id="element-row-1-right">
-                            <span><button id="element-draft" class="cube-dir-btn" ><img class="cube-dir-btn-img" src="static/img/hand-of-cards.png" height="14px"/> Draft!</button></span>
-                            <span><a id="element-duels" class="cube-dir-btn" target="_blank" rel="noopener" title="Draft on duels.ink">duels.ink</a></span>
+                            <span class="draft-split">
+                                <button id="element-draft" class="cube-dir-btn" title="Draft on Draftmancer">Draft <img class="cube-dir-btn-img" src="static/img/draftmancer-icon.png" alt="Draftmancer" height="14px"/></button><button id="element-draft-arrow" class="cube-dir-btn" title="Choose where to draft" aria-haspopup="true" aria-expanded="false">&#9662;</button>
+                                <div id="element-draft-menu" class="draft-menu" role="menu" hidden>
+                                    <button class="draft-menu-option" data-draft-site="draftmancer" role="menuitem"><img src="static/img/draftmancer-icon.png" alt="" height="14px"/> Draftmancer</button>
+                                    <button class="draft-menu-option" data-draft-site="duels" role="menuitem"><img src="static/img/duels-ink-icon.svg" alt="" height="14px"/> duels.ink</button>
+                                </div>
+                            </span>
                         </div>
                     </div>
                     <div id="element-row-2" class="element-row-2" >

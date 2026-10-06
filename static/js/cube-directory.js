@@ -30,6 +30,44 @@ function renderActiveFilters() {
     }
 }
 
+function draftOnDraftmancer(cube) {
+    let newTab = window.open("/loading");
+    const cubeDraftmancerUrl = `${window.location.origin}/api/cube/${cube.id}/draftmancerFile`;
+    request(cubeDraftmancerUrl, null, (responseText) => {
+        let response = JSON.parse(responseText);
+        generateDraftmancerSession(response.draftmancerFile, newTab, response.metadata);
+    },
+    () => {
+        newTab.close();
+    },
+    'GET');
+}
+
+function draftOnDuelsInk(cube) {
+    const duelsUrl = new URL('https://duels.ink/draft/new');
+    duelsUrl.searchParams.set('cubecana', cube.id);
+    duelsUrl.searchParams.set('name', cube.name);
+    window.open(duelsUrl.toString(), '_blank', 'noopener');
+}
+
+const draftSites = {
+    draftmancer: draftOnDraftmancer,
+    duels: draftOnDuelsInk,
+};
+
+function closeDraftMenus() {
+    container.querySelectorAll('.draft-menu').forEach(menu => menu.hidden = true);
+    container.querySelectorAll('#element-draft-arrow').forEach(arrow => arrow.setAttribute('aria-expanded', 'false'));
+    container.querySelectorAll('.draft-menu-open').forEach(element => element.classList.remove('draft-menu-open'));
+}
+
+document.addEventListener('click', closeDraftMenus);
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+        closeDraftMenus();
+    }
+});
+
 function populateCubes(cubes) {
     container.innerHTML = '';
     cubes.forEach(cube => {
@@ -68,21 +106,27 @@ function populateCubes(cubes) {
             
             clone.getElementById("element-draft").addEventListener("click", function(event) {
                 event.stopPropagation(); // Prevent the cube element click event
-                let newTab = window.open("/loading");
-                const cubeDraftmancerUrl = `${window.location.origin}/api/cube/${cube.id}/draftmancerFile`;
-                request(cubeDraftmancerUrl, null, (responseText) => {
-                    let response = JSON.parse(responseText);
-                    generateDraftmancerSession(response.draftmancerFile, newTab, response.metadata);
-                }, 
-                () => {
-                    newTab.close();
-                }, 
-                'GET');
+                draftOnDraftmancer(cube);
             });
-            const duelsUrl = new URL('https://duels.ink/draft/new');
-            duelsUrl.searchParams.set('cubecana', cube.id);
-            duelsUrl.searchParams.set('name', cube.name);
-            clone.getElementById("element-duels").href = duelsUrl.toString();
+            const draftMenu = clone.getElementById("element-draft-menu");
+            const draftArrow = clone.getElementById("element-draft-arrow");
+            draftArrow.addEventListener("click", function(event) {
+                event.stopPropagation();
+                const wasOpen = !draftMenu.hidden;
+                closeDraftMenus();
+                if (!wasOpen) {
+                    draftMenu.hidden = false;
+                    draftArrow.setAttribute('aria-expanded', 'true');
+                    cubeElement.classList.add('draft-menu-open');
+                }
+            });
+            draftMenu.querySelectorAll('.draft-menu-option').forEach(option => {
+                option.addEventListener("click", function(event) {
+                    event.stopPropagation();
+                    closeDraftMenus();
+                    draftSites[option.dataset.draftSite](cube);
+                });
+            });
             clone.getElementById("element-last-updated").textContent = "updated: " + new Date(cube.lastUpdatedEpochSeconds * 1000).toDateString();
             let elementTags = clone.getElementById("element-tags");
             cube.tags.forEach(tag => {

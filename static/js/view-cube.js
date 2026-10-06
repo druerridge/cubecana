@@ -11,6 +11,8 @@ let intervalId = setInterval(() => {
 const currentUrl = window.location.href;
 const cubeId = currentUrl.split('/cube/')[1].split("/draft")[0];
 const draftNowButton = document.getElementById('draft-now-button');
+const draftArrowButton = document.getElementById('draft-arrow-button');
+const draftMenu = document.getElementById('draft-menu');
 const viewListButton = document.getElementById('view-list-button');
 const analysisButton = document.getElementById('analysis-button');
 const cubeTitle = document.getElementById('cube-title');
@@ -36,6 +38,7 @@ const cubeAnalysisUrl = `/cube/${cubeId}/analysis`
 request(apiCubeUrl, null, (responseText) => {
     let response = JSON.parse(responseText);
     draftNowButton.disabled = false;
+    draftArrowButton.disabled = false;
     analysisButton.disabled = false;
     if (isValidCardlistUrl(response.link)) {
         viewListButton.disabled = false
@@ -89,16 +92,50 @@ request(apiCubeUrl, null, (responseText) => {
     // Show instructions and buttons
     instructionsSection.style.display = 'block';
 
-    draftNowButton.addEventListener('click', () => {
+    const draftOnDraftmancer = () => {
         let newTab = window.open("/loading");
         request(draftmancerFileUrl, null, (responseText) => {
                     let response = JSON.parse(responseText);
                     generateDraftmancerSession(response.draftmancerFile, newTab, response.metadata);
-                }, 
+                },
                 () => {
                     newTab.close();
-                }, 
+                },
                 'GET');
+    };
+    const draftOnDuelsInk = () => {
+        const duelsUrl = new URL('https://duels.ink/draft/new');
+        duelsUrl.searchParams.set('cubecana', cubeId);
+        duelsUrl.searchParams.set('name', response.name);
+        window.open(duelsUrl.toString(), '_blank', 'noopener');
+    };
+    const draftSites = {
+        draftmancer: draftOnDraftmancer,
+        duels: draftOnDuelsInk,
+    };
+    const closeDraftMenu = () => {
+        draftMenu.hidden = true;
+        draftArrowButton.setAttribute('aria-expanded', 'false');
+    };
+
+    draftNowButton.addEventListener('click', draftOnDraftmancer);
+    draftArrowButton.addEventListener('click', (event) => {
+        event.stopPropagation();
+        draftMenu.hidden = !draftMenu.hidden;
+        draftArrowButton.setAttribute('aria-expanded', String(!draftMenu.hidden));
+    });
+    draftMenu.querySelectorAll('.draft-menu-option').forEach(option => {
+        option.addEventListener('click', (event) => {
+            event.stopPropagation();
+            closeDraftMenu();
+            draftSites[option.dataset.draftSite]();
+        });
+    });
+    document.addEventListener('click', closeDraftMenu);
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            closeDraftMenu();
+        }
     });
 
     viewListButton.addEventListener('click', () => {

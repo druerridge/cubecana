@@ -356,11 +356,76 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
         }
-        #draft-now-button:disabled {
+        #draft-now-button:disabled, #draft-arrow-button:disabled {
             background: #666;
             cursor: not-allowed;
             transform: none;
             box-shadow: none;
+        }
+        .draft-split {
+            position: relative;
+            display: inline-flex;
+            margin: 8px 12px;
+        }
+        .draft-split #draft-now-button {
+            margin: 0;
+            min-width: 160px;
+            width: auto;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .draft-split #draft-now-button:hover {
+            transform: none;
+        }
+        .draft-icon {
+            vertical-align: middle;
+        }
+        #draft-arrow-button {
+            margin: 0;
+            min-width: 0;
+            width: auto;
+            padding: 12px 14px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-left: 1px solid rgba(255, 255, 255, 0.35);
+            background: linear-gradient(45deg, #ff7a45, #ff8c42);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+        #draft-arrow-button:hover:not(:disabled) {
+            background: linear-gradient(45deg, #ff5722, #ff7043);
+        }
+        .draft-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            z-index: 10;
+            margin-top: 4px;
+            min-width: 180px;
+            background-color: #333;
+            border: 1px solid #666;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            overflow: hidden;
+        }
+        .draft-menu[hidden] {
+            display: none;
+        }
+        .draft-menu-option {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            padding: 10px 14px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 15px;
+            text-align: left;
+            cursor: pointer;
+        }
+        .draft-menu-option:hover {
+            background-color: #ff6b35;
         }
         #view-list-button {
             background: linear-gradient(45deg, #8e24aa, #ab47bc);
@@ -483,7 +548,13 @@
         <div id="instructions" class="buttons-section" style="display: none;">
             <p>After clicking below, press "Start" on draftmancer to begin.</p>
             <div class="button-row">
-                <button id="draft-now-button" class="action-button" disabled>Draft Now</button>
+                <span class="draft-split">
+                    <button id="draft-now-button" class="action-button" title="Draft on Draftmancer" disabled>Draft <img class="draft-icon" src="{{ url_for('static', filename='img/draftmancer-icon.png') }}" alt="Draftmancer" height="18px"/></button><button id="draft-arrow-button" class="action-button" title="Choose where to draft" aria-haspopup="true" aria-expanded="false" disabled>&#9662;</button>
+                    <div id="draft-menu" class="draft-menu" role="menu" hidden>
+                        <button class="draft-menu-option" data-draft-site="draftmancer" role="menuitem"><img src="{{ url_for('static', filename='img/draftmancer-icon.png') }}" alt="" height="16px"/> Draftmancer</button>
+                        <button class="draft-menu-option" data-draft-site="duels" role="menuitem"><img src="{{ url_for('static', filename='img/duels-ink-icon.svg') }}" alt="" height="16px"/> duels.ink</button>
+                    </div>
+                </span>
                 <button id="view-list-button" class="action-button" disabled>View Dreamborn</button>
                 <button id="analysis-button" class="action-button" disabled>Analysis</button>
             </div>

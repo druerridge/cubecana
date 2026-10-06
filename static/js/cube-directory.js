@@ -79,6 +79,10 @@ function populateCubes(cubes) {
                 }, 
                 'GET');
             });
+            const duelsUrl = new URL('https://duels.ink/draft/new');
+            duelsUrl.searchParams.set('cubecana', cube.id);
+            duelsUrl.searchParams.set('name', cube.name);
+            clone.getElementById("element-duels").href = duelsUrl.toString();
             clone.getElementById("element-last-updated").textContent = "updated: " + new Date(cube.lastUpdatedEpochSeconds * 1000).toDateString();
             let elementTags = clone.getElementById("element-tags");
             cube.tags.forEach(tag => {

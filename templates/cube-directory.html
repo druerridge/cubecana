@@ -290,6 +290,33 @@
         .cube-element.draft-menu-open {
             z-index: 10;
         }
+        /* Larger touch targets for the draft button on phones */
+        @media (max-width: 768px) {
+            .cube-dir-btn {
+                font-size: 15px;
+                padding: 10px 14px;
+                min-height: 44px;
+            }
+            .cube-dir-btn-img {
+                height: 18px;
+            }
+            #element-draft-arrow {
+                min-width: 44px;
+                padding: 10px 12px;
+                font-size: 16px;
+            }
+            .draft-menu {
+                min-width: 180px;
+            }
+            .draft-menu-option {
+                font-size: 16px;
+                padding: 14px 16px;
+                gap: 10px;
+            }
+            .draft-menu-option img {
+                height: 20px;
+            }
+        }
         #element-row-1 {
             text-align: left;
             vertical-align: top;

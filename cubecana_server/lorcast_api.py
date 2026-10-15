@@ -166,6 +166,11 @@ class LorcastApi:
         # core sets are pure numbers while promos and special sets are not
         return self.is_number(set_code)
 
+    def is_standard_printing(self, printing: CardPrinting) -> bool:
+        # a card's regular printing in a numbered set, rather than a promo or alt art.
+        # not based on core legality, since rotated sets (e.g. 1-8) are no longer core legal.
+        return self.is_core_set(printing.set_code) and printing.rarity not in ALT_ART_RARITIES and not self.is_alternate_art(printing)
+
     def generate_id_to_api_card(self, printing_id_str_to_printing_untyped: dict[PrintingId, dict]) -> dict[str, ApiCard]:
         id_to_api_card: dict[str, ApiCard] = {}
         for printing_id_str in printing_id_str_to_printing_untyped:
@@ -175,7 +180,8 @@ class LorcastApi:
                 api_card = id_to_api_card[printing_id.card_id]
                 new_printing = self.printing_from_printing_untyped(printing_untyped)
                 api_card.card_printings.append(new_printing)
-                if self.is_core_printing(new_printing) and not self.is_core_printing(api_card.default_printing):
+                # printings are in set release order, so this keeps the earliest standard printing
+                if self.is_standard_printing(new_printing) and not self.is_standard_printing(api_card.default_printing):
                     api_card.default_printing = new_printing
             else:
                 id_to_api_card[printing_id.card_id] = self.api_card_from(printing_untyped)

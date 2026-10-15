@@ -17,6 +17,7 @@ class Settings:
         self.power_band = power_band
         self.author = author
         self.set_card_types = bool(set_card_types)
+        self.ratings_missing = False
 
     def to_draftmancer_settings(self):
         if self.author:
@@ -32,6 +33,9 @@ class Settings:
 
         if self.color_balance_packs == True:
             draftmancer_settings['colorBalance'] = True
+
+        if self.ratings_missing == True:
+            draftmancer_settings['ratingsMissing'] = True
 
         return draftmancer_settings
     

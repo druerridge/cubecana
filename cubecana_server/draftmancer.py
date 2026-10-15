@@ -112,6 +112,7 @@ def generate_custom_card_list(
     ) -> list[dict]:
     custom_card_list:list[dict] = []
     failed_printing_ids = list[PrintingId]()
+    num_missing_ratings = 0
     for printing_id in printing_ids_to_include:
         card_id = printing_id.card_id
         api_card: ApiCard = lorcana_api.get_api_card(card_id)
@@ -149,8 +150,8 @@ def generate_custom_card_list(
         if card_id in id_to_rating:
             custom_card['rating'] = id_to_rating[card_id]
         else:
-            logger.warning(f"Missing rating for {full_name}")
-            # TODO: probably tell user rating is missing
+            # logger.warning(f"Missing rating for {full_name}")
+            num_missing_ratings += 1
 
         if "Location" in api_card.types:
             custom_card['layout'] = "split" # causes card to be displayed horizontally where possible        
@@ -180,6 +181,9 @@ def generate_custom_card_list(
                 error_message += f"\n   Available printings: {', '.join([str(p.printing_id()) for p in api_card.card_printings])}"
 
         raise LccError(error_message, 404)
+    if num_missing_ratings > 0:
+        logger.warning(f"Number of cards missing ratings: {num_missing_ratings} for {settings.card_list_name}")
+        settings.ratings_missing = num_missing_ratings > 5
     return custom_card_list
 
 def write_draftmancer_file(draftmancer_file_string, card_list_name):

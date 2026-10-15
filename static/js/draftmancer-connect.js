@@ -85,7 +85,7 @@ export function generateDraftmancerSession(CubeFile, tabToOpen, metadata, gameMo
                                 socket.disconnect();
                             });
                         } else if (gameMode == GAME_MODE.SEALED) {
-                            socket.emit("distributeSealed", 6, null, (res) => {
+                            socket.emit("distributeSealed", metadata.sealedBoostersPerPlayer ?? 6, null, (res) => {
                                 if (res.code < 0) {
                                     console.error(res);
                                 } else {

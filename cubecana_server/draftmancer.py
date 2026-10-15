@@ -69,7 +69,9 @@ def to_draftmancer_colors(lorcana_ink, settings: Settings, lorcast_inks: list[st
     if lorcast_inks:
         draftmancer_colors = []
         for lorcast_color in lorcast_inks:
-            draftmancer_colors.append(lorcana_color_to_draftmancer_color[lorcast_color])
+            # Steel has no draftmancer color. Leave it out, since an empty string breaks sorting on draftmancer.
+            if lorcana_color_to_draftmancer_color[lorcast_color]:
+                draftmancer_colors.append(lorcana_color_to_draftmancer_color[lorcast_color])
         return draftmancer_colors
     if lorcana_color_to_draftmancer_color[lorcana_ink]:
         return [lorcana_color_to_draftmancer_color[lorcana_ink]]

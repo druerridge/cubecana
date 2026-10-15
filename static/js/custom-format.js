@@ -1,3 +1,5 @@
+import { generateDraftmancerSession, GAME_MODE } from "draftmancer-connect";
+
 const MODE = {
     DRAFT: 'draft',
     SEALED: 'sealed',
@@ -43,7 +45,6 @@ const roundOrderList = document.getElementById('round-order');
 const packBreakdownList = document.getElementById('pack-breakdown');
 const warningsContainer = document.getElementById('warnings');
 const startButton = document.getElementById('start-btn');
-const configPreview = document.getElementById('config-preview');
 
 let retailSets = []; // [{id, name}]
 let state = {
@@ -272,12 +273,16 @@ function buildConfig() {
 }
 
 function onStart() {
-    // Stage 1: no backend yet. Stage 2 will POST this config to generate a draftmancer file
-    // and hand it to generateDraftmancerSession.
-    const config = buildConfig();
-    configPreview.textContent = JSON.stringify(config, null, 2);
-    configPreview.style.display = 'block';
-    popToastNotification(`${state.mode === MODE.DRAFT ? 'Draft' : 'Sealed'} isn't wired up yet - config shown below.`);
+    const newTab = window.open("/loading");
+    const gameMode = state.mode === MODE.DRAFT ? GAME_MODE.DRAFT : GAME_MODE.SEALED;
+    request(`${window.location.origin}/api/custom_format/draftmancerFile`, JSON.stringify(buildConfig()), (responseText) => {
+        const response = JSON.parse(responseText);
+        generateDraftmancerSession(response.draftmancerFile, newTab, response.metadata, gameMode);
+    },
+    () => {
+        newTab.close();
+    },
+    'POST');
 }
 
 modeToggle.querySelectorAll('button').forEach(button => {

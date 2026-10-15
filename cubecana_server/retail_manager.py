@@ -5,6 +5,7 @@ from typing import List
 from . import lcc_error
 from . import draftmancer
 from . import generate_retail
+from . import custom_format
 from .lorcast_api import lorcast_api
 
 logger = logging.getLogger(__name__)
@@ -84,6 +85,12 @@ class RetailManager:
         if retail_set is None:
             raise lcc_error.RetailSetNotFoundError(f"Retail set with id {id} not found")
         return api.RetailSet(id=retail_set.id, name=retail_set.name, draftmancerFile=retail_set.draftmancer_file_contents)
+
+    def generate_custom_format_file(self, name: str, pack_selections: List[custom_format.PackSelection], add_deckbuilding_info: bool = False) -> str:
+        set_id_to_draftmancer_file: dict[str, str] = {}
+        for pack_selection in pack_selections:
+            set_id_to_draftmancer_file[pack_selection.set_id] = self.get_set(pack_selection.set_id).draftmancerFile
+        return custom_format.generate_custom_format_file(name, pack_selections, set_id_to_draftmancer_file, add_deckbuilding_info)
 
 retail_manager: RetailManager = RetailManager()
 retail_manager.init()

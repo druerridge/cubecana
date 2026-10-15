@@ -13,6 +13,7 @@ logging.raiseExceptions = False
 from flask import Flask, render_template, request, Response, send_from_directory, redirect
 from flask import jsonify
 from cubecana_server import draftmancer
+from cubecana_server import custom_format
 from cubecana_server import franchise
 from cubecana_server.double_feature_manager import double_feature_manager
 from cubecana_server.pixelborn_manager import pixelborn_manager
@@ -306,6 +307,28 @@ def retail_draft_started(set_id:str):
     return lcc_error.RetailSetNotFoundError("Retail set not found")
   draft = draft_manager.create_retail_draft(set_id, GAME_MODE_DRAFT)
   return jsonify({'draftId': draft.draft_id})
+
+@app.route('/api/custom_format/draftmancerFile', methods=['POST'])
+def get_custom_format_draftmancer_file():
+  custom_format_request = request.get_json()
+  if not isinstance(custom_format_request, dict):
+    raise lcc_error.LccError("Custom format must be a JSON object.", 400)
+  pack_selections = custom_format.parse_pack_selections(custom_format_request.get('packs'))
+  name = custom_format.clean_name(custom_format_request.get('name'))
+  is_sealed = custom_format_request.get('mode') == 'sealed'
+  draftmancer_file = retail_manager.generate_custom_format_file(name, pack_selections, add_deckbuilding_info=is_sealed)
+  boosters_per_player = custom_format.total_packs(pack_selections)
+  response = {
+    'draftmancerFile': draftmancer_file,
+    'metadata': {
+      'cardCount': boosters_per_player * 12 * 8,
+      'cardsPerBooster': 12,
+      'boostersPerPlayer': boosters_per_player,
+      'sealedBoostersPerPlayer': boosters_per_player,
+      'cubeName': name,
+      'author': "Ravensburger",
+    }}
+  return jsonify(response)
 
 @app.route('/api/retail_sets/<string:set_id>/analysis', methods=['GET'])
 def get_retail_set_analysis(set_id:str):

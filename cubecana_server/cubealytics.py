@@ -1,3 +1,4 @@
+import logging
 import json
 from dataclasses import dataclass
 from .cube_manager import CubeManager, cube_manager
@@ -6,6 +7,8 @@ from .lorcast_api import lorcast_api as lorcana_api
 import csv
 from pathlib import Path
 from .card import PrintingId
+
+logger = logging.getLogger(__name__)
 
 @dataclass(frozen=True)
 class CardPopularityReport: 
@@ -34,7 +37,7 @@ class CardPopularityReport:
                     self.id_to_num_cubes_containing[card_id],
                     self.id_to_ratio_cubes_included[card_id],
                 ])
-        print(f"CSV file created at {filename}")
+        logger.info(f"CSV file created at {filename}")
 
 class Cubealytics:
     def generate_card_popularity_report(self, included_tags: list[str] = None, included_power_bands: str = None) -> CardPopularityReport:
@@ -62,7 +65,7 @@ class Cubealytics:
             included_power_bands=included_power_bands,
         )
         card_popularity_report.write_to_csv("static/reports/power_max_card_popularity_report.csv")
-        print(f"Cube report generated for tags: {included_tags}, power bands: {included_power_bands} analyzed {len(all_cube_lists)} cubes.")
+        logger.info(f"Cube report generated for tags: {included_tags}, power bands: {included_power_bands} analyzed {len(all_cube_lists)} cubes.")
         return card_popularity_report
 
 cubealytics:Cubealytics = Cubealytics()

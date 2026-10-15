@@ -1,7 +1,10 @@
+import logging
 from pathlib import Path
 import json
 from . import id_helper
 import requests
+
+logger = logging.getLogger(__name__)
 
 CACHED_API_DATA_FILEPATH = 'api_data_cache.json'
 
@@ -16,7 +19,7 @@ def fetch_api_data():
     page = 1
     while True:
         url = f'https://api.lorcana-api.com/cards/all?page={page}'
-        print(f'Fetching {url}...')
+        logger.info(f'Fetching {url}...')
         res = requests.get(url)
         data = res.json()
         if len(data) == 0:

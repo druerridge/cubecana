@@ -1,3 +1,4 @@
+import logging
 import json
 from pathlib import Path
 from collections import defaultdict
@@ -6,6 +7,8 @@ from .card import ApiCard, PrintingId
 from .lcc_error import LccError
 from .lorcast_api import lorcast_api as lorcana_api
 from .dreamborn_manager import dreamborn_manager
+
+logger = logging.getLogger(__name__)
 
 TTS_SCALE_X = 1.2
 TTS_SCALE_Y = 1
@@ -47,7 +50,7 @@ def read_id_to_tts_card_from_filesystem(dreamborn_tts_export_filepath, id_to_cou
         files = dreamborn_tts_export_path.glob('*')
         for file in files:
             if file.is_file():
-                print(file)
+                logger.info(file)
                 id_to_tts_card = generate_id_to_tts_card_from_file(file, id_to_tts_card, id_to_count_filter)
     else:
         id_to_tts_card = generate_id_to_tts_card_from_file(dreamborn_tts_export_path, id_to_tts_card, id_to_count_filter)
@@ -56,7 +59,7 @@ def read_id_to_tts_card_from_filesystem(dreamborn_tts_export_filepath, id_to_cou
 def write_tts_deck_file(tts_deck):
     with open(TTS_OUTPUT_PATH, "w") as file:
         json.dump(tts_deck, file)
-        print("wrote tts deck to: " + TTS_OUTPUT_PATH)
+        logger.info("wrote tts deck to: " + TTS_OUTPUT_PATH)
 
 def generate_contained_obj(card_name, current_card_index, previous_card_index):
     card_id = '{cur}{prev:02d}'.format(cur=current_card_index, prev=previous_card_index)

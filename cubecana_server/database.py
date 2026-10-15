@@ -1,8 +1,11 @@
+import logging
 import json
 from pathlib import Path
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
 from sqlalchemy.ext.declarative import declarative_base
+
+logger = logging.getLogger(__name__)
 
 # Shared base for all models
 Base = declarative_base()
@@ -30,7 +33,7 @@ class DatabaseConnection:
                 creds_json = json.load(f)
                 db_url = f"mysql://{creds_json['db_username']}:{creds_json['db_password']}@{creds_json['db_host']}/{creds_json['db_name']}?charset=utf8mb4"
         else:
-            print(f"No creds file found at {creds_file.absolute()}, exiting")
+            logger.error(f"No creds file found at {creds_file.absolute()}, exiting")
             raise SystemExit(1)
 
         # Create a single connection pool for the entire application

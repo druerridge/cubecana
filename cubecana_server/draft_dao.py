@@ -1,3 +1,4 @@
+import logging
 import uuid
 import time
 from typing import Optional
@@ -5,6 +6,8 @@ from sqlalchemy import Column, Integer, exc
 from sqlalchemy.dialects.mysql import BINARY, VARCHAR
 from .database import Base, db_connection
 from .cubecana_draft import DraftStatus, DraftSourceType
+
+logger = logging.getLogger(__name__)
 
 OPERATIONAL_ERROR_RETRIES = 1
 
@@ -36,14 +39,13 @@ class DraftDao:
             session.close()
             session = None
             if retries_attempted < OPERATIONAL_ERROR_RETRIES:
-                print(f"OperationalError: {e}, retrying...")
+                logger.warning(f"OperationalError: {e}, retrying...")
                 return self.execute(operation, retries_attempted + 1, *args, **kwargs)
             else:
-                print("Max retries reached, raising exception")
+                logger.error("Max retries reached, raising exception")
                 raise e
         except Exception as e:
-            print("Error executing db query")
-            print(e)
+            logger.exception("Error executing db query")
             raise e
         finally:
             if session:

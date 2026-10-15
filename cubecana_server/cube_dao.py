@@ -1,3 +1,4 @@
+import logging
 import uuid
 import json
 from pathlib import Path
@@ -7,6 +8,8 @@ from sqlalchemy import Column, String, Integer, JSON, func, exc
 from sqlalchemy.dialects.mysql import BINARY, VARCHAR, TEXT
 from . import api
 from .database import Base, db_connection
+
+logger = logging.getLogger(__name__)
 
 MAX_CARD_LIST_LENGTH = 80000  # MIGHT have to update the DB if you change this... but maybe not
 PAGE_VIEW_COEFFICIENT = 1
@@ -62,14 +65,13 @@ class CubeDao:
             session.close()
             session = None
             if retries_attempted < OPERATIONAL_ERROR_RETRIES:
-                print(f"OperationalError: {e}, retrying...")
+                logger.warning(f"OperationalError: {e}, retrying...")
                 return self.execute(operation, retries_attempted + 1, *args, **kwargs)
             else:
-                print("Max retries reached, raising exception")
+                logger.error("Max retries reached, raising exception")
                 raise e
         except Exception as e:
-            print("Error executing db query")
-            print(e)
+            logger.exception("Error executing db query")
             raise e
         finally:
             if session:

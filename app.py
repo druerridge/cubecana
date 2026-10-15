@@ -1,7 +1,15 @@
 import base64
 import json
+import logging
 import math
+import sys
 from datetime import datetime
+
+# Configure logging before importing cubecana_server, whose modules log during import.
+logging.basicConfig(level=logging.INFO, stream=sys.stdout, format="%(asctime)s %(name)s %(levelname)s: %(message)s")
+logging.raiseExceptions = False
+
+
 from flask import Flask, render_template, request, Response, send_from_directory, redirect
 from flask import jsonify
 from cubecana_server import draftmancer
@@ -22,8 +30,9 @@ from cubecana_server import tabletop_simulator
 from cubecana_server.lorcast_api import lorcast_api as lorcana_api
 from cubecana_server.draft_manager import draft_manager
 from cubecana_server.card_evaluations import card_evaluations_manager, CardEvaluationsManager
-import traceback
 from cubecana_server import cubealytics # This is imported so it will init + generate startup report(s)
+
+logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 
@@ -234,7 +243,7 @@ def handle_double_feature_draft():
 
 @app.route('/api/draft/<string:draft_id>/draftmancer-log', methods=['POST'])
 def handle_draftmancer_draft_log(draft_id:str):
-  print(f"Received draftmancer log for draft {draft_id}:")
+  logger.info(f"Received draftmancer log for draft {draft_id}")
   draftmancer_log_dict = json.loads(request.data)
   draft = draft_manager.end_draft(draft_id, draftmancer_log_dict)
   if not draft:
@@ -525,5 +534,5 @@ def handle_foo_exception(error):
     }
     response = Response(json.dumps(user_facing_lcc_error), error.http_status_code, content_type="application/json")
     if app.debug:
-      traceback.print_exc()
+      logger.exception(error)
     return response

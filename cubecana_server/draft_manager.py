@@ -1,3 +1,4 @@
+import logging
 from enum import Enum
 import json
 import time
@@ -10,6 +11,8 @@ from cubecana_server.draft_dao import DbCubecanaDraft, draft_dao, DraftDao, Draf
 from cubecana_server.retail_manager import GAME_MODE_DRAFT
 from cubecana_server.cube_manager import CubeManager, cube_manager
 from cubecana_server.cubecana_cube import CubecanaCube
+
+logger = logging.getLogger(__name__)
 
 class DraftSourceType(str, Enum):
     CUBE = "CUBE"
@@ -54,29 +57,31 @@ def is_real_draft(draft_log_dict: dict, draft: Draft) -> bool:
     if draft.game_mode != GAME_MODE_DRAFT:
         return False # not sure what to do for sealed yet
     
+    stats = []
     num_human_players = sum(1 for human in filter(lambda user: not user["isBot"], draft_log_dict["users"].values()))
-    print(f"human players: {num_human_players}", end=" ")
+    stats.append(f"human players: {num_human_players}")
 
     pod_composition_type: PodCompositionType = calculate_pod_composition_type(draft_log_dict, num_human_players)
-    print(f"Pod composition type: {pod_composition_type}", end=" ")
+    stats.append(f"Pod composition type: {pod_composition_type}")
 
     picks_per_human = [len(human["picks"]) for human in filter(lambda user: not user["isBot"], draft_log_dict["users"].values())]
-    print(f"Picks / human: {picks_per_human}", end=" ")
+    stats.append(f"Picks / human: {picks_per_human}")
 
     picks_to_finish = 48 # retail is 12 * 4 = 48
     if draft.draft_source_type == DraftSourceType.CUBE: 
         cube: CubecanaCube = cube_manager.get_cube(draft.draft_source_id)
         picks_to_finish = cube.settings.boosters_per_player * cube.settings.cards_per_booster
     num_humans_finished_picking = sum(1 for picks in picks_per_human if picks >= picks_to_finish)
-    print(f"humans finished picking: {num_humans_finished_picking}", end=" ")
+    stats.append(f"humans finished picking: {num_humans_finished_picking}")
 
     if num_humans_finished_picking >= 1:
         draft_duration_seconds = draft.end_time_epoch_seconds - draft.start_time_epoch_seconds
         longest_average_pick_time_seconds = picks_to_finish / draft_duration_seconds
-        print(f"longest avg pick time (seconds): {longest_average_pick_time_seconds}", end=" ")
+        stats.append(f"longest avg pick time (seconds): {longest_average_pick_time_seconds}")
 
     num_human_decklists = sum(1 for player in filter(lambda user: not user["isBot"], draft_log_dict["users"].values()) if player.get("decklist"))
-    print(f"human decklists: {num_human_decklists}")
+    stats.append(f"human decklists: {num_human_decklists}")
+    logger.info(" ".join(stats))
 
     return num_humans_finished_picking >= 1
 
@@ -97,9 +102,9 @@ def write_draft_to_disk(draft_log_dict: dict, draft: Draft):
         Path(filename).parent.mkdir(parents=True, exist_ok=True)
         with open(filename, "w") as f:
             json.dump(draft_log_dict, f, separators=(',', ':'))
-        print(f"Draft log written to {filename}")
+        logger.info(f"Draft log written to {filename}")
     except Exception as e:
-        print(f"Error writing draft log to disk: {e}")
+        logger.exception(f"Error writing draft log to disk: {e}")
 
 class DraftManager:
 

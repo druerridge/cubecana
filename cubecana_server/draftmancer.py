@@ -1,3 +1,4 @@
+import logging
 from dataclasses import dataclass
 from io import TextIOWrapper
 import json
@@ -14,6 +15,8 @@ from .card_evaluations import card_evaluations_manager
 from . import tabletop_simulator
 from .dreamborn_manager import dreamborn_manager
 from .lorcana import ALT_ART_RARITIES
+
+logger = logging.getLogger(__name__)
 
 ALL_CARDS_CUBE_PATH = 'inputs/all_cards_cube.draftmancer.txt'
 GENERATED_CUBES_DIR = 'generated_cubes'
@@ -146,7 +149,7 @@ def generate_custom_card_list(
         if card_id in id_to_rating:
             custom_card['rating'] = id_to_rating[card_id]
         else:
-            print(f"Missing rating for {full_name}")
+            logger.warning(f"Missing rating for {full_name}")
             # TODO: probably tell user rating is missing
 
         if "Location" in api_card.types:
@@ -187,7 +190,7 @@ def write_draftmancer_file(draftmancer_file_string, card_list_name):
     with open(file_path, 'w', encoding="utf-8") as file:
         for line in draftmancer_file_as_lines:
             file.write(line + '\n')
-    print(f'Wrote draftmancer file to {file_name}')
+    logger.info(f'Wrote draftmancer file to {file_name}')
 
 def generate_draftmancer_file(included_printing_ids_to_count:dict[PrintingId, int], card_evaluations_file: str, settings: Settings, slot_name_to_slot:dict[str, Slot]=None, card_id_to_colors:dict[str, list[str]]=None) -> str:
     id_to_rating = card_evaluations_manager.read_id_to_draftmancer_rating(card_evaluations_file)

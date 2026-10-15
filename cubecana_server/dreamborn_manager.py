@@ -1,6 +1,9 @@
+import logging
 from pathlib import Path
 from . import id_helper
 from .card import PrintingId
+
+logger = logging.getLogger(__name__)
 
 ALL_DREAMBORN_NAMES_FILE_PATH = 'inputs/all_dreamborn_names.txt'
 
@@ -53,7 +56,7 @@ class DreambornManager:
         if printing_id.set_code in self.LEGACY_IMAGE_SET_CODES:
             return f"https://cdn.dreamborn.ink/images/{language_code}/cards/{image_set_code}-{collector_id}?tts"  
         else:
-            print(f"Image URIs for non-legacy set code on dreamborn not avail. for image uri: {printing_id.set_code}")
+            logger.warning(f"Image URIs for non-legacy set code on dreamborn not avail. for image uri: {printing_id.set_code}")
             return ""
         
 dreamborn_manager:DreambornManager = DreambornManager()

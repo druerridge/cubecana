@@ -1,11 +1,13 @@
 from dataclasses import dataclass
-import traceback
+import logging
 from . import api
 from typing import List
 from . import lcc_error
 from . import draftmancer
 from . import generate_retail
 from .lorcast_api import lorcast_api
+
+logger = logging.getLogger(__name__)
 
 GAME_MODE_SUPER_SEALED = "SUPER_SEALED"
 GAME_MODE_SEALED = "SEALED"
@@ -59,13 +61,12 @@ class RetailManager:
             try:
                 retail_sets[set_code] = self.generate_retail_set(set_code)
             except Exception:
-                print(f"Failed to generate retail set {set_code}:")
-                traceback.print_exc()
+                logger.exception(f"Failed to generate retail set {set_code}")
                 if set_code in self.retail_sets:
-                    print(f"Keeping previously generated retail set {set_code}")
+                    logger.warning(f"Keeping previously generated retail set {set_code}")
                     retail_sets[set_code] = self.retail_sets[set_code]
         self.retail_sets = retail_sets
-        print(f"Generated {len(retail_sets)} retail sets.")
+        logger.info(f"Generated {len(retail_sets)} retail sets.")
 
     def get_set_count(self) -> int:
        return self.retail_sets.__len__()

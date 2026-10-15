@@ -5,10 +5,13 @@ import tempfile
 import os
 import json
 import re
+import logging
 from typing import Dict, List, Any, Optional
 from cubecana_server import draftmancer
 from cubecana_server.lorcast_api import lorcast_api
 from cubecana_server import id_helper
+
+logger = logging.getLogger(__name__)
 
 
 class FormatAnalyzer:
@@ -46,14 +49,12 @@ class FormatAnalyzer:
             # Build comprehensive card analysis
             analysis_data = self._build_card_analysis(max_players)
             
-            print(f"Successfully analyzed format with {len(self.custom_cards)} cards and {len(analysis_data['traits'])} traits")
+            logger.info(f"Successfully analyzed format with {len(self.custom_cards)} cards and {len(analysis_data['traits'])} traits")
             
             return analysis_data
             
         except Exception as e:
-            print(f"Error analyzing format: {e}")
-            import traceback
-            traceback.print_exc()
+            logger.exception(f"Error analyzing format: {e}")
             return self._get_empty_analysis()
     
     def _parse_draftmancer_file(self, file_contents: str) -> None:
@@ -93,7 +94,7 @@ class FormatAnalyzer:
                     try:
                         self.settings = json.loads(settings_json)
                     except json.JSONDecodeError as e:
-                        print(f"Failed to parse settings JSON: {e}")
+                        logger.warning(f"Failed to parse settings JSON: {e}")
                         self.settings = {}
                 in_settings = False
                 break
@@ -194,7 +195,7 @@ class FormatAnalyzer:
             api_card = lorcast_api.get_api_card(card_id)
             
             if not api_card:
-                print(f"Warning: No API data found for card '{card_name}', skipping...")
+                logger.warning(f"No API data found for card '{card_name}', skipping...")
                 continue
                 
             # Use API card data for all card properties

@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import json
 import threading
-import traceback
+import logging
 from typing import Callable
 
 from .dreamborn_manager import dreamborn_manager
@@ -10,6 +10,8 @@ from . import id_helper
 import requests
 from .card import ApiCard, CardPrinting, PrintingId, toPrintingId
 from .lorcana import ALT_ART_RARITIES
+
+logger = logging.getLogger(__name__)
 
 CACHED_API_DATA_FILEPATH = 'inputs/lorcast_api_cache/lorcast_api_data_cache.json'
 CACHED_API_DATA_SET_Q1_FILEPATH = 'inputs/lorcast_api_cache/lorcast_api_data_cache_q1.json'
@@ -44,8 +46,7 @@ class LorcastApi:
             try:
                 listener()
             except Exception:
-                print(f"Cache loaded listener {listener} failed:")
-                traceback.print_exc()
+                logger.exception(f"Cache loaded listener {listener} failed")
     
     def get_lorcast_full_name(self, printing_untyped: dict) -> str:
         if 'version' in printing_untyped:
@@ -57,11 +58,11 @@ class LorcastApi:
         return id_helper.to_id(lorcast_full_name)
 
     def download_api_data(self) -> dict[str, dict]:
-        print("Downloading API cards from API...")
+        logger.info("Downloading API cards from API...")
         printing_id_str_to_printing_untyped: dict[str, dict] = {}
         # get sets
         url = f'https://api.lorcast.com/v0/sets'
-        print(f'Fetching {url}...')
+        logger.info(f'Fetching {url}...')
         res = requests.get(url=url)
         sets_data = res.json()
         if sets_data is None:
@@ -74,7 +75,7 @@ class LorcastApi:
         for set in sets_results:
             code = set['code']
             url = f'https://api.lorcast.com/v0/sets/{code}/cards'
-            print(f'Fetching {url}...')
+            logger.info(f'Fetching {url}...')
             res = requests.get(url=url)
             cards_in_set = res.json()
             # iterate cards
@@ -181,7 +182,7 @@ class LorcastApi:
         return id_to_api_card
 
     def load_set_q1_data_from_disk(self) -> dict[PrintingId, dict]:
-        print("Fetching set Q1 cards from local file...")
+        logger.info("Fetching set Q1 cards from local file...")
         printing_id_str_to_printing_untyped = {}
         cached_set_q1_api_data_file = Path(CACHED_API_DATA_SET_Q1_FILEPATH)
         with cached_set_q1_api_data_file.open(mode='r') as file_to_read:
@@ -213,10 +214,10 @@ class LorcastApi:
             return
 
         if not cached_api_data_file.is_file():
-            print(f"API data cache not present on disk. Updating...")
+            logger.info("API data cache not present on disk. Updating...")
             self.fetch_persist_load_api_cache(cached_api_data_file)
         elif cached_api_data_file.is_file() and (datetime.now() - datetime.fromtimestamp(cached_api_data_file.stat().st_mtime) > MAX_CACHE_AGE):
-            print(f"API data cache is older than {MAX_CACHE_AGE}. Last updated at {datetime.fromtimestamp(cached_api_data_file.stat().st_mtime)}. Updating...")
+            logger.info(f"API data cache is older than {MAX_CACHE_AGE}. Last updated at {datetime.fromtimestamp(cached_api_data_file.stat().st_mtime)}. Updating...")
             self.fetch_persist_load_api_cache(cached_api_data_file)
         elif len(self.id_to_api_card) == 0:
             self.load_api_cache_from_disk(cached_api_data_file)
@@ -232,7 +233,7 @@ class LorcastApi:
     def fetch_api_and_persist_to_disk(self, cached_api_data_file):
         printing_id_to_printing_untyped = self.fetch_all_api_data()
         self.cache_api_data_to_disk(cached_api_data_file, printing_id_to_printing_untyped)
-        print(f"Data cache written to disk.")
+        logger.info("Data cache written to disk.")
 
     def cache_api_data_to_disk(self, cached_api_data_file, printing_id_to_printing_untyped):
         Path(cached_api_data_file).parent.mkdir(parents=True, exist_ok=True)
@@ -251,7 +252,7 @@ class LorcastApi:
             printing_id_str_to_printing_untyped = json.load(file_to_read)
             id_to_api_card = self.generate_id_to_api_card(printing_id_str_to_printing_untyped)
             self.id_to_api_card = id_to_api_card
-            print(f"API data cache loaded from disk with {len(self.id_to_api_card)} cards.")
+            logger.info(f"API data cache loaded from disk with {len(self.id_to_api_card)} cards.")
         self.notify_cache_loaded_listeners()
 
     def _handle_timer(self):

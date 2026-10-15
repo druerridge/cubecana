@@ -1,3 +1,4 @@
+import logging
 import json
 from cubecana_server.card import PrintingId
 from .draftmancer import DraftmancerFile
@@ -5,6 +6,8 @@ from .api import FormatAnalysisResponse
 from . import id_helper
 from .lorcast_api import lorcast_api as lorcana_api
 from .card_evaluations import card_evaluations_manager, CardEvaluationsManager, DEFAULT_CUBE_CARD_EVALUATIONS_FILE
+
+logger = logging.getLogger(__name__)
 
 def expects_no_lore(api_card):
     if 'Reckless' in api_card.keywords:
@@ -83,7 +86,7 @@ class FormatAnalysisManager:
                     count_at_table_by_willpower[api_card.cost] = {}
                 willpower = api_card.willpower
                 if willpower == None:
-                    print(f"Warning: Card {api_card.full_name} is a Character but has no willpower value.")
+                    logger.warning(f"Card {api_card.full_name} is a Character but has no willpower value.")
                 if willpower not in count_at_table_by_willpower[api_card.cost]:
                     count_at_table_by_willpower[api_card.cost][willpower] = 0
                 count_at_table_by_willpower[api_card.cost][willpower] += count_at_table
@@ -100,7 +103,7 @@ class FormatAnalysisManager:
                 if lore == None and expects_no_lore(api_card):
                     lore = 0
                 elif lore == None:
-                    print(f"Warning: Card {api_card.full_name} is a Character but has no lore value.")
+                    logger.warning(f"Card {api_card.full_name} is a Character but has no lore value.")
                 if lore not in count_at_table_by_lore[api_card.cost]:
                     count_at_table_by_lore[api_card.cost][lore] = 0
                 count_at_table_by_lore[api_card.cost][lore] += count_at_table
@@ -124,8 +127,7 @@ class FormatAnalysisManager:
                     ]:
                         strength = 0 # Rapunzel, Gifted Artist has null strength in the API but actually 0
                     else:
-                        print(f"Warning: Card {api_card.full_name} is a Character but has no strength value.")
-                        print(api_card.toJSON())
+                        logger.warning(f"Card {api_card.full_name} is a Character but has no strength value: {api_card.toJSON()}")
                         strength = 0
                 if strength not in count_at_table_by_strength[api_card.cost]:
                     count_at_table_by_strength[api_card.cost][strength] = 0
@@ -145,7 +147,7 @@ class FormatAnalysisManager:
                     count_at_table_by_rating[api_card.cost][letter_rating] = 0
                 count_at_table_by_rating[api_card.cost][letter_rating] += count_at_table
             except Exception as e:
-                print(e)
+                logger.warning(e)
         return count_at_table_by_rating
 
     def generate_cost_distribution(self, count_at_table_by_card_id):

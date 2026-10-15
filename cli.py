@@ -1,6 +1,9 @@
 import argparse
 import json
+import logging
 from pathlib import Path
+
+logging.basicConfig(level=logging.INFO, format="%(message)s")
 from cubecana_server import draftmancer
 from cubecana_server import tabletop_simulator
 from cubecana_server import generate_retail
